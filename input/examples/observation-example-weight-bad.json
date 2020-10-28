@@ -1,0 +1,34 @@
+{
+  "resourceType": "Observation",
+  "id": "example-weight-bad-value",
+  "fhir_comments": [
+      "TestPlan: This is a minimally specified weight that MHV should display as the value is wrong units of measurement"
+  ],
+  "status": "final",
+  "category": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/observation-category",
+        "code": "vital-signs"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7"
+      },
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "valueQuantity": {
+    "value": 3,
+    "unit": "{score}",
+    "system": "http://unitsofmeasure.org",
+    "code": "{score}"
+  },
+"comments":"a quantity but wrong units of measurement"
+}

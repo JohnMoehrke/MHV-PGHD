@@ -1,0 +1,40 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "va.mhv.example",
+  "url": "http://sample.org/mhv/ImplementationGuide/va.mhv.example",
+  "version": "0.1.0",
+  "name": "MHVIG",
+  "status": "draft",
+  "packageId": "va.mhv.example",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/VA.MHV.bodyWeight"
+        },
+        "name": "VA MHV BodyWeight Observation",
+        "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": []
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

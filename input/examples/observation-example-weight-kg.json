@@ -1,0 +1,34 @@
+{
+  "resourceType": "Observation",
+  "id": "example-weight-kg",
+  "fhir_comments": [
+      "TestPlan: This is a minimally specified weight that MHV should display as 83.9146 kg, a bit podgy"
+  ],
+  "status": "final",
+  "category": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/observation-category",
+        "code": "vital-signs"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7"
+      },
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "valueQuantity": {
+    "value": 83.9146,
+    "unit": "kg",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg"
+  },
+"comments":"a bit podgy"
+}

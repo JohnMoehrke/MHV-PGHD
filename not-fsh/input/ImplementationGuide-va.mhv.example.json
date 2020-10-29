@@ -18,6 +18,14 @@
         "name": "VA MHV BodyWeight Observation",
         "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/ex-MHV-weight"
+        },
+        "name": "Example of an MHV bodyWeight R4 observation",
+        "description": "holding typical values",
+        "exampleCanonical": "http://example.org/mhv/StructureDefinition/VA.MHV.bodyWeight"
       }
     ],
     "page": {

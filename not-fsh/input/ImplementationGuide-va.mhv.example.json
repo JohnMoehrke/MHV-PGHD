@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "va.mhv.example",
-  "url": "http://sample.org/mhv/ImplementationGuide/va.mhv.example",
+  "url": "http://example.org/mhv/ImplementationGuide/va.mhv.example",
   "version": "0.1.0",
   "name": "MHVIG",
   "status": "draft",

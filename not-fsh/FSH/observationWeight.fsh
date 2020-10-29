@@ -28,17 +28,17 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 * subject 1..1
 * subject only Reference(Patient)
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing
-* id 0..1
-* meta.versionId 0..1
-* meta.lastUpdated 0..1
-* identifier 0..*
+//* id 0..1
+//* meta.versionId 0..1
+//* meta.lastUpdated 0..1
+//* meta.profile 0..1
+//* meta.source 0..0
+//* identifier 0..*
+//* text 0..0
 // this is making everything else in observation forbidden. If they show up, MHV should not misbehave. MHV should NEVER populate these in a Create or Update.
-* meta.source 0..0
-* meta.profile 0..0
 * meta.security 0..0
 * implicitRules 0..0
 * language 0..0
-* text 0..0
 * contained 0..0
 * extension 0..0
 * modifierExtension 0..0

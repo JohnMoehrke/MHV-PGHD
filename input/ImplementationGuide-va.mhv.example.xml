@@ -2,7 +2,7 @@
 <!-- note that the ImplementationGuide needs to be R4, even though the profiles it is creating are DSTU2 -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
 	<id value="va.mhv.example"/>
-	<url value="http://example.org/va.mhv.example"/>
+	<url value="http://example.org/va.mhv.example/ImplementationGuide/va.mhv.example"/>
 	<version value="0.2.0" />
 	<name value="MHVtoPGHD_VitalSigns"/>
 	<status value="draft"/>
@@ -14,7 +14,7 @@
 	</contact>	
 	<description value="Testing Plan for VA MyHealtheVet use of PGHD." />
 	<packageId value="va.mhv.example"/>
-	<fhirVersion value="1.0.2"/>
+	<fhirVersion value="4.0.1"/>
 	<definition>
 		<page>
 			<!-- The root will always be toc.html - the template will force it if you don't do it -->

@@ -1,18 +1,61 @@
 {
   "resourceType": "StructureDefinition",
   "id": "VA.MHV.bodyWeight",
-  "url": "http://example.org/mhv/StructureDefinition/VA.MHV.bodyWeight",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight",
   "version": "0.1.0",
   "name": "MHVbodyWeight",
-  "display": "VA MHV BodyWeight Observation",
-  "status": "draft",
+  "title": "VA MHV BodyWeight Observation",
+  "status": "active",
   "date": "2020-10-21",
   "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
   "kind": "resource",
-  "constrainedType": "Observation",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
   "differential": {
     "element": [
       {
@@ -56,6 +99,16 @@
         "max": "0"
       },
       {
+        "id": "Observation.basedOn",
+        "path": "Observation.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "Observation.partOf",
+        "path": "Observation.partOf",
+        "max": "0"
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "patternCode": "final"
@@ -69,7 +122,7 @@
           "coding": [
             {
               "code": "vital-signs",
-              "system": "http://hl7.org/fhir/observation-category"
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
             }
           ]
         }
@@ -93,11 +146,16 @@
         "type": [
           {
             "code": "Reference",
-            "profile": [
+            "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
         ]
+      },
+      {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "max": "0"
       },
       {
         "id": "Observation.encounter",
@@ -107,6 +165,21 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
         "min": 1,
         "max": "1",
         "type": [
@@ -145,6 +218,11 @@
         "max": "0"
       },
       {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "max": "1"
+      },
+      {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
         "max": "0"
@@ -170,8 +248,13 @@
         "max": "0"
       },
       {
-        "id": "Observation.related",
-        "path": "Observation.related",
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "max": "0"
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
         "max": "0"
       },
       {

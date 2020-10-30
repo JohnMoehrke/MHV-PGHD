@@ -1,0 +1,7 @@
+id: va.mhv.example
+canonical: http://example.org/va.mhv.example
+name: MHVIG
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+FSHOnly: true

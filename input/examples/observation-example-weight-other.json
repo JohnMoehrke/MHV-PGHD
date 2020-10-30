@@ -5,14 +5,17 @@
       "TestPlan: This is a good weight observation that MHV should NOT display as it uses a different code than MHV looks for"
   ],
   "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "vital-signs"
-      }
-    ]
-  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
   "code": {
     "coding": [
       {

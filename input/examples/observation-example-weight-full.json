@@ -1,21 +1,19 @@
 {
   "resourceType": "Observation",
   "id": "example-weight-full",
-  "text": {
 
-    "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://hl7.org/fhir/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Weight Measured <span>(Details : {LOINC code '3141-9' = 'Body weight Measured', given as 'Weight Measured'}; {SNOMED CT code '27113001' = '27113001', given as 'Body weight'}; {http://acme.org/devices/clinical-codes code 'body-weight' = '??', given as 'Body Weight'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>encounter</b>: <a>Encounter/example</a></p><p><b>value</b>: 152 lbs<span> (Details: http://unitsofmeasure.org code [lb_av] = '??')</span></p></div>"
-  },
   "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "vital-signs",
-        "display": "Vital Signs"
-      }
-    ]
-  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
   "code": {
     "coding": [
       {
@@ -53,5 +51,9 @@
     "system": "http://unitsofmeasure.org",
     "code": "[lb_av]"
   },
-"comments":"just about perfect"
+
+  
+  "note":[{
+    "text":"just about perfect"
+   }]
 }

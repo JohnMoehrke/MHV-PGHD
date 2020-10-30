@@ -1,0 +1,503 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 65, errors = 8, warn = 10, info = 2 -->
+<head>
+  <title>MHVtoPGHD_VitalSigns : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for MHVtoPGHD_VitalSigns</h1>
+ <p>Generated Fri Oct 30 08:31:25 CDT 2020, FHIR version 4.0.1 for va.mhv.example#0.2.0 (canonical = <a href="http://example.org/va.mhv.example">http://example.org/va.mhv.example</a> (<a href="http://example.org/va.mhv.example/history.html">history</a>)). See <a href="c:\users\john.moehrke\git\mhv-pghd\output\qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.35</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = va.mhv.example, Canonical = http://example.org/va.mhv.example</td></tr>
+ <tr><td>Realm Check:</td><td> <span style="color: maroon; font-weight: bold"></span> : <ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.2.0: <span stlye="color: marron; font-weight: bold">No entry in the package-list.json file for this version</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">1 Suppressed Issue</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\john.moehrke\Git\MHV-PGHD\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> va.mhv.example</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org/va.mhv.example</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.org/va.mhv.example (Problem #1 with package-list.json at http://example.org/va.mhv.example: http://example.org/va.mhv.example/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 65, errors = 8, warn = 10, info = 2</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>73</b></td><td><b>10</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_ImplementationGuide-va.mhv.example"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_Encounter-example"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Encounter-example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_Observation-ex-MHV-weight"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_Patient-example"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Patient-example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-bad"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-bad</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-core"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-core</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-ekg"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-ekg</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-full"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-full</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-kg"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-kg</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-min"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-min</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-other"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-other</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_john.moehrke_Git_MHV-PGHD_input_profiles_StructureDefinition-VA.MHV.bodyWeight"><b>C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.bodyWeight</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-weight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-bad-value.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-bad-value.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-ekg.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-ekg.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-full.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-full.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-kg.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-kg.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-min.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-other.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-other.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Patient/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.change.history.html#9b66fdec-c932-4759-a801-f2d736259b9c">Encounter-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.html#4faa8c3b-b091-4c85-bacb-c8f7120a6062">Encounter-example.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.json.html#5ac35624-5e77-4d88-bf60-6d84d798dcce">Encounter-example.json.html#/html/body/div/div/div/p/a at Line 199, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.ttl.html#2420e2ec-7ca7-4a9d-8070-42ac8aab75d9">Encounter-example.ttl.html#/html/body/div/div/div/p/a at Line 213, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.xml.html#669dfc4f-4f61-436a-8690-a568910c5423">Encounter-example.xml.html#/html/body/div/div/div/p/a at Line 199, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-MHV-weight.change.history.html#9759bab0-34ba-4a68-b37e-2ec2dd34cb48">Observation-ex-MHV-weight.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-MHV-weight.html#86e44788-5548-44cc-92f2-7b121afaf5ae">Observation-ex-MHV-weight.html#/html/body/div/div/div/p/a at Line 181, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-MHV-weight.json.html#8d77140e-1c9f-457e-9e6a-e4cf62d84a70">Observation-ex-MHV-weight.json.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-MHV-weight.ttl.html#cafbee82-5d00-4ad1-92e6-57e8f6479f20">Observation-ex-MHV-weight.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-MHV-weight.xml.html#a36e22e0-df9c-4561-8eab-6c19df628724">Observation-ex-MHV-weight.xml.html#/html/body/div/div/div/p/a at Line 224, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-bad-value.change.history.html#e86c3a44-3a4f-46bf-a58a-05674f93373a">Observation-example-weight-bad-value.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-bad-value.html#4f2cef67-36d2-4eb8-9f5e-5831f15b767c">Observation-example-weight-bad-value.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-bad-value.json.html#9b0551f1-d2e2-4ef4-8197-115b504e35e9">Observation-example-weight-bad-value.json.html#/html/body/div/div/div/p/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-bad-value.ttl.html#7916aef3-5d6e-4995-9e6a-8160cf124a4b">Observation-example-weight-bad-value.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-bad-value.xml.html#ba0c2e85-9293-4955-bb44-419f22defede">Observation-example-weight-bad-value.xml.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-ekg.change.history.html#63aecb35-8bb0-4da6-8730-81625230ed85">Observation-example-weight-ekg.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-ekg.html#faa497cd-1596-44b1-ae16-d75512edbfd7">Observation-example-weight-ekg.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-ekg.json.html#bc2d842c-e80d-4b6d-9c26-27f27a0280c6">Observation-example-weight-ekg.json.html#/html/body/div/div/div/p/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-ekg.ttl.html#fe63dbcd-9680-457d-8ad5-9c13fdae4766">Observation-example-weight-ekg.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-ekg.xml.html#86d251eb-60a3-4155-bd22-4bfcf35ca663">Observation-example-weight-ekg.xml.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-full.change.history.html#e1504ee2-03b5-4d37-8abc-430f2824132f">Observation-example-weight-full.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-full.html#66569cdf-f3a0-45e2-80a2-89a75ed763b1">Observation-example-weight-full.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-full.json.html#eed13be9-7c23-4bd3-83a3-a1d67f51c9b1">Observation-example-weight-full.json.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-full.ttl.html#7a98ac60-6c8a-4754-bac4-d76b83f8616e">Observation-example-weight-full.ttl.html#/html/body/div/div/div/p/a at Line 255, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-full.xml.html#8a3fa139-d23b-42fc-863e-5f00873a15da">Observation-example-weight-full.xml.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-kg.change.history.html#793d650f-e3ad-47d7-b34d-c39599b2199f">Observation-example-weight-kg.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-kg.html#473c0366-d154-48e3-814d-07fa57585ba7">Observation-example-weight-kg.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-kg.json.html#f1088c30-c5f3-403a-b211-248073f557d8">Observation-example-weight-kg.json.html#/html/body/div/div/div/p/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-kg.ttl.html#80af89f0-48c7-4664-bfed-b194755ebba0">Observation-example-weight-kg.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-kg.xml.html#c1cbf1a4-201b-43c1-8d32-a7d4ce08a3fe">Observation-example-weight-kg.xml.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-min.change.history.html#da531991-c3e5-44d1-9638-04b89191a0a5">Observation-example-weight-min.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-min.html#95888e81-c35a-4f93-8ca0-d0d259d526ec">Observation-example-weight-min.html#/html/body/div/div/div/p/a at Line 181, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-min.json.html#1002d8d8-4f16-43bd-a2cc-032f2419c9f4">Observation-example-weight-min.json.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-min.ttl.html#1aa67026-cb40-48f2-a83f-0ee4cfaf740e">Observation-example-weight-min.ttl.html#/html/body/div/div/div/p/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-min.xml.html#449429b0-ac74-40cb-8b67-75d94e9cc1a2">Observation-example-weight-min.xml.html#/html/body/div/div/div/p/a at Line 226, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-other.change.history.html#cb7d6ec6-8ac2-4caa-b409-526873cec905">Observation-example-weight-other.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-other.html#3e94b7c3-13e0-4d05-bbcc-80d1b65a983c">Observation-example-weight-other.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-other.json.html#923c28b8-a2a9-42ec-92ce-3b201c3fa63f">Observation-example-weight-other.json.html#/html/body/div/div/div/p/a at Line 212, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-other.ttl.html#b585b2a2-7c3a-4e12-ad7d-343326994fd0">Observation-example-weight-other.ttl.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example-weight-other.xml.html#7846f1d3-5c42-49d5-bdb3-76089c0b2686">Observation-example-weight-other.xml.html#/html/body/div/div/div/p/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example.change.history.html#b7ec6102-d917-4e52-a418-3ac63b3e7592">Observation-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example.html#5bdfe8f6-ee88-440a-b00b-74f7f8ae1469">Observation-example.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example.json.html#9bc4e55b-8a22-4751-ab39-cfc3d6c3dc60">Observation-example.json.html#/html/body/div/div/div/p/a at Line 240, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example.ttl.html#2b226feb-42d1-441f-a8b3-21f384d1bdd3">Observation-example.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-example.xml.html#159ad67a-b954-4982-b5f5-2de1a99aa376">Observation-example.xml.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-example.change.history.html#3af4577a-9642-45a3-adc7-d6fd386c3240">Patient-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-example.html#7f6a86ea-7c02-453a-80fb-c6584b3dfd59">Patient-example.html#/html/body/div/div/div/p/a at Line 183, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-example.json.html#4b399732-764c-43b8-84d6-6ef1c33a73cc">Patient-example.json.html#/html/body/div/div/div/p/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-example.ttl.html#42966833-15e4-443e-b66b-abb14e690331">Patient-example.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-example.xml.html#95bbebd8-a9a7-490b-a852-e4343069bccf">Patient-example.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-VA.MHV.bodyWeight-definitions.html#083b2438-5b1b-4d92-8904-422eda25f64b">StructureDefinition-VA.MHV.bodyWeight-definitions.html#/html/body/div/div/div/p/a at Line 841, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-VA.MHV.bodyWeight-examples.html#217da808-5249-4d20-bab5-7a84b70dfae7">StructureDefinition-VA.MHV.bodyWeight-examples.html#/html/body/div/div/div/p/a at Line 255, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-VA.MHV.bodyWeight-mappings.html#c4792f4a-382e-4ab4-a1d5-5fdf5fc00335">StructureDefinition-VA.MHV.bodyWeight-mappings.html#/html/body/div/div/div/p/a at Line 300, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-VA.MHV.bodyWeight.html#e32a74dc-62db-4205-a631-02e75cc1d641">StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 754, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-VA.MHV.bodyWeight.profile.history.html#5c9719b6-7207-4f9c-8827-212ee07705c9">StructureDefinition-VA.MHV.bodyWeight.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-VA.MHV.bodyWeight.profile.json.html#49eea594-f23c-4e46-963b-3d1ea735d35e">StructureDefinition-VA.MHV.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 3478, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#a56417a3-0531-4dec-b8f0-5c4f7c884e48">StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 3074, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#a585527e-76e1-469d-af4a-d17be76beb57">StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 3192, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#84097b6a-9829-49c1-a5e9-86400eb89340">artifacts.html#/html/body/div/div/div/p/a at Line 255, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="background.html#9ebec503-453c-4aca-acd5-dd478687aa5e">background.html#/html/body/div/div/div/p/a at Line 136, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="changes.html#8c6ca79a-0248-4d51-8e30-eae7a6d2cf3c">changes.html#/html/body/div/div/div/p/a at Line 143, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#66ab2be0-f301-4b22-901e-73f50647e88c">downloads.html#/html/body/div/div/div/p/a at Line 136, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#5b4a738a-8ef7-4766-8cc0-add6b685fa0f">index.html#/html/body/div/div/div/p/a at Line 158, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="searchform.html#93cefabd-d0c4-41fa-aa4a-4b3b287b324f">searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 64, column 21</a></b></td><td><b>error</b></td><td><b>The link 'history.html' for &quot;History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#01c632b5-0cc0-4406-8541-305d7e5bf386">toc.html#/html/body/div/div/div/p/a at Line 132, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;USA VA MHV team&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_ImplementationGuide-va.mhv.example"> </a>
+<h2><a href="ImplementationGuide-va.mhv.example.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/va.mhv.example: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_Encounter-example"> </a>
+<h2><a href="Encounter-example.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Encounter-example.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Encounter/example: Encounter (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_Observation-ex-MHV-weight"> </a>
+<h2><a href="Observation-ex-MHV-weight.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/ex-MHV-weight: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/ex-MHV-weight: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_Patient-example"> </a>
+<h2><a href="Patient-example.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Patient-example.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/example: Patient (l2/c178)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-bad"> </a>
+<h2><a href="Observation-example-weight-bad-value.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-bad.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/example-weight-bad-value: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-core"> </a>
+<h2><a href="Observation-example.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-core.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/example: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/example: Observation.code.coding[3] (l33/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-ekg"> </a>
+<h2><a href="Observation-example-weight-ekg.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-ekg.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/example-weight-ekg: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-full"> </a>
+<h2><a href="Observation-example-weight-full.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-full.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/example-weight-full: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/example-weight-full: Observation.code.coding[3] (l34/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-kg"> </a>
+<h2><a href="Observation-example-weight-kg.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-kg.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/example-weight-kg: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-min"> </a>
+<h2><a href="Observation-example-weight-min.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-min.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/example-weight-min: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/example-weight-min: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_examples_observation-example-weight-other"> </a>
+<h2><a href="Observation-example-weight-other.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-other.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/example-weight-other: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_MHV-PGHD_input_profiles_StructureDefinition-VA.MHV.bodyWeight"> </a>
+<h2><a href="StructureDefinition-VA.MHV.bodyWeight.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.bodyWeight.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/VA.MHV.bodyWeight: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>This is a VA Internal codesystem</b></p><ul>
+ <li>Code System URI 'https://wiki.mobilehealth.va.gov/x/Onc1C' is unknown so the code cannot be validated</li>
+</ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-core.json</a></td><td><b>Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-example-weight-full.html">C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-full.json</a></td><td><b>Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+</body>
+</html>

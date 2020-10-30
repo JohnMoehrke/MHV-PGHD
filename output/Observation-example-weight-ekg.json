@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "example-weight-ekg",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}\">Body weight</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- TestPlan: This is a minimally specified weight that MHV should display as the value is wrong units of measurement -->
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-weight-bad-value"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 29463-7}">Body weight</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+    </coding>
+  </code>
+</Observation>

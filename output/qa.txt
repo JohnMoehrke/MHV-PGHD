@@ -1,0 +1,133 @@
+﻿MHVtoPGHD_VitalSigns : Validation Results
+=========================================
+
+err = 8, warn = 10, info = 2
+IG Publisher Version: 1.1.35
+Generated Fri Oct 30 08:31:26 CDT 2020. FHIR version 4.0.1 for va.mhv.example#0.2.0 (canonical = http://example.org/va.mhv.example)
+
+ Build Errors : 73 / 10 / 0
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Encounter-example : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight : 0 / 0 / 3
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Patient-example : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-bad : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-core : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-ekg : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-full : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-kg : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-min : 0 / 0 / 3
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-other : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.bodyWeight : 0 / 0 / 3
+</table>
+== n/a ==
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-weight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-bad-value.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-bad-value.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-ekg.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-ekg.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-full.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-full.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-kg.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-kg.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-min.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example-weight-other.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-weight-other.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.json.html#/html/body/div/div/div/p/a at Line 199, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.ttl.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.xml.html#/html/body/div/div/div/p/a at Line 199, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-bad-value.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-bad-value.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-bad-value.json.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-bad-value.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-bad-value.xml.html#/html/body/div/div/div/p/a at Line 206, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-ekg.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-ekg.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-ekg.json.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-ekg.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-ekg.xml.html#/html/body/div/div/div/p/a at Line 206, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-full.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-full.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-full.json.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-full.ttl.html#/html/body/div/div/div/p/a at Line 255, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-full.xml.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-kg.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-kg.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-kg.json.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-kg.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-kg.xml.html#/html/body/div/div/div/p/a at Line 206, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-min.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-min.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-min.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-min.ttl.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-min.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-other.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-other.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-other.json.html#/html/body/div/div/div/p/a at Line 212, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-other.ttl.html#/html/body/div/div/div/p/a at Line 223, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example-weight-other.xml.html#/html/body/div/div/div/p/a at Line 207, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.json.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.xml.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.json.html#/html/body/div/div/div/p/a at Line 230, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.xml.html#/html/body/div/div/div/p/a at Line 220, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-definitions.html#/html/body/div/div/div/p/a at Line 841, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-examples.html#/html/body/div/div/div/p/a at Line 255, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-mappings.html#/html/body/div/div/div/p/a at Line 300, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 754, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 3478, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 3074, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 3192, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 255, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/p/a at Line 136, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\changes.html#/html/body/div/div/div/p/a at Line 143, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\downloads.html#/html/body/div/div/div/p/a at Line 136, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\index.html#/html/body/div/div/div/p/a at Line 158, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 64, column 21: The link 'history.html' for "History" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\toc.html#/html/body/div/div/div/p/a at Line 132, column 28: The link '' for "USA VA MHV team" cannot be resolved
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example.xml ==
+INFORMATION: ImplementationGuide/va.mhv.example: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Encounter-example.json ==
+INFORMATION: Encounter/example: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight.json ==
+INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against profile http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Patient-example.xml ==
+INFORMATION: Patient/example: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-bad.json ==
+INFORMATION: Observation/example-weight-bad-value: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-core.json ==
+INFORMATION: Observation/example: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/example: Observation.code.coding[3]: Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-ekg.json ==
+INFORMATION: Observation/example-weight-ekg: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-full.json ==
+INFORMATION: Observation/example-weight-full: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/example-weight-full: Observation.code.coding[3]: Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-kg.json ==
+INFORMATION: Observation/example-weight-kg: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-min.json ==
+INFORMATION: Observation/example-weight-min: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/example-weight-min: Observation: Validate resource against profile http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-other.json ==
+INFORMATION: Observation/example-weight-other: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.bodyWeight.json ==
+INFORMATION: StructureDefinition/VA.MHV.bodyWeight: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition

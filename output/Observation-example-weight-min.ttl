@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/va.mhv.example/Observation/example-weight-min> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-weight-min"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight";
+       fhir:index 0;
+       fhir:link <http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight>
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://wiki.mobilehealth.va.gov/x/Onc1C" ];
+       fhir:Coding.code [ fhir:value "2ce6d9aa-c068-4809-8dda-662bcb16d09a" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "additional" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>TestPlan: This is a minimally specified weight that MHV should display as 83.9146 kg, a bit podgy. in DSTU2</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://example.org/va.mhv.example/Patient/example>;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2012-09-17"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "185"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "lb_av" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "[lb_av]" ]
+  ];
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "a bit heavy" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/va.mhv.example/Observation/example-weight-min.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

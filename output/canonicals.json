@@ -1,0 +1,16 @@
+[
+  {
+    "id": "va.mhv.example",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/va.mhv.example/ImplementationGuide/va.mhv.example",
+    "version": "0.2.0",
+    "name": "MHVtoPGHD_VitalSigns"
+  },
+  {
+    "id": "VA.MHV.bodyWeight",
+    "type": "StructureDefinition",
+    "url": "http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight",
+    "version": "0.2.0",
+    "name": "MHVbodyWeight"
+  }
+]

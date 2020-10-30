@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight> a fhir:StructureDefinition;
+<https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "VA.MHV.bodyWeight"];
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight"];
+  fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"];
   fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "MHVbodyWeight"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV BodyWeight Observation"];
@@ -3456,7 +3456,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight.ttl> a owl:Ontology;
+<https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

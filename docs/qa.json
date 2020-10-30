@@ -1,12 +1,12 @@
 {
-  "url": "http://example.org/va.mhv.example/ImplementationGuide/va.mhv.example",
-  "name": "MHVtoPGHD_VitalSigns",
+  "url": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example",
+  "name": "MHVtoPGHD_Example",
   "package-id": "va.mhv.example",
   "ig-ver": "0.2.0",
-  "date": "Fri, 30 Oct, 2020 08:30:53 -0500",
+  "date": "Fri, 30 Oct, 2020 11:23:27 -0500",
   "errs": 8,
   "warnings": 10,
-  "hints": 2,
+  "hints": 0,
   "version": "4.0.1",
   "tool": "4.5.0 (3)"
 }

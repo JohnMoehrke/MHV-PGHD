@@ -3,7 +3,7 @@
   "id": "ex-MHV-weight",
   "meta": {
     "profile": [
-      "http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight"
+      "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"
     ],
     "tag": [
       {

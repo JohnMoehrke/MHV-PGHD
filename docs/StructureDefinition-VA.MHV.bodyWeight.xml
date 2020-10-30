@@ -52,7 +52,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight"/>
+  <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"/>
   <version value="0.2.0"/>
   <name value="MHVbodyWeight"/>
   <title value="VA MHV BodyWeight Observation"/>

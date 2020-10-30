@@ -1,11 +1,11 @@
-﻿MHVtoPGHD_VitalSigns : Validation Results
+﻿MHVtoPGHD_Example : Validation Results
 =========================================
 
-err = 8, warn = 10, info = 2
+err = 8, warn = 10, info = 0
 IG Publisher Version: 1.1.35
-Generated Fri Oct 30 08:31:26 CDT 2020. FHIR version 4.0.1 for va.mhv.example#0.2.0 (canonical = http://example.org/va.mhv.example)
+Generated Fri Oct 30 11:24:02 CDT 2020. FHIR version 4.0.1 for va.mhv.example#0.2.0 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
 
- Build Errors : 73 / 10 / 0
+ Build Errors : 76 / 10 / 0
  C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Encounter-example : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight : 0 / 0 / 3
@@ -91,16 +91,19 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.xml.html#/html/
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-definitions.html#/html/body/div/div/div/p/a at Line 841, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-examples.html#/html/body/div/div/div/p/a at Line 255, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-mappings.html#/html/body/div/div/div/p/a at Line 300, column 28: The link '' for "USA VA MHV team" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 754, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 830, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 3478, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 3074, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 3192, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 255, column 28: The link '' for "USA VA MHV team" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/p/a at Line 136, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 124, column 125: The link 'artifacts.html#structures-resource-profiles' for "Profiles" cannot be resolved (valid targets: [ig-status, 1, 2, 3, segment-header, publish-box, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 126, column 28: The link 'artifacts.html#example-example-instances' for "Example Instances" cannot be resolved (valid targets: [ig-status, 1, 2, 3, segment-header, publish-box, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 128, column 28: The link 'artifacts.html#other' for "Other" cannot be resolved (valid targets: [ig-status, 1, 2, 3, segment-header, publish-box, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/p/a at Line 193, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\changes.html#/html/body/div/div/div/p/a at Line 143, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\downloads.html#/html/body/div/div/div/p/a at Line 136, column 28: The link '' for "USA VA MHV team" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\index.html#/html/body/div/div/div/p/a at Line 158, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\index.html#/html/body/div/div/div/p/a at Line 161, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 64, column 21: The link 'history.html' for "History" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\toc.html#/html/body/div/div/div/p/a at Line 132, column 28: The link '' for "USA VA MHV team" cannot be resolved
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example.xml ==
@@ -109,24 +112,22 @@ INFORMATION: ImplementationGuide/va.mhv.example: ImplementationGuide: Validate r
 INFORMATION: Encounter/example: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight.json ==
 INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against profile http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight - listed in meta
+INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight - listed in meta
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Patient-example.xml ==
 INFORMATION: Patient/example: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-bad.json ==
 INFORMATION: Observation/example-weight-bad-value: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-core.json ==
 INFORMATION: Observation/example: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Observation/example: Observation.code.coding[3]: Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-ekg.json ==
 INFORMATION: Observation/example-weight-ekg: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-full.json ==
 INFORMATION: Observation/example-weight-full: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Observation/example-weight-full: Observation.code.coding[3]: Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-kg.json ==
 INFORMATION: Observation/example-weight-kg: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-min.json ==
 INFORMATION: Observation/example-weight-min: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Observation/example-weight-min: Observation: Validate resource against profile http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight - listed in meta
+INFORMATION: Observation/example-weight-min: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight - listed in meta
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\observation-example-weight-other.json ==
 INFORMATION: Observation/example-weight-other: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.bodyWeight.json ==

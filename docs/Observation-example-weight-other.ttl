@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Observation/example-weight-other> a fhir:Observation;
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-other> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "example-weight-other"];
   fhir:DomainResource.text [
@@ -35,7 +35,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Observation/example-weight-other.ttl> a owl:Ontology;
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-other.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

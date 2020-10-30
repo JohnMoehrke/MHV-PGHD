@@ -3,12 +3,12 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="va.mhv.example"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MHVtoPGHD_VitalSigns</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/va.mhv.example/ImplementationGuide/va.mhv.example</pre><div><p>Testing Plan for VA MyHealtheVet use of PGHD.</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MHVtoPGHD_Example</h2><p>The official URL for this implementation guide is: </p><pre>https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example</pre><div><p>Testing Plan for VA MyHealtheVet use of PGHD.</p>
 </div></div>
   </text>
-  <url value="http://example.org/va.mhv.example/ImplementationGuide/va.mhv.example"/>
+  <url value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
   <version value="0.2.0"/>
-  <name value="MHVtoPGHD_VitalSigns"/>
+  <name value="MHVtoPGHD_Example"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2020-10-28"/>
@@ -98,7 +98,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://example.org/va.mhv.example/history.html"/>
+        <valueString value="https://johnmoehrke.github.io/MHV-PGHD/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -197,7 +197,7 @@
         <reference value="Observation/ex-MHV-weight"/>
       </reference>
       <name value="Example Observation - ex-MHV-weight"/>
-      <exampleCanonical value="http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -247,7 +247,7 @@
         <reference value="Observation/example-weight-min"/>
       </reference>
       <name value="Example Observation - example-weight-min"/>
-      <exampleCanonical value="http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -287,7 +287,7 @@
       <page>
         <nameUrl value="background.html"/>
         <title value="Background"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>

@@ -6,7 +6,7 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight",
+        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight",
         "title": "VA MHV BodyWeight Observation"
       }
     ]

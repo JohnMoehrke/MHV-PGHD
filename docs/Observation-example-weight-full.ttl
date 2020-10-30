@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Observation/example-weight-full> a fhir:Observation;
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-full> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "example-weight-full"];
   fhir:DomainResource.text [
@@ -51,11 +51,11 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <http://example.org/va.mhv.example/Patient/example>;
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
      fhir:Reference.reference [ fhir:value "Patient/example" ]
   ];
   fhir:Observation.encounter [
-     fhir:link <http://example.org/va.mhv.example/Encounter/example>;
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Encounter/example>;
      fhir:Reference.reference [ fhir:value "Encounter/example" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2012-09-17"^^xsd:date];
@@ -72,7 +72,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Observation/example-weight-full.ttl> a owl:Ontology;
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-full.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Patient/example> a fhir:Patient;
+<https://johnmoehrke.github.io/MHV-PGHD/Patient/example> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "example"];
   fhir:DomainResource.text [
@@ -63,7 +63,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Patient/example.ttl> a owl:Ontology;
+<https://johnmoehrke.github.io/MHV-PGHD/Patient/example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

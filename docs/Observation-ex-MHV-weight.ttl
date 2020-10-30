@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Observation/ex-MHV-weight> a fhir:Observation;
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-weight> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ex-MHV-weight"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight";
+       fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight";
        fhir:index 0;
-       fhir:link <http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight>
+       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight>
      ];
      fhir:Meta.tag [
        fhir:index 0;
@@ -43,7 +43,7 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <http://example.org/va.mhv.example/Patient/example>;
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
      fhir:Reference.reference [ fhir:value "Patient/example" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2004-12-25T23:50:50-05:00"^^xsd:dateTime];
@@ -59,7 +59,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Observation/ex-MHV-weight.ttl> a owl:Ontology;
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-weight.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

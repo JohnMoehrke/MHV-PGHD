@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Encounter/example> a fhir:Encounter;
+<https://johnmoehrke.github.io/MHV-PGHD/Encounter/example> a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "example"];
   fhir:DomainResource.text [
@@ -18,13 +18,13 @@
      fhir:Coding.code [ fhir:value "HH" ]
   ];
   fhir:Encounter.subject [
-     fhir:link <http://example.org/va.mhv.example/Patient/example>;
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
      fhir:Reference.reference [ fhir:value "Patient/example" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Encounter/example.ttl> a owl:Ontology;
+<https://johnmoehrke.github.io/MHV-PGHD/Encounter/example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

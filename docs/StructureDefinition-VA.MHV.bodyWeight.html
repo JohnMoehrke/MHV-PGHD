@@ -98,7 +98,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_VitalSigns - Local Development build (v0.2.0). See the <a href="http://example.org/va.mhv.example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.0). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -174,7 +174,7 @@
 
 <table class="grid">
 <tbody>
-<tr><td>Defining URL:</td><td>http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight</td></tr>
+<tr><td>Defining URL:</td><td>https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight</td></tr>
  <tr><td>Version:</td><td>0.2.0</td></tr>
  <tr><td>Name:</td><td>MHVbodyWeight</td></tr>
  <tr><td>Title:</td><td>VA MHV BodyWeight Observation</td></tr>
@@ -189,9 +189,75 @@
   <p>
   The official URL for this profile is:
   </p>
-  <pre>http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight</pre>
+  <pre>https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight</pre>
 
   <!-- insert intro if present -->
+
+
+
+
+<div markdown="1" style="display:inline-block">
+
+<p>This is the Intro for the VA.MHV.bodyWeight Profile</p>
+
+<h3 id="positive-tests">Positive Tests</h3>
+
+<h4 id="simple-mhv-weight">Simple MHV Weight</h4>
+<p>Given <a href="Observation-ex-MHV-weight.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a></p>
+
+<p>WHEN MHV shows body weight values</p>
+
+<p>THEN MHV shows the weight as 185 lbs with the comment of “a bit heavy”</p>
+
+<p>WHEN MHV edits this values</p>
+
+<p>THEN MHV shows the weight as 185 lbs with the comment of “a bit heavy”</p>
+
+<p>WHEN the test-user changes the weight value to 200 lbs 
+AND submits the changes</p>
+
+<p>THEN MHV will succeed to save to MHV
+AND the Test-Bench can retrieve the resource successfully
+AND the Test-Bench shows the weight value has changed to 200 lbs
+AND no other elements from the original are changed</p>
+
+<h4 id="simple-mhv-weight-1">Simple MHV Weight</h4>
+<p>Given <a href="Observation-example-weight-min.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a></p>
+
+<p>WHEN MHV shows body weight values</p>
+
+<p>THEN MHV shows the weight as 83.9146 kg with the comment of “a bit podgy”</p>
+
+<p>WHEN MHV edits this values</p>
+
+<p>THEN MHV shows the weight as 83.9146 kg with the comment of “a bit podgy”</p>
+
+<p>WHEN the test-user changes the weight value to 200 lbs 
+AND submits the changes</p>
+
+<p>THEN MHV will succeed to save to MHV
+AND the Test-Bench can retrieve the resource successfully
+AND the Test-Bench shows the weight value has changed to 200 lbs
+AND no other elements from the original are changed</p>
+
+<h3 id="stress-positive-tests">Stress Positive Tests</h3>
+
+<p>TODO write this in cucumber.</p>
+
+<p>load all of the body weight examples into PGHD,</p>
+<ul>
+  <li>show them in MHV, they should show fine. Some data won’t show at all. They should not crash MHV.</li>
+  <li>edit them in MHV, they should show the data that MHV understands. When the edit is saved, the resulting resource in PGHD should now be conformant to the <a href="StructureDefinition-VA.MHV.bodyWeight.html">MHV body weight profile</a></li>
+</ul>
+
+<h3 id="negative-tests">Negative Tests</h3>
+
+<p>TODO write this in cucumber.</p>
+
+<p>EKG should NOT show in MHV????</p>
+
+
+</div>
 
 
 
@@ -701,6 +767,16 @@ Summary
   <!-- insert notes if present -->
 
 
+<h3>Notes:</h3>
+
+
+<div markdown="1" style="display:inline-block">
+
+<p>This is the notes for the VA.MHV.bodyWeight Profile</p>
+
+</div>
+
+
 
 
 
@@ -746,8 +822,8 @@ Summary
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="e32a74dc-62db-4205-a631-02e75cc1d641">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null">USA VA MHV team</a>.  Package va.mhv.example#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 30, 2020 08:30-0500">2020-10-30</span>
+        <p><a name="622c03d8-7bcd-4a79-858a-b84c31477351">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null">USA VA MHV team</a>.  Package va.mhv.example#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 30, 2020 11:23-0500">2020-10-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

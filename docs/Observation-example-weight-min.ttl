@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Observation/example-weight-min> a fhir:Observation;
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-min> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "example-weight-min"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight";
+       fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight";
        fhir:index 0;
-       fhir:link <http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight>
+       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight>
      ];
      fhir:Meta.tag [
        fhir:index 0;
@@ -23,7 +23,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "additional" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>TestPlan: This is a minimally specified weight that MHV should display as 83.9146 kg, a bit podgy. in DSTU2</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>TestPlan: This is a minimally specified weight that MHV should display as 83.9146 kg, a bit podgy.</p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -44,24 +44,24 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <http://example.org/va.mhv.example/Patient/example>;
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
      fhir:Reference.reference [ fhir:value "Patient/example" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2012-09-17"^^xsd:date];
   fhir:Observation.valueQuantity [
-     fhir:Quantity.value [ fhir:value "185"^^xsd:decimal ];
-     fhir:Quantity.unit [ fhir:value "lb_av" ];
+     fhir:Quantity.value [ fhir:value "83.9146"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg" ];
      fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-     fhir:Quantity.code [ fhir:value "[lb_av]" ]
+     fhir:Quantity.code [ fhir:value "kg" ]
   ];
   fhir:Observation.note [
      fhir:index 0;
-     fhir:Annotation.text [ fhir:value "a bit heavy" ]
+     fhir:Annotation.text [ fhir:value "a bit podgy" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://example.org/va.mhv.example/Observation/example-weight-min.ttl> a owl:Ontology;
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-min.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

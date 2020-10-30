@@ -105,14 +105,71 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_VitalSigns - Local Development build (v0.2.0). See the <a href="http://example.org/va.mhv.example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.0). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Background</h2>
   
-  <div>
-	<p>
-Testing
-  </p>
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
+<p><a name="cc3fba5e-4e01-4bcc-9f24-e4e84d0170ee">​</a>Overall test plan leverages the Profiles, and Examples shown on the <a href="artifacts.html">Artifacts Summary</a>. The <a href="artifacts.html#structures-resource-profiles">Profiles</a> listed are describing the constraints that MHV uses when publishing (Create or Update) into PGHD. Thus any Resources that are known to have been published by MHV MUST be conformant to these profiles.</p>
+
+<p><a name="68641f83-bdc7-4d3c-8a5c-84b0485d8c6b">​</a>The Examples listed in <a href="artifacts.html#example-example-instances">Example Instances</a> are example instances that are conformant to the MHV profiles.</p>
+
+<p><a name="c849e69e-b28f-4512-8f9d-818b22d84225">​</a>The Examples listed in <a href="artifacts.html#other">Other</a> are examples that either assist with the structure of the examples (e.g. Patient and Encounter) or are examples that MHV should be able to handle in various ways.</p>
+
+<p>See the Test Plan for each Profile to understand the specific expectations for each good, odd, and bad example.</p>
+<ul>
+  <li><a href="StructureDefinition-VA.MHV.bodyWeight.html">Body Weight</a></li>
+</ul>
+
+<h3 id="cucumber-actions">Cucumber Actions</h3>
+<p>The following Actions are defined for use in the Cucumber scripts</p>
+
+<p>SUT - System Under Test – this is the MyHealtheVet application – aka MHV</p>
+
+<p>PGHD - Patient Generated Health Data service – this is the FHIR Server that MyHealtheVet uses – aka PGD</p>
+
+<p>Test-Patient - a FHIR Patient resource within the PGHD that is used for testing purposes and is tied to a test login to MHV</p>
+
+<p>Test-Bench - a FHIR application (likely built with HAPI) that is used with PGHD for testing of the MHV</p>
+
+<h4 id="initialized">Initialized</h4>
+
+<p><strong>Preconditions</strong></p>
+
+<p>PGHD is operational and has no known defects that would affect the test.</p>
+
+<p>Test-Patient is created or known to have no data that would affect the test.</p>
+
+<h4 id="load-x-into-pghd">Load X into PGHD</h4>
+
+<p>This action is used to initialize a test, it is not expected to fail. So a failure is a fundamental failure, not an indication of the system-under-test.</p>
+
+<p>GIVEN FHIR Resource X from this Implementation Guide</p>
+
+<p>ACTION:</p>
+
+<ol>
+  <li>load X into Test-Bench</li>
+  <li>update the patient to the Test-Patient id under test</li>
+  <li>update the effectiveDateTime to <strong>now</strong></li>
+  <li>POST the resource into PGHD</li>
+  <li>continue if successful, if error then break out of test plan</li>
+</ol>
+
+
+
+
 </div>
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
@@ -132,8 +189,8 @@ Testing
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="9ebec503-453c-4aca-acd5-dd478687aa5e">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null">USA VA MHV team</a>.  Package va.mhv.example#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 30, 2020 08:30-0500">2020-10-30</span>
+        <p><a name="6f57472b-5534-4f60-b5d5-412c8d8f2faf">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null">USA VA MHV team</a>.  Package va.mhv.example#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 30, 2020 11:23-0500">2020-10-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,12 @@
+{
+  "resourceType": "Encounter",
+  "id": "example",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "status": "finished",
+  "class": {
+    "code": "HH",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+  }
+}

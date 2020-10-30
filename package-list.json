@@ -1,8 +1,8 @@
 {
- "package-id" : "hl7.fhir.uv.myig",
- "title" : "Your User Friendly Name for MyIG Here", 
- "canonical" : "http://hl7.org/fhir/uv/myig", 
- "introduction" : "The introduction that should appear in the FHIR IG registry",
+ "package-id" : "va.mhv.example",
+ "title" : "Test Plan for VA MyHealtheVet use of PGHD", 
+ "canonical" : "https://johnmoehrke.github.io/MHV-PGHD", 
+ "introduction" : "This includes the test plan, profiles of how MHV publishes, examples that match that profile, and examples that are good FHIR Resources that MHV should handle well.",
  "list" : [{
   "version" : "current",
   "desc" : "Continuous Integration Build (latest in version control)",

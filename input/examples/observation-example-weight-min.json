@@ -4,7 +4,7 @@
   "meta" : {
 
     "profile": [
-      "http://example.org/va.mhv.example/StructureDefinition/VA.MHV.bodyWeight"
+      "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"
     ],
     "tag": [
       {
@@ -15,7 +15,7 @@
   },
   "text": {
       "status":"additional",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>TestPlan: This is a minimally specified weight that MHV should display as 83.9146 kg, a bit podgy. in DSTU2</p></div>"
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>TestPlan: This is a minimally specified weight that MHV should display as 83.9146 kg, a bit podgy.</p></div>"
   },
   
   "status": "final",
@@ -43,12 +43,12 @@
   },
   "effectiveDateTime": "2012-09-17",
   "valueQuantity": {
-    "value": 185,
-    "unit": "lb_av",
+    "value": 83.9146,
+    "unit": "kg",
     "system": "http://unitsofmeasure.org",
-    "code": "[lb_av]"
+    "code": "kg"
   },
   "note":[{
-    "text":"a bit heavy"
+    "text":"a bit podgy"
   }]
 }

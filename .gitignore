@@ -1,4 +1,5 @@
 /input/images/Thumbs.db
-temp
-template
+temp/
+template/
 input-cache/
+output/

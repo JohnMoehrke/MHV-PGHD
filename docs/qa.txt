@@ -3,7 +3,7 @@
 
 err = 8, warn = 10, info = 0
 IG Publisher Version: 1.1.35
-Generated Fri Oct 30 11:24:02 CDT 2020. FHIR version 4.0.1 for va.mhv.example#0.2.0 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+Generated Tue Nov 03 11:59:23 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.0 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
 
  Build Errors : 76 / 10 / 0
  C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example : 0 / 0 / 1
@@ -102,7 +102,7 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 128, column 28: The link 'artifacts.html#other' for "Other" cannot be resolved (valid targets: [ig-status, 1, 2, 3, segment-header, publish-box, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/p/a at Line 193, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\changes.html#/html/body/div/div/div/p/a at Line 143, column 28: The link '' for "USA VA MHV team" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\downloads.html#/html/body/div/div/div/p/a at Line 136, column 28: The link '' for "USA VA MHV team" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\downloads.html#/html/body/div/div/div/p/a at Line 182, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\index.html#/html/body/div/div/div/p/a at Line 161, column 28: The link '' for "USA VA MHV team" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 64, column 21: The link 'history.html' for "History" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\toc.html#/html/body/div/div/div/p/a at Line 132, column 28: The link '' for "USA VA MHV team" cannot be resolved

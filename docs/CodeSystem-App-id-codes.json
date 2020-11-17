@@ -1,0 +1,19 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "App-id-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/App-id-codes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+  },
+  "url": "https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/App-id-codes",
+  "version": "0.2.0",
+  "name": "AppIdCodes",
+  "status": "active",
+  "date": "2020-11-17T08:50:52-06:00",
+  "contact": [
+    {
+      "name": "John Moehrke"
+    }
+  ],
+  "content": "complete"
+}

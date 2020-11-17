@@ -3,7 +3,7 @@
   "id": "example",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>"
   },
   "extension": [
     {

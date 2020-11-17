@@ -260,7 +260,9 @@
   <tr><td>Definition</td><td><p>Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Security Labels from the Healthcare Privacy and Security Classification System.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-security-labels.html">All Security Labels</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-security-labels.html">All Security Labels</a>; other codes may be used where these codes are not suitable
+Security Labels from the Healthcare Privacy and Security Classification System.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
   <tr><td>Comments</td><td><p>The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.</p>
 </td></tr>
@@ -270,7 +272,9 @@
   <tr><td>Definition</td><td><p>Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes that represent various types of tags, commonly workflow-related; e.g. "Needs review by Dr. Jones".<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a>
+Codes that represent various types of tags, commonly workflow-related; e.g. "Needs review by Dr. Jones".
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
   <tr><td>Comments</td><td><p>The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.</p>
 </td></tr>
@@ -291,7 +295,9 @@
   <tr><td>Definition</td><td><p>The base language in which the resource is written.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>A human language.<br/>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><br/><a style="font-weight:bold" href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Max Value Set Extension">Max Binding</a>: <a href="http://hl7.org/fhir/R4/valueset-all-languages.html">AllLanguages</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><br/><a style="font-weight:bold" href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Max Value Set Extension">Max Binding</a>: <a href="http://hl7.org/fhir/R4/valueset-all-languages.html">AllLanguages</a>
+A human language.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td>Comments</td><td><p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
 </td></tr>
@@ -364,7 +370,9 @@
   <tr><td>Definition</td><td><p>The status of the result value.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes providing the status of an observation.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a>
+Codes providing the status of an observation.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to track the status of individual results. Some results are finalized before the whole report is finalized.</p>
@@ -378,7 +386,9 @@
   <tr><td>Definition</td><td><p>A code that classifies the general type of observation being made.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes for high level observation categories.<br/>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
+Codes for high level observation categories.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Used for filtering what observations are retrieved and displayed.</p>
 </td></tr>
@@ -391,7 +401,9 @@
   <tr><td>Definition</td><td><p>Describes what was observed. Sometimes this is called the observation "name".</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes identifying names of simple observations.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+Codes identifying names of simple observations.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Knowing what kind of observation is being made is essential to understanding the observation.</p>
 </td></tr>
@@ -495,7 +507,9 @@
   <tr><td>Definition</td><td><p>Provides a reason why the expected value in the element Observation.value[x] is missing.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: obs-6</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes specifying why the result (`Observation.value[x]`) is missing.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a>; other codes may be used where these codes are not suitable
+Codes specifying why the result (<code>Observation.value[x]</code>) is missing.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>For many results it is necessary to handle exceptional values in measurements.</p>
 </td></tr>
@@ -508,7 +522,9 @@
   <tr><td>Definition</td><td><p>A categorical assessment of an observation value.  For example, high, low, normal.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes identifying interpretations of observations.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a>; other codes may be used where these codes are not suitable
+Codes identifying interpretations of observations.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result.</p>
 </td></tr>
@@ -532,7 +548,9 @@
   <tr><td>Definition</td><td><p>Indicates the site on the subject's body where the observation was made (i.e. the target site).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes describing anatomical locations. May include laterality.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+Codes describing anatomical locations. May include laterality.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Comments</td><td><p>Only used if not implicit in code found in Observation.code.  In many systems, this may be represented as a related observation instead of an inline component.</p>
 <p>If the use case requires BodySite to be handled as a separate resource (e.g. to identify and track separately) then use the standard extension<a href="http://hl7.org/fhir/R4/extension-bodysite.html"> bodySite</a>.</p>
@@ -543,7 +561,9 @@
   <tr><td>Definition</td><td><p>Indicates the mechanism used to perform the observation.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Methods for simple observations.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
+Methods for simple observations.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>In some cases, method can impact results and is thus used for determining whether results can be compared or determining significance of results.</p>
 </td></tr>
@@ -627,7 +647,9 @@
   <tr><td>Definition</td><td><p>Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Code for the meaning of a reference range.<br/>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+Code for the meaning of a reference range.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to be able to say what kind of reference range this is - normal, recommended, therapeutic, etc.,  - for proper interpretation.</p>
 </td></tr>
@@ -639,7 +661,9 @@
   <tr><td>Definition</td><td><p>Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.  Multiple <code>appliesTo</code>  are interpreted as an "AND" of the target populations.  For example, to represent a target population of African American females, both a code of female and a code for African American would be used.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes identifying the population the reference range applies to.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+Codes identifying the population the reference range applies to.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to be able to identify the target population for proper interpretation.</p>
 </td></tr>
@@ -725,7 +749,9 @@
   <tr><td>Definition</td><td><p>Describes what was observed. Sometimes this is called the observation "code".</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes identifying names of simple observations.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+Codes identifying names of simple observations.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Knowing what kind of observation is being made is essential to understanding the observation.</p>
 </td></tr>
@@ -749,7 +775,9 @@
   <tr><td>Definition</td><td><p>Provides a reason why the expected value in the element Observation.component.value[x] is missing.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: obs-6</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes specifying why the result (`Observation.value[x]`) is missing.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a>; other codes may be used where these codes are not suitable
+Codes specifying why the result (<code>Observation.value[x]</code>) is missing.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>For many results it is necessary to handle exceptional values in measurements.</p>
 </td></tr>
@@ -762,7 +790,9 @@
   <tr><td>Definition</td><td><p>A categorical assessment of an observation value.  For example, high, low, normal.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Codes identifying interpretations of observations.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a>; other codes may be used where these codes are not suitable
+Codes identifying interpretations of observations.
+</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result.</p>
 </td></tr>
@@ -775,7 +805,7 @@
   <tr><td>Definition</td><td><p>Guidance on how to interpret the value by comparison to a normal or recommended range.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td>Type</td><td>See Observation.referenceRange</td></tr>
+  <tr><td>Type</td><td>See ttp://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange</td></tr>
   <tr><td>Requirements</td><td><p>Knowing what values are considered "normal" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.</p>
@@ -833,8 +863,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="63c5cd45-63db-4a94-9771-869feba66383">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null">USA VA MHV team</a>.  Package va.mhv.example#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 3, 2020 11:58-0600">2020-11-03</span>
+        <p><a name="48e4665f-0e69-4131-818a-38b7f92368e9">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 17, 2020 08:50-0600">2020-11-17</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -8,7 +8,6 @@
 	<status value="draft"/>
 	<experimental value="false"/>
 	<date value="2020-10-28"/>
-	<publisher value="USA VA MHV team"/>
 	<contact>
 		<name value="John Moehrke" />
 	</contact>	
@@ -51,5 +50,9 @@
 			<code value="copyrightyear"/>
 			<value value="2019+"/>
 		</parameter>	
+		<parameter>
+			<code value="special-url"/>
+			<value value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
+		</parameter>
 	</definition>
 </ImplementationGuide>

@@ -11,7 +11,6 @@
   "status": "draft",
   "experimental": false,
   "date": "2020-10-28",
-  "publisher": "USA VA MHV team",
   "contact": [
     {
       "name": "John Moehrke"
@@ -47,6 +46,19 @@
           {
             "url": "value",
             "valueString": "2019+"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "https://wiki.mobilehealth.va.gov/x/Onc1C"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -413,6 +425,30 @@
         },
         "name": "VA MHV BodyWeight Observation",
         "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/App-id-codes"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/OnclC"
+        },
+        "name": "PGD apps",
+        "description": "App identifiers for use with PGD"
       }
     ],
     "page": {

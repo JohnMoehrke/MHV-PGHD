@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="App-id-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/App-id-codes defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
+  </text>
+  <url value="https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/App-id-codes"/>
+  <version value="0.2.0"/>
+  <name value="AppIdCodes"/>
+  <status value="active"/>
+  <date value="2020-11-17T08:50:52-06:00"/>
+  <contact>
+    <name value="John Moehrke"/>
+  </contact>
+  <content value="complete"/>
+</CodeSystem>

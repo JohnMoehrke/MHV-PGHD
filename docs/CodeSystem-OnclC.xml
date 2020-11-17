@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="OnclC"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://wiki.mobilehealth.va.gov/x/Onc1C defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">2ce6d9aa-c068-4809-8dda-662bcb16d09a<a name="OnclC-2ce6d9aa-c068-4809-8dda-662bcb16d09a"> </a></td><td>MHV</td></tr></table></div>
+  </text>
+  <url value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
+  <version value="0.2.0"/>
+  <name value="AppIdCodes"/>
+  <title value="PGD apps"/>
+  <status value="active"/>
+  <date value="2020-11-17T08:50:52-06:00"/>
+  <contact>
+    <name value="John Moehrke"/>
+  </contact>
+  <description value="App identifiers for use with PGD"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="2ce6d9aa-c068-4809-8dda-662bcb16d09a"/>
+    <display value="MHV"/>
+  </concept>
+</CodeSystem>

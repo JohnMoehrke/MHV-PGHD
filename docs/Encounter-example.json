@@ -3,7 +3,7 @@
   "id": "example",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode HH}\">home health</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode HH}\">home health</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p></div>"
   },
   "status": "finished",
   "class": {

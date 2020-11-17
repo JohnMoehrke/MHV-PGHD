@@ -3,7 +3,7 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="example"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>
   </text>
   <extension url="http://example.org/fhir/uv/myig/StructureDefinition/ext-myExtension">
     <valueBoolean value="false"/>

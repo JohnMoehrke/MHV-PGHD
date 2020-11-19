@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4fbcdaba-605e-4440-afa3-9996a988690f",
+  "id" : "ecdcc18d-ab6c-4145-ad1d-17033f5a0ae3",
   "meta" : {
-    "lastUpdated" : "2020-11-19T07:49:22.559-06:00"
+    "lastUpdated" : "2020-11-19T14:16:09.602-06:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -10,12 +10,12 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2020</p><p>All codes from system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422005\">422005</a></td><td>Inferior surface of tongue</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362732006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=362732006\">362732006</a></td><td>axilla</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1910005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1910005\">1910005</a></td><td>ear</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-21082005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21082005\">21082005</a></td><td>mouth</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-181261002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=181261002\">181261002</a></td><td>rectum</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2020</p><p>All codes from system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422005\">422005</a></td><td>Inferior surface of tongue</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362732006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=362732006\">362732006</a></td><td>Entire axillary region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1910005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1910005\">1910005</a></td><td>Entire ear</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-21082005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21082005\">21082005</a></td><td>Entire mouth region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-181261002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=181261002\">181261002</a></td><td>Entire rectum</td><td/></tr></table></div>"
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:02d09b7a-5966-4ce7-aaf6-f1370561e7aa",
-        "timestamp" : "2020-11-18T21:46:54.925Z",
+        "identifier" : "urn:uuid:f1ff7e3d-ab4c-4647-ba8e-a49a7a2c4967",
+        "timestamp" : "2020-11-19T20:06:19.753Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -32,22 +32,22 @@
         {
           "system" : "http://snomed.info/sct",
           "code" : "362732006",
-          "display" : "axilla"
+          "display" : "Entire axillary region"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "1910005",
-          "display" : "ear"
+          "display" : "Entire ear"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "21082005",
-          "display" : "mouth"
+          "display" : "Entire mouth region"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "181261002",
-          "display" : "rectum"
+          "display" : "Entire rectum"
         }]
       }
     }

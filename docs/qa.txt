@@ -1,44 +1,78 @@
 ﻿MHVtoPGHD_Example : Validation Results
 =========================================
 
-err = 27, warn = 24, info = 0
-IG Publisher Version: 1.1.39 Out of date - current version is 1.1.42
-Generated Thu Nov 19 07:50:30 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.0 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+err = 12, warn = 36, info = 0
+IG Publisher Version: 1.1.42
+Generated Thu Nov 19 14:17:22 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.0 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
 
- Build Errors : 169 / 18 / 0
+ Build Errors : 254 / 36 / 0
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-OnclC : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-example : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-2 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-3 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-0 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-1 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-10 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-14 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-2 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-3 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-4 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-5 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-6 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-7 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-8 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-9 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-0 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-1 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-2 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-3 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-4 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-5 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-6 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-7 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-core : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-stone : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-11 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-12 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-13 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-14 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-15 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-10 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-8 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-9 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.heartRate : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperature-sites : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperatures : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-weights : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Encounter-example : 1 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-heartRate-1 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-heartRate-2 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-heartRate-3 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-0 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-1 : 1 / 2 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-2 : 1 / 2 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-3 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-4 : 1 / 2 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-5 : 3 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-6 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-7 : 2 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight-core : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight-stone : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-temperature-10 : 1 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-temperature-8 : 1 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-temperature-9 : 1 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.bodyTemperature : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.bodyWeight : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.heartRate : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\vocabulary\CodeSystem-OnclC : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\vocabulary\ValueSet-mhv-body-temperature-sites : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\vocabulary\ValueSet-mhv-body-temperatures : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\vocabulary\ValueSet-mhv-body-weights : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Patient-example : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-heartRate-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-heartRate-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-heartRate-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-10.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-MHV-pain-14.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-14.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-7.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-8.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-pain-9.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-temperature-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-temperature-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-temperature-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -46,12 +80,21 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-temperature-4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-temperature-5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-temperature-6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-MHV-temperature-7.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-temperature-7.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-MHV-weight-core.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-weight-core.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-MHV-weight-stone.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-weight-stone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-weight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-pain-11.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-pain-12.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-pain-12.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-pain-13.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-pain-13.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-pain-14.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-pain-15.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-pain-15.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-temperature-10.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-temperature-10.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-temperature-8.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -64,115 +107,187 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.json.html#/htm
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.ttl.html#/html/body/div/div/div/p/a at Line 223, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.xml.html#/html/body/div/div/div/p/a at Line 207, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.html#/html/body/div/div/div/div/div/div/p/a at Line 156, column 235: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.json.html#/html/body/div/div/div/p/a at Line 199, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.ttl.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.xml.html#/html/body/div/div/div/p/a at Line 199, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 322: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 322: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 322: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.ttl.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.xml.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.json.html#/html/body/div/div/div/p/a at Line 230, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.ttl.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.xml.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-1.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-1.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-1.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-1.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-1.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-1.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-2.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-2.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-2.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-2.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-2.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-2.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-3.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-3.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-3.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-3.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-3.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-3.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-4.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-4.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-4.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-4.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-4.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-4.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-5.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-5.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-5.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-5.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-5.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-5.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-6.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-6.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-6.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-6.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-6.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-6.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.json.html#/html/body/div/div/div/p/a at Line 238, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-7.xml.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-core.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-core.html#/html/body/div/div/div/div/div/div/p/a at Line 156, column 440: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-core.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-core.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-core.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-core.xml.html#/html/body/div/div/div/p/a at Line 230, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-stone.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-stone.html#/html/body/div/div/div/div/div/div/p/a at Line 156, column 440: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-stone.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-stone.json.html#/html/body/div/div/div/p/a at Line 241, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-stone.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight-stone.xml.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 324: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.json.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.ttl.html#/html/body/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.xml.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.ttl.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.xml.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.json.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-10.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-10.html#/html/body/div/div/div/div/div/div/p/a at Line 156, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-10.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-10.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-10.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-10.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-8.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-8.html#/html/body/div/div/div/div/div/div/p/a at Line 156, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-8.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-8.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-8.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-8.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.html#/html/body/div/div/div/div/div/div/p/a at Line 156, column 328: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.json.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.ttl.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.xml.html#/html/body/div/div/div/p/a at Line 216, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-definitions.html#/html/body/div/div/div/p/a at Line 954, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-examples.html#/html/body/div/div/div/p/a at Line 291, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-examples.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-mappings.html#/html/body/div/div/div/p/a at Line 320, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.html#/html/body/div/div/div/p/a at Line 811, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
@@ -196,6 +311,14 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.hear
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/p/a at Line 3886, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/p/a at Line 3412, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/p/a at Line 3549, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-definitions.html#/html/body/div/div/div/p/a at Line 1019, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-examples.html#/html/body/div/div/div/p/a at Line 321, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-mappings.html#/html/body/div/div/div/p/a at Line 324, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.html#/html/body/div/div/div/p/a at Line 863, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.json.html#/html/body/div/div/div/p/a at Line 4215, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.ttl.html#/html/body/div/div/div/p/a at Line 3688, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/p/a at Line 3848, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
@@ -211,7 +334,7 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.html#
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.json.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.ttl.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.xml.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 387, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 488, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 124, column 125: The link 'artifacts.html#structures-resource-profiles' for "Profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 126, column 28: The link 'artifacts.html#example-example-instances' for "Example Instances" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 128, column 28: The link 'artifacts.html#other' for "Other" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
@@ -219,96 +342,118 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\changes.html#/html/body/div/div/div/p/a at Line 143, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\downloads.html#/html/body/div/div/div/p/a at Line 182, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\index.html#/html/body/div/div/div/p/a at Line 161, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 64, column 21: The link 'history.html' for "History" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\toc.html#/html/body/div/div/div/p/a at Line 132, column 28: The link '' for "" cannot be resolved
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-OnclC.json ==
+INFORMATION: CodeSystem/OnclC: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-example.json ==
+INFORMATION: Encounter/example: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1.json ==
+INFORMATION: Observation/ex-MHV-heartRate-1: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-heartRate-1: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-2.json ==
+INFORMATION: Observation/ex-MHV-heartRate-2: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-heartRate-2: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-3.json ==
+INFORMATION: Observation/ex-MHV-heartRate-3: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-heartRate-3: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-0.json ==
+INFORMATION: Observation/ex-MHV-pain-0: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-0: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-1.json ==
+INFORMATION: Observation/ex-MHV-pain-1: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-1: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-10.json ==
+INFORMATION: Observation/ex-MHV-pain-10: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-10: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-14.json ==
+INFORMATION: Observation/ex-MHV-pain-14: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-2.json ==
+INFORMATION: Observation/ex-MHV-pain-2: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-2: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-3.json ==
+INFORMATION: Observation/ex-MHV-pain-3: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-3: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-4.json ==
+INFORMATION: Observation/ex-MHV-pain-4: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-4: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-5.json ==
+INFORMATION: Observation/ex-MHV-pain-5: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-5: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-6.json ==
+INFORMATION: Observation/ex-MHV-pain-6: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-6: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-7.json ==
+INFORMATION: Observation/ex-MHV-pain-7: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-7: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-8.json ==
+INFORMATION: Observation/ex-MHV-pain-8: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-8: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-9.json ==
+INFORMATION: Observation/ex-MHV-pain-9: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-pain-9: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-0.json ==
+INFORMATION: Observation/ex-MHV-temperature-0: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-temperature-0: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-1.json ==
+INFORMATION: Observation/ex-MHV-temperature-1: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-temperature-1: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-2.json ==
+INFORMATION: Observation/ex-MHV-temperature-2: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-temperature-2: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-3.json ==
+INFORMATION: Observation/ex-MHV-temperature-3: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-temperature-3: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-4.json ==
+INFORMATION: Observation/ex-MHV-temperature-4: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-temperature-4: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-5.json ==
+INFORMATION: Observation/ex-MHV-temperature-5: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-temperature-5: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-6.json ==
+INFORMATION: Observation/ex-MHV-temperature-6: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-temperature-6: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-7.json ==
+INFORMATION: Observation/ex-MHV-temperature-7: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight.json ==
+INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-core.json ==
+INFORMATION: Observation/ex-MHV-weight-core: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-stone.json ==
+INFORMATION: Observation/ex-MHV-weight-stone: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-11.json ==
+INFORMATION: Observation/ex-pain-11: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-pain-11: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-12.json ==
+INFORMATION: Observation/ex-pain-12: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-13.json ==
+INFORMATION: Observation/ex-pain-13: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-14.json ==
+INFORMATION: Observation/ex-pain-14: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-pain-14: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-15.json ==
+INFORMATION: Observation/ex-pain-15: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-10.json ==
+INFORMATION: Observation/ex-temperature-10: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-8.json ==
+INFORMATION: Observation/ex-temperature-8: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-9.json ==
+INFORMATION: Observation/ex-temperature-9: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature.json ==
+INFORMATION: StructureDefinition/VA.MHV.bodyTemperature: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight.json ==
+INFORMATION: StructureDefinition/VA.MHV.bodyWeight: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.heartRate.json ==
+INFORMATION: StructureDefinition/VA.MHV.heartRate: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain.json ==
+INFORMATION: StructureDefinition/VA.MHV.pain: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperature-sites.json ==
+INFORMATION: ValueSet/mhv-body-temperature-sites: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperatures.json ==
+INFORMATION: ValueSet/mhv-body-temperatures: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-weights.json ==
+INFORMATION: ValueSet/mhv-body-weights: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example.xml ==
 INFORMATION: ImplementationGuide/va.mhv.example: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Encounter-example.json ==
-INFORMATION: Encounter/example: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
-ERROR: Encounter/example: Encounter.subject: Unable to resolve resource 'Patient/example'
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-heartRate-1.json ==
-INFORMATION: Observation/ex-MHV-heartRate-1: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-heartRate-1: Observation.subject: Unable to resolve resource 'Patient/example'
-INFORMATION: Observation/ex-MHV-heartRate-1: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate - listed in meta
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-heartRate-2.json ==
-INFORMATION: Observation/ex-MHV-heartRate-2: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-heartRate-2: Observation.subject: Unable to resolve resource 'Patient/example'
-INFORMATION: Observation/ex-MHV-heartRate-2: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate - listed in meta
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-heartRate-3.json ==
-INFORMATION: Observation/ex-MHV-heartRate-3: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-heartRate-3: Observation.subject: Unable to resolve resource 'Patient/example'
-INFORMATION: Observation/ex-MHV-heartRate-3: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate - listed in meta
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-0.json ==
-INFORMATION: Observation/ex-MHV-temperature-0: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-temperature-0: Observation.subject: Unable to resolve resource 'Patient/example'
-INFORMATION: Observation/ex-MHV-temperature-0: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-1.json ==
-INFORMATION: Observation/ex-MHV-temperature-1: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-temperature-1: Observation.subject: Unable to resolve resource 'Patient/example'
-WARNING: Observation/ex-MHV-temperature-1: Observation.bodySite.coding[0]: Internal error: The display "mouth" is not a valid display for the code {http://snomed.info/sct}21082005 - should be one of ["Entire mouth region","Entire mouth region (body structure)","Entire mouth"] (from http://tx.fhir.org/r4)
-INFORMATION: Observation/ex-MHV-temperature-1: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
-WARNING: Observation/ex-MHV-temperature-1: Observation.bodySite: The display "mouth" is not a valid display for the code {http://snomed.info/sct}21082005 - should be one of ["Entire mouth region","Entire mouth region (body structure)","Entire mouth"] (from http://tx.fhir.org/r4)
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-2.json ==
-INFORMATION: Observation/ex-MHV-temperature-2: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-temperature-2: Observation.subject: Unable to resolve resource 'Patient/example'
-WARNING: Observation/ex-MHV-temperature-2: Observation.bodySite.coding[0]: Internal error: The display "axilla" is not a valid display for the code {http://snomed.info/sct}362732006 - should be one of ["Entire axillary region","Entire axillary region (body structure)","Entire axilla"] (from http://tx.fhir.org/r4)
-INFORMATION: Observation/ex-MHV-temperature-2: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
-WARNING: Observation/ex-MHV-temperature-2: Observation.bodySite: The display "axilla" is not a valid display for the code {http://snomed.info/sct}362732006 - should be one of ["Entire axillary region","Entire axillary region (body structure)","Entire axilla"] (from http://tx.fhir.org/r4)
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-3.json ==
-INFORMATION: Observation/ex-MHV-temperature-3: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-temperature-3: Observation.subject: Unable to resolve resource 'Patient/example'
-INFORMATION: Observation/ex-MHV-temperature-3: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-4.json ==
-INFORMATION: Observation/ex-MHV-temperature-4: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-temperature-4: Observation.subject: Unable to resolve resource 'Patient/example'
-WARNING: Observation/ex-MHV-temperature-4: Observation.bodySite.coding[0]: Internal error: The display "ear" is not a valid display for the code {http://snomed.info/sct}1910005 - should be one of ["Entire ear","Entire ear (body structure)","Entire vestibulocochlear organ"] (from http://tx.fhir.org/r4)
-INFORMATION: Observation/ex-MHV-temperature-4: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
-WARNING: Observation/ex-MHV-temperature-4: Observation.bodySite: The display "ear" is not a valid display for the code {http://snomed.info/sct}1910005 - should be one of ["Entire ear","Entire ear (body structure)","Entire vestibulocochlear organ"] (from http://tx.fhir.org/r4)
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-5.json ==
-INFORMATION: Observation/ex-MHV-temperature-5: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-temperature-5: Observation.subject: Unable to resolve resource 'Patient/example'
-ERROR: Observation/ex-MHV-temperature-5: Observation.bodySite.coding[0]: Invalid uint64 value "" (from http://tx.fhir.org/r4) for 'http://snomed.info/sct##181261002'
-INFORMATION: Observation/ex-MHV-temperature-5: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
-ERROR: Observation/ex-MHV-temperature-5: Observation.bodySite: None of the codes provided are in the value set https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites (https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites), and a code from this value set is required) (codes = http://snomed.info/sct##181261002)
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-6.json ==
-INFORMATION: Observation/ex-MHV-temperature-6: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-temperature-6: Observation.subject: Unable to resolve resource 'Patient/example'
-INFORMATION: Observation/ex-MHV-temperature-6: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-temperature-7.json ==
-INFORMATION: Observation/ex-MHV-temperature-7: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-temperature-7: Observation.subject: Unable to resolve resource 'Patient/example'
-INFORMATION: Observation/ex-MHV-temperature-7: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
-ERROR: Observation/ex-MHV-temperature-7: Observation.bodySite: No code provided, and a code is required from the value set https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites (https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites)
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight.json ==
-INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-weight: Observation.subject: Unable to resolve resource 'Patient/example'
-INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight - listed in meta
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight-core.json ==
-INFORMATION: Observation/ex-MHV-weight-core: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-weight-core: Observation.subject: Unable to resolve resource 'Patient/example'
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-MHV-weight-stone.json ==
-INFORMATION: Observation/ex-MHV-weight-stone: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-MHV-weight-stone: Observation.subject: Unable to resolve resource 'Patient/example'
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-temperature-10.json ==
-INFORMATION: Observation/ex-temperature-10: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-temperature-10: Observation.subject: Unable to resolve resource 'Patient/example'
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-temperature-8.json ==
-INFORMATION: Observation/ex-temperature-8: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-temperature-8: Observation.subject: Unable to resolve resource 'Patient/example'
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Observation-ex-temperature-9.json ==
-INFORMATION: Observation/ex-temperature-9: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/ex-temperature-9: Observation.subject: Unable to resolve resource 'Patient/example'
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.bodyTemperature.json ==
-INFORMATION: StructureDefinition/VA.MHV.bodyTemperature: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.bodyWeight.json ==
-INFORMATION: StructureDefinition/VA.MHV.bodyWeight: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\profiles\StructureDefinition-VA.MHV.heartRate.json ==
-INFORMATION: StructureDefinition/VA.MHV.heartRate: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\vocabulary\CodeSystem-OnclC.json ==
-INFORMATION: CodeSystem/OnclC: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\vocabulary\ValueSet-mhv-body-temperature-sites.json ==
-INFORMATION: ValueSet/mhv-body-temperature-sites: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\vocabulary\ValueSet-mhv-body-temperatures.json ==
-INFORMATION: ValueSet/mhv-body-temperatures: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\vocabulary\ValueSet-mhv-body-weights.json ==
-INFORMATION: ValueSet/mhv-body-weights: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Patient-example.json ==
+INFORMATION: Patient/example: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient

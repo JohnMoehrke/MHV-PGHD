@@ -10,7 +10,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -24,7 +24,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -39,7 +39,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -53,7 +53,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -67,7 +67,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -81,7 +81,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -96,7 +96,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -110,7 +110,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -125,7 +125,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -140,7 +140,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -155,13 +155,14 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity.value = 10 
 * note.text = "Oh, scream in pain"
 
+// This should NOT validate, but it seems allowed
 Instance:   ex-pain-11
 InstanceOf: VA.MHV.pain
 Title: "Example of a non MHV pain R4 observation of 11"
@@ -170,11 +171,11 @@ Description:      "holding invalid values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 10 
+* valueQuantity.value = 11
 
 Instance:   ex-pain-12
 InstanceOf: Observation
@@ -184,7 +185,7 @@ Description:      "holding invalid values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
@@ -193,21 +194,21 @@ Description:      "holding invalid values"
 * note.text = "nice International temperature by urinary bladder"
 
 Instance:   ex-pain-13
-InstanceOf: VA.MHV.pain
+InstanceOf: Observation
 Title: "Example of a pain R4 observation of 10. This is not fully compliant but MHV should see it"
 Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity.value = 10 
 * note.text = "Oh, scream in pain"
 
 Instance:   ex-MHV-pain-14
-InstanceOf: VA.MHV.pain
+InstanceOf: Observation
 Title: "Example of a MHV pain R4 observation of 10. This is also not fully compliant but MHV should see it"
 Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
@@ -220,6 +221,7 @@ Description:      "holding typical values"
 * valueQuantity.value = 10 
 * note.text = "Oh, scream in pain"
 
+// The following SHOULD NOT be valid, but the profile does not forbid this yet
 Instance:   ex-pain-14
 InstanceOf: VA.MHV.pain
 Title: "Example of a non MHV pain R4 observation of 3.14159 (it is between 0-10, but is not an integer)"
@@ -228,12 +230,28 @@ Description:      "holding invalid values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity.value = 3.14159
 * note.text = "pie pain"
+
+Instance:   ex-pain-15
+InstanceOf: Observation
+Title: "Example of a non MHV pain R4 observation of 10 (it has three codes)"
+Description:      "holding typical values"
+//* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+* code.coding[1] = SNO#225908003 "Pain Score"
+* code.coding[2] = http://loinc.org#8310-5
+* subject = Reference(Patient/example)
+* effectiveDateTime = 2004-12-25T23:50:50-05:00
+* valueQuantity.value = 10 
+* note.text = "Oh, scream in pain"
 
 
 

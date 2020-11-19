@@ -10,7 +10,7 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8310-5}">Body temperature</span></p><p><b>subject</b>: <a href="Patient/example">Patient/example</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 98.6 [degF]</p><p><b>note</b>: nice American temperature by tongue</p><p><b>bodySite</b>: <span title="Codes: {http://snomed.info/sct 422005}">Inferior surface of tongue</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8310-5}">Body temperature</span></p><p><b>subject</b>: <a href="Patient-example.html">Generated Summary: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 98.6 [degF]</p><p><b>note</b>: nice American temperature by tongue</p><p><b>bodySite</b>: <span title="Codes: {http://snomed.info/sct 422005}">Inferior surface of tongue</span></p></div>
   </text>
   <status value="final"/>
   <category>

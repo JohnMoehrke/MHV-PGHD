@@ -16,16 +16,17 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 * category 1..1
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 // MHV records using two codes as there are mobile apps that only look for the snomed code
-//* code.coding ^slicing.discriminator.type = #value
-//* code.coding ^slicing.discriminator.path = "coding"
-//* code.coding ^slicing.rules = #closed
-//* code.coding ^slicing.ordered = false
-//* code.coding ^slicing.description = "Slice on coding"
-//* code.coding[loincCode] = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating"
-//* code.coding[snomedCode] = SNO#225908003 "Pain Score"
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #closed
+* code.coding 2..2
+* code.coding contains loincCode 1..1 and snomedCode 1..1
+* code.coding[loincCode] = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+* code.coding[snomedCode] = SNO#225908003 "Pain Score"
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit 0..0
+//* valueQuantity only integer
 * valueQuantity.value ^minValueInteger = 0
 * valueQuantity.value ^maxValueInteger = 10
 * status = #final

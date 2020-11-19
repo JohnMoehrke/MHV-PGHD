@@ -24,7 +24,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8310-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 98.6 [degF]</p><p><b>note</b>: nice American temperature by rectum</p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct #181261002}\">rectum</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8310-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 98.6 [degF]</p><p><b>note</b>: nice American temperature by rectum</p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct 181261002}\">Entire rectum</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -60,10 +60,10 @@
   fhir:Observation.bodySite [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       a sct:#181261002;
+       a sct:181261002;
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "#181261002" ];
-       fhir:Coding.display [ fhir:value "rectum" ]
+       fhir:Coding.code [ fhir:value "181261002" ];
+       fhir:Coding.display [ fhir:value "Entire rectum" ]
      ]
   ] .
 

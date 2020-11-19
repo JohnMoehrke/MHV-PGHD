@@ -28,6 +28,13 @@
     "name": "MHVheartRate"
   },
   {
+    "id": "VA.MHV.pain",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain",
+    "version": "0.2.0",
+    "name": "MHVpain"
+  },
+  {
     "id": "mhv-body-temperature-sites",
     "type": "ValueSet",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites",

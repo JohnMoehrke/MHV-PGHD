@@ -23,7 +23,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
-* bodySite = http://snomed.info/sct#21082005 "mouth"
+* bodySite = http://snomed.info/sct#21082005 "Entire mouth region"
 * note.text = "nice American temperature by mouth"
 
 Instance:   ex-MHV-temperature-2
@@ -38,7 +38,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
-* bodySite = http://snomed.info/sct#362732006 "axilla"
+* bodySite = http://snomed.info/sct#362732006 "Entire axillary region"
 * note.text = "nice American temperature by underarm"
 
 Instance:   ex-MHV-temperature-3
@@ -68,7 +68,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
-* bodySite = http://snomed.info/sct#1910005 "ear"
+* bodySite = http://snomed.info/sct#1910005 "Entire ear"
 * note.text = "nice American temperature by ear"
 
 Instance:   ex-MHV-temperature-5
@@ -83,7 +83,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
-* bodySite = http://snomed.info/sct##181261002 "rectum"
+* bodySite = http://snomed.info/sct#181261002 "Entire rectum"
 * note.text = "nice American temperature by rectum"
 
 Instance:   ex-MHV-temperature-6
@@ -102,8 +102,8 @@ Description:      "holding typical values"
 * note.text = "nice International temperature by tongue"
 
 Instance:   ex-MHV-temperature-7
-InstanceOf: VA.MHV.bodyTemperature
-Title: "Example of an MHV bodyTemperature R4 observation by truck"
+InstanceOf: Observation
+Title: "Example of an non MHV bodyTemperature R4 observation by truck"
 Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a

@@ -16,6 +16,10 @@
       {
         "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate",
         "title": "VA MHV HeartRate Observation"
+      },
+      {
+        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain",
+        "title": "VA MHV Pain Observation"
       }
     ]
   },

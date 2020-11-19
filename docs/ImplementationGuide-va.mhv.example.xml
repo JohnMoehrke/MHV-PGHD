@@ -201,6 +201,132 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/ex-MHV-heartRate-1"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-heartRate-1"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-heartRate-2"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-heartRate-2"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-heartRate-3"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-heartRate-3"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-temperature-0"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-temperature-0"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-temperature-1"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-temperature-1"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-temperature-2"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-temperature-2"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-temperature-3"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-temperature-3"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-temperature-4"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-temperature-4"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-temperature-5"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-temperature-5"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-temperature-6"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-temperature-6"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-temperature-7"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-temperature-7"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-weight-core"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-weight-stone"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/ex-MHV-weight"/>
       </reference>
       <name value="Example Observation - ex-MHV-weight"/>
@@ -211,7 +337,7 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/example-weight-bad-value"/>
+        <reference value="Observation/ex-temperature-10"/>
       </reference>
     </resource>
     <resource>
@@ -219,7 +345,7 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/example"/>
+        <reference value="Observation/ex-temperature-8"/>
       </reference>
     </resource>
     <resource>
@@ -227,50 +353,18 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/example-weight-ekg"/>
+        <reference value="Observation/ex-temperature-9"/>
       </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Observation/example-weight-full"/>
+        <reference value="StructureDefinition/VA.MHV.bodyTemperature"/>
       </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/example-weight-kg"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/example-weight-min"/>
-      </reference>
-      <name value="Example Observation - example-weight-min"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/example-weight-other"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/example"/>
-      </reference>
+      <name value="VA MHV Body Temperature Observation"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -284,11 +378,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/App-id-codes"/>
+        <reference value="StructureDefinition/VA.MHV.heartRate"/>
       </reference>
+      <name value="VA MHV HeartRate Observation"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -299,6 +395,36 @@
       </reference>
       <name value="PGD apps"/>
       <description value="App identifiers for use with PGD"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mhv-body-temperature-sites"/>
+      </reference>
+      <name value="The body temperature measurement sites that MHV supports"/>
+      <description value="These are the SNOMED body sites that MHV supports."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mhv-body-temperatures"/>
+      </reference>
+      <name value="The body temperature measurement types that MHV supports"/>
+      <description value="These are the UCUM types that MHV supports."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mhv-body-weights"/>
+      </reference>
+      <name value="The body weight measurement types that MHV supports"/>
+      <description value="These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone)."/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

@@ -115,13 +115,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Terminology: Code Systems</a>
+         <a href="#2">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#3">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#4">Other</a>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#5">Other</a>
       </li>
    </ul>
 </div>
@@ -138,16 +141,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-VA.MHV.bodyTemperature.html" title="StructureDefinition/VA.MHV.bodyTemperature">VA MHV Body Temperature Observation</a>
+               </td>
+               <td>
+<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-VA.MHV.bodyWeight.html" title="StructureDefinition/VA.MHV.bodyWeight">VA MHV BodyWeight Observation</a>
                </td>
                <td>
 <p>A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-VA.MHV.heartRate.html" title="StructureDefinition/VA.MHV.heartRate">VA MHV HeartRate Observation</a>
+               </td>
+               <td>
+<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-mhv-body-temperature-sites.html" title="ValueSet/mhv-body-temperature-sites">The body temperature measurement sites that MHV supports</a>
+               </td>
+               <td>
+<p>These are the SNOMED body sites that MHV supports.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-mhv-body-temperatures.html" title="ValueSet/mhv-body-temperatures">The body temperature measurement types that MHV supports</a>
+               </td>
+               <td>
+<p>These are the UCUM types that MHV supports.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-mhv-body-weights.html" title="ValueSet/mhv-body-weights">The body weight measurement types that MHV supports</a>
+               </td>
+               <td>
+<p>These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -156,14 +211,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-App-id-codes.html" title="CodeSystem/App-id-codes">CodeSystem/App-id-codes</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-OnclC.html" title="CodeSystem/OnclC">PGD apps</a>
@@ -175,7 +222,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -186,18 +233,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-weight.html" title="Observation/ex-MHV-weight">Example Observation - ex-MHV-weight</a>
+                  <a href="Observation-ex-MHV-heartRate-1.html" title="Observation/ex-MHV-heartRate-1">Example Observation - ex-MHV-heartRate-1</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-example-weight-min.html" title="Observation/example-weight-min">Example Observation - example-weight-min</a>
+                  <a href="Observation-ex-MHV-heartRate-2.html" title="Observation/ex-MHV-heartRate-2">Example Observation - ex-MHV-heartRate-2</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-heartRate-3.html" title="Observation/ex-MHV-heartRate-3">Example Observation - ex-MHV-heartRate-3</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-temperature-0.html" title="Observation/ex-MHV-temperature-0">Example Observation - ex-MHV-temperature-0</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-temperature-1.html" title="Observation/ex-MHV-temperature-1">Example Observation - ex-MHV-temperature-1</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-temperature-2.html" title="Observation/ex-MHV-temperature-2">Example Observation - ex-MHV-temperature-2</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-temperature-3.html" title="Observation/ex-MHV-temperature-3">Example Observation - ex-MHV-temperature-3</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-temperature-4.html" title="Observation/ex-MHV-temperature-4">Example Observation - ex-MHV-temperature-4</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-temperature-5.html" title="Observation/ex-MHV-temperature-5">Example Observation - ex-MHV-temperature-5</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-temperature-6.html" title="Observation/ex-MHV-temperature-6">Example Observation - ex-MHV-temperature-6</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-temperature-7.html" title="Observation/ex-MHV-temperature-7">Example Observation - ex-MHV-temperature-7</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-weight.html" title="Observation/ex-MHV-weight">Example Observation - ex-MHV-weight</a>
                </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -213,37 +310,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-example-weight-bad-value.html" title="Observation/example-weight-bad-value">Observation/example-weight-bad-value</a>
+                  <a href="Observation-ex-MHV-weight-core.html" title="Observation/ex-MHV-weight-core">Observation/ex-MHV-weight-core</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-example.html" title="Observation/example">Observation/example</a>
+                  <a href="Observation-ex-MHV-weight-stone.html" title="Observation/ex-MHV-weight-stone">Observation/ex-MHV-weight-stone</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-example-weight-ekg.html" title="Observation/example-weight-ekg">Observation/example-weight-ekg</a>
+                  <a href="Observation-ex-temperature-10.html" title="Observation/ex-temperature-10">Observation/ex-temperature-10</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-example-weight-full.html" title="Observation/example-weight-full">Observation/example-weight-full</a>
+                  <a href="Observation-ex-temperature-8.html" title="Observation/ex-temperature-8">Observation/ex-temperature-8</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-example-weight-kg.html" title="Observation/example-weight-kg">Observation/example-weight-kg</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-example-weight-other.html" title="Observation/example-weight-other">Observation/example-weight-other</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-example.html" title="Patient/example">Patient/example</a>
+                  <a href="Observation-ex-temperature-9.html" title="Observation/ex-temperature-9">Observation/ex-temperature-9</a>
                </td>
             </tr>
          </tbody>
@@ -270,8 +357,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="ee7a32c8-395d-43b5-b8df-f850a3dc3a0d">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 17, 2020 08:50-0600">2020-11-17</span>
+        <p><a name="22399552-cd6a-402e-ae15-2210f4c2e9b4">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 19, 2020 07:49-0600">2020-11-19</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

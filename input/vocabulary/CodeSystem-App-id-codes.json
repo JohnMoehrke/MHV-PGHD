@@ -1,9 +1,0 @@
-{
-  "resourceType": "CodeSystem",
-  "status": "active",
-  "content": "complete",
-  "name": "AppIdCodes",
-  "id": "App-id-codes",
-  "version": "0.1.0",
-  "url": "https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/App-id-codes"
-}

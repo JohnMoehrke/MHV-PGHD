@@ -1,9 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3e4e554d-2fd3-4960-bc42-e3b88689b9ee"/>
+  <id value="4fbcdaba-605e-4440-afa3-9996a988690f"/>
   <meta>
-    <lastUpdated value="2020-11-17T08:50:52.273-06:00"/>
+    <lastUpdated value="2020-11-19T07:49:22.559-06:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
+            <p>All codes from system 
+              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-422005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422005">422005</a>
+                </td>
+                <td>Inferior surface of tongue</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-362732006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=362732006">362732006</a>
+                </td>
+                <td>axilla</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1910005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1910005">1910005</a>
+                </td>
+                <td>ear</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-21082005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21082005">21082005</a>
+                </td>
+                <td>mouth</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-181261002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=181261002">181261002</a>
+                </td>
+                <td>rectum</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <status value="active"/>
+        <expansion>
+          <identifier value="urn:uuid:02d09b7a-5966-4ce7-aaf6-f1370561e7aa"/>
+          <timestamp value="2020-11-18T21:46:54.925Z"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422005"/>
+            <display value="Inferior surface of tongue"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="362732006"/>
+            <display value="axilla"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1910005"/>
+            <display value="ear"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="21082005"/>
+            <display value="mouth"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="181261002"/>
+            <display value="rectum"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on UCUM version 2.0.1</p>
+            <p>All codes from system 
+              <code>http://unitsofmeasure.org</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org--degF-"> </a>[degF]
+                </td>
+                <td>degree Fahrenheit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-Cel"> </a>Cel
+                </td>
+                <td>degree Celsius</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <status value="active"/>
+        <expansion>
+          <identifier value="urn:uuid:fb18b968-ef19-43c6-ac1b-e754b02709b0"/>
+          <timestamp value="2020-11-18T21:46:56.034Z"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="[degF]"/>
+            <display value="degree Fahrenheit"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="Cel"/>
+            <display value="degree Celsius"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on UCUM version 2.0.1</p>
+            <p>All codes from system 
+              <code>http://unitsofmeasure.org</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org--lb-av-"> </a>[lb_av]
+                </td>
+                <td>pound (US and British)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-kg"> </a>kg
+                </td>
+                <td>kilogram</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <status value="active"/>
+        <expansion>
+          <identifier value="urn:uuid:3b1198ae-6907-4268-b7f8-7b8328f44224"/>
+          <timestamp value="2020-11-18T19:16:06.223Z"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="[lb_av]"/>
+            <display value="pound (US and British)"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+            <display value="kilogram"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

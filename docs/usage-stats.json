@@ -6,15 +6,20 @@
   "profiles": {
     "Observation": [
       {
+        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature",
+        "title": "VA MHV Body Temperature Observation"
+      },
+      {
         "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight",
         "title": "VA MHV BodyWeight Observation"
+      },
+      {
+        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate",
+        "title": "VA MHV HeartRate Observation"
       }
     ]
   },
   "usage": {
-    "http://example.org/fhir/uv/myig/StructureDefinition/ext-myExtension": [
-      "Patient"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -29,6 +34,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"

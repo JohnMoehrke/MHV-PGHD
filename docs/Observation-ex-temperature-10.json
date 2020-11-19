@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "ex-temperature-10",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8310-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 37 Cel</p><p><b>note</b>: nice International temperature by urinary bladder</p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct 89837001}\">urinary bladder</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8310-5"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2004-12-25T23:50:50-05:00",
+  "valueQuantity": {
+    "value": 37,
+    "system": "http://unitsofmeasure.org",
+    "code": "Cel"
+  },
+  "note": [
+    {
+      "text": "nice International temperature by urinary bladder"
+    }
+  ],
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "89837001",
+        "display": "urinary bladder"
+      }
+    ]
+  }
+}

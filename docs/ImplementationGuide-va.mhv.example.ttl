@@ -302,13 +302,13 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-weight>;
-         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-weight" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-heartRate-1>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-heartRate-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-weight" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-heartRate-1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight";
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight>
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate>
        ]
      ], [
        fhir:index 2;
@@ -318,8 +318,13 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-bad-value>;
-         fhir:Reference.reference [ fhir:value "Observation/example-weight-bad-value" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-heartRate-2>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-heartRate-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-heartRate-2" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate>
        ]
      ], [
        fhir:index 3;
@@ -329,8 +334,13 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/example>;
-         fhir:Reference.reference [ fhir:value "Observation/example" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-heartRate-3>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-heartRate-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-heartRate-3" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate>
        ]
      ], [
        fhir:index 4;
@@ -340,8 +350,13 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-ekg>;
-         fhir:Reference.reference [ fhir:value "Observation/example-weight-ekg" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-temperature-0>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-temperature-0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-temperature-0" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
        fhir:index 5;
@@ -351,8 +366,13 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-full>;
-         fhir:Reference.reference [ fhir:value "Observation/example-weight-full" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-temperature-1>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-temperature-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-temperature-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
        fhir:index 6;
@@ -362,8 +382,13 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-kg>;
-         fhir:Reference.reference [ fhir:value "Observation/example-weight-kg" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-temperature-2>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-temperature-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-temperature-2" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
        fhir:index 7;
@@ -373,13 +398,13 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-min>;
-         fhir:Reference.reference [ fhir:value "Observation/example-weight-min" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-temperature-3>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-temperature-3" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - example-weight-min" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-temperature-3" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight";
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight>
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
        fhir:index 8;
@@ -389,22 +414,148 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/example-weight-other>;
-         fhir:Reference.reference [ fhir:value "Observation/example-weight-other" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-temperature-4>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-temperature-4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-temperature-4" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
        fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Patient" ]
+         fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-         fhir:Reference.reference [ fhir:value "Patient/example" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-temperature-5>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-temperature-5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-temperature-5" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
        fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-temperature-6>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-temperature-6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-temperature-6" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-temperature-7>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-temperature-7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-temperature-7" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-weight-core>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-weight-core" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-weight-stone>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-weight-stone" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-weight>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-weight" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-weight" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight>
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-temperature-10>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-temperature-10" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-temperature-8>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-temperature-8" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-temperature-9>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-temperature-9" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/VA.MHV.bodyTemperature" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV Body Temperature Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements." ]
+     ], [
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -417,18 +568,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV BodyWeight Observation" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements." ]
      ], [
-       fhir:index 11;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/App-id-codes>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/App-id-codes" ]
-       ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/VA.MHV.heartRate" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV HeartRate Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements." ]
      ], [
-       fhir:index 12;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -440,6 +593,45 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PGD apps" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "App identifiers for use with PGD" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mhv-body-temperature-sites" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "The body temperature measurement sites that MHV supports" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the SNOMED body sites that MHV supports." ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mhv-body-temperatures" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "The body temperature measurement types that MHV supports" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the UCUM types that MHV supports." ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mhv-body-weights" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "The body weight measurement types that MHV supports" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone)." ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

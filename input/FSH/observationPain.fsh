@@ -1,21 +1,29 @@
-Alias: SNO = http://snomed.info/sct
-Alias: UCUM = http://unitsofmeasure.org
-Alias: LOINC = http://loinc.org
-
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
 // note that in R4 there is valueInteger, which is the right solution here. But in DSTU2 that must be changed to valueQuantity
 Profile:        MHVpain
 Parent:         Observation
 Id:             VA.MHV.pain
 Title:          "VA MHV Pain Observation"
-Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements."
+Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.
+* must be marked with MHV app tag
+* must have vital-signs category
+* must have both LOINC#72514-3 and SNO#225908003 code
+* must have effectiveDateTime
+* must have integer between 0-10
+* must have status at final
+* must point at the patient
+* may have a note (comment)
+* once created will or might have an id, versionId, lastUpdated, text, and identifier
+* DSTU2 will need to change to valueQuantity vs valueInteger
+* DSTU2 use comment rather than note 
+"
 * ^version = "0.1.0"
 * ^date = "2020-11-19"
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * category 1..1
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category = #vital-signs
 // MHV records using two codes as there are mobile apps that only look for the snomed code
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"

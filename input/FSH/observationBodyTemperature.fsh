@@ -1,22 +1,29 @@
-Alias: SNO = http://snomed.info/sct
-Alias: UCUM = http://unitsofmeasure.org
-
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
 Profile:        MHVbodyTemperature
 Parent:         Observation
 Id:             VA.MHV.bodyTemperature
 Title:          "VA MHV Body Temperature Observation"
-Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements."
+Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements.
+* must be marked with MHV app tag
+* must have vital-signs category
+* must have LOINC#8310-5 code
+* must have effectiveDateTime
+* must have valueQuantity with units from the MHV body temperatures (F and C)
+* must have status at final
+* must point at the patient
+* may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)
+* may have a note (comment)
+* once created will or might have an id, versionId, lastUpdated, text, and identifier
+* DSTU2 use comment rather than note 
+"
 * ^version = "0.1.0"
 * ^date = "2020-11-18"
-
-
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * category 1..1
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = http://loinc.org#8310-5
+* category = #vital-signs
+* code = LOINC#8310-5
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit from MHVbodyTemperatures

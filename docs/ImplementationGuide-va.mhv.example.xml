@@ -540,7 +540,7 @@
         <reference value="StructureDefinition/VA.MHV.bodyTemperature"/>
       </reference>
       <name value="VA MHV Body Temperature Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements."/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#8310-5 code&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units from the MHV body temperatures (F and C)&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -550,7 +550,7 @@
         <reference value="StructureDefinition/VA.MHV.bodyWeight"/>
       </reference>
       <name value="VA MHV BodyWeight Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements."/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#29463-7 code&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units from the MHV body weights (lbs and kg)&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -560,7 +560,7 @@
         <reference value="StructureDefinition/VA.MHV.heartRate"/>
       </reference>
       <name value="VA MHV HeartRate Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements."/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#8867-4 code&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units only of beats per minute&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -570,7 +570,7 @@
         <reference value="StructureDefinition/VA.MHV.pain"/>
       </reference>
       <name value="VA MHV Pain Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements."/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have both LOINC#72514-3 and SNO#225908003 code&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have integer between 0-10&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 will need to change to valueQuantity vs valueInteger&#xD;&#xA;* DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

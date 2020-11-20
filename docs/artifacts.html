@@ -144,7 +144,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-VA.MHV.bodyTemperature.html" title="StructureDefinition/VA.MHV.bodyTemperature">VA MHV Body Temperature Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements.</p>
+<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements.</p>
+<ul>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have LOINC#8310-5 code</li>
+  <li>must have effectiveDateTime</li>
+  <li>must have valueQuantity with units from the MHV body temperatures (F and C)</li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+  <li>DSTU2 use comment rather than note</li>
+</ul>
 </td>
             </tr>
             <tr>
@@ -152,7 +165,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-VA.MHV.bodyWeight.html" title="StructureDefinition/VA.MHV.bodyWeight">VA MHV BodyWeight Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.</p>
+<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.</p>
+<ul>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have LOINC#29463-7 code</li>
+  <li>must have effectiveDateTime</li>
+  <li>must have valueQuantity with units from the MHV body weights (lbs and kg)</li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+  <li>DSTU2 use comment rather than note</li>
+</ul>
 </td>
             </tr>
             <tr>
@@ -160,7 +185,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-VA.MHV.heartRate.html" title="StructureDefinition/VA.MHV.heartRate">VA MHV HeartRate Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.</p>
+<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.</p>
+<ul>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have LOINC#8867-4 code</li>
+  <li>must have effectiveDateTime</li>
+  <li>must have valueQuantity with units only of beats per minute</li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+  <li>DSTU2 use comment rather than note</li>
+</ul>
 </td>
             </tr>
             <tr>
@@ -168,7 +205,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-VA.MHV.pain.html" title="StructureDefinition/VA.MHV.pain">VA MHV Pain Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.</p>
+<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.</p>
+<ul>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have both LOINC#72514-3 and SNO#225908003 code</li>
+  <li>must have effectiveDateTime</li>
+  <li>must have integer between 0-10</li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+  <li>DSTU2 will need to change to valueQuantity vs valueInteger</li>
+  <li>DSTU2 use comment rather than note</li>
+</ul>
 </td>
             </tr>
          </tbody>
@@ -455,8 +505,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="5a4fa2b2-a8a0-4c9a-b0ff-9a844408cf90">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2020 06:47-0600">2020-11-20</span>
+        <p><a name="4ece4ccc-987a-4064-96dc-70d75bcdc43b">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2020 08:58-0600">2020-11-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

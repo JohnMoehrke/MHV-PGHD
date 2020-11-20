@@ -1,9 +1,9 @@
 ﻿MHVtoPGHD_Example : Validation Results
 =========================================
 
-err = 13, warn = 36, info = 0
+err = 13, warn = 44, info = 0
 IG Publisher Version: 1.1.42
-Generated Fri Nov 20 06:48:29 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.2 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+Generated Fri Nov 20 08:59:59 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.2 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
 
  Build Errors : 255 / 36 / 0
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-OnclC : 0 / 0 / 1
@@ -42,10 +42,10 @@ Generated Fri Nov 20 06:48:29 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-10 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-8 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-9 : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.heartRate : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature : 0 / 2 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight : 0 / 2 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.heartRate : 0 / 2 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain : 0 / 2 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperature-sites : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperatures : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-weights : 0 / 0 / 1
@@ -290,36 +290,36 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.xml.html#/html/
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-definitions.html#/html/body/div/div/div/p/a at Line 954, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-examples.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-mappings.html#/html/body/div/div/div/p/a at Line 320, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.html#/html/body/div/div/div/p/a at Line 840, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 851, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.json.html#/html/body/div/div/div/p/a at Line 3888, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.ttl.html#/html/body/div/div/div/p/a at Line 3419, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.xml.html#/html/body/div/div/div/p/a at Line 3556, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.json.html#/html/body/div/div/div/p/a at Line 3886, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.ttl.html#/html/body/div/div/div/p/a at Line 3417, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.xml.html#/html/body/div/div/div/p/a at Line 3563, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-definitions.html#/html/body/div/div/div/p/a at Line 956, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-examples.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-mappings.html#/html/body/div/div/div/p/a at Line 316, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/div/p/a at Line 803, column 11: The link 'Observation-example-weight-min.html' for "Example MHV weight Observation" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/p/a at Line 887, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/table/tr/td/span/div/p/a at Line 813, column 11: The link 'Observation-example-weight-min.html' for "Example MHV weight Observation" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 897, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 3892, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 3420, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 3557, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 3890, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 3418, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 3563, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/p/a at Line 956, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-examples.html#/html/body/div/div/div/p/a at Line 261, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-mappings.html#/html/body/div/div/div/p/a at Line 316, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/p/a at Line 895, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 905, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/p/a at Line 3886, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/p/a at Line 3412, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/p/a at Line 3549, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/p/a at Line 3884, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/p/a at Line 3410, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/p/a at Line 3555, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-definitions.html#/html/body/div/div/div/p/a at Line 949, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-examples.html#/html/body/div/div/div/p/a at Line 315, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-mappings.html#/html/body/div/div/div/p/a at Line 314, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.html#/html/body/div/div/div/p/a at Line 869, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 880, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.json.html#/html/body/div/div/div/p/a at Line 3883, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.ttl.html#/html/body/div/div/div/p/a at Line 3411, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/p/a at Line 3558, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.json.html#/html/body/div/div/div/p/a at Line 3881, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.ttl.html#/html/body/div/div/div/p/a at Line 3409, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/p/a at Line 3565, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
@@ -335,7 +335,7 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.html#
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.json.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.ttl.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.xml.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 488, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 538, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 124, column 125: The link 'artifacts.html#structures-resource-profiles' for "Profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 126, column 28: The link 'artifacts.html#example-example-instances' for "Example Instances" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 128, column 28: The link 'artifacts.html#other' for "Other" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
@@ -441,12 +441,20 @@ INFORMATION: Observation/ex-temperature-8: Observation: Validate resource agains
 INFORMATION: Observation/ex-temperature-9: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature.json ==
 INFORMATION: StructureDefinition/VA.MHV.bodyTemperature: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/VA.MHV.bodyTemperature: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/VA.MHV.bodyTemperature: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight.json ==
 INFORMATION: StructureDefinition/VA.MHV.bodyWeight: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/VA.MHV.bodyWeight: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/VA.MHV.bodyWeight: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.heartRate.json ==
 INFORMATION: StructureDefinition/VA.MHV.heartRate: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/VA.MHV.heartRate: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/VA.MHV.heartRate: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain.json ==
 INFORMATION: StructureDefinition/VA.MHV.pain: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperature-sites.json ==
 INFORMATION: ValueSet/mhv-body-temperature-sites: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperatures.json ==

@@ -2,6 +2,9 @@ This is the notes for the VA.MHV.bodyWeight Profile
 
 ### Positive Tests
 
+all compliant examples can be found load all of the body weight examples that are [compliant to the MHV profile](StructureDefinition-VA.MHV.bodyWeight-examples.html) into PGHD, 
+* show them in MHV, they should show fine. 
+
 #### Simple MHV Weight
 Given [Example MHV weight Observation](Observation-ex-MHV-weight.html) is [loaded into PGHD](background.html#load-x-into-pghd)
 

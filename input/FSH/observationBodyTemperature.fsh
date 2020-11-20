@@ -73,7 +73,9 @@ Description: "These are the SNOMED body sites that MHV supports."
 * SNO#1910005 "Entire ear"
 * SNO#21082005 "Entire mouth region"
 * SNO#181261002 "Entire rectum"
+// groin is a historic body site in MHV, so it is allowed as a string
 // unknown "groin"
-//* SNO#39937001 "skin"
-//* SNO#362620003 "entire temporal region"
-//* SNO#89837001 "urinary bladder"
+// These are part of the valueset typically used for body temperature
+//* SNO#39937001 "Skin structure"
+//* SNO#362620003 "Entire temporal region"
+//* SNO#89837001 "Urinary bladder structure"

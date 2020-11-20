@@ -1,0 +1,1 @@
+The MHV Pain profile uses the R4 Observation.valueInteger to hold the pain value. This is the right thing to do in R4, but in DSTU2 this would need to be in Observation.valueQuantity with no units and only integers between 0-10.

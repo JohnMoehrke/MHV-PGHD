@@ -48,7 +48,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.2 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -98,7 +98,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.0). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.2). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -195,7 +195,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>&lt; 445584004 |Report by finality status|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>&lt; 363787002 |Observable entity| OR &lt; 386053000 |Evaluation procedure|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>&lt; 441742003 |Evaluation finding|</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueQuantity)</td><td>&lt; 441742003 |Evaluation finding|</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueInteger)</td><td>&lt; 441742003 |Evaluation finding|</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>MHVpain</b></td></tr>
@@ -211,11 +211,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>OBX-14, and/or OBX-19 after v2.4  (depends on who observation made)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x] (effectiveDateTime)</td><td>OBX-14, and/or OBX-19 after v2.4  (depends on who observation made)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>OBX.2, OBX.5, OBX.6</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueQuantity)</td><td>OBX.2, OBX.5, OBX.6</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>SN.2  / CQ - N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comparator</td><td>SN.1  / CQ.1</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>(see OBX.6 etc.) / CQ.2</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>(see OBX.6 etc.) / CQ.2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueInteger)</td><td>OBX.2, OBX.5, OBX.6</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
@@ -239,13 +235,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>effectiveTime</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x] (effectiveDateTime)</td><td>effectiveTime</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueQuantity)</td><td>value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comparator</td><td>IVL properties</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>CO.codeSystem, PQ.translation.codeSystem</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>PQ.code, MO.currency, PQ.translation.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueInteger)</td><td>value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>subjectOf.observationEvent[code="annotation"].value</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
@@ -264,7 +254,7 @@
  <tr><td>Observation</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>116680003 |Is a|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>363714003 |Interprets|</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueQuantity)</td><td>363714003 |Interprets|</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueInteger)</td><td>363714003 |Interprets|</td> </tr>
 </table>
 
 
@@ -316,8 +306,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="e29395f5-9a6f-4972-befa-eb207d5ec50b">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 19, 2020 14:16-0600">2020-11-19</span>
+        <p><a name="3594c0ff-8e44-4593-8320-05d1c8f48362">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2020 06:47-0600">2020-11-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

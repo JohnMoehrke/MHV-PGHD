@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.2"];
   fhir:StructureDefinition.name [ fhir:value "MHVheartRate"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV HeartRate Observation"];
   fhir:StructureDefinition.status [ fhir:value "active"];

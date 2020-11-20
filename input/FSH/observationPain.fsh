@@ -3,6 +3,7 @@ Alias: UCUM = http://unitsofmeasure.org
 Alias: LOINC = http://loinc.org
 
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
+// note that in R4 there is valueInteger, which is the right solution here. But in DSTU2 that must be changed to valueQuantity
 Profile:        MHVpain
 Parent:         Observation
 Id:             VA.MHV.pain
@@ -24,11 +25,9 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 * code.coding[loincCode] = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[snomedCode] = SNO#225908003 "Pain Score"
 * effectiveDateTime 1..1
-* value[x] only Quantity
-* valueQuantity.unit 0..0
-//* valueQuantity only integer
-* valueQuantity.value ^minValueInteger = 0
-* valueQuantity.value ^maxValueInteger = 10
+* value[x] only integer
+* valueInteger ^minValueInteger = 0
+* valueInteger ^maxValueInteger = 10
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)

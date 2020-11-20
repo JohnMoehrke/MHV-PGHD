@@ -1,11 +1,11 @@
 ﻿MHVtoPGHD_Example : Validation Results
 =========================================
 
-err = 12, warn = 36, info = 0
+err = 13, warn = 36, info = 0
 IG Publisher Version: 1.1.42
-Generated Thu Nov 19 14:17:22 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.0 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+Generated Fri Nov 20 06:48:29 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.2 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
 
- Build Errors : 254 / 36 / 0
+ Build Errors : 255 / 36 / 0
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-OnclC : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-example : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1 : 0 / 0 / 2
@@ -37,7 +37,7 @@ Generated Thu Nov 19 14:17:22 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-11 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-12 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-13 : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-14 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-14 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-15 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-10 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-8 : 0 / 0 / 1
@@ -50,7 +50,7 @@ Generated Thu Nov 19 14:17:22 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperatures : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-weights : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Patient-example : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Patient-example : 0 / 0 / 1
 </table>
 == n/a ==
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -92,6 +92,7 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-pain-12.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-pain-13.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-pain-13.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-pain-14.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-pain-14.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-pain-15.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-pain-15.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -128,64 +129,64 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-0.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-1.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-10.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.ttl.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.xml.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-14.xml.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-2.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-3.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-4.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-5.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-6.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-7.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-8.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-pain-9.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.json.html#/html/body/div/div/div/p/a at Line 230, column 28: The link '' for "" cannot be resolved
@@ -243,9 +244,9 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.ttl.h
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.json.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.json.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
@@ -253,19 +254,19 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.ttl.html
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-12.xml.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.ttl.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.xml.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-13.xml.html#/html/body/div/div/div/p/a at Line 220, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-14.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.json.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.json.html#/html/body/div/div/div/p/a at Line 238, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-15.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-10.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-10.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-10.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
@@ -289,7 +290,7 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.xml.html#/html/
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-definitions.html#/html/body/div/div/div/p/a at Line 954, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-examples.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-mappings.html#/html/body/div/div/div/p/a at Line 320, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.html#/html/body/div/div/div/p/a at Line 811, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.html#/html/body/div/div/div/p/a at Line 840, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.json.html#/html/body/div/div/div/p/a at Line 3888, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.ttl.html#/html/body/div/div/div/p/a at Line 3419, column 28: The link '' for "" cannot be resolved
@@ -297,8 +298,8 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.body
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-definitions.html#/html/body/div/div/div/p/a at Line 956, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-examples.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-mappings.html#/html/body/div/div/div/p/a at Line 316, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/div/p/a at Line 798, column 11: The link 'Observation-example-weight-min.html' for "Example MHV weight Observation" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/p/a at Line 882, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/div/p/a at Line 803, column 11: The link 'Observation-example-weight-min.html' for "Example MHV weight Observation" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/p/a at Line 887, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 3892, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 3420, column 28: The link '' for "" cannot be resolved
@@ -306,19 +307,19 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.body
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/p/a at Line 956, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-examples.html#/html/body/div/div/div/p/a at Line 261, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-mappings.html#/html/body/div/div/div/p/a at Line 316, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/p/a at Line 890, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/p/a at Line 895, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/p/a at Line 3886, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/p/a at Line 3412, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/p/a at Line 3549, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-definitions.html#/html/body/div/div/div/p/a at Line 1019, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-examples.html#/html/body/div/div/div/p/a at Line 321, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-mappings.html#/html/body/div/div/div/p/a at Line 324, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.html#/html/body/div/div/div/p/a at Line 863, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-definitions.html#/html/body/div/div/div/p/a at Line 949, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-examples.html#/html/body/div/div/div/p/a at Line 315, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-mappings.html#/html/body/div/div/div/p/a at Line 314, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.html#/html/body/div/div/div/p/a at Line 869, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.json.html#/html/body/div/div/div/p/a at Line 4215, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.ttl.html#/html/body/div/div/div/p/a at Line 3688, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/p/a at Line 3848, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.json.html#/html/body/div/div/div/p/a at Line 3883, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.ttl.html#/html/body/div/div/div/p/a at Line 3411, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/p/a at Line 3558, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
@@ -430,7 +431,6 @@ INFORMATION: Observation/ex-pain-12: Observation: Validate resource against prof
 INFORMATION: Observation/ex-pain-13: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-14.json ==
 INFORMATION: Observation/ex-pain-14: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Observation/ex-pain-14: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-15.json ==
 INFORMATION: Observation/ex-pain-15: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-10.json ==
@@ -455,5 +455,5 @@ INFORMATION: ValueSet/mhv-body-temperatures: ValueSet: Validate resource against
 INFORMATION: ValueSet/mhv-body-weights: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example.xml ==
 INFORMATION: ImplementationGuide/va.mhv.example: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\examples\Patient-example.json ==
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Patient-example.json ==
 INFORMATION: Patient/example: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient

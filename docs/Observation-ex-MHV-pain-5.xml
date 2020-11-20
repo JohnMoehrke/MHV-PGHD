@@ -35,9 +35,7 @@
     <reference value="Patient/example"/>
   </subject>
   <effectiveDateTime value="2004-12-25T23:50:50-05:00"/>
-  <valueQuantity>
-    <value value="5"/>
-  </valueQuantity>
+  <valueInteger value="5"/>
   <note>
     <text value="comme ci comme &#xE7;a"/>
   </note>

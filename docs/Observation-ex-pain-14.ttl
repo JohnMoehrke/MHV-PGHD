@@ -11,11 +11,6 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ex-pain-14"];
   fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain";
-       fhir:index 0;
-       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
-     ];
      fhir:Meta.tag [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "https://wiki.mobilehealth.va.gov/x/Onc1C" ];

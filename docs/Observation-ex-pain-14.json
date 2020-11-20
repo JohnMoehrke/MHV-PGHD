@@ -2,9 +2,6 @@
   "resourceType": "Observation",
   "id": "ex-pain-14",
   "meta": {
-    "profile": [
-      "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
-    ],
     "tag": [
       {
         "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",

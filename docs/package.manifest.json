@@ -1,6 +1,6 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.2",
   "fhirVersion": "[4.0.1]",
-  "date": "20201119141539",
+  "date": "20201120064640",
   "name": "va.mhv.example"
 }

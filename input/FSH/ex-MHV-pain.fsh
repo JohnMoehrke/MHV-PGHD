@@ -14,7 +14,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 0 
+* valueInteger = 0 
 
 Instance:   ex-MHV-pain-1
 InstanceOf: VA.MHV.pain
@@ -28,7 +28,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 1 
+* valueInteger = 1 
 * note.text = "good vibes"
 
 Instance:   ex-MHV-pain-2
@@ -43,7 +43,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 2 
+* valueInteger = 2 
 
 Instance:   ex-MHV-pain-3
 InstanceOf: VA.MHV.pain
@@ -57,7 +57,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 3 
+* valueInteger = 3 
 
 Instance:   ex-MHV-pain-4
 InstanceOf: VA.MHV.pain
@@ -71,7 +71,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 4 
+* valueInteger = 4 
 
 Instance:   ex-MHV-pain-5
 InstanceOf: VA.MHV.pain
@@ -85,7 +85,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 5 
+* valueInteger = 5 
 * note.text = "comme ci comme ça"
 
 Instance:   ex-MHV-pain-6
@@ -100,7 +100,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 6 
+* valueInteger = 6 
 
 Instance:   ex-MHV-pain-7
 InstanceOf: VA.MHV.pain
@@ -114,7 +114,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 7 
+* valueInteger = 7 
 * note.text = "not good"
 
 Instance:   ex-MHV-pain-8
@@ -129,7 +129,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 8 
+* valueInteger = 8 
 * note.text = "please help"
 
 Instance:   ex-MHV-pain-9
@@ -144,7 +144,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 9 
+* valueInteger = 9 
 * note.text = "I can't take it"
 
 Instance:   ex-MHV-pain-10
@@ -159,7 +159,7 @@ Description:      "holding typical values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 10 
+* valueInteger = 10 
 * note.text = "Oh, scream in pain"
 
 // This should NOT validate, but it seems allowed
@@ -175,7 +175,7 @@ Description:      "holding invalid values"
 * code.coding[1] = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 11
+* valueInteger = 11
 
 Instance:   ex-pain-12
 InstanceOf: Observation
@@ -204,7 +204,7 @@ Description:      "holding typical values"
 * code = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 10 
+* valueInteger = 10 
 * note.text = "Oh, scream in pain"
 
 Instance:   ex-MHV-pain-14
@@ -218,12 +218,12 @@ Description:      "holding typical values"
 * code = SNO#225908003 "Pain Score"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 10 
+* valueInteger = 10 
 * note.text = "Oh, scream in pain"
 
-// The following SHOULD NOT be valid, but the profile does not forbid this yet
+
 Instance:   ex-pain-14
-InstanceOf: VA.MHV.pain
+InstanceOf: Observation
 Title: "Example of a non MHV pain R4 observation of 3.14159 (it is between 0-10, but is not an integer)"
 Description:      "holding invalid values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
@@ -250,7 +250,7 @@ Description:      "holding typical values"
 * code.coding[2] = http://loinc.org#8310-5
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 10 
+* valueInteger = 10 
 * note.text = "Oh, scream in pain"
 
 

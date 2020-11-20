@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-  <version value="0.2.0"/>
+  <version value="0.2.2"/>
   <name value="MHVtoPGHD_Example"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-10-28"/>
+  <date value="2020-11-20"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>
@@ -499,8 +499,6 @@
       <reference>
         <reference value="Observation/ex-pain-14"/>
       </reference>
-      <name value="Example Observation - ex-pain-14"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -55,7 +55,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate"/>
-  <version value="0.2.0"/>
+  <version value="0.2.2"/>
   <name value="MHVheartRate"/>
   <title value="VA MHV HeartRate Observation"/>
   <status value="active"/>

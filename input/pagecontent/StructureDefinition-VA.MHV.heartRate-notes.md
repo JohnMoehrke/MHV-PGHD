@@ -2,6 +2,9 @@ This is the notes for the VA.MHV.heartRate Profile
 
 ### Positive Tests
 
+all compliant examples can be found load all of the heart rate examples that are [compliant to the MHV profile](StructureDefinition-VA.MHV.heartRate-examples.html) into PGHD, 
+* show them in MHV, they should show fine. 
+
 #### Simple MHV HeartRate 1
 Given [Example MHV Heart Rate 1 Observation](Observation-ex-MHV-heartRate-1.html) is [loaded into PGHD](background.html#load-x-into-pghd)
 

@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MHVtoPGHD_Example</h2><p>The official URL for this implementation guide is: </p><pre>https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example</pre><div><p>Testing Plan for VA MyHealtheVet use of PGHD.</p>\n</div></div>"
   },
   "url": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "name": "MHVtoPGHD_Example",
   "status": "draft",
   "experimental": false,
-  "date": "2020-10-28",
+  "date": "2020-11-20",
   "contact": [
     {
       "name": "John Moehrke"
@@ -708,9 +708,7 @@
         ],
         "reference": {
           "reference": "Observation/ex-pain-14"
-        },
-        "name": "Example Observation - ex-pain-14",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
+        }
       },
       {
         "extension": [

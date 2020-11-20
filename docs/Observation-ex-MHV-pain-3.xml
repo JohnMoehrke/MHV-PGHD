@@ -35,7 +35,5 @@
     <reference value="Patient/example"/>
   </subject>
   <effectiveDateTime value="2004-12-25T23:50:50-05:00"/>
-  <valueQuantity>
-    <value value="3"/>
-  </valueQuantity>
+  <valueInteger value="3"/>
 </Observation>

@@ -55,9 +55,7 @@
      fhir:Reference.reference [ fhir:value "Patient/example" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2004-12-25T23:50:50-05:00"^^xsd:dateTime];
-  fhir:Observation.valueQuantity [
-     fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ]
-  ];
+  fhir:Observation.valueInteger [ fhir:value "5"^^xsd:integer];
   fhir:Observation.note [
      fhir:index 0;
      fhir:Annotation.text [ fhir:value "comme ci comme ça" ]

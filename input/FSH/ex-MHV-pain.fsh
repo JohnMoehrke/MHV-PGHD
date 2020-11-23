@@ -1,7 +1,3 @@
-Alias: SNO = http://snomed.info/sct
-Alias: UCUM = http://unitsofmeasure.org
-Alias: LOINC = http://loinc.org
-
 Instance:   ex-MHV-pain-0
 InstanceOf: VA.MHV.pain
 Title: "Example of an MHV pain R4 observation of zero, no note"
@@ -190,7 +186,7 @@ Description:      "holding invalid values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
-* bodySite = http://snomed.info/sct#89837001 "urinary bladder"
+* bodySite = SNO#89837001 "urinary bladder"
 * note.text = "nice International temperature by urinary bladder"
 
 Instance:   ex-pain-13
@@ -247,7 +243,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SNO#225908003 "Pain Score"
-* code.coding[2] = http://loinc.org#8310-5
+* code.coding[2] = LOINC#8310-5
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 10 

@@ -23,7 +23,7 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * category 1..1
-* category = #vital-signs
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 // MHV records using two codes as there are mobile apps that only look for the snomed code
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"

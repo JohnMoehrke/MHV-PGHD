@@ -1,7 +1,19 @@
 {
   "resourceType" : "Patient",
   "id" : "example",
-
+  "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "ICN"
+                }
+              ]
+            },
+            "system": "urn:uuid:2.16.840.1.113883.4.349",
+            "value": "<MVI ICN VALUE WITH CHECKSUM>"
+          }
+  ],
   "name" : [
     {
       "use" : "usual",

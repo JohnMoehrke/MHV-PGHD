@@ -27,7 +27,7 @@ Description:    "A profile on the MedicationStatement that declares how MHV will
 * effective[x] only Period
 * effectivePeriod 1..1
 * dateAsserted 1..1
-* status = #final
+* status = #active
 * subject 1..1
 * subject only Reference(Patient)
 * note 0..1

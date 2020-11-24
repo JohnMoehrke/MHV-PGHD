@@ -4,7 +4,7 @@ Title: "Example of an MHV medication R4, minimal"
 Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
-* status = #final
+* status = #active
 * category = http://terminology.hl7.org/CodeSystem/medication-statement-category#patientspecified
 * subject = Reference(Patient/example)
 * effectivePeriod.start = 2004-12-25 // started taking

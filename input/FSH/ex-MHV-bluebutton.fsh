@@ -1,5 +1,5 @@
-Instance:   ex-MHV-BlueButton-0
-InstanceOf: MHVbluebutton
+Instance:   ex-MHV-Bluebutton-0
+InstanceOf: Bundle
 Title: "Example of an MHV BlueButton Document Bundle"
 Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST

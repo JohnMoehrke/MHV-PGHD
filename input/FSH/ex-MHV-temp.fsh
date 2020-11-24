@@ -23,7 +23,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
-* bodySite = SNO#21082005 "Entire mouth region"
+* bodySite = SCT#21082005 "Entire mouth region"
 * note.text = "nice American temperature by mouth"
 
 Instance:   ex-MHV-temperature-2
@@ -38,7 +38,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
-* bodySite = SNO#362732006 "Entire axillary region"
+* bodySite = SCT#362732006 "Entire axillary region"
 * note.text = "nice American temperature by underarm"
 
 Instance:   ex-MHV-temperature-3
@@ -53,7 +53,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
-* bodySite = SNO#422005 "Inferior surface of tongue"
+* bodySite = SCT#422005 "Inferior surface of tongue"
 * note.text = "nice American temperature by tongue"
 
 Instance:   ex-MHV-temperature-4
@@ -68,7 +68,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
-* bodySite = SNO#1910005 "Entire ear"
+* bodySite = SCT#1910005 "Entire ear"
 * note.text = "nice American temperature by ear"
 
 Instance:   ex-MHV-temperature-5
@@ -83,7 +83,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
-* bodySite = SNO#181261002 "Entire rectum"
+* bodySite = SCT#181261002 "Entire rectum"
 * note.text = "nice American temperature by rectum"
 
 Instance:   ex-MHV-temperature-6
@@ -98,7 +98,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
-* bodySite = SNO#422005 "Inferior surface of tongue"
+* bodySite = SCT#422005 "Inferior surface of tongue"
 * note.text = "nice International temperature by tongue"
 
 Instance:   ex-MHV-temperature-7
@@ -128,7 +128,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
-* bodySite = SNO#39937001 "skin"
+* bodySite = SCT#39937001 "skin"
 * note.text = "nice International temperature by skin"
 
 Instance:   ex-temperature-9
@@ -143,7 +143,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel'
-* bodySite = SNO#362620003 "entire temporal region"
+* bodySite = SCT#362620003 "entire temporal region"
 * note.text = "nice International temperature by forehead"
 
 Instance:   ex-temperature-10
@@ -158,7 +158,7 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
-* bodySite = SNO#89837001 "urinary bladder"
+* bodySite = SCT#89837001 "urinary bladder"
 * note.text = "nice International temperature by urinary bladder"
 
 

@@ -3,8 +3,17 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="example"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;</p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>
   </text>
+  <identifier>
+    <type>
+      <coding>
+        <code value="ICN"/>
+      </coding>
+    </type>
+    <system value="urn:uuid:2.16.840.1.113883.4.349"/>
+    <value value="&lt;MVI ICN VALUE WITH CHECKSUM&gt;"/>
+  </identifier>
   <name>
     <use value="usual"/>
     <family value="Smith"/>

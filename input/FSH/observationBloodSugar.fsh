@@ -43,7 +43,7 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 * component ^slicing.rules = #closed
 * component ^slicing.description = "Eating Routine is recorded as a string"
 * component contains bodyContext 1..1
-* component[bodyContext].code = SNO#162549003 "Eating routine (observable entity)"
+* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
 * component[bodyContext].value[x] only string
 // these should be codes, but are not codes today in MHV
 //* component[bodyContext].valueCodeableConcept from MHVbloodSugarContext
@@ -89,15 +89,15 @@ Id: mhv-blood-sugar-methods-sites
 Title: "The methods of measurement for blood sugar that MHV supports"
 Description: "These are the SNOMED body sites that MHV supports."
 // this is not the snomed code for clinical lab test
-* SNO#15220000 "Laboratory Test"
-* SNO#350810002 "Lancet"
-* SNO#263902000 "Transcutaneous method"
-* SNO#261373009 "Implant technique"
+* SCT#15220000 "Laboratory Test"
+* SCT#350810002 "Lancet"
+* SCT#263902000 "Transcutaneous method"
+* SCT#261373009 "Implant technique"
 // other choices not yet supported by MHV
-//* SNO#271061004 "Random blood glucose measurement (procedure)"
-//* SNO#308115004 "Self-monitoring of blood and urine glucose (procedure)"
-//* SNO#308113006 "Self-monitoring of blood glucose (procedure)"
-//* SNO#271064007 "Supper time blood sugar measurement (procedure)"
+//* SCT#271061004 "Random blood glucose measurement (procedure)"
+//* SCT#308115004 "Self-monitoring of blood and urine glucose (procedure)"
+//* SCT#308113006 "Self-monitoring of blood glucose (procedure)"
+//* SCT#271064007 "Supper time blood sugar measurement (procedure)"
 
 
 // these are not codes in MHV today, just using string

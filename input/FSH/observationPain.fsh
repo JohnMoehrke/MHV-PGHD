@@ -7,7 +7,7 @@ Title:          "VA MHV Pain Observation"
 Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.
 * must be marked with MHV app tag
 * must have vital-signs category
-* must have both LOINC#72514-3 and SNO#225908003 code
+* must have both LOINC#72514-3 and SCT#225908003 code
 * must have effectiveDateTime
 * must have integer between 0-10
 * must have status at final
@@ -31,7 +31,7 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 * code.coding 2..2
 * code.coding contains loincCode 1..1 and snomedCode 1..1
 * code.coding[loincCode] = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-* code.coding[snomedCode] = SNO#225908003 "Pain Score"
+* code.coding[snomedCode] = SCT#225908003 "Pain Score"
 * effectiveDateTime 1..1
 * value[x] only integer
 * valueInteger ^minValueInteger = 0

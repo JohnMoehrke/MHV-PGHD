@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>[degF]</td><td>degree Fahrenheit</td></tr><tr><td>Cel</td><td>degree Celsius</td></tr></table></li></ul></div>"
   },
   "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "name": "MHVbodyTemperatures",
   "title": "The body temperature measurement types that MHV supports",
   "status": "active",
-  "date": "2020-11-20T08:58:31-06:00",
+  "date": "2020-11-24T10:27:09-06:00",
   "contact": [
     {
       "name": "John Moehrke"

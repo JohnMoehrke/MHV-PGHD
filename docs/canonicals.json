@@ -3,63 +3,105 @@
     "id": "va.mhv.example",
     "type": "ImplementationGuide",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "name": "MHVtoPGHD_Example"
+  },
+  {
+    "id": "VA.MHV.bloodPressure",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure",
+    "version": "0.2.3",
+    "name": "MHVbloodPressure"
+  },
+  {
+    "id": "VA.MHV.bloodSugar",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar",
+    "version": "0.2.3",
+    "name": "MHVbloodSugar"
   },
   {
     "id": "VA.MHV.bodyTemperature",
     "type": "StructureDefinition",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "name": "MHVbodyTemperature"
   },
   {
     "id": "VA.MHV.bodyWeight",
     "type": "StructureDefinition",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "name": "MHVbodyWeight"
   },
   {
     "id": "VA.MHV.heartRate",
     "type": "StructureDefinition",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "name": "MHVheartRate"
+  },
+  {
+    "id": "VA.MHV.medication",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication",
+    "version": "0.2.3",
+    "name": "MHVmedication"
   },
   {
     "id": "VA.MHV.pain",
     "type": "StructureDefinition",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "name": "MHVpain"
+  },
+  {
+    "id": "mhv-blood-pressure-positions",
+    "type": "ValueSet",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions",
+    "version": "0.2.3",
+    "name": "MHVbloodPressurePositions"
+  },
+  {
+    "id": "mhv-blood-sugar-methods-sites",
+    "type": "ValueSet",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites",
+    "version": "0.2.3",
+    "name": "MHVbloodSugarMethods"
   },
   {
     "id": "mhv-body-temperature-sites",
     "type": "ValueSet",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "name": "MHVbodyTemperatureSites"
   },
   {
     "id": "mhv-body-temperatures",
     "type": "ValueSet",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "name": "MHVbodyTemperatures"
   },
   {
     "id": "mhv-body-weights",
     "type": "ValueSet",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "name": "MHVbodyWeights"
+  },
+  {
+    "id": "mhv-medication-routes",
+    "type": "ValueSet",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
+    "version": "0.2.3",
+    "name": "MHVmedicationRoutes"
   },
   {
     "id": "OnclC",
     "type": "CodeSystem",
     "url": "https://wiki.mobilehealth.va.gov/x/Onc1C",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "name": "AppIdCodes"
   }
 ]

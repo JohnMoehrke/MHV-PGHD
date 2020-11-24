@@ -1,13 +1,24 @@
 ﻿MHVtoPGHD_Example : Validation Results
 =========================================
 
-err = 13, warn = 44, info = 0
+err = 45, warn = 66, info = 2
 IG Publisher Version: 1.1.42
-Generated Fri Nov 20 08:59:59 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.2 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+Generated Tue Nov 24 10:29:16 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.3 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
 
- Build Errors : 255 / 36 / 0
+ Build Errors : 445 / 63 / 0
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-OnclC : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-example : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\MedicationStatement-ex-MHV-medication-0 : 1 / 0 / 4
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-0 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-1 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-2 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-3 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-4 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-5 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-6 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-7 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-8 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-2 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-3 : 0 / 0 / 2
@@ -34,6 +45,13 @@ Generated Fri Nov 20 08:59:59 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-core : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-stone : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-100 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-101 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-102 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-103 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-104 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-105 : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-106 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-11 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-12 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-13 : 0 / 0 / 1
@@ -42,21 +60,78 @@ Generated Fri Nov 20 08:59:59 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-10 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-8 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-9 : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature : 0 / 2 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight : 0 / 2 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.heartRate : 0 / 2 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain : 0 / 2 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodPressure : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodSugar : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.heartRate : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.medication : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-pressure-positions : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-sugar-methods-sites : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperature-sites : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperatures : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-weights : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-medication-routes : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Patient-example : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MHV-BloodPressure : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MK-BloodSugar : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Observation-blood-glucose : 2 / 1 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Patient-example : 0 / 1 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodSugar : 2 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodpressure : 2 / 0 / 3
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bodyTemp : 1 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-heartRate : 1 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-medication-tylenol : 7 / 1 / 3
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-weight : 1 / 0 / 2
 </table>
 == n/a ==
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/blood-pressure.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/blood-pressure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/f001.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/f001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/body-temperature.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/body-temperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/heart-rate.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/heart-rate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/example001.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/example001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/blood-glucose.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/blood-glucose.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/ex-MHV-medication-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-bloodSugar-100.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-bloodSugar-100.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-bloodSugar-101.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-bloodSugar-101.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-bloodSugar-102.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-bloodSugar-102.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-bloodSugar-103.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-bloodSugar-103.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-bloodSugar-104.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-bloodSugar-104.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-bloodSugar-105.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-bloodSugar-105.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-bloodSugar-106.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-bloodSugar-106.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodPressure-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodSugar-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodSugar-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodSugar-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodSugar-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodSugar-4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodSugar-5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodSugar-6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodSugar-7.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-bloodSugar-8.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-heartRate-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-heartRate-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-MHV-heartRate-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -112,6 +187,92 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.html#/html/bo
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.json.html#/html/body/div/div/div/p/a at Line 199, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.ttl.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.xml.html#/html/body/div/div/div/p/a at Line 199, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 154, column 362: The link '#in-Pharmacy' for "#in-Pharmacy" cannot be resolved (valid targets: [ig-status, segment-header, publish-box, root, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb, in-Dispense])
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.json.html#/html/body/div/div/div/p/a at Line 307, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.ttl.html#/html/body/div/div/div/p/a at Line 297, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.xml.html#/html/body/div/div/div/p/a at Line 283, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.html#/html/body/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.json.html#/html/body/div/div/div/p/a at Line 381, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.ttl.html#/html/body/div/div/div/p/a at Line 350, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.xml.html#/html/body/div/div/div/p/a at Line 355, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.json.html#/html/body/div/div/div/p/a at Line 305, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.ttl.html#/html/body/div/div/div/p/a at Line 302, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.xml.html#/html/body/div/div/div/p/a at Line 284, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.xml.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.json.html#/html/body/div/div/div/p/a at Line 258, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.xml.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-pressure.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-pressure.html#/html/body/div/div/div/p/a at Line 192, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-pressure.json.html#/html/body/div/div/div/p/a at Line 332, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-pressure.ttl.html#/html/body/div/div/div/p/a at Line 321, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-pressure.xml.html#/html/body/div/div/div/p/a at Line 344, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-body-temperature.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-body-temperature.html#/html/body/div/div/div/p/a at Line 184, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-body-temperature.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-body-temperature.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-body-temperature.xml.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodPressure-0.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodPressure-0.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodPressure-0.json.html#/html/body/div/div/div/p/a at Line 271, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodPressure-0.ttl.html#/html/body/div/div/div/p/a at Line 273, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodPressure-0.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-0.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-0.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-0.json.html#/html/body/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-0.ttl.html#/html/body/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-0.xml.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-1.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-1.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-1.json.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-1.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-1.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-2.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-2.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-2.json.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-2.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-2.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-3.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-3.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-3.json.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-3.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-3.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-4.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-4.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-4.json.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-4.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-4.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-5.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-5.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-5.json.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-5.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-5.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-6.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-6.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-6.json.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-6.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-6.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-7.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-7.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-7.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-7.ttl.html#/html/body/div/div/div/p/a at Line 267, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-7.xml.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-8.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-8.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-8.json.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-8.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugar-8.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
@@ -242,6 +403,41 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.html#
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-weight.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-100.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-100.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-100.json.html#/html/body/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-100.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-100.xml.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-101.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-101.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-101.json.html#/html/body/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-101.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-101.xml.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-102.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-102.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-102.json.html#/html/body/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-102.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-102.xml.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-103.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-103.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-103.json.html#/html/body/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-103.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-103.xml.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-104.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-104.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-104.json.html#/html/body/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-104.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-104.xml.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-105.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-105.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-105.json.html#/html/body/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-105.ttl.html#/html/body/div/div/div/p/a at Line 260, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-105.xml.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-106.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-106.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-106.json.html#/html/body/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-106.ttl.html#/html/body/div/div/div/p/a at Line 260, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-bloodSugar-106.xml.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.html#/html/body/div/div/div/p/a at Line 181, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-pain-11.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
@@ -282,44 +478,93 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.ht
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.ttl.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-temperature-9.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.html#/html/body/div/div/div/p/a at Line 187, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.json.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-example.xml.html#/html/body/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-f001.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-f001.html#/html/body/div/div/div/p/a at Line 185, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-f001.json.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-f001.ttl.html#/html/body/div/div/div/p/a at Line 260, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-f001.xml.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-heart-rate.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-heart-rate.html#/html/body/div/div/div/p/a at Line 184, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-heart-rate.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-heart-rate.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-heart-rate.xml.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.html#/html/body/div/div/div/p/a at Line 183, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.json.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.ttl.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.xml.html#/html/body/div/div/div/p/a at Line 216, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.xml.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-definitions.html#/html/body/div/div/div/p/a at Line 1804, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-examples.html#/html/body/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-mappings.html#/html/body/div/div/div/p/a at Line 534, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.html#/html/body/div/div/div/p/a at Line 1619, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.json.html#/html/body/div/div/div/p/a at Line 7805, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.ttl.html#/html/body/div/div/div/p/a at Line 6705, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.xml.html#/html/body/div/div/div/p/a at Line 7149, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar-definitions.html#/html/body/div/div/div/p/a at Line 1128, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar-examples.html#/html/body/div/div/div/p/a at Line 297, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar-mappings.html#/html/body/div/div/div/p/a at Line 378, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar.html#/html/body/div/div/div/p/a at Line 1026, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar.profile.json.html#/html/body/div/div/div/p/a at Line 4709, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar.profile.ttl.html#/html/body/div/div/div/p/a at Line 4107, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar.profile.xml.html#/html/body/div/div/div/p/a at Line 4309, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-definitions.html#/html/body/div/div/div/p/a at Line 954, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-examples.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature-mappings.html#/html/body/div/div/div/p/a at Line 320, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 851, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.html#/html/body/div/div/div/p/a at Line 853, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.json.html#/html/body/div/div/div/p/a at Line 3886, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.ttl.html#/html/body/div/div/div/p/a at Line 3417, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.xml.html#/html/body/div/div/div/p/a at Line 3563, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.json.html#/html/body/div/div/div/p/a at Line 3888, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.ttl.html#/html/body/div/div/div/p/a at Line 3419, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyTemperature.profile.xml.html#/html/body/div/div/div/p/a at Line 3568, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-definitions.html#/html/body/div/div/div/p/a at Line 956, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-examples.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight-mappings.html#/html/body/div/div/div/p/a at Line 316, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/table/tr/td/span/div/p/a at Line 813, column 11: The link 'Observation-example-weight-min.html' for "Example MHV weight Observation" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 897, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/div/div/div/p/a at Line 815, column 11: The link 'Observation-example-weight-min.html' for "Example MHV weight Observation" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.html#/html/body/div/div/div/p/a at Line 899, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 3890, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 3418, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 3563, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 3892, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 3420, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 3568, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/p/a at Line 956, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-examples.html#/html/body/div/div/div/p/a at Line 261, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-mappings.html#/html/body/div/div/div/p/a at Line 316, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 905, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/p/a at Line 907, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/p/a at Line 3884, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/p/a at Line 3410, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/p/a at Line 3555, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/p/a at Line 3886, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/p/a at Line 3412, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/p/a at Line 3560, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-definitions.html#/html/body/div/div/div/p/a at Line 809, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-examples.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-mappings.html#/html/body/div/div/div/p/a at Line 327, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.html#/html/body/div/div/div/p/a at Line 870, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.profile.json.html#/html/body/div/div/div/p/a at Line 2979, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.profile.ttl.html#/html/body/div/div/div/p/a at Line 2630, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.profile.xml.html#/html/body/div/div/div/p/a at Line 2714, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-definitions.html#/html/body/div/div/div/p/a at Line 949, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-examples.html#/html/body/div/div/div/p/a at Line 315, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain-mappings.html#/html/body/div/div/div/p/a at Line 314, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 880, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.html#/html/body/div/div/div/p/a at Line 882, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.json.html#/html/body/div/div/div/p/a at Line 3881, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.ttl.html#/html/body/div/div/div/p/a at Line 3409, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/p/a at Line 3565, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.json.html#/html/body/div/div/div/p/a at Line 3883, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.ttl.html#/html/body/div/div/div/p/a at Line 3411, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/p/a at Line 3570, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-pressure-positions.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-pressure-positions.html#/html/body/div/div/div/p/a at Line 241, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-pressure-positions.json.html#/html/body/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-pressure-positions.ttl.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-pressure-positions.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-sugar-methods-sites.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-sugar-methods-sites.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-sugar-methods-sites.json.html#/html/body/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-sugar-methods-sites.ttl.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-sugar-methods-sites.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-temperature-sites.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
@@ -335,7 +580,12 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.html#
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.json.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.ttl.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-body-weights.xml.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 538, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.change.history.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.ttl.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.xml.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 795, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 124, column 125: The link 'artifacts.html#structures-resource-profiles' for "Profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 126, column 28: The link 'artifacts.html#example-example-instances' for "Example Instances" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/p/a at Line 128, column 28: The link 'artifacts.html#other' for "Other" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
@@ -348,6 +598,42 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\toc.html#/html/body/div/div/div
 INFORMATION: CodeSystem/OnclC: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-example.json ==
 INFORMATION: Encounter/example: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\MedicationStatement-ex-MHV-medication-0.json ==
+INFORMATION: MedicationStatement/ex-MHV-medication-0: MedicationStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationStatement
+INFORMATION: MedicationStatement/ex-MHV-medication-0: MedicationStatement.contained[0].ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: MedicationStatement/ex-MHV-medication-0: MedicationStatement.contained[1].ofType(MedicationDispense): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationDispense
+ERROR: MedicationStatement/ex-MHV-medication-0: MedicationStatement.status: The value provided ('final') is not in the value set http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1 (http://hl7.org/fhir/ValueSet/medication-statement-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/CodeSystem/medication-statement-status#final in http://hl7.org/fhir/CodeSystem/medication-statement-status)
+INFORMATION: MedicationStatement/ex-MHV-medication-0: MedicationStatement: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0.json ==
+INFORMATION: Observation/ex-MHV-bloodPressure-0: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodPressure-0: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-0.json ==
+INFORMATION: Observation/ex-MHV-bloodSugar-0: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodSugar-0: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-1.json ==
+INFORMATION: Observation/ex-MHV-bloodSugar-1: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodSugar-1: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-2.json ==
+INFORMATION: Observation/ex-MHV-bloodSugar-2: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodSugar-2: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-3.json ==
+INFORMATION: Observation/ex-MHV-bloodSugar-3: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodSugar-3: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-4.json ==
+INFORMATION: Observation/ex-MHV-bloodSugar-4: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodSugar-4: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-5.json ==
+INFORMATION: Observation/ex-MHV-bloodSugar-5: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodSugar-5: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-6.json ==
+INFORMATION: Observation/ex-MHV-bloodSugar-6: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodSugar-6: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-7.json ==
+INFORMATION: Observation/ex-MHV-bloodSugar-7: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodSugar-7: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-8.json ==
+INFORMATION: Observation/ex-MHV-bloodSugar-8: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ex-MHV-bloodSugar-8: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1.json ==
 INFORMATION: Observation/ex-MHV-heartRate-1: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 INFORMATION: Observation/ex-MHV-heartRate-1: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate - listed in meta
@@ -422,6 +708,20 @@ INFORMATION: Observation/ex-MHV-weight: Observation: Validate resource against p
 INFORMATION: Observation/ex-MHV-weight-core: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-stone.json ==
 INFORMATION: Observation/ex-MHV-weight-stone: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-100.json ==
+INFORMATION: Observation/ex-bloodSugar-100: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-101.json ==
+INFORMATION: Observation/ex-bloodSugar-101: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-102.json ==
+INFORMATION: Observation/ex-bloodSugar-102: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-103.json ==
+INFORMATION: Observation/ex-bloodSugar-103: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-104.json ==
+INFORMATION: Observation/ex-bloodSugar-104: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-105.json ==
+INFORMATION: Observation/ex-bloodSugar-105: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugar-106.json ==
+INFORMATION: Observation/ex-bloodSugar-106: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-11.json ==
 INFORMATION: Observation/ex-pain-11: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 INFORMATION: Observation/ex-pain-11: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
@@ -439,29 +739,77 @@ INFORMATION: Observation/ex-temperature-10: Observation: Validate resource again
 INFORMATION: Observation/ex-temperature-8: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-9.json ==
 INFORMATION: Observation/ex-temperature-9: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodPressure.json ==
+INFORMATION: StructureDefinition/VA.MHV.bloodPressure: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodSugar.json ==
+INFORMATION: StructureDefinition/VA.MHV.bloodSugar: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature.json ==
 INFORMATION: StructureDefinition/VA.MHV.bodyTemperature: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/VA.MHV.bodyTemperature: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/VA.MHV.bodyTemperature: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight.json ==
 INFORMATION: StructureDefinition/VA.MHV.bodyWeight: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/VA.MHV.bodyWeight: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/VA.MHV.bodyWeight: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.heartRate.json ==
 INFORMATION: StructureDefinition/VA.MHV.heartRate: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/VA.MHV.heartRate: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/VA.MHV.heartRate: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.medication.json ==
+INFORMATION: StructureDefinition/VA.MHV.medication: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain.json ==
 INFORMATION: StructureDefinition/VA.MHV.pain: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-pressure-positions.json ==
+INFORMATION: ValueSet/mhv-blood-pressure-positions: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-sugar-methods-sites.json ==
+INFORMATION: ValueSet/mhv-blood-sugar-methods-sites: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperature-sites.json ==
 INFORMATION: ValueSet/mhv-body-temperature-sites: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperatures.json ==
 INFORMATION: ValueSet/mhv-body-temperatures: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-weights.json ==
 INFORMATION: ValueSet/mhv-body-weights: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-medication-routes.json ==
+INFORMATION: ValueSet/mhv-medication-routes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example.xml ==
 INFORMATION: ImplementationGuide/va.mhv.example: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MHV-BloodPressure.json ==
+INFORMATION: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MK-BloodSugar.json ==
+INFORMATION: Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0: Observation.meta.tag[0]: Code System URI 'https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping' is unknown so the code cannot be validated
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Observation-blood-glucose.xml ==
+ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Observation/blood-glucose: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+ERROR: Observation/blood-glucose: Observation.meta.profile[0]: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab' does not resolve
+WARNING: Observation/blood-glucose: Observation.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab' could not be resolved, so has not been checked
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Patient-example.json ==
 INFORMATION: Patient/example: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+WARNING: Patient/example: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodSugar.xml ==
+ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Observation/f001: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+ERROR: Observation/f001: Observation.performer[0]: Unable to resolve resource 'Practitioner/f005'
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodpressure.xml ==
+ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Observation/blood-pressure: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+ERROR: Observation/blood-pressure: Observation.performer[0]: Unable to resolve resource 'Practitioner/example'
+INFORMATION: Observation/blood-pressure: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/vitalsigns - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bodyTemp.xml ==
+ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Observation/body-temperature: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/body-temperature: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/vitalsigns - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-heartRate.xml ==
+ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Observation/heart-rate: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Observation/heart-rate: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/vitalsigns - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-medication-tylenol.xml ==
+ERROR: MedicationStatement.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: MedicationStatement/example001: MedicationStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationStatement
+INFORMATION: MedicationStatement/example001: MedicationStatement.contained.ofType(Medication): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Medication
+ERROR: MedicationStatement/example001: MedicationStatement.contained.ofType(Medication).code.coding[0]: The code "50580-506-02" is not valid in the system http://hl7.org/fhir/sid/ndc; The code provided (http://hl7.org/fhir/sid/ndc#50580-506-02) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/ndc#50580-506-02'
+WARNING: MedicationStatement/example001: MedicationStatement.contained.ofType(Medication).form.coding[0]: Internal error: The display "Film-coated tablet (qualifier value)" is not a valid display for the code {http://snomed.info/sct}385057009 - should be one of ["Film-coated tablet","Film-coated tablet (basic dose form)"] (from http://tx.fhir.org/r4)
+ERROR: MedicationStatement/example001: MedicationStatement.contained.ofType(Medication).ingredient[0].strength.denominator: Unknown Code http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#Tab in http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm for 'http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#Tab'
+ERROR: MedicationStatement/example001: MedicationStatement.contained.ofType(Medication).ingredient[1].strength.denominator: Unknown Code http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#Tab in http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm for 'http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#Tab'
+INFORMATION: MedicationStatement/example001: MedicationStatement.medication.ofType(Reference): Details for #med0309 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Medication
+ERROR: MedicationStatement/example001: MedicationStatement.subject: Unable to resolve resource 'Patient/pat1'
+ERROR: MedicationStatement/example001: MedicationStatement.informationSource: Unable to resolve resource 'Patient/pat1'
+ERROR: MedicationStatement/example001: MedicationStatement.derivedFrom[0]: Unable to resolve resource 'MedicationRequest/medrx002'
+== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-weight.xml ==
+ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Observation/example: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation

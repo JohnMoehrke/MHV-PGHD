@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ad38c881-b73d-4b7a-b4ec-55980f4a21b0"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2020-06-02T15:46:25.107+00:00"^^xsd:dateTime ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping" ];
+       fhir:Coding.code [ fhir:value "1e11b692-1898-4351-a7c5-428f61c91817" ];
+       fhir:Coding.display [ fhir:value "MobileKidney" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: preliminary</p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}\">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Jun 2, 2020 10:45:00 AM</p><p><b>value</b>: 259 mg/dl</p><p><b>note</b>: Record added in MobileKidney</p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 162549003}\">Eating routine (observable entity)</span></td><td>After Meal</td></tr></table></div>"
+  ];
+  fhir:Observation.status [ fhir:value "preliminary"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:2339-0;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "2339-0" ];
+       fhir:Coding.display [ fhir:value "Glucose [Mass/volume] in Blood" ]
+     ], [
+       fhir:index 1;
+       a loinc:2345-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "2345-7" ];
+       fhir:Coding.display [ fhir:value "Glucose [Mass/volume] in Serum or Plasma" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-06-02T10:45:00-05:00"^^xsd:dateTime];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "259"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mg/dl" ]
+  ];
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Record added in MobileKidney" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:162549003;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "162549003" ];
+         fhir:Coding.display [ fhir:value "Eating routine (observable entity)" ]
+       ]
+     ];
+     fhir:Observation.component.valueString [ fhir:value "After Meal" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

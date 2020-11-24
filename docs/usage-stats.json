@@ -1,25 +1,19 @@
 {
   "package": "va.mhv.example",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
     "Observation": [
       {
-        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature",
-        "title": "VA MHV Body Temperature Observation"
-      },
-      {
-        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight",
-        "title": "VA MHV BodyWeight Observation"
-      },
-      {
-        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate",
-        "title": "VA MHV HeartRate Observation"
-      },
-      {
         "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain",
         "title": "VA MHV Pain Observation"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication",
+        "title": "VA MHV Medication"
       }
     ]
   },

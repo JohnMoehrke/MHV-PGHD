@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="632210f2-1866-4c01-a8c5-4abe37c0f6b7"/>
+  <meta>
+    <versionId value="4"/>
+    <lastUpdated value="2020-08-25T14:46:54.062+00:00"/>
+    <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure"/>
+    <tag>
+      <system value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
+      <code value="2ce6d9aa-c068-4809-8dda-662bcb16d09a"/>
+      <display value="MyHealtheVet"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 55284-4}, {http://loinc.org 8716-3}">Blood pressure systolic and diastolic</span></p><p><b>subject</b>: <a href="Patient-example.html">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Aug 25, 2020 6:20:00 AM</p><p><b>note</b>: Test0724-Sit-Mob-correction-Sit-Mod</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8480-6}">Systolic blood pressure</span></p><p><b>value</b>: 124 mmHg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8462-4}">Diastolic blood pressure</span></p><p><b>value</b>: 74 mmHg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8867-4}">Heart rate</span></p><p><b>value</b>: 74 beats/minute</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 69000-8}">Heart rate --sitting</span></p><p><b>value</b>: Sitting</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="55284-4"/>
+      <display value="Blood pressure systolic and diastolic"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8716-3"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <effectiveDateTime value="2020-08-25T07:20:00-04:00"/>
+  <note>
+    <text value="Test0724-Sit-Mob-correction-Sit-Mod"/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8480-6"/>
+        <display value="Systolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="124"/>
+      <unit value="mmHg"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8462-4"/>
+        <display value="Diastolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="74"/>
+      <unit value="mmHg"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8867-4"/>
+        <display value="Heart rate"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="74"/>
+      <unit value="beats/minute"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="/min"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="69000-8"/>
+        <display value="Heart rate --sitting"/>
+      </coding>
+    </code>
+    <valueString value="Sitting"/>
+  </component>
+</Observation>

@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MHVtoPGHD_Example</h2><p>The official URL for this implementation guide is: </p><pre>https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example</pre><div><p>Testing Plan for VA MyHealtheVet use of PGHD.</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"];
-  fhir:ImplementationGuide.version [ fhir:value "0.2.2"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.3"];
   fhir:ImplementationGuide.name [ fhir:value "MHVtoPGHD_Example"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-11-20"^^xsd:date];
+  fhir:ImplementationGuide.date [ fhir:value "2020-11-23"^^xsd:date];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
@@ -288,6 +288,110 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/blood-pressure>;
+         fhir:Reference.reference [ fhir:value "Observation/blood-pressure" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/f001>;
+         fhir:Reference.reference [ fhir:value "Observation/f001" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/body-temperature>;
+         fhir:Reference.reference [ fhir:value "Observation/body-temperature" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/heart-rate>;
+         fhir:Reference.reference [ fhir:value "Observation/heart-rate" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/MedicationStatement/example001>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/example001" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/example>;
+         fhir:Reference.reference [ fhir:value "Observation/example" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7>;
+         fhir:Reference.reference [ fhir:value "Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - 632210f2-1866-4c01-a8c5-4abe37c0f6b7" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure>
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0>;
+         fhir:Reference.reference [ fhir:value "Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/blood-glucose>;
+         fhir:Reference.reference [ fhir:value "Observation/blood-glucose" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -295,7 +399,7 @@
          fhir:Reference.reference [ fhir:value "Patient/example" ]
        ]
      ], [
-       fhir:index 1;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -308,7 +412,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PGD apps" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "App identifiers for use with PGD" ]
      ], [
-       fhir:index 2;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -319,7 +423,260 @@
          fhir:Reference.reference [ fhir:value "Encounter/example" ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/MedicationStatement/ex-MHV-medication-0>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/ex-MHV-medication-0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example MedicationStatement - ex-MHV-medication-0" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication>
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-bloodSugar-100>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-bloodSugar-100" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-bloodSugar-101>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-bloodSugar-101" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-bloodSugar-102>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-bloodSugar-102" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-bloodSugar-103>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-bloodSugar-103" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-bloodSugar-104>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-bloodSugar-104" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-bloodSugar-105>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-bloodSugar-105" ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-bloodSugar-106>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-bloodSugar-106" ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodPressure-0>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodPressure-0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodPressure-0" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure>
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-0>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodSugar-0" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-1>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodSugar-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-2>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodSugar-2" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-3>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodSugar-3" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-4>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodSugar-4" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-5>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodSugar-5" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-6>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodSugar-6" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-7>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodSugar-7" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-8>;
+         fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-8" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ex-MHV-bloodSugar-8" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar";
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>
+       ]
+     ], [
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -335,7 +692,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate>
        ]
      ], [
-       fhir:index 4;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -351,7 +708,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate>
        ]
      ], [
-       fhir:index 5;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -367,7 +724,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate>
        ]
      ], [
-       fhir:index 6;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -383,7 +740,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 7;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -399,7 +756,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 8;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -415,7 +772,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 9;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -426,7 +783,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-MHV-pain-14" ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -442,7 +799,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 11;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -458,7 +815,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -474,7 +831,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -490,7 +847,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -506,7 +863,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 15;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -522,7 +879,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 16;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -538,7 +895,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 17;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -554,7 +911,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 18;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -570,7 +927,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
-       fhir:index 19;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -586,7 +943,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -602,7 +959,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
-       fhir:index 21;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -618,7 +975,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -634,7 +991,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -650,7 +1007,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -666,7 +1023,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -677,7 +1034,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-MHV-temperature-7" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -688,7 +1045,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-MHV-weight-core" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -699,7 +1056,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-MHV-weight-stone" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -715,7 +1072,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -731,7 +1088,7 @@
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -742,7 +1099,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-pain-12" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -753,7 +1110,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-pain-13" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -764,7 +1121,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-pain-14" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -775,7 +1132,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-pain-15" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -786,7 +1143,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-temperature-10" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -797,7 +1154,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-temperature-8" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -808,7 +1165,33 @@
          fhir:Reference.reference [ fhir:value "Observation/ex-temperature-9" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/VA.MHV.bloodPressure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV Blood Pressure Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#55284-4 code AND LOINC#8716-3\r\n* must have effectiveDateTime\r\n* must not have a value[x]\r\n* must have two components\r\n* must have systolic and diastolic component values in mm[Hg]\r\n* may have a heart-rate component\r\n* may have a position component\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note" ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/VA.MHV.bloodSugar" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV Blood Sugar Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#2339-0 code AND LOINC#2345-7\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units only of mg/dL\r\n* must have status at final\r\n* must point at the patient\r\n* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other\r\n* may have a eating routine component with string of fasting, after meal, or unknown\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note" ]
+     ], [
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -821,7 +1204,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV Body Temperature Observation" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#8310-5 code\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units from the MHV body temperatures (F and C)\r\n* must have status at final\r\n* must point at the patient\r\n* may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note" ]
      ], [
-       fhir:index 38;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -834,7 +1217,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV BodyWeight Observation" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#29463-7 code\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units from the MHV body weights (lbs and kg)\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note" ]
      ], [
-       fhir:index 39;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -847,7 +1230,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV HeartRate Observation" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#8867-4 code\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units only of beats per minute\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note" ]
      ], [
-       fhir:index 40;
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/VA.MHV.medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication\r\n* must have a dosage\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier" ]
+     ], [
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -858,9 +1254,35 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/VA.MHV.pain" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV Pain Observation" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have both LOINC#72514-3 and SNO#225908003 code\r\n* must have effectiveDateTime\r\n* must have integer between 0-10\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 will need to change to valueQuantity vs valueInteger\r\n* DSTU2 use comment rather than note" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have both LOINC#72514-3 and SCT#225908003 code\r\n* must have effectiveDateTime\r\n* must have integer between 0-10\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 will need to change to valueQuantity vs valueInteger\r\n* DSTU2 use comment rather than note" ]
      ], [
-       fhir:index 41;
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mhv-blood-pressure-positions" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "The methods of measurement for blood pressure that MHV supports" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the loinc body positions that MHV supports on blood pressure." ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mhv-blood-sugar-methods-sites" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "The methods of measurement for blood sugar that MHV supports" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the SNOMED body sites that MHV supports." ]
+     ], [
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -873,7 +1295,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "The body temperature measurement sites that MHV supports" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the SNOMED body sites that MHV supports." ]
      ], [
-       fhir:index 42;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -886,7 +1308,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "The body temperature measurement types that MHV supports" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the UCUM types that MHV supports." ]
      ], [
-       fhir:index 43;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -898,6 +1320,19 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "The body weight measurement types that MHV supports" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone)." ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mhv-medication-routes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "The routes of medication that MHV supports" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "These are the SNOMED-CT routes for medications that MHV supports." ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

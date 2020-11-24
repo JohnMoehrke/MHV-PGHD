@@ -3,8 +3,21 @@
   "id": "example",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;</p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>"
   },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "ICN"
+          }
+        ]
+      },
+      "system": "urn:uuid:2.16.840.1.113883.4.349",
+      "value": "<MVI ICN VALUE WITH CHECKSUM>"
+    }
+  ],
   "name": [
     {
       "use": "usual",

@@ -27,8 +27,8 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
-* method = SNO#15220000 "Laboratory Test"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#15220000 "Laboratory Test"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "fasting"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, fasting"
@@ -46,8 +46,8 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
-* method = SNO#15220000 "Laboratory Test"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#15220000 "Laboratory Test"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "after meal"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, after meal"
@@ -65,8 +65,8 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
-* method = SNO#15220000 "Laboratory Test"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#15220000 "Laboratory Test"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, unknown eating"
@@ -84,8 +84,8 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
-* method = SNO#350810002 "Lancet"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#350810002 "Lancet"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, unknown eating, by lancet"
@@ -103,8 +103,8 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
-* method = SNO#263902000 "Transcutaneous method"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#263902000 "Transcutaneous method"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, unknown eating, by skin"
@@ -122,8 +122,8 @@ Description:      "holding typical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
-* method = SNO#261373009 "Implant technique"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#261373009 "Implant technique"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, unknown eating, by implant"
@@ -141,8 +141,8 @@ Description:      "holding atypical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 0 'mg/dL' 
-* method = SNO#261373009 "Implant technique"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#261373009 "Implant technique"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "dead ZERO, unknown eating, by implant"
@@ -160,8 +160,8 @@ Description:      "holding atypical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100000 'mg/dL' 
-* method = SNO#261373009 "Implant technique"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#261373009 "Implant technique"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "nothing but sugar, unknown eating, by implant"
@@ -179,8 +179,8 @@ Description:      "holding atypical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
-* method = SNO#271061004 "Random blood glucose measurement (procedure)"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#271061004 "Random blood glucose measurement (procedure)"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "non-MHV normal by random blood glucuse measurement"
@@ -198,8 +198,8 @@ Description:      "holding atypical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
-* method = SNO#308115004 "Self-monitoring of blood and urine glucose (procedure)"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#308115004 "Self-monitoring of blood and urine glucose (procedure)"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "non-MHV normal by urine"
@@ -217,8 +217,8 @@ Description:      "holding atypical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
-* method = SNO#308113006 "Self-monitoring of blood glucose (procedure)"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#308113006 "Self-monitoring of blood glucose (procedure)"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "non-MHV normal by self monitoring"
@@ -236,8 +236,8 @@ Description:      "holding atypical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
-* method = SNO#271064007 "Supper time blood sugar measurement (procedure)"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#271064007 "Supper time blood sugar measurement (procedure)"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "before meal"
 // no comments in this one as comments is only in DSTU2
 * note.text = "non-MHV normal by supper time blood sugar measurement"
@@ -255,8 +255,8 @@ Description:      "holding atypical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
-* method = SNO#271064007 "Supper time blood sugar measurement (procedure)"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#271064007 "Supper time blood sugar measurement (procedure)"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "before meal"
 // no comments in this one as comments is only in DSTU2
 * note.text = "non-MHV normal by supper time blood sugar measurement"
@@ -274,8 +274,8 @@ Description:      "holding atypical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
-* method = SNO#271064007 "Supper time blood sugar measurement (procedure)"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#271064007 "Supper time blood sugar measurement (procedure)"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "before meal"
 // no comments in this one as comments is only in DSTU2
 * note.text = "non-MHV normal by supper time blood sugar measurement, just one of the .code values (2339-0)"
@@ -293,8 +293,8 @@ Description:      "holding atypical values"
 * subject = Reference(Patient/example)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
-* method = SNO#271064007 "Supper time blood sugar measurement (procedure)"
-* component.code = SNO#162549003 "Eating routine (observable entity)"
+* method = SCT#271064007 "Supper time blood sugar measurement (procedure)"
+* component.code = SCT#162549003 "Eating routine (observable entity)"
 * component.valueString = "before meal"
 // no comments in this one as comments is only in DSTU2
 * note.text = "non-MHV normal by supper time blood sugar measurement, just the second .code value (2345-7)"

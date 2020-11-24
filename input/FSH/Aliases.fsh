@@ -1,4 +1,4 @@
-Alias: SNO = http://snomed.info/sct
+Alias: SCT = http://snomed.info/sct
 Alias: UCUM = http://unitsofmeasure.org
 Alias: LOINC = http://loinc.org
 // In DSTU2 inside of PGD terminology is used. but R4 wants unitsofmeasure.org 

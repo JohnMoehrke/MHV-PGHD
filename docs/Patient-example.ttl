@@ -10,7 +10,18 @@
   fhir:Resource.id [ fhir:value "example"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;</p><p><b>name</b>: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "ICN" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:uuid:2.16.840.1.113883.4.349" ];
+     fhir:Identifier.value [ fhir:value "<MVI ICN VALUE WITH CHECKSUM>" ]
   ];
   fhir:Patient.name [
      fhir:index 0;

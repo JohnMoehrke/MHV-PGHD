@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "632210f2-1866-4c01-a8c5-4abe37c0f6b7"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "4" ];
+     fhir:Meta.lastUpdated [ fhir:value "2020-08-25T14:46:54.062+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure";
+       fhir:index 0;
+       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure>
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://wiki.mobilehealth.va.gov/x/Onc1C" ];
+       fhir:Coding.code [ fhir:value "2ce6d9aa-c068-4809-8dda-662bcb16d09a" ];
+       fhir:Coding.display [ fhir:value "MyHealtheVet" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 55284-4}, {http://loinc.org 8716-3}\">Blood pressure systolic and diastolic</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Aug 25, 2020 6:20:00 AM</p><p><b>note</b>: Test0724-Sit-Mob-correction-Sit-Mod</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 124 mmHg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 74 mmHg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8867-4}\">Heart rate</span></p><p><b>value</b>: 74 beats/minute</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 69000-8}\">Heart rate --sitting</span></p><p><b>value</b>: Sitting</p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:55284-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "55284-4" ];
+       fhir:Coding.display [ fhir:value "Blood pressure systolic and diastolic" ]
+     ], [
+       fhir:index 1;
+       a loinc:8716-3;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "8716-3" ];
+       fhir:Coding.display [ fhir:value "Vital Signs" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-08-25T07:20:00-04:00"^^xsd:dateTime];
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Test0724-Sit-Mob-correction-Sit-Mod" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:8480-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "8480-6" ];
+         fhir:Coding.display [ fhir:value "Systolic blood pressure" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "124"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mmHg" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:8462-4;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "8462-4" ];
+         fhir:Coding.display [ fhir:value "Diastolic blood pressure" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "74"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mmHg" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:8867-4;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "8867-4" ];
+         fhir:Coding.display [ fhir:value "Heart rate" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "74"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "beats/minute" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "/min" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:69000-8;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "69000-8" ];
+         fhir:Coding.display [ fhir:value "Heart rate --sitting" ]
+       ]
+     ];
+     fhir:Observation.component.valueString [ fhir:value "Sitting" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

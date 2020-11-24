@@ -24,7 +24,7 @@ Description:      "holding typical values. Should be close to the example body w
 * code.text = "body weight"
 * code.coding = LOINC#29463-7
 * code.coding[1] = LOINC#3141-9
-* code.coding[2] = SNO#27113001
+* code.coding[2] = SCT#27113001
 * code.coding[3] = http://acme.org/devices/clinical-codes#body-weight "Body Weight"
 * subject = Reference(Patient/example)
 * encounter = Reference(Encounter/example)
@@ -42,7 +42,7 @@ Description:      "holding typical stone values."
 * code.text = "body weight"
 * code.coding = LOINC#29463-7
 * code.coding[1] = LOINC#3141-9
-* code.coding[2] = SNO#27113001
+* code.coding[2] = SCT#27113001
 * code.coding[3] = http://acme.org/devices/clinical-codes#body-weight "Body Weight"
 * subject = Reference(Patient/example)
 * encounter = Reference(Encounter/example)

@@ -1,11 +1,95 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d0048f53-d322-49a0-abf9-302196d49c91",
+  "id" : "a5019414-2af5-4f53-aec9-cb5cf6387b6e",
   "meta" : {
-    "lastUpdated" : "2020-11-20T08:58:31.648-06:00"
+    "lastUpdated" : "2020-11-24T10:27:09.577-06:00"
   },
   "type" : "collection",
   "entry" : [{
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.68</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69000-8\"> </a><a href=\"http://details.loinc.org/LOINC/69000-8.html\">69000-8</a></td><td>Heart rate - sitting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69001-6\"> </a><a href=\"http://details.loinc.org/LOINC/69001-6.html\">69001-6</a></td><td>Heart rate - standing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-68999-2\"> </a><a href=\"http://details.loinc.org/LOINC/68999-2.html\">68999-2</a></td><td>Heart rate - supine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-40443-4\"> </a><a href=\"http://details.loinc.org/LOINC/40443-4.html\">40443-4</a></td><td>Heart rate - resting</td></tr></table></div>"
+      },
+      "status" : "active",
+      "expansion" : {
+        "identifier" : "urn:uuid:37b227da-040e-46a3-8d89-abc5e9b114cf",
+        "timestamp" : "2020-11-23T21:01:32.926Z",
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://loinc.org|2.68"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "69000-8",
+          "display" : "Heart rate - sitting"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "69001-6",
+          "display" : "Heart rate - standing"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "68999-2",
+          "display" : "Heart rate - supine"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "40443-4",
+          "display" : "Heart rate - resting"
+        }]
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2020</p><p>All codes from system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15220000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000\">15220000</a></td><td>Laboratory Test</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-350810002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=350810002\">350810002</a></td><td>Lancet</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-263902000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=263902000\">263902000</a></td><td>Transcutaneous method</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261373009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261373009\">261373009</a></td><td>Implant technique</td><td/></tr></table></div>"
+      },
+      "status" : "active",
+      "expansion" : {
+        "identifier" : "urn:uuid:c182f421-206b-4e17-a6bd-c361150585d6",
+        "timestamp" : "2020-11-23T21:01:33.816Z",
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "15220000",
+          "display" : "Laboratory Test"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "350810002",
+          "display" : "Lancet"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "263902000",
+          "display" : "Transcutaneous method"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "261373009",
+          "display" : "Implant technique"
+        }]
+      }
+    }
+  },
+  {
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
@@ -14,8 +98,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:f1ff7e3d-ab4c-4647-ba8e-a49a7a2c4967",
-        "timestamp" : "2020-11-19T20:06:19.753Z",
+        "identifier" : "urn:uuid:e8dfc694-e6b7-4ea4-91e7-856400e399c3",
+        "timestamp" : "2020-11-23T19:36:04.924Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -61,8 +145,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:fb18b968-ef19-43c6-ac1b-e754b02709b0",
-        "timestamp" : "2020-11-18T21:46:56.034Z",
+        "identifier" : "urn:uuid:b2f60976-6a5e-423f-a2e8-f247a61202c0",
+        "timestamp" : "2020-11-23T19:36:05.502Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -93,8 +177,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:3b1198ae-6907-4268-b7f8-7b8328f44224",
-        "timestamp" : "2020-11-18T19:16:06.223Z",
+        "identifier" : "urn:uuid:15324097-8388-4b7f-a97a-7e2ae8fc613e",
+        "timestamp" : "2020-11-23T19:36:06.064Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -112,6 +196,74 @@
           "system" : "http://unitsofmeasure.org",
           "code" : "kg",
           "display" : "kilogram"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "mhv-medication-routes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2020</p><p>All codes from system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26643006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26643006\">26643006</a></td><td>Oral use</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-37161004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=37161004\">37161004</a></td><td>Rectal use</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-45890007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45890007\">45890007</a></td><td>Transdermal use</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-6064005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6064005\">6064005</a></td><td>Topical route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-78421000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=78421000\">78421000</a></td><td>Intramuscular use</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47625008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47625008\">47625008</a></td><td>Intravenous use</td><td/></tr></table></div>"
+      },
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
+      "version" : "0.2.3",
+      "name" : "MHVmedicationRoutes",
+      "title" : "The routes of medication that MHV supports",
+      "status" : "active",
+      "date" : "2020-11-24T10:27:09-06:00",
+      "contact" : [{
+        "name" : "John Moehrke"
+      }],
+      "description" : "These are the SNOMED-CT routes for medications that MHV supports.",
+      "expansion" : {
+        "identifier" : "urn:uuid:84b53e80-33f6-40f0-bdd2-3ba3b9440115",
+        "timestamp" : "2020-11-24T10:27:59-06:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "26643006",
+          "display" : "Oral use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "37161004",
+          "display" : "Rectal use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "45890007",
+          "display" : "Transdermal use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "6064005",
+          "display" : "Topical route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "78421000",
+          "display" : "Intramuscular use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "47625008",
+          "display" : "Intravenous use"
         }]
       }
     }

@@ -272,6 +272,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ex-MHV-BlueButton-0"/>
+      </reference>
+      <name value="Example Bundle - ex-MHV-BlueButton-0"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -279,6 +289,16 @@
       </reference>
       <name value="PGD apps"/>
       <description value="App identifiers for use with PGD"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/ex-MHV-Composition-0"/>
+      </reference>
+      <name value="All Vital-Signs entered in past 60 days"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -685,22 +705,6 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-weight-core"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ex-MHV-weight-stone"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
         <reference value="Observation/ex-MHV-weight"/>
       </reference>
       <name value="Example Observation - ex-MHV-weight"/>
@@ -774,6 +778,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-weight-core"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-weight-stone"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -791,6 +811,26 @@
       </reference>
       <name value="VA MHV Blood Sugar Observation"/>
       <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#2339-0 code AND LOINC#2345-7&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units only of mg/dL&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xD;&#xA;* may have a eating routine component with string of fasting, after meal, or unknown&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VA.MHV.BlueBundle"/>
+      </reference>
+      <name value="VA MHV BlueButton Bundle"/>
+      <description value="A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;* must have Composition&#xD;&#xA;* must have a timestamp of when this was created&#xD;&#xA;* must contain everything referenced by Composition including Patient&#xD;&#xA;* DSTU2 use comment rather than note"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VA.MHV.BlueComposition"/>
+      </reference>
+      <name value="VA MHV BlueButton Composition"/>
+      <description value="A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must be status final&#xD;&#xA;* must have a title explaining the content - for example: all vital-signs from past 60 days&#xD;&#xA;* must have date stamp of when created (now)&#xD;&#xA;* must be LOINC 55188-7 Patient data Document&#xD;&#xA;* must point at the patient for both subject and author&#xD;&#xA;* DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

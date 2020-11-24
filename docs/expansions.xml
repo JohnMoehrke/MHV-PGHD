@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a5019414-2af5-4f53-aec9-cb5cf6387b6e"/>
+  <id value="94007724-7608-434e-aeea-09f884639ff6"/>
   <meta>
-    <lastUpdated value="2020-11-24T10:27:09.577-06:00"/>
+    <lastUpdated value="2020-11-24T13:52:22.219-06:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -59,8 +59,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:37b227da-040e-46a3-8d89-abc5e9b114cf"/>
-          <timestamp value="2020-11-23T21:01:32.926Z"/>
+          <identifier value="urn:uuid:4212a64a-2b69-42ac-93dd-f5acd8bca2cb"/>
+          <timestamp value="2020-11-24T18:52:42.258Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -155,8 +155,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:c182f421-206b-4e17-a6bd-c361150585d6"/>
-          <timestamp value="2020-11-23T21:01:33.816Z"/>
+          <identifier value="urn:uuid:f3b81670-83b3-413e-964d-dc2269520059"/>
+          <timestamp value="2020-11-24T18:52:43.164Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -259,8 +259,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:e8dfc694-e6b7-4ea4-91e7-856400e399c3"/>
-          <timestamp value="2020-11-23T19:36:04.924Z"/>
+          <identifier value="urn:uuid:6626bcfd-8083-42c9-b90a-e0dc8a450c5f"/>
+          <timestamp value="2020-11-24T18:52:43.773Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -335,8 +335,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:b2f60976-6a5e-423f-a2e8-f247a61202c0"/>
-          <timestamp value="2020-11-23T19:36:05.502Z"/>
+          <identifier value="urn:uuid:edfa39a5-368b-4e2d-a40e-faaaba808585"/>
+          <timestamp value="2020-11-24T18:52:44.211Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -396,8 +396,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:15324097-8388-4b7f-a97a-7e2ae8fc613e"/>
-          <timestamp value="2020-11-23T19:36:06.064Z"/>
+          <identifier value="urn:uuid:6d645a0a-72a0-49bf-9a97-40060ee36364"/>
+          <timestamp value="2020-11-24T18:52:44.773Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -421,10 +421,8 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes"/>
     <resource>
       <ValueSet>
-        <id value="mhv-medication-routes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -498,24 +496,10 @@
             </table>
           </div>
         </text>
-        <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes"/>
-        <version value="0.2.3"/>
-        <name value="MHVmedicationRoutes"/>
-        <title value="The routes of medication that MHV supports"/>
         <status value="active"/>
-        <date value="2020-11-24T10:27:09-06:00"/>
-        <contact>
-          <name value="John Moehrke"/>
-        </contact>
-        <description value="These are the SNOMED-CT routes for medications that MHV supports."/>
         <expansion>
-          <identifier value="urn:uuid:84b53e80-33f6-40f0-bdd2-3ba3b9440115"/>
-          <timestamp value="2020-11-24T10:27:59-06:00"/>
-          <total value="6"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
+          <identifier value="urn:uuid:5f626b55-532d-4f18-878e-38796f409586"/>
+          <timestamp value="2020-11-24T18:52:45.352Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>

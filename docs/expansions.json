@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a5019414-2af5-4f53-aec9-cb5cf6387b6e",
+  "id" : "94007724-7608-434e-aeea-09f884639ff6",
   "meta" : {
-    "lastUpdated" : "2020-11-24T10:27:09.577-06:00"
+    "lastUpdated" : "2020-11-24T13:52:22.219-06:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -14,8 +14,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:37b227da-040e-46a3-8d89-abc5e9b114cf",
-        "timestamp" : "2020-11-23T21:01:32.926Z",
+        "identifier" : "urn:uuid:4212a64a-2b69-42ac-93dd-f5acd8bca2cb",
+        "timestamp" : "2020-11-24T18:52:42.258Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -56,8 +56,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:c182f421-206b-4e17-a6bd-c361150585d6",
-        "timestamp" : "2020-11-23T21:01:33.816Z",
+        "identifier" : "urn:uuid:f3b81670-83b3-413e-964d-dc2269520059",
+        "timestamp" : "2020-11-24T18:52:43.164Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -98,8 +98,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:e8dfc694-e6b7-4ea4-91e7-856400e399c3",
-        "timestamp" : "2020-11-23T19:36:04.924Z",
+        "identifier" : "urn:uuid:6626bcfd-8083-42c9-b90a-e0dc8a450c5f",
+        "timestamp" : "2020-11-24T18:52:43.773Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -145,8 +145,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:b2f60976-6a5e-423f-a2e8-f247a61202c0",
-        "timestamp" : "2020-11-23T19:36:05.502Z",
+        "identifier" : "urn:uuid:edfa39a5-368b-4e2d-a40e-faaaba808585",
+        "timestamp" : "2020-11-24T18:52:44.211Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -177,8 +177,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:15324097-8388-4b7f-a97a-7e2ae8fc613e",
-        "timestamp" : "2020-11-23T19:36:06.064Z",
+        "identifier" : "urn:uuid:6d645a0a-72a0-49bf-9a97-40060ee36364",
+        "timestamp" : "2020-11-24T18:52:44.773Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -201,33 +201,17 @@
     }
   },
   {
-    "fullUrl" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "mhv-medication-routes",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2020</p><p>All codes from system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26643006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26643006\">26643006</a></td><td>Oral use</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-37161004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=37161004\">37161004</a></td><td>Rectal use</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-45890007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45890007\">45890007</a></td><td>Transdermal use</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-6064005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6064005\">6064005</a></td><td>Topical route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-78421000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=78421000\">78421000</a></td><td>Intramuscular use</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47625008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47625008\">47625008</a></td><td>Intravenous use</td><td/></tr></table></div>"
       },
-      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
-      "version" : "0.2.3",
-      "name" : "MHVmedicationRoutes",
-      "title" : "The routes of medication that MHV supports",
       "status" : "active",
-      "date" : "2020-11-24T10:27:09-06:00",
-      "contact" : [{
-        "name" : "John Moehrke"
-      }],
-      "description" : "These are the SNOMED-CT routes for medications that MHV supports.",
       "expansion" : {
-        "identifier" : "urn:uuid:84b53e80-33f6-40f0-bdd2-3ba3b9440115",
-        "timestamp" : "2020-11-24T10:27:59-06:00",
-        "total" : 6,
+        "identifier" : "urn:uuid:5f626b55-532d-4f18-878e-38796f409586",
+        "timestamp" : "2020-11-24T18:52:45.352Z",
         "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },

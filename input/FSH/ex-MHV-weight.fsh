@@ -13,8 +13,7 @@ Description:      "holding typical values"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit heavy"
 
-Instance:   ex-MHV-weight-core
-//InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyweight
+Instance:   ex-weight-core
 InstanceOf: Observation
 Title: "Example of an valid FHIR International bodyWeight R4 observation"
 Description:      "holding typical values. Should be close to the example body weight in the FHIR core specification"
@@ -31,8 +30,7 @@ Description:      "holding typical values. Should be close to the example body w
 * effectiveDateTime = 2016-03-28
 * valueQuantity = 185 '[lb_av]' 
 
-Instance:   ex-MHV-weight-stone
-//InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyweight
+Instance:   ex-weight-stone
 InstanceOf: Observation
 Title: "Example of an valid FHIR bodyWeight R4 observation"
 Description:      "holding typical stone values."

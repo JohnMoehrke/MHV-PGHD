@@ -15,7 +15,8 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 * may have a note (comment)
 * once created will or might have an id, versionId, lastUpdated, text, and identifier
 * DSTU2 use comment rather than note 
-"* ^version = "0.1.0"
+"
+* ^version = "0.1.0"
 * ^date = "2020-10-21"
 //Note this could be derived off of the international profile for http://hl7.org/fhir/StructureDefinition/bodyweight. But doing that causes alot of indirection, and doesn't seem to be as blunt as writing it all inline here.
 // this is what the MHV / PGD mapping table says

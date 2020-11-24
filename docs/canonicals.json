@@ -7,6 +7,20 @@
     "name": "MHVtoPGHD_Example"
   },
   {
+    "id": "VA.MHV.BlueBundle",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle",
+    "version": "0.2.3",
+    "name": "MHVbluebutton"
+  },
+  {
+    "id": "VA.MHV.BlueComposition",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition",
+    "version": "0.2.3",
+    "name": "MHVcompositionBluebutton"
+  },
+  {
     "id": "VA.MHV.bloodPressure",
     "type": "StructureDefinition",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure",

@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "AllAppIdCodes"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-OnclC.html\"><code>https://wiki.mobilehealth.va.gov/x/Onc1C</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-CPM.html\"><code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes"];
+  fhir:ValueSet.version [ fhir:value "0.2.3"];
+  fhir:ValueSet.name [ fhir:value "AllAppIdCodes"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2020-11-25T13:31:34-06:00"^^xsd:dateTime];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://wiki.mobilehealth.va.gov/x/Onc1C" ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

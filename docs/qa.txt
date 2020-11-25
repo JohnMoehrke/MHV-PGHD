@@ -1,16 +1,17 @@
 ﻿MHVtoPGHD_Example : Validation Results
 =========================================
 
-err = 60, warn = 68, info = 2
+err = 56, warn = 68, info = 3
 IG Publisher Version: 1.1.42
-Generated Tue Nov 24 13:54:25 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.3 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+Generated Wed Nov 25 13:33:14 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.2.3 (canonical = https://johnmoehrke.github.io/MHV-PGHD)
 
- Build Errors : 909 / 65 / 0
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Bundle-ex-MHV-BlueButton-0 : 15 / 0 / 9
+ Build Errors : 942 / 67 / 0
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Bundle-ex-MHV-Bluebutton-0 : 14 / 0 / 11
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-CPM : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-OnclC : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Composition-ex-MHV-Composition-0 : 0 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-example : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\MedicationStatement-ex-MHV-medication-0 : 1 / 0 / 4
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-ex-encounter : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\MedicationStatement-ex-MHV-medication-0 : 0 / 0 / 5
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-0 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-1 : 0 / 0 / 2
@@ -62,6 +63,8 @@ Generated Tue Nov 24 13:54:25 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-9 : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-core : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-stone : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Patient-ex-patient : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Practitioner-ex-practitioner : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.BlueBundle : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.BlueComposition : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodPressure : 0 / 0 / 1
@@ -71,6 +74,7 @@ Generated Tue Nov 24 13:54:25 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.heartRate : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.medication : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain : 0 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-AllAppIdCodes : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-pressure-positions : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-sugar-methods-sites : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-temperature-sites : 0 / 0 / 1
@@ -79,14 +83,13 @@ Generated Tue Nov 24 13:54:25 CST 2020. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-medication-routes : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MHV-BloodPressure : 0 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MK-BloodSugar : 0 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Observation-blood-glucose : 2 / 1 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Patient-example : 0 / 1 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodSugar : 2 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodpressure : 2 / 0 / 3
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MK-BloodSugar : 1 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Observation-blood-glucose : 1 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodSugar : 1 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodpressure : 1 / 0 / 3
  C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bodyTemp : 1 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-heartRate : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-medication-tylenol : 7 / 1 / 3
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-medication-tylenol : 5 / 1 / 3
  C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-weight : 1 / 0 / 2
 </table>
 == n/a ==
@@ -107,12 +110,10 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/blood-glucose.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/blood-glucose.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/ex-MHV-BlueButton-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/ex-MHV-Bluebutton-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/ex-MHV-Composition-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/ex-encounter.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/ex-encounter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/ex-MHV-medication-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-bloodSugar-100.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-bloodSugar-100.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -183,20 +184,36 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-weight-core.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-weight-stone.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-weight-stone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.html#/html/body/div/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.html#/html/body/div/div/div/div/p/span/a at Line 191, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.json.html#/html/body/div/div/div/div/p/a at Line 414, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.json.html#/html/body/div/div/div/div/p/span/a at Line 419, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.ttl.html#/html/body/div/div/div/div/p/a at Line 376, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.ttl.html#/html/body/div/div/div/div/p/span/a at Line 381, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.xml.html#/html/body/div/div/div/div/p/a at Line 376, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-BlueButton-0.xml.html#/html/body/div/div/div/div/p/span/a at Line 381, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/ex-patient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ex-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Practitioner/ex-practitioner.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/ex-practitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/AllAppIdCodes.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/AllAppIdCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.html#/html/body/div/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.html#/html/body/div/div/div/div/p/span/a at Line 191, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.json.html#/html/body/div/div/div/div/p/a at Line 414, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.json.html#/html/body/div/div/div/div/p/span/a at Line 419, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.ttl.html#/html/body/div/div/div/div/p/a at Line 376, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.ttl.html#/html/body/div/div/div/div/p/span/a at Line 381, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.xml.html#/html/body/div/div/div/div/p/a at Line 372, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Bundle-ex-MHV-Bluebutton-0.xml.html#/html/body/div/div/div/div/p/span/a at Line 377, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.html#/html/body/div/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.html#/html/body/div/div/div/div/p/span/a at Line 215, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.json.html#/html/body/div/div/div/div/p/a at Line 216, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.json.html#/html/body/div/div/div/div/p/span/a at Line 221, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.ttl.html#/html/body/div/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.ttl.html#/html/body/div/div/div/div/p/span/a at Line 233, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.xml.html#/html/body/div/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-CPM.xml.html#/html/body/div/div/div/div/p/span/a at Line 218, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.html#/html/body/div/div/div/div/p/a at Line 208, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.html#/html/body/div/div/div/div/p/span/a at Line 213, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.html#/html/body/div/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.html#/html/body/div/div/div/div/p/span/a at Line 215, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.json.html#/html/body/div/div/div/div/p/a at Line 216, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.json.html#/html/body/div/div/div/div/p/span/a at Line 221, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\CodeSystem-OnclC.ttl.html#/html/body/div/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
@@ -213,37 +230,37 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Composition-ex-MHV-Composition-
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Composition-ex-MHV-Composition-0.ttl.html#/html/body/div/div/div/div/p/span/a at Line 261, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Composition-ex-MHV-Composition-0.xml.html#/html/body/div/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Composition-ex-MHV-Composition-0.xml.html#/html/body/div/div/div/div/p/span/a at Line 242, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.html#/html/body/div/div/div/div/p/a at Line 188, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.html#/html/body/div/div/div/div/p/span/a at Line 193, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.json.html#/html/body/div/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.json.html#/html/body/div/div/div/div/p/span/a at Line 209, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.ttl.html#/html/body/div/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.ttl.html#/html/body/div/div/div/div/p/span/a at Line 223, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.xml.html#/html/body/div/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-example.xml.html#/html/body/div/div/div/div/p/span/a at Line 209, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.html#/html/body/div/div/div/div/p/a at Line 188, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.html#/html/body/div/div/div/div/p/span/a at Line 193, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.json.html#/html/body/div/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.json.html#/html/body/div/div/div/div/p/span/a at Line 209, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.ttl.html#/html/body/div/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.ttl.html#/html/body/div/div/div/div/p/span/a at Line 223, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.xml.html#/html/body/div/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Encounter-ex-encounter.xml.html#/html/body/div/div/div/div/p/span/a at Line 209, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.html#/html/body/div/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 159, column 362: The link '#in-Pharmacy' for "#in-Pharmacy" cannot be resolved (valid targets: [segment-header, publish-box, hl7-logo, segment-post-footer, ig-status, root, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb, in-Dispense])
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.html#/html/body/div/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 159, column 739: The link '#in-Pharmacy' for "#in-Pharmacy" cannot be resolved (valid targets: [segment-header, in-Request, publish-box, hl7-logo, segment-post-footer, ig-status, root, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb, in-Dispense])
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.html#/html/body/div/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.html#/html/body/div/div/div/div/p/span/a at Line 191, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.json.html#/html/body/div/div/div/div/p/a at Line 312, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.json.html#/html/body/div/div/div/div/p/span/a at Line 317, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.ttl.html#/html/body/div/div/div/div/p/a at Line 302, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.ttl.html#/html/body/div/div/div/div/p/span/a at Line 307, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.xml.html#/html/body/div/div/div/div/p/a at Line 288, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.xml.html#/html/body/div/div/div/div/p/span/a at Line 293, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.json.html#/html/body/div/div/div/div/p/a at Line 337, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.json.html#/html/body/div/div/div/div/p/span/a at Line 342, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.ttl.html#/html/body/div/div/div/div/p/a at Line 321, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.ttl.html#/html/body/div/div/div/div/p/span/a at Line 326, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.xml.html#/html/body/div/div/div/div/p/a at Line 310, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.xml.html#/html/body/div/div/div/div/p/span/a at Line 315, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.html#/html/body/div/div/div/div/p/a at Line 191, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.html#/html/body/div/div/div/div/p/span/a at Line 196, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.json.html#/html/body/div/div/div/div/p/a at Line 386, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.json.html#/html/body/div/div/div/div/p/span/a at Line 391, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.ttl.html#/html/body/div/div/div/div/p/a at Line 355, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.ttl.html#/html/body/div/div/div/div/p/span/a at Line 360, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.xml.html#/html/body/div/div/div/div/p/a at Line 360, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.xml.html#/html/body/div/div/div/div/p/span/a at Line 365, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.json.html#/html/body/div/div/div/div/p/a at Line 384, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.json.html#/html/body/div/div/div/div/p/span/a at Line 389, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.ttl.html#/html/body/div/div/div/div/p/a at Line 353, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.ttl.html#/html/body/div/div/div/div/p/span/a at Line 358, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.xml.html#/html/body/div/div/div/div/p/a at Line 358, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-example001.xml.html#/html/body/div/div/div/div/p/span/a at Line 363, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.html#/html/body/div/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
@@ -266,14 +283,15 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.xml.html#/html/body/div/div/div/div/p/span/a at Line 245, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.html#/html/body/div/div/div/div/div/div/div/p/a at Line 161, column 377: The link 'Patient-example.html' for "Amy Shaw. Generated Summary: id: example; Medical Record Number: 1032702 (USUAL); active; Amy V. Shaw , Amy V. Baxter ; ph: 555-555-5555(HOME), amy.shaw@example.com; gender: female; birthDate: 1987-02-20" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.html#/html/body/div/div/div/div/p/a at Line 188, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.html#/html/body/div/div/div/div/p/span/a at Line 193, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.json.html#/html/body/div/div/div/div/p/a at Line 263, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.json.html#/html/body/div/div/div/div/p/span/a at Line 268, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.ttl.html#/html/body/div/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.ttl.html#/html/body/div/div/div/div/p/span/a at Line 273, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.xml.html#/html/body/div/div/div/div/p/a at Line 251, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.xml.html#/html/body/div/div/div/div/p/span/a at Line 256, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.json.html#/html/body/div/div/div/div/p/a at Line 260, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.json.html#/html/body/div/div/div/div/p/span/a at Line 265, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.ttl.html#/html/body/div/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.ttl.html#/html/body/div/div/div/div/p/span/a at Line 269, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.xml.html#/html/body/div/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-glucose.xml.html#/html/body/div/div/div/div/p/span/a at Line 254, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-pressure.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-pressure.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-blood-pressure.html#/html/body/div/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
@@ -834,32 +852,42 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-heart-rate.ttl.html
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-heart-rate.ttl.html#/html/body/div/div/div/div/p/span/a at Line 251, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-heart-rate.xml.html#/html/body/div/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-heart-rate.xml.html#/html/body/div/div/div/div/p/span/a at Line 232, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.html#/html/body/div/div/div/div/p/a at Line 188, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.html#/html/body/div/div/div/div/p/span/a at Line 193, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.json.html#/html/body/div/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.json.html#/html/body/div/div/div/div/p/span/a at Line 247, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.ttl.html#/html/body/div/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.ttl.html#/html/body/div/div/div/div/p/span/a at Line 258, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.xml.html#/html/body/div/div/div/div/p/a at Line 230, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-example.xml.html#/html/body/div/div/div/div/p/span/a at Line 235, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-definitions.html#/html/body/div/div/div/div/p/a at Line 758, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-definitions.html#/html/body/div/div/div/div/p/span/a at Line 763, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.html#/html/body/div/div/div/div/p/a at Line 188, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.html#/html/body/div/div/div/div/p/span/a at Line 193, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.json.html#/html/body/div/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.json.html#/html/body/div/div/div/div/p/span/a at Line 209, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.ttl.html#/html/body/div/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.ttl.html#/html/body/div/div/div/div/p/span/a at Line 222, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.xml.html#/html/body/div/div/div/div/p/a at Line 200, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Patient-ex-patient.xml.html#/html/body/div/div/div/div/p/span/a at Line 205, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.html#/html/body/div/div/div/div/p/a at Line 188, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.html#/html/body/div/div/div/div/p/span/a at Line 193, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.json.html#/html/body/div/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.json.html#/html/body/div/div/div/div/p/span/a at Line 209, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.ttl.html#/html/body/div/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.ttl.html#/html/body/div/div/div/div/p/span/a at Line 222, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.xml.html#/html/body/div/div/div/div/p/a at Line 200, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Practitioner-ex-practitioner.xml.html#/html/body/div/div/div/div/p/span/a at Line 205, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-definitions.html#/html/body/div/div/div/div/p/a at Line 1327, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-definitions.html#/html/body/div/div/div/div/p/span/a at Line 1332, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-examples.html#/html/body/div/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-examples.html#/html/body/div/div/div/div/p/span/a at Line 259, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-mappings.html#/html/body/div/div/div/div/p/a at Line 286, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-mappings.html#/html/body/div/div/div/div/p/span/a at Line 291, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.html#/html/body/div/div/div/div/p/a at Line 827, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.html#/html/body/div/div/div/div/p/span/a at Line 832, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-mappings.html#/html/body/div/div/div/div/p/a at Line 323, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle-mappings.html#/html/body/div/div/div/div/p/span/a at Line 328, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.html#/html/body/div/div/div/div/p/a at Line 1256, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.html#/html/body/div/div/div/div/p/span/a at Line 1261, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.history.html#/html/body/div/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.history.html#/html/body/div/div/div/div/p/span/a at Line 237, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.json.html#/html/body/div/div/div/div/p/a at Line 2501, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.json.html#/html/body/div/div/div/div/p/span/a at Line 2506, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 2248, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.ttl.html#/html/body/div/div/div/div/p/span/a at Line 2253, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.xml.html#/html/body/div/div/div/div/p/a at Line 2305, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.xml.html#/html/body/div/div/div/div/p/span/a at Line 2310, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.json.html#/html/body/div/div/div/div/p/a at Line 5009, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.json.html#/html/body/div/div/div/div/p/span/a at Line 5014, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4465, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.ttl.html#/html/body/div/div/div/div/p/span/a at Line 4470, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4570, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueBundle.profile.xml.html#/html/body/div/div/div/div/p/span/a at Line 4575, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueComposition-definitions.html#/html/body/div/div/div/div/p/a at Line 880, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueComposition-definitions.html#/html/body/div/div/div/div/p/span/a at Line 885, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.BlueComposition-examples.html#/html/body/div/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
@@ -961,10 +989,10 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medi
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-definitions.html#/html/body/div/div/div/div/p/span/a at Line 819, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-examples.html#/html/body/div/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-examples.html#/html/body/div/div/div/div/p/span/a at Line 259, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-mappings.html#/html/body/div/div/div/div/p/a at Line 332, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-mappings.html#/html/body/div/div/div/div/p/span/a at Line 337, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.html#/html/body/div/div/div/div/p/a at Line 875, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.html#/html/body/div/div/div/div/p/span/a at Line 880, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-mappings.html#/html/body/div/div/div/div/p/a at Line 334, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication-mappings.html#/html/body/div/div/div/div/p/span/a at Line 339, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.html#/html/body/div/div/div/div/p/a at Line 1017, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.html#/html/body/div/div/div/div/p/span/a at Line 1022, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.profile.history.html#/html/body/div/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.profile.history.html#/html/body/div/div/div/div/p/span/a at Line 237, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.medication.profile.json.html#/html/body/div/div/div/div/p/a at Line 2984, column 28: The link '' for "" cannot be resolved
@@ -989,6 +1017,16 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.ttl.html#/html/body/div/div/div/div/p/span/a at Line 3421, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/div/p/a at Line 3575, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/div/p/span/a at Line 3580, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.html#/html/body/div/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.html#/html/body/div/div/div/div/p/span/a at Line 248, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.json.html#/html/body/div/div/div/div/p/a at Line 216, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.json.html#/html/body/div/div/div/div/p/span/a at Line 221, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.ttl.html#/html/body/div/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.ttl.html#/html/body/div/div/div/div/p/span/a at Line 231, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.xml.html#/html/body/div/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.xml.html#/html/body/div/div/div/div/p/span/a at Line 218, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-pressure-positions.change.history.html#/html/body/div/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-pressure-positions.change.history.html#/html/body/div/div/div/div/p/span/a at Line 206, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-blood-pressure-positions.html#/html/body/div/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
@@ -1049,13 +1087,13 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.ttl.html#/html/body/div/div/div/div/p/span/a at Line 250, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.xml.html#/html/body/div/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.xml.html#/html/body/div/div/div/div/p/span/a at Line 242, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/div/p/a at Line 845, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/div/p/span/a at Line 850, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/div/p/a at Line 129, column 125: The link 'artifacts.html#structures-resource-profiles' for "Profiles" cannot be resolved (valid targets: [segment-header, publish-box, hl7-logo, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/div/p/a at Line 131, column 28: The link 'artifacts.html#example-example-instances' for "Example Instances" cannot be resolved (valid targets: [segment-header, publish-box, hl7-logo, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/div/p/a at Line 133, column 28: The link 'artifacts.html#other' for "Other" cannot be resolved (valid targets: [segment-header, publish-box, hl7-logo, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/p/a at Line 198, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/p/span/a at Line 203, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/div/p/a at Line 869, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/div/p/span/a at Line 874, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/div/p/a at Line 152, column 125: The link 'artifacts.html#structures-resource-profiles' for "Profiles" cannot be resolved (valid targets: [segment-header, publish-box, hl7-logo, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 28: The link 'artifacts.html#example-example-instances' for "Example Instances" cannot be resolved (valid targets: [segment-header, publish-box, hl7-logo, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/div/div/p/a at Line 156, column 28: The link 'artifacts.html#other' for "Other" cannot be resolved (valid targets: [segment-header, publish-box, hl7-logo, segment-post-footer, ig-status, 1, 2, 3, 4, 5, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/p/a at Line 221, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/p/span/a at Line 226, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\changes.html#/html/body/div/div/div/div/p/a at Line 148, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\changes.html#/html/body/div/div/div/div/p/span/a at Line 153, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\downloads.html#/html/body/div/div/div/div/p/a at Line 187, column 28: The link '' for "" cannot be resolved
@@ -1064,43 +1102,46 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\index.html#/html/body/div/div/d
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\index.html#/html/body/div/div/div/div/p/span/a at Line 171, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\toc.html#/html/body/div/div/div/div/p/a at Line 137, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\toc.html#/html/body/div/div/div/div/p/span/a at Line 142, column 4: The link '../issues' for "Report an issue" cannot be resolved
-== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Bundle-ex-MHV-BlueButton-0.json ==
-INFORMATION: Bundle/ex-MHV-BlueButton-0: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle: bdl-9: A document must have an identifier with a system and a value [(type = 'document') implies (identifier.system.exists() and identifier.value.exists())]
-INFORMATION: Bundle/ex-MHV-BlueButton-0: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[0]: Bundle entry missing fullUrl
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[0].resource.ofType(Composition).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[0].resource.ofType(Composition).author[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[0].resource.ofType(Composition).section[0].entry[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/ex-MHV-BlueButton-0: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition - listed in meta
-INFORMATION: Bundle/ex-MHV-BlueButton-0: Bundle.entry[1].resource.ofType(Encounter): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[1]: Bundle entry missing fullUrl
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[1].resource.ofType(Encounter).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/ex-MHV-BlueButton-0: Bundle.entry[2].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[2]: Bundle entry missing fullUrl
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[2].resource.ofType(Observation).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/ex-MHV-BlueButton-0: Bundle.entry[2].resource.ofType(Observation): Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight - listed in meta
-INFORMATION: Bundle/ex-MHV-BlueButton-0: Bundle.entry[3].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[3]: Bundle entry missing fullUrl
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[3].resource.ofType(Observation).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-INFORMATION: Bundle/ex-MHV-BlueButton-0: Bundle.entry[3].resource.ofType(Observation): Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[1].resource.subject.reference: Can't find 'Patient/example' in the bundle (Composition.subject)
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[1].resource.author[1].reference: Can't find 'Patient/example' in the bundle (Composition.author)
-ERROR: Bundle/ex-MHV-BlueButton-0: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
-INFORMATION: Bundle/ex-MHV-BlueButton-0: Bundle: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle - listed in meta
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Bundle-ex-MHV-Bluebutton-0.json ==
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle: bdl-9: A document must have an identifier with a system and a value [(type = 'document') implies (identifier.system.exists() and identifier.value.exists())]
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[0].resource.ofType(Composition).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[0].resource.ofType(Composition).author[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[0].resource.ofType(Composition).section[0].entry[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition - listed in meta
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[2].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[2]: Bundle entry missing fullUrl
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[2].resource.ofType(Observation).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[2].resource.ofType(Observation): Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight - listed in meta
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[3].resource.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[3]: Bundle entry missing fullUrl
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[3].resource.ofType(Observation).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[3].resource.ofType(Observation): Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle - listed in meta
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[0]: Internal error: Profile based discriminators must have a type with a profile (Bundle.entry:Patient.resource in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle)
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[1]: Internal error: Profile based discriminators must have a type with a profile (Bundle.entry:Patient.resource in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle)
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[2]: Internal error: Profile based discriminators must have a type with a profile (Bundle.entry:Patient.resource in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle)
+ERROR: Bundle/ex-MHV-Bluebutton-0: Bundle.entry[3]: Internal error: Profile based discriminators must have a type with a profile (Bundle.entry:Patient.resource in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle)
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle: Bundle.entry:Patient: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle)
+INFORMATION: Bundle/ex-MHV-Bluebutton-0: Bundle: Bundle.entry:MHVcompositionBluebutton: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle)
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-CPM.json ==
+INFORMATION: CodeSystem/CPM: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-OnclC.json ==
 INFORMATION: CodeSystem/OnclC: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Composition-ex-MHV-Composition-0.json ==
 INFORMATION: Composition/ex-MHV-Composition-0: Composition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
 INFORMATION: Composition/ex-MHV-Composition-0: Composition: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition - listed in meta
-== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-example.json ==
-INFORMATION: Encounter/example: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-ex-encounter.json ==
+INFORMATION: Encounter/ex-encounter: Encounter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\MedicationStatement-ex-MHV-medication-0.json ==
 INFORMATION: MedicationStatement/ex-MHV-medication-0: MedicationStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationStatement
 INFORMATION: MedicationStatement/ex-MHV-medication-0: MedicationStatement.contained[0].ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: MedicationStatement/ex-MHV-medication-0: MedicationStatement.contained[1].ofType(MedicationDispense): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationDispense
-ERROR: MedicationStatement/ex-MHV-medication-0: MedicationStatement.status: The value provided ('final') is not in the value set http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1 (http://hl7.org/fhir/ValueSet/medication-statement-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/CodeSystem/medication-statement-status#final in http://hl7.org/fhir/CodeSystem/medication-statement-status)
+INFORMATION: MedicationStatement/ex-MHV-medication-0: MedicationStatement.contained[2].ofType(MedicationRequest): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationRequest
 INFORMATION: MedicationStatement/ex-MHV-medication-0: MedicationStatement: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication - listed in meta
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0.json ==
 INFORMATION: Observation/ex-MHV-bloodPressure-0: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
@@ -1237,6 +1278,10 @@ INFORMATION: Observation/ex-temperature-9: Observation: Validate resource agains
 INFORMATION: Observation/ex-weight-core: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-stone.json ==
 INFORMATION: Observation/ex-weight-stone: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Patient-ex-patient.json ==
+INFORMATION: Patient/ex-patient: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Practitioner-ex-practitioner.json ==
+INFORMATION: Practitioner/ex-practitioner: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.BlueBundle.json ==
 INFORMATION: StructureDefinition/VA.MHV.BlueBundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.BlueComposition.json ==
@@ -1255,6 +1300,8 @@ INFORMATION: StructureDefinition/VA.MHV.heartRate: StructureDefinition: Validate
 INFORMATION: StructureDefinition/VA.MHV.medication: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain.json ==
 INFORMATION: StructureDefinition/VA.MHV.pain: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-AllAppIdCodes.json ==
+INFORMATION: ValueSet/AllAppIdCodes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-pressure-positions.json ==
 INFORMATION: ValueSet/mhv-blood-pressure-positions: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-sugar-methods-sites.json ==
@@ -1274,23 +1321,16 @@ INFORMATION: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation: Vali
 INFORMATION: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - listed in meta
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MK-BloodSugar.json ==
 INFORMATION: Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0: Observation.meta.tag[0]: Code System URI 'https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping' is unknown so the code cannot be validated
+ERROR: Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0: Observation.meta.tag[0]: Unknown Code https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping#1e11b692-1898-4351-a7c5-428f61c91817 in https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping for 'https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping#1e11b692-1898-4351-a7c5-428f61c91817'
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Observation-blood-glucose.xml ==
 ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
 INFORMATION: Observation/blood-glucose: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/blood-glucose: Observation.meta.profile[0]: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab' does not resolve
-WARNING: Observation/blood-glucose: Observation.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab' could not be resolved, so has not been checked
-== C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Patient-example.json ==
-INFORMATION: Patient/example: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-WARNING: Patient/example: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodSugar.xml ==
 ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
 INFORMATION: Observation/f001: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/f001: Observation.performer[0]: Unable to resolve resource 'Practitioner/f005'
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodpressure.xml ==
 ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
 INFORMATION: Observation/blood-pressure: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-ERROR: Observation/blood-pressure: Observation.performer[0]: Unable to resolve resource 'Practitioner/example'
 INFORMATION: Observation/blood-pressure: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/vitalsigns - listed in meta
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bodyTemp.xml ==
 ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
@@ -1309,8 +1349,6 @@ WARNING: MedicationStatement/example001: MedicationStatement.contained.ofType(Me
 ERROR: MedicationStatement/example001: MedicationStatement.contained.ofType(Medication).ingredient[0].strength.denominator: Unknown Code http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#Tab in http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm for 'http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#Tab'
 ERROR: MedicationStatement/example001: MedicationStatement.contained.ofType(Medication).ingredient[1].strength.denominator: Unknown Code http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#Tab in http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm for 'http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#Tab'
 INFORMATION: MedicationStatement/example001: MedicationStatement.medication.ofType(Reference): Details for #med0309 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Medication
-ERROR: MedicationStatement/example001: MedicationStatement.subject: Unable to resolve resource 'Patient/pat1'
-ERROR: MedicationStatement/example001: MedicationStatement.informationSource: Unable to resolve resource 'Patient/pat1'
 ERROR: MedicationStatement/example001: MedicationStatement.derivedFrom[0]: Unable to resolve resource 'MedicationRequest/medrx002'
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-weight.xml ==
 ERROR: Observation.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up

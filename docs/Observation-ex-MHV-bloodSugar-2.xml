@@ -10,7 +10,7 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href="Patient-example.html">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, after meal</p><p><b>method</b>: <span title="Codes: {http://snomed.info/sct 15220000}">Laboratory Test</span></p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 162549003}">Eating routine (observable entity)</span></td><td>after meal</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, after meal</p><p><b>method</b>: <span title="Codes: {http://snomed.info/sct 15220000}">Laboratory Test</span></p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 162549003}">Eating routine (observable entity)</span></td><td>after meal</td></tr></table></div>
   </text>
   <status value="final"/>
   <category>
@@ -30,7 +30,7 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/example"/>
+    <reference value="Patient/ex-patient"/>
   </subject>
   <effectiveDateTime value="2004-12-25T23:50:50-05:00"/>
   <valueQuantity>

@@ -51,12 +51,12 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:Observation.encounter [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Encounter/example>;
-     fhir:Reference.reference [ fhir:value "Encounter/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Encounter/ex-encounter>;
+     fhir:Reference.reference [ fhir:value "Encounter/ex-encounter" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2016-03-28"^^xsd:date];
   fhir:Observation.valueQuantity [

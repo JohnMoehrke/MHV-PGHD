@@ -23,7 +23,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 55188-7}\">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 55188-7}\">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>"
   ];
   fhir:Composition.status [ fhir:value "final"];
   fhir:Composition.type [
@@ -36,14 +36,14 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:Composition.date [ fhir:value "2020-11-24"^^xsd:date];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:Composition.title [ fhir:value "All Vital-Signs entered in past 60 days"];
   fhir:Composition.section [

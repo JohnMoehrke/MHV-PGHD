@@ -8,7 +8,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
 * code.coding = LOINC#55284-4 "Blood pressure systolic and diastolic"
 * code.coding[1] = LOINC#8716-3 "Vital Signs"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * component.code = LOINC#8480-6 "Systolic blood pressure"
 * component.valueQuantity = 140.0 'mm[Hg]'

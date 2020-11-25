@@ -14,7 +14,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 55188-7}\">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 55188-7}\">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>"
   },
   "status": "final",
   "type": {
@@ -27,12 +27,12 @@
     ]
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/ex-patient"
   },
   "date": "2020-11-24",
   "author": [
     {
-      "reference": "Patient/example"
+      "reference": "Patient/ex-patient"
     }
   ],
   "title": "All Vital-Signs entered in past 60 days",

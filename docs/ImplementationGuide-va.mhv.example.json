@@ -67,6 +67,19 @@
         "extension": [
           {
             "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
             "valueString": "autoload-resources"
           },
           {
@@ -404,25 +417,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
+            "valueString": "Bundle"
           }
         ],
         "reference": {
-          "reference": "Patient/example"
-        }
+          "reference": "Bundle/ex-MHV-Bluebutton-0"
+        },
+        "name": "Example Bundle - ex-MHV-Bluebutton-0",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
+            "valueString": "CodeSystem"
           }
         ],
         "reference": {
-          "reference": "Bundle/ex-MHV-BlueButton-0"
+          "reference": "CodeSystem/CPM"
         },
-        "name": "Example Bundle - ex-MHV-BlueButton-0",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle"
+        "name": "PGD other apps",
+        "description": "Seems to be used by Mobile Kidney"
       },
       {
         "extension": [
@@ -458,7 +473,7 @@
           }
         ],
         "reference": {
-          "reference": "Encounter/example"
+          "reference": "Encounter/ex-encounter"
         }
       },
       {
@@ -1105,6 +1120,28 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/ex-patient"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/ex-practitioner"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -1138,7 +1175,7 @@
           "reference": "StructureDefinition/VA.MHV.BlueBundle"
         },
         "name": "VA MHV BlueButton Bundle",
-        "description": "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n* must have Composition\r\n* must have a timestamp of when this was created\r\n* must contain everything referenced by Composition including Patient\r\n* DSTU2 use comment rather than note"
+        "description": "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n* must be a document type Bundle\r\n* must have a timestamp of when this was created\r\n* must have a MHV Bluebutton type of a Composition \r\n* must include Patient Resource\r\n* must include all Resources referenced by Composition \r\n* DSTU2 use comment rather than note"
       },
       {
         "extension": [
@@ -1203,7 +1240,7 @@
           "reference": "StructureDefinition/VA.MHV.medication"
         },
         "name": "VA MHV Medication",
-        "description": "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication\r\n* must have a dosage\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier"
+        "description": "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication\r\n* must have a strength per dose\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier"
       },
       {
         "extension": [
@@ -1217,6 +1254,17 @@
         },
         "name": "VA MHV Pain Observation",
         "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have both LOINC#72514-3 and SCT#225908003 code\r\n* must have effectiveDateTime\r\n* must have integer between 0-10\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 will need to change to valueQuantity vs valueInteger\r\n* DSTU2 use comment rather than note"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AllAppIdCodes"
+        }
       },
       {
         "extension": [

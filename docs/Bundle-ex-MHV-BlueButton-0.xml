@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ex-MHV-BlueButton-0"/>
+  <id value="ex-MHV-Bluebutton-0"/>
   <meta>
     <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle"/>
     <tag>
@@ -23,7 +23,7 @@
           </tag>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 55188-7}">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href="Patient-example.html">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 55188-7}">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href="#Patient_ex-patient">See above (Patient/ex-patient)</a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>
         </text>
         <status value="final"/>
         <type>
@@ -34,11 +34,11 @@
           </coding>
         </type>
         <subject>
-          <reference value="Patient/example"/>
+          <reference value="Patient/ex-patient"/>
         </subject>
         <date value="2020-11-24"/>
         <author>
-          <reference value="Patient/example"/>
+          <reference value="Patient/ex-patient"/>
         </author>
         <title value="All Vital-Signs entered in past 60 days"/>
         <section>
@@ -63,20 +63,16 @@
   </entry>
   <entry>
     <resource>
-      <Encounter>
-        <id value="example"/>
+      <Patient>
+        <id value="ex-patient"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode HH}">home health</span></p><p><b>subject</b>: <a href="Patient-example.html">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Jack Smith </p></div>
         </text>
-        <status value="finished"/>
-        <class>
-          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-          <code value="HH"/>
-        </class>
-        <subject>
-          <reference value="Patient/example"/>
-        </subject>
-      </Encounter>
+        <name>
+          <family value="Smith"/>
+          <given value="Jack"/>
+        </name>
+      </Patient>
     </resource>
   </entry>
   <entry>
@@ -91,7 +87,7 @@
           </tag>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: <a href="Patient-example.html">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 185 [lb_av]</p><p><b>note</b>: a bit heavy</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: <a href="#Patient_ex-patient">See above (Patient/ex-patient)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 185 [lb_av]</p><p><b>note</b>: a bit heavy</p></div>
         </text>
         <status value="final"/>
         <category>
@@ -107,7 +103,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example"/>
+          <reference value="Patient/ex-patient"/>
         </subject>
         <effectiveDateTime value="2004-12-25T23:50:50-05:00"/>
         <valueQuantity>
@@ -133,7 +129,7 @@
           </tag>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href="Patient-example.html">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, no indicated method, no indicated eating</p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 162549003}">Eating routine (observable entity)</span></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href="#Patient_ex-patient">See above (Patient/ex-patient)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, no indicated method, no indicated eating</p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 162549003}">Eating routine (observable entity)</span></td></tr></table></div>
         </text>
         <status value="final"/>
         <category>
@@ -153,7 +149,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example"/>
+          <reference value="Patient/ex-patient"/>
         </subject>
         <effectiveDateTime value="2004-12-25T23:50:50-05:00"/>
         <valueQuantity>

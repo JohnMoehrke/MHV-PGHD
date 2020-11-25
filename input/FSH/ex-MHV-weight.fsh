@@ -7,7 +7,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#29463-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 185 '[lb_av]' 
 // no comments in this one as comments is only in DSTU2
@@ -25,8 +25,8 @@ Description:      "holding typical values. Should be close to the example body w
 * code.coding[1] = LOINC#3141-9
 * code.coding[2] = SCT#27113001
 * code.coding[3] = http://acme.org/devices/clinical-codes#body-weight "Body Weight"
-* subject = Reference(Patient/example)
-* encounter = Reference(Encounter/example)
+* subject = Reference(Patient/ex-patient)
+* encounter = Reference(Encounter/ex-encounter)
 * effectiveDateTime = 2016-03-28
 * valueQuantity = 185 '[lb_av]' 
 
@@ -42,8 +42,8 @@ Description:      "holding typical stone values."
 * code.coding[1] = LOINC#3141-9
 * code.coding[2] = SCT#27113001
 * code.coding[3] = http://acme.org/devices/clinical-codes#body-weight "Body Weight"
-* subject = Reference(Patient/example)
-* encounter = Reference(Encounter/example)
+* subject = Reference(Patient/ex-patient)
+* encounter = Reference(Encounter/ex-encounter)
 * effectiveDateTime = 2016-03-28
 * valueQuantity = 20 '[stone_av]' 
 * note.text = "a bit heavy, about 280 lbs"

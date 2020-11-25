@@ -3,7 +3,7 @@
   "id": "ex-weight-stone",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}, {http://loinc.org 3141-9}, {http://snomed.info/sct 27113001}, {http://acme.org/devices/clinical-codes body-weight}\">body weight</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>encounter</b>: <a href=\"Encounter-example.html\">Generated Summary: status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode HH}\">home health</span></a></p><p><b>effective</b>: 2016-03-28</p><p><b>value</b>: 20 [stone_av]</p><p><b>note</b>: a bit heavy, about 280 lbs</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}, {http://loinc.org 3141-9}, {http://snomed.info/sct 27113001}, {http://acme.org/devices/clinical-codes body-weight}\">body weight</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>encounter</b>: <a href=\"Encounter-ex-encounter.html\">Generated Summary: status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode HH}\">home health</span></a></p><p><b>effective</b>: 2016-03-28</p><p><b>value</b>: 20 [stone_av]</p><p><b>note</b>: a bit heavy, about 280 lbs</p></div>"
   },
   "status": "final",
   "category": [
@@ -39,10 +39,10 @@
     "text": "body weight"
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/ex-patient"
   },
   "encounter": {
-    "reference": "Encounter/example"
+    "reference": "Encounter/ex-encounter"
   },
   "effectiveDateTime": "2016-03-28",
   "valueQuantity": {

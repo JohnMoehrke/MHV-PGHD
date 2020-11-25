@@ -23,14 +23,14 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/example"/>
+    <reference value="Patient/ex-patient"/>
   </subject>
   <effectivePeriod>
     <start value="2013-04-02T09:30:10+01:00"/>
   </effectivePeriod>
   <issued value="2013-04-03T15:30:10+01:00"/>
   <performer>
-    <reference value="Practitioner/f005"/>
+    <reference value="Practitioner/ex-practitioner"/>
     <display value="A. Langeveld"/>
   </performer>
   <valueQuantity>

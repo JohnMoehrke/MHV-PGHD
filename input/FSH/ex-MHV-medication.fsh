@@ -6,7 +6,7 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #active
 * category = http://terminology.hl7.org/CodeSystem/medication-statement-category#patientspecified
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectivePeriod.start = 2004-12-25 // started taking
 * effectivePeriod.end = 2021-12-25  // end of prescription
 * dateAsserted = 2020-11-24
@@ -21,7 +21,9 @@ Description:      "holding typical values"
 * reasonCode.text = "Body pains"
 * contained[0] = in-Pharmacy
 * contained[1] = in-Dispense
+* contained[2] = in-Request
 * partOf = Reference(in-Dispense)
+* basedOn = Reference(in-Request)
 * identifier.value = "1234" // The prescription number
 
 Instance: in-Dispense
@@ -39,3 +41,13 @@ Usage: #inline
 * name = "CVS" // PHARMACY_NAME
 * telecom.value = "+17773339998" // PHARMACY_PHONE_NBR
 * telecom.system = #phone
+
+Instance: in-Request
+InstanceOf: MedicationRequest
+Usage: #inline
+* status = #active
+* intent = #order
+* medicationCodeableConcept.text = "Tylenol"
+* subject = Reference(Patient/ex-patient)
+* requester.display = "Dr. Prancy Practitioner"
+* identifier.value = "1234" // The prescription number

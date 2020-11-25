@@ -103,16 +103,14 @@
      fhir:Reference.reference [ fhir:value "#med0309" ]
   ];
   fhir:MedicationStatement.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/pat1>;
-     fhir:Reference.reference [ fhir:value "Patient/pat1" ];
-     fhir:Reference.display [ fhir:value "Donald Duck" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:MedicationStatement.effectiveDateTime [ fhir:value "2015-01-23"^^xsd:date];
   fhir:MedicationStatement.dateAsserted [ fhir:value "2015-02-22"^^xsd:date];
   fhir:MedicationStatement.informationSource [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/pat1>;
-     fhir:Reference.reference [ fhir:value "Patient/pat1" ];
-     fhir:Reference.display [ fhir:value "Donald Duck" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:MedicationStatement.derivedFrom [
      fhir:index 0;

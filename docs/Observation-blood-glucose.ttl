@@ -11,12 +11,7 @@
   fhir:Resource.id [ fhir:value "blood-glucose"];
   fhir:Resource.meta [
      fhir:Meta.versionId [ fhir:value "1165" ];
-     fhir:Meta.lastUpdated [ fhir:value "2016-03-09T15:29:58.328+00:00"^^xsd:dateTime ];
-     fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab";
-       fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab>
-     ]
+     fhir:Meta.lastUpdated [ fhir:value "2016-03-09T15:29:58.328+00:00"^^xsd:dateTime ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
@@ -44,8 +39,8 @@
      fhir:CodeableConcept.text [ fhir:value "Glucose Bld-mCnc" ]
   ];
   fhir:Observation.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2005-07-05"^^xsd:date];
   fhir:Observation.valueQuantity [

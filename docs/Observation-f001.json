@@ -23,7 +23,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/ex-patient"
   },
   "effectivePeriod": {
     "start": "2013-04-02T09:30:10+01:00"
@@ -31,7 +31,7 @@
   "issued": "2013-04-03T15:30:10+01:00",
   "performer": [
     {
-      "reference": "Practitioner/f005",
+      "reference": "Practitioner/ex-practitioner",
       "display": "A. Langeveld"
     }
   ],

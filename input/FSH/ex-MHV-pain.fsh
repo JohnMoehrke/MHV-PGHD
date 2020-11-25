@@ -8,7 +8,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 0 
 
@@ -22,7 +22,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 1 
 * note.text = "good vibes"
@@ -37,7 +37,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 2 
 
@@ -51,7 +51,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 3 
 
@@ -65,7 +65,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 4 
 
@@ -79,7 +79,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 5 
 * note.text = "comme ci comme ça"
@@ -94,7 +94,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 6 
 
@@ -108,7 +108,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 7 
 * note.text = "not good"
@@ -123,7 +123,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 8 
 * note.text = "please help"
@@ -138,7 +138,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 9 
 * note.text = "I can't take it"
@@ -153,7 +153,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 10 
 * note.text = "Oh, scream in pain"
@@ -169,7 +169,7 @@ Description:      "holding invalid values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 11
 
@@ -183,7 +183,7 @@ Description:      "holding invalid values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
 * bodySite = SCT#89837001 "urinary bladder"
@@ -198,7 +198,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 10 
 * note.text = "Oh, scream in pain"
@@ -212,7 +212,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 10 
 * note.text = "Oh, scream in pain"
@@ -228,7 +228,7 @@ Description:      "holding invalid values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity.value = 3.14159
 * note.text = "pie pain"
@@ -244,7 +244,7 @@ Description:      "holding typical values"
 * code.coding = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * code.coding[2] = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueInteger = 10 
 * note.text = "Oh, scream in pain"

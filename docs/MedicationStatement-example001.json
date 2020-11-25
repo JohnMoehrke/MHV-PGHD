@@ -102,14 +102,12 @@
     "reference": "#med0309"
   },
   "subject": {
-    "reference": "Patient/pat1",
-    "display": "Donald Duck"
+    "reference": "Patient/ex-patient"
   },
   "effectiveDateTime": "2015-01-23",
   "dateAsserted": "2015-02-22",
   "informationSource": {
-    "reference": "Patient/pat1",
-    "display": "Donald Duck"
+    "reference": "Patient/ex-patient"
   },
   "derivedFrom": [
     {

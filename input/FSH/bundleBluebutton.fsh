@@ -1,6 +1,6 @@
 // MHV BlueButton for PGHD data
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
-Profile:        MHVbluebutton
+Profile:        MHVbundleBluebutton
 Parent:         Bundle
 Id:             VA.MHV.BlueBundle
 Title:          "VA MHV BlueButton Bundle"

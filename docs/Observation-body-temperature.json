@@ -34,7 +34,7 @@
     "text": "Body temperature"
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/ex-patient"
   },
   "effectiveDateTime": "1999-07-02",
   "valueQuantity": {

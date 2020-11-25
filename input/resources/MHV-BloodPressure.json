@@ -42,7 +42,7 @@
           ]
         },
         "subject": {
-          "reference": "Patient/example"
+          "reference": "Patient/ex-patient"
         },
         "effectiveDateTime": "2020-08-25T07:20:00-04:00",
         "note": [

@@ -197,9 +197,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td>
 <p>A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.</p>
 <ul>
-  <li>must have Composition</li>
+  <li>must be a document type Bundle</li>
   <li>must have a timestamp of when this was created</li>
-  <li>must contain everything referenced by Composition including Patient</li>
+  <li>must have a MHV Bluebutton type of a Composition </li>
+  <li>must include Patient Resource</li>
+  <li>must include all Resources referenced by Composition </li>
   <li>DSTU2 use comment rather than note</li>
 </ul>
 </td>
@@ -291,7 +293,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>must be marked with MHV app tag</li>
   <li>must have a medication</li>
-  <li>must have a dosage</li>
+  <li>must have a strength per dose</li>
   <li>must have a reason for use</li>
   <li>must have effectiveDateTime</li>
   <li>must have status at final</li>
@@ -338,6 +340,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-AllAppIdCodes.html" title="ValueSet/AllAppIdCodes">ValueSet/AllAppIdCodes</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-mhv-blood-pressure-positions.html" title="ValueSet/mhv-blood-pressure-positions">The methods of measurement for blood pressure that MHV supports</a>
@@ -400,6 +410,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-CPM.html" title="CodeSystem/CPM">PGD other apps</a>
+               </td>
+               <td>
+<p>Seems to be used by Mobile Kidney</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-OnclC.html" title="CodeSystem/OnclC">PGD apps</a>
                </td>
                <td>
@@ -425,7 +443,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-ex-MHV-BlueButton-0.html" title="Bundle/ex-MHV-BlueButton-0">Example Bundle - ex-MHV-BlueButton-0</a>
+                  <a href="Bundle-ex-MHV-Bluebutton-0.html" title="Bundle/ex-MHV-Bluebutton-0">Example Bundle - ex-MHV-Bluebutton-0</a>
                </td>
             </tr>
             <tr>
@@ -657,12 +675,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-example.html" title="Patient/example">Patient/example</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Encounter-example.html" title="Encounter/example">Encounter/example</a>
+                  <a href="Encounter-ex-encounter.html" title="Encounter/ex-encounter">Encounter/ex-encounter</a>
                </td>
             </tr>
             <tr>
@@ -755,6 +768,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="Observation-ex-weight-stone.html" title="Observation/ex-weight-stone">Observation/ex-weight-stone</a>
                </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-ex-patient.html" title="Patient/ex-patient">Patient/ex-patient</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-ex-practitioner.html" title="Practitioner/ex-practitioner">Practitioner/ex-practitioner</a>
+               </td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -779,10 +802,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="82a14af4-9ea5-46ff-82d1-84ea6294e5c2">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.3 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 24, 2020 13:52-0600">2020-11-24</span>
+        <p><a name="428fbe47-fd10-4659-8b32-560a05cb5de0">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.3 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 25, 2020 13:31-0600">2020-11-25</span>
           <br/>
-          <span style="color: #FFFF77"><a name="883afe2c-dd22-4067-b972-b062ed0d824c">​</a>
+          <span style="color: #FFFF77"><a name="9e66e5e9-e97d-4d67-b335-c325f9765493">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
 | <a style="color: #81BEF7" href="../issues">Report an issue</a>

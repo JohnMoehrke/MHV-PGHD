@@ -3,10 +3,7 @@
   "id": "blood-glucose",
   "meta": {
     "versionId": "1165",
-    "lastUpdated": "2016-03-09T15:29:58.328+00:00",
-    "profile": [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
-    ]
+    "lastUpdated": "2016-03-09T15:29:58.328+00:00"
   },
   "text": {
     "status": "generated",
@@ -36,7 +33,7 @@
     "text": "Glucose Bld-mCnc"
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/ex-patient"
   },
   "effectiveDateTime": "2005-07-05",
   "valueQuantity": {

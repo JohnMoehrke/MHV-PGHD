@@ -11,7 +11,7 @@
     "type": "StructureDefinition",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle",
     "version": "0.2.3",
-    "name": "MHVbluebutton"
+    "name": "MHVbundleBluebutton"
   },
   {
     "id": "VA.MHV.BlueComposition",
@@ -70,6 +70,13 @@
     "name": "MHVpain"
   },
   {
+    "id": "AllAppIdCodes",
+    "type": "ValueSet",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes",
+    "version": "0.2.3",
+    "name": "AllAppIdCodes"
+  },
+  {
     "id": "mhv-blood-pressure-positions",
     "type": "ValueSet",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions",
@@ -110,6 +117,13 @@
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
     "version": "0.2.3",
     "name": "MHVmedicationRoutes"
+  },
+  {
+    "id": "CPM",
+    "type": "CodeSystem",
+    "url": "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping",
+    "version": "0.2.3",
+    "name": "AppIdCodesToo"
   },
   {
     "id": "OnclC",

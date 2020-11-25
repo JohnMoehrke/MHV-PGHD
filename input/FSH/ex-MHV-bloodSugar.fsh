@@ -8,7 +8,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 // no comments in this one as comments is only in DSTU2
@@ -24,7 +24,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#15220000 "Laboratory Test"
@@ -43,7 +43,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#15220000 "Laboratory Test"
@@ -62,7 +62,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#15220000 "Laboratory Test"
@@ -81,7 +81,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#350810002 "Lancet"
@@ -100,7 +100,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#263902000 "Transcutaneous method"
@@ -119,7 +119,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#261373009 "Implant technique"
@@ -138,7 +138,7 @@ Description:      "holding atypical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 0 'mg/dL' 
 * method = SCT#261373009 "Implant technique"
@@ -157,7 +157,7 @@ Description:      "holding atypical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100000 'mg/dL' 
 * method = SCT#261373009 "Implant technique"
@@ -176,7 +176,7 @@ Description:      "holding atypical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
 * method = SCT#271061004 "Random blood glucose measurement (procedure)"
@@ -195,7 +195,7 @@ Description:      "holding atypical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
 * method = SCT#308115004 "Self-monitoring of blood and urine glucose (procedure)"
@@ -214,7 +214,7 @@ Description:      "holding atypical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
 * method = SCT#308113006 "Self-monitoring of blood glucose (procedure)"
@@ -233,7 +233,7 @@ Description:      "holding atypical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
 * method = SCT#271064007 "Supper time blood sugar measurement (procedure)"
@@ -252,7 +252,7 @@ Description:      "holding atypical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
 * method = SCT#271064007 "Supper time blood sugar measurement (procedure)"
@@ -271,7 +271,7 @@ Description:      "holding atypical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 //* code.coding[1] = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
 * method = SCT#271064007 "Supper time blood sugar measurement (procedure)"
@@ -290,7 +290,7 @@ Description:      "holding atypical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 //* code.coding = LOINC#2339-0 
 * code.coding = LOINC#2345-7
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
 * method = SCT#271064007 "Supper time blood sugar measurement (procedure)"

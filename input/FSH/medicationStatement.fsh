@@ -6,7 +6,7 @@ Title:          "VA MHV Medication"
 Description:    "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.
 * must be marked with MHV app tag
 * must have a medication
-* must have a dosage
+* must have a strength per dose
 * must have a reason for use
 * must have effectiveDateTime
 * must have status at final
@@ -36,6 +36,9 @@ Description:    "A profile on the MedicationStatement that declares how MHV will
 * category 0..1
 * reasonCode 0..1
 * partOf 0..1 // for the dispense -> organization
+// TODO define contained dispense
+* basedOn 0..1 // for the prescribing clinician 
+// TODO define contained request
 * identifier 0..1
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing
 //* id 0..1
@@ -45,7 +48,6 @@ Description:    "A profile on the MedicationStatement that declares how MHV will
 //* meta.source 0..0
 //* text 0..0
 // not these
-* basedOn 0..0
 * statusReason 0..0
 * context 0..0
 * derivedFrom 0..0

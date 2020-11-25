@@ -7,9 +7,9 @@ Description:      "holding typical values"
 * status = #final
 //* type = LOINC#51855-5 "Patient Note"
 * type = LOINC#55188-7 "Patient data Document"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * date = 2020-11-24
-* author = Reference(Patient/example)
+* author = Reference(Patient/ex-patient)
 * title = "All Vital-Signs entered in past 60 days"
 * section.title = "Blood Pressures"
 * section.code = LOINC#8716-3 "Vital Signs"

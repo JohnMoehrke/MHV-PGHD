@@ -26,7 +26,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 55284-4}, {http://loinc.org 8716-3}\">Blood pressure systolic and diastolic</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Aug 25, 2020 6:20:00 AM</p><p><b>note</b>: Test0724-Sit-Mob-correction-Sit-Mod</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 124 mmHg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 74 mmHg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8867-4}\">Heart rate</span></p><p><b>value</b>: 74 beats/minute</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 69000-8}\">Heart rate --sitting</span></p><p><b>value</b>: Sitting</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 55284-4}, {http://loinc.org 8716-3}\">Blood pressure systolic and diastolic</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Aug 25, 2020 6:20:00 AM</p><p><b>note</b>: Test0724-Sit-Mob-correction-Sit-Mod</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 124 mmHg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 74 mmHg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8867-4}\">Heart rate</span></p><p><b>value</b>: 74 beats/minute</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 69000-8}\">Heart rate --sitting</span></p><p><b>value</b>: Sitting</p></blockquote></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -54,8 +54,8 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2020-08-25T07:20:00-04:00"^^xsd:dateTime];
   fhir:Observation.note [

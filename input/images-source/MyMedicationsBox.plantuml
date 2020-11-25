@@ -1,0 +1,17 @@
+@startsalt
+{^"My Medication box"
+  Medication| "medication name (RxNorm)   "
+  Reason| "reason for taking"
+  Strength| "strength per dosage"
+  Quantity| ^0.5, 1, 2, 3, 4, 5, 6^
+  Frequency| ^per hour, per day, per week, per month^
+  Method| ^Oral, rectal, transdermal, topical, intramucscuolar, intravenous^
+  Prescription Number| "RxNum "
+  Clinician| "who prescribed"
+  Pharmacy| "pharmacy"
+  Phone of Pharmacy| "pharmacy phone"
+  Notes| "notes"
+
+  [  OK   ] | [Cancel]  
+}
+@endsalt

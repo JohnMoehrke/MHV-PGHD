@@ -7,9 +7,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://johnmoehrke.github.io/MHV-PGHD/Bundle/ex-MHV-BlueButton-0> a fhir:Bundle;
+<https://johnmoehrke.github.io/MHV-PGHD/Bundle/ex-MHV-Bluebutton-0> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ex-MHV-BlueButton-0"];
+  fhir:Resource.id [ fhir:value "ex-MHV-Bluebutton-0"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle";
@@ -43,7 +43,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 55188-7}\">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 55188-7}\">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href=\"#Patient_ex-patient\">See above (Patient/ex-patient)</a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>"
        ];
        fhir:Composition.status [ fhir:value "final" ];
        fhir:Composition.type [
@@ -56,14 +56,14 @@
          ]
        ];
        fhir:Composition.subject [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-         fhir:Reference.reference [ fhir:value "Patient/example" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
        ];
        fhir:Composition.date [ fhir:value "2020-11-24"^^xsd:date ];
        fhir:Composition.author [
          fhir:index 0;
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-         fhir:Reference.reference [ fhir:value "Patient/example" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
        ];
        fhir:Composition.title [ fhir:value "All Vital-Signs entered in past 60 days" ];
        fhir:Composition.section [
@@ -93,20 +93,19 @@
   ], [
      fhir:index 1;
      fhir:Bundle.entry.resource [
-       a fhir:Encounter;
-       fhir:Resource.id [ fhir:value "example" ];
+       a fhir:Patient;
+       fhir:Resource.id [ fhir:value "ex-patient" ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode HH}\">home health</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Jack Smith </p></div>"
        ];
-       fhir:Encounter.status [ fhir:value "finished" ];
-       fhir:Encounter.class [
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
-         fhir:Coding.code [ fhir:value "HH" ]
-       ];
-       fhir:Encounter.subject [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-         fhir:Reference.reference [ fhir:value "Patient/example" ]
+       fhir:Patient.name [
+         fhir:index 0;
+         fhir:HumanName.family [ fhir:value "Smith" ];
+         fhir:HumanName.given [
+           fhir:value "Jack";
+           fhir:index 0
+         ]
        ]
      ]
   ], [
@@ -128,7 +127,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 185 [lb_av]</p><p><b>note</b>: a bit heavy</p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"#Patient_ex-patient\">See above (Patient/ex-patient)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 185 [lb_av]</p><p><b>note</b>: a bit heavy</p></div>"
        ];
        fhir:Observation.status [ fhir:value "final" ];
        fhir:Observation.category [
@@ -148,8 +147,8 @@
          ]
        ];
        fhir:Observation.subject [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-         fhir:Reference.reference [ fhir:value "Patient/example" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
        ];
        fhir:Observation.effectiveDateTime [ fhir:value "2004-12-25T23:50:50-05:00"^^xsd:dateTime ];
        fhir:Observation.valueQuantity [
@@ -181,7 +180,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}\">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, no indicated method, no indicated eating</p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 162549003}\">Eating routine (observable entity)</span></td></tr></table></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}\">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"#Patient_ex-patient\">See above (Patient/ex-patient)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, no indicated method, no indicated eating</p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 162549003}\">Eating routine (observable entity)</span></td></tr></table></div>"
        ];
        fhir:Observation.status [ fhir:value "final" ];
        fhir:Observation.category [
@@ -206,8 +205,8 @@
          ]
        ];
        fhir:Observation.subject [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-         fhir:Reference.reference [ fhir:value "Patient/example" ]
+         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
        ];
        fhir:Observation.effectiveDateTime [ fhir:value "2004-12-25T23:50:50-05:00"^^xsd:dateTime ];
        fhir:Observation.valueQuantity [
@@ -236,7 +235,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://johnmoehrke.github.io/MHV-PGHD/Bundle/ex-MHV-BlueButton-0.ttl> a owl:Ontology;
+<https://johnmoehrke.github.io/MHV-PGHD/Bundle/ex-MHV-Bluebutton-0.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

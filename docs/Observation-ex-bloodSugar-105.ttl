@@ -19,7 +19,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2339-0}\">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 100 mg/dL</p><p><b>note</b>: non-MHV normal by supper time blood sugar measurement, just one of the .code values (2339-0)</p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 271064007}\">Supper time blood sugar measurement (procedure)</span></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 162549003}\">Eating routine (observable entity)</span></td><td>before meal</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2339-0}\">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 100 mg/dL</p><p><b>note</b>: non-MHV normal by supper time blood sugar measurement, just one of the .code values (2339-0)</p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 271064007}\">Supper time blood sugar measurement (procedure)</span></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 162549003}\">Eating routine (observable entity)</span></td><td>before meal</td></tr></table></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -39,8 +39,8 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2004-12-25T23:50:50-05:00"^^xsd:dateTime];
   fhir:Observation.valueQuantity [

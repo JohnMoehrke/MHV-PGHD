@@ -30,8 +30,8 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:Observation.effectivePeriod [
      fhir:Period.start [ fhir:value "2013-04-02T09:30:10+01:00"^^xsd:dateTime ]
@@ -39,8 +39,8 @@
   fhir:Observation.issued [ fhir:value "2013-04-03T15:30:10+01:00"^^xsd:dateTime];
   fhir:Observation.performer [
      fhir:index 0;
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Practitioner/f005>;
-     fhir:Reference.reference [ fhir:value "Practitioner/f005" ];
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Practitioner/ex-practitioner>;
+     fhir:Reference.reference [ fhir:value "Practitioner/ex-practitioner" ];
      fhir:Reference.display [ fhir:value "A. Langeveld" ]
   ];
   fhir:Observation.valueQuantity [

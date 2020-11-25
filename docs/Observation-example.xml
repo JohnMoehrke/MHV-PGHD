@@ -58,10 +58,10 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/example"/>
+    <reference value="Patient/ex-patient"/>
   </subject>
   <encounter>
-    <reference value="Encounter/example"/>
+    <reference value="Encounter/ex-encounter"/>
   </encounter>
   <effectiveDateTime value="2016-03-28"/>
 <!--      In FHIR, units may be represented twice. Once in the

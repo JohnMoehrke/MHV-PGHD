@@ -42,10 +42,10 @@
     ]
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/ex-patient"
   },
   "encounter": {
-    "reference": "Encounter/example"
+    "reference": "Encounter/ex-encounter"
   },
   "effectiveDateTime": "2016-03-28",
   "valueQuantity": {

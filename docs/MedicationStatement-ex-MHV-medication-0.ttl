@@ -23,7 +23,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1234</p><p><b>partOf</b>: <a name=\"in-Dispense\"> </a></p><blockquote><p><b>status</b>: unknown</p><p><b>medication</b>: <span title=\"Codes: \">Tylenol</span></p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#in-Pharmacy\">#in-Pharmacy</a></td></tr></table></blockquote><p><b>status</b>: final</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medication-statement-category patientspecified}\">Patient Specified</span></p><p><b>medication</b>: <span title=\"Codes: \">Tylenol</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>effective</b>: 2004-12-25 --&gt; 2021-12-25</p><p><b>dateAsserted</b>: 2020-11-24</p><p><b>reasonCode</b>: <span title=\"Codes: \">Body pains</span></p><p><b>note</b>: a minimal medication</p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1234</p><p><b>basedOn</b>: <a name=\"in-Request\"> </a></p><blockquote><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <span title=\"Codes: \">Tylenol</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>requester</b>: <span>Dr. Prancy Practitioner</span></p></blockquote><p><b>partOf</b>: <a name=\"in-Dispense\"> </a></p><blockquote><p><b>status</b>: unknown</p><p><b>medication</b>: <span title=\"Codes: \">Tylenol</span></p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#in-Pharmacy\">#in-Pharmacy</a></td></tr></table></blockquote><p><b>status</b>: active</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medication-statement-category patientspecified}\">Patient Specified</span></p><p><b>medication</b>: <span title=\"Codes: \">Tylenol</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: 2004-12-25 --&gt; 2021-12-25</p><p><b>dateAsserted</b>: 2020-11-24</p><p><b>reasonCode</b>: <span title=\"Codes: \">Body pains</span></p><p><b>note</b>: a minimal medication</p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></div>"
   ];
   fhir:DomainResource.contained [
      a fhir:Organization;
@@ -53,16 +53,40 @@
          fhir:Reference.reference [ fhir:value "#in-Pharmacy" ]
        ]
      ]
+  ], [
+     a fhir:MedicationRequest;
+     fhir:index 2;
+     fhir:Resource.id [ fhir:value "in-Request" ];
+     fhir:MedicationRequest.identifier [
+       fhir:index 0;
+       fhir:Identifier.value [ fhir:value "1234" ]
+     ];
+     fhir:MedicationRequest.status [ fhir:value "active" ];
+     fhir:MedicationRequest.intent [ fhir:value "order" ];
+     fhir:MedicationRequest.medicationCodeableConcept [
+       fhir:CodeableConcept.text [ fhir:value "Tylenol" ]
+     ];
+     fhir:MedicationRequest.subject [
+       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+       fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
+     ];
+     fhir:MedicationRequest.requester [
+       fhir:Reference.display [ fhir:value "Dr. Prancy Practitioner" ]
+     ]
   ];
   fhir:MedicationStatement.identifier [
      fhir:index 0;
      fhir:Identifier.value [ fhir:value "1234" ]
   ];
+  fhir:MedicationStatement.basedOn [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "#in-Request" ]
+  ];
   fhir:MedicationStatement.partOf [
      fhir:index 0;
      fhir:Reference.reference [ fhir:value "#in-Dispense" ]
   ];
-  fhir:MedicationStatement.status [ fhir:value "final"];
+  fhir:MedicationStatement.status [ fhir:value "active"];
   fhir:MedicationStatement.category [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -74,8 +98,8 @@
      fhir:CodeableConcept.text [ fhir:value "Tylenol" ]
   ];
   fhir:MedicationStatement.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:MedicationStatement.effectivePeriod [
      fhir:Period.start [ fhir:value "2004-12-25"^^xsd:date ];

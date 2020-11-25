@@ -1,0 +1,10 @@
+@startuml
+package "FHIR Bluebutton Document Bundle" #DDDDDD {
+
+
+  Composition --> "1..1" Patient
+  Composition --> "0..*" VitalSigns
+  Composition --> "0..*" Medications
+
+}
+@enduml

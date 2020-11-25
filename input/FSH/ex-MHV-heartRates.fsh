@@ -7,7 +7,7 @@ Description:      "Heart Rate holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8867-4
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 185 '/min' 
 // no comments in this one as comments is only in DSTU2
@@ -22,7 +22,7 @@ Description:      "Heart Rate holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8867-4
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 18 '/min' 
 // no comments in this one as comments is only in DSTU2
@@ -37,7 +37,7 @@ Description:      "Heart Rate holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8867-4
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 65 '/min' 
 // no comments in this one as comments is only in DSTU2

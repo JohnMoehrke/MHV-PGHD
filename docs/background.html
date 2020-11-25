@@ -123,14 +123,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#test-plan" id="markdown-toc-test-plan">Test Plan</a></li>
+  <li><a href="#cucumber-actions" id="markdown-toc-cucumber-actions">Cucumber Actions</a></li>
+</ul>
+
 </div>
-<p><a name="f26f35d8-7f0d-4821-9dbb-0c473dc4cb7d">​</a>Overall test plan leverages the Profiles, and Examples shown on the <a href="artifacts.html">Artifacts Summary</a>. The <a href="artifacts.html#structures-resource-profiles">Profiles</a> listed are describing the constraints that MHV uses when publishing (Create or Update) into PGHD. Thus any Resources that are known to have been published by MHV MUST be conformant to these profiles.</p>
 
-<p><a name="4ad67121-deaa-4d9a-8de5-de869c8f31d9">​</a>The Examples listed in <a href="artifacts.html#example-example-instances">Example Instances</a> are example instances that are conformant to the MHV profiles.</p>
+<p>MyHealtheVet provides access to the VA managed Patient Generated Health Data (PGHD) FHIR based repository. MyHealtheVet enables viewing of the data, creating new entries, editing existing entries, and deleting entries. In addition MyHealtheVet enables the output of a FHIR-Document Bluebutton report.</p>
 
-<p><a name="c90d2106-b825-41a8-babd-ded80e62560d">​</a>The Examples listed in <a href="artifacts.html#other">Other</a> are examples that either assist with the structure of the examples (e.g. Patient and Encounter) or are examples that MHV should be able to handle in various ways.</p>
+<ul>
+  <li>Vital Signs
+    <ul>
+      <li><a href="StructureDefinition-VA.MHV.bloodPressure.html">Blood Pressure</a></li>
+      <li><a href="StructureDefinition-VA.MHV.bloodSugar.html">Blood Sugar</a></li>
+      <li><a href="StructureDefinition-VA.MHV.bodyTemperature.html">Body Temperature</a></li>
+      <li><a href="StructureDefinition-VA.MHV.bodyWeight.html">Body Weight</a></li>
+      <li><a href="StructureDefinition-VA.MHV.heartRate.html">Heart Rate</a></li>
+      <li><a href="StructureDefinition-VA.MHV.pain.html">Pain</a></li>
+    </ul>
+  </li>
+  <li><a href="StructureDefinition-VA.MHV.medication.html">Medications</a></li>
+  <li><a href="StructureDefinition-VA.MHV.BlueBundle.html">FHIR Document Bluebutton report</a></li>
+</ul>
+
+<h3 id="test-plan">Test Plan</h3>
+<p><a name="081d777b-e1b1-4b28-be45-a73454488209">​</a>Overall test plan leverages the Profiles, and Examples shown on the <a href="artifacts.html">Artifacts Summary</a>. The <a href="artifacts.html#structures-resource-profiles">Profiles</a> listed are describing the constraints that MHV uses when publishing (Create or Update) into PGHD. Thus any Resources that are known to have been published by MHV MUST be conformant to these profiles.</p>
+
+<p><a name="809db32a-d278-421a-96f1-c2811e34ce14">​</a>The Examples listed in <a href="artifacts.html#example-example-instances">Example Instances</a> are example instances that are conformant to the MHV profiles.</p>
+
+<p><a name="f4977e55-6613-420d-80dd-ebe3f88905ee">​</a>The Examples listed in <a href="artifacts.html#other">Other</a> are examples that either assist with the structure of the examples (e.g. Patient and Encounter) or are examples that MHV should be able to handle in various ways.</p>
 
 <p>See the Test Plan for each Profile to understand the specific expectations for each good, odd, and bad example.</p>
 <ul>
@@ -194,10 +217,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="09b23eea-6173-4d0c-b979-43ee3e85d386">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.3 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 24, 2020 13:52-0600">2020-11-24</span>
+        <p><a name="3ee996f5-1741-4b81-ae76-ba47c487133e">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.3 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 25, 2020 13:31-0600">2020-11-25</span>
           <br/>
-          <span style="color: #FFFF77"><a name="20763e27-1c36-4cb6-b577-477d064354cc">​</a>
+          <span style="color: #FFFF77"><a name="b64f2923-b707-4a36-a4d0-6ae8d8e7f150">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
 | <a style="color: #81BEF7" href="../issues">Report an issue</a>

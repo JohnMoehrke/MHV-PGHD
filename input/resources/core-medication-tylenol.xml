@@ -88,14 +88,12 @@
     <reference value="#med0309"/> 
   </medicationReference>  
   <subject> 
-    <reference value="Patient/pat1"/> 
-    <display value="Donald Duck"/>  
+    <reference value="Patient/ex-patient"/> 
   </subject>  
   <effectiveDateTime value="2015-01-23"/> 
   <dateAsserted value="2015-02-22"/> 
   <informationSource> 
-    <reference value="Patient/pat1"/> 
-    <display value="Donald Duck"/>  
+    <reference value="Patient/ex-patient"/> 
   </informationSource> 
   <derivedFrom> 
     <reference value="MedicationRequest/medrx002"/> 

@@ -7,7 +7,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
 
@@ -20,7 +20,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
 * bodySite = SCT#21082005 "Entire mouth region"
@@ -35,7 +35,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
 * bodySite = SCT#362732006 "Entire axillary region"
@@ -50,7 +50,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
 * bodySite = SCT#422005 "Inferior surface of tongue"
@@ -65,7 +65,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
 * bodySite = SCT#1910005 "Entire ear"
@@ -80,7 +80,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
 * bodySite = SCT#181261002 "Entire rectum"
@@ -95,7 +95,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
 * bodySite = SCT#422005 "Inferior surface of tongue"
@@ -110,7 +110,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
 * bodySite.text = "truck"
@@ -125,7 +125,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
 * bodySite = SCT#39937001 "skin"
@@ -140,7 +140,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel'
 * bodySite = SCT#362620003 "entire temporal region"
@@ -155,7 +155,7 @@ Description:      "holding typical values"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8310-5
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
 * bodySite = SCT#89837001 "urinary bladder"

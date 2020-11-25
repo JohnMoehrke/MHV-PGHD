@@ -42,8 +42,8 @@
      fhir:CodeableConcept.text [ fhir:value "Body temperature" ]
   ];
   fhir:Observation.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "1999-07-02"^^xsd:date];
   fhir:Observation.valueQuantity [

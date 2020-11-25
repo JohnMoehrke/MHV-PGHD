@@ -10,7 +10,7 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 55188-7}">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href="Patient-example.html">Generated Summary: ICN: &lt;MVI ICN VALUE WITH CHECKSUM&gt;; Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)</a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 55188-7}">Patient data Document</span></p><p><b>date</b>: 2020-11-24</p><p><b>author</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>title</b>: All Vital-Signs entered in past 60 days</p></div>
   </text>
   <status value="final"/>
   <type>
@@ -21,11 +21,11 @@
     </coding>
   </type>
   <subject>
-    <reference value="Patient/example"/>
+    <reference value="Patient/ex-patient"/>
   </subject>
   <date value="2020-11-24"/>
   <author>
-    <reference value="Patient/example"/>
+    <reference value="Patient/ex-patient"/>
   </author>
   <title value="All Vital-Signs entered in past 60 days"/>
   <section>

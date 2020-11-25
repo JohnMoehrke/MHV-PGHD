@@ -47,12 +47,12 @@
     "text": "Blood pressure systolic & diastolic"
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/ex-patient"
   },
   "effectiveDateTime": "2012-09-17",
   "performer": [
     {
-      "reference": "Practitioner/example"
+      "reference": "Practitioner/ex-practitioner"
     }
   ],
   "interpretation": [

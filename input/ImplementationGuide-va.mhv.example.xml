@@ -54,5 +54,9 @@
 			<code value="special-url"/>
 			<value value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
 		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"/>
+		</parameter>
 	</definition>
 </ImplementationGuide>

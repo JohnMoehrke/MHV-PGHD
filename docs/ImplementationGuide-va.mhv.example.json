@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MHVtoPGHD_Example</h2><p>The official URL for this implementation guide is: </p><pre>https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example</pre><div><p>Testing Plan for VA MyHealtheVet use of PGHD.</p>\n</div></div>"
   },
   "url": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example",
-  "version": "0.2.3",
+  "version": "0.2.3-beta",
   "name": "MHVtoPGHD_Example",
   "status": "draft",
   "experimental": false,
-  "date": "2020-11-23",
+  "date": "2020-12-04",
   "contact": [
     {
       "name": "John Moehrke"
@@ -574,6 +574,83 @@
           }
         ],
         "reference": {
+          "reference": "Observation/ex-bloodSugarB-106100"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-bloodSugarB-106101"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-bloodSugarB-106102"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-bloodSugarB-106103"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-bloodSugarB-106104"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-bloodSugarB-106105"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-bloodSugarB-106106"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/ex-MHV-bloodPressure-0"
         },
         "name": "Example Observation - ex-MHV-bloodPressure-0",
@@ -695,6 +772,123 @@
         },
         "name": "Example Observation - ex-MHV-bloodSugar-8",
         "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-bloodSugarB-0"
+        },
+        "name": "Example Observation - ex-MHV-bloodSugarB-0",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-bloodSugarB-1"
+        },
+        "name": "Example Observation - ex-MHV-bloodSugarB-1",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-bloodSugarB-2"
+        },
+        "name": "Example Observation - ex-MHV-bloodSugarB-2",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-bloodSugarB-3"
+        },
+        "name": "Example Observation - ex-MHV-bloodSugarB-3",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-bloodSugarB-4"
+        },
+        "name": "Example Observation - ex-MHV-bloodSugarB-4",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-bloodSugarB-5"
+        },
+        "name": "Example Observation - ex-MHV-bloodSugarB-5",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-bloodSugarB-6"
+        },
+        "name": "Example Observation - ex-MHV-bloodSugarB-6",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-bloodSugarB-7"
+        },
+        "name": "Example Observation - ex-MHV-bloodSugarB-7",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-bloodSugarB-8"
+        },
+        "name": "Example Observation - ex-MHV-bloodSugarB-8",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
       },
       {
         "extension": [
@@ -1163,6 +1357,19 @@
         },
         "name": "VA MHV Blood Sugar Observation",
         "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#2339-0 code AND LOINC#2345-7\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units only of mg/dL\r\n* must have status at final\r\n* must point at the patient\r\n* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other\r\n* may have a eating routine component with string of fasting, after meal, or unknown\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/VA.MHV.bloodSugarB"
+        },
+        "name": "VA MHV Blood Sugar Observation alternative B",
+        "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#2339-0 code AND LOINC#2345-7\r\n* may have indication of fasting (LOINC#1556-0), or 2-hours after meal (LOINC#6689-4)\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units only of mg/dL\r\n* must have status at final\r\n* must point at the patient\r\n* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note"
       },
       {
         "extension": [

@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain",
-  "version": "0.2.3",
+  "version": "0.2.3-beta",
   "name": "MHVpain",
   "title": "VA MHV Pain Observation",
   "status": "active",

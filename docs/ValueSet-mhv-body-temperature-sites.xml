@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422005">422005</a></td><td>Inferior surface of tongue</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=362732006">362732006</a></td><td>Entire axillary region</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1910005">1910005</a></td><td>Entire ear</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21082005">21082005</a></td><td>Entire mouth region</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=181261002">181261002</a></td><td>Entire rectum</td></tr></table></li></ul></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites"/>
-  <version value="0.2.3"/>
+  <version value="0.2.3-beta"/>
   <name value="MHVbodyTemperatureSites"/>
   <title value="The body temperature measurement sites that MHV supports"/>
   <status value="active"/>
-  <date value="2020-11-25T13:31:34-06:00"/>
+  <date value="2020-12-04T08:30:16-06:00"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>

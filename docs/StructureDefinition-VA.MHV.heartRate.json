@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate",
-  "version": "0.2.3",
+  "version": "0.2.3-beta",
   "name": "MHVheartRate",
   "title": "VA MHV HeartRate Observation",
   "status": "active",

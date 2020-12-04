@@ -1,6 +1,6 @@
 {
   "package": "va.mhv.example",
-  "version": "0.2.3",
+  "version": "0.2.3-beta",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {

@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature",
-  "version": "0.2.3",
+  "version": "0.2.3-beta",
   "name": "MHVbodyTemperature",
   "title": "VA MHV Body Temperature Observation",
   "status": "active",

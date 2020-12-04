@@ -55,7 +55,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
-  <version value="0.2.3"/>
+  <version value="0.2.3-beta"/>
   <name value="MHVbodyTemperature"/>
   <title value="VA MHV Body Temperature Observation"/>
   <status value="active"/>

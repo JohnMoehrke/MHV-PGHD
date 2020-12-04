@@ -25,7 +25,7 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition"/>
-  <version value="0.2.3"/>
+  <version value="0.2.3-beta"/>
   <name value="MHVcompositionBluebutton"/>
   <title value="VA MHV BlueButton Composition"/>
   <status value="active"/>

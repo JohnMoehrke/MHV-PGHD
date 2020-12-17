@@ -6,17 +6,27 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000\">15220000</a></td><td>Laboratory Test</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=350810002\">350810002</a></td><td>Lancet</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=263902000\">263902000</a></td><td>Transcutaneous method</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261373009\">261373009</a></td><td>Implant technique</td></tr></table></li></ul></div>"
   },
   "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites",
-  "version": "0.2.3-beta",
+  "version": "0.2.4-beta",
   "name": "MHVbloodSugarMethods",
   "title": "The methods of measurement for blood sugar that MHV supports",
   "status": "active",
-  "date": "2020-12-04T08:30:16-06:00",
+  "date": "2020-12-17T06:12:53-06:00",
   "contact": [
     {
       "name": "John Moehrke"
     }
   ],
   "description": "These are the SNOMED body sites that MHV supports.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {

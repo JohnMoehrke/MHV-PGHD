@@ -113,7 +113,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure"/>
-  <version value="0.2.3-beta"/>
+  <version value="0.2.4-beta"/>
   <name value="MHVbloodPressure"/>
   <title value="VA MHV Blood Pressure Observation"/>
   <status value="active"/>
@@ -122,6 +122,12 @@
     <name value="John Moehrke"/>
   </contact>
   <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#55284-4 code AND LOINC#8716-3&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must not have a value[x]&#xD;&#xA;* must have two components&#xD;&#xA;* must have systolic and diastolic component values in mm[Hg]&#xD;&#xA;* may have a heart-rate component&#xD;&#xA;* may have a position component&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note &#xD;&#xA;"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

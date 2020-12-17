@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition",
-  "version": "0.2.3-beta",
+  "version": "0.2.4-beta",
   "name": "MHVcompositionBluebutton",
   "title": "VA MHV BlueButton Composition",
   "status": "active",
@@ -27,6 +27,16 @@
     }
   ],
   "description": "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n* must be marked with MHV app tag\r\n* must be status final\r\n* must have a title explaining the content - for example: all vital-signs from past 60 days\r\n* must have date stamp of when created (now)\r\n* must be LOINC 55188-7 Patient data Document\r\n* must point at the patient for both subject and author\r\n* DSTU2 use comment rather than note \r\n",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

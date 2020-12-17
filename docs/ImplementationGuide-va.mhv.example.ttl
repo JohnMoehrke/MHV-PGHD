@@ -13,16 +13,24 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MHVtoPGHD_Example</h2><p>The official URL for this implementation guide is: </p><pre>https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example</pre><div><p>Testing Plan for VA MyHealtheVet use of PGHD.</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"];
-  fhir:ImplementationGuide.version [ fhir:value "0.2.3-beta"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.4-beta"];
   fhir:ImplementationGuide.name [ fhir:value "MHVtoPGHD_Example"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-12-04"^^xsd:date];
+  fhir:ImplementationGuide.date [ fhir:value "2020-12-16"^^xsd:date];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
   ];
   fhir:ImplementationGuide.description [ fhir:value "Testing Plan for VA MyHealtheVet use of PGHD."];
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
   fhir:ImplementationGuide.packageId [ fhir:value "va.mhv.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -1569,7 +1577,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/VA.MHV.medication" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV Medication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication\r\n* must have a strength per dose\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication name\r\n* must have a strength per dose\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final, stopped, or complete\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* may indicate where it was filled\r\n* may indicate who prescribed\r\n* may indicate if sideaffects or none\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier" ]
      ], [
        fhir:index 93;
        fhir:Element.extension [

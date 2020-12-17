@@ -5,21 +5,24 @@ Id:             VA.MHV.medication
 Title:          "VA MHV Medication"
 Description:    "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.
 * must be marked with MHV app tag
-* must have a medication
+* must have a medication name
 * must have a strength per dose
 * must have a reason for use
 * must have effectiveDateTime
-* must have status at final
+* must have status at final, stopped, or complete
 * must point at the patient
 * may have a note 
 * may have quantity
 * may have frequency
 * may have method of taking
 * may have a rx number
+* may indicate where it was filled
+* may indicate who prescribed
+* may indicate if sideaffects or none
 * once created will or might have an id, versionId, lastUpdated, text, and identifier
 "
-* ^version = "0.1.0"
-* ^date = "2020-11-23"
+* ^version = "0.2.0"
+* ^date = "2020-12-16"
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
@@ -39,6 +42,7 @@ Description:    "A profile on the MedicationStatement that declares how MHV will
 // TODO define contained dispense
 * basedOn 0..1 // for the prescribing clinician 
 // TODO define contained request
+// TODO define contained observation
 * identifier 0..1
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing
 //* id 0..1

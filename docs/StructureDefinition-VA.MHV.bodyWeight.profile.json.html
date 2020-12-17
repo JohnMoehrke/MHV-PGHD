@@ -53,7 +53,7 @@
      </a>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.3-beta - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.4-beta - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -103,7 +103,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.3-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.4-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -205,7 +205,7 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.2.3-beta",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.2.4-beta",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "MHVbodyWeight",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "VA MHV BodyWeight Observation",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
@@ -216,6 +216,16 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#29463-7 code\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units from the MHV body weights (lbs and kg)\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note \r\n",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "001"
+        }
+      ]
+    }
+  ],
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a>" : "4.0.1",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">mapping</a>" : [
     {
@@ -3885,10 +3895,10 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="7d294644-216f-4635-a532-8cdda9ab989e">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.3-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 4, 2020 08:30-0600">2020-12-04</span>
+        <p><a name="1ee676f7-0aec-4770-ae24-ef490e7c2bd4">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.4-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 17, 2020 06:12-0600">2020-12-17</span>
           <br/>
-          <span style="color: #FFFF77"><a name="f0ef21ff-f254-42b9-8fc3-72e69fb44d9d">​</a>
+          <span style="color: #FFFF77"><a name="33fcc73e-bea2-4ede-aaaa-1a5590abf305">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
 | <a style="color: #81BEF7" href="../issues">Report an issue</a>

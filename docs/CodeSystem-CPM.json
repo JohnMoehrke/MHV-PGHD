@@ -6,17 +6,27 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1e11b692-1898-4351-a7c5-428f61c91817&quot;<a name=\"CPM-1e11b692-1898-4351-a7c5-428f61c91817.34\"> </a></td><td>MobileKidney</td></tr></table></div>"
   },
   "url": "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping",
-  "version": "0.2.3-beta",
+  "version": "0.2.4-beta",
   "name": "AppIdCodesToo",
   "title": "PGD other apps",
   "status": "active",
-  "date": "2020-12-04T08:30:16-06:00",
+  "date": "2020-12-17T06:12:53-06:00",
   "contact": [
     {
       "name": "John Moehrke"
     }
   ],
   "description": "Seems to be used by Mobile Kidney",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
   "content": "complete",
   "count": 1,
   "concept": [

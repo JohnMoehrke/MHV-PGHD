@@ -53,7 +53,7 @@
      </a>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.3-beta - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.4-beta - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -103,7 +103,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.3-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.4-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -212,7 +212,7 @@
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "patient" ]
   ];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">fhir:StructureDefinition.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"];
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:StructureDefinition.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.2.3-beta"];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:StructureDefinition.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.2.4-beta"];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">fhir:StructureDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "MHVbodyWeight"];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">fhir:StructureDefinition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "VA MHV BodyWeight Observation"];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
@@ -222,6 +222,13 @@
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "John Moehrke" ]
   ];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">fhir:StructureDefinition.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#29463-7 code\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units from the MHV body weights (lbs and kg)\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note \r\n"];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">fhir:StructureDefinition.jurisdiction</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "001" ]     ]
+  ];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhir:StructureDefinition.fhirVersion</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "4.0.1"];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">fhir:StructureDefinition.mapping</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -3413,10 +3420,10 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="12ba2193-5f0d-4340-9cab-3d19ebf8c2dc">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.3-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 4, 2020 08:30-0600">2020-12-04</span>
+        <p><a name="460af73c-63e5-4cec-937f-431f86d4fa9a">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.4-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 17, 2020 06:12-0600">2020-12-17</span>
           <br/>
-          <span style="color: #FFFF77"><a name="73c8c102-9483-4dfe-b4ec-b98722a4f9a3">​</a>
+          <span style="color: #FFFF77"><a name="3e0e5683-d14e-46ea-a673-6288b70b4e7a">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
 | <a style="color: #81BEF7" href="../issues">Report an issue</a>

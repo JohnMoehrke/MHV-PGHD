@@ -7,15 +7,21 @@
 </div></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-  <version value="0.2.3-beta"/>
+  <version value="0.2.4-beta"/>
   <name value="MHVtoPGHD_Example"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-12-04"/>
+  <date value="2020-12-16"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>
   <description value="Testing Plan for VA MyHealtheVet use of PGHD."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <packageId value="va.mhv.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -1052,7 +1058,7 @@
         <reference value="StructureDefinition/VA.MHV.medication"/>
       </reference>
       <name value="VA MHV Medication"/>
-      <description value="A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have a medication&#xD;&#xA;* must have a strength per dose&#xD;&#xA;* must have a reason for use&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note &#xD;&#xA;* may have quantity&#xD;&#xA;* may have frequency&#xD;&#xA;* may have method of taking&#xD;&#xA;* may have a rx number&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have a medication name&#xD;&#xA;* must have a strength per dose&#xD;&#xA;* must have a reason for use&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have status at final, stopped, or complete&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note &#xD;&#xA;* may have quantity&#xD;&#xA;* may have frequency&#xD;&#xA;* may have method of taking&#xD;&#xA;* may have a rx number&#xD;&#xA;* may indicate where it was filled&#xD;&#xA;* may indicate who prescribed&#xD;&#xA;* may indicate if sideaffects or none&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -2,6 +2,5 @@ id: va.mhv.example
 canonical: https://johnmoehrke.github.io/MHV-PGHD
 name: MHVIG
 status: draft
-version: 0.1.0
 fhirVersion: 4.0.1
 FSHOnly: true

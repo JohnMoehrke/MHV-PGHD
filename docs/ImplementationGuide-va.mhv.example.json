@@ -6,17 +6,27 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MHVtoPGHD_Example</h2><p>The official URL for this implementation guide is: </p><pre>https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example</pre><div><p>Testing Plan for VA MyHealtheVet use of PGHD.</p>\n</div></div>"
   },
   "url": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example",
-  "version": "0.2.3-beta",
+  "version": "0.2.4-beta",
   "name": "MHVtoPGHD_Example",
   "status": "draft",
   "experimental": false,
-  "date": "2020-12-04",
+  "date": "2020-12-16",
   "contact": [
     {
       "name": "John Moehrke"
     }
   ],
   "description": "Testing Plan for VA MyHealtheVet use of PGHD.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
   "packageId": "va.mhv.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -1447,7 +1457,7 @@
           "reference": "StructureDefinition/VA.MHV.medication"
         },
         "name": "VA MHV Medication",
-        "description": "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication\r\n* must have a strength per dose\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier"
+        "description": "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication name\r\n* must have a strength per dose\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final, stopped, or complete\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* may indicate where it was filled\r\n* may indicate who prescribed\r\n* may indicate if sideaffects or none\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier"
       },
       {
         "extension": [

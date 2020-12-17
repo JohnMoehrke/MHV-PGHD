@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle",
-  "version": "0.2.3-beta",
+  "version": "0.2.4-beta",
   "name": "MHVbundleBluebutton",
   "title": "VA MHV BlueButton Bundle",
   "status": "active",
@@ -27,6 +27,16 @@
     }
   ],
   "description": "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n* must be a document type Bundle\r\n* must have a timestamp of when this was created\r\n* must have a MHV Bluebutton type of a Composition \r\n* must include Patient Resource\r\n* must include all Resources referenced by Composition \r\n* DSTU2 use comment rather than note \r\n",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

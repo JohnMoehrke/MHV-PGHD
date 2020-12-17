@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.3-beta"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.4-beta"];
   fhir:StructureDefinition.name [ fhir:value "MHVbodyWeight"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV BodyWeight Observation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
@@ -33,6 +33,14 @@
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#29463-7 code\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units from the MHV body weights (lbs and kg)\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note \r\n"];
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

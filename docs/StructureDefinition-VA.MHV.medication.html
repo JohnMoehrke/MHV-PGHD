@@ -53,7 +53,7 @@
      </a>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.3-beta - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.4-beta - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -103,7 +103,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.3-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.4-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -180,24 +180,27 @@
 <table class="grid">
 <tbody>
 <tr><td>Defining URL:</td><td>https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication</td></tr>
- <tr><td>Version:</td><td>0.2.3-beta</td></tr>
+ <tr><td>Version:</td><td>0.2.4-beta</td></tr>
  <tr><td>Name:</td><td>MHVmedication</td></tr>
  <tr><td>Title:</td><td>VA MHV Medication</td></tr>
- <tr><td>Status:</td><td>Active as of 2020-11-23</td></tr>
+ <tr><td>Status:</td><td>Active as of 2020-12-16</td></tr>
  <tr><td>Definition:</td><td><p>A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.</p>
 <ul>
 <li>must be marked with MHV app tag</li>
-<li>must have a medication</li>
+<li>must have a medication name</li>
 <li>must have a strength per dose</li>
 <li>must have a reason for use</li>
 <li>must have effectiveDateTime</li>
-<li>must have status at final</li>
+<li>must have status at final, stopped, or complete</li>
 <li>must point at the patient</li>
 <li>may have a note</li>
 <li>may have quantity</li>
 <li>may have frequency</li>
 <li>may have method of taking</li>
 <li>may have a rx number</li>
+<li>may indicate where it was filled</li>
+<li>may indicate who prescribed</li>
+<li>may indicate if sideaffects or none</li>
 <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
 </td></tr>
@@ -224,7 +227,7 @@
 <p>Where:</p>
 
 <ul>
-  <li>MedicationStatement contains a MedicationRequest, a MedicationDispense and a Organization
+  <li>MedicationStatement contains a MedicationRequest, a MedicationDispense, an Organization, and an Observation
     <ul>
       <li>MedicationRequest holds the prescribing clinician and the prescription number</li>
       <li>MedicationDispense is used simply to point at the Organization (MedicationDispense.performer.actor)
@@ -233,10 +236,12 @@
         </ul>
       </li>
       <li>Organization holds the Pharmacy information</li>
+      <li>Observation holds the facts about side affects</li>
       <li>MedicationStatement.partOf points at MedicationDispense</li>
+      <li>MedicationStatement.partOf points at the Observation</li>
     </ul>
   </li>
-  <li>Medication – should be from RxNorm, but may be free text
+  <li>Medication Name – should be from RxNorm, but may be free text
     <ul>
       <li>MedicationStatement.medicationCodeableConcept</li>
       <li>when no RxNorm is found the free text goes into the .text element</li>
@@ -253,20 +258,41 @@
       <li>MedicationStatement.dose.doseAndRate.doseQuantity</li>
     </ul>
   </li>
-  <li>Quantity – a value from a pick list
+  <li>Quantity per dose – a value from a pick list
     <ul>
+      <li>0.5, 1, 2, 3, 4, 5, 6</li>
       <li>MedicationStatement.dose.doseAndRate.rateRatio.numerator</li>
     </ul>
   </li>
-  <li>Frequency – a value from a pick list
+  <li>Frequency of a dose – a value from a pick list
     <ul>
+      <li>once a day, twice a day, three a day, four a day, once a week, twice a week, three a week, four a week, five a week, six a week, once a month, every hour, as needed</li>
       <li>MedicationStatement.dose.doseAndRate.rateRatio.denominator</li>
     </ul>
   </li>
-  <li>Method – a value from a pick list
+  <li>Method of a dose – a value from a pick list
     <ul>
       <li>MedicationStatement.route</li>
       <li>from valueSet MHVmedicationRoutes</li>
+    </ul>
+  </li>
+  <li>Side Effects – will be Yes/No
+    <ul>
+      <li>contained Observation,</li>
+      <li>The causality linkage is only implied by the use of the two snomed-ct codes</li>
+      <li>SNOWMED-CT 401207004 - Medication Side effects present (finding)</li>
+      <li>SNOMED-CT 408508002 - Has shown no side effects from medication (finding)</li>
+    </ul>
+  </li>
+  <li>Start Date and Stop Date
+    <ul>
+      <li>effectiveDateTime when just start date/time</li>
+      <li>effectivePeriod when both start and stop are provided</li>
+    </ul>
+  </li>
+  <li>Currently Taking checkbox
+    <ul>
+      <li>status of active, complete, or stopped</li>
     </ul>
   </li>
   <li>Prescription Number – will be free text
@@ -274,7 +300,7 @@
       <li>MedicationStatement.identifier</li>
     </ul>
   </li>
-  <li>Clinician – will be free text
+  <li>Provider – will be free text
     <ul>
       <li>MedicationRequest.requester</li>
     </ul>
@@ -296,11 +322,6 @@
       <li>MedicationStatement.note.text</li>
     </ul>
   </li>
-  <li>Side Effects – will be Yes/No
-    <ul>
-      <li>TODO unknown at this time. Likely a contained Observation</li>
-    </ul>
-  </li>
 </ul>
 
 <p>Additionally:</p>
@@ -309,12 +330,11 @@
   <li>category would be patientspecified</li>
   <li>subject would be the Patient</li>
   <li>dateAsserted would be the date/time when created or edited in MHV</li>
-  <li>effectivePeriod would hold a start and end if known</li>
 </ul>
 
 <p>Not clear</p>
 <ul>
-  <li>where side effects goes, likely a contained Observation</li>
+  <li>where side effects goes, likely a contained Observation, but unknown how the relationship of the Observation is a sideaffect caused/related to the medication. Most Observations are the reason for taking the medication, not the side affects of the medication.</li>
 </ul>
 
 
@@ -1009,10 +1029,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="4d352217-27b2-46fc-a3c6-3e060111838d">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.3-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 4, 2020 08:30-0600">2020-12-04</span>
+        <p><a name="c190e429-9433-47d8-9b12-e423ad6e5c28">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.4-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 17, 2020 06:12-0600">2020-12-17</span>
           <br/>
-          <span style="color: #FFFF77"><a name="07fc3368-3b9e-45b9-8ed3-98ded89f3770">​</a>
+          <span style="color: #FFFF77"><a name="4900f269-225c-45d7-a39e-f5b56a11c029">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
 | <a style="color: #81BEF7" href="../issues">Report an issue</a>

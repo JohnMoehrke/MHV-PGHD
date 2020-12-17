@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.3-beta"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.4-beta"];
   fhir:StructureDefinition.name [ fhir:value "MHVbundleBluebutton"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV BlueButton Bundle"];
   fhir:StructureDefinition.status [ fhir:value "active"];
@@ -32,6 +32,14 @@
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n* must be a document type Bundle\r\n* must have a timestamp of when this was created\r\n* must have a MHV Bluebutton type of a Composition \r\n* must include Patient Resource\r\n* must include all Resources referenced by Composition \r\n* DSTU2 use comment rather than note \r\n"];
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

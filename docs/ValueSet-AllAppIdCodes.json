@@ -6,13 +6,23 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-OnclC.html\"><code>https://wiki.mobilehealth.va.gov/x/Onc1C</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-CPM.html\"><code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code></a></li></ul></div>"
   },
   "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes",
-  "version": "0.2.3-beta",
+  "version": "0.2.4-beta",
   "name": "AllAppIdCodes",
   "status": "active",
-  "date": "2020-12-04T08:30:16-06:00",
+  "date": "2020-12-17T06:12:53-06:00",
   "contact": [
     {
       "name": "John Moehrke"
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
     }
   ],
   "compose": {

@@ -1,7 +1,8 @@
 {
   "package": "va.mhv.example",
-  "version": "0.2.3-beta",
+  "version": "0.2.4-beta",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
   "extensions": [],
   "profiles": {
     "Bundle": [

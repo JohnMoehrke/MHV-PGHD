@@ -53,7 +53,7 @@
      </a>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.3-beta - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.4-beta - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -103,7 +103,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.3-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.4-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -205,17 +205,27 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.2.3-beta",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.2.4-beta",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "MHVmedication",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "VA MHV Medication",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2020-11-23",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2020-12-16",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "John Moehrke"
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication\r\n* must have a strength per dose\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication name\r\n* must have a strength per dose\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final, stopped, or complete\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* may indicate where it was filled\r\n* may indicate who prescribed\r\n* may indicate if sideaffects or none\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "001"
+        }
+      ]
+    }
+  ],
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a>" : "4.0.1",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">mapping</a>" : [
     {
@@ -2972,10 +2982,10 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="73b53e29-b31f-4e43-a744-8d6e93dbe99a">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.3-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 4, 2020 08:30-0600">2020-12-04</span>
+        <p><a name="b962a3e7-f4d7-48c7-8e9d-0df938c59483">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.4-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 17, 2020 06:12-0600">2020-12-17</span>
           <br/>
-          <span style="color: #FFFF77"><a name="ea6e8eed-8b07-4e20-9b1a-8031908ec281">​</a>
+          <span style="color: #FFFF77"><a name="330aa56e-2eec-4fa3-90d3-21914c3ae20a">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
 | <a style="color: #81BEF7" href="../issues">Report an issue</a>

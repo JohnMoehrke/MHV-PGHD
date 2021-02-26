@@ -25,8 +25,7 @@ Description:    "A profile on the Bundle that declares how MHV will Create/Updat
 * entry and entry.resource MS
 * entry contains 
     Patient 1..1 MS and 
-	MHVcompositionBluebutton 1..1 MS 
-
+    MHVcompositionBluebutton 1..1 MS
 * entry[MHVcompositionBluebutton].resource only MHVcompositionBluebutton
 * entry[MHVcompositionBluebutton] ^short = "BlueButton composition"
 * entry[MHVcompositionBluebutton] ^definition = "The details of the composition including what is in there and what timerange"

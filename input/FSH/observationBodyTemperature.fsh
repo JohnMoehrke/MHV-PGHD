@@ -71,6 +71,7 @@ Description: "These are the UCUM types that MHV supports."
 * UCUM#[degF] "degree Fahrenheit"
 * UCUM#Cel "degree Celsius"
 
+// found at http://fhir.org/guides/hspc/core/0.1.0/ValueSet-bodytempbodylocation.html
 ValueSet: MHVbodyTemperatureSites
 Id: mhv-body-temperature-sites
 Title: "The body temperature measurement sites that MHV supports"
@@ -86,3 +87,8 @@ Description: "These are the SNOMED body sites that MHV supports."
 //* SCT#39937001 "Skin structure"
 //* SCT#362620003 "Entire temporal region"
 //* SCT#89837001 "Urinary bladder structure"
+// also been discussed to include
+//* SCT#8205005 "Wrist region structure"
+//* SCT#7569003 "Finger structure"
+//* SCT#8671006 "Structure of all toes"
+

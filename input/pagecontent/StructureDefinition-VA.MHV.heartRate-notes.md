@@ -1,5 +1,7 @@
 This is the notes for the VA.MHV.heartRate Profile
 
+See the [Heart Rate feature file](heartRate.feature)
+
 ### Positive Tests
 
 all compliant examples can be found load all of the heart rate examples that are [compliant to the MHV profile](StructureDefinition-VA.MHV.heartRate-examples.html) into PGHD, 

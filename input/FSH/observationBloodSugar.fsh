@@ -84,6 +84,8 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 * derivedFrom 0..0
 //* component 0..0
 
+// inspired by CDC Glucose measurement 33747003 valueset
+// https://phinvads.cdc.gov/vads/ViewCodeSystemConcept.action?oid=2.16.840.1.113883.6.96&code=33747003
 ValueSet: MHVbloodSugarMethods
 Id: mhv-blood-sugar-methods-sites
 Title: "The methods of measurement for blood sugar that MHV supports"
@@ -100,7 +102,7 @@ Description: "These are the SNOMED body sites that MHV supports."
 //* SCT#271064007 "Supper time blood sugar measurement (procedure)"
 
 
-// these are not codes in MHV today, just using string
+// these are not codes in MHV today, just using string 
 //ValueSet: MHVbloodSugarContext
 //Id: mhv-blood-sugar-context
 //Title: "The context of the measurement"

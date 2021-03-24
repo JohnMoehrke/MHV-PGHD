@@ -76,7 +76,7 @@ ValueSet: MHVbodyTemperatureSites
 Id: mhv-body-temperature-sites
 Title: "The body temperature measurement sites that MHV supports"
 Description: "These are the SNOMED body sites that MHV supports."
-* SCT#422005 "Inferior surface of tongue"
+//* SCT#422005 "Inferior surface of tongue"
 * SCT#362732006 "Entire axillary region"
 * SCT#1910005 "Entire ear"
 * SCT#21082005 "Entire mouth region"
@@ -84,9 +84,9 @@ Description: "These are the SNOMED body sites that MHV supports."
 // groin is a historic body site in MHV, so it is allowed as a string
 // unknown "groin"
 // These are part of the valueset typically used for body temperature
-//* SCT#39937001 "Skin structure"
-//* SCT#362620003 "Entire temporal region"
-//* SCT#89837001 "Urinary bladder structure"
+* SCT#39937001 "Skin structure"
+* SCT#362620003 "Entire temporal region"
+* SCT#89837001 "Urinary bladder structure"
 // also been discussed to include
 //* SCT#8205005 "Wrist region structure"
 //* SCT#7569003 "Finger structure"

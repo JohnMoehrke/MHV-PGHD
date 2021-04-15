@@ -32,6 +32,14 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "id": "uscore",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.1"
+    }
+  ],
   "definition": {
     "extension": [
       {
@@ -427,6 +435,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/ex-MHV-allergy-0"
+        },
+        "name": "Example AllergyIntolerance - ex-MHV-allergy-0",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.allergy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           }
         ],
@@ -485,6 +506,19 @@
         "reference": {
           "reference": "Encounter/ex-encounter"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/ex-MHV-immunization-0"
+        },
+        "name": "Example Immunization - ex-MHV-immunization-0",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.immunization"
       },
       {
         "extension": [
@@ -1350,6 +1384,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/VA.MHV.allergy"
+        },
+        "name": "VA MHV Allergy or Intolerance",
+        "description": "A profile on the AllergyIntolerance that declares how MHV will Create/Update in PGHD for allergy or intolerance.\r\n\r\nGiven that MyHealtheVet has access to the medical record (Vista and Cerner), there should be logic keeping a patient from entering a duplicate allergy or intolerance. \r\n\r\n* Derived off of US-Core Allergy\r\n* must be marked with MHV app tag\r\n* must point at the patient\r\n* must indicate patient is the asserter\r\n* may have recorder be the user (e.g. delegate)\r\n* must have clinicalStatus of active\r\n* may have type set to allergy or intolerance (default blank)\r\n* must have a recordedDate of the date entered\r\n* must have a onsetDateTime from the UI\r\n* must have a code.text or code.coding from a valueset from the UI\r\n* may have a category from the UI\r\n* may have a severity from the UI\r\n* must have a reaction.note or reaction.manifestation from the UI\r\n* may have a comments note from the UI\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 uses slightly different element names (e.g., substance and onset)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/VA.MHV.bloodPressure"
         },
         "name": "VA MHV Blood Pressure Observation",
@@ -1454,10 +1501,23 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/VA.MHV.immunization"
+        },
+        "name": "VA MHV Immunization",
+        "description": "A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.\r\n\r\nGiven that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.\r\n\r\n* Derived off of US-Core Immunization\r\n* must be marked with MHV app tag\r\n* must point at the patient\r\n* must have status of completed (can not enter not-done or entered-in-error)\r\n* must have a code.text or code.coding from a valueset from the UI\r\n  * codes from given valueSet\r\n* must have a date (occuranceDateTime) the vaccine was administered from the UI\r\n* must indicate the date this record is being recorded into PGHD \r\n* must be indicated this data are not official record (primarySource=false)\r\n* must indicate this is being recorded from patient recollection\r\n* any reaction is recorded as a contained observation\r\n* may have a comment note\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 uses slightly different element names (e.g., substance and onset)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/VA.MHV.medication"
         },
         "name": "VA MHV Medication",
-        "description": "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n* must be marked with MHV app tag\r\n* must have a medication name\r\n* must have a strength per dose\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final, stopped, or complete\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* may indicate where it was filled\r\n* may indicate who prescribed\r\n* may indicate if sideaffects or none\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier"
+        "description": "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\r\n\r\n* NOT Derived off of US-Core as there is no MedicationStatement in US-Core\r\n* must be marked with MHV app tag\r\n* must have a medication name\r\n* must have a strength per dose\r\n* must have a reason for use\r\n* must have effectiveDateTime\r\n* must have status at final, stopped, or complete\r\n* must point at the patient\r\n* may have a note \r\n* may have quantity\r\n* may have frequency\r\n* may have method of taking\r\n* may have a rx number\r\n* may indicate where it was filled\r\n* may indicate who prescribed\r\n* may indicate if side affects or none\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier"
       },
       {
         "extension": [

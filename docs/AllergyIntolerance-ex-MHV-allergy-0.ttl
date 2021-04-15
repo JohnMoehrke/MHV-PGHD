@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/AllergyIntolerance/ex-MHV-allergy-0> a fhir:AllergyIntolerance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ex-MHV-allergy-0"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.allergy";
+       fhir:index 0;
+       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.allergy>
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://wiki.mobilehealth.va.gov/x/Onc1C" ];
+       fhir:Coding.code [ fhir:value "2ce6d9aa-c068-4809-8dda-662bcb16d09a" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}\">Unconfirmed</span></p><p><b>type</b>: allergy</p><p><b>category</b>: medication</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 293586001}\">Aspirin allergy</span></p><p><b>patient</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>onset</b>: Dec 25, 2020 10:50:50 PM</p><p><b>recordedDate</b>: Dec 25, 2020 10:50:50 PM</p><p><b>recorder</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>asserter</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>note</b>: hard to breath, but able to</p><h3>Reactions</h3><table class=\"grid\"><tr><td>-</td><td><b>Manifestation</b></td><td><b>Description</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 39579001}\">Anaphylaxis</span></td><td>Anaphylaxis</td></tr></table></div>"
+  ];
+  fhir:AllergyIntolerance.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" ];
+       fhir:Coding.code [ fhir:value "unconfirmed" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.type [ fhir:value "allergy"];
+  fhir:AllergyIntolerance.category [
+     fhir:value "medication";
+     fhir:index 0
+  ];
+  fhir:AllergyIntolerance.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:293586001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "293586001" ];
+       fhir:Coding.display [ fhir:value "Aspirin allergy" ]
+     ]
+  ];
+  fhir:AllergyIntolerance.patient [
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
+  ];
+  fhir:AllergyIntolerance.onsetDateTime [ fhir:value "2020-12-25T23:50:50-05:00"^^xsd:dateTime];
+  fhir:AllergyIntolerance.recordedDate [ fhir:value "2020-12-25T23:50:50-05:00"^^xsd:dateTime];
+  fhir:AllergyIntolerance.recorder [
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
+  ];
+  fhir:AllergyIntolerance.asserter [
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
+  ];
+  fhir:AllergyIntolerance.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "hard to breath, but able to" ]
+  ];
+  fhir:AllergyIntolerance.reaction [
+     fhir:index 0;
+     fhir:AllergyIntolerance.reaction.manifestation [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:39579001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "39579001" ];
+         fhir:Coding.display [ fhir:value "Anaphylaxis" ]
+       ]
+     ];
+     fhir:AllergyIntolerance.reaction.description [ fhir:value "Anaphylaxis" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/AllergyIntolerance/ex-MHV-allergy-0.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

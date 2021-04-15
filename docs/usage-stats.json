@@ -17,10 +17,22 @@
         "title": "VA MHV BlueButton Composition"
       }
     ],
+    "AllergyIntolerance": [
+      {
+        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.allergy",
+        "title": "VA MHV Allergy or Intolerance"
+      }
+    ],
     "Observation": [
       {
         "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain",
         "title": "VA MHV Pain Observation"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.immunization",
+        "title": "VA MHV Immunization"
       }
     ],
     "MedicationStatement": [

@@ -1,0 +1,14 @@
+@startsalt
+{^"MHV Allergy box"
+  Kind: | ^food, medication, environment, biologic^
+  Allergy: | "name of allergy or intolerance substance (RxNorm)   "
+  Onset Date: | ^date^
+  Severity: | ^Severe, Moderate, Mild^
+  Diagnosed: | ^Unconfirmed, Confirmed, Refuted, Entered-in-Error^
+  Reaction Code: | ^code^
+  Reaction Note: | "reaction                                   "
+  Comments: | "comments                                   "
+
+  [  Save   ] | [  Save & Add Another  ] | [  Reset  ] | [  Cancel  ]
+}
+@endsalt

@@ -21,6 +21,11 @@
   </jurisdiction>
 	<packageId value="va.mhv.example"/>
 	<fhirVersion value="4.0.1"/>
+	<dependsOn id="uscore">
+		<uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+		<packageId value="hl7.fhir.us.core"/>
+		<version value="3.1.1"/>
+	</dependsOn>
 	<definition>
 		<page>
 			<!-- The root will always be toc.html - the template will force it if you don't do it -->

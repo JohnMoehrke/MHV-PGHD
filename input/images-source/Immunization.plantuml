@@ -1,0 +1,21 @@
+@startsalt
+{^"MHV Immunization box"
+  Immunization: | ^name of Immunization code^
+  Other: | "other immunization text     "
+  Date Received: | ^date^
+  Method: | ^injected, inhaled, By Mouth^
+  Reaction: Check all that apply {
+    [] Chills
+    [] Itching, Watering Eyes
+    [] Low Blood Pressure
+    [] Drowsiness
+    [] Hives
+    [] Dry Mouth
+    [] Dry Nose
+    [] Rash }
+  Other sign/symptom: | ^symptom code^
+  Comments: | "comments                                   "
+
+  [  Save   ] | [  Save & Add Another  ] | [  Reset  ] | [  Cancel  ]
+}
+@endsalt

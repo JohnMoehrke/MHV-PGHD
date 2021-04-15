@@ -21,6 +21,13 @@
     "name": "MHVcompositionBluebutton"
   },
   {
+    "id": "VA.MHV.allergy",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.allergy",
+    "version": "0.2.4-beta",
+    "name": "MHVallergy"
+  },
+  {
     "id": "VA.MHV.bloodPressure",
     "type": "StructureDefinition",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure",
@@ -61,6 +68,13 @@
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate",
     "version": "0.2.4-beta",
     "name": "MHVheartRate"
+  },
+  {
+    "id": "VA.MHV.immunization",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.immunization",
+    "version": "0.2.4-beta",
+    "name": "MHVimmunization"
   },
   {
     "id": "VA.MHV.medication",

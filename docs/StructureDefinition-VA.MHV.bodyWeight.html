@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.7"}
-    h3,h4,h5,h6{--heading-prefix:"5.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.8"}
+    h3,h4,h5,h6{--heading-prefix:"5.8"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -691,8 +691,10 @@ Summary
     </div>
   </div>
   <p>&nbsp;</p>
-  <p>Other representations of profile: <a href="StructureDefinition-VA.MHV.bodyWeight.sch">Schematron</a>
-  </p>
+  
+    <p>Other representations of profile: <a href="StructureDefinition-VA.MHV.bodyWeight.sch">Schematron</a>
+    </p>
+   
   <a name="tx"> </a>
     <!-- Terminology Bindings heading in the fragment -->
   <h4>Terminology Bindings</h4>
@@ -786,6 +788,57 @@ Summary
 
 <p>This is the notes for the VA.MHV.bodyWeight Profile</p>
 
+<h3 id="example-mapping">Example Mapping:</h3>
+
+<ul>
+  <li>Positive Tests
+    <ul>
+      <li>create simple MHV Weight
+        <ul>
+          <li>weight is recorded</li>
+        </ul>
+      </li>
+      <li>read set of weights
+        <ul>
+          <li>display of basic values from weights</li>
+        </ul>
+      </li>
+      <li>read simple weight
+        <ul>
+          <li>weight is viewed</li>
+        </ul>
+      </li>
+      <li>read good but extensive weight
+        <ul>
+          <li>weight is viewed</li>
+        </ul>
+      </li>
+      <li>update a simple existing weight
+        <ul>
+          <li>weight is updated</li>
+        </ul>
+      </li>
+      <li>update an extensive weight
+        <ul>
+          <li>weight is updated, all non-MHV elements are removed</li>
+          <li>weight saved is simple</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Negative Tests
+    <ul>
+      <li>read set of weights where one is not valid
+        <ul>
+          <li>the not valid one will not be displayed</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>See the <a href="create-simple-weight.feature">create-simple-weight feature file</a></p>
+
 <h3 id="positive-tests">Positive Tests</h3>
 
 <p>all compliant examples can be found load all of the body weight examples that are <a href="StructureDefinition-VA.MHV.bodyWeight-examples.html">compliant to the MHV profile</a> into PGHD,</p>
@@ -794,26 +847,43 @@ Summary
 </ul>
 
 <h4 id="simple-mhv-weight">Simple MHV Weight</h4>
-<p>Given <a href="Observation-ex-MHV-weight.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a></p>
 
-<p>WHEN MHV shows body weight values</p>
+<p>Feature: simple MHV weight</p>
 
-<p>THEN MHV shows the weight as 185 lbs with the comment of “a bit heavy”</p>
+<p>Variations of legitimate weights</p>
 
-<p>WHEN MHV edits this values</p>
+<p>Scenario Outline: Entering weights
+    Given Michael creates a new body weight
+    When Michale enters a <weight> <units> and <comment>
+      | comment     | weight | units |
+      | infant      | 15     | oz    |
+      | a bit heavy | 185    | lbs   |
+      | big         | 567    | lbs   |
+      | European    | 97     | kgs   |
+    Then the PGHD will hold a resource with the <weight> <units>
+    And the resource will be compliant with the MHV weight profile</units></weight></comment></units></weight></p>
 
-<p>THEN MHV shows the weight as 185 lbs with the comment of “a bit heavy”</p>
+<h5 id="example-driven-simple-mhv-weights">example driven simple MHV weights</h5>
 
-<p>WHEN the test-user changes the weight value to 200 lbs 
-AND submits the changes</p>
+<p>Feature: view of sample weights
+  a set of example weights that are known to be compliant with the body weight profile, these should all be viewable in MHV</p>
 
-<p>THEN MHV will succeed to save to MHV
-AND the Test-Bench can retrieve the resource successfully
-AND the Test-Bench shows the weight value has changed to 200 lbs
-AND no other elements from the original are changed</p>
+<p>Scenario: read and view simple weight
+    Given <a href="Observation-ex-MHV-weight.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a>
+    When Michale views body weight values
+    Then Michale sees the weight as 185 lbs with the comment of “a bit heavy”</p>
+
+<p>Scenario: update and view simple weight
+    Given <a href="Observation-ex-MHV-weight.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a>
+    When Michale edits this weight changing the weight value to 200 lbs
+    And submits the change to PGHD
+    Then saving will succeed
+    And the Test-Bench can retrieve the resource successfully
+    And the Test-Bench shows the weight value has changed to 200 lbs
+    And no other elements from the original are changed</p>
 
 <h4 id="simple-mhv-weight-1">Simple MHV Weight</h4>
-<p><a name="2d9aba19-5863-4d31-8430-f32cb2eb4bd1">​</a>Given <a href="Observation-example-weight-min.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a></p>
+<p><a name="23d3e508-d4ac-49e3-a7e4-2287bd728c09">​</a>Given <a href="Observation-example-weight-min.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a></p>
 
 <p>WHEN MHV shows body weight values</p>
 
@@ -833,7 +903,7 @@ AND no other elements from the original are changed</p>
 
 <h3 id="stress-positive-tests">Stress Positive Tests</h3>
 
-<p>TODO write this in cucumber.</p>
+<p>TODO write this in gherkin.</p>
 
 <p>load all of the body weight examples into PGHD,</p>
 <ul>
@@ -843,7 +913,7 @@ AND no other elements from the original are changed</p>
 
 <h3 id="negative-tests">Negative Tests</h3>
 
-<p>TODO write this in cucumber.</p>
+<p>TODO write this in gherkin.</p>
 
 <p>EKG should NOT show in MHV????</p>
 
@@ -896,12 +966,14 @@ AND no other elements from the original are changed</p>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="0d79cfbb-fd44-465f-9e28-eb139355fb2f">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.4-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 17, 2020 06:12-0600">2020-12-17</span>
+        <p><a name="f741ade7-796b-4774-b52f-2b04f450ee63">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.4-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 15, 2021 12:13-0500">2021-04-15</span>
           <br/>
-          <span style="color: #FFFF77"><a name="2e652c58-62ab-4699-a326-5284e33321f8">​</a>
+          <span style="color: #FFFF77"><a name="46a33c1b-3fb5-45f1-aacd-a4e651ccd256">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 
+                
 | <a style="color: #81BEF7" href="../issues">Report an issue</a>
           </span>
         </p>
@@ -924,6 +996,13 @@ AND no other elements from the original are changed</p>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   

@@ -146,6 +146,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-VA.MHV.allergy.html" title="StructureDefinition/VA.MHV.allergy">VA MHV Allergy or Intolerance</a>
+               </td>
+               <td>
+<p>A profile on the AllergyIntolerance that declares how MHV will Create/Update in PGHD for allergy or intolerance.
+
+Given that MyHealtheVet has access to the medical record (Vista and Cerner), there should be logic keeping a patient from entering a duplicate allergy or intolerance. 
+</p>
+<ul>
+  <li>Derived off of US-Core Allergy</li>
+  <li>must be marked with MHV app tag</li>
+  <li>must point at the patient</li>
+  <li>must indicate patient is the asserter</li>
+  <li>may have recorder be the user (e.g. delegate)</li>
+  <li>must have clinicalStatus of active</li>
+  <li>may have type set to allergy or intolerance (default blank)</li>
+  <li>must have a recordedDate of the date entered</li>
+  <li>must have a onsetDateTime from the UI</li>
+  <li>must have a code.text or code.coding from a valueset from the UI</li>
+  <li>may have a category from the UI</li>
+  <li>may have a severity from the UI</li>
+  <li>must have a reaction.note or reaction.manifestation from the UI</li>
+  <li>may have a comments note from the UI</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+  <li>DSTU2 uses slightly different element names (e.g., substance and onset)</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-VA.MHV.bloodPressure.html" title="StructureDefinition/VA.MHV.bloodPressure">VA MHV Blood Pressure Observation</a>
                </td>
                <td>
@@ -308,11 +337,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-VA.MHV.immunization.html" title="StructureDefinition/VA.MHV.immunization">VA MHV Immunization</a>
+               </td>
+               <td>
+<p>A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.
+
+Given that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.
+</p>
+<ul>
+  <li>Derived off of US-Core Immunization</li>
+  <li>must be marked with MHV app tag</li>
+  <li>must point at the patient</li>
+  <li>must have status of completed (can not enter not-done or entered-in-error)</li>
+  <li>must have a code.text or code.coding from a valueset from the UI
+    <ul>
+      <li>codes from given valueSet</li>
+    </ul>
+  </li>
+  <li>must have a date (occuranceDateTime) the vaccine was administered from the UI</li>
+  <li>must indicate the date this record is being recorded into PGHD </li>
+  <li>must be indicated this data are not official record (primarySource=false)</li>
+  <li>must indicate this is being recorded from patient recollection</li>
+  <li>any reaction is recorded as a contained observation</li>
+  <li>may have a comment note</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+  <li>DSTU2 uses slightly different element names (e.g., substance and onset)</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-VA.MHV.medication.html" title="StructureDefinition/VA.MHV.medication">VA MHV Medication</a>
                </td>
                <td>
-<p>A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.</p>
+<p>A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.
+</p>
 <ul>
+  <li>NOT Derived off of US-Core as there is no MedicationStatement in US-Core</li>
   <li>must be marked with MHV app tag</li>
   <li>must have a medication name</li>
   <li>must have a strength per dose</li>
@@ -327,7 +388,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>may have a rx number</li>
   <li>may indicate where it was filled</li>
   <li>may indicate who prescribed</li>
-  <li>may indicate if sideaffects or none</li>
+  <li>may indicate if side affects or none</li>
   <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
 </td>
@@ -468,12 +529,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="AllergyIntolerance-ex-MHV-allergy-0.html" title="AllergyIntolerance/ex-MHV-allergy-0">Example AllergyIntolerance - ex-MHV-allergy-0</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Bundle-ex-MHV-Bluebutton-0.html" title="Bundle/ex-MHV-Bluebutton-0">Example Bundle - ex-MHV-Bluebutton-0</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Composition-ex-MHV-Composition-0.html" title="Composition/ex-MHV-Composition-0">All Vital-Signs entered in past 60 days</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-ex-MHV-immunization-0.html" title="Immunization/ex-MHV-immunization-0">Example Immunization - ex-MHV-immunization-0</a>
                </td>
             </tr>
             <tr>
@@ -907,12 +978,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="0feec8a5-1507-4e81-8027-928d4f59008a">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.4-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 17, 2020 06:12-0600">2020-12-17</span>
+        <p><a name="9ac19b03-c74e-468c-93b7-90beffb1881b">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.4-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 15, 2021 12:13-0500">2021-04-15</span>
           <br/>
-          <span style="color: #FFFF77"><a name="3b3e2c3d-de6b-4b1f-9547-ca092bcf9b4e">​</a>
+          <span style="color: #FFFF77"><a name="1f9a5ee2-72fb-42bf-ae17-7f93ec06520d">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 
+                
 | <a style="color: #81BEF7" href="../issues">Report an issue</a>
           </span>
         </p>
@@ -935,6 +1008,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   

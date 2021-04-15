@@ -25,6 +25,11 @@
   <packageId value="va.mhv.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="uscore">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.1"/>
+  </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -278,6 +283,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/ex-MHV-allergy-0"/>
+      </reference>
+      <name value="Example AllergyIntolerance - ex-MHV-allergy-0"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.allergy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -323,6 +338,16 @@
       <reference>
         <reference value="Encounter/ex-encounter"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/ex-MHV-immunization-0"/>
+      </reference>
+      <name value="Example Immunization - ex-MHV-immunization-0"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.immunization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -975,6 +1000,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/VA.MHV.allergy"/>
+      </reference>
+      <name value="VA MHV Allergy or Intolerance"/>
+      <description value="A profile on the AllergyIntolerance that declares how MHV will Create/Update in PGHD for allergy or intolerance.&#xD;&#xA;&#xD;&#xA;Given that MyHealtheVet has access to the medical record (Vista and Cerner), there should be logic keeping a patient from entering a duplicate allergy or intolerance. &#xD;&#xA;&#xD;&#xA;* Derived off of US-Core Allergy&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must point at the patient&#xD;&#xA;* must indicate patient is the asserter&#xD;&#xA;* may have recorder be the user (e.g. delegate)&#xD;&#xA;* must have clinicalStatus of active&#xD;&#xA;* may have type set to allergy or intolerance (default blank)&#xD;&#xA;* must have a recordedDate of the date entered&#xD;&#xA;* must have a onsetDateTime from the UI&#xD;&#xA;* must have a code.text or code.coding from a valueset from the UI&#xD;&#xA;* may have a category from the UI&#xD;&#xA;* may have a severity from the UI&#xD;&#xA;* must have a reaction.note or reaction.manifestation from the UI&#xD;&#xA;* may have a comments note from the UI&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 uses slightly different element names (e.g., substance and onset)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/VA.MHV.bloodPressure"/>
       </reference>
       <name value="VA MHV Blood Pressure Observation"/>
@@ -1055,10 +1090,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/VA.MHV.immunization"/>
+      </reference>
+      <name value="VA MHV Immunization"/>
+      <description value="A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.&#xD;&#xA;&#xD;&#xA;Given that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.&#xD;&#xA;&#xD;&#xA;* Derived off of US-Core Immunization&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must point at the patient&#xD;&#xA;* must have status of completed (can not enter not-done or entered-in-error)&#xD;&#xA;* must have a code.text or code.coding from a valueset from the UI&#xD;&#xA;  * codes from given valueSet&#xD;&#xA;* must have a date (occuranceDateTime) the vaccine was administered from the UI&#xD;&#xA;* must indicate the date this record is being recorded into PGHD &#xD;&#xA;* must be indicated this data are not official record (primarySource=false)&#xD;&#xA;* must indicate this is being recorded from patient recollection&#xD;&#xA;* any reaction is recorded as a contained observation&#xD;&#xA;* may have a comment note&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 uses slightly different element names (e.g., substance and onset)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/VA.MHV.medication"/>
       </reference>
       <name value="VA MHV Medication"/>
-      <description value="A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have a medication name&#xD;&#xA;* must have a strength per dose&#xD;&#xA;* must have a reason for use&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have status at final, stopped, or complete&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note &#xD;&#xA;* may have quantity&#xD;&#xA;* may have frequency&#xD;&#xA;* may have method of taking&#xD;&#xA;* may have a rx number&#xD;&#xA;* may indicate where it was filled&#xD;&#xA;* may indicate who prescribed&#xD;&#xA;* may indicate if sideaffects or none&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.&#xD;&#xA;&#xD;&#xA;* NOT Derived off of US-Core as there is no MedicationStatement in US-Core&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have a medication name&#xD;&#xA;* must have a strength per dose&#xD;&#xA;* must have a reason for use&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have status at final, stopped, or complete&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note &#xD;&#xA;* may have quantity&#xD;&#xA;* may have frequency&#xD;&#xA;* may have method of taking&#xD;&#xA;* may have a rx number&#xD;&#xA;* may indicate where it was filled&#xD;&#xA;* may indicate who prescribed&#xD;&#xA;* may indicate if side affects or none&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

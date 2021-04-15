@@ -9,6 +9,8 @@ MyHealtheVet provides access to the VA managed Patient Generated Health Data (PG
   * [Heart Rate](StructureDefinition-VA.MHV.heartRate.html)
   * [Pain](StructureDefinition-VA.MHV.pain.html)
 * [Medications](StructureDefinition-VA.MHV.medication.html)
+* [Allergy and Intolerance](StructureDefinition-VA.MHV.allergy.html)
+* [Immunization](StructureDefinition-VA.MHV.immunization.html)
 * [FHIR Document Bluebutton report](StructureDefinition-VA.MHV.BlueBundle.html)
 
 ### Test Plan

@@ -4,6 +4,8 @@ Parent:         MedicationStatement
 Id:             VA.MHV.medication
 Title:          "VA MHV Medication"
 Description:    "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.
+
+* NOT Derived off of US-Core as there is no MedicationStatement in US-Core
 * must be marked with MHV app tag
 * must have a medication name
 * must have a strength per dose
@@ -18,7 +20,7 @@ Description:    "A profile on the MedicationStatement that declares how MHV will
 * may have a rx number
 * may indicate where it was filled
 * may indicate who prescribed
-* may indicate if sideaffects or none
+* may indicate if side affects or none
 * once created will or might have an id, versionId, lastUpdated, text, and identifier
 "
 * ^version = "0.2.0"

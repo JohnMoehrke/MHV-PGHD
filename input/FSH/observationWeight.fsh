@@ -1,5 +1,6 @@
 // MHV Observation for Body Weight
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
+// using FHIR core vitalsigns, tried to use the core bodyweight but some logic (builder) problem creates errors in the examples valueQuantity
 Profile:        MHVbodyWeight
 Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
 Id:             VA.MHV.bodyWeight
@@ -26,7 +27,7 @@ Note this is compliant with FHIR core vital-signs.
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * category 1..1
-// this category requirement is already in core vital-signs
+// this category requirement is already in core vital-signs, build fails examples with this explicitly here
 //* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#29463-7
 * effectiveDateTime 1..1

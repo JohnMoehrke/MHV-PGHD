@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f189b221-b193-4e85-83c6-8712a8d7d79c"/>
+  <id value="0ea14308-31a2-440d-8128-17b07ca50795"/>
   <meta>
-    <lastUpdated value="2021-04-19T16:57:11.202-05:00"/>
+    <lastUpdated value="2021-04-20T08:20:26.053-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -66,7 +66,7 @@
         <version value="0.2.5-beta"/>
         <name value="AllAppIdCodes"/>
         <status value="active"/>
-        <date value="2021-04-19T16:57:11-05:00"/>
+        <date value="2021-04-20T08:20:26-05:00"/>
         <contact>
           <name value="John Moehrke"/>
         </contact>
@@ -77,8 +77,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:759998a5-9027-48ee-ab27-7ad252465527"/>
-          <timestamp value="2021-04-19T16:58:09-05:00"/>
+          <identifier value="urn:uuid:0e0c05c2-b1a2-4196-8b7c-b2f1aae5049d"/>
+          <timestamp value="2021-04-20T08:22:13-05:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -107,13 +107,15 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions"/>
     <resource>
       <ValueSet>
+        <id value="mhv-blood-pressure-positions"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.68</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
               <code>http://loinc.org</code>
             </p>
@@ -157,17 +159,37 @@
             </table>
           </div>
         </text>
+        <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions"/>
+        <version value="0.2.5-beta"/>
+        <name value="MHVbloodPressurePositions"/>
+        <title value="The methods of measurement for blood pressure that MHV supports"/>
         <status value="active"/>
+        <date value="2021-04-20T08:20:26-05:00"/>
+        <contact>
+          <name value="John Moehrke"/>
+        </contact>
+        <description value="These are the loinc body positions that MHV supports on blood pressure."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:881e9a9e-b40d-49ce-ae9f-e68f81615f6b"/>
-          <timestamp value="2021-04-15T14:43:21.286Z"/>
+          <identifier value="urn:uuid:36546442-c213-49b7-98a3-31ad7b69f93e"/>
+          <timestamp value="2021-04-20T08:22:13-05:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://loinc.org|2.68"/>
+            <valueString value="http://loinc.org|2.69"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -194,13 +216,15 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites"/>
     <resource>
       <ValueSet>
+        <id value="mhv-blood-sugar-methods-sites"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -253,17 +277,37 @@
             </table>
           </div>
         </text>
+        <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites"/>
+        <version value="0.2.5-beta"/>
+        <name value="MHVbloodSugarMethods"/>
+        <title value="The methods of measurement for blood sugar that MHV supports"/>
         <status value="active"/>
+        <date value="2021-04-20T08:20:26-05:00"/>
+        <contact>
+          <name value="John Moehrke"/>
+        </contact>
+        <description value="These are the SNOMED body sites that MHV supports."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d2257840-b95f-4414-aca5-b0f160c56e0f"/>
-          <timestamp value="2021-02-08T20:08:36.116Z"/>
+          <identifier value="urn:uuid:da7c9a49-8b36-40b6-9651-d31798986dd9"/>
+          <timestamp value="2021-04-20T08:22:14-05:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -290,8 +334,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites"/>
     <resource>
       <ValueSet>
+        <id value="mhv-body-temperature-sites"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -381,10 +427,30 @@
             </table>
           </div>
         </text>
+        <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites"/>
+        <version value="0.2.5-beta"/>
+        <name value="MHVbodyTemperatureSites"/>
+        <title value="The body temperature measurement sites that MHV supports"/>
         <status value="active"/>
+        <date value="2021-04-20T08:20:26-05:00"/>
+        <contact>
+          <name value="John Moehrke"/>
+        </contact>
+        <description value="These are the SNOMED body sites that MHV supports."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cbd9dfe9-35b9-4f23-90ed-c3a05405aacf"/>
-          <timestamp value="2021-04-19T21:52:31.538Z"/>
+          <identifier value="urn:uuid:40bdf6ed-e6f0-48ac-9ba3-4ef239c09267"/>
+          <timestamp value="2021-04-20T08:22:14-05:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -438,8 +504,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures"/>
     <resource>
       <ValueSet>
+        <id value="mhv-body-temperatures"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -472,10 +540,30 @@
             </table>
           </div>
         </text>
+        <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures"/>
+        <version value="0.2.5-beta"/>
+        <name value="MHVbodyTemperatures"/>
+        <title value="The body temperature measurement types that MHV supports"/>
         <status value="active"/>
+        <date value="2021-04-20T08:20:26-05:00"/>
+        <contact>
+          <name value="John Moehrke"/>
+        </contact>
+        <description value="These are the UCUM types that MHV supports."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c8c7226f-dbb1-4655-a485-593ea465435d"/>
-          <timestamp value="2021-04-15T14:43:22.099Z"/>
+          <identifier value="urn:uuid:799f3654-62d4-4fc0-b8f1-1f28ea72ba28"/>
+          <timestamp value="2021-04-20T08:22:14-05:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -499,8 +587,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights"/>
     <resource>
       <ValueSet>
+        <id value="mhv-body-weights"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -533,10 +623,30 @@
             </table>
           </div>
         </text>
+        <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights"/>
+        <version value="0.2.5-beta"/>
+        <name value="MHVbodyWeights"/>
+        <title value="The body weight measurement types that MHV supports"/>
         <status value="active"/>
+        <date value="2021-04-20T08:20:26-05:00"/>
+        <contact>
+          <name value="John Moehrke"/>
+        </contact>
+        <description value="These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone)."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9b7c898b-b41d-40bb-a433-c007bfeaf228"/>
-          <timestamp value="2021-04-15T14:43:22.364Z"/>
+          <identifier value="urn:uuid:f82a3e4b-29fc-44fb-8d50-4f5bf5eb4c93"/>
+          <timestamp value="2021-04-20T08:22:15-05:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -560,13 +670,15 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes"/>
     <resource>
       <ValueSet>
+        <id value="mhv-medication-routes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -635,17 +747,37 @@
             </table>
           </div>
         </text>
+        <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes"/>
+        <version value="0.2.5-beta"/>
+        <name value="MHVmedicationRoutes"/>
+        <title value="The routes of medication that MHV supports"/>
         <status value="active"/>
+        <date value="2021-04-20T08:20:26-05:00"/>
+        <contact>
+          <name value="John Moehrke"/>
+        </contact>
+        <description value="These are the SNOMED-CT routes for medications that MHV supports."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2c3adfa5-4446-4c95-801b-6f5b9db05191"/>
-          <timestamp value="2021-02-08T20:08:37.507Z"/>
+          <identifier value="urn:uuid:b6449729-b0b9-4013-9a15-b4af1a3dceee"/>
+          <timestamp value="2021-04-20T08:22:15-05:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>

@@ -42,7 +42,7 @@ Description:      "holding typical values"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding = LOINC#2339-0 
 * code.coding[1] = LOINC#2345-7
-* code.coding[2] = LOINC#6689-4
+* code.coding[afterMeal] = LOINC#6689-4
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 

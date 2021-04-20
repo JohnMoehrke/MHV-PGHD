@@ -222,7 +222,7 @@
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "John Moehrke" ]
   ];
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">fhir:StructureDefinition.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.\r\n\r\nNote that Pain is not part of FHIR core vital-signs.\r\n\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#2339-0 code AND LOINC#2345-7\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units only of mg/dL\r\n* must have status at final\r\n* must point at the patient\r\n* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other\r\n* may have a eating routine component with string of fasting, after meal, or unknown\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note \r\n"];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">fhir:StructureDefinition.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements. Eating routine is indicated as a component.\r\n\r\nNote that Blood Sugar is not part of FHIR core vital-signs.\r\n\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#2339-0 code AND LOINC#2345-7\r\n* must have effectiveDateTime\r\n* must have valueQuantity with units only of mg/dL\r\n* must have status at final\r\n* must point at the patient\r\n* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other\r\n* may have a eating routine component with string of fasting, after meal, or unknown\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note \r\n"];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">fhir:StructureDefinition.jurisdiction</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
@@ -4107,10 +4107,10 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="e521f15a-bac2-4d71-ac05-6282c76dedfb">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.5-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 19, 2021 16:57-0500">2021-04-19</span>
+        <p><a name="e033bf6d-e385-4062-ad05-fc8e374fb20c">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.5-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 20, 2021 08:20-0500">2021-04-20</span>
           <br/>
-          <span style="color: #FFFF77"><a name="931c643f-7588-455f-acc4-6590df7946cb">​</a>
+          <span style="color: #FFFF77"><a name="b0b07938-e2cb-4a8b-9ba0-7c698e95aa21">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
                  

@@ -14,7 +14,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}\">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2020 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, unknown eating</p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 15220000}\">Laboratory Test</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}, {http://loinc.org 1556-0}, {http://loinc.org 6689-4}\">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2020 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, unknown eating</p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 15220000}\">Laboratory Test</span></p></div>"
   },
   "status": "final",
   "category": [
@@ -36,6 +36,14 @@
       {
         "system": "http://loinc.org",
         "code": "2345-7"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "1556-0"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "6689-4"
       }
     ]
   },

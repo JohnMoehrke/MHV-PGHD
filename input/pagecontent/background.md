@@ -3,7 +3,8 @@ MyHealtheVet provides access to the VA managed Patient Generated Health Data (PG
 
 * Vital Signs
   * [Blood Pressure](StructureDefinition-VA.MHV.bloodPressure.html)
-  * [Blood Sugar](StructureDefinition-VA.MHV.bloodSugar.html)
+  * [Blood Sugar - eating routine as a component](StructureDefinition-VA.MHV.bloodSugar.html)
+    * [Blood Sugar B - fasting status as a code](StructureDefinition-VA.MHV.bloodSugarB.html)
   * [Body Temperature](StructureDefinition-VA.MHV.bodyTemperature.html)
   * [Body Weight](StructureDefinition-VA.MHV.bodyWeight.html)
   * [Heart Rate](StructureDefinition-VA.MHV.heartRate.html)
@@ -11,7 +12,7 @@ MyHealtheVet provides access to the VA managed Patient Generated Health Data (PG
 * [Medications](StructureDefinition-VA.MHV.medication.html)
 * [Allergy and Intolerance](StructureDefinition-VA.MHV.allergy.html)
 * [Immunization](StructureDefinition-VA.MHV.immunization.html)
-* [FHIR Document Bluebutton report](StructureDefinition-VA.MHV.BlueBundle.html)
+* [FHIR Document Bluebutton report](StructureDefinition-VA.MHV.BlueBundle.html) -- Experimental and incomplete
 
 ### Test Plan
 Overall test plan leverages the Profiles, and Examples shown on the [Artifacts Summary](artifacts.html). The [Profiles](artifacts.html#structures-resource-profiles) listed are describing the constraints that MHV uses when publishing (Create or Update) into PGHD. Thus any Resources that are known to have been published by MHV MUST be conformant to these profiles.

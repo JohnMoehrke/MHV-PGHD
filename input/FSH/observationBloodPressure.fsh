@@ -1,4 +1,5 @@
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
+// not using FHIR core vitalsigns as that profile requires different codes that MHV/PGHD have not agreed to allow
 Profile:        MHVbloodPressure
 Parent:         Observation
 Id:             VA.MHV.bloodPressure

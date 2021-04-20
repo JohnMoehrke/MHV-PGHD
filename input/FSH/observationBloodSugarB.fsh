@@ -1,12 +1,12 @@
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
-// note that Argonaut and us-core categorize blood sugar as a Laboratory, not a vital-sign
+// note that Argonaut and us-core categorize blood sugar as a Laboratory, not a vitalsign
 Profile:        MHVbloodSugarB
 Parent:         Observation
 Id:             VA.MHV.bloodSugarB
 Title:          "VA MHV Blood Sugar Observation alternative B"
-Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.
+Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements. Indicate fasting status as a code.
 
-Note that Pain is not part of FHIR core vital-signs.
+Note that Blood Sugar is not part of FHIR core vital-signs.
 
 * must be marked with MHV app tag
 * must have vital-signs category
@@ -28,29 +28,24 @@ Note that Pain is not part of FHIR core vital-signs.
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * category 1..1
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//TODO really write the rules 
 // MHV records using two codes as there are mobile apps that only look for the second loinc code
-//* code.coding ^slicing.discriminator.type = #value
-//* code.coding ^slicing.discriminator.path = "$this"
-//* code.coding ^slicing.rules = #closed
-//* code.coding 2..2
-//* code.coding contains loincCode1 1..1 and loincCode2 1..1
-//* code.coding[loincCode1] = LOINC#2339-0 
-//* code.coding[loincCode2] = LOINC#2345-7
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #closed
+* code.coding 2..4
+* code.coding contains 
+    loincCode1 1..1 and 
+    loincCode2 1..1 and
+    fasting 0..1 and
+    afterMeal 0..1
+* code.coding[loincCode1] = LOINC#2339-0 
+* code.coding[loincCode2] = LOINC#2345-7
+* code.coding[fasting] = LOINC#1556-0
+* code.coding[afterMeal] = LOINC#6689-4
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#mg/dL
 * method from MHVbloodSugarMethods
-//* component 0..1
-//* component ^slicing.discriminator.type = #pattern
-//* component ^slicing.discriminator.path = "code"
-//* component ^slicing.rules = #closed
-//* component ^slicing.description = "Eating Routine is recorded as a string"
-//* component contains bodyContext 1..1
-//* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
-//* component[bodyContext].value[x] only string
-// these should be codes, but are not codes today in MHV
-//* component[bodyContext].valueCodeableConcept from MHVbloodSugarContext
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)

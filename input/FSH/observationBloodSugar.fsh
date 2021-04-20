@@ -1,12 +1,12 @@
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
-// note that Argonaut and us-core categorize blood sugar as a Laboratory, not a vital-sign
+// note that Argonaut and us-core categorize blood sugar as a Laboratory, not a vitalsign
 Profile:        MHVbloodSugar
 Parent:         Observation
 Id:             VA.MHV.bloodSugar
 Title:          "VA MHV Blood Sugar Observation"
-Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.
+Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements. Eating routine is indicated as a component.
 
-Note that Pain is not part of FHIR core vital-signs.
+Note that Blood Sugar is not part of FHIR core vital-signs.
 
 * must be marked with MHV app tag
 * must have vital-signs category

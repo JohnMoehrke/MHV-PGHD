@@ -1,5 +1,6 @@
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
 // note that in R4 there is valueInteger, which is the right solution here. But in DSTU2 that must be changed to valueQuantity
+// not using FHIR core vitalsigns as that profile does not include pain.
 Profile:        MHVpain
 Parent:         Observation
 Id:             VA.MHV.pain

@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.4-beta"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.5-beta"];
   fhir:StructureDefinition.name [ fhir:value "MHVbundleBluebutton"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV BlueButton Bundle"];
   fhir:StructureDefinition.status [ fhir:value "active"];
@@ -31,7 +31,7 @@
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n* must be a document type Bundle\r\n* must have a timestamp of when this was created\r\n* must have a MHV Bluebutton type of a Composition \r\n* must include Patient Resource\r\n* must include all Resources referenced by Composition \r\n* DSTU2 use comment rather than note \r\n"];
+  fhir:StructureDefinition.description [ fhir:value "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n\r\nThis is a work in progress. It is not agreed to, and it is not ready for review.\r\n\r\n* must be a document type Bundle\r\n* must have a timestamp of when this was created\r\n* must have a MHV Bluebutton type of a Composition \r\n* must include Patient Resource\r\n* must include all Resources referenced by Composition \r\n* DSTU2 use comment rather than note \r\n"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

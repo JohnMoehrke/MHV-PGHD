@@ -29,14 +29,17 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of immun
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #completed
 * vaccineCode from http://hl7.org/fhir/us/core/ValueSet/us-core-vaccines-cvx
+// TODO is this set of codes the right one? It likely is more modern than the existing MHV list
 * occurrence[x] only dateTime
 * occurrence[x] 1..1
 * recorded 1..1
 * primarySource = false
 * reportOrigin = http://terminology.hl7.org/CodeSystem/immunization-origin#recall
 * route 1..1
+// TODO note that the route vocabulary is bigger than existing MHV, not much bigger. likely more modern.
 * note 0..1
 * reaction.detail ^type.aggregation = #contained
+// TODO characterize the contained Observations for the given reactions.
 // not allowed
 * statusReason 0..0
 * encounter 0..0
@@ -88,3 +91,6 @@ Description:      "holding typical values"
 * primarySource = false
 * reportOrigin = http://terminology.hl7.org/CodeSystem/immunization-origin#recall
 * route = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration#IM
+
+// TODO need more Immunization examples
+

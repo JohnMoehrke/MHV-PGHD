@@ -3,7 +3,7 @@
   <sch:ns prefix="f" uri="http://hl7.org/fhir"/>
   <sch:ns prefix="h" uri="http://www.w3.org/1999/xhtml"/>
   <!-- 
-    This file contains just the constraints for the profile Observation
+    This file contains just the constraints for the profile observation-vitalsigns
     It includes the base constraints for the resource as well.
     Because of the way that schematrons and containment work, 
     you may need to use this schematron fragment to build a, 
@@ -19,9 +19,6 @@
       <sch:assert test="count(f:modifierExtension) &lt;= 0">modifierExtension: maximum cardinality of 'modifierExtension' is 0</sch:assert>
       <sch:assert test="count(f:basedOn) &lt;= 0">basedOn: maximum cardinality of 'basedOn' is 0</sch:assert>
       <sch:assert test="count(f:partOf) &lt;= 0">partOf: maximum cardinality of 'partOf' is 0</sch:assert>
-      <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
-      <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
-      <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
       <sch:assert test="count(f:focus) &lt;= 0">focus: maximum cardinality of 'focus' is 0</sch:assert>
       <sch:assert test="count(f:encounter) &lt;= 0">encounter: maximum cardinality of 'encounter' is 0</sch:assert>
       <sch:assert test="count(f:issued) &lt;= 0">issued: maximum cardinality of 'issued' is 0</sch:assert>
@@ -49,6 +46,7 @@
       <sch:assert test="exists(f:text/h:div)">A resource should have narrative for robust management (inherited)</sch:assert>
       <sch:assert test="not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))">dataAbsentReason SHALL only be present if Observation.value[x] is not present (inherited)</sch:assert>
       <sch:assert test="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))">If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present (inherited)</sch:assert>
+      <sch:assert test="f:component or f:memberOF or f:*[starts-with(local-name(.), 'value')] or f:dataAbsentReason">If there is no component or hasMember element then either a value[x] or a data absent reason must be present. (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -172,6 +170,63 @@
     <sch:title>Observation.category</sch:title>
     <sch:rule context="f:Observation/f:category">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Observation.category.extension</sch:title>
+    <sch:rule context="f:Observation/f:category/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Observation.category.coding</sch:title>
+    <sch:rule context="f:Observation/f:category/f:coding">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Observation.category.coding.extension</sch:title>
+    <sch:rule context="f:Observation/f:category/f:coding/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Observation.category.coding.system</sch:title>
+    <sch:rule context="f:Observation/f:category/f:coding/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Observation.category.coding.version</sch:title>
+    <sch:rule context="f:Observation/f:category/f:coding/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Observation.category.coding.code</sch:title>
+    <sch:rule context="f:Observation/f:category/f:coding/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Observation.category.coding.display</sch:title>
+    <sch:rule context="f:Observation/f:category/f:coding/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Observation.category.coding.userSelected</sch:title>
+    <sch:rule context="f:Observation/f:category/f:coding/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Observation.category.text</sch:title>
+    <sch:rule context="f:Observation/f:category/f:text">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -202,7 +257,9 @@
     <sch:title>Observation.effective[x] 1</sch:title>
     <sch:rule context="f:Observation/f:effective[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="f:effectiveDateTime[matches(@value, '^\d{4}-\d{2}-\d{2}')]">if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="f:effectiveDateTime[matches(@value, '^\d{4}-\d{2}-\d{2}')]">if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -376,6 +433,7 @@
     <sch:title>Observation.component</sch:title>
     <sch:rule context="f:Observation/f:component">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="f:*[starts-with(local-name(.), 'value')] or f:dataAbsentReason">If there is no a value a data absent reason must be present (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

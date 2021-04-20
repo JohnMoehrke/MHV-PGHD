@@ -5,3 +5,39 @@ Code System URI 'https://wiki.mobilehealth.va.gov/x/Onc1C' is unknown so the cod
 
 # This is an example external code system used for testing success without an understood code
 Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated
+
+# FHIR core resources profiled 
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/vitalsigns - listed in meta
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationStatement
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Encounter
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationDispense
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationRequest
+
+
+
+
+# This guides profiles
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.allergy - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.immunization - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB - listed in meta
+
+

@@ -5,6 +5,9 @@ Parent:         Bundle
 Id:             VA.MHV.BlueBundle
 Title:          "VA MHV BlueButton Bundle"
 Description:    "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.
+
+This is a work in progress. It is not agreed to, and it is not ready for review.
+
 * must be a document type Bundle
 * must have a timestamp of when this was created
 * must have a MHV Bluebutton type of a Composition 

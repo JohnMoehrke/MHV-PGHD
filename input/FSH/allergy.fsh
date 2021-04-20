@@ -30,7 +30,7 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * asserter only Reference(Patient)
-* clinicalStatus = #active
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
 * verificationStatus 1..1
 * type 1..1
 * category 1..1
@@ -89,3 +89,5 @@ Description:      "holding typical values"
 * reaction.manifestation = SCT#39579001 "Anaphylaxis"
 * reaction.description = "Anaphylaxis"
 * note.text = "hard to breath, but able to"
+
+// TODO need more allergy examples

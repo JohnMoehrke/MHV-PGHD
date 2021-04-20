@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.4-beta"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.5-beta"];
   fhir:StructureDefinition.name [ fhir:value "MHVmedication"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV Medication"];
   fhir:StructureDefinition.status [ fhir:value "active"];

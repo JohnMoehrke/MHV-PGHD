@@ -1,9 +1,12 @@
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
 Profile:        MHVheartRate
-Parent:         Observation
+Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
 Id:             VA.MHV.heartRate
 Title:          "VA MHV HeartRate Observation"
 Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.
+
+Note this is compliant with FHIR core vital-signs.
+
 * must be marked with MHV app tag
 * must have vital-signs category
 * must have LOINC#8867-4 code
@@ -21,7 +24,8 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * category 1..1
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+// this category requirement is already in core vital-signs
+//* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = LOINC#8867-4
 * effectiveDateTime 1..1
 * value[x] only Quantity

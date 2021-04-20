@@ -5,6 +5,9 @@ Parent:         Observation
 Id:             VA.MHV.pain
 Title:          "VA MHV Pain Observation"
 Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.
+
+Note that Pain is not part of FHIR core vital-signs.
+
 * must be marked with MHV app tag
 * must have vital-signs category
 * must have both LOINC#72514-3 and SCT#225908003 code

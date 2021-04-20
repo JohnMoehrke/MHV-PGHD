@@ -66,7 +66,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
-  <version value="0.2.4-beta"/>
+  <version value="0.2.5-beta"/>
   <name value="MHVbloodSugar"/>
   <title value="VA MHV Blood Sugar Observation"/>
   <status value="active"/>
@@ -74,7 +74,7 @@
   <contact>
     <name value="John Moehrke"/>
   </contact>
-  <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#2339-0 code AND LOINC#2345-7&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units only of mg/dL&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xD;&#xA;* may have a eating routine component with string of fasting, after meal, or unknown&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note &#xD;&#xA;"/>
+  <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.&#xD;&#xA;&#xD;&#xA;Note that Pain is not part of FHIR core vital-signs.&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#2339-0 code AND LOINC#2345-7&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units only of mg/dL&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xD;&#xA;* may have a eating routine component with string of fasting, after meal, or unknown&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note &#xD;&#xA;"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

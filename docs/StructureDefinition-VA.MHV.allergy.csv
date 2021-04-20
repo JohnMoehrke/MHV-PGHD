@@ -67,6 +67,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","active | inactive | resolved","The clinical status of the allergy or intolerance.","Refer to [discussion](http://hl7.org/fhir/R4/extensibility.html#Special-Case) if clincalStatus is missing data.
 The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical""/>
     <code value=""active""/>
   </coding>
 </valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/allergyintolerance-clinical","",,,,"AllergyIntolerance.clinicalStatus",0,1,"ait-1

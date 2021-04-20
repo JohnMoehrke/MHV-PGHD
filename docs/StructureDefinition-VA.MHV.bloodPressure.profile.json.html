@@ -53,7 +53,7 @@
      </a>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.4-beta - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.5-beta - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -103,7 +103,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.4-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.5-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -205,7 +205,7 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.2.4-beta",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.2.5-beta",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "MHVbloodPressure",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "VA MHV Blood Pressure Observation",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
@@ -215,7 +215,7 @@
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "John Moehrke"
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#55284-4 code AND LOINC#8716-3\r\n* must have effectiveDateTime\r\n* must not have a value[x]\r\n* must have two components\r\n* must have systolic and diastolic component values in mm[Hg]\r\n* may have a heart-rate component\r\n* may have a position component\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note \r\n",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.\r\n\r\nNote that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.\r\n\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#55284-4 code AND LOINC#8716-3\r\n* must have effectiveDateTime\r\n* must not have a value[x]\r\n* must have two components\r\n* must have systolic and diastolic component values in mm[Hg]\r\n* may have a heart-rate component\r\n* may have a position component\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note \r\n",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -7808,10 +7808,10 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="18be15b2-981c-448c-82b2-3fd4f885f0bd">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.4-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 15, 2021 12:13-0500">2021-04-15</span>
+        <p><a name="f70237b9-fa77-47f4-bb70-16a28adc1eff">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.5-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 19, 2021 16:57-0500">2021-04-19</span>
           <br/>
-          <span style="color: #FFFF77"><a name="d1587a24-f73b-4721-a8b1-91ad8fc21222">​</a>
+          <span style="color: #FFFF77"><a name="1f6f26bc-7f76-455e-b254-61fe923dd6dc">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
                  

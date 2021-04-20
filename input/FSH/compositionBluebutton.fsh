@@ -5,6 +5,9 @@ Parent:         Composition
 Id:             VA.MHV.BlueComposition
 Title:          "VA MHV BlueButton Composition"
 Description:    "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.
+
+This is a work in progress. It is not agreed to, and it is not ready for review.
+
 * must be marked with MHV app tag
 * must be status final
 * must have a title explaining the content - for example: all vital-signs from past 60 days

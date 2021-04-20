@@ -25,7 +25,7 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition"/>
-  <version value="0.2.4-beta"/>
+  <version value="0.2.5-beta"/>
   <name value="MHVcompositionBluebutton"/>
   <title value="VA MHV BlueButton Composition"/>
   <status value="active"/>
@@ -33,7 +33,7 @@
   <contact>
     <name value="John Moehrke"/>
   </contact>
-  <description value="A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must be status final&#xD;&#xA;* must have a title explaining the content - for example: all vital-signs from past 60 days&#xD;&#xA;* must have date stamp of when created (now)&#xD;&#xA;* must be LOINC 55188-7 Patient data Document&#xD;&#xA;* must point at the patient for both subject and author&#xD;&#xA;* DSTU2 use comment rather than note &#xD;&#xA;"/>
+  <description value="A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;&#xD;&#xA;This is a work in progress. It is not agreed to, and it is not ready for review.&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must be status final&#xD;&#xA;* must have a title explaining the content - for example: all vital-signs from past 60 days&#xD;&#xA;* must have date stamp of when created (now)&#xD;&#xA;* must be LOINC 55188-7 Patient data Document&#xD;&#xA;* must point at the patient for both subject and author&#xD;&#xA;* DSTU2 use comment rather than note &#xD;&#xA;"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

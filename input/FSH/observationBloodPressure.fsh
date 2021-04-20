@@ -4,6 +4,9 @@ Parent:         Observation
 Id:             VA.MHV.bloodPressure
 Title:          "VA MHV Blood Pressure Observation"
 Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.
+
+Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.
+
 * must be marked with MHV app tag
 * must have vital-signs category
 * must have LOINC#55284-4 code AND LOINC#8716-3

@@ -3,11 +3,11 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
 	<id value="va.mhv.example"/>
 	<url value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-	<version value="0.2.4-beta" />
+	<version value="0.2.5-beta" />
 	<name value="MHVtoPGHD_Example"/>
 	<status value="draft"/>
 	<experimental value="false"/>
-	<date value="2020-12-16"/>
+	<date value="2021-04-19"/>
 	<contact>
 		<name value="John Moehrke" />
 	</contact>	
@@ -61,14 +61,14 @@
 		<parameter>
 			<code value="copyrightyear"/>
 			<value value="2019+"/>
-		</parameter>	
-		<parameter>
-			<code value="special-url"/>
-			<value value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
 		</parameter>
 		<parameter>
 			<code value="special-url"/>
 			<value value="https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
 		</parameter>
 	</definition>
 </ImplementationGuide>

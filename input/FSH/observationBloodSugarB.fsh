@@ -5,6 +5,9 @@ Parent:         Observation
 Id:             VA.MHV.bloodSugarB
 Title:          "VA MHV Blood Sugar Observation alternative B"
 Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements.
+
+Note that Pain is not part of FHIR core vital-signs.
+
 * must be marked with MHV app tag
 * must have vital-signs category
 * must have LOINC#2339-0 code AND LOINC#2345-7

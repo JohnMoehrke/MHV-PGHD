@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain",
-  "version": "0.2.4-beta",
+  "version": "0.2.5-beta",
   "name": "MHVpain",
   "title": "VA MHV Pain Observation",
   "status": "active",
@@ -26,7 +26,7 @@
       "name": "John Moehrke"
     }
   ],
-  "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have both LOINC#72514-3 and SCT#225908003 code\r\n* must have effectiveDateTime\r\n* must have integer between 0-10\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 will need to change to valueQuantity vs valueInteger\r\n* DSTU2 use comment rather than note \r\n",
+  "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.\r\n\r\nNote that Pain is not part of FHIR core vital-signs.\r\n\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have both LOINC#72514-3 and SCT#225908003 code\r\n* must have effectiveDateTime\r\n* must have integer between 0-10\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 will need to change to valueQuantity vs valueInteger\r\n* DSTU2 use comment rather than note \r\n",
   "jurisdiction": [
     {
       "coding": [

@@ -34,6 +34,11 @@ Where:
 * When a Pulse/Heart-Rate is associated with the Oxygen Saturation measurement, it will NOT be displayed.
 * Search of PGHD will be for any Observation resources with either of the given .code values
 
+#### possible additional columns
+
+* VCM equivalent UI shows the "source", which I think is the application (e.g. Get Care, Mobile Kidney, MyHealtheVet)
+* Unclear if others are populating any element that might identify the device used
+
 ### View associated Heart Rate
 
 **Given** that the Oxygen Saturation measurement has an associated Heart-Rate

@@ -957,6 +957,45 @@
           }
         ],
         "reference": {
+          "reference": "Observation/ex-MHV-oxygenSat-1"
+        },
+        "name": "Example Observation - ex-MHV-oxygenSat-1",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-oxygenSat-2"
+        },
+        "name": "Example Observation - ex-MHV-oxygenSat-2",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-oxygenSat-3"
+        },
+        "name": "Example Observation - ex-MHV-oxygenSat-3",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/ex-MHV-pain-0"
         },
         "name": "Example Observation - ex-MHV-pain-0",
@@ -1226,6 +1265,17 @@
           }
         ],
         "reference": {
+          "reference": "Observation/ex-other-oxygenSat-4"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/ex-pain-11"
         },
         "name": "Example Observation - ex-pain-11",
@@ -1364,6 +1414,19 @@
         },
         "name": "VA MHV Allergy or Intolerance",
         "description": "A profile on the AllergyIntolerance that declares how MHV will Create/Update in PGHD for allergy or intolerance.\r\n\r\nGiven that MyHealtheVet has access to the medical record (Vista and Cerner), there should be logic keeping a patient from entering a duplicate allergy or intolerance. \r\n\r\n* Derived off of US-Core Allergy\r\n* must be marked with MHV app tag\r\n* must point at the patient\r\n* must indicate patient is the asserter\r\n* may have recorder be the user (e.g. delegate)\r\n* must have clinicalStatus of active\r\n* may have type set to allergy or intolerance (default blank)\r\n* must have a recordedDate of the date entered\r\n* must have a onsetDateTime from the UI\r\n* must have a code.text or code.coding from a valueset from the UI\r\n* may have a category from the UI\r\n* may have a severity from the UI\r\n* must have a reaction.note or reaction.manifestation from the UI\r\n* may have a comments note from the UI\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 uses slightly different element names (e.g., substance and onset)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/VA.MHV.bloodOxygenSat"
+        },
+        "name": "VA MHV Blood Oxygen Saturation Observation",
+        "description": "A profile on the Observation that declares how MHV will Read (future Create/Update/Delete) in PGHD for blood Oxygen Saturation measurements.\r\n\r\nThis profile is consistent with FHIR Vital-Signs for Oxygen Saturation\r\n\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#59408-5 code AND LOINC#2708-6\r\n* must have effectiveDateTime\r\n* must have a valueQuantity with UCUM '%' units\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note"
       },
       {
         "extension": [

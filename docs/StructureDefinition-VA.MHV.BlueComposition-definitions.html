@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -41,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.6"}
-    h3,h4,h5,h6{--heading-prefix:"5.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.7"}
+    h3,h4,h5,h6{--heading-prefix:"5.7"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -89,15 +88,18 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>VA MHV BlueButton Composition</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -649,7 +651,7 @@ The type of relationship between documents.
   <tr><td>Definition</td><td><p>This list of codes represents the main clinical acts, such as a colonoscopy or an appendectomy, being documented. In some cases, the event is inherent in the typeCode, such as a "History and Physical Report" in which the procedure being documented is necessarily a "History and Physical" act.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/v3/ActCode/vs.html">v3 Code System ActCode</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/2.1.0/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
 This list of codes represents the main clinical acts being documented.
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -869,13 +871,15 @@ If a section is empty, why it is empty.
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="51a50688-95e3-4deb-bc30-25f04fc7bd1d">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.5-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 20, 2021 08:20-0500">2021-04-20</span>
+        <p><a name="945533a9-bedc-483b-926b-544e1a2515ef">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.5-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 20, 2021 11:40-0500">2021-05-20</span>
           <br/>
-          <span style="color: #FFFF77"><a name="bff3bd07-0ac0-4a8c-af06-628f1cefa74d">​</a>
+          <span style="color: #FFFF77"><a name="1640a7fd-d16b-4f44-9240-73f913c9c196">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
                  

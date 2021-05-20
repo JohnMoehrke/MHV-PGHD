@@ -28,6 +28,13 @@
     "name": "MHVallergy"
   },
   {
+    "id": "VA.MHV.bloodOxygenSat",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat",
+    "version": "0.2.5-beta",
+    "name": "MHVbloodOxygenSat"
+  },
+  {
     "id": "VA.MHV.bloodPressure",
     "type": "StructureDefinition",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure",

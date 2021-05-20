@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ex-other-oxygenSat-4"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: ">Blood Oxygen Saturation Level</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2708-6}">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2004 10:50:50 PM</p><p><b>value</b>: 97 %</p><p><b>note</b>: Wow, you found it</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <text value="Blood Oxygen Saturation Level"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2708-6"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ex-patient"/>
+  </subject>
+  <effectiveDateTime value="2004-12-04T23:50:50-05:00"/>
+  <valueQuantity>
+    <value value="97"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <note>
+    <text value="Wow, you found it"/>
+  </note>
+</Observation>

@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "MHVbodyTemperatureSites"];
   fhir:ValueSet.title [ fhir:value "The body temperature measurement sites that MHV supports"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-04-20T08:20:26-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-05-20T11:40:58-05:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]

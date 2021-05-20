@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ex-MHV-oxygenSat-2"/>
+  <meta>
+    <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"/>
+    <tag>
+      <system value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
+      <code value="2ce6d9aa-c068-4809-8dda-662bcb16d09a"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 2, 2004 10:50:50 PM</p><p><b>value</b>: 99 %</p><p><b>note</b>: amazingly high</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2708-6"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="59408-5"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ex-patient"/>
+  </subject>
+  <effectiveDateTime value="2004-12-02T23:50:50-05:00"/>
+  <valueQuantity>
+    <value value="99"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <note>
+    <text value="amazingly high"/>
+  </note>
+</Observation>

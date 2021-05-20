@@ -1,0 +1,36 @@
+{
+  "resourceType": "Observation",
+  "id": "ex-other-oxygenSat-4",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: \">Blood Oxygen Saturation Level</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2708-6}\">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2004 10:50:50 PM</p><p><b>value</b>: 97 %</p><p><b>note</b>: Wow, you found it</p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "text": "Blood Oxygen Saturation Level"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2708-6"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ex-patient"
+  },
+  "effectiveDateTime": "2004-12-04T23:50:50-05:00",
+  "valueQuantity": {
+    "value": 97,
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "note": [
+    {
+      "text": "Wow, you found it"
+    }
+  ]
+}

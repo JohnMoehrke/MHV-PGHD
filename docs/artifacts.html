@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -89,15 +88,18 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -170,6 +172,29 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
   <li>may have a comments note from the UI</li>
   <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
   <li>DSTU2 uses slightly different element names (e.g., substance and onset)</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-VA.MHV.bloodOxygenSat.html" title="StructureDefinition/VA.MHV.bloodOxygenSat">VA MHV Blood Oxygen Saturation Observation</a>
+               </td>
+               <td>
+<p>A profile on the Observation that declares how MHV will Read (future Create/Update/Delete) in PGHD for blood Oxygen Saturation measurements.
+
+This profile is consistent with FHIR Vital-Signs for Oxygen Saturation
+</p>
+<ul>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have LOINC#59408-5 code AND LOINC#2708-6</li>
+  <li>must have effectiveDateTime</li>
+  <li>must have a valueQuantity with UCUM ‘%’ units</li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+  <li>DSTU2 use comment rather than note</li>
 </ul>
 </td>
             </tr>
@@ -686,6 +711,21 @@ Note that Pain is not part of FHIR core vital-signs.
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-oxygenSat-1.html" title="Observation/ex-MHV-oxygenSat-1">Example Observation - ex-MHV-oxygenSat-1</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-oxygenSat-2.html" title="Observation/ex-MHV-oxygenSat-2">Example Observation - ex-MHV-oxygenSat-2</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-oxygenSat-3.html" title="Observation/ex-MHV-oxygenSat-3">Example Observation - ex-MHV-oxygenSat-3</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-ex-MHV-pain-0.html" title="Observation/ex-MHV-pain-0">Example Observation - ex-MHV-pain-0</a>
                </td>
             </tr>
@@ -918,6 +958,11 @@ Note that Pain is not part of FHIR core vital-signs.
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-ex-other-oxygenSat-4.html" title="Observation/ex-other-oxygenSat-4">Observation/ex-other-oxygenSat-4</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-ex-pain-12.html" title="Observation/ex-pain-12">Observation/ex-pain-12</a>
                </td>
             </tr>
@@ -992,13 +1037,15 @@ Note that Pain is not part of FHIR core vital-signs.
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="ec1dc9d2-c957-4337-859b-c497fda47352">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.5-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 20, 2021 08:20-0500">2021-04-20</span>
+        <p><a name="4486f16a-0e58-407a-a3c5-95b86c4aa551">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.5-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 20, 2021 11:40-0500">2021-05-20</span>
           <br/>
-          <span style="color: #FFFF77"><a name="8c9f4e7b-5260-48cf-a655-4f31da114450">​</a>
+          <span style="color: #FFFF77"><a name="421a83e1-785d-4721-b24c-c860625df027">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
                  

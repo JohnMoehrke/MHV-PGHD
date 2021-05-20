@@ -65,7 +65,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
-  <version value="0.2.5-beta"/>
+  <version value="0.2.6-beta"/>
   <name value="MHVbloodSugarB"/>
   <title value="VA MHV Blood Sugar Observation alternative B"/>
   <status value="active"/>

@@ -52,7 +52,7 @@
      </a>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.5-beta - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.6-beta - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -105,7 +105,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.5-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.6-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -181,11 +181,17 @@
   ];
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\"&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}\"&gt;Oxygen saturation in Arterial blood&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient-ex-patient.html\"&gt;Generated Summary: Jack Smith &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Dec 1, 2004 10:50:50 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 95 %&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: a typical value&lt;/p&gt;&lt;/div&gt;"
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\"&gt;Vital Signs&lt;/span&gt;, &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\"&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}\"&gt;Oxygen saturation in Arterial blood&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient-ex-patient.html\"&gt;Generated Summary: Jack Smith &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Dec 1, 2004 10:50:50 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 95 %&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: a typical value&lt;/p&gt;&lt;/div&gt;"
   ];
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:Observation.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "final"];
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.category">fhir:Observation.category</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "vital-signs" ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/observation-category" ];
@@ -251,10 +257,10 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="3813b5e2-9d3a-49bc-9882-d80520684f25">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.5-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 20, 2021 11:40-0500">2021-05-20</span>
+        <p><a name="28a5e243-b353-4164-a52a-d7e6f09774e1">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 20, 2021 11:50-0500">2021-05-20</span>
           <br/>
-          <span style="color: #FFFF77"><a name="59e78a1f-6a21-4b71-9035-3a816260ab12">​</a>
+          <span style="color: #FFFF77"><a name="ba5244f3-2351-4598-88b8-8769af139ae8">​</a>
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
                  

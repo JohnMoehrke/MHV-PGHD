@@ -2,7 +2,7 @@
 // not using FHIR core vitalsigns as that profile requires different codes that MHV/PGHD have not agreed to allow
 // http://hl7.org/fhir/us/core/StructureDefinition-us-core-pulse-oximetry.html
 Profile:        MHVbloodOxygenSat
-Parent:         Observation
+Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
 Id:             VA.MHV.bloodOxygenSat
 Title:          "VA MHV Blood Oxygen Saturation Observation"
 Description:    "A profile on the Observation that declares how MHV will Read (future Create/Update/Delete) in PGHD for blood Oxygen Saturation measurements.

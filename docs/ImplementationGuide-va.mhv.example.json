@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MHVtoPGHD_Example</h2><p>The official URL for this implementation guide is: </p><pre>https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example</pre><div><p>Testing Plan for VA MyHealtheVet use of PGHD.</p>\n</div></div>"
   },
   "url": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example",
-  "version": "0.2.5-beta",
+  "version": "0.2.6-beta",
   "name": "MHVtoPGHD_Example",
   "status": "draft",
   "experimental": false,
-  "date": "2021-04-19",
+  "date": "2021-05-20",
   "contact": [
     {
       "name": "John Moehrke"

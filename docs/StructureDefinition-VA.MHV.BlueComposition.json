@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition",
-  "version": "0.2.5-beta",
+  "version": "0.2.6-beta",
   "name": "MHVcompositionBluebutton",
   "title": "VA MHV BlueButton Composition",
   "status": "active",

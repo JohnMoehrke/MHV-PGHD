@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure",
-  "version": "0.2.5-beta",
+  "version": "0.2.6-beta",
   "name": "MHVbloodPressure",
   "title": "VA MHV Blood Pressure Observation",
   "status": "active",

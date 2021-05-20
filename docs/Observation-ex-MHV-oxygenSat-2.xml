@@ -10,9 +10,15 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 2, 2004 10:50:50 PM</p><p><b>value</b>: 99 %</p><p><b>note</b>: amazingly high</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span>, <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 2, 2004 10:50:50 PM</p><p><b>value</b>: 99 %</p><p><b>note</b>: amazingly high</p></div>
   </text>
   <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>

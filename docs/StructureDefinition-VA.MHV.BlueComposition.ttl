@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.5-beta"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.6-beta"];
   fhir:StructureDefinition.name [ fhir:value "MHVcompositionBluebutton"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV BlueButton Composition"];
   fhir:StructureDefinition.status [ fhir:value "active"];

@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://details.loinc.org/LOINC/69000-8.html">69000-8</a></td><td>Heart rate - sitting</td></tr><tr><td><a href="http://details.loinc.org/LOINC/69001-6.html">69001-6</a></td><td>Heart rate - standing</td></tr><tr><td><a href="http://details.loinc.org/LOINC/68999-2.html">68999-2</a></td><td>Heart rate - supine</td></tr><tr><td><a href="http://details.loinc.org/LOINC/40443-4.html">40443-4</a></td><td>Heart rate - resting</td></tr></table></li></ul></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions"/>
-  <version value="0.2.5-beta"/>
+  <version value="0.2.6-beta"/>
   <name value="MHVbloodPressurePositions"/>
   <title value="The methods of measurement for blood pressure that MHV supports"/>
   <status value="active"/>
-  <date value="2021-05-20T11:40:58-05:00"/>
+  <date value="2021-05-20T11:50:31-05:00"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>

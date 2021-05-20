@@ -26,7 +26,7 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle"/>
-  <version value="0.2.5-beta"/>
+  <version value="0.2.6-beta"/>
   <name value="MHVbundleBluebutton"/>
   <title value="VA MHV BlueButton Bundle"/>
   <status value="active"/>

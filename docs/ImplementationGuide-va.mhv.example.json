@@ -424,6 +424,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/38de260a-537c-496e-8254-747dec5c922a"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "AllergyIntolerance"
           }
         ],
@@ -1426,7 +1437,7 @@
           "reference": "StructureDefinition/VA.MHV.bloodOxygenSat"
         },
         "name": "VA MHV Blood Oxygen Saturation Observation",
-        "description": "A profile on the Observation that declares how MHV will Read (future Create/Update/Delete) in PGHD for blood Oxygen Saturation measurements.\r\n\r\nThis profile is consistent with FHIR Vital-Signs for Oxygen Saturation\r\n\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#59408-5 code AND LOINC#2708-6\r\n* must have effectiveDateTime\r\n* must have a valueQuantity with UCUM '%' units\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note"
+        "description": "A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).\n\nThis profile is consistent with FHIR core Vital-Signs for Oxygen Saturation\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#59408-5 code AND LOINC#2708-6\n  - Argonaut and VCM use 59408-5\n  - FHIR Core R4 also adds 2708-6\n- must have effectiveDateTime\n- must have a valueQuantity with UCUM '%' units\n- must have status at final or preliminary\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note"
       },
       {
         "extension": [

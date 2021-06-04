@@ -1,25 +1,28 @@
 // note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
-// not using FHIR core vitalsigns as that profile requires different codes that MHV/PGHD have not agreed to allow
+// using FHIR core vitalsigns as that profile requires different codes that MHV/PGHD have not agreed to allow
 // http://hl7.org/fhir/us/core/StructureDefinition-us-core-pulse-oximetry.html
 Profile:        MHVbloodOxygenSat
 Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
 Id:             VA.MHV.bloodOxygenSat
 Title:          "VA MHV Blood Oxygen Saturation Observation"
-Description:    "A profile on the Observation that declares how MHV will Read (future Create/Update/Delete) in PGHD for blood Oxygen Saturation measurements.
+Description:    """
+A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).
 
-This profile is consistent with FHIR Vital-Signs for Oxygen Saturation
+This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 
-* must be marked with MHV app tag
-* must have vital-signs category
-* must have LOINC#59408-5 code AND LOINC#2708-6
-* must have effectiveDateTime
-* must have a valueQuantity with UCUM '%' units
-* must have status at final
-* must point at the patient
-* may have a note (comment)
-* once created will or might have an id, versionId, lastUpdated, text, and identifier
-* DSTU2 use comment rather than note 
-"
+- must be marked with MHV app tag
+- must have vital-signs category
+- must have LOINC#59408-5 code AND LOINC#2708-6
+  - Argonaut and VCM use 59408-5
+  - FHIR Core R4 also adds 2708-6
+- must have effectiveDateTime
+- must have a valueQuantity with UCUM '%' units
+- must have status at final or preliminary
+- must point at the patient
+- may have a note (comment)
+- once created will or might have an id, versionId, lastUpdated, text, and identifier
+- DSTU2 use comment rather than note
+"""
 * ^version = "0.1.0"
 * ^date = "2021-05-20"
 // this is what the MHV / PGD mapping table says
@@ -40,7 +43,8 @@ This profile is consistent with FHIR Vital-Signs for Oxygen Saturation
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#%
-* status = #final
+// status of preliminary and final found in the PGHD database
+//* status = #final
 * subject 1..1
 * subject only Reference(Patient)
 // using note in R4, where we use comments in DSTU2

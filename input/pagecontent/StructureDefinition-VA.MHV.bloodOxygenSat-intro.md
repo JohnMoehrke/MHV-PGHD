@@ -1,4 +1,4 @@
-The MyHealtheVet Oxygen Saturation 
+The MyHealtheVet Oxygen Saturation - aka Pulse OX 
 
 **Epic** MyHealtheVet will support Oxygen Saturation measurements in the PGHD (FHIR) repository
 
@@ -22,28 +22,39 @@ will have a User Interface similar to
 
 ![](BloodOxygenSatList.svg)
 
+<div style="clear: left"/>
 
 Where:
 
-* This will display the measurements recorded in the PGHD database
+* This will display the measurements recorded in the PGHD database (status of preliminary and final)
+  * query based only on LOINC code of 59408-5 (unclear that adding both codes has any value)
+  * `GET [base]/Observation?subject=[patient]&code=59408-5[&_count=1000][&date=...]`
+  * may use `_count` to limit the count to the size of the output desired
+  * may use `date` to limit the boundary of time of the output desired
 * For each oxygen saturation value found in PGHD (for a **Given** page size)
-* Display the 
+* Display the date/time sorted data
   * Date
   * Time
   * Percentage Oxygen Saturation
 * When a Pulse/Heart-Rate is associated with the Oxygen Saturation measurement, it will NOT be displayed.
-* Search of PGHD will be for any Observation resources with either of the given .code values
 
 #### possible additional columns
 
 * VCM equivalent UI shows the "source", which I think is the application (e.g. Get Care, Mobile Kidney, MyHealtheVet)
-* Unclear if others are populating any element that might identify the device used
+* Unclear if others are populating any element that might identify the device used (samples given in May 2021 do not show anything else)
 
 ### View associated Heart Rate
 
 **Given** that the Oxygen Saturation measurement has an associated Heart-Rate
 
 **Then** indicate in the list for that Oxygen Saturation measurement the heart-rate value
+
+
+will have a User Interface similar to
+
+![](BloodOxygenSatPulseList.svg)
+
+<div style="clear: left"/>
 
 #### User Interface
 
@@ -90,7 +101,8 @@ Note, that PGHD does not fully delete entries that are marked as deleted, but do
 * Percentage of Oxygen Saturation to one decimal place (e.g. 95.2%)
 * Normal ranges for Oxygen Saturation are 90%-99%, so outside this range should cause a User Interface challenge to the user to confirm the value entered.
 * Percentage of Oxygen Saturation not to be greater than 100%
-* Percentage of Oxygen Saturation not to be less than X value defined by clinical review (typically not lower than 85%)
+* Percentage of Oxygen Saturation not to be less than 50% value defined by clinical review 
+* comment
 
 ## Heart-Rate Considerations
 

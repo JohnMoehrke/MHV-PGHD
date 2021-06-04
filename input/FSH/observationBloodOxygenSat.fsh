@@ -29,7 +29,8 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * category 1..1
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+// don't add this category constraint as it is already in fhir core
+//* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 // MHV records using two codes as there are two different codes based on the version of the oxygen saturation profiles from FHIR and Argonaut
 // Argonaut and VCM use 59408-5
 // FHIR Core R4 also adds 2708-6

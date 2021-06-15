@@ -8,23 +8,24 @@ Description:    "A profile on the Observation that declares how MHV will Create/
 
 Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.
 
-* must be marked with MHV app tag
-* must have vital-signs category
-* must have LOINC#55284-4 code AND LOINC#8716-3
-* must have effectiveDateTime
-* must not have a value[x]
-* must have two components
-* must have systolic and diastolic component values in mm[Hg]
-* may have a heart-rate component
-* may have a position component
-* must have status at final
-* must point at the patient
-* may have a note (comment)
-* once created will or might have an id, versionId, lastUpdated, text, and identifier
-* DSTU2 use comment rather than note 
+- must be marked with MHV app tag
+- must have vital-signs category
+- must have LOINC#55284-4 code AND LOINC#8716-3
+  - 8716-3 was added as some mobile apps searched on this
+- must have effectiveDateTime
+- must not have a value[x]
+- must have two components
+- must have systolic and diastolic component values in mm[Hg]
+- may have a related has-member heart-rate observation
+- must have status at final
+- must point at the patient
+- may have a note (comment)
+- once created will or might have an id, versionId, lastUpdated, text, and identifier
+- DSTU2 use comment rather than note, and related has-member is encoded differently 
+- Later may have a position component (sitting, standing, supline, and resting)
 "
-* ^version = "0.1.0"
-* ^date = "2020-11-23"
+* ^version = "0.2.0"
+* ^date = "2021-06-15"
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
@@ -36,8 +37,8 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 * code.coding ^slicing.rules = #closed
 * code.coding 2..2
 * code.coding contains loincCode1 1..1 and loincCode2 1..1
-* code.coding[loincCode1] = LOINC#55284-4
-* code.coding[loincCode2] = LOINC#8716-3
+* code.coding[loincCode1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
+* code.coding[loincCode2] = LOINC#8716-3 "Vital signs"
 * effectiveDateTime 1..1
 * value[x] 0..0
 * component 2..4
@@ -48,7 +49,6 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 * component contains 
 	diastolicBP 1..1 and 
 	systolicBP 1..1 and 
-	heartRate 0..1 and 
 	bodyContextSitting 0..1 and 
 	bodyContextStanding 0..1 and 
 	bodyContextSupine 0..1 and 
@@ -59,26 +59,17 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 * component[diastolicBP].code = LOINC#8462-4 // Diastolic blood pressure
 * component[diastolicBP].value[x] only Quantity
 * component[diastolicBP].valueQuantity = UCUM#mm[Hg] // "mmHg"
-* component[heartRate].code = LOINC#8867-4 // heart rate
-* component[heartRate].value[x] only Quantity
-* component[heartRate].valueQuantity = UCUM#/min "beats/minute"
-//    the bodyContext is odd seems it should be different, but this is what we were forced to do for the mobile kidney
-// I would expect this component to be code 8867-4 and these codes would be valueCodeableConcept
-* component[bodyContextSitting].code = LOINC#69000-8
-* component[bodyContextSitting].value[x] only string
-* component[bodyContextSitting].valueString = "Sitting"
-* component[bodyContextStanding].code = LOINC#69001-6
-* component[bodyContextStanding].value[x] only string
-* component[bodyContextStanding].valueString = "Standing"
-* component[bodyContextSupine].code = LOINC#68999-2
-* component[bodyContextSupine].value[x] only string
-* component[bodyContextSupine].valueString = "Supine"
-* component[bodyContextResting].code = LOINC#40443-4
-* component[bodyContextResting].value[x] only string
-* component[bodyContextResting].valueString = "Resting"
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)
+* hasMember ^slicing.discriminator.type = #profile
+* hasMember ^slicing.discriminator.path = "resource"
+* hasMember ^slicing.rules = #closed
+* hasMember ^slicing.description = "allow a heart-rate observation that is related to this"
+* hasMember MS
+* hasMember contains
+    heartRate 0..1
+* hasMember[heartRate] only Reference(VA.MHV.heartRate)
 // using note in R4, where we use comments in DSTU2
 * note 0..1
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing
@@ -109,7 +100,6 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 * specimen 0..0
 * device 0..0
 * referenceRange 0..0
-* hasMember 0..0
 * derivedFrom 0..0
 
 ValueSet: MHVbloodPressurePositions

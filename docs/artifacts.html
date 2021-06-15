@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="assets/css/fhir.css"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
@@ -197,6 +197,7 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
   <li>must have a valueQuantity with UCUM ‘%’ units</li>
   <li>must have status at final or preliminary</li>
   <li>must point at the patient</li>
+  <li>may have a hasMember of a blood-pressure and/or respiration-rate</li>
   <li>may have a note (comment)</li>
   <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
   <li>DSTU2 use comment rather than note</li>
@@ -215,18 +216,22 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 <ul>
   <li>must be marked with MHV app tag</li>
   <li>must have vital-signs category</li>
-  <li>must have LOINC#55284-4 code AND LOINC#8716-3</li>
+  <li>must have LOINC#55284-4 code AND LOINC#8716-3
+    <ul>
+      <li>8716-3 was added as some mobile apps searched on this</li>
+    </ul>
+  </li>
   <li>must have effectiveDateTime</li>
   <li>must not have a value[x]</li>
   <li>must have two components</li>
   <li>must have systolic and diastolic component values in mm[Hg]</li>
-  <li>may have a heart-rate component</li>
-  <li>may have a position component</li>
+  <li>may have a related has-member heart-rate observation</li>
   <li>must have status at final</li>
   <li>must point at the patient</li>
   <li>may have a note (comment)</li>
   <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
-  <li>DSTU2 use comment rather than note</li>
+  <li>DSTU2 use comment rather than note, and related has-member is encoded differently </li>
+  <li>Later may have a position component (sitting, standing, supline, and resting)</li>
 </ul>
 </td>
             </tr>
@@ -471,6 +476,37 @@ Note that Pain is not part of FHIR core vital-signs.
 </ul>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-VA.MHV.respirationRate.html" title="StructureDefinition/VA.MHV.respirationRate">VA MHV Respiration Rate Observation</a>
+               </td>
+               <td>
+<p>A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).</p>
+
+<p>This profile is consistent with FHIR core Vital-Signs for Respiration Rate</p>
+
+<ul>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have LOINC#9279-1 code
+    <ul>
+      <li>FHIR Core, Argonaut and VCM use 9279-1</li>
+    </ul>
+  </li>
+  <li>must have effectiveDateTime</li>
+  <li>must have valueQuantity with units only of breaths per minute
+    <ul>
+      <li>typical is 12-16 breaths per minute</li>
+    </ul>
+  </li>
+  <li>must have status at final or preliminary</li>
+  <li>must point at the patient</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+  <li>DSTU2 use comment rather than note</li>
+</ul>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -611,6 +647,11 @@ Note that Pain is not part of FHIR core vital-signs.
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-bloodPressure-1.html" title="Observation/ex-MHV-bloodPressure-1">Example Observation - ex-MHV-bloodPressure-1</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-ex-MHV-bloodSugar-0.html" title="Observation/ex-MHV-bloodSugar-0">Example Observation - ex-MHV-bloodSugar-0</a>
                </td>
             </tr>
@@ -731,6 +772,21 @@ Note that Pain is not part of FHIR core vital-signs.
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-oxygenSat-5.html" title="Observation/ex-MHV-oxygenSat-5">Example Observation - ex-MHV-oxygenSat-5</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-oxygenSat-6.html" title="Observation/ex-MHV-oxygenSat-6">Example Observation - ex-MHV-oxygenSat-6</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-oxygenSat-7.html" title="Observation/ex-MHV-oxygenSat-7">Example Observation - ex-MHV-oxygenSat-7</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-ex-MHV-pain-0.html" title="Observation/ex-MHV-pain-0">Example Observation - ex-MHV-pain-0</a>
                </td>
             </tr>
@@ -782,6 +838,21 @@ Note that Pain is not part of FHIR core vital-signs.
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-ex-MHV-pain-9.html" title="Observation/ex-MHV-pain-9">Example Observation - ex-MHV-pain-9</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-respirationRate-1.html" title="Observation/ex-MHV-respirationRate-1">Example Observation - ex-MHV-respirationRate-1</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-respirationRate-2.html" title="Observation/ex-MHV-respirationRate-2">Example Observation - ex-MHV-respirationRate-2</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-respirationRate-3.html" title="Observation/ex-MHV-respirationRate-3">Example Observation - ex-MHV-respirationRate-3</a>
                </td>
             </tr>
             <tr>
@@ -968,6 +1039,11 @@ Note that Pain is not part of FHIR core vital-signs.
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-ex-other-oxygenSat-8.html" title="Observation/ex-other-oxygenSat-8">Observation/ex-other-oxygenSat-8</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-ex-pain-12.html" title="Observation/ex-pain-12">Observation/ex-pain-12</a>
                </td>
             </tr>
@@ -1047,8 +1123,8 @@ Note that Pain is not part of FHIR core vital-signs.
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="1dcd45dd-2947-439c-8f0b-08a0e21d705d">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 4, 2021 10:32-0500">2021-06-04</span>
+        <p><a name="7b2ef39b-624c-40d5-8994-ffec51a51bca">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 15, 2021 14:32-0500">2021-06-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

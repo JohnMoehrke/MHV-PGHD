@@ -98,6 +98,13 @@
     "name": "MHVpain"
   },
   {
+    "id": "VA.MHV.respirationRate",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate",
+    "version": "0.2.6-beta",
+    "name": "MHVrespirationRate"
+  },
+  {
     "id": "AllAppIdCodes",
     "type": "ValueSet",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes",

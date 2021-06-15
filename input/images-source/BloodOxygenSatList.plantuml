@@ -5,9 +5,9 @@ You are viewing Oxygen Saturation information.
 View Data as a Table or Graph
 
 {#
-Date | Time | Oximeter Reading (%)
-2021-05-20 | 9:54 AM | 95 
-2021-05-20 | 10:04 AM | 98
+Date | Time | Oximeter Reading (%) | Heart Rate | Respiration rate
+2021-05-20 | 9:54 AM | 95 | 60 | 12
+2021-05-20 | 10:04 AM | 98 | 76 | 18
 }
 }
 @endsalt

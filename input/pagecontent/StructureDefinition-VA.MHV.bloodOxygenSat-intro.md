@@ -36,29 +36,14 @@ Where:
   * Date
   * Time
   * Percentage Oxygen Saturation
-* When a Pulse/Heart-Rate is associated with the Oxygen Saturation measurement, it will NOT be displayed.
+* has-member other Observations related to this entry
+  * When a Pulse/Heart-Rate is associated with the Oxygen Saturation measurement, it will be displayed.
+  * When a Respiration-Rate is associated with the Oxygen Saturation measurement, it will be displayed.
 
 #### possible additional columns
 
 * VCM equivalent UI shows the "source", which I think is the application (e.g. Get Care, Mobile Kidney, MyHealtheVet)
 * Unclear if others are populating any element that might identify the device used (samples given in May 2021 do not show anything else)
-
-### View associated Heart Rate
-
-**Given** that the Oxygen Saturation measurement has an associated Heart-Rate
-
-**Then** indicate in the list for that Oxygen Saturation measurement the heart-rate value
-
-
-will have a User Interface similar to
-
-![](BloodOxygenSatPulseList.svg)
-
-<div style="clear: left"/>
-
-#### User Interface
-
-add one more column
 
 ### Graph all measurements currently in PGHD
 
@@ -109,6 +94,12 @@ Note, that PGHD does not fully delete entries that are marked as deleted, but do
 Note that the Veteran may have a pulse that is associated with the Oxygen Saturation entry. This may be optionally recorded as a related  [Heart Rate](StructureDefinition-VA.MHV.heartRate.html) Observation. Similar to the Blood-Pressure use of a related Heart-Rate measurement.
 
 Note, when a [Heart Rate](StructureDefinition-VA.MHV.heartRate.html) associated with a Oxygen Saturation Measurement is deleted or updated; the relationship between the Oxygen Saturation Measurement and that Heart Rate must be confirmed or eliminated. 
+
+## Respiration-Rate Considerations
+
+Note that the Veteran may have a respiration rate that is associated with the Oxygen Saturation entry. This may be optionally recorded as a related  [Respiration Rate](StructureDefinition-VA.MHV.respirationRate.html) Observation. Similar to the Blood-Pressure use of a related Heart-Rate measurement.
+
+Note, when a [Respiration Rate](StructureDefinition-VA.MHV.respirationRate.html) associated with a Oxygen Saturation Measurement is deleted or updated; the relationship between the Oxygen Saturation Measurement and that Respiration Rate must be confirmed or eliminated. 
 
 ## Edit is not proposed
 

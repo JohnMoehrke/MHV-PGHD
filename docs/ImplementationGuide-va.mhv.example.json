@@ -695,6 +695,19 @@
           }
         ],
         "reference": {
+          "reference": "Observation/ex-MHV-bloodPressure-1"
+        },
+        "name": "Example Observation - ex-MHV-bloodPressure-1",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/ex-MHV-bloodSugar-0"
         },
         "name": "Example Observation - ex-MHV-bloodSugar-0",
@@ -1007,6 +1020,45 @@
           }
         ],
         "reference": {
+          "reference": "Observation/ex-MHV-oxygenSat-5"
+        },
+        "name": "Example Observation - ex-MHV-oxygenSat-5",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-oxygenSat-6"
+        },
+        "name": "Example Observation - ex-MHV-oxygenSat-6",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-oxygenSat-7"
+        },
+        "name": "Example Observation - ex-MHV-oxygenSat-7",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/ex-MHV-pain-0"
         },
         "name": "Example Observation - ex-MHV-pain-0",
@@ -1161,6 +1213,45 @@
           }
         ],
         "reference": {
+          "reference": "Observation/ex-MHV-respirationRate-1"
+        },
+        "name": "Example Observation - ex-MHV-respirationRate-1",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-respirationRate-2"
+        },
+        "name": "Example Observation - ex-MHV-respirationRate-2",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-MHV-respirationRate-3"
+        },
+        "name": "Example Observation - ex-MHV-respirationRate-3",
+        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/ex-MHV-temperature-0"
         },
         "name": "Example Observation - ex-MHV-temperature-0",
@@ -1277,6 +1368,17 @@
         ],
         "reference": {
           "reference": "Observation/ex-other-oxygenSat-4"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-other-oxygenSat-8"
         }
       },
       {
@@ -1437,7 +1539,7 @@
           "reference": "StructureDefinition/VA.MHV.bloodOxygenSat"
         },
         "name": "VA MHV Blood Oxygen Saturation Observation",
-        "description": "A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).\n\nThis profile is consistent with FHIR core Vital-Signs for Oxygen Saturation\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#59408-5 code AND LOINC#2708-6\n  - Argonaut and VCM use 59408-5\n  - FHIR Core R4 also adds 2708-6\n- must have effectiveDateTime\n- must have a valueQuantity with UCUM '%' units\n- must have status at final or preliminary\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note"
+        "description": "A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).\n\nThis profile is consistent with FHIR core Vital-Signs for Oxygen Saturation\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#59408-5 code AND LOINC#2708-6\n  - Argonaut and VCM use 59408-5\n  - FHIR Core R4 also adds 2708-6\n- must have effectiveDateTime\n- must have a valueQuantity with UCUM '%' units\n- must have status at final or preliminary\n- must point at the patient\n- may have a hasMember of a blood-pressure and/or respiration-rate\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note"
       },
       {
         "extension": [
@@ -1450,7 +1552,7 @@
           "reference": "StructureDefinition/VA.MHV.bloodPressure"
         },
         "name": "VA MHV Blood Pressure Observation",
-        "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.\r\n\r\nNote that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.\r\n\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have LOINC#55284-4 code AND LOINC#8716-3\r\n* must have effectiveDateTime\r\n* must not have a value[x]\r\n* must have two components\r\n* must have systolic and diastolic component values in mm[Hg]\r\n* may have a heart-rate component\r\n* may have a position component\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 use comment rather than note"
+        "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.\r\n\r\nNote that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.\r\n\r\n- must be marked with MHV app tag\r\n- must have vital-signs category\r\n- must have LOINC#55284-4 code AND LOINC#8716-3\r\n  - 8716-3 was added as some mobile apps searched on this\r\n- must have effectiveDateTime\r\n- must not have a value[x]\r\n- must have two components\r\n- must have systolic and diastolic component values in mm[Hg]\r\n- may have a related has-member heart-rate observation\r\n- must have status at final\r\n- must point at the patient\r\n- may have a note (comment)\r\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n- DSTU2 use comment rather than note, and related has-member is encoded differently \r\n- Later may have a position component (sitting, standing, supline, and resting)"
       },
       {
         "extension": [
@@ -1581,6 +1683,19 @@
         },
         "name": "VA MHV Pain Observation",
         "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.\r\n\r\nNote that Pain is not part of FHIR core vital-signs.\r\n\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have both LOINC#72514-3 and SCT#225908003 code\r\n* must have effectiveDateTime\r\n* must have integer between 0-10\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 will need to change to valueQuantity vs valueInteger\r\n* DSTU2 use comment rather than note"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/VA.MHV.respirationRate"
+        },
+        "name": "VA MHV Respiration Rate Observation",
+        "description": "A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).\n\nThis profile is consistent with FHIR core Vital-Signs for Respiration Rate\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#9279-1 code \n  - FHIR Core, Argonaut and VCM use 9279-1\n- must have effectiveDateTime\n- must have valueQuantity with units only of breaths per minute\n  - typical is 12-16 breaths per minute\n- must have status at final or preliminary\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note"
       },
       {
         "extension": [

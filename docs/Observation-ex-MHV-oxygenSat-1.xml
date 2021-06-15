@@ -10,7 +10,7 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 1, 2004 10:50:50 PM</p><p><b>value</b>: 95 %</p><p><b>note</b>: a typical value</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}">Oxygen saturation in Arterial blood by Pulse oximetry</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 1, 2004 10:50:50 PM</p><p><b>value</b>: 95 %</p><p><b>note</b>: a typical value</p></div>
   </text>
   <status value="final"/>
   <category>
@@ -23,10 +23,12 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="2708-6"/>
+      <display value="Oxygen saturation in Arterial blood by Pulse oximetry"/>
     </coding>
     <coding>
       <system value="http://loinc.org"/>
       <code value="59408-5"/>
+      <display value="Oxygen saturation in Arterial blood"/>
     </coding>
   </code>
   <subject>

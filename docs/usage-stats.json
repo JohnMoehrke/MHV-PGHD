@@ -27,6 +27,10 @@
       {
         "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain",
         "title": "VA MHV Pain Observation"
+      },
+      {
+        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate",
+        "title": "VA MHV Respiration Rate Observation"
       }
     ],
     "Immunization": [

@@ -28,7 +28,7 @@ This profile is consistent with FHIR core Vital-Signs for Respiration Rate
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
-* category 1..1
+//* category 1..1
 // don't add this category constraint as it is already in fhir core
 //* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 //* code = LOINC#9279-1 "Respiratory rate"

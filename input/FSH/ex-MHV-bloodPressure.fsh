@@ -36,4 +36,4 @@ Description:      "holding typical values of 140/90 with a heart-rate"
 * component[diastolicBP].valueQuantity = 90.0 'mm[Hg]'
 // no comments in this one as comments is only in DSTU2
 * note.text = "a minimal blood pressure"
-* hasMember[heartRate] = Reference(Observation/ex-MHV-heartRate-1)
+* hasMember = Reference(Observation/ex-MHV-heartRate-1)

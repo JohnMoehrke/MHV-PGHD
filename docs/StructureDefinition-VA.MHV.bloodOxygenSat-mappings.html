@@ -220,6 +220,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>OBX-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding (ox1)</td><td>C*E.1-8, C*E.10-22</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding (ox2)</td><td>C*E.1-8, C*E.10-22</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>OBX-14, and/or OBX-19 after v2.4  (depends on who observation made)</td> </tr>
@@ -233,8 +235,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>(see OBX.6 etc.) / CQ.2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;hasMember</td><td>Relationships established by OBX-4 usage</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;hasMember (heartRate)</td><td>Relationships established by OBX-4 usage</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;hasMember (respirationRate)</td><td>Relationships established by OBX-4 usage</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>MHVbloodOxygenSat</b></td></tr>
@@ -262,6 +262,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding (ox1)</td><td>union(., ./translation)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding (ox2)</td><td>union(., ./translation)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code="text/plain"]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>participation[typeCode=RTGT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>effectiveTime</td> </tr>
@@ -277,8 +279,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>PQ.code, MO.currency, PQ.translation.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>subjectOf.observationEvent[code="annotation"].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;hasMember</td><td>outBoundRelationship</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;hasMember (heartRate)</td><td>outBoundRelationship</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;hasMember (respirationRate)</td><td>outBoundRelationship</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>MHVbloodOxygenSat</b></td></tr>
@@ -351,8 +351,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="15219648-d7b4-463d-948b-c863545029f3">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 16, 2021 16:39-0500">2021-08-16</span>
+        <p><a name="c80671c5-37f4-466c-b917-8207a09c2460">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 17, 2021 10:06-0500">2021-08-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

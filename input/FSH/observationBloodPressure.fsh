@@ -63,14 +63,9 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)
-* hasMember ^slicing.discriminator.type = #profile
-* hasMember ^slicing.discriminator.path = "resource"
-* hasMember ^slicing.rules = #closed
-* hasMember ^slicing.description = "allow a heart-rate observation that is related to this"
 * hasMember MS
-* hasMember contains
-    heartRate 0..1
-* hasMember[heartRate] only Reference(VA.MHV.heartRate)
+* hasMember 0..1
+* hasMember only Reference(VA.MHV.heartRate)
 // using note in R4, where we use comments in DSTU2
 * note 0..1
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing

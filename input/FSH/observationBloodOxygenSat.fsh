@@ -29,7 +29,7 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
-* category 1..1
+//* category 1..1
 // don't add this category constraint as it is already in fhir core
 //* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 // MHV records using two codes as there are two different codes based on the version of the oxygen saturation profiles from FHIR and Argonaut
@@ -39,9 +39,9 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding 2..2
-* code.coding contains loincCode1 1..1 and loincCode2 1..1
-* code.coding[loincCode1] = LOINC#59408-5 "Oxygen saturation in Arterial blood"
-* code.coding[loincCode2] = LOINC#2708-6 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* code.coding contains ox1 1..1 and ox2 1..1
+* code.coding[ox1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* code.coding[ox2] = LOINC#2708-6 "Oxygen saturation in Arterial blood"
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#%
@@ -49,16 +49,9 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 //* status = #final
 * subject 1..1
 * subject only Reference(Patient)
-* hasMember ^slicing.discriminator.type = #profile
-* hasMember ^slicing.discriminator.path = "resource"
-* hasMember ^slicing.rules = #closed
-* hasMember ^slicing.description = "allow a heart-rate observation and/or respiration rate that is related to this"
 * hasMember MS
-* hasMember contains
-    heartRate 0..1 and
-    respirationRate 0..1
-* hasMember[heartRate] only Reference(VA.MHV.heartRate)
-* hasMember[respirationRate] only Reference(VA.MHV.respirationRate)
+* hasMember 0..2
+* hasMember only Reference(VA.MHV.heartRate or VA.MHV.respirationRate)
 // using note in R4, where we use comments in DSTU2
 * note 0..1
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing

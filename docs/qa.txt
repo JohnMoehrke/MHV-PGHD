@@ -1,11 +1,11 @@
 ﻿MHVtoPGHD_Example : Validation Results
 =========================================
 
-err = 204, warn = 120, info = 51
-IG Publisher Version: 1.1.72 Out of date - current version is 1.1.73
-Generated Tue Jun 15 14:35:01 CDT 2021. FHIR version 4.0.1 for va.mhv.example#0.2.6-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+err = 161, warn = 98, info = 51
+IG Publisher Version: 1.1.72 Out of date - current version is 1.1.77
+Generated Mon Aug 16 16:41:28 CDT 2021. FHIR version 4.0.1 for va.mhv.example#0.2.6-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
 
- Build Errors : 1373 / 95 / 0
+ Build Errors : 1374 / 95 / 0
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\AllergyIntolerance-ex-MHV-allergy-0 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-CPM : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-OnclC : 0 / 0 / 1
@@ -13,8 +13,8 @@ Generated Tue Jun 15 14:35:01 CDT 2021. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Encounter-ex-encounter : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Immunization-ex-MHV-immunization-0 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\MedicationStatement-ex-MHV-medication-0 : 0 / 0 / 5
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0 : 10 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-1 : 11 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-1 : 1 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-0 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-1 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-2 : 0 / 0 / 2
@@ -33,15 +33,15 @@ Generated Tue Jun 15 14:35:01 CDT 2021. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugarB-6 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugarB-7 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugarB-8 : 0 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-2 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-3 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-1 : 0 / 4 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-2 : 0 / 4 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-3 : 0 / 4 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-5 : 1 / 4 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-6 : 1 / 4 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-7 : 2 / 4 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-2 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-3 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-1 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-2 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-3 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-5 : 1 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-6 : 1 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-7 : 2 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-0 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-1 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-10 : 0 / 0 / 2
@@ -54,9 +54,9 @@ Generated Tue Jun 15 14:35:01 CDT 2021. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-7 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-8 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-9 : 0 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-1 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-2 : 1 / 0 / 2
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-3 : 1 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-1 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-2 : 0 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-3 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-0 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-1 : 0 / 0 / 2
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-2 : 0 / 0 / 2
@@ -97,7 +97,7 @@ Generated Tue Jun 15 14:35:01 CDT 2021. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.BlueBundle : 0 / 1 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.BlueComposition : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.allergy : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodOxygenSat : 8 / 0 / 1
+ C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodOxygenSat : 8 / 2 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodPressure : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodSugar : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodSugarB : 0 / 0 / 1
@@ -116,7 +116,7 @@ Generated Tue Jun 15 14:35:01 CDT 2021. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-body-weights : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-medication-routes : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example : 0 / 0 / 1
- C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MHV-BloodPressure : 18 / 0 / 2
+ C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MHV-BloodPressure : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MK-BloodSugar : 1 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Observation-blood-glucose : 0 / 0 / 1
  C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\core-bloodSugar : 0 / 0 / 1
@@ -137,6 +137,7 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/heart-rate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -394,14 +395,14 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medi
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\MedicationStatement-ex-MHV-medication-0.xml.html#/html/body/div/div/div/div/p/a at Line 321, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.json.html#/html/body/div/div/div/div/p/a at Line 314, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.json.html#/html/body/div/div/div/div/p/a at Line 321, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.ttl.html#/html/body/div/div/div/div/p/a at Line 311, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.ttl.html#/html/body/div/div/div/div/p/a at Line 318, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.xml.html#/html/body/div/div/div/div/p/a at Line 293, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.xml.html#/html/body/div/div/div/div/p/a at Line 300, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.html#/html/body/div/div/div/div/p/a at Line 192, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.html#/html/body/div/div/div/div/p/a at Line 199, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.json.html#/html/body/div/div/div/div/p/a at Line 311, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.json.html#/html/body/div/div/div/div/p/a at Line 318, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.ttl.html#/html/body/div/div/div/div/p/a at Line 307, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.ttl.html#/html/body/div/div/div/div/p/a at Line 314, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.xml.html#/html/body/div/div/div/div/p/a at Line 291, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.xml.html#/html/body/div/div/div/div/p/a at Line 298, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.html#/html/body/div/div/div/div/p/a at Line 192, column 28: The link '' for "" cannot be resolved
@@ -556,122 +557,122 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.json.html#/html/body/div/div/div/div/p/a at Line 256, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.json.html#/html/body/div/div/div/div/p/a at Line 263, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.ttl.html#/html/body/div/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.ttl.html#/html/body/div/div/div/div/p/a at Line 272, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.xml.html#/html/body/div/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.xml.html#/html/body/div/div/div/div/p/a at Line 252, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.json.html#/html/body/div/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.json.html#/html/body/div/div/div/div/p/a at Line 255, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.ttl.html#/html/body/div/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.ttl.html#/html/body/div/div/div/div/p/a at Line 264, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.xml.html#/html/body/div/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-0.xml.html#/html/body/div/div/div/div/p/a at Line 244, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.json.html#/html/body/div/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.json.html#/html/body/div/div/div/div/p/a at Line 272, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.ttl.html#/html/body/div/div/div/div/p/a at Line 274, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.ttl.html#/html/body/div/div/div/div/p/a at Line 281, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.xml.html#/html/body/div/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.xml.html#/html/body/div/div/div/div/p/a at Line 259, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.json.html#/html/body/div/div/div/div/p/a at Line 261, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.json.html#/html/body/div/div/div/div/p/a at Line 268, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.ttl.html#/html/body/div/div/div/div/p/a at Line 270, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.ttl.html#/html/body/div/div/div/div/p/a at Line 277, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.xml.html#/html/body/div/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-1.xml.html#/html/body/div/div/div/div/p/a at Line 255, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.json.html#/html/body/div/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.json.html#/html/body/div/div/div/div/p/a at Line 272, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.ttl.html#/html/body/div/div/div/div/p/a at Line 274, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.ttl.html#/html/body/div/div/div/div/p/a at Line 281, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.xml.html#/html/body/div/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.xml.html#/html/body/div/div/div/div/p/a at Line 259, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.json.html#/html/body/div/div/div/div/p/a at Line 261, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.json.html#/html/body/div/div/div/div/p/a at Line 268, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.ttl.html#/html/body/div/div/div/div/p/a at Line 270, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.ttl.html#/html/body/div/div/div/div/p/a at Line 277, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.xml.html#/html/body/div/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-2.xml.html#/html/body/div/div/div/div/p/a at Line 255, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.json.html#/html/body/div/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.json.html#/html/body/div/div/div/div/p/a at Line 272, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.ttl.html#/html/body/div/div/div/div/p/a at Line 274, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.ttl.html#/html/body/div/div/div/div/p/a at Line 281, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.xml.html#/html/body/div/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.xml.html#/html/body/div/div/div/div/p/a at Line 259, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.json.html#/html/body/div/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.json.html#/html/body/div/div/div/div/p/a at Line 264, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.ttl.html#/html/body/div/div/div/div/p/a at Line 273, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.xml.html#/html/body/div/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-3.xml.html#/html/body/div/div/div/div/p/a at Line 251, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.json.html#/html/body/div/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.json.html#/html/body/div/div/div/div/p/a at Line 272, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.ttl.html#/html/body/div/div/div/div/p/a at Line 274, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.ttl.html#/html/body/div/div/div/div/p/a at Line 281, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.xml.html#/html/body/div/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.xml.html#/html/body/div/div/div/div/p/a at Line 259, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.json.html#/html/body/div/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.json.html#/html/body/div/div/div/div/p/a at Line 264, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.ttl.html#/html/body/div/div/div/div/p/a at Line 273, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.xml.html#/html/body/div/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-4.xml.html#/html/body/div/div/div/div/p/a at Line 251, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.json.html#/html/body/div/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.json.html#/html/body/div/div/div/div/p/a at Line 272, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.ttl.html#/html/body/div/div/div/div/p/a at Line 274, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.ttl.html#/html/body/div/div/div/div/p/a at Line 281, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.xml.html#/html/body/div/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.xml.html#/html/body/div/div/div/div/p/a at Line 259, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.json.html#/html/body/div/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.json.html#/html/body/div/div/div/div/p/a at Line 264, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.ttl.html#/html/body/div/div/div/div/p/a at Line 273, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.xml.html#/html/body/div/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-5.xml.html#/html/body/div/div/div/div/p/a at Line 251, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.json.html#/html/body/div/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.json.html#/html/body/div/div/div/div/p/a at Line 272, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.ttl.html#/html/body/div/div/div/div/p/a at Line 274, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.ttl.html#/html/body/div/div/div/div/p/a at Line 281, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.xml.html#/html/body/div/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.xml.html#/html/body/div/div/div/div/p/a at Line 259, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.json.html#/html/body/div/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.json.html#/html/body/div/div/div/div/p/a at Line 264, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.ttl.html#/html/body/div/div/div/div/p/a at Line 273, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.xml.html#/html/body/div/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-6.xml.html#/html/body/div/div/div/div/p/a at Line 251, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.json.html#/html/body/div/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.json.html#/html/body/div/div/div/div/p/a at Line 271, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.ttl.html#/html/body/div/div/div/div/p/a at Line 273, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.ttl.html#/html/body/div/div/div/div/p/a at Line 280, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.xml.html#/html/body/div/div/div/div/p/a at Line 251, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.xml.html#/html/body/div/div/div/div/p/a at Line 258, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.json.html#/html/body/div/div/div/div/p/a at Line 256, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.json.html#/html/body/div/div/div/div/p/a at Line 263, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.ttl.html#/html/body/div/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.ttl.html#/html/body/div/div/div/div/p/a at Line 272, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.xml.html#/html/body/div/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-7.xml.html#/html/body/div/div/div/div/p/a at Line 250, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.json.html#/html/body/div/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.json.html#/html/body/div/div/div/div/p/a at Line 272, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.ttl.html#/html/body/div/div/div/div/p/a at Line 274, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.ttl.html#/html/body/div/div/div/div/p/a at Line 281, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.xml.html#/html/body/div/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.xml.html#/html/body/div/div/div/div/p/a at Line 259, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.json.html#/html/body/div/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.json.html#/html/body/div/div/div/div/p/a at Line 264, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.ttl.html#/html/body/div/div/div/div/p/a at Line 273, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.xml.html#/html/body/div/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-bloodSugarB-8.xml.html#/html/body/div/div/div/div/p/a at Line 251, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.json.html#/html/body/div/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.json.html#/html/body/div/div/div/div/p/a at Line 257, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.ttl.html#/html/body/div/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.xml.html#/html/body/div/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.xml.html#/html/body/div/div/div/div/p/a at Line 246, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.json.html#/html/body/div/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.json.html#/html/body/div/div/div/div/p/a at Line 253, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.ttl.html#/html/body/div/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.ttl.html#/html/body/div/div/div/div/p/a at Line 262, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.xml.html#/html/body/div/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-1.xml.html#/html/body/div/div/div/div/p/a at Line 242, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.json.html#/html/body/div/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.json.html#/html/body/div/div/div/div/p/a at Line 257, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.ttl.html#/html/body/div/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.xml.html#/html/body/div/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.xml.html#/html/body/div/div/div/div/p/a at Line 246, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.json.html#/html/body/div/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.json.html#/html/body/div/div/div/div/p/a at Line 253, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.ttl.html#/html/body/div/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.ttl.html#/html/body/div/div/div/div/p/a at Line 262, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.xml.html#/html/body/div/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-2.xml.html#/html/body/div/div/div/div/p/a at Line 242, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.json.html#/html/body/div/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.json.html#/html/body/div/div/div/div/p/a at Line 257, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.ttl.html#/html/body/div/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.xml.html#/html/body/div/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.xml.html#/html/body/div/div/div/div/p/a at Line 246, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.json.html#/html/body/div/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.json.html#/html/body/div/div/div/div/p/a at Line 253, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.ttl.html#/html/body/div/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.ttl.html#/html/body/div/div/div/div/p/a at Line 262, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.xml.html#/html/body/div/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-heartRate-3.xml.html#/html/body/div/div/div/div/p/a at Line 242, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-oxygenSat-1.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-oxygenSat-1.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-oxygenSat-1.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
@@ -856,32 +857,32 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationR
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.json.html#/html/body/div/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.json.html#/html/body/div/div/div/div/p/a at Line 257, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.ttl.html#/html/body/div/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.xml.html#/html/body/div/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.xml.html#/html/body/div/div/div/div/p/a at Line 246, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.json.html#/html/body/div/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.json.html#/html/body/div/div/div/div/p/a at Line 253, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.ttl.html#/html/body/div/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.ttl.html#/html/body/div/div/div/div/p/a at Line 262, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.xml.html#/html/body/div/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-1.xml.html#/html/body/div/div/div/div/p/a at Line 242, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.json.html#/html/body/div/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.json.html#/html/body/div/div/div/div/p/a at Line 257, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.ttl.html#/html/body/div/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.xml.html#/html/body/div/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.xml.html#/html/body/div/div/div/div/p/a at Line 246, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.json.html#/html/body/div/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.json.html#/html/body/div/div/div/div/p/a at Line 253, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.ttl.html#/html/body/div/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.ttl.html#/html/body/div/div/div/div/p/a at Line 262, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.xml.html#/html/body/div/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-2.xml.html#/html/body/div/div/div/div/p/a at Line 242, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.html#/html/body/div/div/div/div/p/a at Line 197, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.json.html#/html/body/div/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.json.html#/html/body/div/div/div/div/p/a at Line 257, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.ttl.html#/html/body/div/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.ttl.html#/html/body/div/div/div/div/p/a at Line 266, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.xml.html#/html/body/div/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.xml.html#/html/body/div/div/div/div/p/a at Line 246, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.json.html#/html/body/div/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.json.html#/html/body/div/div/div/div/p/a at Line 253, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.ttl.html#/html/body/div/div/div/div/p/a at Line 255, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.ttl.html#/html/body/div/div/div/div/p/a at Line 262, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.xml.html#/html/body/div/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-respirationRate-3.xml.html#/html/body/div/div/div/div/p/a at Line 242, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\Observation-ex-MHV-temperature-0.html#/html/body/div/div/div/div/p/a at Line 190, column 28: The link '' for "" cannot be resolved
@@ -1351,22 +1352,22 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloo
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodOxygenSat.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4250, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodOxygenSat.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4427, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodOxygenSat.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4434, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-definitions.html#/html/body/div/div/div/div/p/a at Line 1638, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-definitions.html#/html/body/div/div/div/div/p/a at Line 1645, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-examples.html#/html/body/div/div/div/div/p/a at Line 270, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-examples.html#/html/body/div/div/div/div/p/a at Line 277, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-mappings.html#/html/body/div/div/div/div/p/a at Line 502, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-mappings.html#/html/body/div/div/div/div/p/a at Line 509, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.html#/html/body/div/div/div/div/p/a at Line 1567, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.html#/html/body/div/div/div/div/p/a at Line 1574, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-definitions.html#/html/body/div/div/div/div/p/a at Line 1206, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-definitions.html#/html/body/div/div/div/div/p/a at Line 1213, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-examples.html#/html/body/div/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-examples.html#/html/body/div/div/div/div/p/a at Line 271, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-mappings.html#/html/body/div/div/div/div/p/a at Line 402, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure-mappings.html#/html/body/div/div/div/div/p/a at Line 409, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.html#/html/body/div/div/div/div/p/a at Line 1163, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.html#/html/body/div/div/div/div/p/a at Line 1170, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.history.html#/html/body/div/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.history.html#/html/body/div/div/div/div/p/a at Line 243, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.json.html#/html/body/div/div/div/div/p/a at Line 7026, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.json.html#/html/body/div/div/div/div/p/a at Line 7033, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 6056, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 6063, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.xml.html#/html/body/div/div/div/div/p/a at Line 6453, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.xml.html#/html/body/div/div/div/div/p/a at Line 6460, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.json.html#/html/body/div/div/div/div/p/a at Line 5086, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.json.html#/html/body/div/div/div/div/p/a at Line 5093, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4416, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4423, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4673, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodPressure.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4680, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar-definitions.html#/html/body/div/div/div/div/p/a at Line 1137, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar-definitions.html#/html/body/div/div/div/div/p/a at Line 1144, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bloodSugar-examples.html#/html/body/div/div/div/div/p/a at Line 306, column 28: The link '' for "" cannot be resolved
@@ -1432,22 +1433,22 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.body
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 3967, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4129, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4136, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1238, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1245, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1237, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1244, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-examples.html#/html/body/div/div/div/div/p/a at Line 270, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-examples.html#/html/body/div/div/div/div/p/a at Line 277, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-mappings.html#/html/body/div/div/div/div/p/a at Line 367, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-mappings.html#/html/body/div/div/div/div/p/a at Line 374, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/div/p/a at Line 1029, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/div/p/a at Line 1036, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/div/p/a at Line 993, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.html#/html/body/div/div/div/div/p/a at Line 1000, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.history.html#/html/body/div/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.history.html#/html/body/div/div/div/div/p/a at Line 243, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/div/p/a at Line 5081, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/div/p/a at Line 5088, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4427, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4434, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4626, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4633, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/div/p/a at Line 5059, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.json.html#/html/body/div/div/div/div/p/a at Line 5066, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4409, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4416, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4604, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4611, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.immunization-definitions.html#/html/body/div/div/div/div/p/a at Line 889, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.immunization-definitions.html#/html/body/div/div/div/div/p/a at Line 896, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.immunization-examples.html#/html/body/div/div/div/div/p/a at Line 258, column 28: The link '' for "" cannot be resolved
@@ -1497,22 +1498,22 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 3434, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/div/p/a at Line 3588, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.pain.profile.xml.html#/html/body/div/div/div/div/p/a at Line 3595, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1237, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1244, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1236, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1243, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate-examples.html#/html/body/div/div/div/div/p/a at Line 270, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate-examples.html#/html/body/div/div/div/div/p/a at Line 277, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate-mappings.html#/html/body/div/div/div/div/p/a at Line 367, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate-mappings.html#/html/body/div/div/div/div/p/a at Line 374, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.html#/html/body/div/div/div/div/p/a at Line 942, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.html#/html/body/div/div/div/div/p/a at Line 949, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.html#/html/body/div/div/div/div/p/a at Line 906, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.html#/html/body/div/div/div/div/p/a at Line 913, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.history.html#/html/body/div/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.history.html#/html/body/div/div/div/div/p/a at Line 243, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.json.html#/html/body/div/div/div/div/p/a at Line 5075, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.json.html#/html/body/div/div/div/div/p/a at Line 5082, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4422, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4429, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4621, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4628, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.json.html#/html/body/div/div/div/div/p/a at Line 5053, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.json.html#/html/body/div/div/div/div/p/a at Line 5060, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4404, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 4411, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4599, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.xml.html#/html/body/div/div/div/div/p/a at Line 4606, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.change.history.html#/html/body/div/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.change.history.html#/html/body/div/div/div/div/p/a at Line 212, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.html#/html/body/div/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
@@ -1603,28 +1604,8 @@ ERROR: C:\Users\john.moehrke\Git\MHV-PGHD\output\toc.html#/html/body/div/div/div
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Immunization-ex-MHV-immunization-0.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\MedicationStatement-ex-MHV-medication-0.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0.json ==
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSitting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSitting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextStanding in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextStanding in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSupine in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSupine in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextResting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextResting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.code.coding[1]: This element does not match any known slice  defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure and slicing is CLOSED: Observation.code.coding[1]: Does not match slice 'loincCode1', Observation.code.coding[1]: Does not match slice 'loincCode2'
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.code: Observation.code.coding:loincCode2: minimum required = 1, but only found 0 (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-1.json ==
 ERROR: Observation/ex-MHV-bloodPressure-1: Observation.hasMember[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: resource (@char 1)
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSitting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSitting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextStanding in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextStanding in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSupine in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSupine in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextResting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextResting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.code.coding[1]: This element does not match any known slice  defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure and slicing is CLOSED: Observation.code.coding[1]: Does not match slice 'loincCode1', Observation.code.coding[1]: Does not match slice 'loincCode2'
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.code: Observation.code.coding:loincCode2: minimum required = 1, but only found 0 (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-0.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-1.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugar-2.json ==
@@ -1644,51 +1625,18 @@ ERROR: Observation/ex-MHV-bloodPressure-1: Observation.code: Observation.code.co
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugarB-7.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugarB-8.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1.json ==
-ERROR: Observation/ex-MHV-heartRate-1: Observation.code: Observation.code.coding:HeartRateCode: max allowed = 1, but found 2 (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-2.json ==
-ERROR: Observation/ex-MHV-heartRate-2: Observation.code: Observation.code.coding:HeartRateCode: max allowed = 1, but found 2 (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-3.json ==
-ERROR: Observation/ex-MHV-heartRate-3: Observation.code: Observation.code.coding:HeartRateCode: max allowed = 1, but found 2 (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-1.json ==
-WARNING: Observation/ex-MHV-oxygenSat-1: Observation.code.coding[0]: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4) for 'http://loinc.org#2708-6'
-WARNING: Observation/ex-MHV-oxygenSat-1: Observation.code.coding[1]: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4) for 'http://loinc.org#59408-5'
-INFORMATION: Observation/ex-MHV-oxygenSat-1: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat - listed in meta
-WARNING: Observation/ex-MHV-oxygenSat-1: Observation.code: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4)
-WARNING: Observation/ex-MHV-oxygenSat-1: Observation.code: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-2.json ==
-WARNING: Observation/ex-MHV-oxygenSat-2: Observation.code.coding[0]: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4) for 'http://loinc.org#2708-6'
-WARNING: Observation/ex-MHV-oxygenSat-2: Observation.code.coding[1]: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4) for 'http://loinc.org#59408-5'
-INFORMATION: Observation/ex-MHV-oxygenSat-2: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat - listed in meta
-WARNING: Observation/ex-MHV-oxygenSat-2: Observation.code: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4)
-WARNING: Observation/ex-MHV-oxygenSat-2: Observation.code: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-3.json ==
-WARNING: Observation/ex-MHV-oxygenSat-3: Observation.code.coding[0]: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4) for 'http://loinc.org#2708-6'
-WARNING: Observation/ex-MHV-oxygenSat-3: Observation.code.coding[1]: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4) for 'http://loinc.org#59408-5'
-INFORMATION: Observation/ex-MHV-oxygenSat-3: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat - listed in meta
-WARNING: Observation/ex-MHV-oxygenSat-3: Observation.code: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4)
-WARNING: Observation/ex-MHV-oxygenSat-3: Observation.code: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-5.json ==
-WARNING: Observation/ex-MHV-oxygenSat-5: Observation.code.coding[0]: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4) for 'http://loinc.org#2708-6'
-WARNING: Observation/ex-MHV-oxygenSat-5: Observation.code.coding[1]: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4) for 'http://loinc.org#59408-5'
-INFORMATION: Observation/ex-MHV-oxygenSat-5: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat - listed in meta
 ERROR: Observation/ex-MHV-oxygenSat-5: Observation.hasMember[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: resource (@char 1)
-WARNING: Observation/ex-MHV-oxygenSat-5: Observation.code: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4)
-WARNING: Observation/ex-MHV-oxygenSat-5: Observation.code: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-6.json ==
-WARNING: Observation/ex-MHV-oxygenSat-6: Observation.code.coding[0]: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4) for 'http://loinc.org#2708-6'
-WARNING: Observation/ex-MHV-oxygenSat-6: Observation.code.coding[1]: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4) for 'http://loinc.org#59408-5'
-INFORMATION: Observation/ex-MHV-oxygenSat-6: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat - listed in meta
 ERROR: Observation/ex-MHV-oxygenSat-6: Observation.hasMember[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: resource (@char 1)
-WARNING: Observation/ex-MHV-oxygenSat-6: Observation.code: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4)
-WARNING: Observation/ex-MHV-oxygenSat-6: Observation.code: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-7.json ==
-WARNING: Observation/ex-MHV-oxygenSat-7: Observation.code.coding[0]: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4) for 'http://loinc.org#2708-6'
-WARNING: Observation/ex-MHV-oxygenSat-7: Observation.code.coding[1]: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4) for 'http://loinc.org#59408-5'
-INFORMATION: Observation/ex-MHV-oxygenSat-7: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat - listed in meta
 ERROR: Observation/ex-MHV-oxygenSat-7: Observation.hasMember[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: resource (@char 1)
 ERROR: Observation/ex-MHV-oxygenSat-7: Observation.hasMember[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: resource (@char 1)
-WARNING: Observation/ex-MHV-oxygenSat-7: Observation.code: The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of ["Oxygen saturation in Arterial blood","SaO2 % BldA"] (from http://tx.fhir.org/r4)
-WARNING: Observation/ex-MHV-oxygenSat-7: Observation.code: The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of ["Oxygen saturation in Arterial blood by Pulse oximetry","SaO2 % BldA PulseOx"] (from http://tx.fhir.org/r4)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-0.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-1.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-10.json ==
@@ -1702,14 +1650,8 @@ WARNING: Observation/ex-MHV-oxygenSat-7: Observation.code: The display "Oxygen s
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-8.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-9.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-1.json ==
-INFORMATION: Observation/ex-MHV-respirationRate-1: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate - listed in meta
-ERROR: Observation/ex-MHV-respirationRate-1: Observation.code: Observation.code.coding:RespRateCode: max allowed = 1, but found 2 (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-2.json ==
-INFORMATION: Observation/ex-MHV-respirationRate-2: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate - listed in meta
-ERROR: Observation/ex-MHV-respirationRate-2: Observation.code: Observation.code.coding:RespRateCode: max allowed = 1, but found 2 (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-3.json ==
-INFORMATION: Observation/ex-MHV-respirationRate-3: Observation: Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate - listed in meta
-ERROR: Observation/ex-MHV-respirationRate-3: Observation.code: Observation.code.coding:RespRateCode: max allowed = 1, but found 2 (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate)
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-0.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-1.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-2.json ==
@@ -1756,6 +1698,8 @@ ERROR: https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOx
 ERROR: https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat#Observation.code.coding:loincCode1: No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
 ERROR: https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat#Observation.code.coding:loincCode2: No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
 ERROR: https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat: The profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat has 3 elements in the differential (id: Observation.code.coding, id: Observation.code.coding:loincCode1, id: Observation.code.coding:loincCode2) that don't have a matching element in the snapshot: check that the path and definitions are legal in the differential (including order)
+WARNING: StructureDefinition/VA.MHV.bloodOxygenSat: StructureDefinition.differential.element[12].pattern.ofType(Coding): The display "Oxygen saturation in Arterial blood" is not a valid display for the code {http://loinc.org}59408-5 - should be one of [Oxygen saturation in Arterial blood by Pulse oximetry, SaO2 % BldA PulseOx, MFr O2, tO2, 总氧, 氧气 SaO2 动脉血 动脉血O2饱和度 可用数量表示的, 定量性, 数值型, 数量型, 连续数值型标尺 时刻, 随机, 随意, 瞬间 肺部测量指标与呼吸机管理 脉搏血氧测定法, 脉搏血氧定量, 脉搏血氧测定, 脉搏血氧仪 血氧测定法 饱和 饱和状态 饱和程度, , Frazione di massa Gestione ventilazione polmonare Punto nel tempo (episodio) Sangue arterioso, Oksijen doymuşluğu, Количественный Кровь артериальная Массовая доля Насыщение кислородом Оксигемометрия, Гемоксиметрия Точка во времени, Момент, O2 SatO2] (from http://tx.fhir.org/r4) for 'http://loinc.org#59408-5'
+WARNING: StructureDefinition/VA.MHV.bloodOxygenSat: StructureDefinition.differential.element[13].pattern.ofType(Coding): The display "Oxygen saturation in Arterial blood by Pulse oximetry" is not a valid display for the code {http://loinc.org}2708-6 - should be one of [Oxygen saturation in Arterial blood, SaO2 % BldA, MFr O2, tO2, 总氧, 氧气 SaO2 动脉血 动脉血O2饱和度 化学, 化学检验项目, 化学检验项目类, 化学类, 化学试验, 非刺激耐受型化学检验项目, 非刺激耐受型化学检验项目类, 非刺激耐受型化学试验, 非刺激耐受型化学试验类 可用数量表示的, 定量性, 数值型, 数量型, 连续数值型标尺 时刻, 随机, 随意, 瞬间 饱和 饱和状态 饱和程度, , Arteriaalne veri Juhuslik Kvantitatiivne, O2 %, SO2, Mass fraction, Percent, Point in time, Random, Blood, Blood arterial, Art, Bld art, Bld arterial, Blood art, Art blood, Art bld, AcG, Quantitative, QNT, Quant, Quan, Satn, SAT, HEMODYNAMICS.MOLEC, SaO2, Chimica Frazione di massa Punto nel tempo (episodio) Sangue arterioso, Oksijen doymuşluğu, Количественный Кровь артериальная Массовая доля Насыщение кислородом Точка во времени, Момент, O2 SatO2, O2-Sättigung art.] (from http://tx.fhir.org/r4) for 'http://loinc.org#2708-6'
 ERROR: StructureDefinition/VA.MHV.bloodOxygenSat: StructureDefinition.differential.element.where(path = 'Observation.code.coding'): No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
 ERROR: StructureDefinition/VA.MHV.bloodOxygenSat: StructureDefinition.differential.element.where(path = 'Observation.code.coding:loincCode1'): No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
 ERROR: StructureDefinition/VA.MHV.bloodOxygenSat: StructureDefinition.differential.element.where(path = 'Observation.code.coding:loincCode2'): No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
@@ -1779,24 +1723,6 @@ ERROR: StructureDefinition/VA.MHV.bloodOxygenSat: StructureDefinition: The profi
 == C:\Users\john.moehrke\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-medication-routes.json ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\ImplementationGuide-va.mhv.example.xml ==
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MHV-BloodPressure.json ==
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSitting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSitting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[2]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSitting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[3]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSitting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextStanding in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextStanding in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[2]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextStanding in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[3]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextStanding in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSupine in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSupine in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[2]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSupine in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[3]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextSupine in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextResting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextResting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[2]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextResting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.component[3]: Slicing cannot be evaluated: Could not match discriminator ([code]) for slice Observation.component:bodyContextResting in profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure - the discriminator [code] does not have fixed value, binding or existence assertions
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.code.coding[1]: This element does not match any known slice  defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure and slicing is CLOSED: Observation.code.coding[1]: Does not match slice 'loincCode1', Observation.code.coding[1]: Does not match slice 'loincCode2'
-ERROR: Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7: Observation.code: Observation.code.coding:loincCode2: minimum required = 1, but only found 0 (from https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure)
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\MK-BloodSugar.json ==
 ERROR: Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0: Observation.meta.tag[0]: Unknown Code https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping#1e11b692-1898-4351-a7c5-428f61c91817 in https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping for 'https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping#1e11b692-1898-4351-a7c5-428f61c91817'
 == C:\Users\john.moehrke\Git\MHV-PGHD\input\resources\Observation-blood-glucose.xml ==

@@ -10,7 +10,7 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}">Oxygen saturation in Arterial blood by Pulse oximetry</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 3, 2004 10:50:50 PM</p><p><b>value</b>: 65 %</p><p><b>note</b>: Way too low, clinically speaking</p><p><b>hasMember</b>: <a href="Observation-ex-MHV-heartRate-1.html">Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span>; <span title="Codes: {http://loinc.org 8867-4}, {http://loinc.org 8867-4}">Heart rate</span>; effective: Dec 25, 2004 10:50:50 PM; 185 /min; a bit fast</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 3, 2004 10:50:50 PM</p><p><b>value</b>: 65 %</p><p><b>note</b>: Way too low, clinically speaking</p><p><b>hasMember</b>: <a href="Observation-ex-MHV-heartRate-1.html">Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span>; <span title="Codes: {http://loinc.org 8867-4}">Heart rate</span>; effective: Dec 25, 2004 10:50:50 PM; 185 /min; a bit fast</a></p></div>
   </text>
   <status value="final"/>
   <category>
@@ -23,12 +23,12 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="2708-6"/>
-      <display value="Oxygen saturation in Arterial blood by Pulse oximetry"/>
+      <display value="Oxygen saturation in Arterial blood"/>
     </coding>
     <coding>
       <system value="http://loinc.org"/>
       <code value="59408-5"/>
-      <display value="Oxygen saturation in Arterial blood"/>
+      <display value="Oxygen saturation in Arterial blood by Pulse oximetry"/>
     </coding>
   </code>
   <subject>

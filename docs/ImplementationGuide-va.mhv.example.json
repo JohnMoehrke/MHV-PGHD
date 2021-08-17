@@ -394,9 +394,7 @@
         ],
         "reference": {
           "reference": "Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7"
-        },
-        "name": "Example Observation - 632210f2-1866-4c01-a8c5-4abe37c0f6b7",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure"
+        }
       },
       {
         "extension": [

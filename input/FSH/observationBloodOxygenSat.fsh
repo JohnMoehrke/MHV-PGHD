@@ -40,8 +40,8 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 * code.coding ^slicing.rules = #closed
 * code.coding 2..2
 * code.coding contains loincCode1 1..1 and loincCode2 1..1
-* code.coding[loincCode1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
-* code.coding[loincCode2] = LOINC#2708-6 "Oxygen saturation in Arterial blood"
+* code.coding[loincCode1] = LOINC#59408-5 "Oxygen saturation in Arterial blood"
+* code.coding[loincCode2] = LOINC#2708-6 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#%

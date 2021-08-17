@@ -4,9 +4,6 @@
   "meta": {
     "versionId": "4",
     "lastUpdated": "2020-08-25T14:46:54.062+00:00",
-    "profile": [
-      "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure"
-    ],
     "tag": [
       {
         "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",

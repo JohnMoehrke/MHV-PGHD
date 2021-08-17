@@ -10,7 +10,7 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8867-4}, {http://loinc.org 8867-4}">Heart rate</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 185 /min</p><p><b>note</b>: a bit fast</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8867-4}">Heart rate</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 185 /min</p><p><b>note</b>: a bit fast</p></div>
   </text>
   <status value="final"/>
   <category>
@@ -24,10 +24,6 @@
       <system value="http://loinc.org"/>
       <code value="8867-4"/>
       <display value="Heart rate"/>
-    </coding>
-    <coding>
-      <system value="http://loinc.org"/>
-      <code value="8867-4"/>
     </coding>
   </code>
   <subject>

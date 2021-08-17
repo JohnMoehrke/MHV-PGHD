@@ -27,7 +27,8 @@ Note this is compliant with FHIR core vital-signs.
 * category 1..1
 // this category requirement is already in core vital-signs, build fails examples with this explicitly here
 //* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8867-4 "Heart rate"
+// this code requirement is already in core vital-signs for heartrate
+//* code = LOINC#8867-4 "Heart rate"
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#/min

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="278f16fb-4b41-4601-bac2-223fe4fa6a38"/>
+  <id value="1eeaaeb5-cd8f-4189-81f8-2581c3dd80e3"/>
   <meta>
-    <lastUpdated value="2021-06-15T14:32:40.906-05:00"/>
+    <lastUpdated value="2021-08-16T16:39:12.775-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -66,7 +66,7 @@
         <version value="0.2.6-beta"/>
         <name value="AllAppIdCodes"/>
         <status value="active"/>
-        <date value="2021-06-15T14:32:40-05:00"/>
+        <date value="2021-08-16T16:39:12-05:00"/>
         <contact>
           <name value="John Moehrke"/>
         </contact>
@@ -77,8 +77,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a7bae98b-64ff-477b-b081-bab7d9dc2488"/>
-          <timestamp value="2021-06-15T14:33:34-05:00"/>
+          <identifier value="urn:uuid:9e50f684-d557-4adc-8825-8c176fbd122d"/>
+          <timestamp value="2021-08-16T16:40:06-05:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -109,11 +109,12 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.70</p>
             <p>All codes from system 
               <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html">
                 <code>http://loinc.org</code>
@@ -136,7 +137,7 @@
                   <a name="http---loinc.org-69000-8"> </a>
                   <a href="http://details.loinc.org/LOINC/69000-8.html">69000-8</a>
                 </td>
-                <td>Heart rate - sitting</td>
+                <td>Heart rate --sitting</td>
                 <td/>
               </tr>
               <tr>
@@ -144,7 +145,7 @@
                   <a name="http---loinc.org-69001-6"> </a>
                   <a href="http://details.loinc.org/LOINC/69001-6.html">69001-6</a>
                 </td>
-                <td>Heart rate - standing</td>
+                <td>Heart rate --standing</td>
                 <td/>
               </tr>
               <tr>
@@ -152,7 +153,7 @@
                   <a name="http---loinc.org-68999-2"> </a>
                   <a href="http://details.loinc.org/LOINC/68999-2.html">68999-2</a>
                 </td>
-                <td>Heart rate - supine</td>
+                <td>Heart rate --supine</td>
                 <td/>
               </tr>
               <tr>
@@ -160,7 +161,7 @@
                   <a name="http---loinc.org-40443-4"> </a>
                   <a href="http://details.loinc.org/LOINC/40443-4.html">40443-4</a>
                 </td>
-                <td>Heart rate - resting</td>
+                <td>Heart rate --resting</td>
                 <td/>
               </tr>
             </table>
@@ -168,35 +169,35 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:ebb5061b-24a1-4dfa-92ef-3763b12a1aea"/>
-          <timestamp value="2021-04-20T13:22:13.852Z"/>
+          <identifier value="urn:uuid:dfaa16c2-865b-4a25-bad2-01eb468ef5fa"/>
+          <timestamp value="2021-08-16T18:57:03.222Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://loinc.org|2.69"/>
+            <valueString value="http://loinc.org|2.70"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
             <code value="69000-8"/>
-            <display value="Heart rate - sitting"/>
+            <display value="Heart rate --sitting"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="69001-6"/>
-            <display value="Heart rate - standing"/>
+            <display value="Heart rate --standing"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="68999-2"/>
-            <display value="Heart rate - supine"/>
+            <display value="Heart rate --supine"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="40443-4"/>
-            <display value="Heart rate - resting"/>
+            <display value="Heart rate --resting"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -205,9 +206,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
@@ -232,7 +234,7 @@
                   <a name="http---snomed.info-sct-15220000"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000">15220000</a>
                 </td>
-                <td>Laboratory Test</td>
+                <td>Laboratory test</td>
                 <td/>
               </tr>
               <tr>
@@ -264,8 +266,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:5f5fb89a-f3db-4a6a-8649-e87b6c5c4d1c"/>
-          <timestamp value="2021-05-20T14:42:18.248Z"/>
+          <identifier value="urn:uuid:98b326f1-a7e1-4150-abf1-246708812f83"/>
+          <timestamp value="2021-08-16T18:57:03.613Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -277,7 +279,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="15220000"/>
-            <display value="Laboratory Test"/>
+            <display value="Laboratory test"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -301,9 +303,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 8 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
@@ -368,7 +371,7 @@
                   <a name="http---snomed.info-sct-39937001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39937001">39937001</a>
                 </td>
-                <td>Skin structure</td>
+                <td>Skin</td>
                 <td/>
               </tr>
               <tr>
@@ -384,7 +387,7 @@
                   <a name="http---snomed.info-sct-89837001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89837001">89837001</a>
                 </td>
-                <td>Urinary bladder structure</td>
+                <td>Urinary bladder</td>
                 <td/>
               </tr>
             </table>
@@ -392,8 +395,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:51928dea-0d18-4295-85c9-70e267ac2c2b"/>
-          <timestamp value="2021-05-20T14:42:18.514Z"/>
+          <identifier value="urn:uuid:676a5ebc-11f2-4e66-b3d5-140af30da344"/>
+          <timestamp value="2021-08-16T18:57:03.863Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -430,7 +433,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="39937001"/>
-            <display value="Skin structure"/>
+            <display value="Skin"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -440,7 +443,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="89837001"/>
-            <display value="Urinary bladder structure"/>
+            <display value="Urinary bladder"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -449,9 +452,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on UCUM version 2.0.1</p>
             <p>All codes from system 
@@ -475,14 +479,14 @@
                 <td style="white-space:nowrap">
                   <a name="http---unitsofmeasure.org--degF-"> </a>[degF]
                 </td>
-                <td>degree Fahrenheit</td>
+                <td>[degF]</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---unitsofmeasure.org-Cel"> </a>Cel
                 </td>
-                <td>degree Celsius</td>
+                <td>Cel</td>
                 <td/>
               </tr>
             </table>
@@ -490,8 +494,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:cd2e4df4-8d2b-43ba-bd38-39514af07d64"/>
-          <timestamp value="2021-04-20T13:22:14.867Z"/>
+          <identifier value="urn:uuid:fd311e80-b815-4f4c-8beb-b7f7a2fe4151"/>
+          <timestamp value="2021-08-16T18:57:04.035Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -503,12 +507,12 @@
           <contains>
             <system value="http://unitsofmeasure.org"/>
             <code value="[degF]"/>
-            <display value="degree Fahrenheit"/>
+            <display value="[degF]"/>
           </contains>
           <contains>
             <system value="http://unitsofmeasure.org"/>
             <code value="Cel"/>
-            <display value="degree Celsius"/>
+            <display value="Cel"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -517,9 +521,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on UCUM version 2.0.1</p>
             <p>All codes from system 
@@ -543,14 +548,14 @@
                 <td style="white-space:nowrap">
                   <a name="http---unitsofmeasure.org--lb-av-"> </a>[lb_av]
                 </td>
-                <td>pound (US and British)</td>
+                <td>[lb_av]</td>
                 <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---unitsofmeasure.org-kg"> </a>kg
                 </td>
-                <td>kilogram</td>
+                <td>kg</td>
                 <td/>
               </tr>
             </table>
@@ -558,8 +563,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:4cde2acc-33f3-4cfe-b4b9-1cf09488b6c7"/>
-          <timestamp value="2021-04-20T13:22:15.211Z"/>
+          <identifier value="urn:uuid:84060d73-5801-4908-86ce-68cdad36edb7"/>
+          <timestamp value="2021-08-16T18:57:04.285Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -571,12 +576,12 @@
           <contains>
             <system value="http://unitsofmeasure.org"/>
             <code value="[lb_av]"/>
-            <display value="pound (US and British)"/>
+            <display value="[lb_av]"/>
           </contains>
           <contains>
             <system value="http://unitsofmeasure.org"/>
             <code value="kg"/>
-            <display value="kilogram"/>
+            <display value="kg"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -585,9 +590,10 @@
   <entry>
     <resource>
       <ValueSet>
+        <language value="en"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
             <p>This value set contains 6 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
@@ -612,7 +618,7 @@
                   <a name="http---snomed.info-sct-26643006"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26643006">26643006</a>
                 </td>
-                <td>Oral use</td>
+                <td>Oral route</td>
                 <td/>
               </tr>
               <tr>
@@ -620,7 +626,7 @@
                   <a name="http---snomed.info-sct-37161004"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=37161004">37161004</a>
                 </td>
-                <td>Rectal use</td>
+                <td>Per rectum</td>
                 <td/>
               </tr>
               <tr>
@@ -628,7 +634,7 @@
                   <a name="http---snomed.info-sct-45890007"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45890007">45890007</a>
                 </td>
-                <td>Transdermal use</td>
+                <td>Transdermal route</td>
                 <td/>
               </tr>
               <tr>
@@ -644,7 +650,7 @@
                   <a name="http---snomed.info-sct-78421000"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=78421000">78421000</a>
                 </td>
-                <td>Intramuscular use</td>
+                <td>Intramuscular route</td>
                 <td/>
               </tr>
               <tr>
@@ -652,7 +658,7 @@
                   <a name="http---snomed.info-sct-47625008"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47625008">47625008</a>
                 </td>
-                <td>Intravenous use</td>
+                <td>Intravenous route</td>
                 <td/>
               </tr>
             </table>
@@ -660,8 +666,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:206a56b6-ab99-43c4-8e30-005e91af9e93"/>
-          <timestamp value="2021-05-20T14:42:18.779Z"/>
+          <identifier value="urn:uuid:8e46a147-2cec-4209-9003-d3c1214e7ea4"/>
+          <timestamp value="2021-08-16T18:57:04.535Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -673,17 +679,17 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="26643006"/>
-            <display value="Oral use"/>
+            <display value="Oral route"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="37161004"/>
-            <display value="Rectal use"/>
+            <display value="Per rectum"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="45890007"/>
-            <display value="Transdermal use"/>
+            <display value="Transdermal route"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -693,12 +699,12 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="78421000"/>
-            <display value="Intramuscular use"/>
+            <display value="Intramuscular route"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="47625008"/>
-            <display value="Intravenous use"/>
+            <display value="Intravenous route"/>
           </contains>
         </expansion>
       </ValueSet>

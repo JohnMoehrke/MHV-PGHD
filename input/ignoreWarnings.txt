@@ -3,6 +3,9 @@
 # This is a VA Internal codesystem
 Code System URI 'https://wiki.mobilehealth.va.gov/x/Onc1C' is unknown so the code cannot be validated
 
+# This is another VA internal codesystem
+Code System URI 'https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping' is unknown so the code cannot be validated
+
 # This is an example external code system used for testing success without an understood code
 Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated
 
@@ -39,5 +42,6 @@ Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/Structu
 Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication - listed in meta
 Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar - listed in meta
 Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB - listed in meta
-
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat - listed in meta
+Validate resource against profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate - listed in meta
 

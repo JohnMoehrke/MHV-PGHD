@@ -31,7 +31,7 @@ This profile is consistent with FHIR core Vital-Signs for Respiration Rate
 * category 1..1
 // don't add this category constraint as it is already in fhir core
 //* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#9279-1 "Respiratory rate"
+//* code = LOINC#9279-1 "Respiratory rate"
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#/min

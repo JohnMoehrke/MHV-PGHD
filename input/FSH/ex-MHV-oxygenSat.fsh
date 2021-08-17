@@ -17,7 +17,7 @@ Description:      "Oxygen Saturation holding typical values"
 Instance:   ex-MHV-oxygenSat-2
 InstanceOf: VA.MHV.bloodOxygenSat
 Title: "Example of an MHV oxygenSat R4 observation"
-Description:      "Oxygen Saturation holding high value of 99%"
+Description:      "Oxygen Saturation holding high value of 99.4%"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
@@ -26,7 +26,7 @@ Description:      "Oxygen Saturation holding high value of 99%"
 * code.coding[+] = LOINC#59408-5
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-02T23:50:50-05:00
-* valueQuantity = 99 '%' 
+* valueQuantity = 99.4 '%' 
 // no comments in this one as comments is only in DSTU2
 * note.text = "amazingly high"
 
@@ -108,8 +108,8 @@ Description:      "Heart Rate holding typical values"
 * valueQuantity = 94 '%' 
 // no comments in this one as comments is only in DSTU2
 * note.text = "Way too low, clinically speaking"
-* hasMember[+] = Reference(ex-MHV-respirationRate-1)
-* hasMember[+] = Reference(ex-MHV-heartRate-1)
+* hasMember[respirationRate] = Reference(ex-MHV-respirationRate-1)
+* hasMember[heartRate] = Reference(ex-MHV-heartRate-1)
 
 Instance:   ex-other-oxygenSat-8
 InstanceOf: Observation
@@ -126,6 +126,6 @@ Description:      "Heart Rate holding typical values"
 * valueQuantity = 94 '%' 
 // no comments in this one as comments is only in DSTU2
 * note.text = "Way too low, clinically speaking"
-* hasMember[+] = Reference(ex-MHV-pain-1)
 * hasMember[+] = Reference(ex-MHV-respirationRate-1)
 * hasMember[+] = Reference(ex-MHV-heartRate-1)
+* hasMember[+] = Reference(ex-MHV-pain-1)

@@ -114,13 +114,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
 "Observation.code","","Name
 Test","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Respiratory Rate","Respiratory Rate.","additional codes that translate or map to this code are allowed.  For example a more granular LOINC code or code that is used locally in a system.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://loinc.org""/>
-    <code value=""9279-1""/>
-    <display value=""Respiratory rate""/>
-  </coding>
-</valueCodeableConcept>","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Respiratory Rate","Respiratory Rate.","additional codes that translate or map to this code are allowed.  For example a more granular LOINC code or code that is used locally in a system.","5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).","","","","","","","",,"extensible","This identifies the vital sign result type.","http://hl7.org/fhir/ValueSet/observation-vitalsignresult","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]","116680003 |Is a|"
 "Observation.code.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"

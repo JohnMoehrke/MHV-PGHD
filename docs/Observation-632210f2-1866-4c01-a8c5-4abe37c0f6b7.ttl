@@ -12,11 +12,6 @@
   fhir:Resource.meta [
      fhir:Meta.versionId [ fhir:value "4" ];
      fhir:Meta.lastUpdated [ fhir:value "2020-08-25T14:46:54.062+00:00"^^xsd:dateTime ];
-     fhir:Meta.profile [
-       fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure";
-       fhir:index 0;
-       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure>
-     ];
      fhir:Meta.tag [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "https://wiki.mobilehealth.va.gov/x/Onc1C" ];

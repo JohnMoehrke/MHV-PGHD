@@ -41,18 +41,19 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 * code.coding[loincCode2] = LOINC#8716-3 "Vital signs"
 * effectiveDateTime 1..1
 * value[x] 0..0
-* component 2..4
+* component 2..2
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #closed
 * component ^slicing.description = "blood pressure values"
 * component contains 
 	diastolicBP 1..1 and 
-	systolicBP 1..1 and 
-	bodyContextSitting 0..1 and 
-	bodyContextStanding 0..1 and 
-	bodyContextSupine 0..1 and 
-	bodyContextResting 0..1
+	systolicBP 1..1
+//	and 
+//	bodyContextSitting 0..1 and 
+//	bodyContextStanding 0..1 and 
+//	bodyContextSupine 0..1 and 
+//	bodyContextResting 0..1
 * component[systolicBP].code = LOINC#8480-6 // Systolic blood pressure
 * component[systolicBP].value[x] only Quantity
 * component[systolicBP].valueQuantity = UCUM#mm[Hg] // "mmHg"

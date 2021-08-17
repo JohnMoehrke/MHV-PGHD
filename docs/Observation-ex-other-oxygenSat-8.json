@@ -11,7 +11,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}\">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 3, 2004 10:50:50 PM</p><p><b>value</b>: 94 %</p><p><b>note</b>: Way too low, clinically speaking</p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-ex-MHV-pain-1.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>; <span title=\"Codes: {http://loinc.org 72514-3}, {http://snomed.info/sct 225908003}\">Pain severity - 0-10 verbal numeric rating [Score] - Reported</span>; effective: Dec 25, 2004 10:50:50 PM; 1; good vibes</a></li><li><a href=\"Observation-ex-MHV-respirationRate-1.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>; <span title=\"Codes: {http://loinc.org 9279-1}, {http://loinc.org 9279-1}\">Respiratory rate</span>; effective: Dec 25, 2004 10:50:50 PM; 18 /min; a bit fast</a></li><li><a href=\"Observation-ex-MHV-heartRate-1.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>; <span title=\"Codes: {http://loinc.org 8867-4}, {http://loinc.org 8867-4}\">Heart rate</span>; effective: Dec 25, 2004 10:50:50 PM; 185 /min; a bit fast</a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2708-6}, {http://loinc.org 59408-5}\">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 3, 2004 10:50:50 PM</p><p><b>value</b>: 94 %</p><p><b>note</b>: Way too low, clinically speaking</p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-ex-MHV-respirationRate-1.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>; <span title=\"Codes: {http://loinc.org 9279-1}\">Respiratory rate</span>; effective: Dec 25, 2004 10:50:50 PM; 18 /min; a bit fast</a></li><li><a href=\"Observation-ex-MHV-heartRate-1.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>; <span title=\"Codes: {http://loinc.org 8867-4}\">Heart rate</span>; effective: Dec 25, 2004 10:50:50 PM; 185 /min; a bit fast</a></li><li><a href=\"Observation-ex-MHV-pain-1.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>; <span title=\"Codes: {http://loinc.org 72514-3}, {http://snomed.info/sct 225908003}\">Pain severity - 0-10 verbal numeric rating [Score] - Reported</span>; effective: Dec 25, 2004 10:50:50 PM; 1; good vibes</a></li></ul></div>"
   },
   "status": "final",
   "category": [
@@ -52,13 +52,13 @@
   ],
   "hasMember": [
     {
-      "reference": "Observation/ex-MHV-pain-1"
-    },
-    {
       "reference": "Observation/ex-MHV-respirationRate-1"
     },
     {
       "reference": "Observation/ex-MHV-heartRate-1"
+    },
+    {
+      "reference": "Observation/ex-MHV-pain-1"
     }
   ]
 }

@@ -254,8 +254,6 @@
       <reference>
         <reference value="Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7"/>
       </reference>
-      <name value="Example Observation - 632210f2-1866-4c01-a8c5-4abe37c0f6b7"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

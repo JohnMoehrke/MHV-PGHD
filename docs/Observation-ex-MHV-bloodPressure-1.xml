@@ -10,7 +10,7 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 55284-4}, {http://loinc.org 8716-3}">Blood pressure systolic and diastolic</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>note</b>: a minimal blood pressure</p><p><b>hasMember</b>: <a href="Observation-ex-MHV-heartRate-1.html">Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span>; <span title="Codes: {http://loinc.org 8867-4}, {http://loinc.org 8867-4}">Heart rate</span>; effective: Dec 25, 2004 10:50:50 PM; 185 /min; a bit fast</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8480-6}">Systolic blood pressure</span></p><p><b>value</b>: 140 mm[Hg]</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8462-4}">Diastolic blood pressure</span></p><p><b>value</b>: 90 mm[Hg]</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 55284-4}, {http://loinc.org 8716-3}">Blood pressure systolic and diastolic</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>note</b>: a minimal blood pressure</p><p><b>hasMember</b>: <a href="Observation-ex-MHV-heartRate-1.html">Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span>; <span title="Codes: {http://loinc.org 8867-4}">Heart rate</span>; effective: Dec 25, 2004 10:50:50 PM; 185 /min; a bit fast</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8462-4}">Diastolic blood pressure</span></p><p><b>value</b>: 90 mm[Hg]</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8480-6}">Systolic blood pressure</span></p><p><b>value</b>: 140 mm[Hg]</p></blockquote></div>
   </text>
   <status value="final"/>
   <category>
@@ -29,7 +29,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="8716-3"/>
-      <display value="Vital Signs"/>
+      <display value="Vital signs"/>
     </coding>
   </code>
   <subject>
@@ -46,12 +46,12 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
-        <code value="8480-6"/>
-        <display value="Systolic blood pressure"/>
+        <code value="8462-4"/>
+        <display value="Diastolic blood pressure"/>
       </coding>
     </code>
     <valueQuantity>
-      <value value="140"/>
+      <value value="90"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="mm[Hg]"/>
     </valueQuantity>
@@ -60,12 +60,12 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
-        <code value="8462-4"/>
-        <display value="Diastolic blood pressure"/>
+        <code value="8480-6"/>
+        <display value="Systolic blood pressure"/>
       </coding>
     </code>
     <valueQuantity>
-      <value value="90"/>
+      <value value="140"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="mm[Hg]"/>
     </valueQuantity>

@@ -378,11 +378,6 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7>;
          fhir:Reference.reference [ fhir:value "Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - 632210f2-1866-4c01-a8c5-4abe37c0f6b7" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure";
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure>
        ]
      ], [
        fhir:index 6;

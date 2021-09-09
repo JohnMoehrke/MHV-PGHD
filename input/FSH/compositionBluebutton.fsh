@@ -6,7 +6,7 @@ Id:             VA.MHV.BlueComposition
 Title:          "VA MHV BlueButton Composition"
 Description:    "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.
 
-This is a work in progress. It is not agreed to, and it is not ready for review.
+**This is a work in progress. It is not agreed to, and it is not ready for review.**
 
 * must be marked with MHV app tag
 * must be status final
@@ -18,6 +18,7 @@ This is a work in progress. It is not agreed to, and it is not ready for review.
 "
 * ^version = "0.1.0"
 * ^date = "2020-10-24"
+* ^experimental = true
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 //* type = LOINC#51855-5 "Patient Note"

@@ -20,13 +20,14 @@
   "name": "MHVcompositionBluebutton",
   "title": "VA MHV BlueButton Composition",
   "status": "active",
+  "experimental": true,
   "date": "2020-10-24",
   "contact": [
     {
       "name": "John Moehrke"
     }
   ],
-  "description": "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n\r\nThis is a work in progress. It is not agreed to, and it is not ready for review.\r\n\r\n* must be marked with MHV app tag\r\n* must be status final\r\n* must have a title explaining the content - for example: all vital-signs from past 60 days\r\n* must have date stamp of when created (now)\r\n* must be LOINC 55188-7 Patient data Document\r\n* must point at the patient for both subject and author\r\n* DSTU2 use comment rather than note \r\n",
+  "description": "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n\r\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\r\n\r\n* must be marked with MHV app tag\r\n* must be status final\r\n* must have a title explaining the content - for example: all vital-signs from past 60 days\r\n* must have date stamp of when created (now)\r\n* must be LOINC 55188-7 Patient data Document\r\n* must point at the patient for both subject and author\r\n* DSTU2 use comment rather than note \r\n",
   "jurisdiction": [
     {
       "coding": [

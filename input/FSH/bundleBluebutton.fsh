@@ -6,7 +6,7 @@ Id:             VA.MHV.BlueBundle
 Title:          "VA MHV BlueButton Bundle"
 Description:    "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.
 
-This is a work in progress. It is not agreed to, and it is not ready for review.
+**This is a work in progress. It is not agreed to, and it is not ready for review.**
 
 * must be a document type Bundle
 * must have a timestamp of when this was created
@@ -17,6 +17,7 @@ This is a work in progress. It is not agreed to, and it is not ready for review.
 "
 * ^version = "0.1.0"
 * ^date = "2020-10-24"
+* ^experimental = true
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * type = #document // this will force the Bundle to include a Composition

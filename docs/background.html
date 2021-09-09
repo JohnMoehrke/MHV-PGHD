@@ -94,6 +94,16 @@
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Background</b></li>
 
+          <span style="float:right;">
+
+            <a href="index.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="downloads.html">next&gt;</a>
+
+          </span>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -125,25 +135,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#test-plan" id="markdown-toc-test-plan">Test Plan</a></li>
-  <li><a href="#cucumber-actions" id="markdown-toc-cucumber-actions">Cucumber Actions</a></li>
-</ul>
-
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
 
+<h1 id="myhealthevet-contributions-to-pghd">MyHealtheVet contributions to PGHD</h1>
+
+<p>August 2021 now moving toward using FHIR R4 rather than DSTU2. This IG is focused on that FHIR R4 profile.</p>
+
 <p>MyHealtheVet provides access to the VA managed Patient Generated Health Data (PGHD) FHIR based repository. MyHealtheVet enables viewing of the data, creating new entries, editing existing entries, and deleting entries. In addition MyHealtheVet enables the output of a FHIR-Document Bluebutton report.</p>
+
+<h2 id="currently-implemented">currently implemented</h2>
 
 <ul>
   <li>Vital Signs
     <ul>
       <li><a href="StructureDefinition-VA.MHV.bloodPressure.html">Blood Pressure</a></li>
-      <li><a href="StructureDefinition-VA.MHV.bloodSugar.html">Blood Sugar - eating routine as a component</a>
-        <ul>
-          <li><a href="StructureDefinition-VA.MHV.bloodSugarB.html">Blood Sugar B - fasting status as a code</a></li>
-        </ul>
-      </li>
+      <li><a href="StructureDefinition-VA.MHV.bloodSugar.html">Blood Sugar</a></li>
       <li><a href="StructureDefinition-VA.MHV.bodyTemperature.html">Body Temperature</a></li>
       <li><a href="StructureDefinition-VA.MHV.bodyWeight.html">Body Weight</a></li>
       <li><a href="StructureDefinition-VA.MHV.heartRate.html">Heart Rate</a></li>
@@ -151,13 +159,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><a href="StructureDefinition-VA.MHV.bloodOxygenSat.html">Oxygen Saturation</a></li>
     </ul>
   </li>
+</ul>
+
+<h2 id="profile-drafted-but-feature-is-not-approved-for-implementation">profile drafted but feature is not approved for implementation</h2>
+
+<ul>
+  <li>Vital Signs
+    <ul>
+      <li><a href="StructureDefinition-VA.MHV.bloodSugarA.html">Blood Sugar A - former using component for fasting status</a></li>
+    </ul>
+  </li>
   <li><a href="StructureDefinition-VA.MHV.medication.html">Medications</a></li>
   <li><a href="StructureDefinition-VA.MHV.allergy.html">Allergy and Intolerance</a></li>
   <li><a href="StructureDefinition-VA.MHV.immunization.html">Immunization</a></li>
   <li><a href="StructureDefinition-VA.MHV.BlueBundle.html">FHIR Document Bluebutton report</a> – Experimental and incomplete</li>
+  <li>Goals</li>
+  <li>Problems</li>
+  <li>Family Health History</li>
+  <li>Implanted Devices</li>
+  <li>measurement Devices</li>
+  <li>Smoking Status</li>
+  <li>CareTeam (external clinicians being seen)</li>
+  <li>Height</li>
+  <li>Upload Documents</li>
 </ul>
 
-<h3 id="test-plan">Test Plan</h3>
+<h2 id="additional-features">Additional Features</h2>
+
+<ul>
+  <li>Change
+    <ul>
+      <li>Allowing Delete without Edit</li>
+      <li>Allowing Edit without Delete</li>
+      <li>Allowing both Edit and Delete</li>
+    </ul>
+  </li>
+  <li>Support for Delegate user of MyHealtheVet to access PGHD
+    <ul>
+      <li>Read Only access</li>
+      <li>Read/Write/Create access</li>
+    </ul>
+  </li>
+  <li>Graph data over time – like MyHealtheVet already supports for SEI vital signs, or like VCM supports for PGHD vital signs.</li>
+  <li>Current MyHealtheVet secure messaging include references to PGHD hosted resources. For example being able to tell the doctor you have a new blood-pressure, and include in the message the FHIR Reference id in a rich-text way that appears to the human nicely, but is actually a FHIR URL</li>
+</ul>
+
+<h1 id="test-plan">Test Plan</h1>
 <p>Overall test plan leverages the Profiles, and Examples shown on the <a href="artifacts.html">Artifacts Summary</a>. The <a href="artifacts.html#structures-resource-profiles">Profiles</a> listed are describing the constraints that MHV uses when publishing (Create or Update) into PGHD. Thus any Resources that are known to have been published by MHV MUST be conformant to these profiles.</p>
 
 <p>The Examples listed in <a href="artifacts.html#example-example-instances">Example Instances</a> are example instances that are conformant to the MHV profiles.</p>
@@ -227,9 +274,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="index.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="downloads.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
-        <p><a name="a9c40b12-3f90-4077-96c3-970c816a3beb">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 17, 2021 10:06-0500">2021-08-17</span>
+        <p><a name="l564">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 8, 2021 13:55-0500">2021-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

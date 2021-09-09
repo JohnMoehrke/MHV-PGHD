@@ -94,6 +94,16 @@
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Example Observation - ex-MHV-bloodSugarB-1</b></li>
 
+          <span style="float:right;">
+
+            <a href="Observation-ex-MHV-bloodSugarB-1.xml.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="Observation-ex-MHV-bloodSugarB-1.ttl.html">next&gt;</a>
+
+          </span>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -163,7 +173,7 @@
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "ex-MHV-bloodSugarB-1",
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"
+      "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
     ],
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.tag">tag</a>" : [
       {
@@ -174,7 +184,7 @@
   },
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\"&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}, {http://loinc.org 1556-0}\"&gt;Glucose [Mass/volume] in Blood&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient-ex-patient.html\"&gt;Generated Summary: Jack Smith &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Dec 4, 2020 10:50:50 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 99 mg/dL&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: a bit low, fasting&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\"Codes: {http://snomed.info/sct 15220000}\"&gt;Laboratory Test&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\"&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org 2339-0}, {http://loinc.org 88365-2}\"&gt;Glucose [Mass/volume] in Blood&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient-ex-patient.html\"&gt;Generated Summary: Jack Smith &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Dec 4, 2020 10:50:50 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 99 mg/dL&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: a bit low, fasting&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\"Codes: {http://snomed.info/sct 15220000}\"&gt;Laboratory Test&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -195,11 +205,7 @@
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2345-7"
-      },
-      {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1556-0"
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "88365-2"
       }
     ]
   },
@@ -254,9 +260,31 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="Observation-ex-MHV-bloodSugarB-1.xml.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="Observation-ex-MHV-bloodSugarB-1.ttl.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
-        <p><a name="7e5ec517-ed06-4bd5-a29e-ab6d8c367298">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 17, 2021 10:06-0500">2021-08-17</span>
+        <p><a name="l464">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 8, 2021 13:55-0500">2021-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

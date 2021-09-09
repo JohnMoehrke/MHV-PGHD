@@ -94,6 +94,16 @@
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>VA MHV BlueButton Composition</b></li>
 
+          <span style="float:right;">
+
+            <a href="StructureDefinition-VA.MHV.BlueComposition.profile.xml.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-VA.MHV.BlueComposition.profile.ttl.html">next&gt;</a>
+
+          </span>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -211,13 +221,14 @@
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "MHVcompositionBluebutton",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "VA MHV BlueButton Composition",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.experimental">experimental</a>" : true,
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2020-10-24",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "John Moehrke"
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n\r\nThis is a work in progress. It is not agreed to, and it is not ready for review.\r\n\r\n* must be marked with MHV app tag\r\n* must be status final\r\n* must have a title explaining the content - for example: all vital-signs from past 60 days\r\n* must have date stamp of when created (now)\r\n* must be LOINC 55188-7 Patient data Document\r\n* must point at the patient for both subject and author\r\n* DSTU2 use comment rather than note \r\n",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.\r\n\r\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\r\n\r\n* must be marked with MHV app tag\r\n* must be status final\r\n* must have a title explaining the content - for example: all vital-signs from past 60 days\r\n* must have date stamp of when created (now)\r\n* must be LOINC 55188-7 Patient data Document\r\n* must point at the patient for both subject and author\r\n* DSTU2 use comment rather than note \r\n",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -3353,9 +3364,31 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="StructureDefinition-VA.MHV.BlueComposition.profile.xml.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="StructureDefinition-VA.MHV.BlueComposition.profile.ttl.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
-        <p><a name="fbe7906a-3fa7-4e2d-ab7e-50027461c512">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 17, 2021 10:06-0500">2021-08-17</span>
+        <p><a name="l6354">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 8, 2021 13:55-0500">2021-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

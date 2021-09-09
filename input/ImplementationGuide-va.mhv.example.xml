@@ -70,5 +70,9 @@
 			<code value="special-url"/>
 			<value value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
 		</parameter>
+		<parameter>
+			<code value="shownav" />
+			<value value="true" />
+		</parameter>
 	</definition>
 </ImplementationGuide>

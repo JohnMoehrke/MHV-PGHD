@@ -94,6 +94,16 @@
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
 
+          <span style="float:right;">
+
+            <a href="changes.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-VA.MHV.allergy.html">next&gt;</a>
+
+          </span>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -180,7 +190,7 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
                   <a href="StructureDefinition-VA.MHV.bloodOxygenSat.html" title="StructureDefinition/VA.MHV.bloodOxygenSat">VA MHV Blood Oxygen Saturation Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).</p>
+<p>A profile on the Observation that declares how MHV will Read/Create/Update in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).</p>
 
 <p>This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation</p>
 
@@ -194,7 +204,11 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
     </ul>
   </li>
   <li>must have effectiveDateTime</li>
-  <li>must have a valueQuantity with UCUM ‘%’ units</li>
+  <li>must have a valueQuantity with UCUM ‘%’ units
+    <ul>
+      <li>must be between 50% &lt; n &lt; 100%</li>
+    </ul>
+  </li>
   <li>must have status at final or preliminary</li>
   <li>must point at the patient</li>
   <li>may have a hasMember of a blood-pressure and/or respiration-rate</li>
@@ -209,30 +223,35 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
                   <a href="StructureDefinition-VA.MHV.bloodPressure.html" title="StructureDefinition/VA.MHV.bloodPressure">VA MHV Blood Pressure Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.
+<p>A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for blood pressure measurements.</p>
 
-Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.
-</p>
+<p>Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.</p>
+
 <ul>
-  <li>must be marked with MHV app tag</li>
-  <li>must have vital-signs category</li>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
   <li>must have LOINC#55284-4 code AND LOINC#8716-3
     <ul>
-      <li>8716-3 was added as some mobile apps searched on this</li>
+      <li>8716-3 was added as some mobile apps searched on this</li>
     </ul>
   </li>
-  <li>must have effectiveDateTime</li>
-  <li>must not have a value[x]</li>
-  <li>must have two components</li>
-  <li>must have systolic and diastolic component values in mm[Hg]</li>
-  <li>may have a related has-member heart-rate observation</li>
-  <li>must have status at final</li>
-  <li>must point at the patient</li>
-  <li>may have a note (comment)</li>
-  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
-  <li>DSTU2 use comment rather than note, and related has-member is encoded differently </li>
-  <li>Later may have a position component (sitting, standing, supline, and resting)</li>
+  <li>must have effectiveDateTime</li>
+  <li>must not have a value[x]</li>
+  <li>must have two components</li>
+  <li>must have systolic and diastolic component values in mm[Hg]
+    <ul>
+      <li>systolic must be between 50 &lt; s &lt; 250</li>
+      <li>diastolic must be between 30 &lt; d &lt; 140</li>
+    </ul>
+  </li>
+  <li>may have a related has-member heart-rate observation</li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
+
+<p>Later may have a position component (sitting, standing, supline, and resting)</p>
 </td>
             </tr>
             <tr>
@@ -240,48 +259,62 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
                   <a href="StructureDefinition-VA.MHV.bloodSugar.html" title="StructureDefinition/VA.MHV.bloodSugar">VA MHV Blood Sugar Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements. Eating routine is indicated as a component.
+<p>A profile on the Observation that declares how MHV could Create/Update in PGHD for blood sugar measurements. Indicate fasting status as a code.</p>
 
-Note that Blood Sugar is not part of FHIR core vital-signs.
-</p>
+<p><strong>Switched to this with the move to R4</strong></p>
+
+<p>Note that Blood Sugar is not part of FHIR core vital-signs.</p>
+
 <ul>
-  <li>must be marked with MHV app tag</li>
-  <li>must have vital-signs category</li>
-  <li>must have LOINC#2339-0 code AND LOINC#2345-7</li>
-  <li>must have effectiveDateTime</li>
-  <li>must have valueQuantity with units only of mg/dL</li>
-  <li>must have status at final</li>
-  <li>must point at the patient</li>
-  <li>may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other</li>
-  <li>may have a eating routine component with string of fasting, after meal, or unknown</li>
-  <li>may have a note (comment)</li>
-  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
-  <li>DSTU2 use comment rather than note</li>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have LOINC#2339-0 code
+    <ul>
+      <li>no longer using LOINC#2345-7 with move to FHIR R4</li>
+    </ul>
+  </li>
+  <li>may have indication of fasting (LOINC#88365-2), or 2-hours after meal (LOINC#87422-2)</li>
+  <li>must have effectiveDateTime</li>
+  <li>must have valueQuantity with units only of mg/dL
+    <ul>
+      <li>must be between 10 &lt; n &lt; 1000</li>
+    </ul>
+  </li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-VA.MHV.bloodSugarB.html" title="StructureDefinition/VA.MHV.bloodSugarB">VA MHV Blood Sugar Observation alternative B</a>
+                  <a href="StructureDefinition-VA.MHV.bloodSugarA.html" title="StructureDefinition/VA.MHV.bloodSugarA">VA MHV Blood Sugar Observation A</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements. Indicate fasting status as a code.
+<p>A profile on the Observation for blood sugar measurements that was common in DSTU2 version of PGHD. MHV will continue to display these in addition to the current. MHV will not create using this profile. Eating routine is indicated as a component with string (like VCM shows).
 
-Note that Blood Sugar is not part of FHIR core vital-signs.
+** This was used prior to the move to R4.**
 </p>
 <ul>
   <li>must be marked with MHV app tag</li>
   <li>must have vital-signs category</li>
-  <li>must have LOINC#2339-0 code AND LOINC#2345-7</li>
-  <li>may have indication of fasting (LOINC#1556-0), or 2-hours after meal (LOINC#6689-4)</li>
+  <li>must have LOINC#2339-0 code</li>
   <li>must have effectiveDateTime</li>
   <li>must have valueQuantity with units only of mg/dL</li>
   <li>must have status at final</li>
   <li>must point at the patient</li>
   <li>may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other</li>
+  <li>may have a eating routine component with string of: 
+    <ul>
+      <li>Fasting (8 hours)</li>
+      <li>After Meal</li>
+      <li>unknown</li>
+    </ul>
+  </li>
   <li>may have a note (comment)</li>
-  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
-  <li>DSTU2 use comment rather than note</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
 </td>
             </tr>
@@ -292,7 +325,7 @@ Note that Blood Sugar is not part of FHIR core vital-signs.
                <td>
 <p>A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.
 
-This is a work in progress. It is not agreed to, and it is not ready for review.
+<strong>This is a work in progress. It is not agreed to, and it is not ready for review.</strong>
 </p>
 <ul>
   <li>must be a document type Bundle</li>
@@ -311,7 +344,7 @@ This is a work in progress. It is not agreed to, and it is not ready for review.
                <td>
 <p>A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.
 
-This is a work in progress. It is not agreed to, and it is not ready for review.
+<strong>This is a work in progress. It is not agreed to, and it is not ready for review.</strong>
 </p>
 <ul>
   <li>must be marked with MHV app tag</li>
@@ -329,22 +362,25 @@ This is a work in progress. It is not agreed to, and it is not ready for review.
                   <a href="StructureDefinition-VA.MHV.bodyTemperature.html" title="StructureDefinition/VA.MHV.bodyTemperature">VA MHV Body Temperature Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements.
+<p>A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.</p>
 
-Note this is compliant with FHIR core vital-signs.
-</p>
+<p>Note this is compliant with FHIR core vital-signs.</p>
+
 <ul>
-  <li>must be marked with MHV app tag</li>
-  <li>must have vital-signs category</li>
-  <li>must have LOINC#8310-5 code</li>
-  <li>must have effectiveDateTime</li>
-  <li>must have valueQuantity with units from the MHV body temperatures (F and C)</li>
-  <li>must have status at final</li>
-  <li>must point at the patient</li>
-  <li>may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)</li>
-  <li>may have a note (comment)</li>
-  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
-  <li>DSTU2 use comment rather than note</li>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have LOINC#8310-5 code</li>
+  <li>must have effectiveDateTime</li>
+  <li>must have valueQuantity with units from the MHV body temperatures (F and C)
+    <ul>
+      <li>must be value between 92 &lt; n &lt; 108 Fahrenheit</li>
+    </ul>
+  </li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
 </td>
             </tr>
@@ -353,21 +389,24 @@ Note this is compliant with FHIR core vital-signs.
                   <a href="StructureDefinition-VA.MHV.bodyWeight.html" title="StructureDefinition/VA.MHV.bodyWeight">VA MHV BodyWeight Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.
+<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.</p>
 
-Note this is compliant with FHIR core vital-signs.
-</p>
+<p>Note this is compliant with FHIR core vital-signs.</p>
+
 <ul>
-  <li>must be marked with MHV app tag</li>
-  <li>must have vital-signs category</li>
-  <li>must have LOINC#29463-7 code</li>
-  <li>must have effectiveDateTime</li>
-  <li>must have valueQuantity with units from the MHV body weights (lbs and kg)</li>
-  <li>must have status at final</li>
-  <li>must point at the patient</li>
-  <li>may have a note (comment)</li>
-  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
-  <li>DSTU2 use comment rather than note</li>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have LOINC#29463-7 code</li>
+  <li>must have effectiveDateTime</li>
+  <li>must have valueQuantity with units from the MHV body weights (lbs and kg)
+    <ul>
+      <li>must be value 60 &lt; n &lt; 1000 lbs</li>
+    </ul>
+  </li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
 </td>
             </tr>
@@ -376,21 +415,24 @@ Note this is compliant with FHIR core vital-signs.
                   <a href="StructureDefinition-VA.MHV.heartRate.html" title="StructureDefinition/VA.MHV.heartRate">VA MHV HeartRate Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.
+<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.</p>
 
-Note this is compliant with FHIR core vital-signs.
-</p>
+<p>Note this is compliant with FHIR core vital-signs.</p>
+
 <ul>
-  <li>must be marked with MHV app tag</li>
-  <li>must have vital-signs category</li>
-  <li>must have LOINC#8867-4 code</li>
-  <li>must have effectiveDateTime</li>
-  <li>must have valueQuantity with units only of beats per minute</li>
-  <li>must have status at final</li>
-  <li>must point at the patient</li>
-  <li>may have a note (comment)</li>
-  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
-  <li>DSTU2 use comment rather than note</li>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have LOINC#8867-4 code</li>
+  <li>must have effectiveDateTime</li>
+  <li>must have valueQuantity with units only of beats per minute
+    <ul>
+      <li>must be value 40 &lt; n &lt; 240</li>
+    </ul>
+  </li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
 </td>
             </tr>
@@ -399,27 +441,29 @@ Note this is compliant with FHIR core vital-signs.
                   <a href="StructureDefinition-VA.MHV.immunization.html" title="StructureDefinition/VA.MHV.immunization">VA MHV Immunization</a>
                </td>
                <td>
-<p>A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.
+<p>A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.</p>
 
-Given that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.
-</p>
+<p><strong>Proposed mapping not yet approved for implementation</strong></p>
+
+<p>Given that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.</p>
+
 <ul>
-  <li>Derived off of US-Core Immunization</li>
-  <li>must be marked with MHV app tag</li>
-  <li>must point at the patient</li>
-  <li>must have status of completed (can not enter not-done or entered-in-error)</li>
+  <li>Derived off of US-Core Immunization</li>
+  <li>must be marked with MHV app tag</li>
+  <li>must point at the patient</li>
+  <li>must have status of completed (can not enter not-done or entered-in-error)</li>
   <li>must have a code.text or code.coding from a valueset from the UI
     <ul>
-      <li>codes from given valueSet</li>
+      <li>codes from given valueSet</li>
     </ul>
   </li>
-  <li>must have a date (occuranceDateTime) the vaccine was administered from the UI</li>
-  <li>must indicate the date this record is being recorded into PGHD </li>
-  <li>must be indicated this data are not official record (primarySource=false)</li>
-  <li>must indicate this is being recorded from patient recollection</li>
-  <li>any reaction is recorded as a contained observation</li>
-  <li>may have a comment note</li>
-  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+  <li>must have a date (occuranceDateTime) the vaccine was administered from the UI</li>
+  <li>must indicate the date this record is being recorded into PGHD</li>
+  <li>must be indicated this data are not official record (primarySource=false)</li>
+  <li>must indicate this is being recorded from patient recollection</li>
+  <li>any reaction is recorded as a contained observation</li>
+  <li>may have a comment note</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
   <li>DSTU2 uses slightly different element names (e.g., substance and onset)</li>
 </ul>
 </td>
@@ -430,6 +474,8 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of immun
                </td>
                <td>
 <p>A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.
+
+<strong>Proposed mapping not yet approved for implementation</strong>
 </p>
 <ul>
   <li>NOT Derived off of US-Core as there is no MedicationStatement in US-Core</li>
@@ -457,22 +503,23 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of immun
                   <a href="StructureDefinition-VA.MHV.pain.html" title="StructureDefinition/VA.MHV.pain">VA MHV Pain Observation</a>
                </td>
                <td>
-<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.
+<p>A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.</p>
 
-Note that Pain is not part of FHIR core vital-signs.
-</p>
+<p>Note that Pain is not part of FHIR core vital-signs.</p>
+
 <ul>
-  <li>must be marked with MHV app tag</li>
-  <li>must have vital-signs category</li>
-  <li>must have both LOINC#72514-3 and SCT#225908003 code</li>
-  <li>must have effectiveDateTime</li>
-  <li>must have integer between 0-10</li>
-  <li>must have status at final</li>
-  <li>must point at the patient</li>
-  <li>may have a note (comment)</li>
-  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
-  <li>DSTU2 will need to change to valueQuantity vs valueInteger</li>
-  <li>DSTU2 use comment rather than note</li>
+  <li>must be marked with MHV app tag</li>
+  <li>must have vital-signs category</li>
+  <li>must have both LOINC#72514-3 and SCT#225908003 code</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>must have integer between 0-10</li>
+    </ul>
+  </li>
+  <li>must have status at final</li>
+  <li>must point at the patient</li>
+  <li>may have a note (comment)</li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
 </td>
             </tr>
@@ -497,6 +544,7 @@ Note that Pain is not part of FHIR core vital-signs.
   <li>must have valueQuantity with units only of breaths per minute
     <ul>
       <li>typical is 12-16 breaths per minute</li>
+      <li>must be a value 6 &lt; n &lt; 40</li>
     </ul>
   </li>
   <li>must have status at final or preliminary</li>
@@ -647,47 +695,47 @@ Note that Pain is not part of FHIR core vital-signs.
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugar-0.html" title="Observation/ex-MHV-bloodSugar-0">Example Observation - ex-MHV-bloodSugar-0</a>
+                  <a href="Observation-ex-MHV-bloodSugarA-0.html" title="Observation/ex-MHV-bloodSugarA-0">Example Observation - ex-MHV-bloodSugarA-0</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugar-1.html" title="Observation/ex-MHV-bloodSugar-1">Example Observation - ex-MHV-bloodSugar-1</a>
+                  <a href="Observation-ex-MHV-bloodSugarA-1.html" title="Observation/ex-MHV-bloodSugarA-1">Example Observation - ex-MHV-bloodSugarA-1</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugar-2.html" title="Observation/ex-MHV-bloodSugar-2">Example Observation - ex-MHV-bloodSugar-2</a>
+                  <a href="Observation-ex-MHV-bloodSugarA-2.html" title="Observation/ex-MHV-bloodSugarA-2">Example Observation - ex-MHV-bloodSugarA-2</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugar-3.html" title="Observation/ex-MHV-bloodSugar-3">Example Observation - ex-MHV-bloodSugar-3</a>
+                  <a href="Observation-ex-MHV-bloodSugarA-3.html" title="Observation/ex-MHV-bloodSugarA-3">Example Observation - ex-MHV-bloodSugarA-3</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugar-4.html" title="Observation/ex-MHV-bloodSugar-4">Example Observation - ex-MHV-bloodSugar-4</a>
+                  <a href="Observation-ex-MHV-bloodSugarA-4.html" title="Observation/ex-MHV-bloodSugarA-4">Example Observation - ex-MHV-bloodSugarA-4</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugar-5.html" title="Observation/ex-MHV-bloodSugar-5">Example Observation - ex-MHV-bloodSugar-5</a>
+                  <a href="Observation-ex-MHV-bloodSugarA-5.html" title="Observation/ex-MHV-bloodSugarA-5">Example Observation - ex-MHV-bloodSugarA-5</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugar-6.html" title="Observation/ex-MHV-bloodSugar-6">Example Observation - ex-MHV-bloodSugar-6</a>
+                  <a href="Observation-ex-MHV-bloodSugarA-6.html" title="Observation/ex-MHV-bloodSugarA-6">Example Observation - ex-MHV-bloodSugarA-6</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugar-7.html" title="Observation/ex-MHV-bloodSugar-7">Example Observation - ex-MHV-bloodSugar-7</a>
+                  <a href="Observation-ex-MHV-bloodSugarA-7.html" title="Observation/ex-MHV-bloodSugarA-7">Example Observation - ex-MHV-bloodSugarA-7</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugar-8.html" title="Observation/ex-MHV-bloodSugar-8">Example Observation - ex-MHV-bloodSugar-8</a>
+                  <a href="Observation-ex-MHV-bloodSugarA-8.html" title="Observation/ex-MHV-bloodSugarA-8">Example Observation - ex-MHV-bloodSugarA-8</a>
                </td>
             </tr>
             <tr>
@@ -698,6 +746,16 @@ Note that Pain is not part of FHIR core vital-signs.
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-ex-MHV-bloodSugarB-1.html" title="Observation/ex-MHV-bloodSugarB-1">Example Observation - ex-MHV-bloodSugarB-1</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-bloodSugarB-106107.html" title="Observation/ex-MHV-bloodSugarB-106107">Example Observation - ex-MHV-bloodSugarB-106107</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-bloodSugarB-106108.html" title="Observation/ex-MHV-bloodSugarB-106108">Example Observation - ex-MHV-bloodSugarB-106108</a>
                </td>
             </tr>
             <tr>
@@ -1127,9 +1185,31 @@ Note that Pain is not part of FHIR core vital-signs.
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="changes.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="StructureDefinition-VA.MHV.allergy.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
-        <p><a name="11338160-95a4-439d-8ad7-6eede8972f24">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 17, 2021 10:06-0500">2021-08-17</span>
+        <p><a name="l2325">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 8, 2021 13:55-0500">2021-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

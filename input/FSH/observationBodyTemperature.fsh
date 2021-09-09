@@ -1,27 +1,29 @@
-// note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
+
 // using FHIR core vitalsigns, tried to use FHIR core bodytemp but some builder issue causes conflict in the valueQuantity
 Profile:        MHVbodyTemperature
 Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
 Id:             VA.MHV.bodyTemperature
 Title:          "VA MHV Body Temperature Observation"
-Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements.
+Description:    """
+A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.
 
 Note this is compliant with FHIR core vital-signs.
 
-* must be marked with MHV app tag
-* must have vital-signs category
-* must have LOINC#8310-5 code
-* must have effectiveDateTime
-* must have valueQuantity with units from the MHV body temperatures (F and C)
-* must have status at final
-* must point at the patient
-* may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)
-* may have a note (comment)
-* once created will or might have an id, versionId, lastUpdated, text, and identifier
-* DSTU2 use comment rather than note 
-"
-* ^version = "0.1.0"
-* ^date = "2020-11-18"
+- must be marked with MHV app tag
+- must have vital-signs category
+- must have LOINC#8310-5 code
+- must have effectiveDateTime
+- must have valueQuantity with units from the MHV body temperatures (F and C)
+  - must be value between 92 < n < 108 Fahrenheit
+- must have status at final
+- must point at the patient
+- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)
+- may have a note (comment)
+- once created will or might have an id, versionId, lastUpdated, text, and identifier
+"""
+* ^version = "0.2.0"
+* ^date = "2021-09-08"
+* ^experimental = false
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
@@ -32,11 +34,12 @@ Note this is compliant with FHIR core vital-signs.
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit from MHVbodyTemperatures
+* valueQuantity.value ^minValueQuantity = 92 UCUM#[degF]
+* valueQuantity.value ^maxValueQuantity = 108 UCUM#[degF]
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)
 * bodySite from MHVbodyTemperatureSites
-// using note in R4, where we use comments in DSTU2
 * note 0..1
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing
 //* id 0..1

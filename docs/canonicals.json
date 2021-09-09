@@ -49,11 +49,11 @@
     "name": "MHVbloodSugar"
   },
   {
-    "id": "VA.MHV.bloodSugarB",
+    "id": "VA.MHV.bloodSugarA",
     "type": "StructureDefinition",
-    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA",
     "version": "0.2.6-beta",
-    "name": "MHVbloodSugarB"
+    "name": "MHVbloodSugarA"
   },
   {
     "id": "VA.MHV.bodyTemperature",

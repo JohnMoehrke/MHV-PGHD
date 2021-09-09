@@ -1,27 +1,28 @@
 // MHV Observation for Body Weight
-// note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
 // using FHIR core vitalsigns, tried to use the core bodyweight but some logic (builder) problem creates errors in the examples valueQuantity
 Profile:        MHVbodyWeight
 Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
 Id:             VA.MHV.bodyWeight
 Title:          "VA MHV BodyWeight Observation"
-Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.
+Description:    """
+A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.
 
 Note this is compliant with FHIR core vital-signs.
 
-* must be marked with MHV app tag
-* must have vital-signs category
-* must have LOINC#29463-7 code
-* must have effectiveDateTime
-* must have valueQuantity with units from the MHV body weights (lbs and kg)
-* must have status at final
-* must point at the patient
-* may have a note (comment)
-* once created will or might have an id, versionId, lastUpdated, text, and identifier
-* DSTU2 use comment rather than note 
-"
-* ^version = "0.1.0"
-* ^date = "2020-10-21"
+- must be marked with MHV app tag
+- must have vital-signs category
+- must have LOINC#29463-7 code
+- must have effectiveDateTime
+- must have valueQuantity with units from the MHV body weights (lbs and kg)
+  - must be value 60 < n < 1000 lbs
+- must have status at final
+- must point at the patient
+- may have a note (comment)
+- once created will or might have an id, versionId, lastUpdated, text, and identifier
+"""
+* ^version = "0.2.0"
+* ^date = "2021-09-08"
+* ^experimental = false
 //Note this could be derived off of the international profile for http://hl7.org/fhir/StructureDefinition/bodyweight. But doing that causes alot of indirection, and doesn't seem to be as blunt as writing it all inline here.
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
@@ -33,10 +34,11 @@ Note this is compliant with FHIR core vital-signs.
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit from MHVbodyWeights
+* valueQuantity.value ^minValueQuantity = 60 UCUM#[lb_av]
+* valueQuantity.value ^maxValueQuantity = 1000 UCUM#[lb_av]
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)
-// using note in R4, where we use comments in DSTU2
 * note 0..1
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing
 //* id 0..1

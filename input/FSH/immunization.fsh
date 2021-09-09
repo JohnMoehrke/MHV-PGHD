@@ -4,7 +4,10 @@ Profile:        MHVimmunization
 Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization
 Id:             VA.MHV.immunization
 Title:          "VA MHV Immunization"
-Description:    "A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.
+Description:    """
+A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.
+
+**Proposed mapping not yet approved for implementation**
 
 Given that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.
 
@@ -22,9 +25,10 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of immun
 * may have a comment note
 * once created will or might have an id, versionId, lastUpdated, text, and identifier
 * DSTU2 uses slightly different element names (e.g., substance and onset) 
-"
+"""
 * ^version = "0.1.0"
 * ^date = "2021-04-14"
+* ^experimental = true
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #completed
@@ -58,8 +62,8 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of immun
 * fundingSource 0..0
 * protocolApplied 0..0
 
-//  mappings to MHV UI 
-Mapping: MHV-UI
+//  mappings to MHV IM UI 
+Mapping: MHV-IM-UI
 Source:	VA.MHV.immunization
 Target: "MHV-UI"
 Title: "MyHealtheVet mapping to FHIR/PGHD"

@@ -20,13 +20,14 @@
   "name": "MHVpain",
   "title": "VA MHV Pain Observation",
   "status": "active",
-  "date": "2020-11-19",
+  "experimental": false,
+  "date": "2021-09-08",
   "contact": [
     {
       "name": "John Moehrke"
     }
   ],
-  "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.\r\n\r\nNote that Pain is not part of FHIR core vital-signs.\r\n\r\n* must be marked with MHV app tag\r\n* must have vital-signs category\r\n* must have both LOINC#72514-3 and SCT#225908003 code\r\n* must have effectiveDateTime\r\n* must have integer between 0-10\r\n* must have status at final\r\n* must point at the patient\r\n* may have a note (comment)\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 will need to change to valueQuantity vs valueInteger\r\n* DSTU2 use comment rather than note \r\n",
+  "description": "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.\n\nNote that Pain is not part of FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have both LOINC#72514-3 and SCT#225908003 code\n- must have effectiveDateTime\n  - must have integer between 0-10\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
   "jurisdiction": [
     {
       "coding": [
@@ -1932,6 +1933,8 @@
             "code": "integer"
           }
         ],
+        "minValueInteger": 0,
+        "maxValueInteger": 10,
         "condition": [
           "obs-7"
         ],

@@ -3,14 +3,14 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="ex-MHV-bloodSugarB-6"/>
   <meta>
-    <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+    <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     <tag>
       <system value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
       <code value="2ce6d9aa-c068-4809-8dda-662bcb16d09a"/>
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2339-0}, {http://loinc.org 2345-7}">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2020 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, unknown eating, by implant</p><p><b>method</b>: <span title="Codes: {http://snomed.info/sct 261373009}">Implant technique</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2339-0}">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2020 10:50:50 PM</p><p><b>value</b>: 99 mg/dL</p><p><b>note</b>: a bit low, unknown eating, by implant</p><p><b>method</b>: <span title="Codes: {http://snomed.info/sct 261373009}">Implant technique</span></p></div>
   </text>
   <status value="final"/>
   <category>
@@ -23,10 +23,6 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="2339-0"/>
-    </coding>
-    <coding>
-      <system value="http://loinc.org"/>
-      <code value="2345-7"/>
     </coding>
   </code>
   <subject>

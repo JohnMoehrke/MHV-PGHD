@@ -1,10 +1,11 @@
-// note that sushi only supports FHIR R4, so this is on R4 with a need to backport the resulting StructureDefinition
+
 // not using FHIR core vitalsigns as that profile requires different codes that MHV/PGHD have not agreed to allow
 Profile:        MHVbloodPressure
 Parent:         Observation
 Id:             VA.MHV.bloodPressure
 Title:          "VA MHV Blood Pressure Observation"
-Description:    "A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.
+Description:    """
+A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for blood pressure measurements.
 
 Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.
 
@@ -16,16 +17,19 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 - must not have a value[x]
 - must have two components
 - must have systolic and diastolic component values in mm[Hg]
+  - systolic must be between 50 < s < 250
+  - diastolic must be between 30 < d < 140
 - may have a related has-member heart-rate observation
 - must have status at final
 - must point at the patient
 - may have a note (comment)
 - once created will or might have an id, versionId, lastUpdated, text, and identifier
-- DSTU2 use comment rather than note, and related has-member is encoded differently 
-- Later may have a position component (sitting, standing, supline, and resting)
-"
-* ^version = "0.2.0"
-* ^date = "2021-06-15"
+
+Later may have a position component (sitting, standing, supline, and resting)
+"""
+* ^version = "0.3.0"
+* ^date = "2021-09-08"
+* ^experimental = false
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
@@ -57,16 +61,19 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 * component[systolicBP].code = LOINC#8480-6 // Systolic blood pressure
 * component[systolicBP].value[x] only Quantity
 * component[systolicBP].valueQuantity = UCUM#mm[Hg] // "mmHg"
+* component[systolicBP].valueQuantity.value ^minValueQuantity = 50 UCUM#mm[Hg] // "mmHg"
+* component[systolicBP].valueQuantity.value ^maxValueQuantity = 250 UCUM#mm[Hg] // "mmHg"
 * component[diastolicBP].code = LOINC#8462-4 // Diastolic blood pressure
 * component[diastolicBP].value[x] only Quantity
 * component[diastolicBP].valueQuantity = UCUM#mm[Hg] // "mmHg"
+* component[diastolicBP].valueQuantity.value ^minValueQuantity = 30 UCUM#mm[Hg] // "mmHg"
+* component[diastolicBP].valueQuantity.value ^maxValueQuantity = 140 UCUM#mm[Hg] // "mmHg"
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)
 * hasMember MS
 * hasMember 0..1
 * hasMember only Reference(VA.MHV.heartRate)
-// using note in R4, where we use comments in DSTU2
 * note 0..1
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing
 //* id 0..1

@@ -30,11 +30,12 @@
   <name value="MHVbundleBluebutton"/>
   <title value="VA MHV BlueButton Bundle"/>
   <status value="active"/>
+  <experimental value="true"/>
   <date value="2020-10-24"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>
-  <description value="A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;&#xD;&#xA;This is a work in progress. It is not agreed to, and it is not ready for review.&#xD;&#xA;&#xD;&#xA;* must be a document type Bundle&#xD;&#xA;* must have a timestamp of when this was created&#xD;&#xA;* must have a MHV Bluebutton type of a Composition &#xD;&#xA;* must include Patient Resource&#xD;&#xA;* must include all Resources referenced by Composition &#xD;&#xA;* DSTU2 use comment rather than note &#xD;&#xA;"/>
+  <description value="A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;&#xD;&#xA;**This is a work in progress. It is not agreed to, and it is not ready for review.**&#xD;&#xA;&#xD;&#xA;* must be a document type Bundle&#xD;&#xA;* must have a timestamp of when this was created&#xD;&#xA;* must have a MHV Bluebutton type of a Composition &#xD;&#xA;* must include Patient Resource&#xD;&#xA;* must include all Resources referenced by Composition &#xD;&#xA;* DSTU2 use comment rather than note &#xD;&#xA;"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

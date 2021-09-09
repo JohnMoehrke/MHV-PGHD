@@ -5,6 +5,8 @@ Id:             VA.MHV.medication
 Title:          "VA MHV Medication"
 Description:    "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.
 
+**Proposed mapping not yet approved for implementation**
+
 * NOT Derived off of US-Core as there is no MedicationStatement in US-Core
 * must be marked with MHV app tag
 * must have a medication name
@@ -25,6 +27,7 @@ Description:    "A profile on the MedicationStatement that declares how MHV will
 "
 * ^version = "0.2.0"
 * ^date = "2020-12-16"
+* ^experimental = true
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a

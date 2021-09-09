@@ -10,13 +10,14 @@
   "name": "MHVimmunization",
   "title": "VA MHV Immunization",
   "status": "active",
+  "experimental": true,
   "date": "2021-04-14",
   "contact": [
     {
       "name": "John Moehrke"
     }
   ],
-  "description": "A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.\r\n\r\nGiven that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.\r\n\r\n* Derived off of US-Core Immunization\r\n* must be marked with MHV app tag\r\n* must point at the patient\r\n* must have status of completed (can not enter not-done or entered-in-error)\r\n* must have a code.text or code.coding from a valueset from the UI\r\n  * codes from given valueSet\r\n* must have a date (occuranceDateTime) the vaccine was administered from the UI\r\n* must indicate the date this record is being recorded into PGHD \r\n* must be indicated this data are not official record (primarySource=false)\r\n* must indicate this is being recorded from patient recollection\r\n* any reaction is recorded as a contained observation\r\n* may have a comment note\r\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\r\n* DSTU2 uses slightly different element names (e.g., substance and onset) \r\n",
+  "description": "A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.\n\n**Proposed mapping not yet approved for implementation**\n\nGiven that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.\n\n* Derived off of US-Core Immunization\n* must be marked with MHV app tag\n* must point at the patient\n* must have status of completed (can not enter not-done or entered-in-error)\n* must have a code.text or code.coding from a valueset from the UI\n  * codes from given valueSet\n* must have a date (occuranceDateTime) the vaccine was administered from the UI\n* must indicate the date this record is being recorded into PGHD \n* must be indicated this data are not official record (primarySource=false)\n* must indicate this is being recorded from patient recollection\n* any reaction is recorded as a contained observation\n* may have a comment note\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\n* DSTU2 uses slightly different element names (e.g., substance and onset) ",
   "jurisdiction": [
     {
       "coding": [
@@ -65,7 +66,7 @@
       "name": "CDA (R2)"
     },
     {
-      "identity": "MHV-UI",
+      "identity": "MHV-IM-UI",
       "uri": "MHV-UI",
       "name": "MyHealtheVet mapping to FHIR/PGHD"
     }
@@ -170,7 +171,7 @@
             "map": "Immunization"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "MHV-UI",
             "comment": "Used in the MyHealtheVet Immunization User Interface"
           }
@@ -547,7 +548,7 @@
         },
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "MHV tag"
           }
         ]
@@ -913,7 +914,7 @@
             "map": "Immunization.status"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "complete"
           }
         ]
@@ -1049,7 +1050,7 @@
             "map": "Immunization.vaccineCode"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Immunization: UI value"
           }
         ]
@@ -1120,7 +1121,7 @@
             "map": "Immunization.patient"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "the Patient"
           }
         ]
@@ -1237,7 +1238,7 @@
             "map": "Immunization.date"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Date Received: UI value"
           }
         ]
@@ -1281,7 +1282,7 @@
             "map": ".participation[typeCode=AUT].time"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "the date recorded"
           }
         ]
@@ -1340,7 +1341,7 @@
             "map": "Immunization.reported"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "false"
           }
         ]
@@ -1408,7 +1409,7 @@
             "map": ".participation[typeCode=INF].role[classCode=PAT] (this syntax for self-reported) .participation[typeCode=INF].role[classCode=LIC] (this syntax for health care professional) .participation[typeCode=INF].role[classCode=PRS] (this syntax for family member)"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Patient recall"
           }
         ]
@@ -1704,7 +1705,7 @@
             "map": "ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/routeCode/code"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Method: UI value"
           }
         ]
@@ -2076,7 +2077,7 @@
             "map": "note"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Comment: UI value"
           }
         ]
@@ -2963,7 +2964,7 @@
             "map": ".value"
           },
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Reaction: UI value"
           }
         ]
@@ -3391,7 +3392,7 @@
         "path": "Immunization",
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "MHV-UI",
             "comment": "Used in the MyHealtheVet Immunization User Interface"
           }
@@ -3408,7 +3409,7 @@
         },
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "MHV tag"
           }
         ]
@@ -3419,7 +3420,7 @@
         "patternCode": "completed",
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "complete"
           }
         ]
@@ -3438,7 +3439,7 @@
         },
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Immunization: UI value"
           }
         ]
@@ -3448,7 +3449,7 @@
         "path": "Immunization.patient",
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "the Patient"
           }
         ]
@@ -3468,7 +3469,7 @@
         ],
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Date Received: UI value"
           }
         ]
@@ -3479,7 +3480,7 @@
         "min": 1,
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "the date recorded"
           }
         ]
@@ -3490,7 +3491,7 @@
         "patternBoolean": false,
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "false"
           }
         ]
@@ -3508,7 +3509,7 @@
         },
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Patient recall"
           }
         ]
@@ -3544,7 +3545,7 @@
         "min": 1,
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Method: UI value"
           }
         ]
@@ -3565,7 +3566,7 @@
         "max": "1",
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Comment: UI value"
           }
         ]
@@ -3616,7 +3617,7 @@
         ],
         "mapping": [
           {
-            "identity": "MHV-UI",
+            "identity": "MHV-IM-UI",
             "map": "Reaction: UI value"
           }
         ]

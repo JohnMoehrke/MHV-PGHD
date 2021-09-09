@@ -65,6 +65,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="shownav"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -484,90 +492,90 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-bloodSugar-0"/>
+        <reference value="Observation/ex-MHV-bloodSugarA-0"/>
       </reference>
-      <name value="Example Observation - ex-MHV-bloodSugar-0"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+      <name value="Example Observation - ex-MHV-bloodSugarA-0"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-bloodSugar-1"/>
+        <reference value="Observation/ex-MHV-bloodSugarA-1"/>
       </reference>
-      <name value="Example Observation - ex-MHV-bloodSugar-1"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+      <name value="Example Observation - ex-MHV-bloodSugarA-1"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-bloodSugar-2"/>
+        <reference value="Observation/ex-MHV-bloodSugarA-2"/>
       </reference>
-      <name value="Example Observation - ex-MHV-bloodSugar-2"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+      <name value="Example Observation - ex-MHV-bloodSugarA-2"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-bloodSugar-3"/>
+        <reference value="Observation/ex-MHV-bloodSugarA-3"/>
       </reference>
-      <name value="Example Observation - ex-MHV-bloodSugar-3"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+      <name value="Example Observation - ex-MHV-bloodSugarA-3"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-bloodSugar-4"/>
+        <reference value="Observation/ex-MHV-bloodSugarA-4"/>
       </reference>
-      <name value="Example Observation - ex-MHV-bloodSugar-4"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+      <name value="Example Observation - ex-MHV-bloodSugarA-4"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-bloodSugar-5"/>
+        <reference value="Observation/ex-MHV-bloodSugarA-5"/>
       </reference>
-      <name value="Example Observation - ex-MHV-bloodSugar-5"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+      <name value="Example Observation - ex-MHV-bloodSugarA-5"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-bloodSugar-6"/>
+        <reference value="Observation/ex-MHV-bloodSugarA-6"/>
       </reference>
-      <name value="Example Observation - ex-MHV-bloodSugar-6"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+      <name value="Example Observation - ex-MHV-bloodSugarA-6"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-bloodSugar-7"/>
+        <reference value="Observation/ex-MHV-bloodSugarA-7"/>
       </reference>
-      <name value="Example Observation - ex-MHV-bloodSugar-7"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+      <name value="Example Observation - ex-MHV-bloodSugarA-7"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-MHV-bloodSugar-8"/>
+        <reference value="Observation/ex-MHV-bloodSugarA-8"/>
       </reference>
-      <name value="Example Observation - ex-MHV-bloodSugar-8"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+      <name value="Example Observation - ex-MHV-bloodSugarA-8"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -577,7 +585,7 @@
         <reference value="Observation/ex-MHV-bloodSugarB-0"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-0"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -587,7 +595,27 @@
         <reference value="Observation/ex-MHV-bloodSugarB-1"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-1"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-bloodSugarB-106107"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-bloodSugarB-106107"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-MHV-bloodSugarB-106108"/>
+      </reference>
+      <name value="Example Observation - ex-MHV-bloodSugarB-106108"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -597,7 +625,7 @@
         <reference value="Observation/ex-MHV-bloodSugarB-2"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-2"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -607,7 +635,7 @@
         <reference value="Observation/ex-MHV-bloodSugarB-3"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-3"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -617,7 +645,7 @@
         <reference value="Observation/ex-MHV-bloodSugarB-4"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-4"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -627,7 +655,7 @@
         <reference value="Observation/ex-MHV-bloodSugarB-5"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-5"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -637,7 +665,7 @@
         <reference value="Observation/ex-MHV-bloodSugarB-6"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-6"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -647,7 +675,7 @@
         <reference value="Observation/ex-MHV-bloodSugarB-7"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-7"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -657,7 +685,7 @@
         <reference value="Observation/ex-MHV-bloodSugarB-8"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-8"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarB"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1117,7 +1145,7 @@
         <reference value="StructureDefinition/VA.MHV.bloodOxygenSat"/>
       </reference>
       <name value="VA MHV Blood Oxygen Saturation Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#59408-5 code AND LOINC#2708-6&#xA;  - Argonaut and VCM use 59408-5&#xA;  - FHIR Core R4 also adds 2708-6&#xA;- must have effectiveDateTime&#xA;- must have a valueQuantity with UCUM &#39;%&#39; units&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a hasMember of a blood-pressure and/or respiration-rate&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
+      <description value="A profile on the Observation that declares how MHV will Read/Create/Update in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#59408-5 code AND LOINC#2708-6&#xA;  - Argonaut and VCM use 59408-5&#xA;  - FHIR Core R4 also adds 2708-6&#xA;- must have effectiveDateTime&#xA;- must have a valueQuantity with UCUM &#39;%&#39; units&#xA;  * must be between 50% &lt; n &lt; 100%&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a hasMember of a blood-pressure and/or respiration-rate&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1127,7 +1155,7 @@
         <reference value="StructureDefinition/VA.MHV.bloodPressure"/>
       </reference>
       <name value="VA MHV Blood Pressure Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for blood pressure measurements.&#xD;&#xA;&#xD;&#xA;Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.&#xD;&#xA;&#xD;&#xA;- must be marked with MHV app tag&#xD;&#xA;- must have vital-signs category&#xD;&#xA;- must have LOINC#55284-4 code AND LOINC#8716-3&#xD;&#xA;  - 8716-3 was added as some mobile apps searched on this&#xD;&#xA;- must have effectiveDateTime&#xD;&#xA;- must not have a value[x]&#xD;&#xA;- must have two components&#xD;&#xA;- must have systolic and diastolic component values in mm[Hg]&#xD;&#xA;- may have a related has-member heart-rate observation&#xD;&#xA;- must have status at final&#xD;&#xA;- must point at the patient&#xD;&#xA;- may have a note (comment)&#xD;&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;- DSTU2 use comment rather than note, and related has-member is encoded differently &#xD;&#xA;- Later may have a position component (sitting, standing, supline, and resting)"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for blood pressure measurements.&#xA;&#xA;Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#55284-4 code AND LOINC#8716-3&#xA;  - 8716-3 was added as some mobile apps searched on this&#xA;- must have effectiveDateTime&#xA;- must not have a value[x]&#xA;- must have two components&#xA;- must have systolic and diastolic component values in mm[Hg]&#xA;  - systolic must be between 50 &lt; s &lt; 250&#xA;  - diastolic must be between 30 &lt; d &lt; 140&#xA;- may have a related has-member heart-rate observation&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;&#xA;Later may have a position component (sitting, standing, supline, and resting)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1137,17 +1165,17 @@
         <reference value="StructureDefinition/VA.MHV.bloodSugar"/>
       </reference>
       <name value="VA MHV Blood Sugar Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements. Eating routine is indicated as a component.&#xD;&#xA;&#xD;&#xA;Note that Blood Sugar is not part of FHIR core vital-signs.&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#2339-0 code AND LOINC#2345-7&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units only of mg/dL&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xD;&#xA;* may have a eating routine component with string of fasting, after meal, or unknown&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note"/>
+      <description value="A profile on the Observation that declares how MHV could Create/Update in PGHD for blood sugar measurements. Indicate fasting status as a code.&#xA;&#xA;**Switched to this with the move to R4**&#xA;&#xA;Note that Blood Sugar is not part of FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#2339-0 code&#xA;  - no longer using LOINC#2345-7 with move to FHIR R4&#xA;- may have indication of fasting (LOINC#88365-2), or 2-hours after meal (LOINC#87422-2)&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of mg/dL&#xA;  - must be between 10 &lt; n &lt; 1000&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/VA.MHV.bloodSugarB"/>
+        <reference value="StructureDefinition/VA.MHV.bloodSugarA"/>
       </reference>
-      <name value="VA MHV Blood Sugar Observation alternative B"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for blood sugar measurements. Indicate fasting status as a code.&#xD;&#xA;&#xD;&#xA;Note that Blood Sugar is not part of FHIR core vital-signs.&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#2339-0 code AND LOINC#2345-7&#xD;&#xA;* may have indication of fasting (LOINC#1556-0), or 2-hours after meal (LOINC#6689-4)&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units only of mg/dL&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note"/>
+      <name value="VA MHV Blood Sugar Observation A"/>
+      <description value="A profile on the Observation for blood sugar measurements that was common in DSTU2 version of PGHD. MHV will continue to display these in addition to the current. MHV will not create using this profile. Eating routine is indicated as a component with string (like VCM shows).&#xD;&#xA;&#xD;&#xA;** This was used prior to the move to R4.**&#xD;&#xA;&#xD;&#xA;- must be marked with MHV app tag&#xD;&#xA;- must have vital-signs category&#xD;&#xA;- must have LOINC#2339-0 code&#xD;&#xA;- must have effectiveDateTime&#xD;&#xA;- must have valueQuantity with units only of mg/dL&#xD;&#xA;- must have status at final&#xD;&#xA;- must point at the patient&#xD;&#xA;- may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xD;&#xA;- may have a eating routine component with string of: &#xD;&#xA;  - Fasting (8 hours)&#xD;&#xA;  - After Meal&#xD;&#xA;  - unknown&#xD;&#xA;- may have a note (comment)&#xD;&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1157,7 +1185,7 @@
         <reference value="StructureDefinition/VA.MHV.BlueBundle"/>
       </reference>
       <name value="VA MHV BlueButton Bundle"/>
-      <description value="A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;&#xD;&#xA;This is a work in progress. It is not agreed to, and it is not ready for review.&#xD;&#xA;&#xD;&#xA;* must be a document type Bundle&#xD;&#xA;* must have a timestamp of when this was created&#xD;&#xA;* must have a MHV Bluebutton type of a Composition &#xD;&#xA;* must include Patient Resource&#xD;&#xA;* must include all Resources referenced by Composition &#xD;&#xA;* DSTU2 use comment rather than note"/>
+      <description value="A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;&#xD;&#xA;**This is a work in progress. It is not agreed to, and it is not ready for review.**&#xD;&#xA;&#xD;&#xA;* must be a document type Bundle&#xD;&#xA;* must have a timestamp of when this was created&#xD;&#xA;* must have a MHV Bluebutton type of a Composition &#xD;&#xA;* must include Patient Resource&#xD;&#xA;* must include all Resources referenced by Composition &#xD;&#xA;* DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1167,7 +1195,7 @@
         <reference value="StructureDefinition/VA.MHV.BlueComposition"/>
       </reference>
       <name value="VA MHV BlueButton Composition"/>
-      <description value="A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;&#xD;&#xA;This is a work in progress. It is not agreed to, and it is not ready for review.&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must be status final&#xD;&#xA;* must have a title explaining the content - for example: all vital-signs from past 60 days&#xD;&#xA;* must have date stamp of when created (now)&#xD;&#xA;* must be LOINC 55188-7 Patient data Document&#xD;&#xA;* must point at the patient for both subject and author&#xD;&#xA;* DSTU2 use comment rather than note"/>
+      <description value="A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.&#xD;&#xA;&#xD;&#xA;**This is a work in progress. It is not agreed to, and it is not ready for review.**&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must be status final&#xD;&#xA;* must have a title explaining the content - for example: all vital-signs from past 60 days&#xD;&#xA;* must have date stamp of when created (now)&#xD;&#xA;* must be LOINC 55188-7 Patient data Document&#xD;&#xA;* must point at the patient for both subject and author&#xD;&#xA;* DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1177,7 +1205,7 @@
         <reference value="StructureDefinition/VA.MHV.bodyTemperature"/>
       </reference>
       <name value="VA MHV Body Temperature Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body temperature measurements.&#xD;&#xA;&#xD;&#xA;Note this is compliant with FHIR core vital-signs.&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#8310-5 code&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units from the MHV body temperatures (F and C)&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8310-5 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units from the MHV body temperatures (F and C)&#xA;  - must be value between 92 &lt; n &lt; 108 Fahrenheit&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1187,7 +1215,7 @@
         <reference value="StructureDefinition/VA.MHV.bodyWeight"/>
       </reference>
       <name value="VA MHV BodyWeight Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.&#xD;&#xA;&#xD;&#xA;Note this is compliant with FHIR core vital-signs.&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#29463-7 code&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units from the MHV body weights (lbs and kg)&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#29463-7 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units from the MHV body weights (lbs and kg)&#xA;  - must be value 60 &lt; n &lt; 1000 lbs&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1197,7 +1225,7 @@
         <reference value="StructureDefinition/VA.MHV.heartRate"/>
       </reference>
       <name value="VA MHV HeartRate Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.&#xD;&#xA;&#xD;&#xA;Note this is compliant with FHIR core vital-signs.&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have LOINC#8867-4 code&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have valueQuantity with units only of beats per minute&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 use comment rather than note"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8867-4 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of beats per minute&#xA;  - must be value 40 &lt; n &lt; 240&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1207,7 +1235,7 @@
         <reference value="StructureDefinition/VA.MHV.immunization"/>
       </reference>
       <name value="VA MHV Immunization"/>
-      <description value="A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.&#xD;&#xA;&#xD;&#xA;Given that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.&#xD;&#xA;&#xD;&#xA;* Derived off of US-Core Immunization&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must point at the patient&#xD;&#xA;* must have status of completed (can not enter not-done or entered-in-error)&#xD;&#xA;* must have a code.text or code.coding from a valueset from the UI&#xD;&#xA;  * codes from given valueSet&#xD;&#xA;* must have a date (occuranceDateTime) the vaccine was administered from the UI&#xD;&#xA;* must indicate the date this record is being recorded into PGHD &#xD;&#xA;* must be indicated this data are not official record (primarySource=false)&#xD;&#xA;* must indicate this is being recorded from patient recollection&#xD;&#xA;* any reaction is recorded as a contained observation&#xD;&#xA;* may have a comment note&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 uses slightly different element names (e.g., substance and onset)"/>
+      <description value="A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.&#xA;&#xA;**Proposed mapping not yet approved for implementation**&#xA;&#xA;Given that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.&#xA;&#xA;* Derived off of US-Core Immunization&#xA;* must be marked with MHV app tag&#xA;* must point at the patient&#xA;* must have status of completed (can not enter not-done or entered-in-error)&#xA;* must have a code.text or code.coding from a valueset from the UI&#xA;  * codes from given valueSet&#xA;* must have a date (occuranceDateTime) the vaccine was administered from the UI&#xA;* must indicate the date this record is being recorded into PGHD &#xA;* must be indicated this data are not official record (primarySource=false)&#xA;* must indicate this is being recorded from patient recollection&#xA;* any reaction is recorded as a contained observation&#xA;* may have a comment note&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;* DSTU2 uses slightly different element names (e.g., substance and onset)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1217,7 +1245,7 @@
         <reference value="StructureDefinition/VA.MHV.medication"/>
       </reference>
       <name value="VA MHV Medication"/>
-      <description value="A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.&#xD;&#xA;&#xD;&#xA;* NOT Derived off of US-Core as there is no MedicationStatement in US-Core&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have a medication name&#xD;&#xA;* must have a strength per dose&#xD;&#xA;* must have a reason for use&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have status at final, stopped, or complete&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note &#xD;&#xA;* may have quantity&#xD;&#xA;* may have frequency&#xD;&#xA;* may have method of taking&#xD;&#xA;* may have a rx number&#xD;&#xA;* may indicate where it was filled&#xD;&#xA;* may indicate who prescribed&#xD;&#xA;* may indicate if side affects or none&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.&#xD;&#xA;&#xD;&#xA;**Proposed mapping not yet approved for implementation**&#xD;&#xA;&#xD;&#xA;* NOT Derived off of US-Core as there is no MedicationStatement in US-Core&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have a medication name&#xD;&#xA;* must have a strength per dose&#xD;&#xA;* must have a reason for use&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have status at final, stopped, or complete&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note &#xD;&#xA;* may have quantity&#xD;&#xA;* may have frequency&#xD;&#xA;* may have method of taking&#xD;&#xA;* may have a rx number&#xD;&#xA;* may indicate where it was filled&#xD;&#xA;* may indicate who prescribed&#xD;&#xA;* may indicate if side affects or none&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1227,7 +1255,7 @@
         <reference value="StructureDefinition/VA.MHV.pain"/>
       </reference>
       <name value="VA MHV Pain Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.&#xD;&#xA;&#xD;&#xA;Note that Pain is not part of FHIR core vital-signs.&#xD;&#xA;&#xD;&#xA;* must be marked with MHV app tag&#xD;&#xA;* must have vital-signs category&#xD;&#xA;* must have both LOINC#72514-3 and SCT#225908003 code&#xD;&#xA;* must have effectiveDateTime&#xD;&#xA;* must have integer between 0-10&#xD;&#xA;* must have status at final&#xD;&#xA;* must point at the patient&#xD;&#xA;* may have a note (comment)&#xD;&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xD;&#xA;* DSTU2 will need to change to valueQuantity vs valueInteger&#xD;&#xA;* DSTU2 use comment rather than note"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.&#xA;&#xA;Note that Pain is not part of FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have both LOINC#72514-3 and SCT#225908003 code&#xA;- must have effectiveDateTime&#xA;  - must have integer between 0-10&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1237,7 +1265,7 @@
         <reference value="StructureDefinition/VA.MHV.respirationRate"/>
       </reference>
       <name value="VA MHV Respiration Rate Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Respiration Rate&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#9279-1 code &#xA;  - FHIR Core, Argonaut and VCM use 9279-1&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of breaths per minute&#xA;  - typical is 12-16 breaths per minute&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
+      <description value="A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Respiration Rate&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#9279-1 code &#xA;  - FHIR Core, Argonaut and VCM use 9279-1&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of breaths per minute&#xA;  - typical is 12-16 breaths per minute&#xA;  - must be a value 6 &lt; n &lt; 40&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

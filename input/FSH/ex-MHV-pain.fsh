@@ -10,7 +10,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 0 
+* valueQuantity.value = 0 
 
 Instance:   ex-MHV-pain-1
 InstanceOf: VA.MHV.pain
@@ -24,7 +24,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 1 
+* valueQuantity.value = 1 
 * note.text = "good vibes"
 
 Instance:   ex-MHV-pain-2
@@ -39,7 +39,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 2 
+* valueQuantity.value = 2 
 
 Instance:   ex-MHV-pain-3
 InstanceOf: VA.MHV.pain
@@ -53,7 +53,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 3 
+* valueQuantity.value = 3 
 
 Instance:   ex-MHV-pain-4
 InstanceOf: VA.MHV.pain
@@ -67,7 +67,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 4 
+* valueQuantity.value = 4 
 
 Instance:   ex-MHV-pain-5
 InstanceOf: VA.MHV.pain
@@ -81,7 +81,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 5 
+* valueQuantity.value = 5 
 * note.text = "comme ci comme ça"
 
 Instance:   ex-MHV-pain-6
@@ -96,7 +96,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 6 
+* valueQuantity.value = 6 
 
 Instance:   ex-MHV-pain-7
 InstanceOf: VA.MHV.pain
@@ -110,7 +110,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 7 
+* valueQuantity.value = 7 
 * note.text = "not good"
 
 Instance:   ex-MHV-pain-8
@@ -125,7 +125,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 8 
+* valueQuantity.value = 8 
 * note.text = "please help"
 
 Instance:   ex-MHV-pain-9
@@ -140,7 +140,7 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 9 
+* valueQuantity.value = 9 
 * note.text = "I can't take it"
 
 Instance:   ex-MHV-pain-10
@@ -155,12 +155,12 @@ Description:      "holding typical values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 10 
+* valueQuantity.value = 10 
 * note.text = "Oh, scream in pain"
 
 // This should NOT validate, but it seems allowed
 Instance:   ex-pain-11
-InstanceOf: VA.MHV.pain
+InstanceOf: Observation
 Title: "Example of a non MHV pain R4 observation of 11"
 Description:      "holding invalid values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
@@ -171,7 +171,7 @@ Description:      "holding invalid values"
 * code.coding[1] = SCT#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 11
+* valueQuantity.value = 11
 
 Instance:   ex-pain-12
 InstanceOf: Observation
@@ -246,7 +246,7 @@ Description:      "holding typical values"
 * code.coding[2] = LOINC#8310-5
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueInteger = 10 
+* valueQuantity.value = 10 
 * note.text = "Oh, scream in pain"
 
 

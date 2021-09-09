@@ -1036,8 +1036,6 @@
       <reference>
         <reference value="Observation/ex-pain-11"/>
       </reference>
-      <name value="Example Observation - ex-pain-11"/>
-      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1255,7 +1253,7 @@
         <reference value="StructureDefinition/VA.MHV.pain"/>
       </reference>
       <name value="VA MHV Pain Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.&#xA;&#xA;Note that Pain is not part of FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have both LOINC#72514-3 and SCT#225908003 code&#xA;- must have effectiveDateTime&#xA;  - must have integer between 0-10&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.&#xA;&#xA;Note that Pain is not part of FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have both LOINC#72514-3 and SCT#225908003 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with no units&#xA;  - must have integer between 0-10&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -45,7 +45,9 @@
     "reference": "Patient/ex-patient"
   },
   "effectiveDateTime": "2004-12-25T23:50:50-05:00",
-  "valueInteger": 8,
+  "valueQuantity": {
+    "value": 8
+  },
   "note": [
     {
       "text": "please help"

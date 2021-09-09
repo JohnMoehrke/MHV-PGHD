@@ -11,11 +11,6 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ex-pain-11"];
   fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain";
-       fhir:index 0;
-       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain>
-     ];
      fhir:Meta.tag [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "https://wiki.mobilehealth.va.gov/x/Onc1C" ];
@@ -55,7 +50,9 @@
      fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2004-12-25T23:50:50-05:00"^^xsd:dateTime];
-  fhir:Observation.valueInteger [ fhir:value "11"^^xsd:integer] .
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "11"^^xsd:decimal ]
+  ] .
 
 # - ontology header ------------------------------------------------------------
 

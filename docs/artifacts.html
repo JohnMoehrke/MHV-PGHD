@@ -511,7 +511,8 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
   <li>must be marked with MHV app tag</li>
   <li>must have vital-signs category</li>
   <li>must have both LOINC#72514-3 and SCT#225908003 code</li>
-  <li>must have effectiveDateTime
+  <li>must have effectiveDateTime</li>
+  <li>must have valueQuantity with no units
     <ul>
       <li>must have integer between 0-10</li>
     </ul>
@@ -948,11 +949,6 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
                   <a href="Observation-ex-MHV-weight.html" title="Observation/ex-MHV-weight">Example Observation - ex-MHV-weight</a>
                </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-pain-11.html" title="Observation/ex-pain-11">Example Observation - ex-pain-11</a>
-               </td>
-            </tr>
          </tbody>
       </table>
    </p>
@@ -1107,6 +1103,11 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-ex-pain-11.html" title="Observation/ex-pain-11">Observation/ex-pain-11</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-ex-pain-12.html" title="Observation/ex-pain-12">Observation/ex-pain-12</a>
                </td>
             </tr>
@@ -1208,8 +1209,8 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l2325">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 8, 2021 13:55-0500">2021-09-08</span>
+        <p><a name="l2328">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 9, 2021 10:21-0500">2021-09-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

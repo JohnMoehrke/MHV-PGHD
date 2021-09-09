@@ -1,4 +1,5 @@
 // note that in R4 there is valueInteger, which is the right solution here. But in DSTU2 that must be changed to valueQuantity
+// September 9, 2021 discussion with PGHD team - will continue to use valueQuantity for best continunity of data.
 // not using FHIR core vitalsigns as that profile does not include pain.
 Profile:        MHVpain
 Parent:         Observation
@@ -13,6 +14,7 @@ Note that Pain is not part of FHIR core vital-signs.
 - must have vital-signs category
 - must have both LOINC#72514-3 and SCT#225908003 code
 - must have effectiveDateTime
+- must have valueQuantity with no units
   - must have integer between 0-10
 - must have status at final
 - must point at the patient
@@ -36,9 +38,9 @@ Note that Pain is not part of FHIR core vital-signs.
 * code.coding[loincCode] = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[snomedCode] = SCT#225908003 "Pain Score"
 * effectiveDateTime 1..1
-* value[x] only integer
-* valueInteger ^minValueInteger = 0
-* valueInteger ^maxValueInteger = 10
+* value[x] only Quantity
+* valueQuantity.value ^minValueQuantity = 0 UCUM#{score}
+* valueQuantity.value ^maxValueQuantity = 10 UCUM#{score}
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)

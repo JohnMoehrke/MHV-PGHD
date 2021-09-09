@@ -135,17 +135,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#myhealthevet-contributions-to-pghd" id="markdown-toc-myhealthevet-contributions-to-pghd">MyHealtheVet contributions to PGHD</a>    <ul>
+      <li><a href="#currently-implemented" id="markdown-toc-currently-implemented">currently implemented</a></li>
+      <li><a href="#profile-drafted-but-feature-is-not-approved-for-implementation" id="markdown-toc-profile-drafted-but-feature-is-not-approved-for-implementation">profile drafted but feature is not approved for implementation</a></li>
+      <li><a href="#additional-features" id="markdown-toc-additional-features">Additional Features</a></li>
+    </ul>
+  </li>
+  <li><a href="#test-plan" id="markdown-toc-test-plan">Test Plan</a></li>
+</ul>
+
 </div>
 
-<h1 id="myhealthevet-contributions-to-pghd">MyHealtheVet contributions to PGHD</h1>
+<h2 id="myhealthevet-contributions-to-pghd">MyHealtheVet contributions to PGHD</h2>
 
 <p>August 2021 now moving toward using FHIR R4 rather than DSTU2. This IG is focused on that FHIR R4 profile.</p>
 
 <p>MyHealtheVet provides access to the VA managed Patient Generated Health Data (PGHD) FHIR based repository. MyHealtheVet enables viewing of the data, creating new entries, editing existing entries, and deleting entries. In addition MyHealtheVet enables the output of a FHIR-Document Bluebutton report.</p>
 
-<h2 id="currently-implemented">currently implemented</h2>
+<h3 id="currently-implemented">currently implemented</h3>
 
 <ul>
   <li>Vital Signs
@@ -161,7 +170,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<h2 id="profile-drafted-but-feature-is-not-approved-for-implementation">profile drafted but feature is not approved for implementation</h2>
+<h3 id="profile-drafted-but-feature-is-not-approved-for-implementation">profile drafted but feature is not approved for implementation</h3>
 
 <ul>
   <li>Vital Signs
@@ -184,7 +193,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Upload Documents</li>
 </ul>
 
-<h2 id="additional-features">Additional Features</h2>
+<h3 id="additional-features">Additional Features</h3>
 
 <ul>
   <li>Change
@@ -204,7 +213,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Current MyHealtheVet secure messaging include references to PGHD hosted resources. For example being able to tell the doctor you have a new blood-pressure, and include in the message the FHIR Reference id in a rich-text way that appears to the human nicely, but is actually a FHIR URL</li>
 </ul>
 
-<h1 id="test-plan">Test Plan</h1>
+<h2 id="test-plan">Test Plan</h2>
 <p>Overall test plan leverages the Profiles, and Examples shown on the <a href="artifacts.html">Artifacts Summary</a>. The <a href="artifacts.html#structures-resource-profiles">Profiles</a> listed are describing the constraints that MHV uses when publishing (Create or Update) into PGHD. Thus any Resources that are known to have been published by MHV MUST be conformant to these profiles.</p>
 
 <p>The Examples listed in <a href="artifacts.html#example-example-instances">Example Instances</a> are example instances that are conformant to the MHV profiles.</p>
@@ -216,7 +225,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="StructureDefinition-VA.MHV.bodyWeight.html">Body Weight</a></li>
 </ul>
 
-<h3 id="cucumber-actions">Cucumber Actions</h3>
+<h4 id="cucumber-actions">Cucumber Actions</h4>
 <p>The following Actions are defined for use in the Cucumber scripts</p>
 
 <p>SUT - System Under Test – this is the MyHealtheVet application – aka MHV</p>
@@ -227,7 +236,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Test-Bench - a FHIR application (likely built with HAPI) that is used with PGHD for testing of the MHV</p>
 
-<h4 id="initialized">Initialized</h4>
+<h5 id="initialized">Initialized</h5>
 
 <p><strong>Preconditions</strong></p>
 
@@ -235,7 +244,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Test-Patient is created or known to have no data that would affect the test.</p>
 
-<h4 id="load-x-into-pghd">Load X into PGHD</h4>
+<h5 id="load-x-into-pghd">Load X into PGHD</h5>
 
 <p>This action is used to initialize a test, it is not expected to fail. So a failure is a fundamental failure, not an indication of the system-under-test.</p>
 
@@ -297,8 +306,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l564">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 8, 2021 13:55-0500">2021-09-08</span>
+        <p><a name="l589">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.6-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 9, 2021 10:21-0500">2021-09-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

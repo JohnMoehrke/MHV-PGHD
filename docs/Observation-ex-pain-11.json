@@ -2,9 +2,6 @@
   "resourceType": "Observation",
   "id": "ex-pain-11",
   "meta": {
-    "profile": [
-      "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
-    ],
     "tag": [
       {
         "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
@@ -45,5 +42,7 @@
     "reference": "Patient/ex-patient"
   },
   "effectiveDateTime": "2004-12-25T23:50:50-05:00",
-  "valueInteger": 11
+  "valueQuantity": {
+    "value": 11
+  }
 }

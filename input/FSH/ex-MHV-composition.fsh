@@ -15,4 +15,4 @@ Description:      "holding typical values"
 * section.code = LOINC#8716-3 "Vital Signs"
 * section.mode = #snapshot
 * section.entry = Reference(Observation/ex-MHV-weight)
-* section.entry[1] = Reference(Observation/ex-MHV-bloodSugar-0)
+* section.entry[1] = Reference(Observation/ex-MHV-bloodSugarB-0)

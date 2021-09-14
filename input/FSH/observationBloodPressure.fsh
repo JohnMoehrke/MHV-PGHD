@@ -17,8 +17,8 @@ Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires
 - must not have a value[x]
 - must have two components
 - must have systolic and diastolic component values in mm[Hg]
-  - systolic must be between 50 < s < 250
-  - diastolic must be between 30 < d < 140
+  - systolic must be between 50 <= s <= 250
+  - diastolic must be between 30 <= d <= 140
 - may have a related has-member heart-rate observation
 - must have status at final
 - must point at the patient

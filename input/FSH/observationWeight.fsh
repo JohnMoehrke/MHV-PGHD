@@ -14,7 +14,7 @@ Note this is compliant with FHIR core vital-signs.
 - must have LOINC#29463-7 code
 - must have effectiveDateTime
 - must have valueQuantity with units from the MHV body weights (lbs and kg)
-  - must be value 60 < n < 1000 lbs
+  - must be value 60 <= n <= 1000 lbs
 - must have status at final
 - must point at the patient
 - may have a note (comment)

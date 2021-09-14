@@ -13,7 +13,7 @@ Note this is compliant with FHIR core vital-signs.
 - must have LOINC#8867-4 code
 - must have effectiveDateTime
 - must have valueQuantity with units only of beats per minute
-  - must be value 40 < n < 240
+  - must be value 40 <= n <= 240
 - must have status at final
 - must point at the patient
 - may have a note (comment)

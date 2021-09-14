@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.6-beta"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.7-beta"];
   fhir:StructureDefinition.name [ fhir:value "MHVbundleBluebutton"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV BlueButton Bundle"];
   fhir:StructureDefinition.status [ fhir:value "active"];

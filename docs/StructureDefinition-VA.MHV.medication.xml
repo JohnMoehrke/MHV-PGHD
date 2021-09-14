@@ -34,7 +34,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication"/>
-  <version value="0.2.6-beta"/>
+  <version value="0.2.7-beta"/>
   <name value="MHVmedication"/>
   <title value="VA MHV Medication"/>
   <status value="active"/>

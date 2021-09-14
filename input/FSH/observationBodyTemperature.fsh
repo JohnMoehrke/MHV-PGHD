@@ -14,7 +14,7 @@ Note this is compliant with FHIR core vital-signs.
 - must have LOINC#8310-5 code
 - must have effectiveDateTime
 - must have valueQuantity with units from the MHV body temperatures (F and C)
-  - must be value between 92 < n < 108 Fahrenheit
+  - must be value between 92 <= n <= 108 Fahrenheit
 - must have status at final
 - must point at the patient
 - may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)

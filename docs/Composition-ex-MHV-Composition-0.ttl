@@ -65,8 +65,8 @@
        fhir:Reference.reference [ fhir:value "Observation/ex-MHV-weight" ]
      ], [
        fhir:index 1;
-       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugar-0>;
-       fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugar-0" ]
+       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-bloodSugarB-0>;
+       fhir:Reference.reference [ fhir:value "Observation/ex-MHV-bloodSugarB-0" ]
      ]
   ] .
 

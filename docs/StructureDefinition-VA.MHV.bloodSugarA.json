@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA",
-  "version": "0.2.6-beta",
+  "version": "0.2.7-beta",
   "name": "MHVbloodSugarA",
   "title": "VA MHV Blood Sugar Observation A",
   "status": "active",

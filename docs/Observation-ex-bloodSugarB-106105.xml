@@ -9,19 +9,20 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2339-0}, {http://loinc.org 1556-0}">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2020 10:50:50 PM</p><p><b>value</b>: 100 mg/dL</p><p><b>note</b>: non-MHV normal by supper time blood sugar measurement, just one of the .code values (2339-0)</p><p><b>method</b>: <span title="Codes: {http://snomed.info/sct 271064007}">Supper time blood sugar measurement (procedure)</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 2339-0}, {http://loinc.org 1556-0}">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2020 10:50:50 PM</p><p><b>value</b>: 100 mg/dL</p><p><b>note</b>: non-MHV normal by supper time blood sugar measurement, just one of the .code values (2339-0)</p><p><b>method</b>: <span title="Codes: {http://snomed.info/sct 271064007}">Supper time blood sugar measurement (procedure)</span></p></div>
   </text>
   <status value="final"/>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-      <code value="vital-signs"/>
+      <code value="laboratory"/>
     </coding>
   </category>
   <code>
     <coding>
       <system value="http://loinc.org"/>
       <code value="2339-0"/>
+      <display value="Glucose [Mass/volume] in Blood"/>
     </coding>
     <coding>
       <system value="http://loinc.org"/>

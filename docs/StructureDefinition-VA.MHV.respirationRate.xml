@@ -38,7 +38,7 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate"/>
-  <version value="0.2.6-beta"/>
+  <version value="0.2.7-beta"/>
   <name value="MHVrespirationRate"/>
   <title value="VA MHV Respiration Rate Observation"/>
   <status value="active"/>
@@ -47,7 +47,7 @@
   <contact>
     <name value="John Moehrke"/>
   </contact>
-  <description value="A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Respiration Rate&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#9279-1 code &#xA;  - FHIR Core, Argonaut and VCM use 9279-1&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of breaths per minute&#xA;  - typical is 12-16 breaths per minute&#xA;  - must be a value 6 &lt; n &lt; 40&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
+  <description value="A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Respiration Rate&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#9279-1 code &#xA;  - FHIR Core, Argonaut and VCM use 9279-1&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of breaths per minute&#xA;  - typical is 12-16 breaths per minute&#xA;  - must be a value 6 &lt;= n &lt;= 40&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

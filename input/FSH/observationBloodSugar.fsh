@@ -1,7 +1,8 @@
 
 // note that Argonaut and us-core categorize blood sugar as a Laboratory, not a vitalsign
 Profile:        MHVbloodSugar
-Parent:         Observation
+//Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab
+Parent: Observation
 Id:             VA.MHV.bloodSugar
 Title:          "VA MHV Blood Sugar Observation"
 Description:    """
@@ -12,13 +13,13 @@ A profile on the Observation that declares how MHV could Create/Update in PGHD f
 Note that Blood Sugar is not part of FHIR core vital-signs.
 
 - must be marked with MHV app tag
-- must have vital-signs category
+- must have laboratory category
 - must have LOINC#2339-0 code
   - no longer using LOINC#2345-7 with move to FHIR R4
 - may have indication of fasting (LOINC#88365-2), or 2-hours after meal (LOINC#87422-2)
 - must have effectiveDateTime
 - must have valueQuantity with units only of mg/dL
-  - must be between 10 < n < 1000
+  - must be between 10 <= n <= 1000
 - must have status at final
 - must point at the patient
 - may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other
@@ -33,7 +34,7 @@ Note that Blood Sugar is not part of FHIR core vital-signs.
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * category 1..1
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
@@ -42,9 +43,9 @@ Note that Blood Sugar is not part of FHIR core vital-signs.
     loincCode1 1..1 and 
     fasting 0..1 and
     afterMeal 0..1
-* code.coding[loincCode1] = LOINC#2339-0 
-* code.coding[fasting] = LOINC#88365-2
-* code.coding[afterMeal] = LOINC#87422-2
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[fasting] = LOINC#88365-2 "Glucose [Mass/volume] in Blood --pre-meal"
+* code.coding[afterMeal] = LOINC#87422-2 "Glucose [Mass/volume] in Blood --post meal"
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#mg/dL
@@ -52,8 +53,9 @@ Note that Blood Sugar is not part of FHIR core vital-signs.
 * valueQuantity.value ^maxValueQuantity = 1000 'mg/dL'
 * method from MHVbloodSugarMethods
 * status = #final
-* subject 1..1
-* subject only Reference(Patient)
+// us-core lab already sets this
+//* subject 1..1
+//* subject only Reference(Patient)
 * note 0..1
 // things that are not declared in the mapping table but likely are populated because they are normal REST processing
 //* id 0..1

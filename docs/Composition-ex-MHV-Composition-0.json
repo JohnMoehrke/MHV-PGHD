@@ -54,7 +54,7 @@
           "reference": "Observation/ex-MHV-weight"
         },
         {
-          "reference": "Observation/ex-MHV-bloodSugar-0"
+          "reference": "Observation/ex-MHV-bloodSugarB-0"
         }
       ]
     }

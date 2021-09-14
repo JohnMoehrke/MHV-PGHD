@@ -42,7 +42,7 @@
       <reference value="Observation/ex-MHV-weight"/>
     </entry>
     <entry>
-      <reference value="Observation/ex-MHV-bloodSugar-0"/>
+      <reference value="Observation/ex-MHV-bloodSugarB-0"/>
     </entry>
   </section>
 </Composition>

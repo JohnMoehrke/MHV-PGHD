@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-  <version value="0.2.6-beta"/>
+  <version value="0.2.7-beta"/>
   <name value="MHVtoPGHD_Example"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-05-20"/>
+  <date value="2021-09-14"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>
@@ -622,6 +622,14 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/ex-MHV-bloodSugarB-106109"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/ex-MHV-bloodSugarB-2"/>
       </reference>
       <name value="Example Observation - ex-MHV-bloodSugarB-2"/>
@@ -1143,7 +1151,7 @@
         <reference value="StructureDefinition/VA.MHV.bloodOxygenSat"/>
       </reference>
       <name value="VA MHV Blood Oxygen Saturation Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Read/Create/Update in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#59408-5 code AND LOINC#2708-6&#xA;  - Argonaut and VCM use 59408-5&#xA;  - FHIR Core R4 also adds 2708-6&#xA;- must have effectiveDateTime&#xA;- must have a valueQuantity with UCUM &#39;%&#39; units&#xA;  * must be between 50% &lt; n &lt; 100%&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a hasMember of a blood-pressure and/or respiration-rate&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
+      <description value="A profile on the Observation that declares how MHV will Read/Create/Update in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#59408-5 code AND LOINC#2708-6&#xA;  - Argonaut and VCM use 59408-5&#xA;  - FHIR Core R4 also adds 2708-6&#xA;- must have effectiveDateTime&#xA;- must have a valueQuantity with UCUM &#39;%&#39; units&#xA;  * must be between 50% &lt;= n &lt;= 100%&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a hasMember of a blood-pressure and/or respiration-rate&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1153,7 +1161,7 @@
         <reference value="StructureDefinition/VA.MHV.bloodPressure"/>
       </reference>
       <name value="VA MHV Blood Pressure Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for blood pressure measurements.&#xA;&#xA;Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#55284-4 code AND LOINC#8716-3&#xA;  - 8716-3 was added as some mobile apps searched on this&#xA;- must have effectiveDateTime&#xA;- must not have a value[x]&#xA;- must have two components&#xA;- must have systolic and diastolic component values in mm[Hg]&#xA;  - systolic must be between 50 &lt; s &lt; 250&#xA;  - diastolic must be between 30 &lt; d &lt; 140&#xA;- may have a related has-member heart-rate observation&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;&#xA;Later may have a position component (sitting, standing, supline, and resting)"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for blood pressure measurements.&#xA;&#xA;Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#55284-4 code AND LOINC#8716-3&#xA;  - 8716-3 was added as some mobile apps searched on this&#xA;- must have effectiveDateTime&#xA;- must not have a value[x]&#xA;- must have two components&#xA;- must have systolic and diastolic component values in mm[Hg]&#xA;  - systolic must be between 50 &lt;= s &lt;= 250&#xA;  - diastolic must be between 30 &lt;= d &lt;= 140&#xA;- may have a related has-member heart-rate observation&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;&#xA;Later may have a position component (sitting, standing, supline, and resting)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1163,7 +1171,7 @@
         <reference value="StructureDefinition/VA.MHV.bloodSugar"/>
       </reference>
       <name value="VA MHV Blood Sugar Observation"/>
-      <description value="A profile on the Observation that declares how MHV could Create/Update in PGHD for blood sugar measurements. Indicate fasting status as a code.&#xA;&#xA;**Switched to this with the move to R4**&#xA;&#xA;Note that Blood Sugar is not part of FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#2339-0 code&#xA;  - no longer using LOINC#2345-7 with move to FHIR R4&#xA;- may have indication of fasting (LOINC#88365-2), or 2-hours after meal (LOINC#87422-2)&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of mg/dL&#xA;  - must be between 10 &lt; n &lt; 1000&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the Observation that declares how MHV could Create/Update in PGHD for blood sugar measurements. Indicate fasting status as a code.&#xA;&#xA;**Switched to this with the move to R4**&#xA;&#xA;Note that Blood Sugar is not part of FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have laboratory category&#xA;- must have LOINC#2339-0 code&#xA;  - no longer using LOINC#2345-7 with move to FHIR R4&#xA;- may have indication of fasting (LOINC#88365-2), or 2-hours after meal (LOINC#87422-2)&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of mg/dL&#xA;  - must be between 10 &lt;= n &lt;= 1000&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1203,7 +1211,7 @@
         <reference value="StructureDefinition/VA.MHV.bodyTemperature"/>
       </reference>
       <name value="VA MHV Body Temperature Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8310-5 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units from the MHV body temperatures (F and C)&#xA;  - must be value between 92 &lt; n &lt; 108 Fahrenheit&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8310-5 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units from the MHV body temperatures (F and C)&#xA;  - must be value between 92 &lt;= n &lt;= 108 Fahrenheit&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1213,7 +1221,7 @@
         <reference value="StructureDefinition/VA.MHV.bodyWeight"/>
       </reference>
       <name value="VA MHV BodyWeight Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#29463-7 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units from the MHV body weights (lbs and kg)&#xA;  - must be value 60 &lt; n &lt; 1000 lbs&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#29463-7 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units from the MHV body weights (lbs and kg)&#xA;  - must be value 60 &lt;= n &lt;= 1000 lbs&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1223,7 +1231,7 @@
         <reference value="StructureDefinition/VA.MHV.heartRate"/>
       </reference>
       <name value="VA MHV HeartRate Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8867-4 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of beats per minute&#xA;  - must be value 40 &lt; n &lt; 240&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8867-4 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of beats per minute&#xA;  - must be value 40 &lt;= n &lt;= 240&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1263,7 +1271,7 @@
         <reference value="StructureDefinition/VA.MHV.respirationRate"/>
       </reference>
       <name value="VA MHV Respiration Rate Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Respiration Rate&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#9279-1 code &#xA;  - FHIR Core, Argonaut and VCM use 9279-1&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of breaths per minute&#xA;  - typical is 12-16 breaths per minute&#xA;  - must be a value 6 &lt; n &lt; 40&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
+      <description value="A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Respiration Rate&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#9279-1 code &#xA;  - FHIR Core, Argonaut and VCM use 9279-1&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of breaths per minute&#xA;  - typical is 12-16 breaths per minute&#xA;  - must be a value 6 &lt;= n &lt;= 40&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

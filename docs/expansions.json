@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "677c1658-0e42-4872-bd12-ce2dd13767d0",
+  "id" : "09a46b04-37c4-4902-a4c3-5d1214593018",
   "meta" : {
-    "lastUpdated" : "2021-09-09T10:21:32.991-05:00"
+    "lastUpdated" : "2021-09-14T11:10:08.154-05:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,13 +12,13 @@
       "id" : "AllAppIdCodes",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-OnclC.html\">PGD apps v0.2.6-beta (CodeSystem)</a></li><li><a href=\"CodeSystem-CPM.html\">PGD other apps v0.2.6-beta (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---wiki.mobilehealth.va.gov-x-Onc1C-2ce6d9aa-c068-4809-8dda-662bcb16d09a\"> </a><a href=\"CodeSystem-OnclC.html#OnclC-2ce6d9aa-c068-4809-8dda-662bcb16d09a\">2ce6d9aa-c068-4809-8dda-662bcb16d09a</a></td><td>https://wiki.mobilehealth.va.gov/x/Onc1C</td><td>MyHealtheVet</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---wiki.mobilehealth.va.gov-display-PGDMS-Client-Provenance-Mapping-1e11b692-1898-4351-a7c5-428f61c91817-\"> </a><a href=\"CodeSystem-CPM.html#CPM-1e11b692-1898-4351-a7c5-428f61c91817.34\">1e11b692-1898-4351-a7c5-428f61c91817&quot;</a></td><td>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</td><td>MobileKidney</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-OnclC.html\">PGD apps v0.2.7-beta (CodeSystem)</a></li><li><a href=\"CodeSystem-CPM.html\">PGD other apps v0.2.7-beta (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---wiki.mobilehealth.va.gov-x-Onc1C-2ce6d9aa-c068-4809-8dda-662bcb16d09a\"> </a><a href=\"CodeSystem-OnclC.html#OnclC-2ce6d9aa-c068-4809-8dda-662bcb16d09a\">2ce6d9aa-c068-4809-8dda-662bcb16d09a</a></td><td>https://wiki.mobilehealth.va.gov/x/Onc1C</td><td>MyHealtheVet</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---wiki.mobilehealth.va.gov-display-PGDMS-Client-Provenance-Mapping-1e11b692-1898-4351-a7c5-428f61c91817-\"> </a><a href=\"CodeSystem-CPM.html#CPM-1e11b692-1898-4351-a7c5-428f61c91817.34\">1e11b692-1898-4351-a7c5-428f61c91817&quot;</a></td><td>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</td><td>MobileKidney</td><td/></tr></table></div>"
       },
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes",
-      "version" : "0.2.6-beta",
+      "version" : "0.2.7-beta",
       "name" : "AllAppIdCodes",
       "status" : "active",
-      "date" : "2021-09-09T10:21:32-05:00",
+      "date" : "2021-09-14T11:10:08-05:00",
       "contact" : [{
         "name" : "John Moehrke"
       }],
@@ -29,8 +29,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b9c929a7-60d4-44dd-9be1-86df37453764",
-        "timestamp" : "2021-09-09T10:23:04-05:00",
+        "identifier" : "urn:uuid:a663e914-8371-411d-ba02-198796e30ec9",
+        "timestamp" : "2021-09-14T11:12:44-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -38,11 +38,11 @@
         },
         {
           "name" : "version",
-          "valueUri" : "https://wiki.mobilehealth.va.gov/x/Onc1C|0.2.6-beta"
+          "valueUri" : "https://wiki.mobilehealth.va.gov/x/Onc1C|0.2.7-beta"
         },
         {
           "name" : "version",
-          "valueUri" : "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping|0.2.6-beta"
+          "valueUri" : "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping|0.2.7-beta"
         }],
         "contains" : [{
           "system" : "https://wiki.mobilehealth.va.gov/x/Onc1C",
@@ -63,19 +63,19 @@
       "language" : "en",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.70</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69000-8\"> </a><a href=\"http://details.loinc.org/LOINC/69000-8.html\">69000-8</a></td><td>Heart rate --sitting</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69001-6\"> </a><a href=\"http://details.loinc.org/LOINC/69001-6.html\">69001-6</a></td><td>Heart rate --standing</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-68999-2\"> </a><a href=\"http://details.loinc.org/LOINC/68999-2.html\">68999-2</a></td><td>Heart rate --supine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-40443-4\"> </a><a href=\"http://details.loinc.org/LOINC/40443-4.html\">40443-4</a></td><td>Heart rate --resting</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.71</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69000-8\"> </a><a href=\"http://details.loinc.org/LOINC/69000-8.html\">69000-8</a></td><td>Heart rate --sitting</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69001-6\"> </a><a href=\"http://details.loinc.org/LOINC/69001-6.html\">69001-6</a></td><td>Heart rate --standing</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-68999-2\"> </a><a href=\"http://details.loinc.org/LOINC/68999-2.html\">68999-2</a></td><td>Heart rate --supine</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-40443-4\"> </a><a href=\"http://details.loinc.org/LOINC/40443-4.html\">40443-4</a></td><td>Heart rate --resting</td><td/></tr></table></div>"
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:47167cd8-a88b-4a9d-9ca4-b17ffb9a68c9",
-        "timestamp" : "2021-08-26T17:18:14.513Z",
+        "identifier" : "urn:uuid:5a119ed4-e9c8-447d-b0ed-b4279be4264e",
+        "timestamp" : "2021-09-13T14:43:56.170Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
         {
           "name" : "version",
-          "valueString" : "http://loinc.org|2.70"
+          "valueString" : "http://loinc.org|2.71"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -101,18 +101,39 @@
     }
   },
   {
+    "fullUrl" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites",
     "resource" : {
       "resourceType" : "ValueSet",
-      "language" : "en",
+      "id" : "mhv-blood-sugar-methods-sites",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15220000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000\">15220000</a></td><td>Laboratory test</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-350810002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=350810002\">350810002</a></td><td>Lancet</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-263902000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=263902000\">263902000</a></td><td>Transcutaneous method</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261373009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261373009\">261373009</a></td><td>Implant technique</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15220000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15220000\">15220000</a></td><td>Laboratory test</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-350810002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=350810002\">350810002</a></td><td>Lancet</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-263902000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=263902000\">263902000</a></td><td>Transcutaneous method</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261373009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261373009\">261373009</a></td><td>Implant technique</td><td/></tr></table></div>"
       },
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites",
+      "version" : "0.2.7-beta",
+      "name" : "MHVbloodSugarMethods",
+      "title" : "The methods of measurement for blood sugar that MHV supports",
       "status" : "active",
+      "date" : "2021-09-14T11:10:08-05:00",
+      "contact" : [{
+        "name" : "John Moehrke"
+      }],
+      "description" : "These are the SNOMED body sites that MHV supports.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:d3b1bf34-a297-4953-b81e-1a35b8d769a9",
-        "timestamp" : "2021-09-07T15:01:58.806Z",
+        "identifier" : "urn:uuid:5543af7f-9476-430b-b626-f9bf6b724e31",
+        "timestamp" : "2021-09-14T11:12:44-05:00",
+        "total" : 4,
         "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
@@ -144,18 +165,39 @@
     }
   },
   {
+    "fullUrl" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites",
     "resource" : {
       "resourceType" : "ValueSet",
-      "language" : "en",
+      "id" : "mhv-body-temperature-sites",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422005\">422005</a></td><td>Inferior surface of tongue</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362732006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=362732006\">362732006</a></td><td>Entire axillary region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1910005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1910005\">1910005</a></td><td>Entire ear</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-21082005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21082005\">21082005</a></td><td>Entire mouth region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-181261002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=181261002\">181261002</a></td><td>Entire rectum</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-39937001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39937001\">39937001</a></td><td>Skin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362620003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=362620003\">362620003</a></td><td>Entire temporal region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89837001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89837001\">89837001</a></td><td>Urinary bladder</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422005\">422005</a></td><td>Inferior surface of tongue</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362732006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=362732006\">362732006</a></td><td>Entire axillary region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1910005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1910005\">1910005</a></td><td>Entire ear</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-21082005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21082005\">21082005</a></td><td>Entire mouth region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-181261002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=181261002\">181261002</a></td><td>Entire rectum</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-39937001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39937001\">39937001</a></td><td>Skin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362620003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=362620003\">362620003</a></td><td>Entire temporal region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89837001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89837001\">89837001</a></td><td>Urinary bladder</td><td/></tr></table></div>"
       },
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites",
+      "version" : "0.2.7-beta",
+      "name" : "MHVbodyTemperatureSites",
+      "title" : "The body temperature measurement sites that MHV supports",
       "status" : "active",
+      "date" : "2021-09-14T11:10:08-05:00",
+      "contact" : [{
+        "name" : "John Moehrke"
+      }],
+      "description" : "These are the SNOMED body sites that MHV supports.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:a77b5168-1fb5-40b5-bd50-7f65c0dd560c",
-        "timestamp" : "2021-09-07T15:01:59.416Z",
+        "identifier" : "urn:uuid:4d71ebdf-9188-433d-b13f-f1041cdc1aac",
+        "timestamp" : "2021-09-14T11:12:45-05:00",
+        "total" : 8,
         "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
@@ -207,18 +249,39 @@
     }
   },
   {
+    "fullUrl" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures",
     "resource" : {
       "resourceType" : "ValueSet",
-      "language" : "en",
+      "id" : "mhv-body-temperatures",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on UCUM version 2.0.1</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ucum.html\"><code>http://unitsofmeasure.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org--degF-\"> </a>[degF]</td><td>[degF]</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org-Cel\"> </a>Cel</td><td>Cel</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on UCUM version 2.0.1</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ucum.html\"><code>http://unitsofmeasure.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org--degF-\"> </a>[degF]</td><td>[degF]</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org-Cel\"> </a>Cel</td><td>Cel</td><td/></tr></table></div>"
       },
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures",
+      "version" : "0.2.7-beta",
+      "name" : "MHVbodyTemperatures",
+      "title" : "The body temperature measurement types that MHV supports",
       "status" : "active",
+      "date" : "2021-09-14T11:10:08-05:00",
+      "contact" : [{
+        "name" : "John Moehrke"
+      }],
+      "description" : "These are the UCUM types that MHV supports.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:15748320-c235-496d-acda-77bb4e8bb902",
-        "timestamp" : "2021-09-07T15:01:59.853Z",
+        "identifier" : "urn:uuid:e1c9db00-c521-4540-8cd4-c04dfc500e2c",
+        "timestamp" : "2021-09-14T11:12:45-05:00",
+        "total" : 2,
         "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
@@ -240,18 +303,39 @@
     }
   },
   {
+    "fullUrl" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights",
     "resource" : {
       "resourceType" : "ValueSet",
-      "language" : "en",
+      "id" : "mhv-body-weights",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on UCUM version 2.0.1</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ucum.html\"><code>http://unitsofmeasure.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org--lb-av-\"> </a>[lb_av]</td><td>[lb_av]</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org-kg\"> </a>kg</td><td>kg</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on UCUM version 2.0.1</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ucum.html\"><code>http://unitsofmeasure.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org--lb-av-\"> </a>[lb_av]</td><td>[lb_av]</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org-kg\"> </a>kg</td><td>kg</td><td/></tr></table></div>"
       },
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights",
+      "version" : "0.2.7-beta",
+      "name" : "MHVbodyWeights",
+      "title" : "The body weight measurement types that MHV supports",
       "status" : "active",
+      "date" : "2021-09-14T11:10:08-05:00",
+      "contact" : [{
+        "name" : "John Moehrke"
+      }],
+      "description" : "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:a8d0549d-83e1-413c-92ee-ae52a3bc23aa",
-        "timestamp" : "2021-09-07T15:02:00.244Z",
+        "identifier" : "urn:uuid:fcb5524e-c90d-4080-ae27-df2e4df54dfa",
+        "timestamp" : "2021-09-14T11:12:46-05:00",
+        "total" : 2,
         "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
@@ -273,18 +357,39 @@
     }
   },
   {
+    "fullUrl" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
     "resource" : {
       "resourceType" : "ValueSet",
-      "language" : "en",
+      "id" : "mhv-medication-routes",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26643006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26643006\">26643006</a></td><td>Oral route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-37161004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=37161004\">37161004</a></td><td>Per rectum</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-45890007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45890007\">45890007</a></td><td>Transdermal route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-6064005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6064005\">6064005</a></td><td>Topical route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-78421000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=78421000\">78421000</a></td><td>Intramuscular route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47625008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47625008\">47625008</a></td><td>Intravenous route</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26643006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26643006\">26643006</a></td><td>Oral route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-37161004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=37161004\">37161004</a></td><td>Per rectum</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-45890007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45890007\">45890007</a></td><td>Transdermal route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-6064005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6064005\">6064005</a></td><td>Topical route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-78421000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=78421000\">78421000</a></td><td>Intramuscular route</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47625008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47625008\">47625008</a></td><td>Intravenous route</td><td/></tr></table></div>"
       },
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
+      "version" : "0.2.7-beta",
+      "name" : "MHVmedicationRoutes",
+      "title" : "The routes of medication that MHV supports",
       "status" : "active",
+      "date" : "2021-09-14T11:10:08-05:00",
+      "contact" : [{
+        "name" : "John Moehrke"
+      }],
+      "description" : "These are the SNOMED-CT routes for medications that MHV supports.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:94fd4438-fc0c-4442-8ce4-43920998f280",
-        "timestamp" : "2021-09-07T15:02:00.697Z",
+        "identifier" : "urn:uuid:0218f3ad-c353-4e85-9f65-96caddfcec65",
+        "timestamp" : "2021-09-14T11:12:47-05:00",
+        "total" : 6,
         "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },

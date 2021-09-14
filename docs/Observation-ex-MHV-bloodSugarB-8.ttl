@@ -24,7 +24,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2339-0}\">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2020 10:50:50 PM</p><p><b>value</b>: 100000 mg/dL</p><p><b>note</b>: nothing but sugar, unknown eating, by implant</p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 261373009}\">Implant technique</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 2339-0}\">Glucose [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith </a></p><p><b>effective</b>: Dec 4, 2020 10:50:50 PM</p><p><b>value</b>: 100000 mg/dL</p><p><b>note</b>: nothing but sugar, unknown eating, by implant</p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 261373009}\">Implant technique</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -32,7 +32,7 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
-       fhir:Coding.code [ fhir:value "vital-signs" ]
+       fhir:Coding.code [ fhir:value "laboratory" ]
      ]
   ];
   fhir:Observation.code [
@@ -40,7 +40,8 @@
        fhir:index 0;
        a loinc:2339-0;
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "2339-0" ]
+       fhir:Coding.code [ fhir:value "2339-0" ];
+       fhir:Coding.display [ fhir:value "Glucose [Mass/volume] in Blood" ]
      ]
   ];
   fhir:Observation.subject [

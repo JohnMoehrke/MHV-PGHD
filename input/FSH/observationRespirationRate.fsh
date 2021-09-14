@@ -16,7 +16,7 @@ This profile is consistent with FHIR core Vital-Signs for Respiration Rate
 - must have effectiveDateTime
 - must have valueQuantity with units only of breaths per minute
   - typical is 12-16 breaths per minute
-  - must be a value 6 < n < 40
+  - must be a value 6 <= n <= 40
 - must have status at final or preliminary
 - must point at the patient
 - may have a note (comment)

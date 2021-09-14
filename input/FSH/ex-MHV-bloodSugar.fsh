@@ -5,8 +5,8 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
@@ -20,9 +20,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[fasting] = LOINC#88365-2
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[fasting] = LOINC#88365-2 "Glucose [Mass/volume] in Blood --pre-meal"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
@@ -37,9 +37,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[afterMeal] = LOINC#87422-2
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[afterMeal] = LOINC#87422-2 "Glucose [Mass/volume] in Blood --post meal"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
@@ -54,8 +54,8 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
@@ -70,8 +70,8 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
@@ -86,8 +86,8 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
@@ -102,8 +102,8 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
@@ -118,8 +118,8 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 0 'mg/dL' 
@@ -134,8 +134,8 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 100000 'mg/dL' 
@@ -150,8 +150,8 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
@@ -166,8 +166,8 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
@@ -182,8 +182,8 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
@@ -198,8 +198,8 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * code.coding[1] = LOINC#2345-7
 * code.coding[2] = LOINC#1556-0
 * subject = Reference(Patient/ex-patient)
@@ -216,8 +216,8 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * code.coding[1] = LOINC#2345-7
 * code.coding[2] = LOINC#1556-0
 * subject = Reference(Patient/ex-patient)
@@ -234,8 +234,8 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 //* code.coding[1] = LOINC#2345-7
 * code.coding[1] = LOINC#1556-0
 * subject = Reference(Patient/ex-patient)
@@ -252,8 +252,8 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+//* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * code.coding = LOINC#2345-7
 * code.coding[1] = LOINC#1556-0
 * subject = Reference(Patient/ex-patient)
@@ -270,8 +270,8 @@ Description:      "holding a value that is too low (1) value"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 1 'mg/dL' 
@@ -284,10 +284,24 @@ Description:      "holding a value that is too high (1001) value"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2020-12-04T23:50:50-05:00
 * valueQuantity = 1001 'mg/dL' 
 * note.text = "a lot high, no indicated method, no indicated eating"
+
+Instance:   ex-MHV-bloodSugarB-106109
+InstanceOf: Observation
+Title: "Example of a non-MHV blood sugar R4 observation, vital-sign"
+Description:      "holding a value that is too high (1001) value"
+//* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* subject = Reference(Patient/ex-patient)
+* effectiveDateTime = 2020-12-04T23:50:50-05:00
+* valueQuantity = 91 'mg/dL' 
+* note.text = "91, no indicated method, no indicated eating, but is a vital-sign rather than laboratory"
 

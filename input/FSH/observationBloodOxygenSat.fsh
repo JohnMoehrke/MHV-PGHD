@@ -17,7 +17,7 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
   - FHIR Core R4 also adds 2708-6
 - must have effectiveDateTime
 - must have a valueQuantity with UCUM '%' units
-  * must be between 50% < n < 100%
+  * must be between 50% <= n <= 100%
 - must have status at final or preliminary
 - must point at the patient
 - may have a hasMember of a blood-pressure and/or respiration-rate

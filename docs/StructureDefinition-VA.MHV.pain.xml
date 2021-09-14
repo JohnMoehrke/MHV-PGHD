@@ -61,7 +61,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"/>
-  <version value="0.2.6-beta"/>
+  <version value="0.2.7-beta"/>
   <name value="MHVpain"/>
   <title value="VA MHV Pain Observation"/>
   <status value="active"/>

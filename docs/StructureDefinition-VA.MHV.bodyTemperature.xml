@@ -45,7 +45,7 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
-  <version value="0.2.6-beta"/>
+  <version value="0.2.7-beta"/>
   <name value="MHVbodyTemperature"/>
   <title value="VA MHV Body Temperature Observation"/>
   <status value="active"/>
@@ -54,7 +54,7 @@
   <contact>
     <name value="John Moehrke"/>
   </contact>
-  <description value="A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8310-5 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units from the MHV body temperatures (F and C)&#xA;  - must be value between 92 &lt; n &lt; 108 Fahrenheit&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+  <description value="A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8310-5 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units from the MHV body temperatures (F and C)&#xA;  - must be value between 92 &lt;= n &lt;= 108 Fahrenheit&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

@@ -1,0 +1,274 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "837c030c-023c-4030-9e37-cb8b344c9036",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-01-19T20:38:09.381+00:00",
+    "source": "#407c7b7e575b2b51",
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "a0e116eb-faa1-4703-aafe-1a270128607a",
+        "display": "Health Hub"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Definition</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Answer</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/> 837c030c-023c-4030-9e37-cb8b344c9036</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">QuestionnaireResponse</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> 0</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA10427-5\">LOINC</a> LA10427-5: Yes - Identical</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> 1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA32-8\">LOINC</a> LA32-8: No</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> 2</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> 3</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "questionnaire": "https://smhd2.mapsandbox.net/smart-pgd-fhir/v2/Questionnaire/40d9ad61-e6f1-423e-ab19-d710e7bb649f",
+  "status": "in-progress",
+  "subject": {
+    "reference": "FamilyMemberHistory/12db5508-b375-49a1-a8e1-558ad8448600"
+  },
+  "author": {
+    "reference": "Patient/b694c410-9d06-4dd8-bb32-760c4275a3e4"
+  },
+  "item": [
+    {
+      "linkId": "0",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA10427-5",
+            "display": "Yes - Identical",
+            "userSelected": true
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "1",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA32-8",
+            "display": "No",
+            "userSelected": true
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "1002-5",
+            "display": "American Indian or Alaska Native",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2029-7",
+            "display": "Asian Indian",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2034-7",
+            "display": "Chinese",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2036-2",
+            "display": "Filipino",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2039-6",
+            "display": "Japanese",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2040-4",
+            "display": "Korean",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2047-9",
+            "display": "Vietnamese",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2028-9",
+            "display": "Unknown Asian",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "315281001",
+            "display": "Other Asian",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2054-5",
+            "display": "Black or African-American",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2088-3",
+            "display": "Chamorro",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2087-5",
+            "display": "Guamanian",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2079-2",
+            "display": "Native Hawaiian",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2080-0",
+            "display": "Samoan",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2076-8",
+            "display": "Unknown South Pacific Islander",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://terminology.hl7.org/3.0.0/CodeSystem-v3-Race.html",
+            "code": "2106-3",
+            "display": "White",
+            "userSelected": true
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+            "code": "2135-2",
+            "display": "Hispanic",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+            "code": "2155-0",
+            "display": "Central American",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+            "code": "2182-4",
+            "display": "Cuban",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+            "code": "2184-0",
+            "display": "Dominican",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+            "code": "2148-5",
+            "display": "Mexican",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26078-8",
+            "display": "Other Hispanic",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+            "code": "2180-8",
+            "display": "Puerto Rican",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+            "code": "2165-9",
+            "display": "South American",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "81706006",
+            "display": "Ashkenazi Jewish",
+            "userSelected": true
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino",
+            "userSelected": true
+          }
+        }
+      ]
+    }
+  ]
+}

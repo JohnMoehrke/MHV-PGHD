@@ -1,0 +1,1293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>VA.MHV.EXAMPLE\ - XML Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/vha-ig-template.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.87"}
+    h3,h4,h5,h6{--heading-prefix:"5.87"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav"> 
+     <a no-external="true" id="hl7-logo" href="http://example.org/index.html">
+     <img src="assets/images/va-header-logo.png" alt="VA Organization" height="50"/>
+     </a>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.7-beta - CI Build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="background.html">Background</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="searchform.html">Search</a></li>
+</ul>      
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b></b></li>
+
+          <span style="float:right;">
+
+            <a href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.json.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.7-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">:  - XML Representation</h2>
+
+<p><a href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.xml" no-download="true">Raw xml</a> | <a download="null" href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.xml">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml"><code>
+
+&lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory">FamilyMemberHistory</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="12db5508-b375-49a1-a8e1-558ad8448600"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="2"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>="2022-01-19T20:38:09.017+00:00"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="#193abb1ecee7a597"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.tag">tag</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://wiki.mobilehealth.va.gov/x/Onc1C"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="a0e116eb-faa1-4703-aafe-1a270128607a"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Health Hub"/&gt;
+    &lt;/tag&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource "12db5508-b375-49a1-a8e1-558ad8448600" Version "2" Updated "2022-01-19T14:38:09.017-06:00" &lt;/p&gt;&lt;p style="margin-bottom: 0px"&gt;Information Source: #193abb1ecee7a597!&lt;/p&gt;&lt;p style="margin-bottom: 0px"&gt;Tag: &lt;span title="{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}"&gt;https://wiki.mobilehealth.va.gov/x/Onc1C&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: partial&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href="Patient/b694c410-9d06-4dd8-bb32-760c4275a3e4"&gt;Patient/b694c410-9d06-4dd8-bb32-760c4275a3e4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Brother #1&lt;/p&gt;&lt;p&gt;&lt;b&gt;relationship&lt;/b&gt;: Brother &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-RoleCode.html"&gt;RoleCode&lt;/a&gt;#BRO)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sex&lt;/b&gt;: Male &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html"&gt;AdministrativeGender&lt;/a&gt;#male)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;age&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Bone Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#269466003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Newborn&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Brain Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#1000000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Childhood&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Breast Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#254837009)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Infancy&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ---Breast Cancer (triple negative) &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#706970001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Colon Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#363406005)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Colorectal Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#1000001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Esophageal Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#363402007)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Familia adnenomatous polyposis (FAP) &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#72900001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Gastric Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#363349007)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Lynch Syndrome/Hereditary non-polyposis colorectal cancer (HNPCC) &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#315058005)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Kidney Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#363518003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Leukemia &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#93143009)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Liver Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#93870000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Lung Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#363358000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Muscle Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#363495004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Other Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#OTCANCER)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Ovarian Cancer/Fallopian Tube Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#363443007)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Pancreatic Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#363418001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ProstateCancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#399068003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Rectal Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#254582000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Skin Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#372130007)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Thyroid Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#363478007)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Unknown Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#UNCANCER)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Infancy&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Uterine Cancer &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#371973000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Pre-Birth&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Clotting Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#4779008)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Infancy&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Deep Vein Thrombosis (DVT) &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#128053003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Pulmonary Embolism &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#59282003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Unknown Clotting Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#UNCLODIS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Dementia/Alzheimers &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#26929004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Newborn&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diabetes &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#73211009)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Gestational Diabetes &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#11687002)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Impaired Fasting Glucose &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#82141001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Impaired Glucose Tolerance &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#9414007)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Insulin Resistance &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#32284009)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Maturity Onset Diabetes Mellitus in Young (MODY) &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#472972006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Infancy&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Pre-Diabetes &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#PREDIABE)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Type 1 Diabetes &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#46635009)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Type 2 Diabetes &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#44054006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Unknown Diabetes &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#UNDIABET)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ColonPolyp &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#68496003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Newborn&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Crohn's Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#34000006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Childhood&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Familia Adnenomatous Polyposis (FAP) &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#72900001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Gastrointestinal Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#119292006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Irritable Bowel Syndrome &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#10743008)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Ulcerative Colitis &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#64766004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Childhood&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Unknown Gastrointestinal Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#UNGASDIS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Angina &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#194828000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Coronary Artery Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#53741008)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Heart Attack &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#22298006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Heart Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#56265001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Familial Hypercholesterolemia &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#398036000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Newborn&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Unknown Heart Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#UNHEADIS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Infancy&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: High Cholesterol &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#55822004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Childhood&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: High Cholesterol Familia Hypercholesterolemia &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#398036000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Hypertension &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#38341003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Cystic Kidney Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#236439005)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diabetic Kidney Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#127013003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 40–49 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Kidney Disease Present from Birth &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#82525005)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Unknown&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Kidney Nephrosis &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#90708001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Newborn&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Nephritis &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#52845002)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Other Kidney Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#OTKIDDIS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Infancy&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Unknown Kidney Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#UNKIDDIS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Asthma &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#195967001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: COPD &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#13645005)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Chronic Bronchitis &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#63480004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Chronic Lower Respiratory Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#196229000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Emphysema &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#87433001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Influenza/Pneumonia &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#195878008)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Lung Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#19829001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Unknown Lung Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#UNLUNDIS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Osteoporosis &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#64859006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Anxiety &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#197480006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Newborn&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Attention Deficit Disorder-Hyperactivity &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#406506008)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Autism &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#408856003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Bipolar Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#13746004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Dementia &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#52448006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Infancy&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Depression &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#35489007)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Pre-Birth&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Eating Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#72366004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Pre-Birth&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Mental Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#74732009)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Childhood&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Obsessive Compulsive Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#191736004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Childhood&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Panic Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#371631005)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Adolescence&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Personality Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#33449004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Post Traumatic Stress Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#47505003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Schizophrenia &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#58214004)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Childhood&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Social Phobia &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#25501002)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Unknown Psychological Disorder &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#UNPSYDIS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Septicemia &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#105592009)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Stroke &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#116288000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Sudden Infant Death &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#51178009)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 30–39 years&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Unknown Disease &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="https://browser.ihtsdotools.org/"&gt;SNOMED CT&lt;/a&gt;#315645005)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 20–29 years&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="partial"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.patient">patient</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Patient/b694c410-9d06-4dd8-bb32-760c4275a3e4"/&gt;
+  &lt;/patient&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Brother #1"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.relationship">relationship</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="BRO"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Brother"/&gt;
+    &lt;/coding&gt;
+  &lt;/relationship&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.sex">sex</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://hl7.org/fhir/administrative-gender"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="male"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Male"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Male"/&gt;
+  &lt;/sex&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.age[x]">ageString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="269466003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Bone Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Newborn"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="1000000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Brain Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Childhood"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="254837009"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Breast Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Infancy"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="706970001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="---Breast Cancer (triple negative)"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="363406005"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Colon Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="1000001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Colorectal Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="363402007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Esophageal Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="72900001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Familia adnenomatous polyposis (FAP)"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="363349007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Gastric Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="315058005"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Lynch Syndrome/Hereditary non-polyposis colorectal cancer (HNPCC)"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="363518003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Kidney Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="93143009"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Leukemia"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="93870000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Liver Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="363358000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Lung Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="363495004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Muscle Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="OTCANCER"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Other Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="363443007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Ovarian Cancer/Fallopian Tube Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="363418001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pancreatic Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="399068003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ProstateCancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="254582000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Rectal Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="372130007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Skin Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="363478007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Thyroid Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="UNCANCER"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Infancy"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="371973000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Uterine Cancer"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pre-Birth"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="4779008"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Clotting Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Infancy"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="128053003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Deep Vein Thrombosis (DVT)"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="59282003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pulmonary Embolism"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="UNCLODIS"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown Clotting Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="26929004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Dementia/Alzheimers"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Newborn"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="73211009"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Diabetes"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="11687002"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Gestational Diabetes"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="82141001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Impaired Fasting Glucose"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="9414007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Impaired Glucose Tolerance"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="32284009"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Insulin Resistance"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="472972006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maturity Onset Diabetes Mellitus in Young (MODY)"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Infancy"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="PREDIABE"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pre-Diabetes"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="46635009"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Type 1 Diabetes"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="44054006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Type 2 Diabetes"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="UNDIABET"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown Diabetes"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="68496003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ColonPolyp"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Newborn"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="34000006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Crohn&amp;#39;s Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Childhood"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="72900001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Familia Adnenomatous Polyposis (FAP)"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="119292006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Gastrointestinal Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="10743008"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Irritable Bowel Syndrome"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="64766004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Ulcerative Colitis"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Childhood"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="UNGASDIS"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown Gastrointestinal Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="194828000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Angina"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="53741008"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Coronary Artery Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="22298006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Heart Attack"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="56265001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Heart Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="398036000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Familial Hypercholesterolemia"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Newborn"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="UNHEADIS"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown Heart Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Infancy"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="55822004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="High Cholesterol"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Childhood"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="398036000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="High Cholesterol Familia Hypercholesterolemia"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="38341003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Hypertension"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="236439005"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Cystic Kidney Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="127013003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Diabetic Kidney Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="40–49 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="82525005"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Kidney Disease Present from Birth"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="90708001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Kidney Nephrosis"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Newborn"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="52845002"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Nephritis"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="OTKIDDIS"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Other Kidney Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Infancy"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="UNKIDDIS"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown Kidney Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="195967001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Asthma"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="13645005"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="COPD"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="63480004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Chronic Bronchitis"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="196229000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Chronic Lower Respiratory Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="87433001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Emphysema"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="195878008"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Influenza/Pneumonia"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="19829001"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Lung Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="UNLUNDIS"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown Lung Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="64859006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Osteoporosis"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="197480006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Anxiety"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Newborn"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="406506008"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Attention Deficit Disorder-Hyperactivity"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="408856003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Autism"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="13746004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Bipolar Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="52448006"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Dementia"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Infancy"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="35489007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Depression"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pre-Birth"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="72366004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Eating Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Pre-Birth"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="74732009"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Mental Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Childhood"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="191736004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Obsessive Compulsive Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Childhood"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="371631005"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Panic Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Adolescence"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="33449004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Personality Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="47505003"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Post Traumatic Stress Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="58214004"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Schizophrenia"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Childhood"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="25501002"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Social Phobia"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="UNPSYDIS"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown Psychological Disorder"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="105592009"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Septicemia"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="116288000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Stroke"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="51178009"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Sudden Infant Death"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="30–39 years"/&gt;
+  &lt;/condition&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition">condition</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="315645005"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Unknown Disease"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.userSelected">userSelected</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/familymemberhistory.html#FamilyMemberHistory.condition.onset[x]">onsetString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="20–29 years"/&gt;
+  &lt;/condition&gt;
+&lt;/FamilyMemberHistory&gt;</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.json.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p><a name="l4009">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 9, 2022 10:24-0600">2022-02-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" href="../issues">Report an issue</a>
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  
+
+
+</div></body></html>

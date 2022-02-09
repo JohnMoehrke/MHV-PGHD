@@ -3,7 +3,38 @@
   "version": "0.2.7-beta",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted",
+      "title": "adopted indication",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity",
+      "title": "ethnicity",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth",
+      "title": "multi-birth indication",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race",
+      "title": "race",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    }
+  ],
   "profiles": {
     "Bundle": [
       {
@@ -31,6 +62,12 @@
       {
         "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate",
         "title": "VA MHV Respiration Rate Observation"
+      }
+    ],
+    "FamilyMemberHistory": [
+      {
+        "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory",
+        "title": "VA MHV FamilyMemberHistory"
       }
     ],
     "Immunization": [
@@ -88,6 +125,18 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted": [
+      "FamilyMemberHistory"
+    ],
+    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity": [
+      "FamilyMemberHistory"
+    ],
+    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth": [
+      "FamilyMemberHistory"
+    ],
+    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race": [
+      "FamilyMemberHistory"
     ]
   }
 }

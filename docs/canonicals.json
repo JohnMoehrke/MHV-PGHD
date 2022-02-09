@@ -7,6 +7,34 @@
     "name": "MHVtoPGHD_Example"
   },
   {
+    "id": "FM-adopted",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted",
+    "version": "0.2.7-beta",
+    "name": "adopted"
+  },
+  {
+    "id": "FM-ethnicity",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity",
+    "version": "0.2.7-beta",
+    "name": "ethnicity"
+  },
+  {
+    "id": "FM-multiBirth",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth",
+    "version": "0.2.7-beta",
+    "name": "multiBirth"
+  },
+  {
+    "id": "FM-race",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race",
+    "version": "0.2.7-beta",
+    "name": "race"
+  },
+  {
     "id": "VA.MHV.BlueBundle",
     "type": "StructureDefinition",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle",
@@ -68,6 +96,13 @@
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight",
     "version": "0.2.7-beta",
     "name": "MHVbodyWeight"
+  },
+  {
+    "id": "VA.MHV.familymemberhistory",
+    "type": "StructureDefinition",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory",
+    "version": "0.2.7-beta",
+    "name": "MHVfamilymemberhistory"
   },
   {
     "id": "VA.MHV.heartRate",

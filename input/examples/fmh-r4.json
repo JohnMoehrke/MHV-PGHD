@@ -1,0 +1,1213 @@
+{
+  "resourceType": "FamilyMemberHistory",
+  "id": "12db5508-b375-49a1-a8e1-558ad8448600",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2022-01-19T20:38:09.017+00:00",
+    "source": "#193abb1ecee7a597",
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "a0e116eb-faa1-4703-aafe-1a270128607a",
+        "display": "Health Hub"
+      }
+    ]
+  },
+  "status": "partial",
+  "patient": {
+    "reference": "Patient/b694c410-9d06-4dd8-bb32-760c4275a3e4"
+  },
+  "name": "Brother #1",
+  "relationship": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "code": "BRO",
+        "display": "Brother"
+      }
+    ]
+  },
+  "sex": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/administrative-gender",
+        "code": "male",
+        "display": "Male",
+        "userSelected": true
+      }
+    ],
+    "text": "Male"
+  },
+  "ageString": "30–39 years",
+  "condition": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "269466003",
+            "display": "Bone Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Newborn"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1000000",
+            "display": "Brain Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Childhood"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "254837009",
+            "display": "Breast Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Infancy"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "706970001",
+            "display": "---Breast Cancer (triple negative)",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "363406005",
+            "display": "Colon Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1000001",
+            "display": "Colorectal Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "363402007",
+            "display": "Esophageal Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "72900001",
+            "display": "Familia adnenomatous polyposis (FAP)",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "363349007",
+            "display": "Gastric Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "315058005",
+            "display": "Lynch Syndrome/Hereditary non-polyposis colorectal cancer (HNPCC)",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "363518003",
+            "display": "Kidney Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "93143009",
+            "display": "Leukemia",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "93870000",
+            "display": "Liver Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "363358000",
+            "display": "Lung Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "363495004",
+            "display": "Muscle Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "OTCANCER",
+            "display": "Other Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "363443007",
+            "display": "Ovarian Cancer/Fallopian Tube Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "363418001",
+            "display": "Pancreatic Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "399068003",
+            "display": "ProstateCancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "254582000",
+            "display": "Rectal Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "372130007",
+            "display": "Skin Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "363478007",
+            "display": "Thyroid Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "UNCANCER",
+            "display": "Unknown Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Infancy"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "371973000",
+            "display": "Uterine Cancer",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Pre-Birth"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "4779008",
+            "display": "Clotting Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Infancy"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "128053003",
+            "display": "Deep Vein Thrombosis (DVT)",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "59282003",
+            "display": "Pulmonary Embolism",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "UNCLODIS",
+            "display": "Unknown Clotting Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26929004",
+            "display": "Dementia/Alzheimers",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Newborn"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "73211009",
+            "display": "Diabetes",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "11687002",
+            "display": "Gestational Diabetes",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "82141001",
+            "display": "Impaired Fasting Glucose",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "9414007",
+            "display": "Impaired Glucose Tolerance",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "32284009",
+            "display": "Insulin Resistance",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "472972006",
+            "display": "Maturity Onset Diabetes Mellitus in Young (MODY)",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Infancy"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "PREDIABE",
+            "display": "Pre-Diabetes",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "46635009",
+            "display": "Type 1 Diabetes",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "44054006",
+            "display": "Type 2 Diabetes",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "UNDIABET",
+            "display": "Unknown Diabetes",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "68496003",
+            "display": "ColonPolyp",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Newborn"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "34000006",
+            "display": "Crohn's Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Childhood"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "72900001",
+            "display": "Familia Adnenomatous Polyposis (FAP)",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "119292006",
+            "display": "Gastrointestinal Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "10743008",
+            "display": "Irritable Bowel Syndrome",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "64766004",
+            "display": "Ulcerative Colitis",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Childhood"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "UNGASDIS",
+            "display": "Unknown Gastrointestinal Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "194828000",
+            "display": "Angina",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "53741008",
+            "display": "Coronary Artery Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "22298006",
+            "display": "Heart Attack",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "56265001",
+            "display": "Heart Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "398036000",
+            "display": "Familial Hypercholesterolemia",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Newborn"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "UNHEADIS",
+            "display": "Unknown Heart Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Infancy"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "55822004",
+            "display": "High Cholesterol",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Childhood"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "398036000",
+            "display": "High Cholesterol Familia Hypercholesterolemia",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "38341003",
+            "display": "Hypertension",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "236439005",
+            "display": "Cystic Kidney Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "127013003",
+            "display": "Diabetic Kidney Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "40–49 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "82525005",
+            "display": "Kidney Disease Present from Birth",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Unknown"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "90708001",
+            "display": "Kidney Nephrosis",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Newborn"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "52845002",
+            "display": "Nephritis",
+            "userSelected": true
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "OTKIDDIS",
+            "display": "Other Kidney Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Infancy"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "UNKIDDIS",
+            "display": "Unknown Kidney Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "195967001",
+            "display": "Asthma",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "13645005",
+            "display": "COPD",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "63480004",
+            "display": "Chronic Bronchitis",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "196229000",
+            "display": "Chronic Lower Respiratory Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "87433001",
+            "display": "Emphysema",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "195878008",
+            "display": "Influenza/Pneumonia",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "19829001",
+            "display": "Lung Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "UNLUNDIS",
+            "display": "Unknown Lung Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "64859006",
+            "display": "Osteoporosis",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "197480006",
+            "display": "Anxiety",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Newborn"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "406506008",
+            "display": "Attention Deficit Disorder-Hyperactivity",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "408856003",
+            "display": "Autism",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "13746004",
+            "display": "Bipolar Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "52448006",
+            "display": "Dementia",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Infancy"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "35489007",
+            "display": "Depression",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Pre-Birth"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "72366004",
+            "display": "Eating Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Pre-Birth"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "74732009",
+            "display": "Mental Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Childhood"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "191736004",
+            "display": "Obsessive Compulsive Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Childhood"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "371631005",
+            "display": "Panic Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Adolescence"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "33449004",
+            "display": "Personality Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "47505003",
+            "display": "Post Traumatic Stress Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "58214004",
+            "display": "Schizophrenia",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "Childhood"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "25501002",
+            "display": "Social Phobia",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "UNPSYDIS",
+            "display": "Unknown Psychological Disorder",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "105592009",
+            "display": "Septicemia",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "116288000",
+            "display": "Stroke",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "51178009",
+            "display": "Sudden Infant Death",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "30–39 years"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "315645005",
+            "display": "Unknown Disease",
+            "userSelected": true
+          }
+        ]
+      },
+      "onsetString": "20–29 years"
+    }
+  ]
+}

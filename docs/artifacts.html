@@ -132,16 +132,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Terminology: Value Sets</a>
+         <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Terminology: Code Systems</a>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#4">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#5">Other</a>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#6">Other</a>
       </li>
    </ul>
 </div>
@@ -412,6 +415,57 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-VA.MHV.familymemberhistory.html" title="StructureDefinition/VA.MHV.familymemberhistory">VA MHV FamilyMemberHistory</a>
+               </td>
+               <td>
+<p>A profile on the FamilyMemberHistory that declares how MHV will Create/Update in PGHD for an family member history record.</p>
+
+<p><strong>Proposed mapping not yet approved for implementation</strong></p>
+
+<p>Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.</p>
+
+<ul>
+  <li>For each relative of the Patient there will be a FamilyMemberHistory instance
+    <ul>
+      <li>Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.</li>
+      <li>Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned</li>
+      <li>Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete</li>
+      <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
+    </ul>
+  </li>
+  <li>must be marked with MHV app tag</li>
+  <li>must point at the patient</li>
+  <li>must indicate the date this record is being recorded into PGHD</li>
+  <li>should have a name of the family member</li>
+  <li>should have the relationship this family member has with the Patient</li>
+  <li>should have the sex/gender (administrative gender) of this family member</li>
+  <li>should have the age or date-of-birth
+    <ul>
+      <li>should use a valueSet for date ranges on decades</li>
+      <li>indicate estimatedAge if the age is estimated</li>
+    </ul>
+  </li>
+  <li>should have indication when patient has died with the age of death or date
+    <ul>
+      <li>should use a valueSet for date ranges on decades</li>
+    </ul>
+  </li>
+  <li>extension indication of twin (multiple-birth) using * extension indicate race</li>
+  <li>extension indicate ethnicity</li>
+  <li>extension indicated if adopted</li>
+  <li>should have 0..* conditions
+    <ul>
+      <li>condition.code should be from a given valueSet</li>
+      <li>condition.outcome should indicate the outcome of this condition</li>
+      <li>condition.onset[x] should indicate when this condition first manifested</li>
+      <li>condition.note may include a freetext note</li>
+    </ul>
+  </li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-VA.MHV.heartRate.html" title="StructureDefinition/VA.MHV.heartRate">VA MHV HeartRate Observation</a>
                </td>
                <td>
@@ -560,6 +614,54 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       </table>
    </p>
    <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-FM-adopted.html" title="StructureDefinition/FM-adopted">adopted indication</a>
+               </td>
+               <td>
+<p>When this family member is adopted.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-FM-ethnicity.html" title="StructureDefinition/FM-ethnicity">ethnicity</a>
+               </td>
+               <td>
+<p>What is the ethnicity of this family member</p>
+
+<p>Note would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory <a href="https://jira.hl7.org/browse/FHIR-35997">jira issue</a></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-FM-multiBirth.html" title="StructureDefinition/FM-multiBirth">multi-birth indication</a>
+               </td>
+               <td>
+<p>When this family member is known to be part of a multi-birth, indicate how many siblings.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-FM-race.html" title="StructureDefinition/FM-race">race</a>
+               </td>
+               <td>
+<p>What is the race of this family member</p>
+
+<p>Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory <a href="https://jira.hl7.org/browse/FHIR-35998">Jira issue</a></p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -627,7 +729,7 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -655,7 +757,7 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -952,7 +1054,7 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -961,6 +1063,16 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-837c030c-023c-4030-9e37-cb8b344c9036.html" title="QuestionnaireResponse/837c030c-023c-4030-9e37-cb8b344c9036">QuestionnaireResponse/837c030c-023c-4030-9e37-cb8b344c9036</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-12db5508-b375-49a1-a8e1-558ad8448600.html" title="FamilyMemberHistory/12db5508-b375-49a1-a8e1-558ad8448600">FamilyMemberHistory/12db5508-b375-49a1-a8e1-558ad8448600</a>
+               </td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-blood-pressure.html" title="Observation/blood-pressure">Observation/blood-pressure</a>
@@ -1214,8 +1326,8 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l2337">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 14, 2021 11:10-0500">2021-09-14</span>
+        <p><a name="l2563">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 9, 2022 10:24-0600">2022-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

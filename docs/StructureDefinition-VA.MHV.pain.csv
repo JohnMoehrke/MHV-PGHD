@@ -153,6 +153,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Observation.value[x].value","","","",0,1,"","","Y","decimal {[]} {[]}
 ","Numerical value (with implicit precision)","The value of the measured amount. The value includes an implicit precision in the presentation of the value.","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","<valueQuantity xmlns=""http://hl7.org/fhir"">
+  <value value=""0""/>
   <system value=""http://unitsofmeasure.org""/>
   <code value=""{score}""/>
 </valueQuantity>","<valueQuantity xmlns=""http://hl7.org/fhir"">

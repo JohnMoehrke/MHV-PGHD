@@ -10,7 +10,7 @@
   "name": "AppIdCodesToo",
   "title": "PGD other apps",
   "status": "active",
-  "date": "2022-02-09T10:24:17-06:00",
+  "date": "2022-03-31T08:23:07-05:00",
   "contact": [
     {
       "name": "John Moehrke"
@@ -21,8 +21,8 @@
     {
       "coding": [
         {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
+          "system": "urn:iso:std:iso:3166",
+          "code": "USA"
         }
       ]
     }

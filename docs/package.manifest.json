@@ -1,6 +1,8 @@
 {
   "version": "0.2.7-beta",
-  "fhirVersion": "[4.0.1]",
-  "date": "20220209102349",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "date": "20220331082236",
   "name": "va.mhv.example"
 }

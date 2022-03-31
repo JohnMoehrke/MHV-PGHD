@@ -10,15 +10,15 @@
   <name value="MHVbodyWeights"/>
   <title value="The body weight measurement types that MHV supports"/>
   <status value="active"/>
-  <date value="2022-02-09T10:24:17-06:00"/>
+  <date value="2022-03-31T08:23:07-05:00"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>
   <description value="These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone)."/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="USA"/>
     </coding>
   </jurisdiction>
   <compose>

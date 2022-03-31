@@ -10,15 +10,15 @@
   <name value="AppIdCodes"/>
   <title value="PGD apps"/>
   <status value="active"/>
-  <date value="2022-02-09T10:24:17-06:00"/>
+  <date value="2022-03-31T08:23:07-05:00"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>
   <description value="App identifiers for use with PGD"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="USA"/>
     </coding>
   </jurisdiction>
   <content value="complete"/>

@@ -3,10 +3,10 @@
   "name": "MHVtoPGHD_Example",
   "package-id": "va.mhv.example",
   "ig-ver": "0.2.7-beta",
-  "date": "Wed, 09 Feb, 2022 10:24:17 -0600",
+  "date": "Thu, 31 Mar, 2022 08:23:07 -0500",
   "errs": 160,
   "warnings": 165,
-  "hints": 74,
+  "hints": 68,
   "version": "4.0.1",
   "tool": "5.0.0-snapshot1 (3)"
 }

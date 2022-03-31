@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "MHVbodyWeights"];
   fhir:ValueSet.title [ fhir:value "The body weight measurement types that MHV supports"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-02-09T10:24:17-06:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-03-31T08:23:07-05:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
@@ -27,8 +27,8 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "USA" ]
      ]
   ];
   fhir:ValueSet.compose [

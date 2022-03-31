@@ -9,14 +9,14 @@
   <version value="0.2.7-beta"/>
   <name value="AllAppIdCodes"/>
   <status value="active"/>
-  <date value="2022-02-09T10:24:17-06:00"/>
+  <date value="2022-03-31T08:23:07-05:00"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="USA"/>
     </coding>
   </jurisdiction>
   <compose>

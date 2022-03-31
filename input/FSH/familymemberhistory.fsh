@@ -20,6 +20,7 @@ Description: """
 When this family member is known to be part of a multi-birth, indicate how many siblings.
 """
 * value[x] only integer
+* valueInteger 1..1
 
 Extension: adopted
 Id: FM-adopted
@@ -28,6 +29,7 @@ Description: """
 When this family member is adopted.
 """
 * value[x] only boolean
+* valueBoolean 1..1
 
 Extension: ethnicity
 Id: FM-ethnicity
@@ -39,6 +41,7 @@ Note would like to use the us-core defined extension, but it is not allowed in F
 """
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category (preferred)
+* valueCodeableConcept 1..1
 
 Extension: race
 Id: FM-race
@@ -50,7 +53,7 @@ Note would like to use us-core defined extension, but is not allowed in FamilyMe
 """
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://hl7.org/fhir/us/core/ValueSet/omb-race-category (preferred)
-
+* valueCodeableConcept 1..1
 
 
 Profile:        MHVfamilymemberhistory

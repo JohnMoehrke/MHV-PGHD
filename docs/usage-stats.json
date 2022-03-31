@@ -2,12 +2,13 @@
   "package": "va.mhv.example",
   "version": "0.2.7-beta",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "001",
+  "jurisdiction": "USA",
   "extensions": [
     {
       "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted",
       "title": "adopted indication",
       "types": [
+        "boolean",
         "boolean"
       ]
     },
@@ -23,6 +24,7 @@
       "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth",
       "title": "multi-birth indication",
       "types": [
+        "integer",
         "integer"
       ]
     },

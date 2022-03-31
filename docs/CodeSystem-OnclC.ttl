@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "AppIdCodes"];
   fhir:CodeSystem.title [ fhir:value "PGD apps"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-02-09T10:24:17-06:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-03-31T08:23:07-05:00"^^xsd:dateTime];
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
@@ -27,8 +27,8 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "USA" ]
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];

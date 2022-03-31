@@ -3,7 +3,7 @@
 
 err = 160, warn = 165, info = 68
 IG Publisher Version: 1.1.114
-Generated Thu Mar 31 08:25:32 CDT 2022. FHIR version 4.0.1 for va.mhv.example#0.2.7-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+Generated Thu Mar 31 11:15:58 CDT 2022. FHIR version 4.0.1 for va.mhv.example#0.2.7-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
  Build Errors : 1511 / 101 / 0
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\AllergyIntolerance-ex-MHV-allergy-0 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-CPM : 0 / 0 / 2
@@ -1575,16 +1575,16 @@ ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymembe
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory-examples.html#/html/body/div/div/div/div/p/a at Line 298, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory-mappings.html#/html/body/div/div/div/div/p/a at Line 364, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory-mappings.html#/html/body/div/div/div/div/p/a at Line 371, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.html#/html/body/div/div/div/div/p/a at Line 1032, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.html#/html/body/div/div/div/div/p/a at Line 1039, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.html#/html/body/div/div/div/div/p/a at Line 1057, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.html#/html/body/div/div/div/div/p/a at Line 1064, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.history.html#/html/body/div/div/div/div/p/a at Line 280, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.history.html#/html/body/div/div/div/div/p/a at Line 287, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.json.html#/html/body/div/div/div/div/p/a at Line 2876, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.json.html#/html/body/div/div/div/div/p/a at Line 2883, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 2533, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.ttl.html#/html/body/div/div/div/div/p/a at Line 2540, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.xml.html#/html/body/div/div/div/div/p/a at Line 2608, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.xml.html#/html/body/div/div/div/div/p/a at Line 2615, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.xml.html#/html/body/div/div/div/div/p/a at Line 2623, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.xml.html#/html/body/div/div/div/div/p/a at Line 2630, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1295, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/div/p/a at Line 1302, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-examples.html#/html/body/div/div/div/div/p/a at Line 328, column 28: The link '' for "" cannot be resolved
@@ -1736,8 +1736,8 @@ ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.ttl.htm
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.ttl.html#/html/body/div/div/div/div/p/a at Line 322, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.xml.html#/html/body/div/div/div/div/p/a at Line 306, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.xml.html#/html/body/div/div/div/div/p/a at Line 313, column 4: The link '../issues' for "Report an issue" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/div/p/a at Line 1449, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/div/p/a at Line 1456, column 4: The link '../issues' for "Report an issue" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/div/p/a at Line 1474, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/div/p/a at Line 1481, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/p/a at Line 323, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/div/p/a at Line 330, column 4: The link '../issues' for "Report an issue" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\changes.html#/html/body/div/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved

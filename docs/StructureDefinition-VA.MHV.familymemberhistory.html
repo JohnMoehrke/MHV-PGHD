@@ -240,8 +240,33 @@ Experimental
 
 <p><strong>Proposed mapping not yet approved for implementation</strong></p>
 
-<p>Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.</p>
+<p>The specification here is</p>
+<ul>
+  <li>inspired by https://phgkb.cdc.gov/FHH/html/index.html</li>
+  <li>could derive off of QI-Core FamilyMemberHistory profile, but it is not clear that gives us anything useful  https://hl7.org/fhir/us/qicore/StructureDefinition-qicore-familymemberhistory.html</li>
+  <li>There is no profile of FamilyMemberHistory in us-core</li>
+  <li>USCDI v2 added Health Conserns and hint that family member is included. https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v2</li>
+  <li>USCDI v3 seems to be similar https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#draft-uscdi-v3</li>
+  <li>Level 2 has it clear Family Health History https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#level-2</li>
+</ul>
 
+<p>Some discussion notes</p>
+<ul>
+  <li>could indication of twin (multiple-birth) using http://hl7.org/fhir/R4/extension-family-member-history-genetics-sibling.html
+    <ul>
+      <li>not clear this is the best match, as this requires a link to the ‘other’ sibling</li>
+      <li>where as the CDC prototype just wanted to know if this member was a multi-birth</li>
+    </ul>
+  </li>
+  <li>could indicate race and ethnicity using http://hl7.org/fhir/R4/extension-family-member-history-genetics-observation.html
+    <ul>
+      <li>not clear these are useful as they require the family-member to also be a Patient</li>
+      <li>these observations likely are contained so as to not confuse with a real patient</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.</p>
 <ul>
   <li>For each relative of the Patient there will be a FamilyMemberHistory instance
     <ul>
@@ -1024,8 +1049,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l6969">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 31, 2022 08:23-0500">2022-03-31</span>
+        <p><a name="l7023">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 31, 2022 11:13-0500">2022-03-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

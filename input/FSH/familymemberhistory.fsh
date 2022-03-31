@@ -1,16 +1,5 @@
 // MHV FamilyMemberHistory
-// inspired by https://phgkb.cdc.gov/FHH/html/index.html
-// could derive off of QI-Core FamilyMemberHistory profile, but it is not clear that gives us anything useful  https://hl7.org/fhir/us/qicore/StructureDefinition-qicore-familymemberhistory.html
-// There is no profile of FamilyMemberHistory in us-core
-// USCDI v2 added Health Conserns and hint that family member is included. https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v2
-// USCDI v3 seems to be similar https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#draft-uscdi-v3
-// Level 2 has it clear Family Health History https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#level-2
-// could indication of twin (multiple-birth) using http://hl7.org/fhir/R4/extension-family-member-history-genetics-sibling.html
-//  * not clear this is the best match, as this requires a link to the 'other' sibling
-//  * where as the CDC prototype just wanted to know if this member was a multi-birth
-//could indicate race and ethnicity using http://hl7.org/fhir/R4/extension-family-member-history-genetics-observation.html
-//  * not clear these are useful as they require the family-member to also be a Patient
-//  * these observations likely are contained so as to not confuse with a real patient
+
 
 
 Extension: multiBirth
@@ -65,8 +54,23 @@ A profile on the FamilyMemberHistory that declares how MHV will Create/Update in
 
 **Proposed mapping not yet approved for implementation**
 
-Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.
+The specification here is 
+* inspired by https://phgkb.cdc.gov/FHH/html/index.html
+* could derive off of QI-Core FamilyMemberHistory profile, but it is not clear that gives us anything useful  https://hl7.org/fhir/us/qicore/StructureDefinition-qicore-familymemberhistory.html
+* There is no profile of FamilyMemberHistory in us-core
+* USCDI v2 added Health Conserns and hint that family member is included. https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v2
+* USCDI v3 seems to be similar https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#draft-uscdi-v3
+* Level 2 has it clear Family Health History https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#level-2
 
+Some discussion notes
+* could indication of twin (multiple-birth) using http://hl7.org/fhir/R4/extension-family-member-history-genetics-sibling.html
+  * not clear this is the best match, as this requires a link to the 'other' sibling
+  * where as the CDC prototype just wanted to know if this member was a multi-birth
+* could indicate race and ethnicity using http://hl7.org/fhir/R4/extension-family-member-history-genetics-observation.html
+  * not clear these are useful as they require the family-member to also be a Patient
+  * these observations likely are contained so as to not confuse with a real patient
+
+Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.
 * For each relative of the Patient there will be a FamilyMemberHistory instance 
   * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.
   * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned

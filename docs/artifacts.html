@@ -441,14 +441,14 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       <li>Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.</li>
       <li>Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned</li>
       <li>Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete</li>
-      <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
     </ul>
   </li>
+  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
   <li>must be marked with MHV app tag</li>
   <li>must point at the patient</li>
   <li>must indicate the date this record is being recorded into PGHD</li>
   <li>should have a name of the family member</li>
-  <li>should have the relationship this family member has with the Patient</li>
+  <li>must have the relationship this family member has with the Patient</li>
   <li>should have the sex/gender (administrative gender) of this family member</li>
   <li>should have the age or date-of-birth
     <ul>
@@ -461,9 +461,10 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       <li>should use a valueSet for date ranges on decades</li>
     </ul>
   </li>
-  <li>extension indication of twin (multiple-birth) using * extension indicate Race</li>
-  <li>extension indicate Ethnicity</li>
-  <li>extension indicated if Adopted</li>
+  <li>may have extension indication of twin (multiple-birth) using</li>
+  <li>may have extension indicate Race</li>
+  <li>may have extension indicate Ethnicity</li>
+  <li>may have extension indicate Adopted</li>
   <li>should have 0..* conditions
     <ul>
       <li>condition.code should be from a given valueSet</li>
@@ -472,6 +473,7 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       <li>condition.note may include a freetext note</li>
     </ul>
   </li>
+  <li>should have a note</li>
 </ul>
 </td>
             </tr>
@@ -1362,8 +1364,8 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l2614">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 11, 2022 07:37-0500">2022-04-11</span>
+        <p><a name="l2620">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 11, 2022 08:49-0500">2022-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

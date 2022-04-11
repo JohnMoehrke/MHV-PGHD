@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "Race"];
   fhir:StructureDefinition.title [ fhir:value "Race"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-04-11T07:37:02-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-04-11T08:49:59-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]

@@ -59,26 +59,28 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of Famil
   * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.
   * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned
   * Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete
-  * once created will or might have an id, versionId, lastUpdated, text, and identifier
+* once created will or might have an id, versionId, lastUpdated, text, and identifier
 * must be marked with MHV app tag
 * must point at the patient
 * must indicate the date this record is being recorded into PGHD 
 * should have a name of the family member
-* should have the relationship this family member has with the Patient
+* must have the relationship this family member has with the Patient
 * should have the sex/gender (administrative gender) of this family member
 * should have the age or date-of-birth
   * should use a valueSet for date ranges on decades 
   * indicate estimatedAge if the age is estimated
 * should have indication when patient has died with the age of death or date
   * should use a valueSet for date ranges on decades 
-* extension indication of twin (multiple-birth) using * extension indicate Race 
-* extension indicate Ethnicity 
-* extension indicated if Adopted
+* may have extension indication of twin (multiple-birth) using 
+* may have extension indicate Race 
+* may have extension indicate Ethnicity 
+* may have extension indicate Adopted
 * should have 0..* conditions
   * condition.code should be from a given valueSet
   * condition.outcome should indicate the outcome of this condition
   * condition.onset[x] should indicate when this condition first manifested
   * condition.note may include a freetext note
+* should have a note
 """
 * ^version = "0.1.0"
 * ^date = "2022-02-09"

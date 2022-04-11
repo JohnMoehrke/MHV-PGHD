@@ -12,15 +12,14 @@
   <sch:pattern>
     <sch:title>f:FamilyMemberHistory</sch:title>
     <sch:rule context="f:FamilyMemberHistory">
-      <sch:assert test="count(f:extension[@url = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth']) &lt;= 1">extension with URL = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted']) &lt;= 1">extension with URL = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth']) &lt;= 1">extension with URL = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted']) &lt;= 1">extension with URL = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:instantiatesCanonical) &lt;= 0">instantiatesCanonical: maximum cardinality of 'instantiatesCanonical' is 0</sch:assert>
       <sch:assert test="count(f:instantiatesUri) &lt;= 0">instantiatesUri: maximum cardinality of 'instantiatesUri' is 0</sch:assert>
       <sch:assert test="count(f:dataAbsentReason) &lt;= 0">dataAbsentReason: maximum cardinality of 'dataAbsentReason' is 0</sch:assert>
       <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
       <sch:assert test="count(f:reasonCode) &lt;= 0">reasonCode: maximum cardinality of 'reasonCode' is 0</sch:assert>
       <sch:assert test="count(f:reasonReference) &lt;= 0">reasonReference: maximum cardinality of 'reasonReference' is 0</sch:assert>
-      <sch:assert test="count(f:note) &lt;= 0">note: maximum cardinality of 'note' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -232,9 +231,50 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:FamilyMemberHistory/f:note</sch:title>
+    <sch:rule context="f:FamilyMemberHistory/f:note">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:author[x]) &lt;= 1">author[x]: maximum cardinality of 'author[x]' is 1</sch:assert>
+      <sch:assert test="count(f:time) &lt;= 1">time: maximum cardinality of 'time' is 1</sch:assert>
+      <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>FamilyMemberHistory.note</sch:title>
     <sch:rule context="f:FamilyMemberHistory/f:note">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>FamilyMemberHistory.note.extension</sch:title>
+    <sch:rule context="f:FamilyMemberHistory/f:note/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>FamilyMemberHistory.note.author[x] 1</sch:title>
+    <sch:rule context="f:FamilyMemberHistory/f:note/f:author[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>FamilyMemberHistory.note.time</sch:title>
+    <sch:rule context="f:FamilyMemberHistory/f:note/f:time">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>FamilyMemberHistory.note.text</sch:title>
+    <sch:rule context="f:FamilyMemberHistory/f:note/f:text">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:FamilyMemberHistory/f:condition</sch:title>
+    <sch:rule context="f:FamilyMemberHistory/f:condition">
+      <sch:assert test="count(f:note) &lt;= 0">note: maximum cardinality of 'note' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

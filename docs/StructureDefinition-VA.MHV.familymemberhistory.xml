@@ -9,10 +9,10 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_fixed.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Fixed Value" class="hierarchy"/> <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system">system</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identity of the terminology system<br/><span style="font-weight: bold">Fixed Value: </span><a style="color: darkgreen" href="CodeSystem-OnclC.html">https://wiki.mobilehealth.va.gov/x/Onc1C</a></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_fixed.gif" alt="." style="background-color: white; background-color: inherit" title="Fixed Value" class="hierarchy"/> <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Symbol in syntax defined by the system<br/><span style="font-weight: bold">Fixed Value: </span><span style="color: darkgreen">2ce6d9aa-c068-4809-8dda-662bcb16d09a</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension">Slices for extension</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension:sibling" title="Extension URL = https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth">FM-multiBirth</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">multi-birth indication</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-FM-multiBirth.html">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth</a></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension:adopted" title="Extension URL = https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted">FM-adopted</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">adopted indication</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-FM-adopted.html">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted</a></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension:ethnicity" title="Extension URL = https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity">FM-ethnicity</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">ethnicity</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-FM-ethnicity.html">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU3.1.1/ValueSet-omb-ethnicity-category.html">OMB Ethnicity Categories</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension:race" title="Extension URL = https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race">FM-race</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">race</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-FM-race.html">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU3.1.1/ValueSet-omb-race-category.html">OMB Race Categories</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension:sibling" title="Extension URL = https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth">FM-MultiBirth</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">MultiBirth indication</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-FM-MultiBirth.html">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension:adopted" title="Extension URL = https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted">FM-Adopted</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Adopted indication</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-FM-Adopted.html">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension:ethnicity" title="Extension URL = https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Ethnicity">FM-Ethnicity</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Ethnicity</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-FM-Ethnicity.html">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Ethnicity</a><br/><span style="font-weight:bold">Binding: </span><a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-Ethnicity.html">Ethnicity</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension:race" title="Extension URL = https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Race">FM-Race</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Race</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/StructureDefinition-FM-Race.html">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Race</a><br/><span style="font-weight:bold">Binding: </span><a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-Race.html">Race</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="text-decoration:line-through">instantiatesCanonical</span><a name="FamilyMemberHistory.instantiatesCanonical"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="text-decoration:line-through">instantiatesUri</span><a name="FamilyMemberHistory.instantiatesUri"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.status">status</a><a name="FamilyMemberHistory.status"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">partial | completed | entered-in-error | health-unknown</span></td></tr>
@@ -28,13 +28,14 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.deceased[x]">deceased[x]</a><a name="FamilyMemberHistory.deceased_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#date">date</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Dead? How old/when?</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="text-decoration:line-through">reasonCode</span><a name="FamilyMemberHistory.reasonCode"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="text-decoration:line-through">reasonReference</span><a name="FamilyMemberHistory.reasonReference"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="text-decoration:line-through">note</span><a name="FamilyMemberHistory.note"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition">condition</a><a name="FamilyMemberHistory.condition"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Condition that the related person had</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition.code">code</a><a name="FamilyMemberHistory.condition.code"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Condition suffered by relation</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition.outcome">outcome</a><a name="FamilyMemberHistory.condition.outcome"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">deceased | permanent disability | etc.</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition.contributedToDeath">contributedToDeath</a><a name="FamilyMemberHistory.condition.contributedToDeath"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Whether the condition contributed to the cause of death</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition.onset[x]">onset[x]</a><a name="FamilyMemberHistory.condition.onset_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">When condition first manifested</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition.note">note</a><a name="FamilyMemberHistory.condition.note"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extra information about condition</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.note">note</a><a name="FamilyMemberHistory.note"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.note.text">text</a><a name="FamilyMemberHistory.note.text"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The annotation  - text content (as markdown)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition">condition</a><a name="FamilyMemberHistory.condition"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Condition that the related person had</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition.code">code</a><a name="FamilyMemberHistory.condition.code"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Condition suffered by relation</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition.outcome">outcome</a><a name="FamilyMemberHistory.condition.outcome"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">deceased | permanent disability | etc.</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition.contributedToDeath">contributedToDeath</a><a name="FamilyMemberHistory.condition.contributedToDeath"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Whether the condition contributed to the cause of death</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.condition.onset[x]">onset[x]</a><a name="FamilyMemberHistory.condition.onset_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a><span style="opacity: 0.5">, </span><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">When condition first manifested</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="text-decoration:line-through">note</span><a name="FamilyMemberHistory.condition.note"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"/><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
@@ -53,7 +54,7 @@
   <contact>
     <name value="John Moehrke"/>
   </contact>
-  <description value="A profile on the FamilyMemberHistory that declares how MHV will Create/Update in PGHD for an family member history record.&#xA;&#xA;**Proposed mapping not yet approved for implementation**&#xA;&#xA;The specification here is &#xA;* inspired by https://phgkb.cdc.gov/FHH/html/index.html&#xA;* could derive off of QI-Core FamilyMemberHistory profile, but it is not clear that gives us anything useful  https://hl7.org/fhir/us/qicore/StructureDefinition-qicore-familymemberhistory.html&#xA;* There is no profile of FamilyMemberHistory in us-core&#xA;* USCDI v2 added Health Conserns and hint that family member is included. https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v2&#xA;* USCDI v3 seems to be similar https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#draft-uscdi-v3&#xA;* Level 2 has it clear Family Health History https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#level-2&#xA;&#xA;Some discussion notes&#xA;* could indication of twin (multiple-birth) using http://hl7.org/fhir/R4/extension-family-member-history-genetics-sibling.html&#xA;  * not clear this is the best match, as this requires a link to the 'other' sibling&#xA;  * where as the CDC prototype just wanted to know if this member was a multi-birth&#xA;* could indicate race and ethnicity using http://hl7.org/fhir/R4/extension-family-member-history-genetics-observation.html&#xA;  * not clear these are useful as they require the family-member to also be a Patient&#xA;  * these observations likely are contained so as to not confuse with a real patient&#xA;&#xA;Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.&#xA;* For each relative of the Patient there will be a FamilyMemberHistory instance &#xA;  * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.&#xA;  * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned&#xA;  * Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete&#xA;  * once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;* must be marked with MHV app tag&#xA;* must point at the patient&#xA;* must indicate the date this record is being recorded into PGHD &#xA;* should have a name of the family member&#xA;* should have the relationship this family member has with the Patient&#xA;* should have the sex/gender (administrative gender) of this family member&#xA;* should have the age or date-of-birth&#xA;  * should use a valueSet for date ranges on decades &#xA;  * indicate estimatedAge if the age is estimated&#xA;* should have indication when patient has died with the age of death or date&#xA;  * should use a valueSet for date ranges on decades &#xA;* extension indication of twin (multiple-birth) using * extension indicate race &#xA;* extension indicate ethnicity &#xA;* extension indicated if adopted&#xA;* should have 0..* conditions&#xA;  * condition.code should be from a given valueSet&#xA;  * condition.outcome should indicate the outcome of this condition&#xA;  * condition.onset[x] should indicate when this condition first manifested&#xA;  * condition.note may include a freetext note"/>
+  <description value="A profile on the FamilyMemberHistory that declares how MHV will Create/Update in PGHD for an family member history record.&#xA;&#xA;**Proposed mapping not yet approved for implementation**&#xA;&#xA;Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.&#xA;* For each relative of the Patient there will be a FamilyMemberHistory instance &#xA;  * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.&#xA;  * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned&#xA;  * Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete&#xA;  * once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;* must be marked with MHV app tag&#xA;* must point at the patient&#xA;* must indicate the date this record is being recorded into PGHD &#xA;* should have a name of the family member&#xA;* should have the relationship this family member has with the Patient&#xA;* should have the sex/gender (administrative gender) of this family member&#xA;* should have the age or date-of-birth&#xA;  * should use a valueSet for date ranges on decades &#xA;  * indicate estimatedAge if the age is estimated&#xA;* should have indication when patient has died with the age of death or date&#xA;  * should use a valueSet for date ranges on decades &#xA;* extension indication of twin (multiple-birth) using * extension indicate Race &#xA;* extension indicate Ethnicity &#xA;* extension indicated if Adopted&#xA;* should have 0..* conditions&#xA;  * condition.code should be from a given valueSet&#xA;  * condition.outcome should indicate the outcome of this condition&#xA;  * condition.onset[x] should indicate when this condition first manifested&#xA;  * condition.note may include a freetext note"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -82,9 +83,14 @@
     <name value="FiveWs Pattern Mapping"/>
   </mapping>
   <mapping>
-    <identity value="MHV-FMH-UI"/>
-    <uri value="MHV-UI"/>
-    <name value="MyHealtheVet mapping to FHIR/PGHD"/>
+    <identity value="MHV-PGHD-FMH-UI"/>
+    <uri value="MHV-new-UI"/>
+    <name value="MyHealtheVet new Family Health History UI mapping to FHIR/PGHD"/>
+  </mapping>
+  <mapping>
+    <identity value="MHV-OLD-FMH-UI"/>
+    <uri value="MHV-old-UI"/>
+    <name value="MyHealtheVet old Family Health History UI mapping to FHIR/PGHD"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -184,9 +190,14 @@
         <map value="Observation[classCode=OBS, moodCode=EVN]"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="MHV-UI"/>
-        <comment value="Used in the MyHealtheVet FamilyMemberHistory User Interface"/>
+        <comment value="New in the MyHealtheVet FamilyMemberHistory User Interface"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="MHV-UI"/>
+        <comment value="Old in the MyHealtheVet FamilyMemberHistory User Interface"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.id">
@@ -488,8 +499,13 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/common-tags"/>
       </binding>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="MHV tag"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="(MHV tag)"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(MHV tag)"/>
+        <comment value="not on the UI"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.implicitRules">
@@ -662,8 +678,8 @@
     <element id="FamilyMemberHistory.extension:sibling">
       <path value="FamilyMemberHistory.extension"/>
       <sliceName value="sibling"/>
-      <short value="multi-birth indication"/>
-      <definition value="When this family member is known to be part of a multi-birth, indicate how many siblings."/>
+      <short value="MultiBirth indication"/>
+      <definition value="When this family member is known to be part of a MultiBirth, indicate how many siblings."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -673,7 +689,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth"/>
+        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -695,15 +711,19 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="number of siblings"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.extension:adopted">
       <path value="FamilyMemberHistory.extension"/>
       <sliceName value="adopted"/>
-      <short value="adopted indication"/>
-      <definition value="When this family member is adopted."/>
+      <short value="Adopted indication"/>
+      <definition value="When this family member is Adopted."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -713,7 +733,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted"/>
+        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -735,15 +755,19 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="adopted"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="Adopted"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.extension:ethnicity">
       <path value="FamilyMemberHistory.extension"/>
       <sliceName value="ethnicity"/>
-      <short value="ethnicity"/>
-      <definition value="What is the ethnicity of this family member&#xA;&#xA;Note would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory [jira issue](https://jira.hl7.org/browse/FHIR-35997)"/>
+      <short value="Ethnicity"/>
+      <definition value="What is the Ethnicity of this family member&#xA;&#xA;Note would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory [jira issue](https://jira.hl7.org/browse/FHIR-35997)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -753,7 +777,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity"/>
+        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Ethnicity"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -775,15 +799,19 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="ethnicity"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="Ethnicity"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.extension:race">
       <path value="FamilyMemberHistory.extension"/>
       <sliceName value="race"/>
-      <short value="race"/>
-      <definition value="What is the race of this family member&#xA;&#xA;Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)"/>
+      <short value="Race"/>
+      <definition value="What is the Race of this family member&#xA;&#xA;Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -793,7 +821,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race"/>
+        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Race"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -815,8 +843,12 @@
       <mustSupport value="true"/>
       <isModifier value="false"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="race"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="Race"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.modifierExtension">
@@ -1015,8 +1047,13 @@
         <map value="FiveWs.status"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="complete"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="(complete)"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(complete)"/>
+        <comment value="not on the UI"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.dataAbsentReason">
@@ -1100,8 +1137,13 @@
         <map value="FiveWs.subject"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="the Patient"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="(the Patient)"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(the Patient)"/>
+        <comment value="not on the UI"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.date">
@@ -1139,8 +1181,13 @@
         <map value="participation[typeCode=AUT].time"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="the date recorded"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="(the date recorded)"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(the date recorded)"/>
+        <comment value="not on the UI"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.name">
@@ -1174,8 +1221,12 @@
         <map value="name"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the family member name"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="First Name:, Last Name:"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.relationship">
@@ -1215,8 +1266,12 @@
         <map value="code"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the family member relationship"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="Relationship:"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.sex">
@@ -1255,8 +1310,13 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
       </binding>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the gender of the family member"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(the gender of the family member)"/>
+        <comment value="Implied by relationship selected"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.born[x]">
@@ -1297,8 +1357,12 @@
         <map value="player[classCode=LIV, determinerCode=INSTANCE]. birthDate (could be URG)"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the birthdate of the family member"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.age[x]">
@@ -1340,8 +1404,12 @@
         <map value="participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code=&quot;age&quot;].value"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the age of the family member"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.estimatedAge">
@@ -1374,8 +1442,12 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="true if age estimated"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.deceased[x]">
@@ -1420,8 +1492,12 @@
         <map value="player[classCode=LIV, determinerCode=INSTANCE].deceasedInd, deceasedDate (could be URG)  For age, you'd hang an observation off the role"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="death"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="Living/Deceased choice"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.reasonCode">
@@ -1518,7 +1594,7 @@
       <short value="General note about related person"/>
       <definition value="This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible."/>
       <min value="0"/>
-      <max value="0"/>
+      <max value="*"/>
       <base>
         <path value="FamilyMemberHistory.note"/>
         <min value="0"/>
@@ -1544,6 +1620,195 @@
       <mapping>
         <identity value="rim"/>
         <map value="inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ANNGEN].value"/>
+      </mapping>
+    </element>
+    <element id="FamilyMemberHistory.note.id">
+      <path value="FamilyMemberHistory.note.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="FamilyMemberHistory.note.extension">
+      <path value="FamilyMemberHistory.note.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="FamilyMemberHistory.note.author[x]">
+      <path value="FamilyMemberHistory.note.author[x]"/>
+      <short value="Individual responsible for the annotation"/>
+      <definition value="The individual responsible for making the annotation."/>
+      <comment value="Organization is used when there's no need for specific attribution as to who made the comment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Annotation.author[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Act.participant[typeCode=AUT].role"/>
+      </mapping>
+    </element>
+    <element id="FamilyMemberHistory.note.time">
+      <path value="FamilyMemberHistory.note.time"/>
+      <short value="When the annotation was made"/>
+      <definition value="Indicates when this particular annotation was made."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Annotation.time"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Act.effectiveTime"/>
+      </mapping>
+    </element>
+    <element id="FamilyMemberHistory.note.text">
+      <path value="FamilyMemberHistory.note.text"/>
+      <short value="The annotation  - text content (as markdown)"/>
+      <definition value="The text of the annotation in markdown format."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Annotation.text"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="markdown"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Act.text"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="Note"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="Comments:"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.condition">
@@ -1721,8 +1986,13 @@
         <map value=".value"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="Condition/Problem"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="Condition/Problem/Other"/>
+        <comment value="needs mapping to SNOMED-CT terminology"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.condition.outcome">
@@ -1763,8 +2033,12 @@
         <map value="outboundRelationship[typeCode=OUTC)].target[classCode=OBS, moodCode=EVN, code=ActCode#ASSERTION].value"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="manifestation of condition/problem"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.condition.contributedToDeath">
@@ -1833,8 +2107,12 @@
         <map value="inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;Subject Age at measurement&quot;, value&lt;Diagnosis].value[@xsi:typeCode='TS' or 'IVL_TS']  Use originalText for string"/>
       </mapping>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="when this condition first noted"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.condition.note">
@@ -1842,7 +2120,7 @@
       <short value="Extra information about condition"/>
       <definition value="An area where general notes can be placed about this specific condition."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="0"/>
       <base>
         <path value="FamilyMemberHistory.condition.note"/>
         <min value="0"/>
@@ -1859,16 +2137,11 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ANNGEN].value"/>
-      </mapping>
-      <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="Note"/>
       </mapping>
     </element>
   </snapshot>
@@ -1876,9 +2149,14 @@
     <element id="FamilyMemberHistory">
       <path value="FamilyMemberHistory"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="MHV-UI"/>
-        <comment value="Used in the MyHealtheVet FamilyMemberHistory User Interface"/>
+        <comment value="New in the MyHealtheVet FamilyMemberHistory User Interface"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="MHV-UI"/>
+        <comment value="Old in the MyHealtheVet FamilyMemberHistory User Interface"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.meta.tag">
@@ -1890,8 +2168,13 @@
         <code value="2ce6d9aa-c068-4809-8dda-662bcb16d09a"/>
       </patternCoding>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="MHV tag"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="(MHV tag)"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(MHV tag)"/>
+        <comment value="not on the UI"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.extension">
@@ -1912,12 +2195,16 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth"/>
+        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="number of siblings"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.extension:adopted">
@@ -1927,12 +2214,16 @@
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted"/>
+        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="adopted"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="Adopted"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.extension:ethnicity">
@@ -1942,12 +2233,16 @@
       <max value="*"/>
       <type>
         <code value="Extension"/>
-        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity"/>
+        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Ethnicity"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="ethnicity"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="Ethnicity"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.extension:race">
@@ -1957,12 +2252,16 @@
       <max value="*"/>
       <type>
         <code value="Extension"/>
-        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race"/>
+        <profile value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Race"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="race"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="Race"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.instantiatesCanonical">
@@ -1976,8 +2275,13 @@
     <element id="FamilyMemberHistory.status">
       <path value="FamilyMemberHistory.status"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="complete"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="(complete)"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(complete)"/>
+        <comment value="not on the UI"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.dataAbsentReason">
@@ -1987,71 +2291,110 @@
     <element id="FamilyMemberHistory.patient">
       <path value="FamilyMemberHistory.patient"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="the Patient"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="(the Patient)"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(the Patient)"/>
+        <comment value="not on the UI"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.date">
       <path value="FamilyMemberHistory.date"/>
       <min value="1"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="the date recorded"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="(the date recorded)"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(the date recorded)"/>
+        <comment value="not on the UI"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.name">
       <path value="FamilyMemberHistory.name"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the family member name"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="First Name:, Last Name:"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.relationship">
       <path value="FamilyMemberHistory.relationship"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the family member relationship"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="Relationship:"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.sex">
       <path value="FamilyMemberHistory.sex"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the gender of the family member"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="(the gender of the family member)"/>
+        <comment value="Implied by relationship selected"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.born[x]">
       <path value="FamilyMemberHistory.born[x]"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the birthdate of the family member"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.age[x]">
       <path value="FamilyMemberHistory.age[x]"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="the age of the family member"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.estimatedAge">
       <path value="FamilyMemberHistory.estimatedAge"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="true if age estimated"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.deceased[x]">
       <path value="FamilyMemberHistory.deceased[x]"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="death"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="Living/Deceased choice"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.reasonCode">
@@ -2062,9 +2405,17 @@
       <path value="FamilyMemberHistory.reasonReference"/>
       <max value="0"/>
     </element>
-    <element id="FamilyMemberHistory.note">
-      <path value="FamilyMemberHistory.note"/>
-      <max value="0"/>
+    <element id="FamilyMemberHistory.note.text">
+      <path value="FamilyMemberHistory.note.text"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="MHV-PGHD-FMH-UI"/>
+        <map value="Note"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="Comments:"/>
+      </mapping>
     </element>
     <element id="FamilyMemberHistory.condition">
       <path value="FamilyMemberHistory.condition"/>
@@ -2073,16 +2424,25 @@
     <element id="FamilyMemberHistory.condition.code">
       <path value="FamilyMemberHistory.condition.code"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="Condition/Problem"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="Condition/Problem/Other"/>
+        <comment value="needs mapping to SNOMED-CT terminology"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.condition.outcome">
       <path value="FamilyMemberHistory.condition.outcome"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="manifestation of condition/problem"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.condition.contributedToDeath">
@@ -2093,17 +2453,17 @@
       <path value="FamilyMemberHistory.condition.onset[x]"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="MHV-FMH-UI"/>
+        <identity value="MHV-PGHD-FMH-UI"/>
         <map value="when this condition first noted"/>
+      </mapping>
+      <mapping>
+        <identity value="MHV-OLD-FMH-UI"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="FamilyMemberHistory.condition.note">
       <path value="FamilyMemberHistory.condition.note"/>
-      <mustSupport value="true"/>
-      <mapping>
-        <identity value="MHV-FMH-UI"/>
-        <map value="Note"/>
-      </mapping>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>

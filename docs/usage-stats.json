@@ -5,32 +5,32 @@
   "jurisdiction": "USA",
   "extensions": [
     {
-      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted",
-      "title": "adopted indication",
+      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted",
+      "title": "Adopted indication",
       "types": [
         "boolean",
         "boolean"
       ]
     },
     {
-      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity",
-      "title": "ethnicity",
+      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Ethnicity",
+      "title": "Ethnicity",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth",
-      "title": "multi-birth indication",
+      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth",
+      "title": "MultiBirth indication",
       "types": [
         "integer",
         "integer"
       ]
     },
     {
-      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race",
-      "title": "race",
+      "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Race",
+      "title": "Race",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
@@ -128,16 +128,16 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted": [
+    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted": [
       "FamilyMemberHistory"
     ],
-    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity": [
+    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Ethnicity": [
       "FamilyMemberHistory"
     ],
-    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth": [
+    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth": [
       "FamilyMemberHistory"
     ],
-    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race": [
+    "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Race": [
       "FamilyMemberHistory"
     ]
   }

@@ -377,6 +377,56 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="FamilyMemberHistory"/>
+      </extension>
+      <reference>
+        <reference value="FamilyMemberHistory/ex-father"/>
+      </reference>
+      <name value="Example FamilyMemberHistory - ex-father"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="FamilyMemberHistory"/>
+      </extension>
+      <reference>
+        <reference value="FamilyMemberHistory/ex-mother"/>
+      </reference>
+      <name value="Example FamilyMemberHistory - ex-mother"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="FamilyMemberHistory"/>
+      </extension>
+      <reference>
+        <reference value="FamilyMemberHistory/ex-son"/>
+      </reference>
+      <name value="Example FamilyMemberHistory - ex-son"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="FamilyMemberHistory"/>
+      </extension>
+      <reference>
+        <reference value="FamilyMemberHistory/ex-son2"/>
+      </reference>
+      <name value="Example FamilyMemberHistory - ex-son2"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="FamilyMemberHistory"/>
+      </extension>
+      <reference>
+        <reference value="FamilyMemberHistory/ex-wife"/>
+      </reference>
+      <name value="Example FamilyMemberHistory - ex-wife"/>
+      <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Immunization"/>
       </extension>
       <reference>
@@ -1178,40 +1228,40 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/FM-adopted"/>
+        <reference value="StructureDefinition/FM-Adopted"/>
       </reference>
-      <name value="adopted indication"/>
-      <description value="When this family member is adopted."/>
+      <name value="Adopted indication"/>
+      <description value="When this family member is Adopted."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/FM-ethnicity"/>
+        <reference value="StructureDefinition/FM-Ethnicity"/>
       </reference>
-      <name value="ethnicity"/>
-      <description value="What is the ethnicity of this family member&#xA;&#xA;Note would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory [jira issue](https://jira.hl7.org/browse/FHIR-35997)"/>
+      <name value="Ethnicity"/>
+      <description value="What is the Ethnicity of this family member&#xA;&#xA;Note would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory [jira issue](https://jira.hl7.org/browse/FHIR-35997)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/FM-multiBirth"/>
+        <reference value="StructureDefinition/FM-MultiBirth"/>
       </reference>
-      <name value="multi-birth indication"/>
-      <description value="When this family member is known to be part of a multi-birth, indicate how many siblings."/>
+      <name value="MultiBirth indication"/>
+      <description value="When this family member is known to be part of a MultiBirth, indicate how many siblings."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/FM-race"/>
+        <reference value="StructureDefinition/FM-Race"/>
       </reference>
-      <name value="race"/>
-      <description value="What is the race of this family member&#xA;&#xA;Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)"/>
+      <name value="Race"/>
+      <description value="What is the Race of this family member&#xA;&#xA;Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1311,7 +1361,7 @@
         <reference value="StructureDefinition/VA.MHV.familymemberhistory"/>
       </reference>
       <name value="VA MHV FamilyMemberHistory"/>
-      <description value="A profile on the FamilyMemberHistory that declares how MHV will Create/Update in PGHD for an family member history record.&#xA;&#xA;**Proposed mapping not yet approved for implementation**&#xA;&#xA;The specification here is &#xA;* inspired by https://phgkb.cdc.gov/FHH/html/index.html&#xA;* could derive off of QI-Core FamilyMemberHistory profile, but it is not clear that gives us anything useful  https://hl7.org/fhir/us/qicore/StructureDefinition-qicore-familymemberhistory.html&#xA;* There is no profile of FamilyMemberHistory in us-core&#xA;* USCDI v2 added Health Conserns and hint that family member is included. https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v2&#xA;* USCDI v3 seems to be similar https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#draft-uscdi-v3&#xA;* Level 2 has it clear Family Health History https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#level-2&#xA;&#xA;Some discussion notes&#xA;* could indication of twin (multiple-birth) using http://hl7.org/fhir/R4/extension-family-member-history-genetics-sibling.html&#xA;  * not clear this is the best match, as this requires a link to the 'other' sibling&#xA;  * where as the CDC prototype just wanted to know if this member was a multi-birth&#xA;* could indicate race and ethnicity using http://hl7.org/fhir/R4/extension-family-member-history-genetics-observation.html&#xA;  * not clear these are useful as they require the family-member to also be a Patient&#xA;  * these observations likely are contained so as to not confuse with a real patient&#xA;&#xA;Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.&#xA;* For each relative of the Patient there will be a FamilyMemberHistory instance &#xA;  * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.&#xA;  * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned&#xA;  * Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete&#xA;  * once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;* must be marked with MHV app tag&#xA;* must point at the patient&#xA;* must indicate the date this record is being recorded into PGHD &#xA;* should have a name of the family member&#xA;* should have the relationship this family member has with the Patient&#xA;* should have the sex/gender (administrative gender) of this family member&#xA;* should have the age or date-of-birth&#xA;  * should use a valueSet for date ranges on decades &#xA;  * indicate estimatedAge if the age is estimated&#xA;* should have indication when patient has died with the age of death or date&#xA;  * should use a valueSet for date ranges on decades &#xA;* extension indication of twin (multiple-birth) using * extension indicate race &#xA;* extension indicate ethnicity &#xA;* extension indicated if adopted&#xA;* should have 0..* conditions&#xA;  * condition.code should be from a given valueSet&#xA;  * condition.outcome should indicate the outcome of this condition&#xA;  * condition.onset[x] should indicate when this condition first manifested&#xA;  * condition.note may include a freetext note"/>
+      <description value="A profile on the FamilyMemberHistory that declares how MHV will Create/Update in PGHD for an family member history record.&#xA;&#xA;**Proposed mapping not yet approved for implementation**&#xA;&#xA;Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.&#xA;* For each relative of the Patient there will be a FamilyMemberHistory instance &#xA;  * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.&#xA;  * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned&#xA;  * Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete&#xA;  * once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;* must be marked with MHV app tag&#xA;* must point at the patient&#xA;* must indicate the date this record is being recorded into PGHD &#xA;* should have a name of the family member&#xA;* should have the relationship this family member has with the Patient&#xA;* should have the sex/gender (administrative gender) of this family member&#xA;* should have the age or date-of-birth&#xA;  * should use a valueSet for date ranges on decades &#xA;  * indicate estimatedAge if the age is estimated&#xA;* should have indication when patient has died with the age of death or date&#xA;  * should use a valueSet for date ranges on decades &#xA;* extension indication of twin (multiple-birth) using * extension indicate Race &#xA;* extension indicate Ethnicity &#xA;* extension indicated if Adopted&#xA;* should have 0..* conditions&#xA;  * condition.code should be from a given valueSet&#xA;  * condition.outcome should indicate the outcome of this condition&#xA;  * condition.onset[x] should indicate when this condition first manifested&#xA;  * condition.note may include a freetext note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -110,7 +110,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-VA.MHV.familymemberhistory.profile.xml.html">next&gt;</a>
+          | <a href="StructureDefinition-VA.MHV.familymemberhistory-examples.html">next&gt;</a>
 
           </span>
 
@@ -159,6 +159,16 @@
     </li>
   
 
+
+
+
+  
+    
+      <li>
+        <a href="StructureDefinition-VA.MHV.familymemberhistory-examples.html">Examples</a>
+      </li>
+    
+  
 
 
 
@@ -218,10 +228,15 @@
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Event.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>Event.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Event.note</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>MHVfamilymemberhistory</b></td></tr>
  <tr><td>FamilyMemberHistory</td><td>Not in scope for v2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>N/A</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>MHVfamilymemberhistory</b></td></tr>
@@ -240,6 +255,12 @@
  <tr><td>&nbsp;&nbsp;&nbsp;born[x]</td><td>player[classCode=LIV, determinerCode=INSTANCE]. birthDate (could be URG)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;age[x]</td><td>participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code="age"].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;deceased[x]</td><td>player[classCode=LIV, determinerCode=INSTANCE].deceasedInd, deceasedDate (could be URG)  For age, you'd hang an observation off the role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ANNGEN].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author[x]</td><td>Act.participant[typeCode=AUT].role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time</td><td>Act.effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Act.text</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td>inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ASSERTION, value&lt;Diagnosis]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
@@ -247,7 +268,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>.value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outcome</td><td>outboundRelationship[typeCode=OUTC)].target[classCode=OBS, moodCode=EVN, code=ActCode#ASSERTION].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onset[x]</td><td>inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code="Subject Age at measurement", value&lt;Diagnosis].value[@xsi:typeCode='TS' or 'IVL_TS']  Use originalText for string</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;note</td><td>inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ANNGEN].value</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>MHVfamilymemberhistory</b></td></tr>
@@ -257,18 +277,18 @@
  <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>FiveWs.recorded</td> </tr>
 </table>
-<a name="MHV-FMH-UI"> </a><h3>Mappings for MyHealtheVet mapping to FHIR/PGHD (MHV-UI)</h3><table class="grid">
+<a name="MHV-PGHD-FMH-UI"> </a><h3>Mappings for MyHealtheVet new Family Health History UI mapping to FHIR/PGHD (MHV-new-UI)</h3><table class="grid">
  <tr><td colspan="3"><b>MHVfamilymemberhistory</b></td></tr>
  <tr><td>FamilyMemberHistory</td><td>MHV-UI</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>MHV tag</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>(MHV tag)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension (sibling)</td><td>number of siblings</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (adopted)</td><td>adopted</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (ethnicity)</td><td>ethnicity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (race)</td><td>race</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>complete</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>the Patient</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>the date recorded</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (adopted)</td><td>Adopted</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (ethnicity)</td><td>Ethnicity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (race)</td><td>Race</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>(complete)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>(the Patient)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>(the date recorded)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>the family member name</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;relationship</td><td>the family member relationship</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;sex</td><td>the gender of the family member</td> </tr>
@@ -276,11 +296,38 @@
  <tr><td>&nbsp;&nbsp;&nbsp;age[x]</td><td>the age of the family member</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;estimatedAge</td><td>true if age estimated</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;deceased[x]</td><td>death</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Note</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>Condition/Problem</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outcome</td><td>manifestation of condition/problem</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onset[x]</td><td>when this condition first noted</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;note</td><td>Note</td> </tr>
+</table>
+<a name="MHV-OLD-FMH-UI"> </a><h3>Mappings for MyHealtheVet old Family Health History UI mapping to FHIR/PGHD (MHV-old-UI)</h3><table class="grid">
+ <tr><td colspan="3"><b>MHVfamilymemberhistory</b></td></tr>
+ <tr><td>FamilyMemberHistory</td><td>MHV-UI</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>(MHV tag)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (sibling)</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (adopted)</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (ethnicity)</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (race)</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>(complete)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>(the Patient)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>(the date recorded)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>First Name:, Last Name:</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;relationship</td><td>Relationship:</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;sex</td><td>(the gender of the family member)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;born[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;age[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;estimatedAge</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;deceased[x]</td><td>Living/Deceased choice</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Comments:</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>Condition/Problem/Other</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outcome</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onset[x]</td><td>N/A</td> </tr>
 </table>
 
 
@@ -347,7 +394,7 @@
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="StructureDefinition-VA.MHV.familymemberhistory.profile.xml.html">next&gt;</a>
+                <a href="StructureDefinition-VA.MHV.familymemberhistory-examples.html">next&gt;</a>
 
               </td>
             </tr>
@@ -356,8 +403,8 @@
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l830">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 31, 2022 11:13-0500">2022-03-31</span>
+        <p><a name="l1081">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 11, 2022 07:37-0500">2022-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -434,32 +434,6 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
 
 <p><strong>Proposed mapping not yet approved for implementation</strong></p>
 
-<p>The specification here is</p>
-<ul>
-  <li>inspired by https://phgkb.cdc.gov/FHH/html/index.html</li>
-  <li>could derive off of QI-Core FamilyMemberHistory profile, but it is not clear that gives us anything useful  https://hl7.org/fhir/us/qicore/StructureDefinition-qicore-familymemberhistory.html</li>
-  <li>There is no profile of FamilyMemberHistory in us-core</li>
-  <li>USCDI v2 added Health Conserns and hint that family member is included. https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v2</li>
-  <li>USCDI v3 seems to be similar https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#draft-uscdi-v3</li>
-  <li>Level 2 has it clear Family Health History https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#level-2</li>
-</ul>
-
-<p>Some discussion notes</p>
-<ul>
-  <li>could indication of twin (multiple-birth) using http://hl7.org/fhir/R4/extension-family-member-history-genetics-sibling.html
-    <ul>
-      <li>not clear this is the best match, as this requires a link to the ‘other’ sibling</li>
-      <li>where as the CDC prototype just wanted to know if this member was a multi-birth</li>
-    </ul>
-  </li>
-  <li>could indicate race and ethnicity using http://hl7.org/fhir/R4/extension-family-member-history-genetics-observation.html
-    <ul>
-      <li>not clear these are useful as they require the family-member to also be a Patient</li>
-      <li>these observations likely are contained so as to not confuse with a real patient</li>
-    </ul>
-  </li>
-</ul>
-
 <p>Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.</p>
 <ul>
   <li>For each relative of the Patient there will be a FamilyMemberHistory instance
@@ -487,9 +461,9 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       <li>should use a valueSet for date ranges on decades</li>
     </ul>
   </li>
-  <li>extension indication of twin (multiple-birth) using * extension indicate race</li>
-  <li>extension indicate ethnicity</li>
-  <li>extension indicated if adopted</li>
+  <li>extension indication of twin (multiple-birth) using * extension indicate Race</li>
+  <li>extension indicate Ethnicity</li>
+  <li>extension indicated if Adopted</li>
   <li>should have 0..* conditions
     <ul>
       <li>condition.code should be from a given valueSet</li>
@@ -661,36 +635,36 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-FM-adopted.html" title="StructureDefinition/FM-adopted">adopted indication</a>
+                  <a href="StructureDefinition-FM-Adopted.html" title="StructureDefinition/FM-Adopted">Adopted indication</a>
                </td>
                <td>
-<p>When this family member is adopted.</p>
+<p>When this family member is Adopted.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-FM-ethnicity.html" title="StructureDefinition/FM-ethnicity">ethnicity</a>
+                  <a href="StructureDefinition-FM-Ethnicity.html" title="StructureDefinition/FM-Ethnicity">Ethnicity</a>
                </td>
                <td>
-<p>What is the ethnicity of this family member</p>
+<p>What is the Ethnicity of this family member</p>
 
 <p>Note would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory <a href="https://jira.hl7.org/browse/FHIR-35997">jira issue</a></p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-FM-multiBirth.html" title="StructureDefinition/FM-multiBirth">multi-birth indication</a>
+                  <a href="StructureDefinition-FM-MultiBirth.html" title="StructureDefinition/FM-MultiBirth">MultiBirth indication</a>
                </td>
                <td>
-<p>When this family member is known to be part of a multi-birth, indicate how many siblings.</p>
+<p>When this family member is known to be part of a MultiBirth, indicate how many siblings.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-FM-race.html" title="StructureDefinition/FM-race">race</a>
+                  <a href="StructureDefinition-FM-Race.html" title="StructureDefinition/FM-Race">Race</a>
                </td>
                <td>
-<p>What is the race of this family member</p>
+<p>What is the Race of this family member</p>
 
 <p>Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory <a href="https://jira.hl7.org/browse/FHIR-35998">Jira issue</a></p>
 </td>
@@ -811,6 +785,31 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
             <tr>
                <td style="column-width:30%">
                   <a href="Composition-ex-MHV-Composition-0.html" title="Composition/ex-MHV-Composition-0">All Vital-Signs entered in past 60 days</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-ex-father.html" title="FamilyMemberHistory/ex-father">Example FamilyMemberHistory - ex-father</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-ex-mother.html" title="FamilyMemberHistory/ex-mother">Example FamilyMemberHistory - ex-mother</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-ex-son.html" title="FamilyMemberHistory/ex-son">Example FamilyMemberHistory - ex-son</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-ex-son2.html" title="FamilyMemberHistory/ex-son2">Example FamilyMemberHistory - ex-son2</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-ex-wife.html" title="FamilyMemberHistory/ex-wife">Example FamilyMemberHistory - ex-wife</a>
                </td>
             </tr>
             <tr>
@@ -1363,8 +1362,8 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l2623">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 31, 2022 11:13-0500">2022-03-31</span>
+        <p><a name="l2614">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 11, 2022 07:37-0500">2022-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

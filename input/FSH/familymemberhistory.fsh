@@ -2,46 +2,46 @@
 
 
 
-Extension: multiBirth
-Id: FM-multiBirth
-Title: "multi-birth indication"
+Extension: MultiBirth
+Id: FM-MultiBirth
+Title: "MultiBirth indication"
 Description: """
-When this family member is known to be part of a multi-birth, indicate how many siblings.
+When this family member is known to be part of a MultiBirth, indicate how many siblings.
 """
 * value[x] only integer
 * valueInteger 1..1
 
-Extension: adopted
-Id: FM-adopted
-Title: "adopted indication"
+Extension: Adopted
+Id: FM-Adopted
+Title: "Adopted indication"
 Description: """
-When this family member is adopted.
+When this family member is Adopted.
 """
 * value[x] only boolean
 * valueBoolean 1..1
 
-Extension: ethnicity
-Id: FM-ethnicity
-Title: "ethnicity"
+Extension: Ethnicity
+Id: FM-Ethnicity
+Title: "Ethnicity"
 Description: """
-What is the ethnicity of this family member
+What is the Ethnicity of this family member
 
 Note would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory [jira issue](https://jira.hl7.org/browse/FHIR-35997)
 """
 * value[x] only CodeableConcept
-* valueCodeableConcept from http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category (preferred)
+* valueCodeableConcept from http://terminology.hl7.org/ValueSet/v3-Ethnicity (preferred)
 * valueCodeableConcept 1..1
 
-Extension: race
-Id: FM-race
-Title: "race"
+Extension: Race
+Id: FM-Race
+Title: "Race"
 Description: """
-What is the race of this family member
+What is the Race of this family member
 
 Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)
 """
 * value[x] only CodeableConcept
-* valueCodeableConcept from http://hl7.org/fhir/us/core/ValueSet/omb-race-category (preferred)
+* valueCodeableConcept from http://terminology.hl7.org/ValueSet/v3-Race (preferred)
 * valueCodeableConcept 1..1
 
 
@@ -53,22 +53,6 @@ Description:    """
 A profile on the FamilyMemberHistory that declares how MHV will Create/Update in PGHD for an family member history record.
 
 **Proposed mapping not yet approved for implementation**
-
-The specification here is 
-* inspired by https://phgkb.cdc.gov/FHH/html/index.html
-* could derive off of QI-Core FamilyMemberHistory profile, but it is not clear that gives us anything useful  https://hl7.org/fhir/us/qicore/StructureDefinition-qicore-familymemberhistory.html
-* There is no profile of FamilyMemberHistory in us-core
-* USCDI v2 added Health Conserns and hint that family member is included. https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v2
-* USCDI v3 seems to be similar https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#draft-uscdi-v3
-* Level 2 has it clear Family Health History https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#level-2
-
-Some discussion notes
-* could indication of twin (multiple-birth) using http://hl7.org/fhir/R4/extension-family-member-history-genetics-sibling.html
-  * not clear this is the best match, as this requires a link to the 'other' sibling
-  * where as the CDC prototype just wanted to know if this member was a multi-birth
-* could indicate race and ethnicity using http://hl7.org/fhir/R4/extension-family-member-history-genetics-observation.html
-  * not clear these are useful as they require the family-member to also be a Patient
-  * these observations likely are contained so as to not confuse with a real patient
 
 Given that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.
 * For each relative of the Patient there will be a FamilyMemberHistory instance 
@@ -87,9 +71,9 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of Famil
   * indicate estimatedAge if the age is estimated
 * should have indication when patient has died with the age of death or date
   * should use a valueSet for date ranges on decades 
-* extension indication of twin (multiple-birth) using * extension indicate race 
-* extension indicate ethnicity 
-* extension indicated if adopted
+* extension indication of twin (multiple-birth) using * extension indicate Race 
+* extension indicate Ethnicity 
+* extension indicated if Adopted
 * should have 0..* conditions
   * condition.code should be from a given valueSet
   * condition.outcome should indicate the outcome of this condition
@@ -111,36 +95,37 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of Famil
 * age[x] MS
 * estimatedAge MS
 * deceased[x] MS
-* extension contains FM-multiBirth named sibling 0..1 MS
-* extension contains FM-adopted named adopted 0..1 MS
-* extension contains FM-ethnicity named ethnicity 0..* MS
-* extension contains FM-race named race 0..* MS
+* extension contains FM-MultiBirth named sibling 0..1 MS
+* extension contains FM-Adopted named adopted 0..1 MS
+* extension contains FM-Ethnicity named ethnicity 0..* MS
+* extension contains FM-Race named race 0..* MS
 * condition MS
 * condition.code 1..1
 * condition.outcome MS
 * condition.contributedToDeath MS
 * condition.onset[x] MS
-* condition.note MS
+* condition.note 0..0
+* note.text MS
 // Not used, so set them to forbiden
 * dataAbsentReason 0..0
 * instantiatesCanonical 0..0
 * instantiatesUri 0..0
 * reasonCode 0..0
 * reasonReference 0..0
-* note 0..0
 
 
 
-//  mappings to MHV FMH UI 
-Mapping: MHV-FMH-UI
+
+//  mappings to MHV new FMH UI 
+Mapping: MHV-PGHD-FMH-UI
 Source:	VA.MHV.familymemberhistory
-Target: "MHV-UI"
-Title: "MyHealtheVet mapping to FHIR/PGHD"
-* -> "MHV-UI" "Used in the MyHealtheVet FamilyMemberHistory User Interface"
-* meta.tag -> "MHV tag"
-* patient -> "the Patient"
-* status -> "complete"
-* date -> "the date recorded"
+Target: "MHV-new-UI"
+Title: "MyHealtheVet new Family Health History UI mapping to FHIR/PGHD"
+* -> "MHV-UI" "New in the MyHealtheVet FamilyMemberHistory User Interface"
+* meta.tag -> "(MHV tag)"
+* patient -> "(the Patient)"
+* status -> "(complete)"
+* date -> "(the date recorded)"
 * name -> "the family member name"
 * relationship -> "the family member relationship"
 * sex -> "the gender of the family member"
@@ -149,14 +134,175 @@ Title: "MyHealtheVet mapping to FHIR/PGHD"
 * estimatedAge -> "true if age estimated"
 * deceased[x] -> "death"
 * extension[sibling] -> "number of siblings"
-* extension[adopted] -> "adopted"
-* extension[ethnicity] -> "ethnicity"
-* extension[race] -> "race"
+* extension[adopted] -> "Adopted"
+* extension[ethnicity] -> "Ethnicity"
+* extension[race] -> "Race"
 * condition.code -> "Condition/Problem"
 * condition.outcome -> "manifestation of condition/problem"
 * condition.onset[x] -> "when this condition first noted"
-* condition.note -> "Note"
+* note.text -> "Note"
 
 
+//  mappings to MHV old FMH UI 
+Mapping: MHV-OLD-FMH-UI
+Source:	VA.MHV.familymemberhistory
+Target: "MHV-old-UI"
+Title: "MyHealtheVet old Family Health History UI mapping to FHIR/PGHD"
+* -> "MHV-UI" "Old in the MyHealtheVet FamilyMemberHistory User Interface"
+* meta.tag -> "(MHV tag)" "not on the UI"
+* patient -> "(the Patient)" "not on the UI"
+* status -> "(complete)" "not on the UI"
+* date -> "(the date recorded)" "not on the UI"
+* name -> "First Name:, Last Name:"
+* relationship -> "Relationship:"
+* sex -> "(the gender of the family member)" "Implied by relationship selected"
+* born[x] -> "N/A"
+* age[x] -> "N/A"
+* estimatedAge -> "N/A"
+* deceased[x] -> "Living/Deceased choice"
+* extension[sibling] -> "N/A"
+* extension[adopted] -> "N/A"
+* extension[ethnicity] -> "N/A"
+* extension[race] -> "N/A"
+* condition.code -> "Condition/Problem/Other" "needs mapping to SNOMED-CT terminology"
+* condition.outcome -> "N/A"
+* condition.onset[x] -> "N/A"
+* note.text -> "Comments:"
+
+
+Instance: ex-father
+InstanceOf: MHVfamilymemberhistory
+Title: "Example Father Family Member History"
+Description: """
+Minimal details
+- Johannes Yakub Schmidt
+- Father
+- Male
+- born July 25, 1903 - estimated
+- deceased
+- note
+- conditions: Anxiety and Choroidal
+"""
+* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #completed
+* patient = Reference(Patient/ex-patient)
+* date = 2022-04-08
+* bornDate = "1903-07-25"
+* estimatedAge = true
+* deceasedBoolean = true
+* name = "Johannes Yakub Schmidt"
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#FTH "father"
+* sex = http://hl7.org/fhir/administrative-gender#male "Male"
+* note.text = "His father, John Jacob Schmidt, born Johannes Yakub Schmidt in Lithuania. He was a baker recently moved to Buffalo to open his own bakery. "
+* condition[+].code = SCT#109006 "Anxiety disorder of childhood OR adolescence"
+* condition[+].code = SCT#122003 "Choroidal hemorrhage"
+
+Instance: ex-mother
+InstanceOf: MHVfamilymemberhistory
+Title: "Example Mother Family Member History"
+Description: """
+Minimal details
+- Katherine Irene Schmidt
+- Mother
+- Female
+- note
+- conditions: Homiothermia and decreased hair growth
+"""
+* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #completed
+* patient = Reference(Patient/ex-patient)
+* date = 2022-04-08
+* name = "Katherine Irene Schmidt"
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH "mother"
+* sex = http://hl7.org/fhir/administrative-gender#female "Female"
+* note.text = """
+His mother, Katherine Irene Schmidt, (nee O'Cleary) was an immigrant from Ireland, who had left the "Auld Sod" back in 1849 as a young girl escaping the Potato Famine. She worked at the Broadhurst Manor Hotel as a maid, dishwasher, and cook's helper, saving every penny possible.
+"""
+* condition[+].code = SCT#127009 "Homoiothermia"
+* condition[+].code = SCT#134006 "Decreased hair growth"
+
+Instance: ex-wife
+InstanceOf: MHVfamilymemberhistory
+Title: "Example Wife Family Member History"
+Description: """
+Minimal details
+- Jania Luise Schmidt
+- Wife
+- Female
+- note
+- conditions: Pharyngitis and normal peripheral vision
+"""
+* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #completed
+* patient = Reference(Patient/ex-patient)
+* date = 2022-04-08
+* name = "Jania Louise Schmidt"
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#WIFE "wife"
+* sex = http://hl7.org/fhir/administrative-gender#female "Female"
+* note.text = "The wife, Jania the daughter of the green grocers."
+* condition[+].code = SCT#140004 "Chronic pharyngitis"
+* condition[+].code = SCT#144008 "Normal peripheral vision"
+
+Instance: ex-son
+InstanceOf: MHVfamilymemberhistory
+Title: "Example Son Family Member History"
+Description: """
+Minimal details
+- John Jacob Schmidt
+- Son
+- twin
+- age 78
+- Male
+- note
+- conditions: scrotum wound and bladder continence
+"""
+* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #completed
+* patient = Reference(Patient/ex-patient)
+* date = 2022-04-08
+* ageAge = 78 'a'
+* extension[sibling].valueInteger = 2
+* name = "John Jacob Schmidt"
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#SON "natural son"
+* sex = http://hl7.org/fhir/administrative-gender#male "Male"
+* note.text = "but of course there must be a son named John Jacob..."
+* condition[+].code = SCT#147001 "Superficial foreign body of scrotum without major open wound but with infection"
+* condition[+].code = SCT#150003 "Abnormal bladder continence"
+
+Instance: ex-son2
+InstanceOf: MHVfamilymemberhistory
+Title: "Example Second Son Family Member History"
+Description: """
+Maximal details
+- John Jacob Schmidt
+- Son
+- twin
+- born 7/25/1943
+- Male
+- not adopted
+- not hispanic or latino
+- Irish
+- note
+- conditions: Meningitis leading to Meningoccermia at age 50s
+- conditions: bipolar
+"""
+* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #completed
+* patient = Reference(Patient/ex-patient)
+* date = 2022-04-08
+* name = "John Jacob Schmidt"
+* bornDate = "1943-07-25"
+* extension[sibling].valueInteger = 2
+* extension[adopted].valueBoolean = false
+* extension[ethnicity].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-Ethnicity#2186-5 "Not Hispanic or Latino"
+* extension[race].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-Race#2113-9 "Irish"
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#SON "natural son"
+* sex = http://hl7.org/fhir/administrative-gender#male "Male"
+* note.text = "but of course there must be a son named John Jacob..."
+* condition[+].code = SCT#151004 "Meningitis due to gonococcus"
+* condition[=].outcome = SCT#4089001 "Meningococcermia"
+* condition[=].contributedToDeath = false
+* condition[=].onsetString = "50s"
+* condition[+].code = SCT#162004 "Severe manic bipolar I disorder without psychotic features"
 
 

@@ -7,32 +7,32 @@
     "name": "MHVtoPGHD_Example"
   },
   {
-    "id": "FM-adopted",
+    "id": "FM-Adopted",
     "type": "StructureDefinition",
-    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-adopted",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted",
     "version": "0.2.7-beta",
-    "name": "adopted"
+    "name": "Adopted"
   },
   {
-    "id": "FM-ethnicity",
+    "id": "FM-Ethnicity",
     "type": "StructureDefinition",
-    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-ethnicity",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Ethnicity",
     "version": "0.2.7-beta",
-    "name": "ethnicity"
+    "name": "Ethnicity"
   },
   {
-    "id": "FM-multiBirth",
+    "id": "FM-MultiBirth",
     "type": "StructureDefinition",
-    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-multiBirth",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth",
     "version": "0.2.7-beta",
-    "name": "multiBirth"
+    "name": "MultiBirth"
   },
   {
-    "id": "FM-race",
+    "id": "FM-Race",
     "type": "StructureDefinition",
-    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-race",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Race",
     "version": "0.2.7-beta",
-    "name": "race"
+    "name": "Race"
   },
   {
     "id": "VA.MHV.BlueBundle",

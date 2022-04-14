@@ -3,11 +3,11 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
 	<id value="va.mhv.example"/>
 	<url value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-	<version value="0.2.7-beta" />
+	<version value="0.2.8-beta" />
 	<name value="MHVtoPGHD_Example"/>
 	<status value="draft"/>
 	<experimental value="false"/>
-	<date value="2021-09-14"/>
+	<date value="2022-04-14"/>
 	<contact>
 		<name value="John Moehrke" />
 	</contact>	
@@ -46,6 +46,11 @@
 				<nameUrl value="downloads.html"/>
 				<title value="Useful Downloads"/>
 				<generation value="html"/>
+			</page>
+			<page>
+				<nameUrl value="testplan.html"/>
+				<title value="Test Plan"/>
+				<generation value="markdown"/>
 			</page>
 			<page>
 				<nameUrl value="changes.html"/>

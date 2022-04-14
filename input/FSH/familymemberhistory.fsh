@@ -65,7 +65,7 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of Famil
 * must indicate the date this record is being recorded into PGHD 
 * should have a name of the family member
 * must have the relationship this family member has with the Patient
-* should have the sex/gender (administrative gender) of this family member
+* should have the sex/gender (birth sex) of this family member
 * should have the age or date-of-birth
   * should use a valueSet for date ranges on decades 
   * indicate estimatedAge if the age is estimated
@@ -172,6 +172,9 @@ Title: "MyHealtheVet old Family Health History UI mapping to FHIR/PGHD"
 * note.text -> "Comments:"
 
 
+
+
+
 Instance: ex-father
 InstanceOf: MHVfamilymemberhistory
 Title: "Example Father Family Member History"
@@ -190,7 +193,6 @@ Minimal details
 * patient = Reference(Patient/ex-patient)
 * date = 2022-04-08
 * bornDate = "1903-07-25"
-* estimatedAge = true
 * deceasedBoolean = true
 * name = "Johannes Yakub Schmidt"
 * relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#FTH "father"
@@ -220,7 +222,7 @@ Minimal details
 * note.text = """
 His mother, Katherine Irene Schmidt, (nee O'Cleary) was an immigrant from Ireland, who had left the "Auld Sod" back in 1849 as a young girl escaping the Potato Famine. She worked at the Broadhurst Manor Hotel as a maid, dishwasher, and cook's helper, saving every penny possible.
 """
-* condition[+].code = SCT#127009 "Homoiothermia"
+* condition[+].code = SCT#127009 "Spontaneous abortion with laceration of cervix"
 * condition[+].code = SCT#134006 "Decreased hair growth"
 
 Instance: ex-wife
@@ -263,6 +265,7 @@ Minimal details
 * patient = Reference(Patient/ex-patient)
 * date = 2022-04-08
 * ageAge = 78 'a'
+* estimatedAge = true
 * extension[sibling].valueInteger = 2
 * name = "John Jacob Schmidt"
 * relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#SON "natural son"
@@ -302,7 +305,7 @@ Maximal details
 * sex = http://hl7.org/fhir/administrative-gender#male "Male"
 * note.text = "but of course there must be a son named John Jacob..."
 * condition[+].code = SCT#151004 "Meningitis due to gonococcus"
-* condition[=].outcome = SCT#4089001 "Meningococcermia"
+* condition[=].outcome = SCT#4089001 "Meningococcemia"
 * condition[=].contributedToDeath = false
 * condition[=].onsetString = "50s"
 * condition[+].code = SCT#162004 "Severe manic bipolar I disorder without psychotic features"

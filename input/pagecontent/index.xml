@@ -18,13 +18,16 @@ This includes the test plan, profiles of how MHV publishes, examples that match 
   </p>
   <ul>
     <li>
-      <a href="background.html">Background</a> - This is the overall Test Plan
+      <a href="background.html">Background</a> - The Profiles and background
     </li>
     <li>
-      <a href="artifacts.html">Artifacts</a> - This includes all computable artifacts used
+      <a href="artifacts.html">Artifacts</a> - All computable artifacts used
     </li>
     <li>
       <a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
+    </li>
+    <li>
+      <a href="testplan.html">TestPlan</a> - Overall Plan for testing
     </li>
   </ul>
 </div>

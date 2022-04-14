@@ -41,7 +41,7 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.immunization"/>
-  <version value="0.2.7-beta"/>
+  <version value="0.2.8-beta"/>
   <name value="MHVimmunization"/>
   <title value="VA MHV Immunization"/>
   <status value="active"/>

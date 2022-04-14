@@ -1,6 +1,6 @@
 {
   "package": "va.mhv.example",
-  "version": "0.2.7-beta",
+  "version": "0.2.8-beta",
   "fhirVersion": "4.0.1",
   "jurisdiction": "USA",
   "extensions": [

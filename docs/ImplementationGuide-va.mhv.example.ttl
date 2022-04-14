@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MHVtoPGHD_Example</h2><p>The official URL for this implementation guide is: </p><pre>https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example</pre><div><p>Testing Plan for VA MyHealtheVet use of PGHD.</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"];
-  fhir:ImplementationGuide.version [ fhir:value "0.2.7-beta"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.8-beta"];
   fhir:ImplementationGuide.name [ fhir:value "MHVtoPGHD_Example"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-09-14"^^xsd:date];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-14"^^xsd:date];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
@@ -2033,7 +2033,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/VA.MHV.familymemberhistory" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VA MHV FamilyMemberHistory" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the FamilyMemberHistory that declares how MHV will Create/Update in PGHD for an family member history record.\n\n**Proposed mapping not yet approved for implementation**\n\nGiven that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.\n* For each relative of the Patient there will be a FamilyMemberHistory instance \n  * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.\n  * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned\n  * Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\n* must be marked with MHV app tag\n* must point at the patient\n* must indicate the date this record is being recorded into PGHD \n* should have a name of the family member\n* must have the relationship this family member has with the Patient\n* should have the sex/gender (administrative gender) of this family member\n* should have the age or date-of-birth\n  * should use a valueSet for date ranges on decades \n  * indicate estimatedAge if the age is estimated\n* should have indication when patient has died with the age of death or date\n  * should use a valueSet for date ranges on decades \n* may have extension indication of twin (multiple-birth) using \n* may have extension indicate Race \n* may have extension indicate Ethnicity \n* may have extension indicate Adopted\n* should have 0..* conditions\n  * condition.code should be from a given valueSet\n  * condition.outcome should indicate the outcome of this condition\n  * condition.onset[x] should indicate when this condition first manifested\n  * condition.note may include a freetext note\n* should have a note" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the FamilyMemberHistory that declares how MHV will Create/Update in PGHD for an family member history record.\n\n**Proposed mapping not yet approved for implementation**\n\nGiven that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.\n* For each relative of the Patient there will be a FamilyMemberHistory instance \n  * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.\n  * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned\n  * Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\n* must be marked with MHV app tag\n* must point at the patient\n* must indicate the date this record is being recorded into PGHD \n* should have a name of the family member\n* must have the relationship this family member has with the Patient\n* should have the sex/gender (birth sex) of this family member\n* should have the age or date-of-birth\n  * should use a valueSet for date ranges on decades \n  * indicate estimatedAge if the age is estimated\n* should have indication when patient has died with the age of death or date\n  * should use a valueSet for date ranges on decades \n* may have extension indication of twin (multiple-birth) using \n* may have extension indicate Race \n* may have extension indicate Ethnicity \n* may have extension indicate Adopted\n* should have 0..* conditions\n  * condition.code should be from a given valueSet\n  * condition.outcome should indicate the outcome of this condition\n  * condition.onset[x] should indicate when this condition first manifested\n  * condition.note may include a freetext note\n* should have a note" ]
      ], [
        fhir:index 121;
        fhir:Element.extension [
@@ -2210,6 +2210,11 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "testplan.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Test Plan" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "IG Change History" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]

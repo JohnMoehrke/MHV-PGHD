@@ -46,15 +46,16 @@
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
-<div id="hl7-nav"> 
-     <a no-external="true" id="hl7-logo" href="http://example.org/index.html">
+<div id="jfm-nav"> 
+     <a no-external="true" id="jfm-logo" href="https://johnmoehrke.github.io">
      <img src="assets/images/va-header-logo.png" alt="VA Organization" height="50"/>
      </a>
+	 </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.7-beta - CI Build
+            <span style="display:inline-block;">0.2.8-beta - CI Build
 
 
 
@@ -88,7 +89,7 @@
   <li><a href="background.html">Background</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li><a href="downloads.html">Downloads</a></li>
-  <li><a href="searchform.html">Search</a></li>
+  <li><a href="testplan.html">Test Plan</a></li>
 </ul>      
 
             </div>    <!-- /.nav-collapse -->
@@ -132,7 +133,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.7-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.8-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Background</h2>
   
 
@@ -153,17 +154,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#myhealthevet-contributions-to-pghd" id="markdown-toc-myhealthevet-contributions-to-pghd">MyHealtheVet contributions to PGHD</a>    <ul>
       <li><a href="#currently-implemented" id="markdown-toc-currently-implemented">currently implemented</a></li>
       <li><a href="#profile-drafted-but-feature-is-not-approved-for-implementation" id="markdown-toc-profile-drafted-but-feature-is-not-approved-for-implementation">profile drafted but feature is not approved for implementation</a></li>
-      <li><a href="#additional-features" id="markdown-toc-additional-features">Additional Features</a></li>
+      <li><a href="#additional-features-myhealthevet-could-use-fhir-for" id="markdown-toc-additional-features-myhealthevet-could-use-fhir-for">Additional Features MyHealtheVet could use FHIR for</a></li>
     </ul>
   </li>
-  <li><a href="#test-plan" id="markdown-toc-test-plan">Test Plan</a></li>
 </ul>
 
 </div>
 
 <h2 id="myhealthevet-contributions-to-pghd">MyHealtheVet contributions to PGHD</h2>
-
-<p>August 2021 now moving toward using FHIR R4 rather than DSTU2. This IG is focused on that FHIR R4 profile.</p>
 
 <p>MyHealtheVet provides access to the VA managed Patient Generated Health Data (PGHD) FHIR based repository. MyHealtheVet enables viewing of the data, creating new entries, editing existing entries, and deleting entries. In addition MyHealtheVet enables the output of a FHIR-Document Bluebutton report.</p>
 
@@ -206,7 +204,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Upload Documents</li>
 </ul>
 
-<h3 id="additional-features">Additional Features</h3>
+<h3 id="additional-features-myhealthevet-could-use-fhir-for">Additional Features MyHealtheVet could use FHIR for</h3>
 
 <ul>
   <li>Change
@@ -223,55 +221,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li>Graph data over time – like MyHealtheVet already supports for SEI vital signs, or like VCM supports for PGHD vital signs.</li>
+  <li>Revoke Clinical access
+    <ul>
+      <li>Use of FHIR Consent to indicate Veteran has revoked MHV access to the data without removing the data</li>
+    </ul>
+  </li>
+  <li>Veteran see when data are reviewed
+    <ul>
+      <li>Requires PGHD implement FHIR AuditEvent</li>
+      <li>Provide view of who has accessed the data</li>
+    </ul>
+  </li>
   <li>Current MyHealtheVet secure messaging include references to PGHD hosted resources. For example being able to tell the doctor you have a new blood-pressure, and include in the message the FHIR Reference id in a rich-text way that appears to the human nicely, but is actually a FHIR URL</li>
 </ul>
-
-<h2 id="test-plan">Test Plan</h2>
-<p>Overall test plan leverages the Profiles, and Examples shown on the <a href="artifacts.html">Artifacts Summary</a>. The <a href="artifacts.html#structures-resource-profiles">Profiles</a> listed are describing the constraints that MHV uses when publishing (Create or Update) into PGHD. Thus any Resources that are known to have been published by MHV MUST be conformant to these profiles.</p>
-
-<p>The Examples listed in <a href="artifacts.html#example-example-instances">Example Instances</a> are example instances that are conformant to the MHV profiles.</p>
-
-<p>The Examples listed in <a href="artifacts.html#other">Other</a> are examples that either assist with the structure of the examples (e.g. Patient and Encounter) or are examples that MHV should be able to handle in various ways.</p>
-
-<p>See the Test Plan for each Profile to understand the specific expectations for each good, odd, and bad example.</p>
-<ul>
-  <li><a href="StructureDefinition-VA.MHV.bodyWeight.html">Body Weight</a></li>
-</ul>
-
-<h4 id="cucumber-actions">Cucumber Actions</h4>
-<p>The following Actions are defined for use in the Cucumber scripts</p>
-
-<p>SUT - System Under Test – this is the MyHealtheVet application – aka MHV</p>
-
-<p>PGHD - Patient Generated Health Data service – this is the FHIR Server that MyHealtheVet uses – aka PGD</p>
-
-<p>Test-Patient - a FHIR Patient resource within the PGHD that is used for testing purposes and is tied to a test login to MHV</p>
-
-<p>Test-Bench - a FHIR application (likely built with HAPI) that is used with PGHD for testing of the MHV</p>
-
-<h5 id="initialized">Initialized</h5>
-
-<p><strong>Preconditions</strong></p>
-
-<p>PGHD is operational and has no known defects that would affect the test.</p>
-
-<p>Test-Patient is created or known to have no data that would affect the test.</p>
-
-<h5 id="load-x-into-pghd">Load X into PGHD</h5>
-
-<p>This action is used to initialize a test, it is not expected to fail. So a failure is a fundamental failure, not an indication of the system-under-test.</p>
-
-<p>GIVEN FHIR Resource X from this Implementation Guide</p>
-
-<p>ACTION:</p>
-
-<ol>
-  <li>load X into Test-Bench</li>
-  <li>update the patient to the Test-Patient id under test</li>
-  <li>update the effectiveDateTime to <strong>now</strong></li>
-  <li>POST the resource into PGHD</li>
-  <li>continue if successful, if error then break out of test plan</li>
-</ol>
 
 
 
@@ -319,15 +281,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l597">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 11, 2022 08:49-0500">2022-04-11</span>
+        <p><a name="l515">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 14, 2022 15:14-0500">2022-04-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
+                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/JohnMoehrke/MHV-PGHD/issues/new/choose" target="_blank">New Issue</a> | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/JohnMoehrke/MHV-PGHD/issues" target="_blank">Issues</a>
                 
-| <a style="color: #81BEF7" href="../issues">Report an issue</a>
           
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -355,12 +316,20 @@ anchors.add()</script>
   <!-- v0.1, 2021-01-09 -->
 
 
+  
+    
+  
+
+
+  
+    
+  
+
+
 
   <!-- / feedback form -->
 
     <!-- Analytics Below
   ================================================== -->
-  
-
-
-</div></body></html>
+  </body>
+</html>

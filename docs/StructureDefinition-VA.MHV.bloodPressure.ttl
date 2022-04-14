@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.7-beta"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.8-beta"];
   fhir:StructureDefinition.name [ fhir:value "MHVbloodPressure"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV Blood Pressure Observation"];
   fhir:StructureDefinition.status [ fhir:value "active"];

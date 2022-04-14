@@ -13,11 +13,11 @@ Note would like to use the us-core defined extension, but it is not allowed in F
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Ethnicity"/>
-  <version value="0.2.7-beta"/>
+  <version value="0.2.8-beta"/>
   <name value="Ethnicity"/>
   <title value="Ethnicity"/>
   <status value="active"/>
-  <date value="2022-04-11T08:49:59-05:00"/>
+  <date value="2022-04-14T15:14:34-05:00"/>
   <contact>
     <name value="John Moehrke"/>
   </contact>

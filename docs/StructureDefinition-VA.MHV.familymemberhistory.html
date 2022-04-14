@@ -40,21 +40,22 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.10"}
-    h3,h4,h5,h6{--heading-prefix:"5.10"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.10"}
+    h3,h4,h5,h6{--heading-prefix:"6.10"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
-<div id="hl7-nav"> 
-     <a no-external="true" id="hl7-logo" href="http://example.org/index.html">
+<div id="jfm-nav"> 
+     <a no-external="true" id="jfm-logo" href="https://johnmoehrke.github.io">
      <img src="assets/images/va-header-logo.png" alt="VA Organization" height="50"/>
      </a>
+	 </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.7-beta - CI Build
+            <span style="display:inline-block;">0.2.8-beta - CI Build
 
 
 
@@ -88,7 +89,7 @@
   <li><a href="background.html">Background</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li><a href="downloads.html">Downloads</a></li>
-  <li><a href="searchform.html">Search</a></li>
+  <li><a href="testplan.html">Test Plan</a></li>
 </ul>      
 
             </div>    <!-- /.nav-collapse -->
@@ -125,7 +126,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.7-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.8-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -214,7 +215,7 @@ Experimental
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory<button data-clipboard-text="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory" title="Click to copy URL" class="btn-copy"></button></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.7-beta<button data-clipboard-text="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory|0.2.7-beta" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">0.2.8-beta<button data-clipboard-text="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory|0.2.8-beta" title="Click to copy versioned URL" class="btn-copy"></button></span>
       </td>
     </tr>
 
@@ -265,7 +266,7 @@ Experimental
   <li>must indicate the date this record is being recorded into PGHD</li>
   <li>should have a name of the family member</li>
   <li>must have the relationship this family member has with the Patient</li>
-  <li>should have the sex/gender (administrative gender) of this family member</li>
+  <li>should have the sex/gender (birth sex) of this family member</li>
   <li>should have the age or date-of-birth
     <ul>
       <li>should use a valueSet for date ranges on decades</li>
@@ -315,9 +316,13 @@ Experimental
   <li>must indicate the date being recorded</li>
   <li>should have the family member’s name or some alias</li>
   <li>must have relationship between family member and patient</li>
-  <li>should have gender of the family member (administrative gender, not birth gender)</li>
+  <li>should have sex of the family member (birth sex)</li>
   <li>should indicate if the family member is deceased</li>
-  <li>will have zero or more medical conditions using SNOMED-CT codes</li>
+  <li>will have zero or more medical conditions using SNOMED-CT codes
+    <ul>
+      <li>allow free-text entered conditions for those not listed</li>
+    </ul>
+  </li>
   <li>should have a note</li>
 </ul>
 
@@ -327,12 +332,115 @@ Experimental
 <ul>
   <li>All elements map directoy to FHIR elements
     <ul>
-      <li><a name="l500">​</a>See <a href="StructureDefinition-VA.MHV.familymemberhistory-mappings.html#mappings-for-myhealthevet-old-family-health-history-ui-mapping-t">defined mapping from old to PGHD</a></li>
+      <li><a name="l507">​</a>See <a href="StructureDefinition-VA.MHV.familymemberhistory-mappings.html#mappings-for-myhealthevet-old-family-health-history-ui-mapping-t">defined mapping from old to PGHD</a></li>
       <li>old conditions need to be mapped to proper Conditions vocabulary</li>
     </ul>
   </li>
   <li>No need for extensions</li>
 </ul>
+
+<p><strong>Existing Relationship to FHIR relationship and gender</strong></p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>MHV Relationship</th>
+      <th>FHIR relationship</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Self</td>
+      <td>N/A -&gt; Conditions</td>
+    </tr>
+    <tr>
+      <td>Mother</td>
+      <td>#MTR “mother”</td>
+    </tr>
+    <tr>
+      <td>Father</td>
+      <td>#FTH “father”</td>
+    </tr>
+    <tr>
+      <td>Grandfather - Mother’s Side</td>
+      <td>#MGRFTH	“maternal grandfather”</td>
+    </tr>
+    <tr>
+      <td>Grandmother - Mother’s Side</td>
+      <td>#MGRMTH	“maternal grandmother”</td>
+    </tr>
+    <tr>
+      <td>Grandfather - Father’s Side</td>
+      <td>#PGRFTH	“paternal grandfather”</td>
+    </tr>
+    <tr>
+      <td>Grandmother - Father’s Side</td>
+      <td>#PGRMTH	“paternal grandmother”</td>
+    </tr>
+    <tr>
+      <td>Uncle - Mother’s Side</td>
+      <td>#MUNCLE	“maternal uncle”</td>
+    </tr>
+    <tr>
+      <td>Aunt - Mother’s Side</td>
+      <td>#MAUNT	“maternal aunt”</td>
+    </tr>
+    <tr>
+      <td>Uncle - Father’s Side</td>
+      <td>#PUNCLE	“paternal uncle”</td>
+    </tr>
+    <tr>
+      <td>Aunt - Father’s Side</td>
+      <td>#PAUNT	“paternal aunt”</td>
+    </tr>
+    <tr>
+      <td>Sister</td>
+      <td>#SIS	“sister”</td>
+    </tr>
+    <tr>
+      <td>Brother</td>
+      <td>#BRO	“brother”</td>
+    </tr>
+    <tr>
+      <td>Daughter</td>
+      <td>#DAUC	“daughter”</td>
+    </tr>
+    <tr>
+      <td>Son</td>
+      <td>#SONC	“son”</td>
+    </tr>
+    <tr>
+      <td>Half Sister</td>
+      <td>#HSIS	“half-sister”</td>
+    </tr>
+    <tr>
+      <td>Half Brother</td>
+      <td>#HBRO	“half-brother”</td>
+    </tr>
+    <tr>
+      <td>Male Cousin</td>
+      <td>#COUSN “cousin”</td>
+    </tr>
+    <tr>
+      <td>Female Cousin</td>
+      <td>#COUSN	“cousin”</td>
+    </tr>
+    <tr>
+      <td>Nephew</td>
+      <td>#NEPHEW	“nephew”</td>
+    </tr>
+    <tr>
+      <td>Niece</td>
+      <td>#NIECE	“niece”</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>#SIGOTHR	“significant other”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note: There are <a href="http://hl7.org/fhir/v3/FamilyMember/vs.html">more codes</a>, specifically such as codes for adoptions on all of these.</p>
 
 <h5 id="support-for-exporting-the-existing-data-into-pghd">Support for exporting the existing data into PGHD</h5>
 
@@ -354,11 +462,54 @@ Experimental
 
 <p>Given some Veterans have recorded Family Health History, there could be an ability to export this data to start a new Family Member History. That is to say when a Veteran first uses the PGHD Family Member History, they are propted to initialize with the existing Family Health History data. This would only be offered the first time. This export would still have the SNOMED-CT code translation problem mentioned above.</p>
 
+<ol>
+  <li>Import just the Family Members structure, not the conditions each member has.</li>
+  <li>Import also the Conditions, but import them purely as displaynames with no attempt to convert to SNOMED-CT.</li>
+  <li>Import the Conditions and convert them to a SNOMED-CT mapped term. This will require a clinically relevant mapping approved by medical professionals.</li>
+</ol>
+
+<p>Note: The old MHV Family Health History can not handle FHIR managed data. This is because the FHIR FamilyMemberHistory resource is more specific, and carry many more details. Thus one would not give a Veteran the impression that the old MHV Family Health History is showing the data in PGHD to prevent the Veteran from presuming that it does, and complaining that data has been lost.</p>
+
+<h6 id="bluebutton">BlueButton</h6>
+
+<p>It might be helpful to export PGHD information including FamilyMemberHistory into the BlueButton report. The current Family Health History export into the BlueButton report is similar to how this would look for FamilyMemberHistory data from PGHD. This text export is also similar to the current VCM way of handling the FamilyMemberHistory in PGHD.</p>
+
 <h5 id="selecting-conditions">Selecting Conditions</h5>
 
-<p>The CDC prototype proposed that the SNOMED-CT codes would be grouped into categories that would be the first level the user would select from. This grouping does not exist formally. This grouping would be nice, but it seems inappropriate that MyHealtheVet is looked to to provide this kind of clinical knowledge breakdown. Thus this seems a good opportunity for multiple ValueSets. With the top level valueSet being the groups, and a valueSet for each of those groups. Thus the management of the groups and the members in that group can be managed dynamically and not be fixed in application logic.</p>
+<p>The CDC prototype proposed that the 92 Condition codes would be grouped into categories that would be the first level the user would select from. Each group has an “other”, and the list of 17 groups allows for unknonw, and also user entered code. It is not obvious that SNOMED-CT was common use at the time this CDC Prototype was developed.</p>
+
+<p><a href="CDC-Conditions-SubSet.png" title="Conditions Groups">CDC Prototype Condition Groups</a></p>
+<ul>
+  <li>Cancer -&gt; 24</li>
+  <li>Clotting Disorder -&gt; 4</li>
+  <li>Dementia/Alzheimers</li>
+  <li>Diabetes -&gt; 10</li>
+  <li>Gastrointestinal Disorder -&gt; 8</li>
+  <li>Heart Disease -&gt; 5</li>
+  <li>High Cholesterol -&gt; 2</li>
+  <li>Hypertension</li>
+  <li>Kidney Disease -&gt; 7</li>
+  <li>Lung Disease -&gt; 8</li>
+  <li>Osteoporosis</li>
+  <li>Psychological Disorder -&gt; 15</li>
+  <li>Septicemia</li>
+  <li>Stroke/Brain Attack</li>
+  <li>Sudden Death -&gt; 4</li>
+  <li>Unknown</li>
+  <li>(user entered)</li>
+</ul>
+
+<p>This grouping does not exist formally. This <a href="https://chat.fhir.org/#narrow/stream/179202-terminology/topic/Layperson.20Conditions.20valueset">grouping would be nice</a>, but it seems inappropriate that MyHealtheVet is looked to to provide this kind of clinical knowledge breakdown. Thus this seems a good opportunity for multiple ValueSets. With the top level valueSet being the groups, and a valueSet for each of those groups. Thus the management of the groups and the members in that group can be managed dynamically and not be fixed in application logic.</p>
 
 <p>See the <a href="https://www.nlm.nih.gov/research/umls/Snomed/core_subset.html">SNOMED-CT subset for conditions</a>.</p>
+<ul>
+  <li>25,000+ codes, and changes often. Not lay person friendly terms.</li>
+  <li>has 241 groups, but not lay person friendly groups</li>
+</ul>
+
+<p>Recommendation to me is to use the <a href="https://www.nlm.nih.gov/research/umls/Snomed/cmt.html">USA Edition of CMT release</a> ( 25,604 codes). 
+Noted is that the SNOMED-CT terms do have a “lay person” display name for the code. Not sure how to get to them yet.
+Mapping from <a href="https://docs.google.com/spreadsheets/d/1ZY6on5PU-MiYqjoJtkMAeky0wFIKZB1CZE3XtuAgDXA/edit?usp=sharing">MyHealtheVet current Conditions to SNOMED-CT</a></p>
 
 <h4 id="additional-features-beyond-mvp">Additional features beyond MVP</h4>
 
@@ -375,6 +526,7 @@ Experimental
       <li>condition.note may include a freetext note</li>
     </ul>
   </li>
+  <li>allow Veteran to enter their own Conditions (from their perspective)</li>
 </ul>
 
 <h3 id="background">Background</h3>
@@ -556,7 +708,7 @@ Summary
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="abhf"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display">display</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Representation defined by the system</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="abhg"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.userSelected">userSelected</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If this coding was chosen directly by the user</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ac"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.">implicitRules</a><a name="FamilyMemberHistory.implicitRules"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is a modifier element">?!</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A set of rules under which this content was created</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.language" title="The base language in which the resource is written.">language</a><a name="FamilyMemberHistory.language"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Language of the resource content<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><a style="font-weight:bold" href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Max Value Set Extension">Max Binding: </a><a href="http://hl7.org/fhir/R4/valueset-all-languages.html">AllLanguages</a>: A human language.<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.language" title="The base language in which the resource is written.">language</a><a name="FamilyMemberHistory.language"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Language of the resource content<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>): A human language.<br/><br/><table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ae"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.text" title="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.">text</a><a name="FamilyMemberHistory.text"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Narrative">Narrative</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text summary of the resource, for human interpretation</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="af"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.">contained</a><a name="FamilyMemberHistory.contained"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Resource</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contained, inline Resources<br/></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ag"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension" title="An Extension">Slices for extension</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension<br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url<br/></td></tr>
@@ -857,7 +1009,7 @@ Summary
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="abhf"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display">display</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Representation defined by the system</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="abhg"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.userSelected">userSelected</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If this coding was chosen directly by the user</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ac"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.">implicitRules</a><a name="FamilyMemberHistory.implicitRules"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is a modifier element">?!</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A set of rules under which this content was created</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.language" title="The base language in which the resource is written.">language</a><a name="FamilyMemberHistory.language"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Language of the resource content<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>)<br/><a style="font-weight:bold" href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Max Value Set Extension">Max Binding: </a><a href="http://hl7.org/fhir/R4/valueset-all-languages.html">AllLanguages</a>: A human language.<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.language" title="The base language in which the resource is written.">language</a><a name="FamilyMemberHistory.language"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Language of the resource content<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>): A human language.<br/><br/><table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ae"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.text" title="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.">text</a><a name="FamilyMemberHistory.text"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Narrative">Narrative</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text summary of the resource, for human interpretation</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="af"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.">contained</a><a name="FamilyMemberHistory.contained"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Resource</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Contained, inline Resources<br/></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ag"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-VA.MHV.familymemberhistory-definitions.html#FamilyMemberHistory.extension" title="An Extension">Slices for extension</a><a name="FamilyMemberHistory.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension<br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url<br/></td></tr>
@@ -1192,15 +1344,14 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l7666">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.7-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 11, 2022 08:49-0500">2022-04-11</span>
+        <p><a name="l8020">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 14, 2022 15:14-0500">2022-04-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
+                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/JohnMoehrke/MHV-PGHD/issues/new/choose" target="_blank">New Issue</a> | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/JohnMoehrke/MHV-PGHD/issues" target="_blank">Issues</a>
                 
-| <a style="color: #81BEF7" href="../issues">Report an issue</a>
           
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -1228,12 +1379,20 @@ anchors.add()</script>
   <!-- v0.1, 2021-01-09 -->
 
 
+  
+    
+  
+
+
+  
+    
+  
+
+
 
   <!-- / feedback form -->
 
     <!-- Analytics Below
   ================================================== -->
-  
-
-
-</div></body></html>
+  </body>
+</html>

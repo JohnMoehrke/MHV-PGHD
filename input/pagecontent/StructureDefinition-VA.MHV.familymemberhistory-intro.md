@@ -54,9 +54,9 @@ N/A | #SIGOTHR	"significant other"
 Note: There are [more codes](http://hl7.org/fhir/v3/FamilyMember/vs.html), specifically such as codes for adoptions on all of these. 
 
 
-##### Support for exporting the existing data into PGHD
+##### Support for only export the existing data into PGHD
 
-This option has minimal changes to the current User Interface of MyHealtheVet. The change would enable the Veteran to "Export your existing Family Health History to PGHD". 
+This option has minimal changes to the current User Interface of MyHealtheVet. The change would enable the Veteran to "Export your existing Family Health History to PGHD". For this option there is NO new User Interface.
 
 The MVP of this would not enable the Veteran to see the data in PGHD, but where MyHealtheVet is the only application writing Family Member History into PGHD, the data there should be the same as already being displayed in MyHealthevet. There is risk that some application may be approved that does enable the Veteran to add or change, such as HealthHub or some third-party application.
 
@@ -66,9 +66,13 @@ WARNING: the existing Family Health History User Interface (and database) can no
 
 WARNING: the current Family Health History set of conditions (checkboxes) need to be mapped to SNOMED-CT specific codes. Where this mapping can be done strictly, there should be no problem. However it is unclear at this time if this mapping can be done with clinical accuracy. Note that when mapped, the FHIR specification allows for recording both the proper SNOMED-CT code and also the historic MyHealtheVet condition code.
 
+WARNING: This would become very problematic when there are other applications, such as Health Hub, that also write FamilyMemberHistory data into PGHD, as those changes will not be reflected at MHV.
+
+I do not recommend this as the MVP. Too much difference in the set of Conditions and loss of visibility of changes that might happen to the data in PGHD.
+
 ##### Similar UI 
 
-This option uses a similar UI to the current Family Member History, much like we did for Vitals. The user interface would be replicated and improved as minimal as possible.  Likely the one big change to the UI would be moving away from the current long list of checkboxes for conditions to something that could support the much larger number of conditions allowed by SNOMED-CT (over 1000 items). 
+This option uses a similar UI to the current Family Member History, much like we did for Vitals. The user interface would be replicated and improved as minimal as possible.  Likely the one big change to the UI would be moving away from the current long list of checkboxes for conditions to something that could support the much larger number of conditions allowed by SNOMED-CT (over 25,000 items). 
 
 ###### Export to start
 
@@ -86,7 +90,7 @@ It might be helpful to export PGHD information including FamilyMemberHistory int
 
 ##### Selecting Conditions
 
-The CDC prototype proposed that the 92 Condition codes would be grouped into categories that would be the first level the user would select from. Each group has an "other", and the list of 17 groups allows for unknonw, and also user entered code. It is not obvious that SNOMED-CT was common use at the time this CDC Prototype was developed. 
+The CDC prototype proposed that the 93 Condition codes would be grouped into categories that would be the first level the user would select from. Each group has an "other", and the list of 17 groups allows for unknonw, and also user entered code. It is not obvious that SNOMED-CT was common use at the time this CDC Prototype was developed. 
 
 [CDC Prototype Condition Groups](CDC-Conditions-SubSet.png "Conditions Groups")
 * Cancer -> 24
@@ -116,6 +120,14 @@ See the [SNOMED-CT subset for conditions](https://www.nlm.nih.gov/research/umls/
 Recommendation to me is to use the [USA Edition of CMT release](https://www.nlm.nih.gov/research/umls/Snomed/cmt.html) ( 25,604 codes). 
 Noted is that the SNOMED-CT terms do have a "lay person" display name for the code. Not sure how to get to them yet.
 Mapping from [MyHealtheVet current Conditions to SNOMED-CT](https://docs.google.com/spreadsheets/d/1ZY6on5PU-MiYqjoJtkMAeky0wFIKZB1CZE3XtuAgDXA/edit?usp=sharing)
+
+##### Free-text Conditions
+
+The User Interface must allow the Veteran to type in a Condition. This would enable conditions that are not part of the sub-set or grouping. When a Veteran types in a Condition, 
+1. MHV should look in SNOMED-CT for a match. 
+2. When exactly one match is returned, the Veteran should be given the choice to keep that selected code. 
+3. Multiple values might be found, for which the Veteran should then be given the choice to pick from multiple values. 
+4. The Veteran should always be allowed to record the text they typed in without a code (`FamilyMemberHistory.condition.code.text`).
 
 #### Additional features beyond MVP
 

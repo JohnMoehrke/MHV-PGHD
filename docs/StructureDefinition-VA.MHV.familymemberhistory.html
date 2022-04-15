@@ -442,9 +442,9 @@ Experimental
 
 <p>Note: There are <a href="http://hl7.org/fhir/v3/FamilyMember/vs.html">more codes</a>, specifically such as codes for adoptions on all of these.</p>
 
-<h5 id="support-for-exporting-the-existing-data-into-pghd">Support for exporting the existing data into PGHD</h5>
+<h5 id="support-for-only-export-the-existing-data-into-pghd">Support for only export the existing data into PGHD</h5>
 
-<p>This option has minimal changes to the current User Interface of MyHealtheVet. The change would enable the Veteran to “Export your existing Family Health History to PGHD”.</p>
+<p>This option has minimal changes to the current User Interface of MyHealtheVet. The change would enable the Veteran to “Export your existing Family Health History to PGHD”. For this option there is NO new User Interface.</p>
 
 <p>The MVP of this would not enable the Veteran to see the data in PGHD, but where MyHealtheVet is the only application writing Family Member History into PGHD, the data there should be the same as already being displayed in MyHealthevet. There is risk that some application may be approved that does enable the Veteran to add or change, such as HealthHub or some third-party application.</p>
 
@@ -454,9 +454,13 @@ Experimental
 
 <p>WARNING: the current Family Health History set of conditions (checkboxes) need to be mapped to SNOMED-CT specific codes. Where this mapping can be done strictly, there should be no problem. However it is unclear at this time if this mapping can be done with clinical accuracy. Note that when mapped, the FHIR specification allows for recording both the proper SNOMED-CT code and also the historic MyHealtheVet condition code.</p>
 
+<p>WARNING: This would become very problematic when there are other applications, such as Health Hub, that also write FamilyMemberHistory data into PGHD, as those changes will not be reflected at MHV.</p>
+
+<p>I do not recommend this as the MVP. Too much difference in the set of Conditions and loss of visibility of changes that might happen to the data in PGHD.</p>
+
 <h5 id="similar-ui">Similar UI</h5>
 
-<p>This option uses a similar UI to the current Family Member History, much like we did for Vitals. The user interface would be replicated and improved as minimal as possible.  Likely the one big change to the UI would be moving away from the current long list of checkboxes for conditions to something that could support the much larger number of conditions allowed by SNOMED-CT (over 1000 items).</p>
+<p>This option uses a similar UI to the current Family Member History, much like we did for Vitals. The user interface would be replicated and improved as minimal as possible.  Likely the one big change to the UI would be moving away from the current long list of checkboxes for conditions to something that could support the much larger number of conditions allowed by SNOMED-CT (over 25,000 items).</p>
 
 <h6 id="export-to-start">Export to start</h6>
 
@@ -476,7 +480,7 @@ Experimental
 
 <h5 id="selecting-conditions">Selecting Conditions</h5>
 
-<p>The CDC prototype proposed that the 92 Condition codes would be grouped into categories that would be the first level the user would select from. Each group has an “other”, and the list of 17 groups allows for unknonw, and also user entered code. It is not obvious that SNOMED-CT was common use at the time this CDC Prototype was developed.</p>
+<p>The CDC prototype proposed that the 93 Condition codes would be grouped into categories that would be the first level the user would select from. Each group has an “other”, and the list of 17 groups allows for unknonw, and also user entered code. It is not obvious that SNOMED-CT was common use at the time this CDC Prototype was developed.</p>
 
 <p><a href="CDC-Conditions-SubSet.png" title="Conditions Groups">CDC Prototype Condition Groups</a></p>
 <ul>
@@ -510,6 +514,16 @@ Experimental
 <p>Recommendation to me is to use the <a href="https://www.nlm.nih.gov/research/umls/Snomed/cmt.html">USA Edition of CMT release</a> ( 25,604 codes). 
 Noted is that the SNOMED-CT terms do have a “lay person” display name for the code. Not sure how to get to them yet.
 Mapping from <a href="https://docs.google.com/spreadsheets/d/1ZY6on5PU-MiYqjoJtkMAeky0wFIKZB1CZE3XtuAgDXA/edit?usp=sharing">MyHealtheVet current Conditions to SNOMED-CT</a></p>
+
+<h5 id="free-text-conditions">Free-text Conditions</h5>
+
+<p>The User Interface must allow the Veteran to type in a Condition. This would enable conditions that are not part of the sub-set or grouping. When a Veteran types in a Condition,</p>
+<ol>
+  <li>MHV should look in SNOMED-CT for a match.</li>
+  <li>When exactly one match is returned, the Veteran should be given the choice to keep that selected code.</li>
+  <li>Multiple values might be found, for which the Veteran should then be given the choice to pick from multiple values.</li>
+  <li>The Veteran should always be allowed to record the text they typed in without a code (<code class="language-plaintext highlighter-rouge">FamilyMemberHistory.condition.code.text</code>).</li>
+</ol>
 
 <h4 id="additional-features-beyond-mvp">Additional features beyond MVP</h4>
 
@@ -1344,8 +1358,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l8020">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 14, 2022 15:14-0500">2022-04-14</span>
+        <p><a name="l8050">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 15, 2022 08:37-0500">2022-04-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

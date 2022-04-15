@@ -524,6 +524,19 @@
           }
         ],
         "reference": {
+          "reference": "CodeSystem/Ages"
+        },
+        "name": "Ages in decades",
+        "description": "Used when the Age is not known very well"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
           "reference": "CodeSystem/CPM"
         },
         "name": "PGD other apps",
@@ -1933,6 +1946,19 @@
         },
         "name": "VA MHV Respiration Rate Observation",
         "description": "A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).\n\nThis profile is consistent with FHIR core Vital-Signs for Respiration Rate\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#9279-1 code \n  - FHIR Core, Argonaut and VCM use 9279-1\n- must have effectiveDateTime\n- must have valueQuantity with units only of breaths per minute\n  - typical is 12-16 breaths per minute\n  - must be a value 6 <= n <= 40\n- must have status at final or preliminary\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AgesVS"
+        },
+        "name": "Ages ValueSet",
+        "description": "ValueSet of the Ages allowed"
       },
       {
         "extension": [

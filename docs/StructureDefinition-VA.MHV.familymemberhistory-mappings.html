@@ -255,6 +255,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;relationship</td><td>code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;born[x]</td><td>player[classCode=LIV, determinerCode=INSTANCE]. birthDate (could be URG)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;age[x]</td><td>participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code="age"].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;age[x] (ageString)</td><td>participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code="age"].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;deceased[x]</td><td>player[classCode=LIV, determinerCode=INSTANCE].deceasedInd, deceasedDate (could be URG)  For age, you'd hang an observation off the role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ANNGEN].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
@@ -404,8 +405,8 @@
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l1082">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 15, 2022 08:37-0500">2022-04-15</span>
+        <p><a name="l1089">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 15, 2022 09:43-0500">2022-04-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

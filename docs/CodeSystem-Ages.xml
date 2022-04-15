@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Ages"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">preBirth<a name="Ages-preBirth"> </a></td><td>Pre-Birth</td></tr><tr><td style="white-space:nowrap">newBorn<a name="Ages-newBorn"> </a></td><td>Newborn</td></tr><tr><td style="white-space:nowrap">infancy<a name="Ages-infancy"> </a></td><td>In Infancy</td></tr><tr><td style="white-space:nowrap">childhood<a name="Ages-childhood"> </a></td><td>In Childhood</td></tr><tr><td style="white-space:nowrap">adolecense<a name="Ages-adolecense"> </a></td><td>In Adolescence</td></tr><tr><td style="white-space:nowrap">twenties<a name="Ages-twenties"> </a></td><td>20-29 years</td></tr><tr><td style="white-space:nowrap">thirties<a name="Ages-thirties"> </a></td><td>30-39 years</td></tr><tr><td style="white-space:nowrap">fourties<a name="Ages-fourties"> </a></td><td>40-49 years</td></tr><tr><td style="white-space:nowrap">fifties<a name="Ages-fifties"> </a></td><td>50-59 years</td></tr><tr><td style="white-space:nowrap">sixties<a name="Ages-sixties"> </a></td><td>60-69 years</td></tr><tr><td style="white-space:nowrap">seventies<a name="Ages-seventies"> </a></td><td>70-79 years</td></tr><tr><td style="white-space:nowrap">eighties<a name="Ages-eighties"> </a></td><td>80-89 years</td></tr><tr><td style="white-space:nowrap">ninties<a name="Ages-ninties"> </a></td><td>90-99 years</td></tr><tr><td style="white-space:nowrap">centurian<a name="Ages-centurian"> </a></td><td>100 plus years</td></tr><tr><td style="white-space:nowrap">unknown<a name="Ages-unknown"> </a></td><td>unknown</td></tr></table></div>
+  </text>
+  <url value="https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages"/>
+  <version value="0.2.8-beta"/>
+  <name value="Ages"/>
+  <title value="Ages in decades"/>
+  <status value="active"/>
+  <date value="2022-04-15T09:43:59-05:00"/>
+  <contact>
+    <name value="John Moehrke"/>
+  </contact>
+  <description value="Used when the Age is not known very well"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="USA"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="15"/>
+  <concept>
+    <code value="preBirth"/>
+    <display value="Pre-Birth"/>
+  </concept>
+  <concept>
+    <code value="newBorn"/>
+    <display value="Newborn"/>
+  </concept>
+  <concept>
+    <code value="infancy"/>
+    <display value="In Infancy"/>
+  </concept>
+  <concept>
+    <code value="childhood"/>
+    <display value="In Childhood"/>
+  </concept>
+  <concept>
+    <code value="adolecense"/>
+    <display value="In Adolescence"/>
+  </concept>
+  <concept>
+    <code value="twenties"/>
+    <display value="20-29 years"/>
+  </concept>
+  <concept>
+    <code value="thirties"/>
+    <display value="30-39 years"/>
+  </concept>
+  <concept>
+    <code value="fourties"/>
+    <display value="40-49 years"/>
+  </concept>
+  <concept>
+    <code value="fifties"/>
+    <display value="50-59 years"/>
+  </concept>
+  <concept>
+    <code value="sixties"/>
+    <display value="60-69 years"/>
+  </concept>
+  <concept>
+    <code value="seventies"/>
+    <display value="70-79 years"/>
+  </concept>
+  <concept>
+    <code value="eighties"/>
+    <display value="80-89 years"/>
+  </concept>
+  <concept>
+    <code value="ninties"/>
+    <display value="90-99 years"/>
+  </concept>
+  <concept>
+    <code value="centurian"/>
+    <display value="100 plus years"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="unknown"/>
+  </concept>
+</CodeSystem>

@@ -115,9 +115,14 @@ date {[]} {[]}string {[]} {[]}","(approximate) date of birth","The actual or app
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=LIV, determinerCode=INSTANCE]. birthDate (could be URG)","the birthdate of the family member","N/A"
 "FamilyMemberHistory.age[x]","","","",0,1,"Y","","Y","Age {[]} {[]}
-Range {[]} {[]}string {[]} {[]}","(approximate) age","The age of the relative at the time the family member history is recorded.","use estimatedAge to indicate whether the age is actual or not.","While age can be calculated from date of birth, sometimes recording age directly is more natural for clinicians.","","","","","","","",,,,,"",,,,"FamilyMemberHistory.age[x]",0,1,"fhs-1
+Range {[]} {[]}string {[]} {[]}","(approximate) age","The age of the relative at the time the family member history is recorded.","use estimatedAge to indicate whether the age is actual or not.","While age can be calculated from date of birth, sometimes recording age directly is more natural for clinicians.","","","","","","","",,,,,"","type:$this}
+","",,"open","FamilyMemberHistory.age[x]",0,1,"fhs-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code=""age""].value","the age of the family member","N/A"
+"FamilyMemberHistory.age[x]","ageString","","",0,1,"","","Y","string {[]} {[]}
+","should use strings from [Ages](CodeSystem-Ages.html)","The age of the relative at the time the family member history is recorded.","use estimatedAge to indicate whether the age is actual or not.","While age can be calculated from date of birth, sometimes recording age directly is more natural for clinicians.","","","","","","","",,,,,"",,,,"FamilyMemberHistory.age[x]",0,1,"fhs-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code=""age""].value"
 "FamilyMemberHistory.estimatedAge","","","",0,1,"Y","","Y","boolean {[]} {[]}
 ","Age is estimated?","If true, indicates that the age value specified is an estimated value.","This element is labeled as a modifier because the fact that age is estimated can/should change the results of any algorithm that calculates based on the specified age.","Clinicians often prefer to specify an estimaged age rather than an age range.","","It is unknown whether the age is an estimate or not","","","","","",,,,,"",,,,"FamilyMemberHistory.estimatedAge",0,1,"fhs-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

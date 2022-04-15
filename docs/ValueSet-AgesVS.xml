@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="AgesVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-Ages.html"><code>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</code></a></li></ul></div>
+  </text>
+  <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AgesVS"/>
+  <version value="0.2.8-beta"/>
+  <name value="AgesVS"/>
+  <title value="Ages ValueSet"/>
+  <status value="active"/>
+  <date value="2022-04-15T09:43:59-05:00"/>
+  <contact>
+    <name value="John Moehrke"/>
+  </contact>
+  <description value="ValueSet of the Ages allowed"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="USA"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages"/>
+    </include>
+  </compose>
+</ValueSet>

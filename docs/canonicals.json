@@ -1,5 +1,12 @@
 [
   {
+    "id": "Ages",
+    "type": "CodeSystem",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages",
+    "version": "0.2.8-beta",
+    "name": "Ages"
+  },
+  {
     "id": "va.mhv.example",
     "type": "ImplementationGuide",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example",
@@ -138,6 +145,13 @@
     "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate",
     "version": "0.2.8-beta",
     "name": "MHVrespirationRate"
+  },
+  {
+    "id": "AgesVS",
+    "type": "ValueSet",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AgesVS",
+    "version": "0.2.8-beta",
+    "name": "AgesVS"
   },
   {
     "id": "AllAppIdCodes",

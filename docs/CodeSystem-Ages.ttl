@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Ages"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">preBirth<a name=\"Ages-preBirth\"> </a></td><td>Pre-Birth</td></tr><tr><td style=\"white-space:nowrap\">newBorn<a name=\"Ages-newBorn\"> </a></td><td>Newborn</td></tr><tr><td style=\"white-space:nowrap\">infancy<a name=\"Ages-infancy\"> </a></td><td>In Infancy</td></tr><tr><td style=\"white-space:nowrap\">childhood<a name=\"Ages-childhood\"> </a></td><td>In Childhood</td></tr><tr><td style=\"white-space:nowrap\">adolecense<a name=\"Ages-adolecense\"> </a></td><td>In Adolescence</td></tr><tr><td style=\"white-space:nowrap\">twenties<a name=\"Ages-twenties\"> </a></td><td>20-29 years</td></tr><tr><td style=\"white-space:nowrap\">thirties<a name=\"Ages-thirties\"> </a></td><td>30-39 years</td></tr><tr><td style=\"white-space:nowrap\">fourties<a name=\"Ages-fourties\"> </a></td><td>40-49 years</td></tr><tr><td style=\"white-space:nowrap\">fifties<a name=\"Ages-fifties\"> </a></td><td>50-59 years</td></tr><tr><td style=\"white-space:nowrap\">sixties<a name=\"Ages-sixties\"> </a></td><td>60-69 years</td></tr><tr><td style=\"white-space:nowrap\">seventies<a name=\"Ages-seventies\"> </a></td><td>70-79 years</td></tr><tr><td style=\"white-space:nowrap\">eighties<a name=\"Ages-eighties\"> </a></td><td>80-89 years</td></tr><tr><td style=\"white-space:nowrap\">ninties<a name=\"Ages-ninties\"> </a></td><td>90-99 years</td></tr><tr><td style=\"white-space:nowrap\">centurian<a name=\"Ages-centurian\"> </a></td><td>100 plus years</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"Ages-unknown\"> </a></td><td>unknown</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages"];
+  fhir:CodeSystem.version [ fhir:value "0.2.8-beta"];
+  fhir:CodeSystem.name [ fhir:value "Ages"];
+  fhir:CodeSystem.title [ fhir:value "Ages in decades"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-04-15T09:43:59-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "John Moehrke" ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Used when the Age is not known very well"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "USA" ]
+     ]
+  ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "15"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "preBirth" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pre-Birth" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "newBorn" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Newborn" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "infancy" ];
+     fhir:CodeSystem.concept.display [ fhir:value "In Infancy" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "childhood" ];
+     fhir:CodeSystem.concept.display [ fhir:value "In Childhood" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "adolecense" ];
+     fhir:CodeSystem.concept.display [ fhir:value "In Adolescence" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "twenties" ];
+     fhir:CodeSystem.concept.display [ fhir:value "20-29 years" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "thirties" ];
+     fhir:CodeSystem.concept.display [ fhir:value "30-39 years" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "fourties" ];
+     fhir:CodeSystem.concept.display [ fhir:value "40-49 years" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "fifties" ];
+     fhir:CodeSystem.concept.display [ fhir:value "50-59 years" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "sixties" ];
+     fhir:CodeSystem.concept.display [ fhir:value "60-69 years" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "seventies" ];
+     fhir:CodeSystem.concept.display [ fhir:value "70-79 years" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "eighties" ];
+     fhir:CodeSystem.concept.display [ fhir:value "80-89 years" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "ninties" ];
+     fhir:CodeSystem.concept.display [ fhir:value "90-99 years" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "centurian" ];
+     fhir:CodeSystem.concept.display [ fhir:value "100 plus years" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "unknown" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

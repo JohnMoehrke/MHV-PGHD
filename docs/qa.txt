@@ -1,18 +1,19 @@
 ﻿MHVtoPGHD_Example : Validation Results
 =========================================
 
-err = 160, warn = 161, info = 68
+err = 160, warn = 161, info = 69
 IG Publisher Version: 1.1.115
-Generated Fri Apr 15 08:39:37 CDT 2022. FHIR version 4.0.1 for va.mhv.example#0.2.8-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
- Build Errors : 839 / 106 / 0
+Generated Fri Apr 15 09:46:07 CDT 2022. FHIR version 4.0.1 for va.mhv.example#0.2.8-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+ Build Errors : 849 / 106 / 0
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\AllergyIntolerance-ex-MHV-allergy-0 : 0 / 0 / 1
+ C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-Ages : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-CPM : 0 / 0 / 2
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-OnclC : 0 / 0 / 2
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Composition-ex-MHV-Composition-0 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Encounter-ex-encounter : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\FamilyMemberHistory-ex-father : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\FamilyMemberHistory-ex-mother : 0 / 0 / 1
- C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\FamilyMemberHistory-ex-son : 0 / 0 / 1
+ C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\FamilyMemberHistory-ex-son : 0 / 0 / 2
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\FamilyMemberHistory-ex-son2 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\FamilyMemberHistory-ex-wife : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Immunization-ex-MHV-immunization-0 : 0 / 0 / 1
@@ -120,6 +121,7 @@ Generated Fri Apr 15 08:39:37 CDT 2022. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.medication : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.pain : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.respirationRate : 0 / 0 / 1
+ C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\ValueSet-AgesVS : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\ValueSet-AllAppIdCodes : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-pressure-positions : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\ValueSet-mhv-blood-sugar-methods-sites : 0 / 0 / 1
@@ -352,6 +354,11 @@ ERROR: C:\Users\johnm\Git\MHV-PGHD\output\Bundle-38de260a-537c-496e-8254-747dec5
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\Bundle-38de260a-537c-496e-8254-747dec5c922a.json.html#/html/body/div/div/div/p/a at Line 2776, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\Bundle-38de260a-537c-496e-8254-747dec5c922a.ttl.html#/html/body/div/div/div/p/a at Line 2530, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\Bundle-38de260a-537c-496e-8254-747dec5c922a.xml.html#/html/body/div/div/div/p/a at Line 2765, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\CodeSystem-Ages.change.history.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\CodeSystem-Ages.html#/html/body/div/div/div/p/a at Line 287, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\CodeSystem-Ages.json.html#/html/body/div/div/div/p/a at Line 347, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\CodeSystem-Ages.ttl.html#/html/body/div/div/div/p/a at Line 356, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\CodeSystem-Ages.xml.html#/html/body/div/div/div/p/a at Line 339, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\CodeSystem-CPM.change.history.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\CodeSystem-CPM.html#/html/body/div/div/div/p/a at Line 287, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\CodeSystem-CPM.json.html#/html/body/div/div/div/p/a at Line 290, column 28: The link '' for "" cannot be resolved
@@ -991,15 +998,15 @@ ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 4601, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 4039, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.bodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 4212, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory-definitions.html#/html/body/div/div/div/p/a at Line 813, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory-definitions.html#/html/body/div/div/div/p/a at Line 827, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory-examples.html#/html/body/div/div/div/p/a at Line 341, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory-mappings.html#/html/body/div/div/div/p/a at Line 412, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory-mappings.html#/html/body/div/div/div/p/a at Line 413, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 339, column 16: The link 'StructureDefinition-VA.MHV.familymemberhistory-mappings.html#mappings-for-myhealthevet-old-family-health-history-ui-mapping-t' for "defined mapping from old to PGHD" cannot be resolved (valid targets: [publish-box, mappings-for-myhealthevet-old-family-health-history-ui-mapping-to-fhirpghd-mhv-old-ui, segment-post-footer, mappings-for-fivews-pattern-mapping-http-hl7-orgfhirfivews, top, root, rim, stripe, mappings-for-workflow-pattern-http-hl7-orgfhirworkflow, segment-footer, segment-content, resource-profile-mhvfamilymemberhistory-mappings, w5, jfm-logo, mappings-for-myhealthevet-new-family-health-history-ui-mapping-to-fhirpghd-mhv-new-ui, segment-header, workflow, MHV-PGHD-FMH-UI, bottom, ig-status, mappings-for-hl7-v2-mapping-http-hl7-orgv2, segment-navbar, v2, segment-breadcrumb, MHV-OLD-FMH-UI, jfm-nav, mappings-for-rim-mapping-http-hl7-orgv3])
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.html#/html/body/div/div/div/p/a at Line 1366, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.html#/html/body/div/div/div/p/a at Line 1387, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.history.html#/html/body/div/div/div/p/a at Line 291, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.json.html#/html/body/div/div/div/p/a at Line 3290, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.ttl.html#/html/body/div/div/div/p/a at Line 2877, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.xml.html#/html/body/div/div/div/p/a at Line 2991, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.json.html#/html/body/div/div/div/p/a at Line 3364, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.ttl.html#/html/body/div/div/div/p/a at Line 2936, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.familymemberhistory.profile.xml.html#/html/body/div/div/div/p/a at Line 3054, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-definitions.html#/html/body/div/div/div/p/a at Line 1296, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-examples.html#/html/body/div/div/div/p/a at Line 329, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.heartRate-mappings.html#/html/body/div/div/div/p/a at Line 426, column 28: The link '' for "" cannot be resolved
@@ -1044,6 +1051,11 @@ ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respiration
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.json.html#/html/body/div/div/div/p/a at Line 5132, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.ttl.html#/html/body/div/div/div/p/a at Line 4479, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\StructureDefinition-VA.MHV.respirationRate.profile.xml.html#/html/body/div/div/div/p/a at Line 4679, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-AgesVS.change.history.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-AgesVS.html#/html/body/div/div/div/p/a at Line 326, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-AgesVS.json.html#/html/body/div/div/div/p/a at Line 289, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-AgesVS.ttl.html#/html/body/div/div/div/p/a at Line 297, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-AgesVS.xml.html#/html/body/div/div/div/p/a at Line 281, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.change.history.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.html#/html/body/div/div/div/p/a at Line 321, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-AllAppIdCodes.json.html#/html/body/div/div/div/p/a at Line 290, column 28: The link '' for "" cannot be resolved
@@ -1079,7 +1091,7 @@ ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.html#/h
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.json.html#/html/body/div/div/div/p/a at Line 315, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.ttl.html#/html/body/div/div/div/p/a at Line 316, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\ValueSet-mhv-medication-routes.xml.html#/html/body/div/div/div/p/a at Line 307, column 28: The link '' for "" cannot be resolved
-ERROR: C:\Users\johnm\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 1481, column 28: The link '' for "" cannot be resolved
+ERROR: C:\Users\johnm\Git\MHV-PGHD\output\artifacts.html#/html/body/div/div/div/p/a at Line 1497, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\background.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\changes.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\downloads.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
@@ -1087,6 +1099,7 @@ ERROR: C:\Users\johnm\Git\MHV-PGHD\output\index.html#/html/body/div/div/div/p/a 
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\testplan.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
 ERROR: C:\Users\johnm\Git\MHV-PGHD\output\toc.html#/html/body/div/div/div/p/a at Line 184, column 28: The link '' for "" cannot be resolved
 == fsh-generated\resources\AllergyIntolerance-ex-MHV-allergy-0.json ==
+== fsh-generated\resources\CodeSystem-Ages.json ==
 == fsh-generated\resources\CodeSystem-CPM.json ==
 INFORMATION: CodeSystem/CPM: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated\resources\CodeSystem-OnclC.json ==
@@ -1096,6 +1109,7 @@ INFORMATION: CodeSystem/OnclC: CodeSystem: CodeSystems SHOULD have a stated valu
 == fsh-generated\resources\FamilyMemberHistory-ex-father.json ==
 == fsh-generated\resources\FamilyMemberHistory-ex-mother.json ==
 == fsh-generated\resources\FamilyMemberHistory-ex-son.json ==
+INFORMATION: FamilyMemberHistory/ex-son: FamilyMemberHistory.age.ofType(Age): This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory
 == fsh-generated\resources\FamilyMemberHistory-ex-son2.json ==
 == fsh-generated\resources\FamilyMemberHistory-ex-wife.json ==
 == fsh-generated\resources\Immunization-ex-MHV-immunization-0.json ==
@@ -1204,6 +1218,7 @@ WARNING: StructureDefinition.where(url = 'https://johnmoehrke.github.io/MHV-PGHD
 == fsh-generated\resources\StructureDefinition-VA.MHV.medication.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.pain.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.respirationRate.json ==
+== fsh-generated\resources\ValueSet-AgesVS.json ==
 == fsh-generated\resources\ValueSet-AllAppIdCodes.json ==
 == fsh-generated\resources\ValueSet-mhv-blood-pressure-positions.json ==
 == fsh-generated\resources\ValueSet-mhv-blood-sugar-methods-sites.json ==

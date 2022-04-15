@@ -44,6 +44,31 @@ Note would like to use us-core defined extension, but is not allowed in FamilyMe
 * valueCodeableConcept from http://terminology.hl7.org/ValueSet/v3-Race (preferred)
 * valueCodeableConcept 1..1
 
+CodeSystem: Ages
+Title: "Ages in decades"
+Description:  "Used when the Age is not known very well"
+* ^caseSensitive = true
+* #preBirth "Pre-Birth"
+* #newBorn "Newborn"
+* #infancy "In Infancy"
+* #childhood "In Childhood"
+* #adolecense "In Adolescence"
+* #twenties "20-29 years"
+* #thirties "30-39 years"
+* #fourties "40-49 years"
+* #fifties "50-59 years"
+* #sixties "60-69 years"
+* #seventies "70-79 years"
+* #eighties "80-89 years"
+* #ninties "90-99 years"
+* #centurian "100 plus years"
+* #unknown "unknown"
+
+ValueSet: AgesVS
+Title: "Ages ValueSet"
+Description: "ValueSet of the Ages allowed"
+* codes from system Ages
+
 
 Profile:        MHVfamilymemberhistory
 Parent:         FamilyMemberHistory
@@ -95,6 +120,7 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of Famil
 * sex MS
 * born[x] MS
 * age[x] MS
+* ageString ^short = "should use strings from [Ages](CodeSystem-Ages.html)"
 * estimatedAge MS
 * deceased[x] MS
 * extension contains FM-MultiBirth named sibling 0..1 MS

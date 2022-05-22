@@ -166,5 +166,6 @@ Some discussion notes
   * these observations likely are contained so as to not confuse with a real patient
 * age in decades -- no known valueSet for this, but it sure seems useful
 
+XKCD on Family History -- https://xkcd.com/2620/
 
 

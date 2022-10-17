@@ -10,10 +10,31 @@
   "name": "MHVbodyWeights",
   "title": "The body weight measurement types that MHV supports",
   "status": "active",
-  "date": "2022-04-15T09:43:59-05:00",
+  "experimental": false,
+  "date": "2022-10-17T15:29:01-05:00",
+  "publisher": "John Moehrke (himself)",
   "contact": [
     {
-      "name": "John Moehrke"
+      "name": "John Moehrke (himself)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system": "email",
+          "value": "JohnMoehrke@gmail.com"
+        }
+      ]
+    },
+    {
+      "name": "John Moehrke (himself)",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "JohnMoehrke@gmail.com"
+        }
+      ]
     }
   ],
   "description": "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",
@@ -21,8 +42,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "USA"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }

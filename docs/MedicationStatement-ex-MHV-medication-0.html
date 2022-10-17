@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>VA.MHV.EXAMPLE\Example MedicationStatement - ex-MHV-medication-0 - FHIR v4.0.1</title>
+    <title>VA.MHV.EXAMPLE\Example of an MHV medication R4, minimal - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,6 +20,16 @@
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/vha-ig-template.css"/>
+  <!-- Global site tag (gtag.js) - Google Analytics - Moehrke-Research-IGs -->
+<script async="null" src="https://www.googletagmanager.com/gtag/js?id=G-GTLTM76GD7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GTLTM76GD7');
+</script>
+
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -40,8 +50,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.39"}
-    h3,h4,h5,h6{--heading-prefix:"6.39"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.60"}
+    h3,h4,h5,h6{--heading-prefix:"4.60"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -53,13 +63,13 @@
 	 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">MyHealtheVet use of PGHD</span>
             <br/>
-            <span style="display:inline-block;">0.2.8-beta - CI Build
+            <span style="display:inline-block;">0.2.8-beta - ci-build
 
 
 
-  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
 
 
             </span>
@@ -83,15 +93,22 @@
             </button>
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="background.html">Background</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
-  <li><a href="downloads.html">Downloads</a></li>
-  <li><a href="testplan.html">Test Plan</a></li>
-</ul>      
+                <!-- menu.xml -->
 
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="testplan.html">Test Plan</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
             </div>    <!-- /.nav-collapse -->
           </div>    <!-- /.container -->
         </nav>    <!-- /.navbar -->
@@ -103,7 +120,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Example MedicationStatement - ex-MHV-medication-0</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Example of an MHV medication R4, minimal</b></li>
 
           <span style="float:right;">
 
@@ -126,7 +143,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MHVtoPGHD_Example - Local Development build (v0.2.8-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.8-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
   
 
@@ -172,14 +189,14 @@
   <a name="root"> </a>
 
 
-  <h2 id="root">Example MedicationStatement: Example MedicationStatement - ex-MHV-medication-0</h2>
+  <h2 id="root">Example MedicationStatement: Example of an MHV medication R4, minimal</h2>
 
   <table class="colsi">
     <tr>
 
       <td colspan="2">
         
-          
+          <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
           
         
       </td>
@@ -194,15 +211,7 @@
 
 
 
-  <div><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "ex-MHV-medication-0" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VA.MHV.medication.html">VA MHV Medication</a></p><p style="margin-bottom: 0px">Tag: <span title="{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>identifier</b>: id: 1234</p><p><b>basedOn</b>: <a name="in-Request"> </a></p><blockquote><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "in-Request" </p></div><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> " SCHMIDT"</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote><p><b>partOf</b>: <a name="in-Dispense"> </a></p><blockquote><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "in-Dispense" </p></div><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a name="l385">​</a><a href="#in-Pharmacy">#in-Pharmacy</a></td></tr></table></blockquote><p><b>status</b>: active</p><p><b>category</b>: Patient Specified <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/codesystem-medication-statement-category.html">Medication usage category codes</a>#patientspecified)</span></p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> " SCHMIDT"</p><p><b>effective</b>: 2004-12-25 --&gt; 2021-12-25</p><p><b>dateAsserted</b>: 2020-11-24</p><p><b>reasonCode</b>: Body pains <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>note</b>: a minimal medication</p></div>
-
-  
-  <h4>Contained resources</h4>
-  <ul>
-<li><a href="Organization-ex-MHV-medication-0_in-Pharmacy.html">Organization/in-Pharmacy</a></li>
-<li><a href="MedicationDispense-ex-MHV-medication-0_in-Dispense.html">MedicationDispense/in-Dispense</a></li>
-<li><a href="MedicationRequest-ex-MHV-medication-0_in-Request.html">MedicationRequest/in-Request</a></li>
-</ul>
+  <div><p><b>Generated Narrative: MedicationStatement</b><a name="ex-MHV-medication-0"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement "ex-MHV-medication-0" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VA.MHV.medication.html">VA MHV Medication</a></p><p style="margin-bottom: 0px">Tag: <span title="{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>identifier</b>: id: 1234</p><p><b>basedOn</b>: <a name="in-Request"> </a></p><blockquote><p></p><p><a name="in-Request"> </a></p><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> " SCHMIDT"</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote><p><b>partOf</b>: <a name="in-Dispense"> </a></p><blockquote><p></p><p><a name="in-Dispense"> </a></p><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a name="l405">​</a><a href="#in-Pharmacy">#in-Pharmacy</a></td></tr></table></blockquote><p><b>status</b>: active</p><p><b>category</b>: Patient Specified <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/codesystem-medication-statement-category.html">Medication usage category codes</a>#patientspecified)</span></p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> " SCHMIDT"</p><p><b>effective</b>: 2004-12-25 --&gt; 2021-12-25</p><p><b>dateAsserted</b>: 2020-11-24</p><p><b>reasonCode</b>: Body pains <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>note</b>: a minimal medication</p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 tablet</p><p><b>route</b>: Oral route <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#26643006)</span></p></blockquote></div>
 
   
 
@@ -254,15 +263,15 @@
       </div>
 
       <div class="inner-wrapper">
-        <p><a name="l520">​</a>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 15, 2022 09:43-0500">2022-04-15</span>
+        <p>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 17, 2022 15:29-0500">2022-10-17</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/JohnMoehrke/MHV-PGHD/issues/new/choose" target="_blank">New Issue</a> | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/JohnMoehrke/MHV-PGHD/issues" target="_blank">Issues</a>
                 
-          
+          </span>
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->

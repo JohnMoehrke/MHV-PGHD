@@ -8,15 +8,34 @@
   <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes"/>
   <version value="0.2.8-beta"/>
   <name value="AllAppIdCodes"/>
+  <title value="PGD App Id Codes"/>
   <status value="active"/>
-  <date value="2022-04-15T09:43:59-05:00"/>
+  <experimental value="false"/>
+  <date value="2022-10-17T15:29:01-05:00"/>
+  <publisher value="John Moehrke (himself)"/>
   <contact>
-    <name value="John Moehrke"/>
+    <name value="John Moehrke (himself)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://healthcaresecprivacy.blogspot.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="JohnMoehrke@gmail.com"/>
+    </telecom>
   </contact>
+  <contact>
+    <name value="John Moehrke (himself)"/>
+    <telecom>
+      <system value="email"/>
+      <value value="JohnMoehrke@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="All valid App ID codes"/>
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="USA"/>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
     </coding>
   </jurisdiction>
   <compose>

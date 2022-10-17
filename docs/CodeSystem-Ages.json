@@ -3,17 +3,38 @@
   "id": "Ages",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">preBirth<a name=\"Ages-preBirth\"> </a></td><td>Pre-Birth</td></tr><tr><td style=\"white-space:nowrap\">newBorn<a name=\"Ages-newBorn\"> </a></td><td>Newborn</td></tr><tr><td style=\"white-space:nowrap\">infancy<a name=\"Ages-infancy\"> </a></td><td>In Infancy</td></tr><tr><td style=\"white-space:nowrap\">childhood<a name=\"Ages-childhood\"> </a></td><td>In Childhood</td></tr><tr><td style=\"white-space:nowrap\">adolecense<a name=\"Ages-adolecense\"> </a></td><td>In Adolescence</td></tr><tr><td style=\"white-space:nowrap\">twenties<a name=\"Ages-twenties\"> </a></td><td>20-29 years</td></tr><tr><td style=\"white-space:nowrap\">thirties<a name=\"Ages-thirties\"> </a></td><td>30-39 years</td></tr><tr><td style=\"white-space:nowrap\">fourties<a name=\"Ages-fourties\"> </a></td><td>40-49 years</td></tr><tr><td style=\"white-space:nowrap\">fifties<a name=\"Ages-fifties\"> </a></td><td>50-59 years</td></tr><tr><td style=\"white-space:nowrap\">sixties<a name=\"Ages-sixties\"> </a></td><td>60-69 years</td></tr><tr><td style=\"white-space:nowrap\">seventies<a name=\"Ages-seventies\"> </a></td><td>70-79 years</td></tr><tr><td style=\"white-space:nowrap\">eighties<a name=\"Ages-eighties\"> </a></td><td>80-89 years</td></tr><tr><td style=\"white-space:nowrap\">ninties<a name=\"Ages-ninties\"> </a></td><td>90-99 years</td></tr><tr><td style=\"white-space:nowrap\">centurian<a name=\"Ages-centurian\"> </a></td><td>100 plus years</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"Ages-unknown\"> </a></td><td>unknown</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">preBirth<a name=\"Ages-preBirth\"> </a></td><td>Pre-Birth</td></tr><tr><td style=\"white-space:nowrap\">newBorn<a name=\"Ages-newBorn\"> </a></td><td>Newborn</td></tr><tr><td style=\"white-space:nowrap\">infancy<a name=\"Ages-infancy\"> </a></td><td>In Infancy</td></tr><tr><td style=\"white-space:nowrap\">childhood<a name=\"Ages-childhood\"> </a></td><td>In Childhood</td></tr><tr><td style=\"white-space:nowrap\">adolecense<a name=\"Ages-adolecense\"> </a></td><td>In Adolescence</td></tr><tr><td style=\"white-space:nowrap\">twenties<a name=\"Ages-twenties\"> </a></td><td>20-29 years</td></tr><tr><td style=\"white-space:nowrap\">thirties<a name=\"Ages-thirties\"> </a></td><td>30-39 years</td></tr><tr><td style=\"white-space:nowrap\">fourties<a name=\"Ages-fourties\"> </a></td><td>40-49 years</td></tr><tr><td style=\"white-space:nowrap\">fifties<a name=\"Ages-fifties\"> </a></td><td>50-59 years</td></tr><tr><td style=\"white-space:nowrap\">sixties<a name=\"Ages-sixties\"> </a></td><td>60-69 years</td></tr><tr><td style=\"white-space:nowrap\">seventies<a name=\"Ages-seventies\"> </a></td><td>70-79 years</td></tr><tr><td style=\"white-space:nowrap\">eighties<a name=\"Ages-eighties\"> </a></td><td>80-89 years</td></tr><tr><td style=\"white-space:nowrap\">ninties<a name=\"Ages-ninties\"> </a></td><td>90-99 years</td></tr><tr><td style=\"white-space:nowrap\">centurian<a name=\"Ages-centurian\"> </a></td><td>100 plus years</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"Ages-unknown\"> </a></td><td>unknown</td></tr></table></div>"
   },
   "url": "https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages",
   "version": "0.2.8-beta",
   "name": "Ages",
   "title": "Ages in decades",
   "status": "active",
-  "date": "2022-04-15T09:43:59-05:00",
+  "experimental": false,
+  "date": "2022-10-17T15:29:01-05:00",
+  "publisher": "John Moehrke (himself)",
   "contact": [
     {
-      "name": "John Moehrke"
+      "name": "John Moehrke (himself)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system": "email",
+          "value": "JohnMoehrke@gmail.com"
+        }
+      ]
+    },
+    {
+      "name": "John Moehrke (himself)",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "JohnMoehrke@gmail.com"
+        }
+      ]
     }
   ],
   "description": "Used when the Age is not known very well",
@@ -21,8 +42,8 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "USA"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }

@@ -3,17 +3,38 @@
   "id": "CPM",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1e11b692-1898-4351-a7c5-428f61c91817&quot;<a name=\"CPM-1e11b692-1898-4351-a7c5-428f61c91817.34\"> </a></td><td>MobileKidney</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1e11b692-1898-4351-a7c5-428f61c91817&quot;<a name=\"CPM-1e11b692-1898-4351-a7c5-428f61c91817.34\"> </a></td><td>MobileKidney</td></tr></table></div>"
   },
   "url": "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping",
   "version": "0.2.8-beta",
   "name": "AppIdCodesToo",
   "title": "PGD other apps",
   "status": "active",
-  "date": "2022-04-15T09:43:59-05:00",
+  "experimental": false,
+  "date": "2022-10-17T15:29:01-05:00",
+  "publisher": "John Moehrke (himself)",
   "contact": [
     {
-      "name": "John Moehrke"
+      "name": "John Moehrke (himself)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system": "email",
+          "value": "JohnMoehrke@gmail.com"
+        }
+      ]
+    },
+    {
+      "name": "John Moehrke (himself)",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "JohnMoehrke@gmail.com"
+        }
+      ]
     }
   ],
   "description": "Seems to be used by Mobile Kidney",
@@ -21,12 +42,13 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "USA"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
         }
       ]
     }
   ],
+  "caseSensitive": true,
   "content": "complete",
   "count": 1,
   "concept": [

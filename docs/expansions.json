@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "0fbbe9a9-fd9e-4254-9504-0419a270b468",
+  "id" : "5e00e8ab-a80e-48f6-b021-1c1738512154",
   "meta" : {
-    "lastUpdated" : "2022-04-15T09:43:59.012-05:00"
+    "lastUpdated" : "2022-10-17T15:29:01.572-05:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,27 +12,44 @@
       "id" : "AgesVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-Ages.html\">Ages in decades v0.2.8-beta (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-Ages.html\"><code>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-preBirth\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-preBirth\">preBirth</a></td><td>Pre-Birth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-newBorn\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-newBorn\">newBorn</a></td><td>Newborn</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-infancy\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-infancy\">infancy</a></td><td>In Infancy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-childhood\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-childhood\">childhood</a></td><td>In Childhood</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-adolecense\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-adolecense\">adolecense</a></td><td>In Adolescence</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-twenties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-twenties\">twenties</a></td><td>20-29 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-thirties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-thirties\">thirties</a></td><td>30-39 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-fourties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-fourties\">fourties</a></td><td>40-49 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-fifties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-fifties\">fifties</a></td><td>50-59 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-sixties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-sixties\">sixties</a></td><td>60-69 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-seventies\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-seventies\">seventies</a></td><td>70-79 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-eighties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-eighties\">eighties</a></td><td>80-89 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-ninties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-ninties\">ninties</a></td><td>90-99 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-centurian\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-centurian\">centurian</a></td><td>100 plus years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-unknown\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-unknown\">unknown</a></td><td>unknown</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-Ages.html\">Ages in decades v0.2.8-beta (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-preBirth\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-preBirth\">preBirth</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>Pre-Birth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-newBorn\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-newBorn\">newBorn</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>Newborn</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-infancy\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-infancy\">infancy</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>In Infancy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-childhood\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-childhood\">childhood</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>In Childhood</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-adolecense\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-adolecense\">adolecense</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>In Adolescence</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-twenties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-twenties\">twenties</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>20-29 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-thirties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-thirties\">thirties</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>30-39 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-fourties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-fourties\">fourties</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>40-49 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-fifties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-fifties\">fifties</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>50-59 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-sixties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-sixties\">sixties</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>60-69 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-seventies\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-seventies\">seventies</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>70-79 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-eighties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-eighties\">eighties</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>80-89 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-ninties\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-ninties\">ninties</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>90-99 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-centurian\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-centurian\">centurian</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>100 plus years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---johnmoehrke.github.io-MHV-PGHD-CodeSystem-Ages-unknown\"> </a>  <a href=\"CodeSystem-Ages.html#Ages-unknown\">unknown</a></td><td>https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages</td><td>unknown</td></tr></table></div>"
       },
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AgesVS",
       "version" : "0.2.8-beta",
       "name" : "AgesVS",
       "title" : "Ages ValueSet",
       "status" : "active",
-      "date" : "2022-04-15T09:43:59-05:00",
+      "experimental" : false,
+      "date" : "2022-10-17T15:29:01-05:00",
+      "publisher" : "John Moehrke (himself)",
       "contact" : [{
-        "name" : "John Moehrke"
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
+      },
+      {
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
       }],
       "description" : "ValueSet of the Ages allowed",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "USA"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6fd30c8f-ad11-4571-897c-5a46921e7152",
-        "timestamp" : "2022-04-15T09:44:50-05:00",
+        "identifier" : "urn:uuid:dab8adbc-d9fd-473b-9e39-c4fdd890ff65",
+        "timestamp" : "2022-10-17T15:30:31-05:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -132,20 +149,39 @@
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes",
       "version" : "0.2.8-beta",
       "name" : "AllAppIdCodes",
+      "title" : "PGD App Id Codes",
       "status" : "active",
-      "date" : "2022-04-15T09:43:59-05:00",
+      "experimental" : false,
+      "date" : "2022-10-17T15:29:01-05:00",
+      "publisher" : "John Moehrke (himself)",
       "contact" : [{
-        "name" : "John Moehrke"
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
+      },
+      {
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
       }],
+      "description" : "All valid App ID codes",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "USA"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f02365e6-3dcd-4bba-ba5e-ef2b2e6f1182",
-        "timestamp" : "2022-04-15T09:44:50-05:00",
+        "identifier" : "urn:uuid:65fa71dd-8956-4522-aec8-3fcf52f71c3e",
+        "timestamp" : "2022-10-17T15:30:32-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -179,27 +215,44 @@
       "id" : "mhv-blood-pressure-positions",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.72</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69000-8\"> </a>  <a href=\"http://details.loinc.org/LOINC/69000-8.html\">69000-8</a></td><td>Heart rate - sitting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69001-6\"> </a>  <a href=\"http://details.loinc.org/LOINC/69001-6.html\">69001-6</a></td><td>Heart rate - standing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-68999-2\"> </a>  <a href=\"http://details.loinc.org/LOINC/68999-2.html\">68999-2</a></td><td>Heart rate - supine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-40443-4\"> </a>  <a href=\"http://details.loinc.org/LOINC/40443-4.html\">40443-4</a></td><td>Heart rate - resting</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69000-8\"> </a>  <a href=\"http://details.loinc.org/LOINC/69000-8.html\">69000-8</a></td><td>http://loinc.org</td><td>Heart rate - sitting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69001-6\"> </a>  <a href=\"http://details.loinc.org/LOINC/69001-6.html\">69001-6</a></td><td>http://loinc.org</td><td>Heart rate - standing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-68999-2\"> </a>  <a href=\"http://details.loinc.org/LOINC/68999-2.html\">68999-2</a></td><td>http://loinc.org</td><td>Heart rate - supine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-40443-4\"> </a>  <a href=\"http://details.loinc.org/LOINC/40443-4.html\">40443-4</a></td><td>http://loinc.org</td><td>Heart rate - resting</td></tr></table></div>"
       },
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions",
       "version" : "0.2.8-beta",
       "name" : "MHVbloodPressurePositions",
       "title" : "The methods of measurement for blood pressure that MHV supports",
       "status" : "active",
-      "date" : "2022-04-15T09:43:59-05:00",
+      "experimental" : false,
+      "date" : "2022-10-17T15:29:01-05:00",
+      "publisher" : "John Moehrke (himself)",
       "contact" : [{
-        "name" : "John Moehrke"
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
+      },
+      {
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
       }],
       "description" : "These are the loinc body positions that MHV supports on blood pressure.",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "USA"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1ee5370d-4971-40de-a3df-1ae183482a98",
-        "timestamp" : "2022-04-15T09:44:50-05:00",
+        "identifier" : "urn:uuid:96262c30-0da5-4175-af1e-469468888f0d",
+        "timestamp" : "2022-10-17T15:30:32-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -211,7 +264,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://loinc.org|2.72"
+          "valueUri" : "http://loinc.org|2.73"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -243,27 +296,44 @@
       "id" : "mhv-blood-sugar-methods-sites",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Mar 2022</p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15220000\"> </a>  <a href=\"http://snomed.info/id/15220000\">15220000</a></td><td>Laboratory Test</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-350810002\"> </a>  <a href=\"http://snomed.info/id/350810002\">350810002</a></td><td>Lancet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-263902000\"> </a>  <a href=\"http://snomed.info/id/263902000\">263902000</a></td><td>Transcutaneous method</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261373009\"> </a>  <a href=\"http://snomed.info/id/261373009\">261373009</a></td><td>Implant technique</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15220000\"> </a>  <a href=\"http://snomed.info/id/15220000\">15220000</a></td><td>http://snomed.info/sct</td><td>Laboratory Test</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-350810002\"> </a>  <a href=\"http://snomed.info/id/350810002\">350810002</a></td><td>http://snomed.info/sct</td><td>Lancet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-263902000\"> </a>  <a href=\"http://snomed.info/id/263902000\">263902000</a></td><td>http://snomed.info/sct</td><td>Transcutaneous method</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261373009\"> </a>  <a href=\"http://snomed.info/id/261373009\">261373009</a></td><td>http://snomed.info/sct</td><td>Implant technique</td></tr></table></div>"
       },
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites",
       "version" : "0.2.8-beta",
       "name" : "MHVbloodSugarMethods",
       "title" : "The methods of measurement for blood sugar that MHV supports",
       "status" : "active",
-      "date" : "2022-04-15T09:43:59-05:00",
+      "experimental" : false,
+      "date" : "2022-10-17T15:29:01-05:00",
+      "publisher" : "John Moehrke (himself)",
       "contact" : [{
-        "name" : "John Moehrke"
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
+      },
+      {
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
       }],
       "description" : "These are the SNOMED body sites that MHV supports.",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "USA"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dbc3992c-4f32-4af2-8494-dc724cbb64f9",
-        "timestamp" : "2022-04-15T09:44:50-05:00",
+        "identifier" : "urn:uuid:3ae22a88-7668-4ab7-8bbb-94fb79fc790d",
+        "timestamp" : "2022-10-17T15:30:32-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -275,7 +345,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -307,27 +377,44 @@
       "id" : "mhv-body-temperature-sites",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Mar 2022</p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422005\"> </a>  <a href=\"http://snomed.info/id/422005\">422005</a></td><td>Inferior surface of tongue</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362732006\"> </a>  <a href=\"http://snomed.info/id/362732006\">362732006</a></td><td>Entire axillary region</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1910005\"> </a>  <a href=\"http://snomed.info/id/1910005\">1910005</a></td><td>Entire ear</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-21082005\"> </a>  <a href=\"http://snomed.info/id/21082005\">21082005</a></td><td>Entire mouth region</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-181261002\"> </a>  <a href=\"http://snomed.info/id/181261002\">181261002</a></td><td>Entire rectum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-39937001\"> </a>  <a href=\"http://snomed.info/id/39937001\">39937001</a></td><td>Skin structure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362620003\"> </a>  <a href=\"http://snomed.info/id/362620003\">362620003</a></td><td>Entire temporal region</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89837001\"> </a>  <a href=\"http://snomed.info/id/89837001\">89837001</a></td><td>Urinary bladder structure</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422005\"> </a>  <a href=\"http://snomed.info/id/422005\">422005</a></td><td>http://snomed.info/sct</td><td>Inferior surface of tongue</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362732006\"> </a>  <a href=\"http://snomed.info/id/362732006\">362732006</a></td><td>http://snomed.info/sct</td><td>Entire axillary region</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1910005\"> </a>  <a href=\"http://snomed.info/id/1910005\">1910005</a></td><td>http://snomed.info/sct</td><td>Entire ear</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-21082005\"> </a>  <a href=\"http://snomed.info/id/21082005\">21082005</a></td><td>http://snomed.info/sct</td><td>Entire mouth region</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-181261002\"> </a>  <a href=\"http://snomed.info/id/181261002\">181261002</a></td><td>http://snomed.info/sct</td><td>Entire rectum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-39937001\"> </a>  <a href=\"http://snomed.info/id/39937001\">39937001</a></td><td>http://snomed.info/sct</td><td>Skin structure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-362620003\"> </a>  <a href=\"http://snomed.info/id/362620003\">362620003</a></td><td>http://snomed.info/sct</td><td>Entire temporal region</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89837001\"> </a>  <a href=\"http://snomed.info/id/89837001\">89837001</a></td><td>http://snomed.info/sct</td><td>Urinary bladder structure</td></tr></table></div>"
       },
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites",
       "version" : "0.2.8-beta",
       "name" : "MHVbodyTemperatureSites",
       "title" : "The body temperature measurement sites that MHV supports",
       "status" : "active",
-      "date" : "2022-04-15T09:43:59-05:00",
+      "experimental" : false,
+      "date" : "2022-10-17T15:29:01-05:00",
+      "publisher" : "John Moehrke (himself)",
       "contact" : [{
-        "name" : "John Moehrke"
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
+      },
+      {
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
       }],
       "description" : "These are the SNOMED body sites that MHV supports.",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "USA"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:26f4cb7f-75ca-4343-8b5f-b57a8fd8e02b",
-        "timestamp" : "2022-04-15T09:44:50-05:00",
+        "identifier" : "urn:uuid:35f8d10d-fd3d-4db3-bb62-eef9c4db6a63",
+        "timestamp" : "2022-10-17T15:30:32-05:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -339,7 +426,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -391,27 +478,44 @@
       "id" : "mhv-body-temperatures",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on UCUM version 2.0.1</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ucum.html\"><code>http://unitsofmeasure.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org--degF-\"> </a>  [degF]</td><td>degree Fahrenheit</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org-Cel\"> </a>  Cel</td><td>degree Celsius</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on UCUM version 2.0.1</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org--degF-\"> </a>  [degF]</td><td>http://unitsofmeasure.org</td><td>degree Fahrenheit</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org-Cel\"> </a>  Cel</td><td>http://unitsofmeasure.org</td><td>degree Celsius</td></tr></table></div>"
       },
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures",
       "version" : "0.2.8-beta",
       "name" : "MHVbodyTemperatures",
       "title" : "The body temperature measurement types that MHV supports",
       "status" : "active",
-      "date" : "2022-04-15T09:43:59-05:00",
+      "experimental" : false,
+      "date" : "2022-10-17T15:29:01-05:00",
+      "publisher" : "John Moehrke (himself)",
       "contact" : [{
-        "name" : "John Moehrke"
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
+      },
+      {
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
       }],
       "description" : "These are the UCUM types that MHV supports.",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "USA"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:96fada0f-026e-4af7-bfbd-18b25661461b",
-        "timestamp" : "2022-04-15T09:44:51-05:00",
+        "identifier" : "urn:uuid:8090295b-1ad5-4f2f-abc7-138dc25481ea",
+        "timestamp" : "2022-10-17T15:30:32-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -445,27 +549,44 @@
       "id" : "mhv-body-weights",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on UCUM version 2.0.1</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ucum.html\"><code>http://unitsofmeasure.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org--lb-av-\"> </a>  [lb_av]</td><td>[lb_av]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org-kg\"> </a>  kg</td><td>kg</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on UCUM version 2.0.1</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org--lb-av-\"> </a>  [lb_av]</td><td>http://unitsofmeasure.org</td><td>[lb_av]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---unitsofmeasure.org-kg\"> </a>  kg</td><td>http://unitsofmeasure.org</td><td>kg</td></tr></table></div>"
       },
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights",
       "version" : "0.2.8-beta",
       "name" : "MHVbodyWeights",
       "title" : "The body weight measurement types that MHV supports",
       "status" : "active",
-      "date" : "2022-04-15T09:43:59-05:00",
+      "experimental" : false,
+      "date" : "2022-10-17T15:29:01-05:00",
+      "publisher" : "John Moehrke (himself)",
       "contact" : [{
-        "name" : "John Moehrke"
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
+      },
+      {
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
       }],
       "description" : "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "USA"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cd88e193-7735-406f-9219-a3379f06c7b5",
-        "timestamp" : "2022-04-15T09:44:51-05:00",
+        "identifier" : "urn:uuid:767b14c4-cd9f-4036-8b26-a07699e21e4f",
+        "timestamp" : "2022-10-17T15:30:33-05:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -499,27 +620,44 @@
       "id" : "mhv-medication-routes",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Mar 2022</p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26643006\"> </a>  <a href=\"http://snomed.info/id/26643006\">26643006</a></td><td>Oral use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-37161004\"> </a>  <a href=\"http://snomed.info/id/37161004\">37161004</a></td><td>Rectal use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-45890007\"> </a>  <a href=\"http://snomed.info/id/45890007\">45890007</a></td><td>Transdermal use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-6064005\"> </a>  <a href=\"http://snomed.info/id/6064005\">6064005</a></td><td>Topical route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-78421000\"> </a>  <a href=\"http://snomed.info/id/78421000\">78421000</a></td><td>Intramuscular use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47625008\"> </a>  <a href=\"http://snomed.info/id/47625008\">47625008</a></td><td>Intravenous use</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26643006\"> </a>  <a href=\"http://snomed.info/id/26643006\">26643006</a></td><td>http://snomed.info/sct</td><td>Oral use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-37161004\"> </a>  <a href=\"http://snomed.info/id/37161004\">37161004</a></td><td>http://snomed.info/sct</td><td>Rectal use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-45890007\"> </a>  <a href=\"http://snomed.info/id/45890007\">45890007</a></td><td>http://snomed.info/sct</td><td>Transdermal use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-6064005\"> </a>  <a href=\"http://snomed.info/id/6064005\">6064005</a></td><td>http://snomed.info/sct</td><td>Topical route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-78421000\"> </a>  <a href=\"http://snomed.info/id/78421000\">78421000</a></td><td>http://snomed.info/sct</td><td>Intramuscular use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47625008\"> </a>  <a href=\"http://snomed.info/id/47625008\">47625008</a></td><td>http://snomed.info/sct</td><td>Intravenous use</td></tr></table></div>"
       },
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
       "version" : "0.2.8-beta",
       "name" : "MHVmedicationRoutes",
       "title" : "The routes of medication that MHV supports",
       "status" : "active",
-      "date" : "2022-04-15T09:43:59-05:00",
+      "experimental" : false,
+      "date" : "2022-10-17T15:29:01-05:00",
+      "publisher" : "John Moehrke (himself)",
       "contact" : [{
-        "name" : "John Moehrke"
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://healthcaresecprivacy.blogspot.com"
+        },
+        {
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
+      },
+      {
+        "name" : "John Moehrke (himself)",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "JohnMoehrke@gmail.com"
+        }]
       }],
       "description" : "These are the SNOMED-CT routes for medications that MHV supports.",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "USA"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6cf4ce85-4583-473e-be63-6aef1eb95a1b",
-        "timestamp" : "2022-04-15T09:44:51-05:00",
+        "identifier" : "urn:uuid:dab09b4e-423f-4a0b-90fa-8fb91f7d7568",
+        "timestamp" : "2022-10-17T15:30:33-05:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -531,7 +669,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",

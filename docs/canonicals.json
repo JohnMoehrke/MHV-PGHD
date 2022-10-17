@@ -11,7 +11,7 @@
     "type": "ImplementationGuide",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example",
     "version": "0.2.8-beta",
-    "name": "MHVtoPGHD_Example"
+    "name": "MHVIG"
   },
   {
     "id": "FM-Adopted",

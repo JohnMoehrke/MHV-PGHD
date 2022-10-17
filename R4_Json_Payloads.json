@@ -1,0 +1,1726 @@
+Blood Pressure - 
+====================
+
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4",
+        "display": "Heart rate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:20:00-05:00",
+  "valueQuantity": {
+    "value": 71,
+    "unit": "beats/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [
+    {
+      "text": "Test0621"
+    }
+  ]
+}
+Dec 08, 2021 9:21:40 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/cbf8b7c2-d6c0-478e-b1c6-3e5853582ff8/_history/1) in 112ms
+Dec 08, 2021 9:21:40 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: e27dc85e-466a-4eae-aecb-8b135b187d36
+date: Wed, 08 Dec 2021 14:21:40 GMT
+server: openresty
+x-envoy-upstream-service-time: 47
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:21:40 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/cbf8b7c2-d6c0-478e-b1c6-3e5853582ff8/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/cbf8b7c2-d6c0-478e-b1c6-3e5853582ff8/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:21:40 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "cbf8b7c2-d6c0-478e-b1c6-3e5853582ff8",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:21:40.308+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "8867-4",
+      "display": "Heart rate"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:20:00-05:00",
+  "valueQuantity": {
+    "value": 71,
+    "unit": "beats/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [ {
+    "text": "Test0621"
+  } ]
+}
+Dec 08, 2021 9:21:40 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request: POST https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation?_pretty=true HTTP/1.1
+Dec 08, 2021 9:21:40 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request headers:
+Accept-Charset: utf-8
+Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
+User-Agent: HAPI-FHIR/4.2.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+Accept-Encoding: gzip
+Content-Type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:21:40 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "55284-4",
+        "display": "Blood pressure systolic and diastolic"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8716-3",
+        "display": "Vital Signs Panel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:20:00-05:00",
+  "note": [
+    {
+      "text": "Test0621"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/cbf8b7c2-d6c0-478e-b1c6-3e5853582ff8",
+      "display": "Heart Rate"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 121,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 101,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  ]
+}
+Dec 08, 2021 9:21:40 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/ddbd02ac-0749-4519-a911-29e22a4df3a8/_history/1) in 141ms
+Dec 08, 2021 9:21:40 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: 6f2caa60-87f9-4881-9c41-ddd4fe05f139
+date: Wed, 08 Dec 2021 14:21:40 GMT
+server: openresty
+x-envoy-upstream-service-time: 64
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:21:40 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/ddbd02ac-0749-4519-a911-29e22a4df3a8/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/ddbd02ac-0749-4519-a911-29e22a4df3a8/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:21:40 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "ddbd02ac-0749-4519-a911-29e22a4df3a8",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:21:40.448+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "55284-4",
+      "display": "Blood pressure systolic and diastolic"
+    }, {
+      "system": "http://loinc.org",
+      "code": "8716-3",
+      "display": "Vital Signs Panel"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:20:00-05:00",
+  "note": [ {
+    "text": "Test0621"
+  } ],
+  "hasMember": [ {
+    "reference": "Observation/cbf8b7c2-d6c0-478e-b1c6-3e5853582ff8",
+    "display": "Heart Rate"
+  } ],
+  "component": [ {
+    "code": {
+      "coding": [ {
+        "system": "http://loinc.org",
+        "code": "8480-6",
+        "display": "Systolic blood pressure"
+      } ]
+    },
+    "valueQuantity": {
+      "value": 121,
+      "unit": "mmHg",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    }
+  }, {
+    "code": {
+      "coding": [ {
+        "system": "http://loinc.org",
+        "code": "8462-4",
+        "display": "Diastolic blood pressure"
+      } ]
+    },
+    "valueQuantity": {
+      "value": 101,
+      "unit": "mmHg",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    }
+  } ]
+}
+
+
+
+Blood Sugar - 
+====================
+
+
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2339-0",
+        "display": "Glucose [Mass/volume] in Blood"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:30:00-05:00",
+  "valueQuantity": {
+    "value": 139,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dL"
+  },
+  "note": [
+    {
+      "text": "Test0639"
+    }
+  ],
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "15220000",
+        "display": "Laboratory test"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "162549003",
+            "display": "Eating routine (observable entity)"
+          }
+        ]
+      },
+      "valueString": "Fasting (8 hours)"
+    }
+  ]
+}
+Dec 08, 2021 9:39:53 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/646a5f1c-21c2-46f7-a8fd-973fa386bcd9/_history/1) in 108ms
+Dec 08, 2021 9:39:53 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: 8a026d65-e984-46be-9326-0da69d57e5ab
+date: Wed, 08 Dec 2021 14:39:53 GMT
+server: openresty
+x-envoy-upstream-service-time: 43
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:39:53 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/646a5f1c-21c2-46f7-a8fd-973fa386bcd9/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/646a5f1c-21c2-46f7-a8fd-973fa386bcd9/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:39:53 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "646a5f1c-21c2-46f7-a8fd-973fa386bcd9",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:39:53.682+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "2339-0",
+      "display": "Glucose [Mass/volume] in Blood"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:30:00-05:00",
+  "valueQuantity": {
+    "value": 139,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dL"
+  },
+  "note": [ {
+    "text": "Test0639"
+  } ],
+  "method": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "15220000",
+      "display": "Laboratory test"
+    } ]
+  },
+  "component": [ {
+    "code": {
+      "coding": [ {
+        "system": "http://snomed.info/sct",
+        "code": "162549003",
+        "display": "Eating routine (observable entity)"
+      } ]
+    },
+    "valueString": "Fasting (8 hours)"
+  } ]
+}
+
+
+
+
+Body Temperature - 
+====================
+<Dec 10, 2021 10:03:12 AM EST> <Info> <ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor> <BEA-000000> <Client response body:
+{
+  "resourceType": "Observation",
+  "id": "3112ca15-cfed-4290-8ee2-08ecf76dbb50",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-10T15:03:12.203+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "8310-5",
+      "display": "Body temperature"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-10T07:00:00-05:00",
+  "valueQuantity": {
+    "value": 37.2,
+    "unit": "Cel",
+    "system": "http://unitsofmeasure.org",
+    "code": "Cel"
+  },
+  "note": [ {
+    "text": "Test0702"
+  } ],
+  "bodySite": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "76261009",
+      "display": "Skin structure of axilla (body structure)"
+    } ]
+  }
+}>
+
+
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "876b9747-3e7e-41ae-8596-4927d0f04f8f",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-14T14:09:43.632+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "8310-5",
+      "display": "Body temperature"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-14T06:10:00-05:00",
+  "valueQuantity": {
+    "value": 98.0,
+    "unit": "[degF]",
+    "system": "http://unitsofmeasure.org",
+    "code": "[degF]"
+  },
+  "note": [ {
+    "text": "Test0610"
+  } ],
+  "bodySite": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "422005",
+      "display": "Structure of inferior surface of tongue (body structure)"
+    } ]
+  }
+}
+
+
+Body Weight - 
+====================
+
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7",
+        "display": "Body weight"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:40:00-05:00",
+  "valueQuantity": {
+    "value": 164,
+    "unit": "lb_av",
+    "system": "http://unitsofmeasure.org",
+    "code": "[lb_av]"
+  },
+  "note": [
+    {
+      "text": "Test0644"
+    }
+  ]
+}
+Dec 08, 2021 9:44:27 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/020cda30-f376-4d3c-9b89-dd7f238ffe5b/_history/1) in 124ms
+Dec 08, 2021 9:44:27 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: 8ab056f6-c4bc-4887-bf35-73cef5f5843e
+date: Wed, 08 Dec 2021 14:44:27 GMT
+server: openresty
+x-envoy-upstream-service-time: 63
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:44:27 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/020cda30-f376-4d3c-9b89-dd7f238ffe5b/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/020cda30-f376-4d3c-9b89-dd7f238ffe5b/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:44:27 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "020cda30-f376-4d3c-9b89-dd7f238ffe5b",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:44:27.909+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "29463-7",
+      "display": "Body weight"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:40:00-05:00",
+  "valueQuantity": {
+    "value": 164,
+    "unit": "lb_av",
+    "system": "http://unitsofmeasure.org",
+    "code": "[lb_av]"
+  },
+  "note": [ {
+    "text": "Test0644"
+  } ]
+}
+
+{
+  "resourceType": "Observation",
+  "id": "36fb3bd3-761e-49fc-bac1-f0d3bebf6995",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-14T13:37:09.269+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "29463-7",
+      "display": "Body weight"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-14T05:40:00-05:00",
+  "valueQuantity": {
+    "value": 56,
+    "unit": "kg",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg"
+  },
+  "note": [ {
+    "text": "Test0536"
+  } ]
+}>
+
+Heart Rate - 
+====================
+Dec 08, 2021 9:49:01 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4",
+        "display": "Heart rate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:40:00-05:00",
+  "valueQuantity": {
+    "value": 68,
+    "unit": "beats/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [
+    {
+      "text": "Test0648"
+    }
+  ]
+}
+<Dec 8, 2021 9:49:01 AM EST> <Info> <ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor> <BEA-000000> <Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4",
+        "display": "Heart rate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:40:00-05:00",
+  "valueQuantity": {
+    "value": 68,
+    "unit": "beats/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [
+    {
+      "text": "Test0648"
+    }
+  ]
+}> 
+Dec 08, 2021 9:49:01 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/bb7c88b9-9085-4e1c-952f-73d6c4d6fd41/_history/1) in 109ms
+<Dec 8, 2021 9:49:01 AM EST> <Info> <ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor> <BEA-000000> <Client response: HTTP 201 Created (Observation/bb7c88b9-9085-4e1c-952f-73d6c4d6fd41/_history/1) in 109ms> 
+Dec 08, 2021 9:49:01 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: 4433f17a-97fe-40c9-86a4-b6c43ec42752
+date: Wed, 08 Dec 2021 14:49:01 GMT
+server: openresty
+x-envoy-upstream-service-time: 42
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:49:01 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/bb7c88b9-9085-4e1c-952f-73d6c4d6fd41/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/bb7c88b9-9085-4e1c-952f-73d6c4d6fd41/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+<Dec 8, 2021 9:49:01 AM EST> <Info> <ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor> <BEA-000000> <Client response headers:
+x-request-id: 4433f17a-97fe-40c9-86a4-b6c43ec42752
+date: Wed, 08 Dec 2021 14:49:01 GMT
+server: openresty
+x-envoy-upstream-service-time: 42
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:49:01 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/bb7c88b9-9085-4e1c-952f-73d6c4d6fd41/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/bb7c88b9-9085-4e1c-952f-73d6c4d6fd41/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8> 
+Dec 08, 2021 9:49:01 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "bb7c88b9-9085-4e1c-952f-73d6c4d6fd41",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:49:01.749+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "8867-4",
+      "display": "Heart rate"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:40:00-05:00",
+  "valueQuantity": {
+    "value": 68,
+    "unit": "beats/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [ {
+    "text": "Test0648"
+  } ]
+}
+<Dec 8, 2021 9:49:01 AM EST> <Info> <ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor> <BEA-000000> <Client response body:
+{
+  "resourceType": "Observation",
+  "id": "bb7c88b9-9085-4e1c-952f-73d6c4d6fd41",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:49:01.749+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "8867-4",
+      "display": "Heart rate"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:40:00-05:00",
+  "valueQuantity": {
+    "value": 68,
+    "unit": "beats/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [ {
+    "text": "Test0648"
+  } ]
+}> 
+
+
+
+Pain - 
+====================
+
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "72514-3",
+        "display": "Pain severity - 0-10 verbal numeric rating"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "225908003",
+        "display": "Pain score"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:50:00-05:00",
+  "valueQuantity": {
+    "value": 2
+  },
+  "note": [
+    {
+      "text": "Test0652"
+    }
+  ]
+}
+Dec 08, 2021 9:52:18 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/ccaa01c6-2af1-4fce-a7f1-3d391df4c16f/_history/1) in 112ms
+Dec 08, 2021 9:52:18 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: fed60f62-4d8d-4480-9459-f089b3311a4d
+date: Wed, 08 Dec 2021 14:52:18 GMT
+server: openresty
+x-envoy-upstream-service-time: 46
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:52:18 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/ccaa01c6-2af1-4fce-a7f1-3d391df4c16f/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/ccaa01c6-2af1-4fce-a7f1-3d391df4c16f/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:52:18 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "ccaa01c6-2af1-4fce-a7f1-3d391df4c16f",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:52:18.165+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "72514-3",
+      "display": "Pain severity - 0-10 verbal numeric rating"
+    }, {
+      "system": "http://snomed.info/sct",
+      "code": "225908003",
+      "display": "Pain score"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:50:00-05:00",
+  "valueQuantity": {
+    "value": 2
+  },
+  "note": [ {
+    "text": "Test0652"
+  } ]
+}
+
+
+Pulse Oximetry - 
+====================
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4",
+        "display": "Heart rate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:50:00-05:00",
+  "valueQuantity": {
+    "value": 74,
+    "unit": "beats/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [
+    {
+      "text": "Test0654"
+    }
+  ]
+}
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/bd3b022f-70e4-4d0d-a098-bcd862714c06/_history/1) in 106ms
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: ddd39c75-dd8c-4d06-9f5c-40be7fd544c3
+date: Wed, 08 Dec 2021 14:54:45 GMT
+server: openresty
+x-envoy-upstream-service-time: 41
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:54:45 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/bd3b022f-70e4-4d0d-a098-bcd862714c06/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/bd3b022f-70e4-4d0d-a098-bcd862714c06/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "bd3b022f-70e4-4d0d-a098-bcd862714c06",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:54:45.967+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "8867-4",
+      "display": "Heart rate"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:50:00-05:00",
+  "valueQuantity": {
+    "value": 74,
+    "unit": "beats/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [ {
+    "text": "Test0654"
+  } ]
+}
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request: POST https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation?_pretty=true HTTP/1.1
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request headers:
+Accept-Charset: utf-8
+Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
+User-Agent: HAPI-FHIR/4.2.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+Accept-Encoding: gzip
+Content-Type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "9279-1",
+        "display": "Resiratory rate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:50:00-05:00",
+  "valueQuantity": {
+    "value": 84,
+    "unit": "breaths/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [
+    {
+      "text": "Test0654"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/bd3b022f-70e4-4d0d-a098-bcd862714c06",
+      "display": "Heart Rate"
+    }
+  ]
+}
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/6306f9d4-b4d6-457e-8f7b-7558dc69fd63/_history/1) in 110ms
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: 7ab52446-7e1f-4108-8291-6c12c3c2f348
+date: Wed, 08 Dec 2021 14:54:46 GMT
+server: openresty
+x-envoy-upstream-service-time: 38
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:54:46 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/6306f9d4-b4d6-457e-8f7b-7558dc69fd63/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/6306f9d4-b4d6-457e-8f7b-7558dc69fd63/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "6306f9d4-b4d6-457e-8f7b-7558dc69fd63",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:54:46.081+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "9279-1",
+      "display": "Resiratory rate"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:50:00-05:00",
+  "valueQuantity": {
+    "value": 84,
+    "unit": "breaths/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [ {
+    "text": "Test0654"
+  } ],
+  "hasMember": [ {
+    "reference": "Observation/bd3b022f-70e4-4d0d-a098-bcd862714c06",
+    "display": "Heart Rate"
+  } ]
+}
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request: POST https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation?_pretty=true HTTP/1.1
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request headers:
+Accept-Charset: utf-8
+Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
+User-Agent: HAPI-FHIR/4.2.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+Accept-Encoding: gzip
+Content-Type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptRequest
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "59408-5",
+        "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "2708-6",
+        "display": "Oxygen saturation in Arterial blood"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:50:00-05:00",
+  "valueQuantity": {
+    "value": 94,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "note": [
+    {
+      "text": "Test0654"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/bd3b022f-70e4-4d0d-a098-bcd862714c06",
+      "display": "Heart Rate"
+    },
+    {
+      "reference": "Observation/6306f9d4-b4d6-457e-8f7b-7558dc69fd63",
+      "display": "Respiratory Rate"
+    }
+  ]
+}
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/c7a81c29-d444-436d-a648-7055e9fd19b2/_history/1) in 108ms
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: 1f8980ae-156d-4eff-a710-defc400f37b3
+date: Wed, 08 Dec 2021 14:54:46 GMT
+server: openresty
+x-envoy-upstream-service-time: 43
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 14:54:46 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/c7a81c29-d444-436d-a648-7055e9fd19b2/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/c7a81c29-d444-436d-a648-7055e9fd19b2/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+Dec 08, 2021 9:54:46 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "c7a81c29-d444-436d-a648-7055e9fd19b2",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T14:54:46.198+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "59408-5",
+      "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+    }, {
+      "system": "http://loinc.org",
+      "code": "2708-6",
+      "display": "Oxygen saturation in Arterial blood"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T06:50:00-05:00",
+  "valueQuantity": {
+    "value": 94,
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "note": [ {
+    "text": "Test0654"
+  } ],
+  "hasMember": [ {
+    "reference": "Observation/bd3b022f-70e4-4d0d-a098-bcd862714c06",
+    "display": "Heart Rate"
+  }, {
+    "reference": "Observation/6306f9d4-b4d6-457e-8f7b-7558dc69fd63",
+    "display": "Respiratory Rate"
+  } ]
+}
+
+
+
+Respiratory Rate - 
+====================
+
+INFO: Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "9279-1",
+        "display": "Resiratory rate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T07:00:00-05:00",
+  "valueQuantity": {
+    "value": 70,
+    "unit": "breaths/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [
+    {
+      "text": "Test0700"
+    }
+  ]
+}
+<Dec 8, 2021 10:00:21 AM EST> <Info> <ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor> <BEA-000000> <Client request body:
+{
+  "resourceType": "Observation",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+        "display": "MyHealtheVet"
+      }
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "9279-1",
+        "display": "Resiratory rate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T07:00:00-05:00",
+  "valueQuantity": {
+    "value": 70,
+    "unit": "breaths/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [
+    {
+      "text": "Test0700"
+    }
+  ]
+}> 
+Dec 08, 2021 10:00:21 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response: HTTP 201 Created (Observation/b0ce5ad3-bf9c-45a4-9573-5187dd7d6bd1/_history/1) in 115ms
+<Dec 8, 2021 10:00:21 AM EST> <Info> <ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor> <BEA-000000> <Client response: HTTP 201 Created (Observation/b0ce5ad3-bf9c-45a4-9573-5187dd7d6bd1/_history/1) in 115ms> 
+Dec 08, 2021 10:00:21 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response headers:
+x-request-id: 4a336200-ef05-4c28-b03c-2f893bd369ba
+date: Wed, 08 Dec 2021 15:00:21 GMT
+server: openresty
+x-envoy-upstream-service-time: 50
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 15:00:21 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/b0ce5ad3-bf9c-45a4-9573-5187dd7d6bd1/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/b0ce5ad3-bf9c-45a4-9573-5187dd7d6bd1/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8
+<Dec 8, 2021 10:00:21 AM EST> <Info> <ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor> <BEA-000000> <Client response headers:
+x-request-id: 4a336200-ef05-4c28-b03c-2f893bd369ba
+date: Wed, 08 Dec 2021 15:00:21 GMT
+server: openresty
+x-envoy-upstream-service-time: 50
+transfer-encoding: chunked
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+access-control-expose-headers: Location, Content-Location
+access-control-allow-origin: https://mhvsyst.myhealth.va.gov
+last-modified: Wed, 08 Dec 2021 15:00:21 GMT
+access-control-allow-credentials: true
+x-powered-by: HAPI FHIR 5.4.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/b0ce5ad3-bf9c-45a4-9573-5187dd7d6bd1/_history/1
+x-fhir-request-validation: No issues detected
+etag: W/"1"
+location: https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/b0ce5ad3-bf9c-45a4-9573-5187dd7d6bd1/_history/1
+connection: keep-alive
+content-type: application/fhir+json; charset=UTF-8> 
+Dec 08, 2021 10:00:21 AM ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor interceptResponse
+INFO: Client response body:
+{
+  "resourceType": "Observation",
+  "id": "b0ce5ad3-bf9c-45a4-9573-5187dd7d6bd1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T15:00:21.253+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "9279-1",
+      "display": "Resiratory rate"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T07:00:00-05:00",
+  "valueQuantity": {
+    "value": 70,
+    "unit": "breaths/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [ {
+    "text": "Test0700"
+  } ]
+}
+<Dec 8, 2021 10:00:21 AM EST> <Info> <ca.uhn.fhir.rest.client.interceptor.LoggingInterceptor> <BEA-000000> <Client response body:
+{
+  "resourceType": "Observation",
+  "id": "b0ce5ad3-bf9c-45a4-9573-5187dd7d6bd1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-12-08T15:00:21.253+00:00",
+    "tag": [ {
+      "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code": "2ce6d9aa-c068-4809-8dda-662bcb16d09a",
+      "display": "MyHealtheVet"
+    } ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "vital-signs",
+      "display": "Vital Signs"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "9279-1",
+      "display": "Resiratory rate"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/95a405e1-8ac6-4384-9a45-73c452049c6b"
+  },
+  "effectiveDateTime": "2021-12-08T07:00:00-05:00",
+  "valueQuantity": {
+    "value": 70,
+    "unit": "breaths/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  },
+  "note": [ {
+    "text": "Test0700"
+  } ]
+}> 

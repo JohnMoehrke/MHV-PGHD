@@ -24,7 +24,7 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of immun
 * any reaction is recorded as a contained observation
 * may have a comment note
 * once created will or might have an id, versionId, lastUpdated, text, and identifier
-* DSTU2 uses slightly different element names (e.g., substance and onset) 
+* DSTU2 uses slightly different element names (e.g., substance and onset)
 """
 * ^version = "0.1.0"
 * ^date = "2021-04-14"
@@ -32,7 +32,7 @@ Given that MyHealtheVet has access to medical record (Vista and Cerner) of immun
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #completed
-* vaccineCode from http://hl7.org/fhir/us/core/ValueSet/us-core-vaccines-cvx
+//* vaccineCode from http://hl7.org/fhir/us/core/ValueSet/us-core-vaccines-cvx
 // TODO is this set of codes the right one? It likely is more modern than the existing MHV list
 * occurrence[x] only dateTime
 * occurrence[x] 1..1

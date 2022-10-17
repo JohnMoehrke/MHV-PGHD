@@ -4,7 +4,8 @@ Profile:        MHVbundleBluebutton
 Parent:         Bundle
 Id:             VA.MHV.BlueBundle
 Title:          "VA MHV BlueButton Bundle"
-Description:    "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.
+Description:    """
+A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.
 
 **This is a work in progress. It is not agreed to, and it is not ready for review.**
 
@@ -14,7 +15,7 @@ Description:    "A profile on the Bundle that declares how MHV will Create/Updat
 * must include Patient Resource
 * must include all Resources referenced by Composition 
 * DSTU2 use comment rather than note 
-"
+"""
 * ^version = "0.1.0"
 * ^date = "2020-10-24"
 * ^experimental = true

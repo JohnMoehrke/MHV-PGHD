@@ -25,7 +25,6 @@ Note that Blood Sugar is not part of FHIR core vital-signs.
 - may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other
 - may have a note (comment)
 - once created will or might have an id, versionId, lastUpdated, text, and identifier
-
 """
 * ^version = "0.2.0"
 * ^date = "2021-09-08"
@@ -96,6 +95,7 @@ Id: mhv-blood-sugar-methods-sites
 Title: "The methods of measurement for blood sugar that MHV supports"
 Description: "These are the SNOMED body sites that MHV supports."
 // this is not the snomed code for clinical lab test
+* ^experimental = false
 * SCT#15220000 "Laboratory Test"
 * SCT#350810002 "Lancet"
 * SCT#263902000 "Transcutaneous method"

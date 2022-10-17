@@ -5,7 +5,7 @@ Description:      "holding typical values of 140/90"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
 * code.coding[loincCode1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
 * code.coding[loincCode2] = LOINC#8716-3 "Vital signs"
 * subject = Reference(Patient/ex-patient)
@@ -25,7 +25,7 @@ Description:      "holding typical values of 140/90 with a heart-rate"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
 * code.coding[loincCode1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
 * code.coding[loincCode2] = LOINC#8716-3 "Vital signs"
 * subject = Reference(Patient/ex-patient)

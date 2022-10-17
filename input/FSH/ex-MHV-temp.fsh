@@ -5,8 +5,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
@@ -18,8 +19,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
@@ -33,8 +35,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
@@ -48,8 +51,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
@@ -63,8 +67,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
@@ -78,8 +83,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 98.6 '[degF]' 
@@ -93,8 +99,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
@@ -106,10 +113,11 @@ InstanceOf: Observation
 Title: "Example of an non MHV bodyTemperature R4 observation by truck"
 Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+//* code.coding[+] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
@@ -124,7 +132,8 @@ Description:      "holding typical values"
 //* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+//* code.coding[+] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 
@@ -139,7 +148,8 @@ Description:      "holding typical values"
 //* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+//* code.coding[+] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel'
@@ -154,7 +164,8 @@ Description:      "holding typical values"
 //* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+//* code.coding[+] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 37 'Cel' 

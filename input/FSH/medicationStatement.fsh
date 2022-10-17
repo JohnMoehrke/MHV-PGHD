@@ -3,7 +3,8 @@ Profile:        MHVmedication
 Parent:         MedicationStatement
 Id:             VA.MHV.medication
 Title:          "VA MHV Medication"
-Description:    "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.
+Description:    """
+A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.
 
 **Proposed mapping not yet approved for implementation**
 
@@ -24,7 +25,7 @@ Description:    "A profile on the MedicationStatement that declares how MHV will
 * may indicate who prescribed
 * may indicate if side affects or none
 * once created will or might have an id, versionId, lastUpdated, text, and identifier
-"
+"""
 * ^version = "0.2.0"
 * ^date = "2020-12-16"
 * ^experimental = true
@@ -66,6 +67,7 @@ ValueSet: MHVmedicationRoutes
 Id: mhv-medication-routes
 Title: "The routes of medication that MHV supports"
 Description: "These are the SNOMED-CT routes for medications that MHV supports."
+* ^experimental = false
 * SCT#26643006 	"Oral use"
 * SCT#37161004 	"Rectal use"
 * SCT#45890007 	"Transdermal use"

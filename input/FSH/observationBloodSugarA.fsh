@@ -3,7 +3,8 @@ Profile:        MHVbloodSugarA
 Parent:         Observation
 Id:             VA.MHV.bloodSugarA
 Title:          "VA MHV Blood Sugar Observation A"
-Description:    "A profile on the Observation for blood sugar measurements that was common in DSTU2 version of PGHD. MHV will continue to display these in addition to the current. MHV will not create using this profile. Eating routine is indicated as a component with string (like VCM shows).
+Description:    """
+A profile on the Observation for blood sugar measurements that was common in DSTU2 version of PGHD. MHV will continue to display these in addition to the current. MHV will not create using this profile. Eating routine is indicated as a component with string (like VCM shows).
 
 ** This was used prior to the move to R4.**
 
@@ -21,8 +22,7 @@ Description:    "A profile on the Observation for blood sugar measurements that 
   - unknown
 - may have a note (comment)
 - once created will or might have an id, versionId, lastUpdated, text, and identifier
-
-"
+"""
 * ^version = "0.1.0"
 * ^date = "2021-09-03"
 * ^experimental = true
@@ -31,7 +31,15 @@ Description:    "A profile on the Observation for blood sugar measurements that 
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * category 1..1
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#2339-0 
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding 1..*
+* code.coding contains 
+    loincCode1 1..1 and
+    loincCode2 0..1
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#mg/dL

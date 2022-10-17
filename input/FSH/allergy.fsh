@@ -4,7 +4,8 @@ Profile:        MHVallergy
 Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance
 Id:             VA.MHV.allergy
 Title:          "VA MHV Allergy or Intolerance"
-Description:    "A profile on the AllergyIntolerance that declares how MHV will Create/Update in PGHD for allergy or intolerance.
+Description:    """
+A profile on the AllergyIntolerance that declares how MHV will Create/Update in PGHD for allergy or intolerance.
 
 Given that MyHealtheVet has access to the medical record (Vista and Cerner), there should be logic keeping a patient from entering a duplicate allergy or intolerance. 
 
@@ -23,8 +24,8 @@ Given that MyHealtheVet has access to the medical record (Vista and Cerner), the
 * must have a reaction.note or reaction.manifestation from the UI
 * may have a comments note from the UI
 * once created will or might have an id, versionId, lastUpdated, text, and identifier
-* DSTU2 uses slightly different element names (e.g., substance and onset) 
-"
+* DSTU2 uses slightly different element names (e.g., substance and onset)
+"""
 * ^version = "0.1.0"
 * ^date = "2021-04-14"
 * meta.tag 1..1

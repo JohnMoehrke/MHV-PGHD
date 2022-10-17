@@ -20,8 +20,8 @@ Note this is compliant with FHIR core vital-signs.
 - may have a note (comment)
 - once created will or might have an id, versionId, lastUpdated, text, and identifier
 """
-* ^version = "0.2.0"
-* ^date = "2021-09-08"
+* ^version = "0.2.1"
+* ^date = "2022-10-17"
 * ^experimental = false
 //Note this could be derived off of the international profile for http://hl7.org/fhir/StructureDefinition/bodyweight. But doing that causes alot of indirection, and doesn't seem to be as blunt as writing it all inline here.
 // this is what the MHV / PGD mapping table says
@@ -30,7 +30,7 @@ Note this is compliant with FHIR core vital-signs.
 * category 1..1
 // this category requirement is already in core vital-signs, build fails examples with this explicitly here
 //* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#29463-7
+* code = LOINC#29463-7 "Body weight"
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit from MHVbodyWeights
@@ -76,5 +76,6 @@ ValueSet: MHVbodyWeights
 Id: mhv-body-weights
 Title: "The body weight measurement types that MHV supports"
 Description: "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone)."
+* ^experimental = false
 * UCUM#[lb_av]
 * UCUM#kg

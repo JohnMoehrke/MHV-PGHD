@@ -21,8 +21,8 @@ Note this is compliant with FHIR core vital-signs.
 - may have a note (comment)
 - once created will or might have an id, versionId, lastUpdated, text, and identifier
 """
-* ^version = "0.2.0"
-* ^date = "2021-09-08"
+* ^version = "0.2.1"
+* ^date = "2022-10-17"
 * ^experimental = false
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
@@ -30,7 +30,7 @@ Note this is compliant with FHIR core vital-signs.
 * category 1..1
 // this category requirement is already in core vital-signs, build fails examples with this explicitly here
 //* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#8310-5
+* code = LOINC#8310-5 "Body temperature"
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit from MHVbodyTemperatures
@@ -76,6 +76,7 @@ ValueSet: MHVbodyTemperatures
 Id: mhv-body-temperatures
 Title: "The body temperature measurement types that MHV supports"
 Description: "These are the UCUM types that MHV supports."
+* ^experimental = false
 * UCUM#[degF] "degree Fahrenheit"
 * UCUM#Cel "degree Celsius"
 
@@ -84,6 +85,7 @@ ValueSet: MHVbodyTemperatureSites
 Id: mhv-body-temperature-sites
 Title: "The body temperature measurement sites that MHV supports"
 Description: "These are the SNOMED body sites that MHV supports."
+* ^experimental = false
 * SCT#422005 "Inferior surface of tongue"
 * SCT#362732006 "Entire axillary region"
 * SCT#1910005 "Entire ear"

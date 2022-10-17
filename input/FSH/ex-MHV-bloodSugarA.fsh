@@ -5,9 +5,9 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
@@ -21,15 +21,15 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#15220000 "Laboratory Test"
-* component.code = SCT#162549003 "Eating routine (observable entity)"
-* component.valueString = "fasting"
+* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
+* component[bodyContext].valueString = "fasting"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, fasting"
 
@@ -40,15 +40,15 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#15220000 "Laboratory Test"
-* component.code = SCT#162549003 "Eating routine (observable entity)"
-* component.valueString = "after meal"
+* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
+* component[bodyContext].valueString = "after meal"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, after meal"
 
@@ -59,15 +59,15 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#15220000 "Laboratory Test"
-* component.code = SCT#162549003 "Eating routine (observable entity)"
-* component.valueString = "unknown"
+* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
+* component[bodyContext].valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, unknown eating"
 
@@ -78,15 +78,15 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#350810002 "Lancet"
-* component.code = SCT#162549003 "Eating routine (observable entity)"
-* component.valueString = "unknown"
+* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
+* component[bodyContext].valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, unknown eating, by lancet"
 
@@ -97,15 +97,15 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#263902000 "Transcutaneous method"
-* component.code = SCT#162549003 "Eating routine (observable entity)"
-* component.valueString = "unknown"
+* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
+* component[bodyContext].valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, unknown eating, by skin"
 
@@ -116,15 +116,15 @@ Description:      "holding typical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 99 'mg/dL' 
 * method = SCT#261373009 "Implant technique"
-* component.code = SCT#162549003 "Eating routine (observable entity)"
-* component.valueString = "unknown"
+* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
+* component[bodyContext].valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "a bit low, unknown eating, by implant"
 
@@ -135,15 +135,15 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 0 'mg/dL' 
 * method = SCT#261373009 "Implant technique"
-* component.code = SCT#162549003 "Eating routine (observable entity)"
-* component.valueString = "unknown"
+* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
+* component[bodyContext].valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "dead ZERO, unknown eating, by implant"
 
@@ -154,15 +154,15 @@ Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* category[+] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[loincCode2] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100000 'mg/dL' 
 * method = SCT#261373009 "Implant technique"
-* component.code = SCT#162549003 "Eating routine (observable entity)"
-* component.valueString = "unknown"
+* component[bodyContext].code = SCT#162549003 "Eating routine (observable entity)"
+* component[bodyContext].valueString = "unknown"
 // no comments in this one as comments is only in DSTU2
 * note.text = "nothing but sugar, unknown eating, by implant"
 
@@ -171,11 +171,11 @@ InstanceOf: Observation
 Title: "Example of an non-MHV blood sugar R4 observation, random blood glucose measurement"
 Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* code.coding[+] = LOINC#2339-0 
+* code.coding[+] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
@@ -190,11 +190,11 @@ InstanceOf: Observation
 Title: "Example of an non-MHV blood sugar R4 observation, by urine"
 Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* code.coding[+] = LOINC#2339-0 
+* code.coding[+] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
@@ -209,11 +209,11 @@ InstanceOf: Observation
 Title: "Example of an non-MHV blood sugar R4 observation, by self monitoring"
 Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* code.coding[+] = LOINC#2339-0 
+* code.coding[+] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
@@ -228,11 +228,11 @@ InstanceOf: Observation
 Title: "Example of an non-MHV blood sugar R4 observation, by self supper time blood sugar measurement"
 Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* code.coding[+] = LOINC#2339-0 
+* code.coding[+] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
@@ -247,11 +247,11 @@ InstanceOf: Observation
 Title: "Example of an non-MHV blood sugar R4 observation, with a coded eating"
 Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-* code.coding[1] = LOINC#2345-7
+* code.coding[+] = LOINC#2339-0 
+* code.coding[+] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
@@ -266,11 +266,11 @@ InstanceOf: Observation
 Title: "Example of an non-MHV blood sugar R4 observation, just one of the .code values (2339-0)"
 Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding = LOINC#2339-0 
-//* code.coding[1] = LOINC#2345-7
+* code.coding[+] = LOINC#2339-0 
+* code.coding[+] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 
@@ -285,11 +285,11 @@ InstanceOf: Observation
 Title: "Example of an non-MHV blood sugar R4 observation, the second .code value (2345-7)"
 Description:      "holding atypical values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding = LOINC#2339-0 
-* code.coding = LOINC#2345-7
+//* code.coding[loincCode1] = LOINC#2339-0 "Glucose [Mass/volume] in Blood"
+* code.coding[+] = LOINC#2345-7
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 100 'mg/dL' 

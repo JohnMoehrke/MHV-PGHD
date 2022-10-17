@@ -1,8 +1,80 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: va.mhv.example
 canonical: https://johnmoehrke.github.io/MHV-PGHD
 name: MHVIG
-status: draft
+title: "MyHealtheVet use of PGHD"
+description: "FHIR use by MyHealtheVet using PGHD and Testing Plan."
+status: active
+version: 0.2.8-beta
 fhirVersion: 4.0.1
-FSHOnly: true
+copyrightyear: '2019+'
+#date: 2022-04-14
+releaselabel: ci-build
+#releaselabel: ballot
+#releaselabel: Trial-Implementation
+publisher:
+  name: John Moehrke (himself)
+  url: http://healthcaresecprivacy.blogspot.com
+  email: JohnMoehrke@gmail.com
+contact:
+  - name: John Moehrke (himself)
+    telecom:
+      - system: email
+        value: JohnMoehrke@gmail.com
+license: CC-BY-4.0
+jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
+#copyright: Integrating the Healthcare Enterprise (IHE) http://www.ihe.net/Governance/#Intellectual_Property
+extension: 
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 2
 dependencies:
-  hl7.fhir.us.core: 3.1.1
+  hl7.fhir.us.core: 5.0.1
+
+parameters:  # see http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
+  path-resource:
+    - fsh-generated/resources
+    - input/examples
+    - input/resources
+#  path-pages:
+#    - input/pagecontent
+#    - fsh-generated/includes
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'false'
+  logging: progress
+  shownav: 'true'
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  autoload-resources: 'true'
+ # fmm-definition: other.html#maturity-levels
+  special-url:
+    - "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"
+    - "https://wiki.mobilehealth.va.gov/x/Onc1C"
+    - "https://veteran.apps-staging.va.gov/smart-pgd-fhir/v1/NamingSystem/1cc5d1af-1b2a-4d8e-ad51-c0cfd35f96be"
+
+
+pages:
+  index.md:
+    title: MyIG Home Page
+    generation: markdown
+  background.md:
+    title: Background
+    generation: markdown
+  testplan.md:
+    title: Test Plan
+    generation: markdown
+
+
+
+menu:
+  Home: index.html
+  Background: background.html
+  Test Plan: testplan.html
+  Artifacts: artifacts.html

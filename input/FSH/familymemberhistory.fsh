@@ -48,6 +48,7 @@ CodeSystem: Ages
 Title: "Ages in decades"
 Description:  "Used when the Age is not known very well"
 * ^caseSensitive = true
+* ^experimental = false
 * #preBirth "Pre-Birth"
 * #newBorn "Newborn"
 * #infancy "In Infancy"
@@ -67,6 +68,7 @@ Description:  "Used when the Age is not known very well"
 ValueSet: AgesVS
 Title: "Ages ValueSet"
 Description: "ValueSet of the Ages allowed"
+* ^experimental = false
 * codes from system Ages
 
 

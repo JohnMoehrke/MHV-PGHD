@@ -109,6 +109,7 @@ ValueSet: MHVbloodPressurePositions
 Id: mhv-blood-pressure-positions
 Title: "The methods of measurement for blood pressure that MHV supports"
 Description: "These are the loinc body positions that MHV supports on blood pressure."
+* ^experimental = false
 * LOINC#69000-8 "Heart rate - sitting"
 * LOINC#69001-6 "Heart rate - standing"
 * LOINC#68999-2 "Heart rate - supine"

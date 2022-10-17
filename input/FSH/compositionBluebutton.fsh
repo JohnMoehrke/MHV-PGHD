@@ -4,7 +4,8 @@ Profile:        MHVcompositionBluebutton
 Parent:         Composition
 Id:             VA.MHV.BlueComposition
 Title:          "VA MHV BlueButton Composition"
-Description:    "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.
+Description:    """
+A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.
 
 **This is a work in progress. It is not agreed to, and it is not ready for review.**
 
@@ -14,8 +15,8 @@ Description:    "A profile on the Composition that declares how MHV will Create/
 * must have date stamp of when created (now)
 * must be LOINC 55188-7 Patient data Document
 * must point at the patient for both subject and author
-* DSTU2 use comment rather than note 
-"
+* DSTU2 use comment rather than note
+"""
 * ^version = "0.1.0"
 * ^date = "2020-10-24"
 * ^experimental = true

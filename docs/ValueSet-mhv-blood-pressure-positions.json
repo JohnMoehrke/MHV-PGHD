@@ -11,7 +11,7 @@
   "title": "The methods of measurement for blood pressure that MHV supports",
   "status": "active",
   "experimental": false,
-  "date": "2022-10-17T15:29:01-05:00",
+  "date": "2022-10-19T16:12:15-05:00",
   "publisher": "John Moehrke (himself)",
   "contact": [
     {
@@ -42,8 +42,8 @@
     {
       "coding": [
         {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
         }
       ]
     }

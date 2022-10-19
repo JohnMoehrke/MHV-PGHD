@@ -69,8 +69,8 @@
   <description value="A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.&#xA;&#xA;**Proposed mapping not yet approved for implementation**&#xA;&#xA;Given that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.&#xA;&#xA;* Derived off of US-Core Immunization&#xA;* must be marked with MHV app tag&#xA;* must point at the patient&#xA;* must have status of completed (can not enter not-done or entered-in-error)&#xA;* must have a code.text or code.coding from a valueset from the UI&#xA;  * codes from given valueSet&#xA;* must have a date (occuranceDateTime) the vaccine was administered from the UI&#xA;* must indicate the date this record is being recorded into PGHD &#xA;* must be indicated this data are not official record (primarySource=false)&#xA;* must indicate this is being recorded from patient recollection&#xA;* any reaction is recorded as a contained observation&#xA;* may have a comment note&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;* DSTU2 uses slightly different element names (e.g., substance and onset)"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

@@ -53,8 +53,8 @@
   <description value="A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.&#xA;&#xA;**This is a work in progress. It is not agreed to, and it is not ready for review.**&#xA;&#xA;* must be marked with MHV app tag&#xA;* must be status final&#xA;* must have a title explaining the content - for example: all vital-signs from past 60 days&#xA;* must have date stamp of when created (now)&#xA;* must be LOINC 55188-7 Patient data Document&#xA;* must point at the patient for both subject and author&#xA;* DSTU2 use comment rather than note"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

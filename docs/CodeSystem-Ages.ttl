@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "Ages in decades"];
   fhir:CodeSystem.status [ fhir:value "active"];
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-10-17T15:29:01-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-10-19T16:12:15-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "John Moehrke (himself)"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -46,8 +46,8 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
   fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];

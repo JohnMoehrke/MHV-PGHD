@@ -97,8 +97,8 @@
   <description value="A profile on the Observation for blood sugar measurements that was common in DSTU2 version of PGHD. MHV will continue to display these in addition to the current. MHV will not create using this profile. Eating routine is indicated as a component with string (like VCM shows).&#xA;&#xA;** This was used prior to the move to R4.**&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#2339-0 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units only of mg/dL&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other&#xA;- may have a eating routine component with string of: &#xA;  - Fasting (8 hours)&#xA;  - After Meal&#xA;  - unknown&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

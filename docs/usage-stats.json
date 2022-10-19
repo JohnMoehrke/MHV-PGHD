@@ -2,7 +2,7 @@
   "package": "va.mhv.example",
   "version": "0.2.8-beta",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "001",
+  "jurisdiction": "US",
   "extensions": [
     {
       "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted",

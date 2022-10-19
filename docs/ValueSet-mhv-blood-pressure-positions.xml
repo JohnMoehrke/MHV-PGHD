@@ -11,7 +11,7 @@
   <title value="The methods of measurement for blood pressure that MHV supports"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-10-17T15:29:01-05:00"/>
+  <date value="2022-10-19T16:12:15-05:00"/>
   <publisher value="John Moehrke (himself)"/>
   <contact>
     <name value="John Moehrke (himself)"/>
@@ -34,8 +34,8 @@
   <description value="These are the loinc body positions that MHV supports on blood pressure."/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <compose>

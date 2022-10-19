@@ -17,7 +17,7 @@ Note would like to use us-core defined extension, but is not allowed in FamilyMe
   <name value="Race"/>
   <title value="Race"/>
   <status value="active"/>
-  <date value="2022-10-17T15:29:01-05:00"/>
+  <date value="2022-10-19T16:12:15-05:00"/>
   <publisher value="John Moehrke (himself)"/>
   <contact>
     <name value="John Moehrke (himself)"/>
@@ -40,8 +40,8 @@ Note would like to use us-core defined extension, but is not allowed in FamilyMe
   <description value="What is the Race of this family member&#xA;&#xA;Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

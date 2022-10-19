@@ -77,8 +77,8 @@
   <description value="A profile on the Observation that declares how MHV will Read/Create/Update in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#59408-5 code AND LOINC#2708-6&#xA;  - Argonaut and VCM use 59408-5&#xA;  - FHIR Core R4 also adds 2708-6&#xA;- must have effectiveDateTime&#xA;- must have a valueQuantity with UCUM '%' units&#xA;  * must be between 50% &lt;= n &lt;= 100%&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a hasMember of a blood-pressure and/or respiration-rate&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

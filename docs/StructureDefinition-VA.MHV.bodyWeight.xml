@@ -74,8 +74,8 @@
   <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#29463-7 code&#xA;- must have effectiveDateTime&#xA;- must have valueQuantity with units from the MHV body weights (lbs and kg)&#xA;  - must be value 60 &lt;= n &lt;= 1000 lbs&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

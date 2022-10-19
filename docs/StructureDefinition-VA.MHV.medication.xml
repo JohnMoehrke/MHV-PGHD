@@ -62,8 +62,8 @@
   <description value="A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.&#xA;&#xA;**Proposed mapping not yet approved for implementation**&#xA;&#xA;* NOT Derived off of US-Core as there is no MedicationStatement in US-Core&#xA;* must be marked with MHV app tag&#xA;* must have a medication name&#xA;* must have a strength per dose&#xA;* must have a reason for use&#xA;* must have effectiveDateTime&#xA;* must have status at final, stopped, or complete&#xA;* must point at the patient&#xA;* may have a note &#xA;* may have quantity&#xA;* may have frequency&#xA;* may have method of taking&#xA;* may have a rx number&#xA;* may indicate where it was filled&#xA;* may indicate who prescribed&#xA;* may indicate if side affects or none&#xA;* once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

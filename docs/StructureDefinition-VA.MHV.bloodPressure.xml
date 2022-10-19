@@ -107,8 +107,8 @@
   <description value="A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for blood pressure measurements.&#xA;&#xA;Note that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#55284-4 code AND LOINC#8716-3&#xA;  - 8716-3 was added as some mobile apps searched on this&#xA;- must have effectiveDateTime&#xA;- must not have a value[x]&#xA;- must have two components&#xA;- must have systolic and diastolic component values in mm[Hg]&#xA;  - systolic must be between 50 &lt;= s &lt;= 250&#xA;  - diastolic must be between 30 &lt;= d &lt;= 140&#xA;- may have a related has-member heart-rate observation&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;&#xA;Later may have a position component (sitting, standing, supline, and resting)"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

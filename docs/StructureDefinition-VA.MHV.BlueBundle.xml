@@ -54,8 +54,8 @@
   <description value="A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.&#xA;&#xA;**This is a work in progress. It is not agreed to, and it is not ready for review.**&#xA;&#xA;* must be a document type Bundle&#xA;* must have a timestamp of when this was created&#xA;* must have a MHV Bluebutton type of a Composition &#xA;* must include Patient Resource&#xA;* must include all Resources referenced by Composition &#xA;* DSTU2 use comment rather than note "/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

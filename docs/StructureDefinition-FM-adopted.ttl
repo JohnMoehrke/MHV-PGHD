@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "Adopted"];
   fhir:StructureDefinition.title [ fhir:value "Adopted indication"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-19T16:12:15-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-20T14:08:50-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "John Moehrke (himself)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

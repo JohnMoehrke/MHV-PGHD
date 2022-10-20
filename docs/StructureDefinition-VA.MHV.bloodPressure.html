@@ -308,6 +308,55 @@
 
 
 
+<div style="display:inline-block" markdown="1">
+
+<p>The MHV bloodPressure profile uses the R4 Observation to hold the bloodPressure values. It is common for bloodPressure to also have an associated heartRate.</p>
+
+<p>Note that FHIR Core Vital-Signs would prefer we use <a href="https://loinc.org/85354-9/">LOINC 85354-9</a> - Blood pressure panel with all children optional.</p>
+
+<h3 id="search-pghd">Search PGHD</h3>
+
+<p>Because BloodPressure are recorded by various applications with either of two LOINC codes, MHV will query PGHD asking for Observations with either of the two codes. Because this is a logical “OR”, then results will also include Observations with both codes. MHV further requests inclusion of other Observations linked by a hasMember relationship, which would be related heart rate at the time the blood pressure was taken.</p>
+
+<p>The following is a example, hitting the test PGHD service, about a test patient.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation?patient.identifier=urn:uuid:2.16.840.1.113883.4.349|1012853550V207686&amp;code=http://loinc.org|55284-4,http://loinc.org|8716-3&amp;_include=Observation:has-member&amp;_sort=-date&amp;_count=100&amp;_pretty=true&amp;_format=json 
+</code></pre></div></div>
+<p>Breakdown of query parameters</p>
+<ul>
+  <li>patient.identifier – this takes the patient ICN, and the server will find appropriate entries for that patient</li>
+  <li>code - searching for Observations with either of these codes (OR relationship)
+    <ul>
+      <li><a href="https://loinc.org/55284-4/">LOINC 55284-4</a> - Blood pressure systolic and diastolic</li>
+      <li><a href="https://loinc.org/8716-3/">LOINC 8716-3</a> - Vital signs
+        <ul>
+          <li>This is included for backward compatibility. This code should not generally be used in best-practice.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>_include – also return anything that the Observation.hasMember points at
+    <ul>
+      <li>this should return any heart rate that is associated with the bloodpressure observations being returned</li>
+    </ul>
+  </li>
+  <li>_sort – ask that the results be sorted by date</li>
+  <li>_count – ask that no more than 100 be returned in each page</li>
+  <li>_pretty – ask that the results be pretty printed (normal json has no unnecessary whitespace)</li>
+  <li>_format – ask for json encoding</li>
+</ul>
+
+<p>Results will be limited to 100 bloodPressure Observations, which might be larger than 100 as there would be associated heart rate observations.</p>
+
+<p>The next page is retrieved using the FHIR <a href="http://hl7.org/fhir/http.html#paging">paging</a> mechanism.</p>
+
+<p>The User Experience should NOT be aware of pages at the FHIR API level.</p>
+
+
+</div>
+
+
+
+
 <p><b>Usage:</b></p>
 <ul>
  <li>Examples for this Resource Profile: <a href="Observation-ex-MHV-bloodPressure-0.html">Observation/ex-MHV-bloodPressure-0</a>, <a href="Observation-ex-MHV-bloodPressure-1.html">Observation/ex-MHV-bloodPressure-1</a></li>
@@ -1358,6 +1407,35 @@ Summary
 <!-- insert notes if present -->
 
 
+<h3>Notes:</h3>
+
+
+<div style="display:inline-block" markdown="1">
+
+<p>This is the notes for the VA.MHV.bloodPressure Profile</p>
+
+<h3 id="positive-tests">Positive Tests</h3>
+
+<p>TODO write this in cucumber.</p>
+
+<p>load all of the blood pressure examples that are <a href="StructureDefinition-VA.MHV.bloodPressure-examples.html">compliant to the MHV profile</a> into PGHD, and all the heart rate examples that are in a hasMember relationship:</p>
+<ul>
+  <li>show them in MHV, they should show fine.</li>
+</ul>
+
+<p>load all of the other bloodPressure examples and heart rate examples. Some data won’t show at all. They should not crash MHV.</p>
+<ul>
+  <li>edit them in MHV, they should show the data that MHV understands. When the edit is saved, the resulting resource in PGHD should now be conformant to the <a href="StructureDefinition-VA.MHV.bloodPressure.html">MHV bloodPressure profile</a></li>
+</ul>
+
+<h3 id="negative-tests">Negative Tests</h3>
+
+<p>TODO write this in cucumber.</p>
+
+
+</div>
+
+
 
 
 </div>
@@ -1428,7 +1506,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 19, 2022 16:12-0500">2022-10-19</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 20, 2022 14:08-0500">2022-10-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

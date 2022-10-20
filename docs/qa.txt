@@ -2,8 +2,8 @@
 =========================================
 
 err = 116, warn = 67, info = 67
-IG Publisher Version: 1.2.7
-Generated Wed Oct 19 16:15:25 CDT 2022. FHIR version 4.0.1 for va.mhv.example#0.2.8-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+IG Publisher Version: 1.2.8
+Generated Thu Oct 20 14:13:00 CDT 2022. FHIR version 4.0.1 for va.mhv.example#0.2.8-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
  Build Errors : 63 / 11 / 0
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\AllergyIntolerance-ex-MHV-allergy-0 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\CodeSystem-Ages : 0 / 0 / 1

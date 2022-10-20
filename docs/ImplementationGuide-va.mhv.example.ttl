@@ -26,7 +26,7 @@
   fhir:ImplementationGuide.name [ fhir:value "MHVIG"];
   fhir:ImplementationGuide.title [ fhir:value "MyHealtheVet use of PGHD"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-10-19T16:12:15-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-20T14:08:50-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "John Moehrke (himself)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

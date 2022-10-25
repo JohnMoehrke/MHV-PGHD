@@ -1,6 +1,4 @@
-The MHV bloodPressure profile uses the R4 Observation to hold the bloodPressure values. It is common for bloodPressure to also have an associated heartRate.
 
-Note that FHIR Core Vital-Signs would prefer we use [LOINC 85354-9](https://loinc.org/85354-9/) - Blood pressure panel with all children optional.
 
 ### Search PGHD
 
@@ -28,3 +26,5 @@ Results will be limited to 100 bloodPressure Observations, which might be larger
 The next page is retrieved using the FHIR [paging](http://hl7.org/fhir/http.html#paging) mechanism.
 
 The User Experience should NOT be aware of pages at the FHIR API level.
+
+### Profile

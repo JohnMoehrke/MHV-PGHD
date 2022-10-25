@@ -5,14 +5,15 @@ MyHealtheVet provides access to the VA managed Patient Generated Health Data (PG
 
 ### currently implemented
 
-* Vital Signs
-  * [Blood Pressure](StructureDefinition-VA.MHV.bloodPressure.html)
-  * [Blood Sugar](StructureDefinition-VA.MHV.bloodSugar.html)
-  * [Body Temperature](StructureDefinition-VA.MHV.bodyTemperature.html)
-  * [Body Weight](StructureDefinition-VA.MHV.bodyWeight.html)
-  * [Heart Rate](StructureDefinition-VA.MHV.heartRate.html)
-  * [Pain](StructureDefinition-VA.MHV.pain.html)
-  * [Oxygen Saturation](StructureDefinition-VA.MHV.bloodOxygenSat.html)
+#### Vital Signs
+1. [Blood Pressure](StructureDefinition-VA.MHV.bloodPressure.html)
+1. [Blood Sugar](StructureDefinition-VA.MHV.bloodSugar.html)
+1. [Body Temperature](StructureDefinition-VA.MHV.bodyTemperature.html)
+1. [Body Weight](StructureDefinition-VA.MHV.bodyWeight.html)
+1. [Heart Rate](StructureDefinition-VA.MHV.heartRate.html)
+1. [Pain](StructureDefinition-VA.MHV.pain.html)
+1. [Oxygen Saturation](StructureDefinition-VA.MHV.bloodOxygenSat.html)
+1. [Respiration Rate](StructureDefinition-VA.MHV.respirationRate.html)
 
 
 ### profile drafted but feature is not approved for implementation

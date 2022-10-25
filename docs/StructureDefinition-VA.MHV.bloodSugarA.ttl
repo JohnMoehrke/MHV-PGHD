@@ -24,7 +24,7 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.8-beta"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.9-beta"];
   fhir:StructureDefinition.name [ fhir:value "MHVbloodSugarA"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV Blood Sugar Observation A"];
   fhir:StructureDefinition.status [ fhir:value "active"];

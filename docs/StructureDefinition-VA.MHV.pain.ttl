@@ -24,7 +24,7 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.8-beta"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.9-beta"];
   fhir:StructureDefinition.name [ fhir:value "MHVpain"];
   fhir:StructureDefinition.title [ fhir:value "VA MHV Pain Observation"];
   fhir:StructureDefinition.status [ fhir:value "active"];

@@ -69,7 +69,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MyHealtheVet use of PGHD</span>
             <br/>
-            <span style="display:inline-block;">0.2.8-beta - ci-build
+            <span style="display:inline-block;">0.2.9-beta - ci-build
 
 
 
@@ -147,7 +147,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.8-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.9-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -236,7 +236,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.8-beta<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat|0.2.8-beta"/></span>
+      <span class="copy-text">0.2.9-beta<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat|0.2.9-beta"/></span>
       </td>
     </tr>
 
@@ -290,7 +290,7 @@
   </li>
   <li>must have status at final or preliminary</li>
   <li>must point at the patient</li>
-  <li>may have a hasMember of a blood-pressure and/or respiration-rate</li>
+  <li>may have a hasMember of a heart-rate and/or respiration-rate</li>
   <li>may have a note (comment)</li>
   <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
   <li>DSTU2 use comment rather than note</li>
@@ -429,7 +429,40 @@
 
 <p>Edit is not proposed as a User-Story as it presents too many concerns for revisions. The use-case need to change a measurement can be satisfied by deleting the current and adding a replacement with the proper values.</p>
 
-<h2 id="mapping-to-observation">Mapping to Observation</h2>
+<h2 id="search-pghd">Search PGHD</h2>
+
+<p>Because Blood Oxygen Saturation are recorded by various applications with either of two LOINC codes, MHV will query PGHD asking for Observations with either of the two codes. Because this is a logical “OR”, then results will also include Observations with both codes. MHV further requests inclusion of other Observations linked by a hasMember relationship, which would be related heart rate at the time the blood pressure was taken.</p>
+
+<p>The following is a example, hitting the test PGHD service, about a test patient.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation?patient.identifier=urn:uuid:2.16.840.1.113883.4.349|1012853550V207686&amp;code=http://loinc.org|59408-5,http://loinc.org|2708-6&amp;_include=Observation:has-member&amp;_sort=-date&amp;_count=100&amp;_pretty=true&amp;_format=json 
+</code></pre></div></div>
+<p>Breakdown of query parameters</p>
+<ul>
+  <li>patient.identifier – this takes the patient ICN, and the server will find appropriate entries for that patient</li>
+  <li>code - searching for Observations with either of these codes (OR relationship)
+    <ul>
+      <li><a href="https://loinc.org/59408-5/">LOINC 59408-5</a> - Oxygen saturation in Arterial blood by Pulse oximetry</li>
+      <li><a href="https://loinc.org/2708-6/">LOINC 2708-6</a> - Oxygen saturation in Arterial blood</li>
+    </ul>
+  </li>
+  <li>_include – also return anything that the Observation.hasMember points at
+    <ul>
+      <li>this should return any heart rate that is associated with the Blood Oxygen Saturation observations being returned</li>
+    </ul>
+  </li>
+  <li>_sort – ask that the results be sorted by date</li>
+  <li>_count – ask that no more than 100 be returned in each page</li>
+  <li>_pretty – ask that the results be pretty printed (normal json has no unnecessary whitespace)</li>
+  <li>_format – ask for json encoding</li>
+</ul>
+
+<p>Results will be limited to 100 Blood Oxygen Saturation Observations, which might be larger than 100 as there would be associated heart rate observations.</p>
+
+<p>The next page is retrieved using the FHIR <a href="http://hl7.org/fhir/http.html#paging">paging</a> mechanism.</p>
+
+<p>The User Experience should NOT be aware of pages at the FHIR API level.</p>
+
+<h3 id="profile">Profile</h3>
 
 
 </div>
@@ -1235,7 +1268,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 20, 2022 14:08-0500">2022-10-20</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 25, 2022 15:39-0500">2022-10-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

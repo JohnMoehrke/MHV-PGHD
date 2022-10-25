@@ -65,7 +65,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MyHealtheVet use of PGHD</span>
             <br/>
-            <span style="display:inline-block;">0.2.8-beta - ci-build
+            <span style="display:inline-block;">0.2.9-beta - ci-build
 
 
 
@@ -143,7 +143,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.8-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.9-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -232,7 +232,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight<button data-clipboard-text="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight" title="Click to copy URL" class="btn-copy"></button></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.8-beta<button data-clipboard-text="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight|0.2.8-beta" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">0.2.9-beta<button data-clipboard-text="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight|0.2.9-beta" title="Click to copy versioned URL" class="btn-copy"></button></span>
       </td>
     </tr>
 
@@ -296,7 +296,34 @@
 
 <div markdown="1" style="display:inline-block">
 
-<p>This is the Intro for the VA.MHV.bodyWeight Profile</p>
+<h3 id="search-pghd">Search PGHD</h3>
+
+<p>BodyWeight are recorded by various applications using the same LOINC codes, MHV will query PGHD asking for Observations with that code.</p>
+
+<p>The following is a example, hitting the test PGHD service, about a test patient.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation?patient.identifier=urn:uuid:2.16.840.1.113883.4.349|1012853550V207686&amp;code=http://loinc.org|29463-7&amp;_sort=-date&amp;_count=100&amp;_pretty=true&amp;_format=json 
+</code></pre></div></div>
+<p>Breakdown of query parameters</p>
+<ul>
+  <li>patient.identifier – this takes the patient ICN, and the server will find appropriate entries for that patient</li>
+  <li>code - searching for Observations with the codes
+    <ul>
+      <li><a href="https://loinc.org/29463-7/">LOINC 29463-7</a> - Body weight</li>
+    </ul>
+  </li>
+  <li>_sort – ask that the results be sorted by date</li>
+  <li>_count – ask that no more than 100 be returned in each page</li>
+  <li>_pretty – ask that the results be pretty printed (normal json has no unnecessary whitespace)</li>
+  <li>_format – ask for json encoding</li>
+</ul>
+
+<p>Results will be limited to 100 BodyWeight Observations.</p>
+
+<p>The next page is retrieved using the FHIR <a href="http://hl7.org/fhir/http.html#paging">paging</a> mechanism.</p>
+
+<p>The User Experience should NOT be aware of pages at the FHIR API level.</p>
+
+<h3 id="profile">Profile</h3>
 
 
 </div>
@@ -1049,12 +1076,12 @@ Summary
 <p>Feature: view of sample weights
   a set of example weights that are known to be compliant with the body weight profile, these should all be viewable in MHV</p>
 
-<p><a name="l7456">​</a>Scenario: read and view simple weight
+<p><a name="l7515">​</a>Scenario: read and view simple weight
     Given <a href="Observation-ex-MHV-weight.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a>
     When Michale views body weight values
     Then Michale sees the weight as 185 lbs with the comment of “a bit heavy”</p>
 
-<p><a name="l7465">​</a>Scenario: update and view simple weight
+<p><a name="l7524">​</a>Scenario: update and view simple weight
     Given <a href="Observation-ex-MHV-weight.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a>
     When Michale edits this weight changing the weight value to 200 lbs
     And submits the change to PGHD
@@ -1064,7 +1091,7 @@ Summary
     And no other elements from the original are changed</p>
 
 <h4 id="simple-mhv-weight-1">Simple MHV Weight</h4>
-<p><a name="l7477">​</a>Given <a href="Observation-example-weight-min.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a></p>
+<p><a name="l7536">​</a>Given <a href="Observation-example-weight-min.html">Example MHV weight Observation</a> is <a href="background.html#load-x-into-pghd">loaded into PGHD</a></p>
 
 <p>WHEN MHV shows body weight values</p>
 
@@ -1172,7 +1199,7 @@ AND no other elements from the original are changed</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 20, 2022 14:08-0500">2022-10-20</span>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 25, 2022 15:39-0500">2022-10-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

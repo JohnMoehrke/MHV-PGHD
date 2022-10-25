@@ -63,3 +63,5 @@ Additionally:
 
 Not clear
 * where side effects goes, likely a contained Observation, but unknown how the relationship of the Observation is a sideaffect caused/related to the medication. Most Observations are the reason for taking the medication, not the side affects of the medication.
+
+### Profile

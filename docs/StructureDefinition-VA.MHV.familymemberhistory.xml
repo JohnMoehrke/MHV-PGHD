@@ -46,7 +46,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"/>
-  <version value="0.2.8-beta"/>
+  <version value="0.2.9-beta"/>
   <name value="MHVfamilymemberhistory"/>
   <title value="VA MHV FamilyMemberHistory"/>
   <status value="active"/>

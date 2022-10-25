@@ -49,7 +49,7 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"/>
-  <version value="0.2.8-beta"/>
+  <version value="0.2.9-beta"/>
   <name value="MHVbloodOxygenSat"/>
   <title value="VA MHV Blood Oxygen Saturation Observation"/>
   <status value="active"/>
@@ -74,7 +74,7 @@
       <value value="JohnMoehrke@gmail.com"/>
     </telecom>
   </contact>
-  <description value="A profile on the Observation that declares how MHV will Read/Create/Update in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#59408-5 code AND LOINC#2708-6&#xA;  - Argonaut and VCM use 59408-5&#xA;  - FHIR Core R4 also adds 2708-6&#xA;- must have effectiveDateTime&#xA;- must have a valueQuantity with UCUM '%' units&#xA;  * must be between 50% &lt;= n &lt;= 100%&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a hasMember of a blood-pressure and/or respiration-rate&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
+  <description value="A profile on the Observation that declares how MHV will Read/Create/Update in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).&#xA;&#xA;This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#59408-5 code AND LOINC#2708-6&#xA;  - Argonaut and VCM use 59408-5&#xA;  - FHIR Core R4 also adds 2708-6&#xA;- must have effectiveDateTime&#xA;- must have a valueQuantity with UCUM '%' units&#xA;  * must be between 50% &lt;= n &lt;= 100%&#xA;- must have status at final or preliminary&#xA;- must point at the patient&#xA;- may have a hasMember of a heart-rate and/or respiration-rate&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;- DSTU2 use comment rather than note"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

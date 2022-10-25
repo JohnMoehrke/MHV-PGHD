@@ -46,7 +46,7 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"/>
-  <version value="0.2.8-beta"/>
+  <version value="0.2.9-beta"/>
   <name value="MHVbodyTemperature"/>
   <title value="VA MHV Body Temperature Observation"/>
   <status value="active"/>

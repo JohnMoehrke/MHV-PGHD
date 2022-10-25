@@ -73,7 +73,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MyHealtheVet use of PGHD</span>
             <br/>
-            <span style="display:inline-block;">0.2.8-beta - ci-build
+            <span style="display:inline-block;">0.2.9-beta - ci-build
 
 
 
@@ -151,7 +151,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.8-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.9-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -274,7 +274,7 @@
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;patient&quot; ]
   ];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">fhir:StructureDefinition.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure&quot;];
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:StructureDefinition.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.2.8-beta&quot;];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:StructureDefinition.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.2.9-beta&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">fhir:StructureDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;MHVbloodPressure&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">fhir:StructureDefinition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;VA MHV Blood Pressure Observation&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
@@ -299,7 +299,7 @@
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;JohnMoehrke@gmail.com&quot; ]     ]
   ];
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">fhir:StructureDefinition.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for blood pressure measurements.\n\nNote that Blood Pressure is not FHIR core Vital-Signs compliant as that requires 85354-9. This was not agreed by Mobile.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#55284-4 code AND LOINC#8716-3\n  - 8716-3 was added as some mobile apps searched on this\n- must have effectiveDateTime\n- must not have a value[x]\n- must have two components\n- must have systolic and diastolic component values in mm[Hg]\n  - systolic must be between 50 &lt;= s &lt;= 250\n  - diastolic must be between 30 &lt;= d &lt;= 140\n- may have a related has-member heart-rate observation\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n\nLater may have a position component (sitting, standing, supline, and resting)&quot;];
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">fhir:StructureDefinition.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for blood pressure measurements.\n\nNote: This profile is not aligned with FHIR core Vital-Signs. FHIR Core Vital-Signs would prefer we use [LOINC 85354-9](https://loinc.org/85354-9/) - Blood pressure panel with all children optional.\nThis was not agreed by Mobile.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#55284-4 code AND LOINC#8716-3\n  - 8716-3 was added as some mobile apps searched on this\n- must have effectiveDateTime\n- must not have a value[x]\n- must have two components\n- must have systolic and diastolic component values in mm[Hg]\n  - systolic must be between 50 &lt;= s &lt;= 250\n  - diastolic must be between 30 &lt;= d &lt;= 140\n- may have a related has-member heart-rate observation\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n\nLater may have a position component (sitting, standing, supline, and resting)&quot;];
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">fhir:StructureDefinition.jurisdiction</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
@@ -5017,7 +5017,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.8-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 20, 2022 14:08-0500">2022-10-20</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 25, 2022 15:39-0500">2022-10-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -6,12 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://unitsofmeasure.org"><code>http://unitsofmeasure.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>[lb_av]</td><td>[lb_av]</td></tr><tr><td>kg</td><td>kg</td></tr></table></li></ul></div>
   </text>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights"/>
-  <version value="0.2.8-beta"/>
+  <version value="0.2.9-beta"/>
   <name value="MHVbodyWeights"/>
   <title value="The body weight measurement types that MHV supports"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-10-20T14:08:50-05:00"/>
+  <date value="2022-10-25T15:39:47-05:00"/>
   <publisher value="John Moehrke (himself)"/>
   <contact>
     <name value="John Moehrke (himself)"/>

@@ -54,6 +54,7 @@ parameters:  # see http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/C
   apply-publisher: 'true'
   apply-version: 'true'
   autoload-resources: 'true'
+  path-output: docs
  # fmm-definition: other.html#maturity-levels
   special-url:
     - "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"

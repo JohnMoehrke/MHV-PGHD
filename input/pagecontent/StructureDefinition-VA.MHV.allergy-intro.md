@@ -14,7 +14,7 @@ Advanced UI that adds a few features
 
 <div style="clear: left"/>
 
-The mapping between the FHIR AllergyIntolerance resource and the above User Interface can be found on the [Mappings for MyHealtheVet mapping to FHIR/PGHD (MHV-UI)](StructureDefinition-VA.MHV.allergy-mappings.html#mappings-for-myhealthevet-mapping-to-fhir-pghd-mhv-ui)
+The mapping between the FHIR AllergyIntolerance resource and the above User Interface can be found on the [Mappings for MyHealtheVet mapping to FHIR/PGHD (MHV-UI)](StructureDefinition-VA.MHV.allergy-mappings.html#mappings-for-myhealthevet-mapping-to-fhirpghd-mhv-ui)
 
 #### Policy and Design Considerations
 

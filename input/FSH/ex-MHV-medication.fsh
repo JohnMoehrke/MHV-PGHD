@@ -2,6 +2,7 @@ Instance:   ex-MHV-medication-0
 InstanceOf: VA.MHV.medication
 Title: "Example of an MHV medication R4, minimal"
 Description:      "holding typical values"
+Usage: #example
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #active
@@ -19,10 +20,10 @@ Description:      "holding typical values"
 * dosage.route = SCT#26643006
 * medicationCodeableConcept.text = "Tylenol"
 * reasonCode.text = "Body pains"
-* contained[0] = in-Pharmacy
-* contained[1] = in-Dispense
-* contained[2] = in-Request
-* partOf = Reference(in-Dispense)
+* contained[+] = in-Pharmacy
+* contained[+] = in-Dispense
+* contained[+] = in-Request
+* partOf[+] = Reference(in-Dispense)
 * basedOn = Reference(in-Request)
 * identifier.value = "1234" // The prescription number
 

@@ -50,7 +50,7 @@
        fhir:ContactPoint.value [ fhir:value "JohnMoehrke@gmail.com" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\n\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\n\n* must be a document type Bundle\n* must have a timestamp of when this was created\n* must have a MHV Bluebutton type of a Composition \n* must include Patient Resource\n* must include all Resources referenced by Composition \n* DSTU2 use comment rather than note "];
+  fhir:StructureDefinition.description [ fhir:value "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\n\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\n\n* must be a document type Bundle\n* must have a timestamp of when this was created\n* must have a MHV Bluebutton type of a Composition \n* must include Patient Resource\n* must include all Resources referenced by Composition \n* DSTU2 use comment rather than note"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

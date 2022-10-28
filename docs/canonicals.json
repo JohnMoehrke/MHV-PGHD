@@ -1,5 +1,12 @@
 [
   {
+    "id": "MHVcapabilities",
+    "type": "CapabilityStatement",
+    "url": "https://johnmoehrke.github.io/MHV-PGHD/CapabilityStatement/MHVcapabilities",
+    "version": "0.2.9-beta",
+    "name": "MHV_uses_PGHD"
+  },
+  {
     "id": "Ages",
     "type": "CodeSystem",
     "url": "https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages",

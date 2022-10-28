@@ -14,7 +14,7 @@ A profile on the Bundle that declares how MHV will Create/Update in PGHD for Blu
 * must have a MHV Bluebutton type of a Composition 
 * must include Patient Resource
 * must include all Resources referenced by Composition 
-* DSTU2 use comment rather than note 
+* DSTU2 use comment rather than note
 """
 * ^version = "0.1.0"
 * ^date = "2020-10-24"

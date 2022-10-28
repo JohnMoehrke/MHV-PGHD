@@ -8,7 +8,7 @@ Simple UI that is similar to current MyHealtheVet
 
 <div style="clear: left"/>
 
-The mapping between the FHIR Immunization resource and the above User Interface can be found on the [Mappings for MyHealtheVet mapping to FHIR/PGHD (MHV-UI)](StructureDefinition-VA.MHV.immunization-mappings.html#mappings-for-myhealthevet-mapping-to-fhir-pghd-mhv-ui)
+The mapping between the FHIR Immunization resource and the above User Interface can be found on the [Mappings for MyHealtheVet mapping to FHIR/PGHD (MHV-UI)](StructureDefinition-VA.MHV.immunization-mappings.html#mappings-for-myhealthevet-mapping-to-fhirpghd-mhv-ui)
 
 #### Policy and Design Considerations
 

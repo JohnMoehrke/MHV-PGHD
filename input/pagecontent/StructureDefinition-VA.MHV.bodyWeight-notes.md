@@ -51,12 +51,12 @@ Feature: view of sample weights
   a set of example weights that are known to be compliant with the body weight profile, these should all be viewable in MHV 
 
   Scenario: read and view simple weight
-    Given [Example MHV weight Observation](Observation-ex-MHV-weight.html) is [loaded into PGHD](background.html#load-x-into-pghd)
+    Given [Example MHV weight Observation](Observation-ex-MHV-weight.html) is [loaded into PGHD](testplan.html#load-x-into-pghd)
     When Michale views body weight values
     Then Michale sees the weight as 185 lbs with the comment of "a bit heavy"
 
   Scenario: update and view simple weight
-    Given [Example MHV weight Observation](Observation-ex-MHV-weight.html) is [loaded into PGHD](background.html#load-x-into-pghd)
+    Given [Example MHV weight Observation](Observation-ex-MHV-weight.html) is [loaded into PGHD](testplan.html#load-x-into-pghd)
     When Michale edits this weight changing the weight value to 200 lbs
     And submits the change to PGHD
     Then saving will succeed
@@ -65,7 +65,7 @@ Feature: view of sample weights
     And no other elements from the original are changed
 
 #### Simple MHV Weight
-Given [Example MHV weight Observation](Observation-example-weight-min.html) is [loaded into PGHD](background.html#load-x-into-pghd)
+Given [Example MHV weight Observation](Observation-ex-MHV-weight.html) is [loaded into PGHD](testplan.html#load-x-into-pghd)
 
 WHEN MHV shows body weight values
 

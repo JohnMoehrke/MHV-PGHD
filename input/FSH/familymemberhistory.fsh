@@ -292,7 +292,8 @@ Minimal details
 * status = #completed
 * patient = Reference(Patient/ex-patient)
 * date = 2022-04-08
-* ageAge = 78 'a'
+//* ageAge = 78 'a'
+* ageString = "78"
 * estimatedAge = true
 * extension[sibling].valueInteger = 2
 * name = "John Jacob Schmidt"

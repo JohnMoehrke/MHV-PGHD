@@ -5,6 +5,8 @@ MyHealtheVet provides access to the VA managed Patient Generated Health Data (PG
 
 ### currently implemented
 
+[MHV Implementation Capability Statement](CapabilityStatement-MHVcapabilities.html)
+
 #### Vital Signs
 1. [Blood Pressure](StructureDefinition-VA.MHV.bloodPressure.html)
 1. [Blood Sugar](StructureDefinition-VA.MHV.bloodSugar.html)

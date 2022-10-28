@@ -1,9 +1,13 @@
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>VA.MHV.EXAMPLE\ad38c881-b73d-4b7a-b4ec-55980f4a21b0 - FHIR v4.0.1</title>
+    <title>VA.MHV.EXAMPLE\ - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -50,8 +54,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.133"}
-    h3,h4,h5,h6{--heading-prefix:"4.133"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -120,15 +124,11 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ad38c881-b73d-4b7a-b4ec-55980f4a21b0</b></li>
+          
 
           <span style="float:right;">
 
-            <a href="Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.ttl.html">&lt;prev</a> | 
-
             <a href="#bottom">bottom</a>
-
-          | <a href="Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.xml.html">next&gt;</a>
 
           </span>
 
@@ -142,9 +142,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.9-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.9-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -156,28 +156,28 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="CapabilityStatement-MHVcapabilities.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.xml.html">XML</a>
+      <a href="CapabilityStatement-MHVcapabilities.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.json.html">JSON</a>
+      <a href="CapabilityStatement-MHVcapabilities.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.ttl.html">TTL</a>
+      <a href="CapabilityStatement-MHVcapabilities.ttl.html">TTL</a>
     </li>
   
 
@@ -187,42 +187,13 @@
 
 
   <a name="root"> </a>
-
-
-  <h2 id="root">Observation: ad38c881-b73d-4b7a-b4ec-55980f4a21b0</h2>
-
-  <table class="colsi">
-    <tr>
-
-      <td colspan="2">
-        
-          <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
-          
-        
-      </td>
-
-    </tr>
-  </table>
-
+  <h2 id="root">: MHV_uses_PGHD - Change History</h2>
+  <p>History of changes for MHVcapabilities .</p>
 
   
-
-
-  <!-- insert intro if present -->
-  
-
-
-
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ad38c881-b73d-4b7a-b4ec-55980f4a21b0"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ad38c881-b73d-4b7a-b4ec-55980f4a21b0&quot; Version &quot;1&quot; Updated &quot;2020-06-02 03:46:25+0000&quot; </p><p style="margin-bottom: 0px">Tag: <span title="{https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping}">https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</span></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: Glucose [Mass/volume] in Blood <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#2339-0; <a href="https://loinc.org/">LOINC</a>#2345-7 &quot;Glucose [Mass/volume] in Serum or Plasma&quot;)</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2020-06-02 10:45:00-0500</p><p><b>value</b>: 259 mg/dl</p><p><b>note</b>: Record added in MobileKidney</p><h3>Components</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Eating routine (observable entity) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#162549003)</span></td><td>After Meal</td></tr></table></div>
-
-  
-
-  <!-- insert notes if present -->
-  
-
-
 
 </div>
+
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -230,6 +201,29 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -248,7 +242,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="Observation-632210f2-1866-4c01-a8c5-4abe37c0f6b7.ttl.html">&lt;prev</a>
+                <span style="visibility:hidden">&lt;prev</span>
 
               </td>
               <td style="text-align:center">
@@ -256,7 +250,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="Observation-ad38c881-b73d-4b7a-b4ec-55980f4a21b0.xml.html">next&gt;</a>
+                <span style="visibility:hidden">next&gt;</span>
 
               </td>
             </tr>
@@ -266,7 +260,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 25, 2022 15:39-0500">2022-10-25</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 28, 2022 12:50-0500">2022-10-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

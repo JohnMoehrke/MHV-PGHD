@@ -8,7 +8,7 @@ all compliant examples can be found load all of the heart rate examples that are
 * show them in MHV, they should show fine. 
 
 #### Simple MHV HeartRate 1
-Given [Example MHV Heart Rate 1 Observation](Observation-ex-MHV-heartRate-1.html) is [loaded into PGHD](background.html#load-x-into-pghd)
+Given [Example MHV Heart Rate 1 Observation](Observation-ex-MHV-heartRate-1.html) is [loaded into PGHD](testplan.html#load-x-into-pghd)
 
 WHEN MHV shows Heart Rate 1 values
 
@@ -27,7 +27,7 @@ AND the Test-Bench shows the heart rate value has changed to 200 beats per minut
 AND no other elements from the original are changed
 
 #### Simple MHV HeartRate 2
-Given [Example MHV Heart Rate 2 Observation](Observation-ex-MHV-heartRate-2.html) is [loaded into PGHD](background.html#load-x-into-pghd)
+Given [Example MHV Heart Rate 2 Observation](Observation-ex-MHV-heartRate-2.html) is [loaded into PGHD](testplan.html#load-x-into-pghd)
 
 WHEN MHV shows Heart Rate 1 values
 
@@ -46,7 +46,7 @@ AND the Test-Bench shows the heart rate value has changed to 200 beats per minut
 AND no other elements from the original are changed
 
 #### Simple MHV HeartRate 3
-Given [Example MHV Heart Rate 3 Observation](Observation-ex-MHV-heartRate-3.html) is [loaded into PGHD](background.html#load-x-into-pghd)
+Given [Example MHV Heart Rate 3 Observation](Observation-ex-MHV-heartRate-3.html) is [loaded into PGHD](testplan.html#load-x-into-pghd)
 
 WHEN MHV shows Heart Rate 1 values
 

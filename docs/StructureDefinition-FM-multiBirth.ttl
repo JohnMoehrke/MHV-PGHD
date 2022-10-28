@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "MultiBirth"];
   fhir:StructureDefinition.title [ fhir:value "MultiBirth indication"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-25T15:39:47-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-28T12:50:39-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "John Moehrke (himself)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

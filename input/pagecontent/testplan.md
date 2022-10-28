@@ -3,7 +3,7 @@ Overall test plan leverages the Profiles, and Examples shown on the [Artifacts S
 
 The Examples listed in [Example Instances](artifacts.html#example-example-instances) are example instances that are conformant to the MHV profiles. 
 
-The Examples listed in [Other](artifacts.html#other) are examples that either assist with the structure of the examples (e.g. Patient and Encounter) or are examples that MHV should be able to handle in various ways. 
+The Examples listed in [Other](artifacts.html#5) are examples that either assist with the structure of the examples (e.g. Patient and Encounter) or are examples that MHV should be able to handle in various ways. 
 
 See the Test Plan for each Profile to understand the specific expectations for each good, odd, and bad example.
 * [Body Weight](StructureDefinition-VA.MHV.bodyWeight.html)

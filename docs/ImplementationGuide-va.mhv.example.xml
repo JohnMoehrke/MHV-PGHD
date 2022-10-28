@@ -17,7 +17,7 @@
   <name value="MHVIG"/>
   <title value="MyHealtheVet use of PGHD"/>
   <status value="active"/>
-  <date value="2022-10-25T15:39:47-05:00"/>
+  <date value="2022-10-28T12:50:39-05:00"/>
   <publisher value="John Moehrke (himself)"/>
   <contact>
     <name value="John Moehrke (himself)"/>
@@ -156,6 +156,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="docs"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="special-url"/>
       </extension>
       <extension url="value">
@@ -208,14 +216,6 @@
       </extension>
       <extension url="value">
         <valueString value="temp/pages"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-output"/>
-      </extension>
-      <extension url="value">
-        <valueString value="output"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -404,6 +404,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="docs"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="special-url"/>
       </extension>
       <extension url="value">
@@ -456,14 +464,6 @@
       </extension>
       <extension url="value">
         <valueString value="temp/pages"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-output"/>
-      </extension>
-      <extension url="value">
-        <valueString value="output"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -639,7 +639,7 @@
         <reference value="StructureDefinition/VA.MHV.BlueBundle"/>
       </reference>
       <name value="VA MHV BlueButton Bundle"/>
-      <description value="A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.&#xA;&#xA;**This is a work in progress. It is not agreed to, and it is not ready for review.**&#xA;&#xA;* must be a document type Bundle&#xA;* must have a timestamp of when this was created&#xA;* must have a MHV Bluebutton type of a Composition &#xA;* must include Patient Resource&#xA;* must include all Resources referenced by Composition &#xA;* DSTU2 use comment rather than note "/>
+      <description value="A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.&#xA;&#xA;**This is a work in progress. It is not agreed to, and it is not ready for review.**&#xA;&#xA;* must be a document type Bundle&#xA;* must have a timestamp of when this was created&#xA;* must have a MHV Bluebutton type of a Composition &#xA;* must include Patient Resource&#xA;* must include all Resources referenced by Composition &#xA;* DSTU2 use comment rather than note"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -882,6 +882,17 @@
       </reference>
       <name value="PGD other apps"/>
       <description value="Seems to be used by Mobile Kidney"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/MHVcapabilities"/>
+      </reference>
+      <name value="MHVcapabilities"/>
+      <description value="CapabilityStatement prototype for MHV as a FHIR Client"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1917,116 +1928,6 @@
       <name value="Example Wife Family Member History"/>
       <description value="Minimal details&#xA;- Jania Luise Schmidt&#xA;- Wife&#xA;- Female&#xA;- note&#xA;- conditions: Pharyngitis and normal peripheral vision"/>
       <exampleCanonical value="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/blood-pressure"/>
-      </reference>
-      <name value="blood-pressure"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/f001"/>
-      </reference>
-      <name value="f001"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/body-temperature"/>
-      </reference>
-      <name value="body-temperature"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/heart-rate"/>
-      </reference>
-      <name value="heart-rate"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/example"/>
-      </reference>
-      <name value="example"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7"/>
-      </reference>
-      <name value="632210f2-1866-4c01-a8c5-4abe37c0f6b7"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0"/>
-      </reference>
-      <name value="ad38c881-b73d-4b7a-b4ec-55980f4a21b0"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/blood-glucose"/>
-      </reference>
-      <name value="blood-glucose"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/38de260a-537c-496e-8254-747dec5c922a"/>
-      </reference>
-      <name value="38de260a-537c-496e-8254-747dec5c922a"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/837c030c-023c-4030-9e37-cb8b344c9036"/>
-      </reference>
-      <name value="837c030c-023c-4030-9e37-cb8b344c9036"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="FamilyMemberHistory"/>
-      </extension>
-      <reference>
-        <reference value="FamilyMemberHistory/12db5508-b375-49a1-a8e1-558ad8448600"/>
-      </reference>
-      <name value="12db5508-b375-49a1-a8e1-558ad8448600"/>
-      <exampleBoolean value="true"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

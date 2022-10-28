@@ -19,7 +19,7 @@ The Family Member History enables recording into a Patient's chart relevant medi
 
 Existing (old) [Family Health History in MyHealtheVet](ExistingFamilyHealthHistory.png)
 * All elements map directoy to FHIR elements
-  * See [defined mapping from old to PGHD](StructureDefinition-VA.MHV.familymemberhistory-mappings.html#mappings-for-myhealthevet-old-family-health-history-ui-mapping-t)
+  * See [defined mapping from old to PGHD](StructureDefinition-VA.MHV.familymemberhistory-mappings.html#mappings-for-myhealthevet-old-family-health-history-ui-mapping-to-fhirpghd-mhv-old-ui)
   * old conditions need to be mapped to proper Conditions vocabulary
 * No need for extensions 
 

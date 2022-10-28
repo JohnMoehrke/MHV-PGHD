@@ -20,7 +20,7 @@
   "name": "MHVIG",
   "title": "MyHealtheVet use of PGHD",
   "status": "active",
-  "date": "2022-10-25T15:39:47-05:00",
+  "date": "2022-10-28T12:50:39-05:00",
   "publisher": "John Moehrke (himself)",
   "contact": [
     {
@@ -238,6 +238,19 @@
         "extension": [
           {
             "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "docs"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
             "valueString": "special-url"
           },
           {
@@ -321,19 +334,6 @@
           {
             "url": "value",
             "valueString": "temp/pages"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-output"
-          },
-          {
-            "url": "value",
-            "valueString": "output"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -641,6 +641,19 @@
         "extension": [
           {
             "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "docs"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
             "valueString": "special-url"
           },
           {
@@ -724,19 +737,6 @@
           {
             "url": "value",
             "valueString": "temp/pages"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-output"
-          },
-          {
-            "url": "value",
-            "valueString": "output"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -995,7 +995,7 @@
           "reference": "StructureDefinition/VA.MHV.BlueBundle"
         },
         "name": "VA MHV BlueButton Bundle",
-        "description": "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\n\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\n\n* must be a document type Bundle\n* must have a timestamp of when this was created\n* must have a MHV Bluebutton type of a Composition \n* must include Patient Resource\n* must include all Resources referenced by Composition \n* DSTU2 use comment rather than note ",
+        "description": "A profile on the Bundle that declares how MHV will Create/Update in PGHD for BlueButton report.\n\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\n\n* must be a document type Bundle\n* must have a timestamp of when this was created\n* must have a MHV Bluebutton type of a Composition \n* must include Patient Resource\n* must include all Resources referenced by Composition \n* DSTU2 use comment rather than note",
         "exampleBoolean": false
       },
       {
@@ -1304,6 +1304,20 @@
         },
         "name": "PGD other apps",
         "description": "Seems to be used by Mobile Kidney",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/MHVcapabilities"
+        },
+        "name": "MHVcapabilities",
+        "description": "CapabilityStatement prototype for MHV as a FHIR Client",
         "exampleBoolean": false
       },
       {
@@ -2621,149 +2635,6 @@
         "name": "Example Wife Family Member History",
         "description": "Minimal details\n- Jania Luise Schmidt\n- Wife\n- Female\n- note\n- conditions: Pharyngitis and normal peripheral vision",
         "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/blood-pressure"
-        },
-        "name": "blood-pressure",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/f001"
-        },
-        "name": "f001",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/body-temperature"
-        },
-        "name": "body-temperature",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/heart-rate"
-        },
-        "name": "heart-rate",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/example"
-        },
-        "name": "example",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/632210f2-1866-4c01-a8c5-4abe37c0f6b7"
-        },
-        "name": "632210f2-1866-4c01-a8c5-4abe37c0f6b7",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ad38c881-b73d-4b7a-b4ec-55980f4a21b0"
-        },
-        "name": "ad38c881-b73d-4b7a-b4ec-55980f4a21b0",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/blood-glucose"
-        },
-        "name": "blood-glucose",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/38de260a-537c-496e-8254-747dec5c922a"
-        },
-        "name": "38de260a-537c-496e-8254-747dec5c922a",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
-          "reference": "QuestionnaireResponse/837c030c-023c-4030-9e37-cb8b344c9036"
-        },
-        "name": "837c030c-023c-4030-9e37-cb8b344c9036",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "FamilyMemberHistory"
-          }
-        ],
-        "reference": {
-          "reference": "FamilyMemberHistory/12db5508-b375-49a1-a8e1-558ad8448600"
-        },
-        "name": "12db5508-b375-49a1-a8e1-558ad8448600",
-        "exampleBoolean": true
       }
     ],
     "page": {

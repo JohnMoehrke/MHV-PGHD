@@ -21,8 +21,6 @@ MyHealtheVet provides access to the VA managed Patient Generated Health Data (PG
 ### profile drafted but feature is not approved for implementation
 
 * [Family Health History](StructureDefinition-VA.MHV.familymemberhistory.html) -- Experimental for potential new feature
-* Vital Signs
-  * [Blood Sugar A - former using component for fasting status](StructureDefinition-VA.MHV.bloodSugarA.html)
 * [Medications](StructureDefinition-VA.MHV.medication.html)
 * [Allergy and Intolerance](StructureDefinition-VA.MHV.allergy.html)
 * [Immunization](StructureDefinition-VA.MHV.immunization.html)

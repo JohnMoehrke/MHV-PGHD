@@ -10,7 +10,36 @@
   fhir:Resource.id [ fhir:value "CPM"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1e11b692-1898-4351-a7c5-428f61c91817&quot;<a name=\"CPM-1e11b692-1898-4351-a7c5-428f61c91817.34\"> </a></td><td>MobileKidney</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1e11b692-1898-4351-a7c5-428f61c91817<a name=\"CPM-1e11b692-1898-4351-a7c5-428f61c91817\"> </a></td><td>MobileKidney</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ];
+     fhir:Extension.valueInteger [
+       fhir:value "2"^^xsd:integer;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ];
+         fhir:Extension.valueCanonical [
+           fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example";
+           fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
+     fhir:Extension.valueCode [
+       fhir:value "trial-use";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ];
+         fhir:Extension.valueCanonical [
+           fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example";
+           fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example>
+         ]
+       ]
+     ]
   ];
   fhir:CodeSystem.url [ fhir:value "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"];
   fhir:CodeSystem.version [ fhir:value "0.2.9-beta"];
@@ -18,7 +47,7 @@
   fhir:CodeSystem.title [ fhir:value "PGD other apps"];
   fhir:CodeSystem.status [ fhir:value "active"];
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-10-28T12:50:39-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-11-17T12:54:43-06:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "John Moehrke (himself)"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -55,7 +84,7 @@
   fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "1e11b692-1898-4351-a7c5-428f61c91817\"" ];
+     fhir:CodeSystem.concept.code [ fhir:value "1e11b692-1898-4351-a7c5-428f61c91817" ];
      fhir:CodeSystem.concept.display [ fhir:value "MobileKidney" ]
   ] .
 

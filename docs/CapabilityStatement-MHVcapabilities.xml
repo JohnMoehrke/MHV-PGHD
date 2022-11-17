@@ -7,6 +7,20 @@
 </div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>MHV queries the PGHD endpoint.</p>
 </div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td>y</td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>Observation</td><td>Supported profiles:<br/>  <a href="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure</a><br/>  <a href="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar</a><br/>  <a href="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature</a><br/>  <a href="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight</a><br/>  <a href="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.heartRate</a><br/>  <a href="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain</a><br/>  <a href="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat</a><br/>  <a href="https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate">https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate</a></td><td>y</td><td>y</td><td>y</td><td>y</td></tr></table></div>
   </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
+      </extension>
+    </valueCode>
+  </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/CapabilityStatement/MHVcapabilities"/>
   <version value="0.2.9-beta"/>
   <name value="MHV_uses_PGHD"/>

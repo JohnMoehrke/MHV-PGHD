@@ -1,0 +1,68 @@
+{
+  "id": "360e6fce-cc4e-462b-869a-ee7c679d48a6",
+  "meta": {
+    "lastUpdated": "2022-11-02T21:20:37.160+00:00"
+  },
+  "link": [
+    {
+      "url": "https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation?_count=200&_tag=49d985b4-6f9d-47e3-bbc9-a56c840ba4a6&code=29463-7&date=ge2022-11-01T00%3A00%3A00.000-04%3A00&date=le2022-11-02T23%3A59%3A59.000-04%3A00&patient.identifier=1013111140V840598",
+      "relation": "self"
+    }
+  ],
+  "type": "searchset",
+  "resourceType": "Bundle",
+  "total": 1,
+  "entry": [
+    {
+      "fullUrl": "https://veteran.apps-staging.va.gov/smart-pgd-fhir/v2/Observation/134509e4-b6ad-41e2-84e3-cab526ffd839",
+      "search": {
+        "mode": "match"
+      },
+      "resource": {
+        "status": "final",
+        "valueQuantity": {
+          "code": "kg",
+          "value": 88.450000000000003,
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg"
+        },
+        "note": [
+          {
+            "text": "apple_health"
+          }
+        ],
+        "id": "134509e4-b6ad-41e2-84e3-cab526ffd839",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "display": "Body weight",
+              "code": "29463-7"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2022-11-02T19:44:00+00:00",
+          "end": "2022-11-02T19:44:00+00:00"
+        },
+        "subject": {
+          "display": "MORRISON, NELSON",
+          "reference": "Patient/40a7ea52-1469-40bb-b607-5f240b98bbf5"
+        },
+        "meta": {
+          "versionId": "1",
+          "source": "#e60e7f0e-8b08-49",
+          "tag": [
+            {
+              "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
+              "display": "Sync My Health Data",
+              "code": "49d985b4-6f9d-47e3-bbc9-a56c840ba4a6"
+            }
+          ],
+          "lastUpdated": "2022-11-02T19:44:37.855+00:00"
+        },
+        "resourceType": "Observation"
+      }
+    }
+  ]
+}

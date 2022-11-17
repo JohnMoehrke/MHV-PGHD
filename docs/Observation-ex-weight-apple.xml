@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ex-weight-apple"/>
+  <meta>
+    <source value="#e60e7f0e-8b08-49"/>
+    <tag>
+      <system value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
+      <code value="49d985b4-6f9d-47e3-bbc9-a56c840ba4a6"/>
+      <display value="Sync My Health Data"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ex-weight-apple"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation "ex-weight-apple" </p><p style="margin-bottom: 0px">Information Source: #e60e7f0e-8b08-49!</p><p style="margin-bottom: 0px">Tag: <span title="{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>status</b>: final</p><p><b>code</b>: Body weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient: John Jacob Jingleheimer Schmidt</a> " SCHMIDT"</p><p><b>effective</b>: 2022-11-02 07:44:00+0000 --&gt; 2022-11-02 07:44:00+0000</p><p><b>value</b>: 88.45 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg = 'kg')</span></p><p><b>note</b>: apple_health</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+      <display value="Body weight"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ex-patient"/>
+    <display value="John Jacob Jingleheimer Schmidt"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2022-11-02T19:44:00+00:00"/>
+    <end value="2022-11-02T19:44:00+00:00"/>
+  </effectivePeriod>
+  <valueQuantity>
+    <value value="88.45"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg"/>
+  </valueQuantity>
+  <note>
+    <text value="apple_health"/>
+  </note>
+</Observation>

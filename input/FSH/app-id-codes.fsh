@@ -8,6 +8,7 @@ Description:  "App identifiers for use with PGD"
 * ^caseSensitive = true
 * ^experimental = false
 * #2ce6d9aa-c068-4809-8dda-662bcb16d09a "MyHealtheVet"
+* #49d985b4-6f9d-47e3-bbc9-a56c840ba4a6 "Sync My Health Data"
 
 CodeSystem: AppIdCodesToo
 Id: CPM
@@ -16,7 +17,7 @@ Description: "Seems to be used by Mobile Kidney"
 * ^url = "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"
 * ^caseSensitive = true
 * ^experimental = false
-* #1e11b692-1898-4351-a7c5-428f61c91817" "MobileKidney"
+* #1e11b692-1898-4351-a7c5-428f61c91817 "MobileKidney"
 
 ValueSet: AllAppIdCodes
 Title: "PGD App Id Codes"

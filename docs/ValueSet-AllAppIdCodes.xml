@@ -5,13 +5,27 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-OnclC.html"><code>https://wiki.mobilehealth.va.gov/x/Onc1C</code></a></li><li>Include all codes defined in <a href="CodeSystem-CPM.html"><code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code></a></li></ul></div>
   </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
+      </extension>
+    </valueCode>
+  </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes"/>
   <version value="0.2.9-beta"/>
   <name value="AllAppIdCodes"/>
   <title value="PGD App Id Codes"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-10-28T12:50:39-05:00"/>
+  <date value="2022-11-17T12:54:43-06:00"/>
   <publisher value="John Moehrke (himself)"/>
   <contact>
     <name value="John Moehrke (himself)"/>

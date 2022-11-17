@@ -20,7 +20,7 @@
   "name": "MHVIG",
   "title": "MyHealtheVet use of PGHD",
   "status": "active",
-  "date": "2022-10-28T12:50:39-05:00",
+  "date": "2022-11-17T12:54:43-06:00",
   "publisher": "John Moehrke (himself)",
   "contact": [
     {
@@ -65,9 +65,15 @@
   "dependsOn": [
     {
       "id": "hl7tx",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown": "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+        }
+      ],
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "4.0.0"
+      "version": "5.0.0"
     },
     {
       "id": "hl7_fhir_us_core",
@@ -950,20 +956,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/VA.MHV.bloodSugarA"
-        },
-        "name": "VA MHV Blood Sugar Observation A",
-        "description": "A profile on the Observation for blood sugar measurements that was common in DSTU2 version of PGHD. MHV will continue to display these in addition to the current. MHV will not create using this profile. Eating routine is indicated as a component with string (like VCM shows).\n\n** This was used prior to the move to R4.**\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#2339-0 code\n- must have effectiveDateTime\n- must have valueQuantity with units only of mg/dL\n- must have status at final\n- must point at the patient\n- may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other\n- may have a eating routine component with string of: \n  - Fasting (8 hours)\n  - After Meal\n  - unknown\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/VA.MHV.bodyTemperature"
         },
         "name": "VA MHV Body Temperature Observation",
@@ -1384,11 +1376,11 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ex-MHV-bloodSugarA-0"
+          "reference": "Observation/ex-MHV-bloodPressure-apple"
         },
-        "name": "Example of the DSTU2 MHV blood sugar A R4 observation, minimal",
-        "description": "holding typical values",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"
+        "name": "Example of an MHV blood pressure R4 observation, like Apple produes",
+        "description": "holding Apple like values of 140/90 with a heart-rate\n\nNote\n- apple does not populate the category\n- apple only uses one code of LOINC#55284-4\n- apple uses effectivePeriod (seemingly to have start and end the same)\n- has meta.source populated with unknown identifier (presume some link back to apple, although this could be PGHD and not SMHD)",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1398,11 +1390,11 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ex-MHV-bloodSugarA-1"
+          "reference": "Observation/ex-MHV-bloodPressure-end"
         },
-        "name": "Example of the DSTU2 MHV blood sugar A R4 observation, fasting",
-        "description": "holding typical values",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"
+        "name": "Example of an MHV blood pressure R4 observation, minimal",
+        "description": "holding typical values of 140/90 with a heart-rate, using only a end Period time/date",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1412,95 +1404,11 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ex-MHV-bloodSugarA-2"
+          "reference": "Observation/ex-MHV-bloodPressure-start"
         },
-        "name": "Example of the DSTU2 MHV blood sugar A R4 observation, after meal",
-        "description": "holding typical values",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-MHV-bloodSugarA-3"
-        },
-        "name": "Example of the DSTU2 MHV blood sugar A R4 observation, unknown eating",
-        "description": "holding typical values",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-MHV-bloodSugarA-4"
-        },
-        "name": "Example of the DSTU2 MHV blood sugar A R4 observation, unknown eating, by lancet",
-        "description": "holding typical values",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-MHV-bloodSugarA-5"
-        },
-        "name": "Example of the DSTU2 MHV blood sugar A R4 observation, unknown eating, by skin",
-        "description": "holding typical values",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-MHV-bloodSugarA-6"
-        },
-        "name": "Example of the DSTU2 MHV blood sugar A R4 observation, unknown eating, by implant",
-        "description": "holding typical values",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-MHV-bloodSugarA-7"
-        },
-        "name": "Example of the DSTU2 MHV blood sugar A R4 observation, ZERO, unknown eating, by implant",
-        "description": "holding atypical values",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-MHV-bloodSugarA-8"
-        },
-        "name": "Example of the DSTU2 MHV blood sugar A R4 observation, impossibly high, unknown eating, by implant",
-        "description": "holding atypical values",
-        "exampleCanonical": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugarA"
+        "name": "Example of an MHV blood pressure R4 observation, minimal",
+        "description": "holding typical values of 140/90 with a heart-rate, using only a start Period time/date",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -2168,104 +2076,6 @@
           }
         ],
         "reference": {
-          "reference": "Observation/ex-bloodSugar-100"
-        },
-        "name": "Example of an non-MHV blood sugar R4 observation, random blood glucose measurement",
-        "description": "holding atypical values",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-bloodSugar-101"
-        },
-        "name": "Example of an non-MHV blood sugar R4 observation, by urine",
-        "description": "holding atypical values",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-bloodSugar-102"
-        },
-        "name": "Example of an non-MHV blood sugar R4 observation, by self monitoring",
-        "description": "holding atypical values",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-bloodSugar-103"
-        },
-        "name": "Example of an non-MHV blood sugar R4 observation, by self supper time blood sugar measurement",
-        "description": "holding atypical values",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-bloodSugar-104"
-        },
-        "name": "Example of an non-MHV blood sugar R4 observation, with a coded eating",
-        "description": "holding atypical values",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-bloodSugar-105"
-        },
-        "name": "Example of an non-MHV blood sugar R4 observation, just one of the .code values (2339-0)",
-        "description": "holding atypical values",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/ex-bloodSugar-106"
-        },
-        "name": "Example of an non-MHV blood sugar R4 observation, the second .code value (2345-7)",
-        "description": "holding atypical values",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
           "reference": "Observation/ex-bloodSugarB-106100"
         },
         "name": "Example of an non-MHV blood sugar R4 observation, random blood glucose measurement",
@@ -2602,10 +2412,66 @@
           }
         ],
         "reference": {
+          "reference": "Observation/ex-weight-apple"
+        },
+        "name": "Example of an Apple bodyWeight",
+        "description": "This observation does not use a dateTime, but rather a period. \n\nThis is similar to how Apple data looks.\n- note no category\n- note effectivePeriod with start and end that are equal",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/ex-weight-core"
         },
         "name": "Example of an valid FHIR International bodyWeight R4 observation",
         "description": "holding typical values. Should be close to the example body weight in the FHIR core specification",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-weight-period"
+        },
+        "name": "Example of an valid FHIR International bodyWeight R4 observation over a period",
+        "description": "This observation does not use a dateTime, but rather a period. \n\nThis is similar to how Apple data looks.\n- note no category\n- note effectivePeriod with start and end that are equal",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-weight-period-end"
+        },
+        "name": "Example of an valid FHIR International bodyWeight R4 observation over a period with just an end",
+        "description": "holding typical values. Should be close to the example body weight in the FHIR core specification. This observation does not use a dateTime, but rather a period with just an end.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ex-weight-period-start"
+        },
+        "name": "Example of an valid FHIR International bodyWeight R4 observation over a period with just a start",
+        "description": "holding typical values. Should be close to the example body weight in the FHIR core specification. This observation does not use a dateTime, but rather a period with just a start.",
         "exampleBoolean": true
       },
       {

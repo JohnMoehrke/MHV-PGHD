@@ -209,7 +209,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -347,37 +347,6 @@ This was not agreed by Mobile.</p>
   <li>must have status at final</li>
   <li>must point at the patient</li>
   <li>may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other</li>
-  <li>may have a note (comment)</li>
-  <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
-</ul>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-VA.MHV.bloodSugarA.html"
-                     title="StructureDefinition/VA.MHV.bloodSugarA">VA MHV Blood Sugar Observation A</a>
-               </td>
-               <td>
-<p>A profile on the Observation for blood sugar measurements that was common in DSTU2 version of PGHD. MHV will continue to display these in addition to the current. MHV will not create using this profile. Eating routine is indicated as a component with string (like VCM shows).</p>
-
-<p>** This was used prior to the move to R4.**</p>
-
-<ul>
-  <li>must be marked with MHV app tag</li>
-  <li>must have vital-signs category</li>
-  <li>must have LOINC#2339-0 code</li>
-  <li>must have effectiveDateTime</li>
-  <li>must have valueQuantity with units only of mg/dL</li>
-  <li>must have status at final</li>
-  <li>must point at the patient</li>
-  <li>may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other</li>
-  <li>may have a eating routine component with string of:
-    <ul>
-      <li>Fasting (8 hours)</li>
-      <li>After Meal</li>
-      <li>unknown</li>
-    </ul>
-  </li>
   <li>may have a note (comment)</li>
   <li>once created will or might have an id, versionId, lastUpdated, text, and identifier</li>
 </ul>
@@ -689,7 +658,7 @@ This was not agreed by Mobile.</p>
    <a name="3"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -741,7 +710,7 @@ This was not agreed by Mobile.</p>
    <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
-    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -822,7 +791,7 @@ This was not agreed by Mobile.</p>
    <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
-    <p>These define new code systems used by systems conforming to this implementation guide</p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -858,7 +827,7 @@ This was not agreed by Mobile.</p>
    <a name="6"> </a>
    <h3>Example: Example Instances </h3>
    <p>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 </p>
    <p>
       <table class="grid">
@@ -902,83 +871,37 @@ This was not agreed by Mobile.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugarA-0.html"
-                     title="Observation/ex-MHV-bloodSugarA-0">Example of the DSTU2 MHV blood sugar A R4 observation, minimal</a>
+                  <a href="Observation-ex-MHV-bloodPressure-apple.html"
+                     title="Observation/ex-MHV-bloodPressure-apple">Example of an MHV blood pressure R4 observation, like Apple produes</a>
                </td>
                <td>
-<p>holding typical values</p>
+<p>holding Apple like values of 140/90 with a heart-rate</p>
+
+<p>Note</p>
+<ul>
+  <li>apple does not populate the category</li>
+  <li>apple only uses one code of LOINC#55284-4</li>
+  <li>apple uses effectivePeriod (seemingly to have start and end the same)</li>
+  <li>has meta.source populated with unknown identifier (presume some link back to apple, although this could be PGHD and not SMHD)</li>
+</ul>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugarA-1.html"
-                     title="Observation/ex-MHV-bloodSugarA-1">Example of the DSTU2 MHV blood sugar A R4 observation, fasting</a>
+                  <a href="Observation-ex-MHV-bloodPressure-end.html"
+                     title="Observation/ex-MHV-bloodPressure-end">Example of an MHV blood pressure R4 observation, minimal</a>
                </td>
                <td>
-<p>holding typical values</p>
+<p>holding typical values of 140/90 with a heart-rate, using only a end Period time/date</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugarA-2.html"
-                     title="Observation/ex-MHV-bloodSugarA-2">Example of the DSTU2 MHV blood sugar A R4 observation, after meal</a>
+                  <a href="Observation-ex-MHV-bloodPressure-start.html"
+                     title="Observation/ex-MHV-bloodPressure-start">Example of an MHV blood pressure R4 observation, minimal</a>
                </td>
                <td>
-<p>holding typical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugarA-3.html"
-                     title="Observation/ex-MHV-bloodSugarA-3">Example of the DSTU2 MHV blood sugar A R4 observation, unknown eating</a>
-               </td>
-               <td>
-<p>holding typical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugarA-4.html"
-                     title="Observation/ex-MHV-bloodSugarA-4">Example of the DSTU2 MHV blood sugar A R4 observation, unknown eating, by lancet</a>
-               </td>
-               <td>
-<p>holding typical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugarA-5.html"
-                     title="Observation/ex-MHV-bloodSugarA-5">Example of the DSTU2 MHV blood sugar A R4 observation, unknown eating, by skin</a>
-               </td>
-               <td>
-<p>holding typical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugarA-6.html"
-                     title="Observation/ex-MHV-bloodSugarA-6">Example of the DSTU2 MHV blood sugar A R4 observation, unknown eating, by implant</a>
-               </td>
-               <td>
-<p>holding typical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugarA-7.html"
-                     title="Observation/ex-MHV-bloodSugarA-7">Example of the DSTU2 MHV blood sugar A R4 observation, ZERO, unknown eating, by implant</a>
-               </td>
-               <td>
-<p>holding atypical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-bloodSugarA-8.html"
-                     title="Observation/ex-MHV-bloodSugarA-8">Example of the DSTU2 MHV blood sugar A R4 observation, impossibly high, unknown eating, by implant</a>
-               </td>
-               <td>
-<p>holding atypical values</p>
+<p>holding typical values of 140/90 with a heart-rate, using only a start Period time/date</p>
 </td>
             </tr>
             <tr>
@@ -1395,69 +1318,6 @@ This was not agreed by Mobile.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-bloodSugar-100.html"
-                     title="Observation/ex-bloodSugar-100">Example of an non-MHV blood sugar R4 observation, random blood glucose measurement</a>
-               </td>
-               <td>
-<p>holding atypical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-bloodSugar-101.html"
-                     title="Observation/ex-bloodSugar-101">Example of an non-MHV blood sugar R4 observation, by urine</a>
-               </td>
-               <td>
-<p>holding atypical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-bloodSugar-102.html"
-                     title="Observation/ex-bloodSugar-102">Example of an non-MHV blood sugar R4 observation, by self monitoring</a>
-               </td>
-               <td>
-<p>holding atypical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-bloodSugar-103.html"
-                     title="Observation/ex-bloodSugar-103">Example of an non-MHV blood sugar R4 observation, by self supper time blood sugar measurement</a>
-               </td>
-               <td>
-<p>holding atypical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-bloodSugar-104.html"
-                     title="Observation/ex-bloodSugar-104">Example of an non-MHV blood sugar R4 observation, with a coded eating</a>
-               </td>
-               <td>
-<p>holding atypical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-bloodSugar-105.html"
-                     title="Observation/ex-bloodSugar-105">Example of an non-MHV blood sugar R4 observation, just one of the .code values (2339-0)</a>
-               </td>
-               <td>
-<p>holding atypical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-ex-bloodSugar-106.html"
-                     title="Observation/ex-bloodSugar-106">Example of an non-MHV blood sugar R4 observation, the second .code value (2345-7)</a>
-               </td>
-               <td>
-<p>holding atypical values</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Observation-ex-bloodSugarB-106100.html"
                      title="Observation/ex-bloodSugarB-106100">Example of an non-MHV blood sugar R4 observation, random blood glucose measurement</a>
                </td>
@@ -1705,11 +1565,59 @@ This was not agreed by Mobile.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-ex-weight-apple.html"
+                     title="Observation/ex-weight-apple">Example of an Apple bodyWeight</a>
+               </td>
+               <td>
+<p>This observation does not use a dateTime, but rather a period.</p>
+
+<p>This is similar to how Apple data looks.</p>
+<ul>
+  <li>note no category</li>
+  <li>note effectivePeriod with start and end that are equal</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-ex-weight-core.html"
                      title="Observation/ex-weight-core">Example of an valid FHIR International bodyWeight R4 observation</a>
                </td>
                <td>
 <p>holding typical values. Should be close to the example body weight in the FHIR core specification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-weight-period.html"
+                     title="Observation/ex-weight-period">Example of an valid FHIR International bodyWeight R4 observation over a period</a>
+               </td>
+               <td>
+<p>This observation does not use a dateTime, but rather a period.</p>
+
+<p>This is similar to how Apple data looks.</p>
+<ul>
+  <li>note no category</li>
+  <li>note effectivePeriod with start and end that are equal</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-weight-period-end.html"
+                     title="Observation/ex-weight-period-end">Example of an valid FHIR International bodyWeight R4 observation over a period with just an end</a>
+               </td>
+               <td>
+<p>holding typical values. Should be close to the example body weight in the FHIR core specification. This observation does not use a dateTime, but rather a period with just an end.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-weight-period-start.html"
+                     title="Observation/ex-weight-period-start">Example of an valid FHIR International bodyWeight R4 observation over a period with just a start</a>
+               </td>
+               <td>
+<p>holding typical values. Should be close to the example body weight in the FHIR core specification. This observation does not use a dateTime, but rather a period with just a start.</p>
 </td>
             </tr>
             <tr>
@@ -1786,7 +1694,7 @@ This was not agreed by Mobile.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 28, 2022 12:50-0500">2022-10-28</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 17, 2022 12:54-0600">2022-11-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

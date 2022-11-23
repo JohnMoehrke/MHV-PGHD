@@ -15,6 +15,7 @@ This was not agreed by Mobile.
 - must have LOINC#55284-4 code AND LOINC#8716-3
   - 8716-3 was added as some mobile apps searched on this
 - must have effectiveDateTime
+  - others might use effectivePeriod
 - must not have a value[x]
 - must have two components
 - must have systolic and diastolic component values in mm[Hg]

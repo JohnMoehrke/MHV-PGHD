@@ -47,7 +47,7 @@
   fhir:ValueSet.title [ fhir:value "The body temperature measurement types that MHV supports"];
   fhir:ValueSet.status [ fhir:value "active"];
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ValueSet.date [ fhir:value "2022-11-17T12:54:43-06:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-11-23T09:43:25-06:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "John Moehrke (himself)"];
   fhir:ValueSet.contact [
      fhir:index 0;

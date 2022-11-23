@@ -264,7 +264,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>FHIR Core R4 also adds 2708-6</li>
     </ul>
   </li>
-  <li>must have effectiveDateTime</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>others might use effectivePeriod</li>
+    </ul>
+  </li>
   <li>must have a valueQuantity with UCUM ‘%’ units
     <ul>
       <li>must be between 50% &lt;= n &lt;= 100%</li>
@@ -298,7 +302,11 @@ This was not agreed by Mobile.</p>
       <li>8716-3 was added as some mobile apps searched on this</li>
     </ul>
   </li>
-  <li>must have effectiveDateTime</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>others might use effectivePeriod</li>
+    </ul>
+  </li>
   <li>must not have a value[x]</li>
   <li>must have two components</li>
   <li>must have systolic and diastolic component values in mm[Hg]
@@ -338,7 +346,11 @@ This was not agreed by Mobile.</p>
     </ul>
   </li>
   <li>may have indication of fasting (LOINC#88365-2), or 2-hours after meal (LOINC#87422-2)</li>
-  <li>must have effectiveDateTime</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>others might use effectivePeriod</li>
+    </ul>
+  </li>
   <li>must have valueQuantity with units only of mg/dL
     <ul>
       <li>must be between 10 &lt;= n &lt;= 1000</li>
@@ -366,7 +378,11 @@ This was not agreed by Mobile.</p>
   <li>must be marked with MHV app tag</li>
   <li>must have vital-signs category</li>
   <li>must have LOINC#8310-5 code</li>
-  <li>must have effectiveDateTime</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>others might use effectivePeriod</li>
+    </ul>
+  </li>
   <li>must have valueQuantity with units from the MHV body temperatures (F and C)
     <ul>
       <li>must be value between 92 &lt;= n &lt;= 108 Fahrenheit</li>
@@ -394,7 +410,11 @@ This was not agreed by Mobile.</p>
   <li>must be marked with MHV app tag</li>
   <li>must have vital-signs category</li>
   <li>must have LOINC#29463-7 code</li>
-  <li>must have effectiveDateTime</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>others might use effectivePeriod</li>
+    </ul>
+  </li>
   <li>must have valueQuantity with units from the MHV body weights (lbs and kg)
     <ul>
       <li>must be value 60 &lt;= n &lt;= 1000 lbs</li>
@@ -515,7 +535,11 @@ This was not agreed by Mobile.</p>
   <li>must be marked with MHV app tag</li>
   <li>must have vital-signs category</li>
   <li>must have LOINC#8867-4 code</li>
-  <li>must have effectiveDateTime</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>others might use effectivePeriod</li>
+    </ul>
+  </li>
   <li>must have valueQuantity with units only of beats per minute
     <ul>
       <li>must be value 40 &lt;= n &lt;= 240</li>
@@ -606,7 +630,11 @@ This was not agreed by Mobile.</p>
   <li>must be marked with MHV app tag</li>
   <li>must have vital-signs category</li>
   <li>must have both LOINC#72514-3 and SCT#225908003 code</li>
-  <li>must have effectiveDateTime</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>others might use effectivePeriod</li>
+    </ul>
+  </li>
   <li>must have valueQuantity with no units
     <ul>
       <li>must have integer between 0-10</li>
@@ -637,7 +665,11 @@ This was not agreed by Mobile.</p>
       <li>FHIR Core, Argonaut and VCM use 9279-1</li>
     </ul>
   </li>
-  <li>must have effectiveDateTime</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>others might use effectivePeriod</li>
+    </ul>
+  </li>
   <li>must have valueQuantity with units only of breaths per minute
     <ul>
       <li>typical is 12-16 breaths per minute</li>
@@ -1310,7 +1342,22 @@ This was not agreed by Mobile.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-ex-MHV-weight.html" title="Observation/ex-MHV-weight">Example of an MHV bodyWeight R4 observation</a>
+                  <a href="Observation-ex-MHV-weight.html" title="Observation/ex-MHV-weight">Example of an MHV bodyWeight R4 observation - pounds</a>
+               </td>
+               <td>
+<p>holding typical values
+</p>
+<ul>
+  <li>185 pounds</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-MHV-weight-1.html"
+                     title="Observation/ex-MHV-weight-1">Example of an MHV bodyWeight R4 observation - kg&#xD;
+&#xD;
+- 81.5 kg</a>
                </td>
                <td>
 <p>holding typical values</p>
@@ -1547,6 +1594,24 @@ This was not agreed by Mobile.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-ex-temperature-11.html"
+                     title="Observation/ex-temperature-11">Example of a non MHV bodyTemperature R4 observation with no site</a>
+               </td>
+               <td>
+<p>holding typical values</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-temperature-12.html"
+                     title="Observation/ex-temperature-12">Example of a non MHV bodyTemperature R4 observation by tongue over a period</a>
+               </td>
+               <td>
+<p>holding typical values</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-ex-temperature-8.html"
                      title="Observation/ex-temperature-8">Example of a non MHV bodyTemperature R4 observation by tongue</a>
                </td>
@@ -1589,6 +1654,15 @@ This was not agreed by Mobile.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-ex-weight-not-ucum.html"
+                     title="Observation/ex-weight-not-ucum">Example of an valid FHIR bodyWeight R4 observation</a>
+               </td>
+               <td>
+<p>holding typical value but NOT using ucum units of measure.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-ex-weight-period.html"
                      title="Observation/ex-weight-period">Example of an valid FHIR International bodyWeight R4 observation over a period</a>
                </td>
@@ -1627,6 +1701,15 @@ This was not agreed by Mobile.</p>
                </td>
                <td>
 <p>holding typical stone values.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ex-weight-string.html"
+                     title="Observation/ex-weight-string">Example of an valid FHIR bodyWeight R4 observation</a>
+               </td>
+               <td>
+<p>holding typical value in a string.</p>
 </td>
             </tr>
             <tr>
@@ -1694,7 +1777,7 @@ This was not agreed by Mobile.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 17, 2022 12:54-0600">2022-11-17</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 23, 2022 09:43-0600">2022-11-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

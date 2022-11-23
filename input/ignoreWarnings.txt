@@ -4,5 +4,6 @@
 Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated
 
 
-
+# No example of a prototyple
+WARNING: StructureDefinition.where(url = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle'): The Implementation Guide contains no examples for this profile
 

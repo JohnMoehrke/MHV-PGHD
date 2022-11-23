@@ -283,7 +283,11 @@
   <li>must be marked with MHV app tag</li>
   <li>must have vital-signs category</li>
   <li>must have LOINC#8310-5 code</li>
-  <li>must have effectiveDateTime</li>
+  <li>must have effectiveDateTime
+    <ul>
+      <li>others might use effectivePeriod</li>
+    </ul>
+  </li>
   <li>must have valueQuantity with units from the MHV body temperatures (F and C)
     <ul>
       <li>must be value between 92 &lt;= n &lt;= 108 Fahrenheit</li>
@@ -1113,7 +1117,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 17, 2022 12:54-0600">2022-11-17</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 23, 2022 09:43-0600">2022-11-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

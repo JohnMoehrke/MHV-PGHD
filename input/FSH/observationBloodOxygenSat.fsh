@@ -15,7 +15,8 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 - must have LOINC#59408-5 code AND LOINC#2708-6
   - Argonaut and VCM use 59408-5
   - FHIR Core R4 also adds 2708-6
-- must have effectiveDateTime
+- must have effectiveDateTime 
+  - others might use effectivePeriod
 - must have a valueQuantity with UCUM '%' units
   * must be between 50% <= n <= 100%
 - must have status at final or preliminary

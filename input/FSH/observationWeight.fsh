@@ -13,6 +13,7 @@ Note this is compliant with FHIR core vital-signs.
 - must have vital-signs category
 - must have LOINC#29463-7 code
 - must have effectiveDateTime
+  - others might use effectivePeriod
 - must have valueQuantity with units from the MHV body weights (lbs and kg)
   - must be value 60 <= n <= 1000 lbs
 - must have status at final

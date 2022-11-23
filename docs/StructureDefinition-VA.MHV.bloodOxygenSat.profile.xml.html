@@ -362,7 +362,8 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 - must have LOINC#59408-5 code AND LOINC#2708-6
   - Argonaut and VCM use 59408-5
   - FHIR Core R4 also adds 2708-6
-- must have effectiveDateTime
+- must have effectiveDateTime 
+  - others might use effectivePeriod
 - must have a valueQuantity with UCUM '%' units
   * must be between 50% &amp;lt;= n &amp;lt;= 100%
 - must have status at final or preliminary
@@ -4668,7 +4669,7 @@ The alternate way is to use the value element for actual observations and use th
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 17, 2022 12:54-0600">2022-11-17</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 23, 2022 09:43-0600">2022-11-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

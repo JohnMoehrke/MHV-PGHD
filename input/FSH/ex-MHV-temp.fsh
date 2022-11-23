@@ -172,5 +172,37 @@ Description:      "holding typical values"
 * bodySite = SCT#89837001 "urinary bladder"
 * note.text = "nice International temperature by urinary bladder"
 
+Instance:   ex-temperature-11
+InstanceOf: Observation
+Title: "Example of a non MHV bodyTemperature R4 observation with no site"
+Description:      "holding typical values"
+//* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+//* code.coding[+] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
+* subject = Reference(Patient/ex-patient)
+* effectiveDateTime = 2004-12-25T23:50:50-05:00
+* valueQuantity = 37 'Cel' 
+* note.text = "nice International temperature by urinary bladder"
+
+Instance:   ex-temperature-12
+InstanceOf: Observation
+Title: "Example of a non MHV bodyTemperature R4 observation by tongue over a period"
+Description:      "holding typical values"
+//* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+//* code.coding[+] = LOINC#8310-5 "Body temperature"
+* code = LOINC#8310-5 "Body temperature"
+* subject = Reference(Patient/ex-patient)
+* effectivePeriod.start = 2004-12-25T23:50:50-05:00
+* effectivePeriod.end = 2004-12-25T23:50:50-05:00
+* valueQuantity = 37 'Cel' 
+* bodySite = SCT#39937001 "skin"
+* note.text = "nice International temperature by skin"
+
 
 

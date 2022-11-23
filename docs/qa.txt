@@ -1,9 +1,9 @@
 ﻿MHVIG : Validation Results
 =========================================
 
-err = 0, warn = 1, info = 0
-IG Publisher Version: 1.2.15
-Generated Thu Nov 17 12:57:57 CST 2022. FHIR version 4.0.1 for va.mhv.example#0.2.9-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+err = 0, warn = 0, info = 0
+IG Publisher Version: 1.2.19
+Generated Wed Nov 23 09:46:50 CST 2022. FHIR version 4.0.1 for va.mhv.example#0.2.9-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
  Build Errors : 0 / 0 / 0
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\AllergyIntolerance-ex-MHV-allergy-0 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\CapabilityStatement-MHVcapabilities : 0 / 0 / 1
@@ -70,6 +70,7 @@ Generated Thu Nov 17 12:57:57 CST 2022. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-6 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-7 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight : 0 / 0 / 1
+ C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-1 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugarB-106100 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugarB-106101 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugarB-106102 : 0 / 0 / 1
@@ -85,14 +86,18 @@ Generated Thu Nov 17 12:57:57 CST 2022. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-14 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-15 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-10 : 0 / 0 / 1
+ C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-11 : 0 / 0 / 1
+ C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-12 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-8 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-9 : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-apple : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-core : 0 / 0 / 2
+ C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-not-ucum : 0 / 0 / 2
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-period : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-period-end : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-period-start : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-stone : 0 / 0 / 2
+ C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-string : 0 / 0 / 2
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Patient-ex-patient : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\Practitioner-ex-practitioner : 0 / 0 / 1
  C:\Users\johnm\Git\MHV-PGHD\fsh-generated\resources\StructureDefinition-FM-Adopted : 0 / 0 / 1
@@ -188,6 +193,7 @@ Generated Thu Nov 17 12:57:57 CST 2022. FHIR version 4.0.1 for va.mhv.example#0.
 == fsh-generated\resources\Observation-ex-MHV-temperature-6.json ==
 == fsh-generated\resources\Observation-ex-MHV-temperature-7.json ==
 == fsh-generated\resources\Observation-ex-MHV-weight.json ==
+== fsh-generated\resources\Observation-ex-MHV-weight-1.json ==
 == fsh-generated\resources\Observation-ex-bloodSugarB-106100.json ==
 == fsh-generated\resources\Observation-ex-bloodSugarB-106101.json ==
 == fsh-generated\resources\Observation-ex-bloodSugarB-106102.json ==
@@ -203,14 +209,18 @@ Generated Thu Nov 17 12:57:57 CST 2022. FHIR version 4.0.1 for va.mhv.example#0.
 == fsh-generated\resources\Observation-ex-pain-14.json ==
 == fsh-generated\resources\Observation-ex-pain-15.json ==
 == fsh-generated\resources\Observation-ex-temperature-10.json ==
+== fsh-generated\resources\Observation-ex-temperature-11.json ==
+== fsh-generated\resources\Observation-ex-temperature-12.json ==
 == fsh-generated\resources\Observation-ex-temperature-8.json ==
 == fsh-generated\resources\Observation-ex-temperature-9.json ==
 == fsh-generated\resources\Observation-ex-weight-apple.json ==
 == fsh-generated\resources\Observation-ex-weight-core.json ==
+== fsh-generated\resources\Observation-ex-weight-not-ucum.json ==
 == fsh-generated\resources\Observation-ex-weight-period.json ==
 == fsh-generated\resources\Observation-ex-weight-period-end.json ==
 == fsh-generated\resources\Observation-ex-weight-period-start.json ==
 == fsh-generated\resources\Observation-ex-weight-stone.json ==
+== fsh-generated\resources\Observation-ex-weight-string.json ==
 == fsh-generated\resources\Patient-ex-patient.json ==
 == fsh-generated\resources\Practitioner-ex-practitioner.json ==
 == fsh-generated\resources\StructureDefinition-FM-Adopted.json ==
@@ -218,7 +228,6 @@ Generated Thu Nov 17 12:57:57 CST 2022. FHIR version 4.0.1 for va.mhv.example#0.
 == fsh-generated\resources\StructureDefinition-FM-MultiBirth.json ==
 == fsh-generated\resources\StructureDefinition-FM-Race.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.BlueBundle.json ==
-WARNING: StructureDefinition.where(url = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-VA.MHV.BlueComposition.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.allergy.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.bloodOxygenSat.json ==

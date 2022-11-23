@@ -18,6 +18,7 @@ Note that Blood Sugar is not part of FHIR core vital-signs.
   - no longer using LOINC#2345-7 with move to FHIR R4
 - may have indication of fasting (LOINC#88365-2), or 2-hours after meal (LOINC#87422-2)
 - must have effectiveDateTime
+  - others might use effectivePeriod
 - must have valueQuantity with units only of mg/dL
   - must be between 10 <= n <= 1000
 - must have status at final

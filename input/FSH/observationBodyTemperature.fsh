@@ -13,6 +13,7 @@ Note this is compliant with FHIR core vital-signs.
 - must have vital-signs category
 - must have LOINC#8310-5 code
 - must have effectiveDateTime
+  - others might use effectivePeriod
 - must have valueQuantity with units from the MHV body temperatures (F and C)
   - must be value between 92 <= n <= 108 Fahrenheit
 - must have status at final

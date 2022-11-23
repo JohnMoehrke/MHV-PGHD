@@ -63,7 +63,7 @@
       ]
     }
   ],
-  "description": "A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8310-5 code\n- must have effectiveDateTime\n- must have valueQuantity with units from the MHV body temperatures (F and C)\n  - must be value between 92 <= n <= 108 Fahrenheit\n- must have status at final\n- must point at the patient\n- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
+  "description": "A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8310-5 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units from the MHV body temperatures (F and C)\n  - must be value between 92 <= n <= 108 Fahrenheit\n- must have status at final\n- must point at the patient\n- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
   "jurisdiction": [
     {
       "coding": [

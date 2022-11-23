@@ -1,7 +1,9 @@
 Instance:   ex-MHV-weight
 InstanceOf: VA.MHV.bodyWeight
-Title: "Example of an MHV bodyWeight R4 observation"
-Description:      "holding typical values"
+Title: "Example of an MHV bodyWeight R4 observation - pounds"
+Description:      "holding typical values
+
+- 185 pounds"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
@@ -11,7 +13,24 @@ Description:      "holding typical values"
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity = 185 '[lb_av]' 
 // no comments in this one as comments is only in DSTU2
-* note.text = "a bit heavy"
+* note.text = "a normal male weight"
+
+Instance:   ex-MHV-weight-1
+InstanceOf: VA.MHV.bodyWeight
+Title: "Example of an MHV bodyWeight R4 observation - kg
+
+- 81.5 kg"
+Description:      "holding typical values"
+//* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
+* status = #final
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code = LOINC#29463-7 "Body weight"
+* subject = Reference(Patient/ex-patient)
+* effectiveDateTime = 2004-12-25T23:50:50-05:00
+* valueQuantity = 81.5 'kg' 
+// no comments in this one as comments is only in DSTU2
+* note.text = "a normal male weight"
 
 Instance:   ex-weight-core
 InstanceOf: Observation
@@ -47,6 +66,43 @@ Description:      "holding typical stone values."
 * effectiveDateTime = 2016-03-28
 * valueQuantity = 20 '[stone_av]' 
 * note.text = "a bit heavy, about 280 lbs"
+
+Instance:   ex-weight-string
+InstanceOf: Observation
+Title: "Example of an valid FHIR bodyWeight R4 observation"
+Description:      "holding typical value in a string."
+//* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.text = "body weight"
+* code.coding[+] = LOINC#29463-7
+* code.coding[+] = LOINC#3141-9
+* code.coding[+] = SCT#27113001
+* code.coding[+] = http://acme.org/devices/clinical-codes#body-weight "Body Weight"
+* subject = Reference(Patient/ex-patient)
+* encounter = Reference(Encounter/ex-encounter)
+* effectiveDateTime = 2016-03-28
+* valueString = "185 pounds" 
+* note.text = "using a string"
+
+Instance:   ex-weight-not-ucum
+InstanceOf: Observation
+Title: "Example of an valid FHIR bodyWeight R4 observation"
+Description:      "holding typical value but NOT using ucum units of measure."
+//* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.text = "body weight"
+* code.coding[+] = LOINC#29463-7
+* code.coding[+] = LOINC#3141-9
+* code.coding[+] = SCT#27113001
+* code.coding[+] = http://acme.org/devices/clinical-codes#body-weight "Body Weight"
+* subject = Reference(Patient/ex-patient)
+* encounter = Reference(Encounter/ex-encounter)
+* effectiveDateTime = 2016-03-28
+* valueQuantity.value = 180.0
+* valueQuantity.unit = "pounds"
+* note.text = "using a string units of measure"
 
 Instance:   ex-weight-period
 InstanceOf: Observation

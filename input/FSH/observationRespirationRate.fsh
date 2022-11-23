@@ -14,6 +14,7 @@ This profile is consistent with FHIR core Vital-Signs for Respiration Rate
 - must have LOINC#9279-1 code 
   - FHIR Core, Argonaut and VCM use 9279-1
 - must have effectiveDateTime
+  - others might use effectivePeriod
 - must have valueQuantity with units only of breaths per minute
   - typical is 12-16 breaths per minute
   - must be a value 6 <= n <= 40

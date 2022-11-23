@@ -46,7 +46,7 @@
   fhir:StructureDefinition.name [ fhir:value "Race"];
   fhir:StructureDefinition.title [ fhir:value "Race"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-17T12:54:43-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-23T09:43:25-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "John Moehrke (himself)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -130,21 +130,25 @@ MyHealtheVet provides access to the VA managed Patient Generated Health Data (PG
 
 ### Additional Features MyHealtheVet could use FHIR for
 
-* Change
-  * Allowing Delete without Edit
-  * Allowing Edit without Delete
-  * Allowing both Edit and Delete
-* Support for Delegate user of MyHealtheVet to access PGHD
+* Graph data over time -- like MyHealtheVet already supports for SEI vital signs, or like VCM supports for PGHD vital signs.
+* Change data in PGHD
+  * Allowing Delete without Edit -- sometimes data gets in there that is not right, especially through automated means (dog weight automatically recorded as me). Note this can also be a safe way to edit, by having the old data deleted and the correct data created.
+  * Allowing Edit without Delete -- sometimes data are entered wrong.. a mistake. 
+  * Allowing both Edit and Delete -- both
+* Support for Delegate user of MyHealtheVet to access PGHD. MyHealtheVet already supports delegate, but the PHGD support does not include this.
   * Read Only access
   * Read/Write/Create access
-* Graph data over time -- like MyHealtheVet already supports for SEI vital signs, or like VCM supports for PGHD vital signs.
 * Revoke Clinical access
   * Use of FHIR Consent to indicate Veteran has revoked MHV access to the data without removing the data
 * Veteran see when data are reviewed
   * Requires PGHD implement FHIR AuditEvent
   * Provide view of who has accessed the data
 * Current MyHealtheVet secure messaging include references to PGHD hosted resources. For example being able to tell the doctor you have a new blood-pressure, and include in the message the FHIR Reference id in a rich-text way that appears to the human nicely, but is actually a FHIR URL
-
+* Blue Button
+  * Blue Button report as it is today, include PGHD data
+  * Blue Button report in FHIR-Document format 
+* Online method for a Veteran to request corrections to the EHR data. There is a HL7 FHIR Implementation Guide. Well formed request, also can link to the data (if it is FHIR accessible) that needs correction
+* CarePlans - Given a CarePlan is started by a clinician (or veteran) allow for the Veteran to submit requested information and link that information to the CarePlan that is requesting it. Help guide the Veteran on the activities requested of them by the CarePlan
 
 
 

@@ -52,8 +52,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.75"}
-    h3,h4,h5,h6{--heading-prefix:"4.75"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.75"}
+    h3,h4,h5,h6{--heading-prefix:"5.75"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -110,6 +110,9 @@
   <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -146,7 +149,6 @@
 
 <div style="counter-reset: section 9" class="col-12">
 <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.9-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-
 
 
 
@@ -225,7 +227,7 @@
 
  a fhir:Observation;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;ex-MHV-respirationRate-3&quot;];
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;ex-MHV-respirationRate-3&quot;]; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.respirationRate&quot;;
@@ -235,19 +237,19 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://wiki.mobilehealth.va.gov/x/Onc1C&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;2ce6d9aa-c068-4809-8dda-662bcb16d09a&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;ex-MHV-respirationRate-3\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;ex-MHV-respirationRate-3&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-VA.MHV.respirationRate.html\&quot;&gt;VA MHV Respiration Rate Observation&lt;/a&gt;&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Tag: &lt;span title=\&quot;{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\&quot;&gt;https://wiki.mobilehealth.va.gov/x/Onc1C&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Vital Signs &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\&quot;&gt;Observation Category Codes&lt;/a&gt;#vital-signs)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Respiratory rate &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#9279-1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ex-patient.html\&quot;&gt;Patient/ex-patient&lt;/a&gt; &amp;quot; SCHMIDT&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2004-12-25 11:50:50-0500&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 12 /min&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code /min = '/min')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: a nice calm&lt;/p&gt;&lt;/div&gt;&quot;
-  ];
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:Observation.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;final&quot;];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;ex-MHV-respirationRate-3\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;ex-MHV-respirationRate-3&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-VA.MHV.respirationRate.html\&quot;&gt;VA MHV Respiration Rate Observation&lt;/a&gt;&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Tag: &lt;span title=\&quot;{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\&quot;&gt;https://wiki.mobilehealth.va.gov/x/Onc1C&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Vital Signs &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\&quot;&gt;Observation Category Codes&lt;/a&gt;#vital-signs)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Respiratory rate &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#9279-1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ex-patient.html\&quot;&gt;Patient/ex-patient&lt;/a&gt; &amp;quot; SCHMIDT&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2004-12-25 23:50:50-0500&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 12 /min&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code /min = '/min')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: a nice calm&lt;/p&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:Observation.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;final&quot;]; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.category">fhir:Observation.category</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;vital-signs&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:Observation.code</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -255,21 +257,21 @@
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;9279-1&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Respiratory rate&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:Observation.subject</a> [
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/ex-patient&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:Observation.effectiveDateTime</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2004-12-25T23:50:50-05:00&quot;^^xsd:dateTime];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:Observation.effectiveDateTime</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2004-12-25T23:50:50-05:00&quot;^^xsd:dateTime]; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:Observation.valueQuantity</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;12&quot;^^xsd:decimal ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;/min&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://unitsofmeasure.org&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;/min&quot; ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.note">fhir:Observation.note</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">fhir:Annotation.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;a nice calm&quot; ]
-  ].
+  ]. # 
 
 # - ontology header ------------------------------------------------------------
 
@@ -329,7 +331,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 23, 2022 09:43-0600">2022-11-23</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 23, 2022 11:36-0600">2022-12-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

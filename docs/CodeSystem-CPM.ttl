@@ -7,11 +7,11 @@
 
 <https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/CPM> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "CPM"];
+  fhir:Resource.id [ fhir:value "CPM"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1e11b692-1898-4351-a7c5-428f61c91817<a name=\"CPM-1e11b692-1898-4351-a7c5-428f61c91817\"> </a></td><td>MobileKidney</td></tr></table></div>"
-  ];
+  ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ];
@@ -40,15 +40,15 @@
          ]
        ]
      ]
-  ];
-  fhir:CodeSystem.url [ fhir:value "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"];
-  fhir:CodeSystem.version [ fhir:value "0.2.9-beta"];
-  fhir:CodeSystem.name [ fhir:value "AppIdCodesToo"];
-  fhir:CodeSystem.title [ fhir:value "PGD other apps"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-11-23T09:43:25-06:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "John Moehrke (himself)"];
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.2.9-beta"]; # 
+  fhir:CodeSystem.name [ fhir:value "AppIdCodesToo"]; # 
+  fhir:CodeSystem.title [ fhir:value "PGD other apps"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2022-12-23T11:36:27-06:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "John Moehrke (himself)"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke (himself)" ];
@@ -69,8 +69,8 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "JohnMoehrke@gmail.com" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Seems to be used by Mobile Kidney"];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Seems to be used by Mobile Kidney"]; # 
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -78,15 +78,15 @@
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
        fhir:Coding.code [ fhir:value "US" ]
      ]
-  ];
-  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
+  ]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "1e11b692-1898-4351-a7c5-428f61c91817" ];
      fhir:CodeSystem.concept.display [ fhir:value "MobileKidney" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

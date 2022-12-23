@@ -108,6 +108,9 @@
   <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
@@ -347,20 +350,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="additional-features-myhealthevet-could-use-fhir-for">Additional Features MyHealtheVet could use FHIR for</h3>
 
 <ul>
-  <li>Change
+  <li>Graph data over time – like MyHealtheVet already supports for SEI vital signs, or like VCM supports for PGHD vital signs.</li>
+  <li>Change data in PGHD
     <ul>
-      <li>Allowing Delete without Edit</li>
-      <li>Allowing Edit without Delete</li>
-      <li>Allowing both Edit and Delete</li>
+      <li>Allowing Delete without Edit – sometimes data gets in there that is not right, especially through automated means (dog weight automatically recorded as me). Note this can also be a safe way to edit, by having the old data deleted and the correct data created.</li>
+      <li>Allowing Edit without Delete – sometimes data are entered wrong.. a mistake.</li>
+      <li>Allowing both Edit and Delete – both</li>
     </ul>
   </li>
-  <li>Support for Delegate user of MyHealtheVet to access PGHD
+  <li>Support for Delegate user of MyHealtheVet to access PGHD. MyHealtheVet already supports delegate, but the PHGD support does not include this.
     <ul>
       <li>Read Only access</li>
       <li>Read/Write/Create access</li>
     </ul>
   </li>
-  <li>Graph data over time – like MyHealtheVet already supports for SEI vital signs, or like VCM supports for PGHD vital signs.</li>
   <li>Revoke Clinical access
     <ul>
       <li>Use of FHIR Consent to indicate Veteran has revoked MHV access to the data without removing the data</li>
@@ -373,6 +376,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li>Current MyHealtheVet secure messaging include references to PGHD hosted resources. For example being able to tell the doctor you have a new blood-pressure, and include in the message the FHIR Reference id in a rich-text way that appears to the human nicely, but is actually a FHIR URL</li>
+  <li>Blue Button
+    <ul>
+      <li>Blue Button report as it is today, include PGHD data</li>
+      <li>Blue Button report in FHIR-Document format</li>
+    </ul>
+  </li>
+  <li>Online method for a Veteran to request corrections to the EHR data. There is a HL7 FHIR Implementation Guide. Well formed request, also can link to the data (if it is FHIR accessible) that needs correction</li>
+  <li>CarePlans - Given a CarePlan is started by a clinician (or veteran) allow for the Veteran to submit requested information and link that information to the CarePlan that is requesting it. Help guide the Veteran on the activities requested of them by the CarePlan</li>
 </ul>
 
 
@@ -422,7 +433,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 23, 2022 09:43-0600">2022-11-23</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 23, 2022 11:36-0600">2022-12-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

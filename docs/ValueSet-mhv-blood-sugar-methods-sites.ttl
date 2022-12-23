@@ -7,11 +7,11 @@
 
 <https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "mhv-blood-sugar-methods-sites"];
+  fhir:Resource.id [ fhir:value "mhv-blood-sugar-methods-sites"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/15220000\">15220000</a></td><td>Laboratory Test</td></tr><tr><td><a href=\"http://snomed.info/id/350810002\">350810002</a></td><td>Lancet</td></tr><tr><td><a href=\"http://snomed.info/id/263902000\">263902000</a></td><td>Transcutaneous method</td></tr><tr><td><a href=\"http://snomed.info/id/261373009\">261373009</a></td><td>Implant technique</td></tr></table></li></ul></div>"
-  ];
+  ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ];
@@ -40,15 +40,15 @@
          ]
        ]
      ]
-  ];
-  fhir:ValueSet.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites"];
-  fhir:ValueSet.version [ fhir:value "0.2.9-beta"];
-  fhir:ValueSet.name [ fhir:value "MHVbloodSugarMethods"];
-  fhir:ValueSet.title [ fhir:value "The methods of measurement for blood sugar that MHV supports"];
-  fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ValueSet.date [ fhir:value "2022-11-23T09:43:25-06:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "John Moehrke (himself)"];
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites"]; # 
+  fhir:ValueSet.version [ fhir:value "0.2.9-beta"]; # 
+  fhir:ValueSet.name [ fhir:value "MHVbloodSugarMethods"]; # 
+  fhir:ValueSet.title [ fhir:value "The methods of measurement for blood sugar that MHV supports"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2022-12-23T11:36:27-06:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "John Moehrke (himself)"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke (himself)" ];
@@ -69,8 +69,8 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "JohnMoehrke@gmail.com" ]
      ]
-  ];
-  fhir:ValueSet.description [ fhir:value "These are the SNOMED body sites that MHV supports."];
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "These are the SNOMED body sites that MHV supports."]; # 
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -78,7 +78,7 @@
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
        fhir:Coding.code [ fhir:value "US" ]
      ]
-  ];
+  ]; # 
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
@@ -101,7 +101,7 @@
          fhir:ValueSet.compose.include.concept.display [ fhir:value "Implant technique" ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

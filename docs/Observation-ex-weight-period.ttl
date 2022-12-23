@@ -8,12 +8,12 @@
 
 <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-weight-period> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ex-weight-period"];
+  fhir:Resource.id [ fhir:value "ex-weight-period"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-weight-period\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-weight-period&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2016-03-28 --&gt; 2016-03-28</p><p><b>value</b>: 185 [lb_av]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></p></div>"
-  ];
-  fhir:Observation.status [ fhir:value "final"];
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -21,20 +21,20 @@
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
        fhir:Coding.code [ fhir:value "29463-7" ]
      ]
-  ];
+  ]; # 
   fhir:Observation.subject [
      fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
      fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
-  ];
+  ]; # 
   fhir:Observation.effectivePeriod [
      fhir:Period.start [ fhir:value "2016-03-28"^^xsd:date ];
      fhir:Period.end [ fhir:value "2016-03-28"^^xsd:date ]
-  ];
+  ]; # 
   fhir:Observation.valueQuantity [
      fhir:Quantity.value [ fhir:value "185"^^xsd:decimal ];
      fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
      fhir:Quantity.code [ fhir:value "[lb_av]" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

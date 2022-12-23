@@ -7,11 +7,11 @@
 
 <https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "va.mhv.example"];
+  fhir:Resource.id [ fhir:value "va.mhv.example"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MHVIG</h2><p>The official URL for this implementation guide is: </p><pre>https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example</pre><div><p>FHIR use by MyHealtheVet using PGHD and Testing Plan.</p>\n</div></div>"
-  ];
+  ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
@@ -20,14 +20,14 @@
      fhir:index 1;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ];
      fhir:Extension.valueInteger [ fhir:value "2"^^xsd:integer ]
-  ];
-  fhir:ImplementationGuide.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"];
-  fhir:ImplementationGuide.version [ fhir:value "0.2.9-beta"];
-  fhir:ImplementationGuide.name [ fhir:value "MHVIG"];
-  fhir:ImplementationGuide.title [ fhir:value "MyHealtheVet use of PGHD"];
-  fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-11-23T09:43:25-06:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.publisher [ fhir:value "John Moehrke (himself)"];
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "0.2.9-beta"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "MHVIG"]; # 
+  fhir:ImplementationGuide.title [ fhir:value "MyHealtheVet use of PGHD"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "active"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2022-12-23T11:36:27-06:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "John Moehrke (himself)"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "John Moehrke (himself)" ];
@@ -48,8 +48,8 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "JohnMoehrke@gmail.com" ]
      ]
-  ];
-  fhir:ImplementationGuide.description [ fhir:value "FHIR use by MyHealtheVet using PGHD and Testing Plan."];
+  ]; # 
+  fhir:ImplementationGuide.description [ fhir:value "FHIR use by MyHealtheVet using PGHD and Testing Plan."]; # 
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -57,13 +57,13 @@
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
        fhir:Coding.code [ fhir:value "US" ]
      ]
-  ];
-  fhir:ImplementationGuide.packageId [ fhir:value "va.mhv.example"];
-  fhir:ImplementationGuide.license [ fhir:value "CC-BY-4.0"];
+  ]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "va.mhv.example"]; # 
+  fhir:ImplementationGuide.license [ fhir:value "CC-BY-4.0"]; # 
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
      fhir:index 0
-  ];
+  ]; # 
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
      fhir:Element.id [ fhir:value "hl7tx" ];
@@ -87,7 +87,7 @@
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.1" ]
-  ];
+  ]; # 
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
        fhir:index 0;
@@ -2702,7 +2702,7 @@
            fhir:Extension.valueUrl [ fhir:value "index.html" ]
          ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "MyIG Home Page" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
@@ -2731,6 +2731,20 @@
          ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "testplan.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Test Plan" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
+           fhir:Extension.valueCode [ fhir:value "informative" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "downloads.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];
@@ -2791,7 +2805,7 @@
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

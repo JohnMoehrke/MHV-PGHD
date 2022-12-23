@@ -1,86 +1,68 @@
 {
-  "resourceType": "CodeSystem",
-  "id": "CPM",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1e11b692-1898-4351-a7c5-428f61c91817<a name=\"CPM-1e11b692-1898-4351-a7c5-428f61c91817\"> </a></td><td>MobileKidney</td></tr></table></div>"
+  "resourceType" : "CodeSystem",
+  "id" : "CPM",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1e11b692-1898-4351-a7c5-428f61c91817<a name=\"CPM-1e11b692-1898-4351-a7c5-428f61c91817\"> </a></td><td>MobileKidney</td></tr></table></div>"
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 2,
-      "_valueInteger": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-            "valueCanonical": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 2,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
+      }]
+    }
+  }],
+  "url" : "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping",
+  "version" : "0.2.9-beta",
+  "name" : "AppIdCodesToo",
+  "title" : "PGD other apps",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-12-23T11:36:27-06:00",
+  "publisher" : "John Moehrke (himself)",
+  "contact" : [{
+    "name" : "John Moehrke (himself)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://healthcaresecprivacy.blogspot.com"
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueCode": "trial-use",
-      "_valueCode": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-            "valueCanonical": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
-          }
-        ]
-      }
-    }
-  ],
-  "url": "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping",
-  "version": "0.2.9-beta",
-  "name": "AppIdCodesToo",
-  "title": "PGD other apps",
-  "status": "active",
-  "experimental": false,
-  "date": "2022-11-23T09:43:25-06:00",
-  "publisher": "John Moehrke (himself)",
-  "contact": [
-    {
-      "name": "John Moehrke (himself)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://healthcaresecprivacy.blogspot.com"
-        },
-        {
-          "system": "email",
-          "value": "JohnMoehrke@gmail.com"
-        }
-      ]
-    },
-    {
-      "name": "John Moehrke (himself)",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "JohnMoehrke@gmail.com"
-        }
-      ]
-    }
-  ],
-  "description": "Seems to be used by Mobile Kidney",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
-        }
-      ]
-    }
-  ],
-  "caseSensitive": true,
-  "content": "complete",
-  "count": 1,
-  "concept": [
-    {
-      "code": "1e11b692-1898-4351-a7c5-428f61c91817",
-      "display": "MobileKidney"
-    }
-  ]
+      "system" : "email",
+      "value" : "JohnMoehrke@gmail.com"
+    }]
+  },
+  {
+    "name" : "John Moehrke (himself)",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "JohnMoehrke@gmail.com"
+    }]
+  }],
+  "description" : "Seems to be used by Mobile Kidney",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "1e11b692-1898-4351-a7c5-428f61c91817",
+    "display" : "MobileKidney"
+  }]
 }

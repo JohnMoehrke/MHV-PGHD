@@ -1,80 +1,66 @@
 {
-  "resourceType": "Observation",
-  "id": "ex-MHV-bloodPressure-apple",
-  "meta": {
-    "source": "#43f74378-a8bf-41",
-    "tag": [
-      {
-        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C",
-        "code": "49d985b4-6f9d-47e3-bbc9-a56c840ba4a6",
-        "display": "Sync My Health Data"
-      }
-    ]
+  "resourceType" : "Observation",
+  "id" : "ex-MHV-bloodPressure-apple",
+  "meta" : {
+    "source" : "#43f74378-a8bf-41",
+    "tag" : [{
+      "system" : "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "code" : "49d985b4-6f9d-47e3-bbc9-a56c840ba4a6",
+      "display" : "Sync My Health Data"
+    }]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-MHV-bloodPressure-apple\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-MHV-bloodPressure-apple&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #43f74378-a8bf-41!</p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>status</b>: final</p><p><b>code</b>: Blood pressure systolic and diastolic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#55284-4)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient: John Jacob Jingleheimer Schmidt</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2022-11-02 03:43:57-0400 --&gt; 2022-11-02 03:43:57-0400</p><p><b>note</b>: bluetooth omron bp7250</p><p><b>hasMember</b>: <a href=\"Observation-ex-MHV-heartRate-1.html\">Observation/ex-MHV-heartRate-1</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 140 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 90 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-MHV-bloodPressure-apple\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-MHV-bloodPressure-apple&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #43f74378-a8bf-41!</p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>status</b>: final</p><p><b>code</b>: Blood pressure systolic and diastolic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#55284-4)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient: John Jacob Jingleheimer Schmidt</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2022-11-02 15:43:57-0400 --&gt; 2022-11-02 15:43:57-0400</p><p><b>note</b>: bluetooth omron bp7250</p><p><b>hasMember</b>: <a href=\"Observation-ex-MHV-heartRate-1.html\">Observation/ex-MHV-heartRate-1</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 140 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 90 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
   },
-  "status": "final",
-  "code": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "55284-4",
-        "display": "Blood pressure systolic and diastolic"
-      }
-    ]
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "55284-4",
+      "display" : "Blood pressure systolic and diastolic"
+    }]
   },
-  "subject": {
-    "reference": "Patient/ex-patient",
-    "display": "John Jacob Jingleheimer Schmidt"
+  "subject" : {
+    "reference" : "Patient/ex-patient",
+    "display" : "John Jacob Jingleheimer Schmidt"
   },
-  "effectivePeriod": {
-    "start": "2022-11-02T15:43:57.000-04:00",
-    "end": "2022-11-02T15:43:57.000-04:00"
+  "effectivePeriod" : {
+    "start" : "2022-11-02T15:43:57.000-04:00",
+    "end" : "2022-11-02T15:43:57.000-04:00"
   },
-  "note": [
-    {
-      "text": "bluetooth omron bp7250"
-    }
-  ],
-  "hasMember": [
-    {
-      "reference": "Observation/ex-MHV-heartRate-1"
-    }
-  ],
-  "component": [
-    {
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic blood pressure"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 140,
-        "system": "http://unitsofmeasure.org",
-        "code": "mm[Hg]"
-      }
+  "note" : [{
+    "text" : "bluetooth omron bp7250"
+  }],
+  "hasMember" : [{
+    "reference" : "Observation/ex-MHV-heartRate-1"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8480-6",
+        "display" : "Systolic blood pressure"
+      }]
     },
-    {
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 90,
-        "system": "http://unitsofmeasure.org",
-        "code": "mm[Hg]"
-      }
+    "valueQuantity" : {
+      "value" : 140,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8462-4",
+        "display" : "Diastolic blood pressure"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 90,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  }]
 }

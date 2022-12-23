@@ -1,110 +1,90 @@
 {
-  "resourceType": "ValueSet",
-  "id": "mhv-medication-routes",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/26643006\">26643006</a></td><td>Oral use</td></tr><tr><td><a href=\"http://snomed.info/id/37161004\">37161004</a></td><td>Rectal use</td></tr><tr><td><a href=\"http://snomed.info/id/45890007\">45890007</a></td><td>Transdermal use</td></tr><tr><td><a href=\"http://snomed.info/id/6064005\">6064005</a></td><td>Topical route</td></tr><tr><td><a href=\"http://snomed.info/id/78421000\">78421000</a></td><td>Intramuscular use</td></tr><tr><td><a href=\"http://snomed.info/id/47625008\">47625008</a></td><td>Intravenous use</td></tr></table></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "mhv-medication-routes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/26643006\">26643006</a></td><td>Oral use</td></tr><tr><td><a href=\"http://snomed.info/id/37161004\">37161004</a></td><td>Rectal use</td></tr><tr><td><a href=\"http://snomed.info/id/45890007\">45890007</a></td><td>Transdermal use</td></tr><tr><td><a href=\"http://snomed.info/id/6064005\">6064005</a></td><td>Topical route</td></tr><tr><td><a href=\"http://snomed.info/id/78421000\">78421000</a></td><td>Intramuscular use</td></tr><tr><td><a href=\"http://snomed.info/id/47625008\">47625008</a></td><td>Intravenous use</td></tr></table></li></ul></div>"
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 2,
-      "_valueInteger": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-            "valueCanonical": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 2,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
+      }]
+    }
+  }],
+  "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
+  "version" : "0.2.9-beta",
+  "name" : "MHVmedicationRoutes",
+  "title" : "The routes of medication that MHV supports",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-12-23T11:36:27-06:00",
+  "publisher" : "John Moehrke (himself)",
+  "contact" : [{
+    "name" : "John Moehrke (himself)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://healthcaresecprivacy.blogspot.com"
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueCode": "trial-use",
-      "_valueCode": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-            "valueCanonical": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
-          }
-        ]
-      }
-    }
-  ],
-  "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
-  "version": "0.2.9-beta",
-  "name": "MHVmedicationRoutes",
-  "title": "The routes of medication that MHV supports",
-  "status": "active",
-  "experimental": false,
-  "date": "2022-11-23T09:43:25-06:00",
-  "publisher": "John Moehrke (himself)",
-  "contact": [
-    {
-      "name": "John Moehrke (himself)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://healthcaresecprivacy.blogspot.com"
-        },
-        {
-          "system": "email",
-          "value": "JohnMoehrke@gmail.com"
-        }
-      ]
-    },
-    {
-      "name": "John Moehrke (himself)",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "JohnMoehrke@gmail.com"
-        }
-      ]
-    }
-  ],
-  "description": "These are the SNOMED-CT routes for medications that MHV supports.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
-        }
-      ]
-    }
-  ],
-  "compose": {
-    "include": [
+      "system" : "email",
+      "value" : "JohnMoehrke@gmail.com"
+    }]
+  },
+  {
+    "name" : "John Moehrke (himself)",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "JohnMoehrke@gmail.com"
+    }]
+  }],
+  "description" : "These are the SNOMED-CT routes for medications that MHV supports.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "26643006",
+        "display" : "Oral use"
+      },
       {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "26643006",
-            "display": "Oral use"
-          },
-          {
-            "code": "37161004",
-            "display": "Rectal use"
-          },
-          {
-            "code": "45890007",
-            "display": "Transdermal use"
-          },
-          {
-            "code": "6064005",
-            "display": "Topical route"
-          },
-          {
-            "code": "78421000",
-            "display": "Intramuscular use"
-          },
-          {
-            "code": "47625008",
-            "display": "Intravenous use"
-          }
-        ]
-      }
-    ]
+        "code" : "37161004",
+        "display" : "Rectal use"
+      },
+      {
+        "code" : "45890007",
+        "display" : "Transdermal use"
+      },
+      {
+        "code" : "6064005",
+        "display" : "Topical route"
+      },
+      {
+        "code" : "78421000",
+        "display" : "Intramuscular use"
+      },
+      {
+        "code" : "47625008",
+        "display" : "Intravenous use"
+      }]
+    }]
   }
 }

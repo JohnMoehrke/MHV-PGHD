@@ -8,16 +8,16 @@
 
 <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-other-oxygenSat-4> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ex-other-oxygenSat-4"];
+  fhir:Resource.id [ fhir:value "ex-other-oxygenSat-4"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-other-oxygenSat-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-other-oxygenSat-4&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Blood Oxygen Saturation Level <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>code</b>: Oxygen saturation in Arterial blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#2708-6)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-04 11:50:50-0500</p><p><b>value</b>: 97 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p><p><b>note</b>: Wow, you found it</p></div>"
-  ];
-  fhir:Observation.status [ fhir:value "final"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-other-oxygenSat-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-other-oxygenSat-4&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Blood Oxygen Saturation Level <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>code</b>: Oxygen saturation in Arterial blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#2708-6)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-04 23:50:50-0500</p><p><b>value</b>: 97 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p><p><b>note</b>: Wow, you found it</p></div>"
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
   fhir:Observation.category [
      fhir:index 0;
      fhir:CodeableConcept.text [ fhir:value "Blood Oxygen Saturation Level" ]
-  ];
+  ]; # 
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -25,21 +25,21 @@
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
        fhir:Coding.code [ fhir:value "2708-6" ]
      ]
-  ];
+  ]; # 
   fhir:Observation.subject [
      fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
      fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
-  ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2004-12-04T23:50:50-05:00"^^xsd:dateTime];
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2004-12-04T23:50:50-05:00"^^xsd:dateTime]; # 
   fhir:Observation.valueQuantity [
      fhir:Quantity.value [ fhir:value "97"^^xsd:decimal ];
      fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
      fhir:Quantity.code [ fhir:value "%" ]
-  ];
+  ]; # 
   fhir:Observation.note [
      fhir:index 0;
      fhir:Annotation.text [ fhir:value "Wow, you found it" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

@@ -7,11 +7,11 @@
 
 <https://johnmoehrke.github.io/MHV-PGHD/Practitioner/ex-practitioner> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ex-practitioner"];
+  fhir:Resource.id [ fhir:value "ex-practitioner"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"ex-practitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;ex-practitioner&quot; </p></div><p><b>name</b>: Prancy Practitioner </p></div>"
-  ];
+  ]; # 
   fhir:Practitioner.name [
      fhir:index 0;
      fhir:HumanName.family [ fhir:value "Practitioner" ];
@@ -19,7 +19,7 @@
        fhir:value "Prancy";
        fhir:index 0
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

@@ -64,13 +64,16 @@ parameters:  # see http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/C
 
 pages:
   index.md:
-    title: MyIG Home Page
+    title: Home
     generation: markdown
   background.md:
     title: Background
     generation: markdown
   testplan.md:
     title: Test Plan
+    generation: markdown
+  downloads.md:
+    title: Downloads
     generation: markdown
 
 
@@ -80,3 +83,4 @@ menu:
   Background: background.html
   Test Plan: testplan.html
   Artifacts: artifacts.html
+  Downloads: downloads.html

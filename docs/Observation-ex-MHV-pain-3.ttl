@@ -9,7 +9,7 @@
 
 <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-MHV-pain-3> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ex-MHV-pain-3"];
+  fhir:Resource.id [ fhir:value "ex-MHV-pain-3"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain";
@@ -21,12 +21,12 @@
        fhir:Coding.system [ fhir:value "https://wiki.mobilehealth.va.gov/x/Onc1C" ];
        fhir:Coding.code [ fhir:value "2ce6d9aa-c068-4809-8dda-662bcb16d09a" ]
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-MHV-pain-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-MHV-pain-3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VA.MHV.pain.html\">VA MHV Pain Observation</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Pain severity - 0-10 verbal numeric rating [Score] - Reported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#72514-3; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#225908003 &quot;Pain Score&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-25 11:50:50-0500</p><p><b>value</b>: 3</p></div>"
-  ];
-  fhir:Observation.status [ fhir:value "final"];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-MHV-pain-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-MHV-pain-3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VA.MHV.pain.html\">VA MHV Pain Observation</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Pain severity - 0-10 verbal numeric rating [Score] - Reported <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#72514-3; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#225908003 &quot;Pain Score&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-25 23:50:50-0500</p><p><b>value</b>: 3</p></div>"
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
   fhir:Observation.category [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -34,7 +34,7 @@
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
        fhir:Coding.code [ fhir:value "vital-signs" ]
      ]
-  ];
+  ]; # 
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -49,15 +49,15 @@
        fhir:Coding.code [ fhir:value "225908003" ];
        fhir:Coding.display [ fhir:value "Pain Score" ]
      ]
-  ];
+  ]; # 
   fhir:Observation.subject [
      fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
      fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
-  ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2004-12-25T23:50:50-05:00"^^xsd:dateTime];
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2004-12-25T23:50:50-05:00"^^xsd:dateTime]; # 
   fhir:Observation.valueQuantity [
      fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

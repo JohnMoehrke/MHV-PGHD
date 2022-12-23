@@ -1,87 +1,69 @@
 {
-  "resourceType": "ValueSet",
-  "id": "AllAppIdCodes",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-OnclC.html\"><code>https://wiki.mobilehealth.va.gov/x/Onc1C</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-CPM.html\"><code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "AllAppIdCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-OnclC.html\"><code>https://wiki.mobilehealth.va.gov/x/Onc1C</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-CPM.html\"><code>https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping</code></a></li></ul></div>"
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 2,
-      "_valueInteger": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-            "valueCanonical": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 2,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
+      }]
+    }
+  }],
+  "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes",
+  "version" : "0.2.9-beta",
+  "name" : "AllAppIdCodes",
+  "title" : "PGD App Id Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-12-23T11:36:27-06:00",
+  "publisher" : "John Moehrke (himself)",
+  "contact" : [{
+    "name" : "John Moehrke (himself)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://healthcaresecprivacy.blogspot.com"
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueCode": "trial-use",
-      "_valueCode": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-            "valueCanonical": "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"
-          }
-        ]
-      }
-    }
-  ],
-  "url": "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes",
-  "version": "0.2.9-beta",
-  "name": "AllAppIdCodes",
-  "title": "PGD App Id Codes",
-  "status": "active",
-  "experimental": false,
-  "date": "2022-11-23T09:43:25-06:00",
-  "publisher": "John Moehrke (himself)",
-  "contact": [
-    {
-      "name": "John Moehrke (himself)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://healthcaresecprivacy.blogspot.com"
-        },
-        {
-          "system": "email",
-          "value": "JohnMoehrke@gmail.com"
-        }
-      ]
+      "system" : "email",
+      "value" : "JohnMoehrke@gmail.com"
+    }]
+  },
+  {
+    "name" : "John Moehrke (himself)",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "JohnMoehrke@gmail.com"
+    }]
+  }],
+  "description" : "All valid App ID codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://wiki.mobilehealth.va.gov/x/Onc1C"
     },
     {
-      "name": "John Moehrke (himself)",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "JohnMoehrke@gmail.com"
-        }
-      ]
-    }
-  ],
-  "description": "All valid App ID codes",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
-        }
-      ]
-    }
-  ],
-  "compose": {
-    "include": [
-      {
-        "system": "https://wiki.mobilehealth.va.gov/x/Onc1C"
-      },
-      {
-        "system": "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"
-      }
-    ]
+      "system" : "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"
+    }]
   }
 }

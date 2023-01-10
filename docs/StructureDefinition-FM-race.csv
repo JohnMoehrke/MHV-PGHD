@@ -1,5 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
-"Extension","Extension","","","",0,*,"","","","","Race","What is the Race of this family member
+"Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Race","What is the Race of this family member
 
 Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""

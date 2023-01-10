@@ -213,12 +213,6 @@
   
 
 
-  
-    <li>
-      <a href="StructureDefinition-VA.MHV.bloodPressure.profile.ttl.html">TTL</a>
-    </li>
-  
-
 
 </ul>
 
@@ -402,10 +396,6 @@ This was not agreed by Mobile.</p>
         <a href="#tabs-json">Pseudo-JSON</a>
       </li>-->
 
-
-      <!--<li>
-        <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li>-->
 
       <li>
         <a href="#tabs-summ">Statistics/References</a>
@@ -840,7 +830,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         },
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.dataAbsentReason" title="Provides a reason why the expected value in the element Observation.component.value[x] is missing" class="dict"><span style="text-decoration: underline">dataAbsentReason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Why the component result is missing</a></span>
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.interpretation" title="A categorical assessment of an observation value.  For example, high, low, normal" class="dict"><span style="text-decoration: underline">interpretation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">High, low, normal, etc.</a></span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>. One of these 0:</span>
+        "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.referenceRange" title="Guidance on how to interpret the value by comparison to a normal or recommended range" class="dict"><span style="text-decoration: underline">referenceRange</span></a>" : [&lt;<span style="color: darkgreen">n/a</span>&gt;] <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>
       },
       { // <span style="color: navy; opacity: 0.8">Component results</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span>
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -860,7 +850,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         },
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.dataAbsentReason" title="Provides a reason why the expected value in the element Observation.component.value[x] is missing" class="dict"><span style="text-decoration: underline">dataAbsentReason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Why the component result is missing</a></span>
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.interpretation" title="A categorical assessment of an observation value.  For example, high, low, normal" class="dict"><span style="text-decoration: underline">interpretation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">High, low, normal, etc.</a></span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>. One of these 0:</span>
+        "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.referenceRange" title="Guidance on how to interpret the value by comparison to a normal or recommended range" class="dict"><span style="text-decoration: underline">referenceRange</span></a>" : [&lt;<span style="color: darkgreen">n/a</span>&gt;] <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>
       }
     ],
   }
@@ -869,16 +859,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       </div>
     </div>-->
 
-
-    <!--<a name="tabs-ttl"> </a>
-    <div id="tabs-ttl">
-      <div id="ttl">
-        <div id="ttl-inner">
-          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
-
-        </div>
-      </div>
-    </div>-->
 
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
@@ -1341,7 +1321,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         },
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.dataAbsentReason" title="Provides a reason why the expected value in the element Observation.component.value[x] is missing" class="dict"><span style="text-decoration: underline">dataAbsentReason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Why the component result is missing</a></span>
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.interpretation" title="A categorical assessment of an observation value.  For example, high, low, normal" class="dict"><span style="text-decoration: underline">interpretation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">High, low, normal, etc.</a></span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>. One of these 0:</span>
+        "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.referenceRange" title="Guidance on how to interpret the value by comparison to a normal or recommended range" class="dict"><span style="text-decoration: underline">referenceRange</span></a>" : [&lt;<span style="color: darkgreen">n/a</span>&gt;] <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>
       },
       { // <span style="color: navy; opacity: 0.8">Component results</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span>
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -1361,7 +1341,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         },
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.dataAbsentReason" title="Provides a reason why the expected value in the element Observation.component.value[x] is missing" class="dict"><span style="text-decoration: underline">dataAbsentReason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Why the component result is missing</a></span>
         "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.interpretation" title="A categorical assessment of an observation value.  For example, high, low, normal" class="dict"><span style="text-decoration: underline">interpretation</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">High, low, normal, etc.</a></span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>. One of these 0:</span>
+        "<a href="StructureDefinition-VA.MHV.bloodPressure.html#Observation.component.referenceRange" title="Guidance on how to interpret the value by comparison to a normal or recommended range" class="dict"><span style="text-decoration: underline">referenceRange</span></a>" : [&lt;<span style="color: darkgreen">n/a</span>&gt;] <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Provides guide for interpretation of component result</span>
       }
     ],
   }
@@ -1369,16 +1349,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         </div>
       </div>-->
 
-
-      <!--<div id="all-ttl">
-        <p>
-          <b>TTL Template</b>
-        </p>
-        <div id="all-ttl-inner">
-          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
-
-        </div>
-      </div>-->
 
       <div id="all-summ">
         <p>This structure is derived from <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -1520,7 +1490,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 23, 2022 11:36-0600">2022-12-23</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 10, 2023 10:51-0600">2023-01-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

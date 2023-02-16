@@ -80,7 +80,7 @@
        fhir:ContactPoint.value [ fhir:value "JohnMoehrke@gmail.com" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.\n\nNote that Pain is not part of FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have both LOINC#72514-3 and SCT#225908003 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with no units\n  - must have integer between 0-10\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier"]; # 
+  fhir:StructureDefinition.description [ fhir:value "A profile on the Observation that declares how MHV will Create in PGHD for pain measurements.\n\nNote that Pain is not part of FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have both LOINC#72514-3 and SCT#225908003 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with no units\n  - must have integer between 0-10\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier"]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

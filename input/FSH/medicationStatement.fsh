@@ -4,7 +4,7 @@ Parent:         MedicationStatement
 Id:             VA.MHV.medication
 Title:          "VA MHV Medication"
 Description:    """
-A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.
+A profile on the MedicationStatement that declares how MHV will Create in PGHD.
 
 **Proposed mapping not yet approved for implementation**
 

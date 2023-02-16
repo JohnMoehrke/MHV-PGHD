@@ -317,7 +317,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "A profile on the Observation that declares how MHV will Read/Create/Update in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).\n\nThis profile is consistent with FHIR core Vital-Signs for Oxygen Saturation\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#59408-5 code AND LOINC#2708-6\n  - Argonaut and VCM use 59408-5\n  - FHIR Core R4 also adds 2708-6\n- must have effectiveDateTime \n  - others might use effectivePeriod\n- must have a valueQuantity with UCUM '%' units\n  * must be between 50% &lt;= n &lt;= 100%\n- must have status at final or preliminary\n- must point at the patient\n- may have a hasMember of a heart-rate and/or respiration-rate\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>" : "A profile on the Observation that declares how MHV will Read/Create in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).\n\nThis profile is consistent with FHIR core Vital-Signs for Oxygen Saturation\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#59408-5 code AND LOINC#2708-6\n  - Argonaut and VCM use 59408-5\n  - FHIR Core R4 also adds 2708-6\n- must have effectiveDateTime \n  - others might use effectivePeriod\n- must have a valueQuantity with UCUM '%' units\n  * must be between 50% &lt;= n &lt;= 100%\n- must have status at final or preliminary\n- must point at the patient\n- may have a hasMember of a heart-rate and/or respiration-rate\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -4979,7 +4979,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 10, 2023 10:51-0600">2023-01-10</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 16, 2023 09:21-0600">2023-02-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -77,7 +77,7 @@ Parent:         FamilyMemberHistory
 Id:             VA.MHV.familymemberhistory
 Title:          "VA MHV FamilyMemberHistory"
 Description:    """
-A profile on the FamilyMemberHistory that declares how MHV will Create/Update in PGHD for an family member history record.
+A profile on the FamilyMemberHistory that declares how MHV will Create in PGHD for an family member history record.
 
 **Proposed mapping not yet approved for implementation**
 

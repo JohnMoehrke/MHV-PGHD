@@ -6,7 +6,7 @@ Parent:         Observation
 Id:             VA.MHV.pain
 Title:          "VA MHV Pain Observation"
 Description:    """
-A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.
+A profile on the Observation that declares how MHV will Create in PGHD for pain measurements.
 
 Note that Pain is not part of FHIR core vital-signs.
 

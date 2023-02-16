@@ -51,7 +51,7 @@
       "value" : "JohnMoehrke@gmail.com"
     }]
   }],
-  "description" : "A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8867-4 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units only of beats per minute\n  - must be value 40 <= n <= 240\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
+  "description" : "A profile on the Observation that declares how MHV will Create in PGHD for heart rate measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8867-4 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units only of beats per minute\n  - must be value 40 <= n <= 240\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

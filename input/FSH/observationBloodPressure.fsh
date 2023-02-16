@@ -5,7 +5,7 @@ Parent:         Observation
 Id:             VA.MHV.bloodPressure
 Title:          "VA MHV Blood Pressure Observation"
 Description:    """
-A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for blood pressure measurements.
+A profile on the Observation that declares how MHV will Create/Read in PGHD for blood pressure measurements.
 
 Note: This profile is not aligned with FHIR core Vital-Signs. FHIR Core Vital-Signs would prefer we use [LOINC 85354-9](https://loinc.org/85354-9/) - Blood pressure panel with all children optional.
 This was not agreed by Mobile.

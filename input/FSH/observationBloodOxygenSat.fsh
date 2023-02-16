@@ -6,7 +6,7 @@ Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
 Id:             VA.MHV.bloodOxygenSat
 Title:          "VA MHV Blood Oxygen Saturation Observation"
 Description:    """
-A profile on the Observation that declares how MHV will Read/Create/Update in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).
+A profile on the Observation that declares how MHV will Read/Create in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).
 
 This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 

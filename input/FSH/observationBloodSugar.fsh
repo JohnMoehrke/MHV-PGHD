@@ -6,7 +6,7 @@ Parent: Observation
 Id:             VA.MHV.bloodSugar
 Title:          "VA MHV Blood Sugar Observation"
 Description:    """
-A profile on the Observation that declares how MHV could Create/Update in PGHD for blood sugar measurements. Indicate fasting status as a code.
+A profile on the Observation that declares how MHV could Create in PGHD for blood sugar measurements. Indicate fasting status as a code.
 
 **Switched to this with the move to R4**
 

@@ -59,10 +59,7 @@ Feature: view of sample weights
     Given [Example MHV weight Observation](Observation-ex-MHV-weight.html) is [loaded into PGHD](testplan.html#load-x-into-pghd)
     When Michale edits this weight changing the weight value to 200 lbs
     And submits the change to PGHD
-    Then saving will succeed
-    And the Test-Bench can retrieve the resource successfully
-    And the Test-Bench shows the weight value has changed to 200 lbs
-    And no other elements from the original are changed
+    Then saving will **fail** as no update is allowed
 
 #### Simple MHV Weight
 Given [Example MHV weight Observation](Observation-ex-MHV-weight.html) is [loaded into PGHD](testplan.html#load-x-into-pghd)

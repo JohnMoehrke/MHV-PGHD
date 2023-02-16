@@ -4,7 +4,7 @@ Parent:         http://hl7.org/fhir/StructureDefinition/heartrate
 Id:             VA.MHV.heartRate
 Title:          "VA MHV HeartRate Observation"
 Description:    """
-A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.
+A profile on the Observation that declares how MHV will Create in PGHD for heart rate measurements.
 
 Note this is compliant with FHIR core vital-signs.
 

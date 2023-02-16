@@ -100,7 +100,7 @@
       <value value="JohnMoehrke@gmail.com"/>
     </telecom>
   </contact>
-  <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for pain measurements.&#xA;&#xA;Note that Pain is not part of FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have both LOINC#72514-3 and SCT#225908003 code&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must have valueQuantity with no units&#xA;  - must have integer between 0-10&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+  <description value="A profile on the Observation that declares how MHV will Create in PGHD for pain measurements.&#xA;&#xA;Note that Pain is not part of FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have both LOINC#72514-3 and SCT#225908003 code&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must have valueQuantity with no units&#xA;  - must have integer between 0-10&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

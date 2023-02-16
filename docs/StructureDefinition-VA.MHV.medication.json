@@ -49,7 +49,7 @@
       "value" : "JohnMoehrke@gmail.com"
     }]
   }],
-  "description" : "A profile on the MedicationStatement that declares how MHV will Create/Update in PGHD.\n\n**Proposed mapping not yet approved for implementation**\n\n* NOT Derived off of US-Core as there is no MedicationStatement in US-Core\n* must be marked with MHV app tag\n* must have a medication name\n* must have a strength per dose\n* must have a reason for use\n* must have effectiveDateTime\n* must have status at final, stopped, or complete\n* must point at the patient\n* may have a note \n* may have quantity\n* may have frequency\n* may have method of taking\n* may have a rx number\n* may indicate where it was filled\n* may indicate who prescribed\n* may indicate if side affects or none\n* once created will or might have an id, versionId, lastUpdated, text, and identifier",
+  "description" : "A profile on the MedicationStatement that declares how MHV will Create in PGHD.\n\n**Proposed mapping not yet approved for implementation**\n\n* NOT Derived off of US-Core as there is no MedicationStatement in US-Core\n* must be marked with MHV app tag\n* must have a medication name\n* must have a strength per dose\n* must have a reason for use\n* must have effectiveDateTime\n* must have status at final, stopped, or complete\n* must point at the patient\n* may have a note \n* may have quantity\n* may have frequency\n* may have method of taking\n* may have a rx number\n* may indicate where it was filled\n* may indicate who prescribed\n* may indicate if side affects or none\n* once created will or might have an id, versionId, lastUpdated, text, and identifier",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

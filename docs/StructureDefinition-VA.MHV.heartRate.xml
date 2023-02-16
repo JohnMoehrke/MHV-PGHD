@@ -79,7 +79,7 @@
       <value value="JohnMoehrke@gmail.com"/>
     </telecom>
   </contact>
-  <description value="A profile on the Observation that declares how MHV will Create/Update in PGHD for heart rate measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8867-4 code&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must have valueQuantity with units only of beats per minute&#xA;  - must be value 40 &lt;= n &lt;= 240&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+  <description value="A profile on the Observation that declares how MHV will Create in PGHD for heart rate measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8867-4 code&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must have valueQuantity with units only of beats per minute&#xA;  - must be value 40 &lt;= n &lt;= 240&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

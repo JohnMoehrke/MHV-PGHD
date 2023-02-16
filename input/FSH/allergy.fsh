@@ -5,7 +5,7 @@ Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyi
 Id:             VA.MHV.allergy
 Title:          "VA MHV Allergy or Intolerance"
 Description:    """
-A profile on the AllergyIntolerance that declares how MHV will Create/Update in PGHD for allergy or intolerance.
+A profile on the AllergyIntolerance that declares how MHV will Create in PGHD for allergy or intolerance.
 
 Given that MyHealtheVet has access to the medical record (Vista and Cerner), there should be logic keeping a patient from entering a duplicate allergy or intolerance. 
 

@@ -5,7 +5,7 @@ Parent:         http://hl7.org/fhir/us/core/StructureDefinition/us-core-immuniza
 Id:             VA.MHV.immunization
 Title:          "VA MHV Immunization"
 Description:    """
-A profile on the Immunization that declares how MHV will Create/Update in PGHD for an immunization.
+A profile on the Immunization that declares how MHV will Create in PGHD for an immunization.
 
 **Proposed mapping not yet approved for implementation**
 

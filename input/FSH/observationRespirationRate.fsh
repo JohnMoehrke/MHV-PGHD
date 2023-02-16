@@ -5,7 +5,7 @@ Parent:         http://hl7.org/fhir/StructureDefinition/resprate
 Id:             VA.MHV.respirationRate
 Title:          "VA MHV Respiration Rate Observation"
 Description:    """
-A profile on the Observation that declares how MHV will Read/Create/Update/Delete in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).
+A profile on the Observation that declares how MHV will Read/Create in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).
 
 This profile is consistent with FHIR core Vital-Signs for Respiration Rate
 

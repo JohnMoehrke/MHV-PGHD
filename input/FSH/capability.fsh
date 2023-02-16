@@ -34,7 +34,6 @@ Usage: #definition
     * interaction[+].code = #search-type
     * interaction[+].code = #read
     * interaction[+].code = #create
-    * interaction[+].code = #update
     * searchParam[+]
       * name = "patient.identifier"
       * type = #token

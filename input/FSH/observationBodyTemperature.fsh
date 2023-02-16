@@ -5,7 +5,7 @@ Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
 Id:             VA.MHV.bodyTemperature
 Title:          "VA MHV Body Temperature Observation"
 Description:    """
-A profile on the Observation that declares how MHV will Create/Update/Read in PGHD for body temperature measurements.
+A profile on the Observation that declares how MHV will Create/Read in PGHD for body temperature measurements.
 
 Note this is compliant with FHIR core vital-signs.
 

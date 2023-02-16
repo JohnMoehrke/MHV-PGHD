@@ -5,7 +5,7 @@ Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
 Id:             VA.MHV.bodyWeight
 Title:          "VA MHV BodyWeight Observation"
 Description:    """
-A profile on the Observation that declares how MHV will Create/Update in PGHD for body weight measurements.
+A profile on the Observation that declares how MHV will Create in PGHD for body weight measurements.
 
 Note this is compliant with FHIR core vital-signs.
 

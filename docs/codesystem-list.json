@@ -1,0 +1,28 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "Ages",
+      "title" : "Ages in decades",
+      "description" : "Used when the Age is not known very well"
+    },
+    {
+      "url" : "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "AppIdCodesToo",
+      "title" : "PGD other apps",
+      "description" : "Seems to be used by Mobile Kidney"
+    },
+    {
+      "url" : "https://wiki.mobilehealth.va.gov/x/Onc1C",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "AppIdCodes",
+      "title" : "PGD apps",
+      "description" : "App identifiers for use with PGD"
+    }
+  ]
+}

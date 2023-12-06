@@ -23,6 +23,7 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 - must point at the patient
 - may have a hasMember of a heart-rate and/or respiration-rate
 - may have a note (comment)
+- MHV captures Oxygen Setting, but this is not captured or stored in PGHD
 - once created will or might have an id, versionId, lastUpdated, text, and identifier
 - DSTU2 use comment rather than note
 """

@@ -17,7 +17,7 @@ This profile is consistent with FHIR core Vital-Signs for Respiration Rate
   - others might use effectivePeriod
 - must have valueQuantity with units only of breaths per minute
   - typical is 12-16 breaths per minute
-  - must be a value 6 <= n <= 40
+  - must be a value 5 <= n <=120
 - must have status at final or preliminary
 - must point at the patient
 - may have a note (comment)
@@ -37,8 +37,8 @@ This profile is consistent with FHIR core Vital-Signs for Respiration Rate
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#/min
-* valueQuantity.value ^minValueQuantity = 6 UCUM#/min
-* valueQuantity.value ^maxValueQuantity = 40 UCUM#/min
+* valueQuantity.value ^minValueQuantity = 5 UCUM#/min
+* valueQuantity.value ^maxValueQuantity = 120 UCUM#/min
 // status of preliminary and final found in the PGHD database
 //* status = #final
 * subject 1..1

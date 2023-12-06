@@ -14,7 +14,7 @@ Note this is compliant with FHIR core vital-signs.
 - must have effectiveDateTime
   - others might use effectivePeriod
 - must have valueQuantity with units only of beats per minute
-  - must be value 40 <= n <= 240
+  - must be value 10 <= n <= 250
 - must have status at final
 - must point at the patient
 - may have a note (comment)
@@ -34,8 +34,8 @@ Note this is compliant with FHIR core vital-signs.
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit = UCUM#/min
-* valueQuantity.value ^minValueQuantity = 40 UCUM#/min
-* valueQuantity.value ^maxValueQuantity = 240 UCUM#/min
+* valueQuantity.value ^minValueQuantity = 10 UCUM#/min
+* valueQuantity.value ^maxValueQuantity = 250 UCUM#/min
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)

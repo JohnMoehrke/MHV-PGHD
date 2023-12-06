@@ -5,100 +5,81 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "mhv-body-temperatures"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>[degF]</td><td>degree Fahrenheit</td></tr><tr><td>Cel</td><td>degree Celsius</td></tr></table></li></ul></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ];
-     fhir:Extension.valueInteger [
-       fhir:value "2"^^xsd:integer;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ];
-         fhir:Extension.valueCanonical [
-           fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example";
+<https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mhv-body-temperatures"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>[degF]</td><td>degree Fahrenheit</td></tr><tr><td>Cel</td><td>degree Celsius</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "2"^^xsd:integer ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"^^xsd:anyURI ;
            fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example>
          ]
-       ]
+       ] )
      ]
-  ], [
-     fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
-     fhir:Extension.valueCode [
-       fhir:value "trial-use";
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ];
-         fhir:Extension.valueCanonical [
-           fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example";
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"^^xsd:anyURI ;
            fhir:link <https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example>
          ]
-       ]
+       ] )
      ]
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures"]; # 
-  fhir:ValueSet.version [ fhir:value "0.2.9-beta"]; # 
-  fhir:ValueSet.name [ fhir:value "MHVbodyTemperatures"]; # 
-  fhir:ValueSet.title [ fhir:value "The body temperature measurement types that MHV supports"]; # 
-  fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ValueSet.date [ fhir:value "2023-02-16T09:21:54-06:00"^^xsd:dateTime]; # 
-  fhir:ValueSet.publisher [ fhir:value "John Moehrke (himself)"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "John Moehrke (himself)" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://healthcaresecprivacy.blogspot.com" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "JohnMoehrke@gmail.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "John Moehrke (himself)" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "JohnMoehrke@gmail.com" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "These are the UCUM types that MHV supports."]; # 
-  fhir:ValueSet.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ]
-     ]
-  ]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://unitsofmeasure.org" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "[degF]" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "degree Fahrenheit" ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "Cel" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "degree Celsius" ]
-       ]
-     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.10-beta"] ; # 
+  fhir:name [ fhir:v "MHVbodyTemperatures"] ; # 
+  fhir:title [ fhir:v "The body temperature measurement types that MHV supports"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-06T12:46:33-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "John Moehrke (himself)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "John Moehrke (himself)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://healthcaresecprivacy.blogspot.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "JohnMoehrke@gmail.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "John Moehrke (himself)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "JohnMoehrke@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "These are the UCUM types that MHV supports."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "[degF]" ] ;
+         fhir:display [ fhir:v "degree Fahrenheit" ]
+       ] [
+         fhir:code [ fhir:v "Cel" ] ;
+         fhir:display [ fhir:v "degree Celsius" ]
+       ] )
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 {
   "package": "va.mhv.example",
-  "version": "0.2.9-beta",
+  "version": "0.2.10-beta",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
   "extensions": [
@@ -8,7 +8,6 @@
       "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Adopted",
       "title": "Adopted indication",
       "types": [
-        "boolean",
         "boolean"
       ]
     },
@@ -16,7 +15,6 @@
       "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Ethnicity",
       "title": "Ethnicity",
       "types": [
-        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -24,7 +22,6 @@
       "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-MultiBirth",
       "title": "MultiBirth indication",
       "types": [
-        "integer",
         "integer"
       ]
     },
@@ -32,7 +29,6 @@
       "url": "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/FM-Race",
       "title": "Race",
       "types": [
-        "CodeableConcept",
         "CodeableConcept"
       ]
     }
@@ -95,9 +91,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -108,13 +101,7 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
@@ -127,9 +114,6 @@
       "StructureDefinition",
       "ValueSet"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "CapabilityStatement",
       "CodeSystem",
@@ -137,8 +121,10 @@
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",
       "StructureDefinition",
-      "StructureDefinition.snapshot.element",
       "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",

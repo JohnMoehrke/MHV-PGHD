@@ -26,12 +26,12 @@
     }
   }],
   "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites",
-  "version" : "0.2.9-beta",
+  "version" : "0.2.10-beta",
   "name" : "MHVbloodSugarMethods",
   "title" : "The methods of measurement for blood sugar that MHV supports",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-02-16T09:21:54-06:00",
+  "date" : "2023-12-06T12:46:33-06:00",
   "publisher" : "John Moehrke (himself)",
   "contact" : [{
     "name" : "John Moehrke (himself)",

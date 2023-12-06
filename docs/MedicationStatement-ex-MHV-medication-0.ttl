@@ -6,149 +6,133 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://johnmoehrke.github.io/MHV-PGHD/MedicationStatement/ex-MHV-medication-0> a fhir:MedicationStatement;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ex-MHV-medication-0"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication";
-       fhir:index 0;
+<https://johnmoehrke.github.io/MHV-PGHD/MedicationStatement/ex-MHV-medication-0> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ex-MHV-medication-0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication"^^xsd:anyURI ;
        fhir:link <https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.medication>
-     ];
-     fhir:Meta.tag [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://wiki.mobilehealth.va.gov/x/Onc1C" ];
-       fhir:Coding.code [ fhir:value "2ce6d9aa-c068-4809-8dda-662bcb16d09a" ]
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"ex-MHV-medication-0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;ex-MHV-medication-0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VA.MHV.medication.html\">VA MHV Medication</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>identifier</b>: id: 1234</p><p><b>basedOn</b>: <a name=\"in-Request\"> </a></p><blockquote><p/><p><a name=\"in-Request\"> </a></p><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote><p><b>partOf</b>: <a name=\"in-Dispense\"> </a></p><blockquote><p/><p><a name=\"in-Dispense\"> </a></p><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#in-Pharmacy\">#in-Pharmacy</a></td></tr></table></blockquote><p><b>status</b>: active</p><p><b>category</b>: Patient Specified <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-category.html\">Medication usage category codes</a>#patientspecified)</span></p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-25 --&gt; 2021-12-25</p><p><b>dateAsserted</b>: 2020-11-24</p><p><b>reasonCode</b>: Body pains <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>note</b>: a minimal medication</p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 tablet</p><p><b>route</b>: Oral route <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#26643006)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #in-Pharmacy</b><a name=\"in-Pharmacy\"> </a></p><p><b>type</b>: Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>name</b>: CVS</p><p><b>telecom</b>: <a href=\"tel:+17773339998\">+17773339998</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: MedicationDispense #in-Dispense</b><a name=\"in-Dispense\"> </a></p><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#in-Pharmacy\">#in-Pharmacy</a></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: MedicationRequest #in-Request</b><a name=\"in-Request\"> </a></p><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote></div>"
-  ]; # 
-  fhir:DomainResource.contained [
-     a fhir:Organization;
-     fhir:index 0;
-     fhir:Resource.id [ fhir:value "in-Pharmacy" ];
-     fhir:Organization.type [
-       fhir:index 0;
-       fhir:CodeableConcept.text [ fhir:value "Pharmacy" ]
-     ];
-     fhir:Organization.name [ fhir:value "CVS" ];
-     fhir:Organization.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "phone" ];
-       fhir:ContactPoint.value [ fhir:value "+17773339998" ]
-     ]
-  ], [
-     a fhir:MedicationDispense;
-     fhir:index 1;
-     fhir:Resource.id [ fhir:value "in-Dispense" ];
-     fhir:MedicationDispense.status [ fhir:value "unknown" ];
-     fhir:MedicationDispense.medicationCodeableConcept [
-       fhir:CodeableConcept.text [ fhir:value "Tylenol" ]
-     ];
-     fhir:MedicationDispense.performer [
-       fhir:index 0;
-       fhir:MedicationDispense.performer.actor [
-         fhir:Reference.reference [ fhir:value "#in-Pharmacy" ]
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [ fhir:v "https://wiki.mobilehealth.va.gov/x/Onc1C"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2ce6d9aa-c068-4809-8dda-662bcb16d09a" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"ex-MHV-medication-0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;ex-MHV-medication-0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VA.MHV.medication.html\">VA MHV Medication</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>identifier</b>: id: 1234</p><p><b>basedOn</b>: <a name=\"in-Request\"> </a></p><blockquote><p/><p><a name=\"in-Request\"> </a></p><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote><p><b>partOf</b>: <a name=\"in-Dispense\"> </a></p><blockquote><p/><p><a name=\"in-Dispense\"> </a></p><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#in-Pharmacy\">#in-Pharmacy</a></td></tr></table></blockquote><p><b>status</b>: active</p><p><b>category</b>: Patient Specified <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-category.html\">Medication usage category codes</a>#patientspecified)</span></p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-25 --&gt; 2021-12-25</p><p><b>dateAsserted</b>: 2020-11-24</p><p><b>reasonCode</b>: Body pains <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>note</b>: a minimal medication</p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 tablet</p><p><b>route</b>: Oral route <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#26643006)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #in-Pharmacy</b><a name=\"in-Pharmacy\"> </a></p><p><b>type</b>: Pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>name</b>: CVS</p><p><b>telecom</b>: <a href=\"tel:+17773339998\">+17773339998</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: MedicationDispense #in-Dispense</b><a name=\"in-Dispense\"> </a></p><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#in-Pharmacy\">#in-Pharmacy</a></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: MedicationRequest #in-Request</b><a name=\"in-Request\"> </a></p><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "in-Pharmacy" ] ;
+     fhir:type ( [
+       fhir:text [ fhir:v "Pharmacy" ]
+     ] ) ;
+     fhir:name [ fhir:v "CVS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+17773339998" ]
+     ] )
+  ] [
+     a fhir:MedicationDispense ;
+     fhir:id [ fhir:v "in-Dispense" ] ;
+     fhir:status [ fhir:v "unknown" ] ;
+     fhir:medication [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "Tylenol" ]
+     ] ;
+     fhir:performer ( [
+       fhir:actor [
+         fhir:reference [ fhir:v "#in-Pharmacy" ]
        ]
+     ] )
+  ] [
+     a fhir:MedicationRequest ;
+     fhir:id [ fhir:v "in-Request" ] ;
+     fhir:identifier ( [
+       fhir:value [ fhir:v "1234" ]
+     ] ) ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:intent [ fhir:v "order" ] ;
+     fhir:medication [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "Tylenol" ]
+     ] ;
+     fhir:subject [
+       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient> ;
+       fhir:reference [ fhir:v "Patient/ex-patient" ]
+     ] ;
+     fhir:requester [
+       fhir:display [ fhir:v "Dr. Prancy Practitioner" ]
      ]
-  ], [
-     a fhir:MedicationRequest;
-     fhir:index 2;
-     fhir:Resource.id [ fhir:value "in-Request" ];
-     fhir:MedicationRequest.identifier [
-       fhir:index 0;
-       fhir:Identifier.value [ fhir:value "1234" ]
-     ];
-     fhir:MedicationRequest.status [ fhir:value "active" ];
-     fhir:MedicationRequest.intent [ fhir:value "order" ];
-     fhir:MedicationRequest.medicationCodeableConcept [
-       fhir:CodeableConcept.text [ fhir:value "Tylenol" ]
-     ];
-     fhir:MedicationRequest.subject [
-       fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
-       fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
-     ];
-     fhir:MedicationRequest.requester [
-       fhir:Reference.display [ fhir:value "Dr. Prancy Practitioner" ]
-     ]
-  ]; # 
-  fhir:MedicationStatement.identifier [
-     fhir:index 0;
-     fhir:Identifier.value [ fhir:value "1234" ]
-  ]; # 
-  fhir:MedicationStatement.basedOn [
-     fhir:index 0;
-     fhir:Reference.reference [ fhir:value "#in-Request" ]
-  ]; # 
-  fhir:MedicationStatement.partOf [
-     fhir:index 0;
-     fhir:Reference.reference [ fhir:value "#in-Dispense" ]
-  ]; # 
-  fhir:MedicationStatement.status [ fhir:value "active"]; # 
-  fhir:MedicationStatement.category [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medication-statement-category" ];
-       fhir:Coding.code [ fhir:value "patientspecified" ]
-     ]
-  ]; # 
-  fhir:MedicationStatement.medicationCodeableConcept [
-     fhir:CodeableConcept.text [ fhir:value "Tylenol" ]
-  ]; # 
-  fhir:MedicationStatement.subject [
-     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient>;
-     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
-  ]; # 
-  fhir:MedicationStatement.effectivePeriod [
-     fhir:Period.start [ fhir:value "2004-12-25"^^xsd:date ];
-     fhir:Period.end [ fhir:value "2021-12-25"^^xsd:date ]
-  ]; # 
-  fhir:MedicationStatement.dateAsserted [ fhir:value "2020-11-24"^^xsd:date]; # 
-  fhir:MedicationStatement.reasonCode [
-     fhir:index 0;
-     fhir:CodeableConcept.text [ fhir:value "Body pains" ]
-  ]; # 
-  fhir:MedicationStatement.note [
-     fhir:index 0;
-     fhir:Annotation.text [ fhir:value "a minimal medication" ]
-  ]; # 
-  fhir:MedicationStatement.dosage [
-     fhir:index 0;
-     fhir:Dosage.text [ fhir:value "1 tablet" ];
-     fhir:Dosage.route [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a sct:26643006;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "26643006" ]
-       ]
-     ];
-     fhir:Dosage.doseAndRate [
-       fhir:index 0;
-       fhir:Dosage.doseAndRate.doseQuantity [
-         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
-         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-         fhir:Quantity.code [ fhir:value "{Capsule}" ]
-       ];
-       fhir:Dosage.doseAndRate.rateRatio [
-         fhir:Ratio.numerator [
-           fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ]
-         ];
-         fhir:Ratio.denominator [
-           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
-           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-           fhir:Quantity.code [ fhir:value "/d" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "1234" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:reference [ fhir:v "#in-Request" ]
+  ] ) ; # 
+  fhir:partOf ( [
+     fhir:reference [ fhir:v "#in-Dispense" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/medication-statement-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "patientspecified" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Tylenol" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Patient/ex-patient> ;
+     fhir:reference [ fhir:v "Patient/ex-patient" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2004-12-25"^^xsd:date ] ;
+     fhir:end [ fhir:v "2021-12-25"^^xsd:date ]
+  ] ; # 
+  fhir:dateAsserted [ fhir:v "2020-11-24"^^xsd:date] ; # 
+  fhir:reasonCode ( [
+     fhir:text [ fhir:v "Body pains" ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "a minimal medication" ]
+  ] ) ; # 
+  fhir:dosage ( [
+     fhir:text [ fhir:v "1 tablet" ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:26643006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Capsule" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "U" ]
+       ] ;
+       fhir:rate [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "3"^^xsd:decimal ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "/d" ]
          ]
        ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://johnmoehrke.github.io/MHV-PGHD/MedicationStatement/ex-MHV-medication-0.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -15,7 +15,7 @@ Note this is compliant with FHIR core vital-signs.
 - must have effectiveDateTime
   - others might use effectivePeriod
 - must have valueQuantity with units from the MHV body weights (lbs and kg)
-  - must be value 60 <= n <= 1000 lbs
+  - must be value 0.25 <= n <= 999 lbs
 - must have status at final
 - must point at the patient
 - may have a note (comment)
@@ -35,8 +35,8 @@ Note this is compliant with FHIR core vital-signs.
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit from MHVbodyWeights
-* valueQuantity.value ^minValueQuantity = 60 UCUM#[lb_av]
-* valueQuantity.value ^maxValueQuantity = 1000 UCUM#[lb_av]
+* valueQuantity.value ^minValueQuantity = 0.25 UCUM#[lb_av]
+* valueQuantity.value ^maxValueQuantity = 999 UCUM#[lb_av]
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)

@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>VA.MHV.EXAMPLE\VA MHV FamilyMemberHistory - Mappings - FHIR v4.0.1</title>
+    <title>VA MHV FamilyMemberHistory - Mappings - MyHealtheVet use of PGHD v0.2.10-beta</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,10 +44,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -69,7 +69,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MyHealtheVet use of PGHD</span>
             <br/>
-            <span style="display:inline-block;">0.2.9-beta - ci-build
+            <span style="display:inline-block;">0.2.10-beta - ci-build
 
 
 
@@ -150,7 +150,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.9-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.10-beta) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -219,6 +219,7 @@
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: MHVfamilymemberhistory - Mappings</h2>
+
   <table class="colsi">
     <tr>
 
@@ -298,55 +299,63 @@
 </table>
 <a name="MHV-PGHD-FMH-UI"> </a><h3>Mappings for MyHealtheVet new Family Health History UI mapping to FHIR/PGHD (MHV-new-UI)</h3><table class="grid">
  <tr><td colspan="3"><b>MHVfamilymemberhistory</b></td></tr>
- <tr><td>FamilyMemberHistory</td><td>MHV-UI</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>(MHV tag)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (sibling)</td><td>number of siblings</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (adopted)</td><td>Adopted</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (ethnicity)</td><td>Ethnicity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (race)</td><td>Race</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>(complete)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>(the Patient)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>(the date recorded)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>the family member name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;relationship</td><td>the family member relationship</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;sex</td><td>the gender of the family member</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;born[x]</td><td>the birthdate of the family member</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;age[x]</td><td>the age of the family member</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;estimatedAge</td><td>true if age estimated</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;deceased[x]</td><td>death</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Note</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>Condition/Problem</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outcome</td><td>manifestation of condition/problem</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onset[x]</td><td>when this condition first noted</td> </tr>
+ <tr><td>FamilyMemberHistory</td><td>MHV-UI</td><td><p>New in the MyHealtheVet FamilyMemberHistory User Interface</p>
+</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>(MHV tag)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (sibling)</td><td>number of siblings</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (adopted)</td><td>Adopted</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (ethnicity)</td><td>Ethnicity</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (race)</td><td>Race</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>(complete)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>(the Patient)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>(the date recorded)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>the family member name</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;relationship</td><td>the family member relationship</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;sex</td><td>the gender of the family member</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;born[x]</td><td>the birthdate of the family member</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;age[x]</td><td>the age of the family member</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;estimatedAge</td><td>true if age estimated</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;deceased[x]</td><td>death</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Note</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td></td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>Condition/Problem</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outcome</td><td>manifestation of condition/problem</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onset[x]</td><td>when this condition first noted</td><td></td> </tr>
 </table>
 <a name="MHV-OLD-FMH-UI"> </a><h3>Mappings for MyHealtheVet old Family Health History UI mapping to FHIR/PGHD (MHV-old-UI)</h3><table class="grid">
  <tr><td colspan="3"><b>MHVfamilymemberhistory</b></td></tr>
- <tr><td>FamilyMemberHistory</td><td>MHV-UI</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>(MHV tag)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (sibling)</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (adopted)</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (ethnicity)</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (race)</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>(complete)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>(the Patient)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>(the date recorded)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>First Name:, Last Name:</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;relationship</td><td>Relationship:</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;sex</td><td>(the gender of the family member)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;born[x]</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;age[x]</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;estimatedAge</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;deceased[x]</td><td>Living/Deceased choice</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Comments:</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>Condition/Problem/Other</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outcome</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onset[x]</td><td>N/A</td> </tr>
+ <tr><td>FamilyMemberHistory</td><td>MHV-UI</td><td><p>Old in the MyHealtheVet FamilyMemberHistory User Interface</p>
+</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</td><td>(MHV tag)</td><td><p>not on the UI</p>
+</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (sibling)</td><td>N/A</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (adopted)</td><td>N/A</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (ethnicity)</td><td>N/A</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (race)</td><td>N/A</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>(complete)</td><td><p>not on the UI</p>
+</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>(the Patient)</td><td><p>not on the UI</p>
+</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>(the date recorded)</td><td><p>not on the UI</p>
+</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>First Name:, Last Name:</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;relationship</td><td>Relationship:</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;sex</td><td>(the gender of the family member)</td><td><p>Implied by relationship selected</p>
+</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;born[x]</td><td>N/A</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;age[x]</td><td>N/A</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;estimatedAge</td><td>N/A</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;deceased[x]</td><td>Living/Deceased choice</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Comments:</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td></td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>Condition/Problem/Other</td><td><p>needs mapping to SNOMED-CT terminology</p>
+</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outcome</td><td>N/A</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onset[x]</td><td>N/A</td><td></td> </tr>
 </table>
 
 
@@ -423,7 +432,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 16, 2023 09:21-0600">2023-02-16</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.10-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 6, 2023 12:46-0600">2023-12-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

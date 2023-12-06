@@ -1,0 +1,79 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AgesVS",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "AgesVS",
+      "title" : "Ages ValueSet",
+      "description" : "ValueSet of the Ages allowed",
+      "systems" : ["https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages"]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "AllAppIdCodes",
+      "title" : "PGD App Id Codes",
+      "description" : "All valid App ID codes",
+      "systems" : [
+        "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"
+      ]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbloodPressurePositions",
+      "title" : "The methods of measurement for blood pressure that MHV supports",
+      "description" : "These are the loinc body positions that MHV supports on blood pressure.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbloodSugarMethods",
+      "title" : "The methods of measurement for blood sugar that MHV supports",
+      "description" : "These are the SNOMED body sites that MHV supports.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbodyTemperatureSites",
+      "title" : "The body temperature measurement sites that MHV supports",
+      "description" : "These are the SNOMED body sites that MHV supports.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbodyTemperatures",
+      "title" : "The body temperature measurement types that MHV supports",
+      "description" : "These are the UCUM types that MHV supports.",
+      "systems" : ["http://unitsofmeasure.org"]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbodyWeights",
+      "title" : "The body weight measurement types that MHV supports",
+      "description" : "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",
+      "systems" : ["http://unitsofmeasure.org"]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVmedicationRoutes",
+      "title" : "The routes of medication that MHV supports",
+      "description" : "These are the SNOMED-CT routes for medications that MHV supports.",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

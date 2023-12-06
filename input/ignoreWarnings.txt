@@ -7,3 +7,9 @@ Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code 
 # No example of a prototyple
 WARNING: StructureDefinition.where(url = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle'): The Implementation Guide contains no examples for this profile
 
+
+# historic data uses historic codes
+INFORMATION: FamilyMemberHistory/ex-son: FamilyMemberHistory.condition[0].code.coding[0]: The code '147001' is valid but is not active
+
+# performer is not needed in PGHD as it is ambiguous
+Best Practice Recommendation: In general, all observations should have a performer

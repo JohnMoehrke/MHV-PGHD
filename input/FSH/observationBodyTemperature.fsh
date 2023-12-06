@@ -15,7 +15,7 @@ Note this is compliant with FHIR core vital-signs.
 - must have effectiveDateTime
   - others might use effectivePeriod
 - must have valueQuantity with units from the MHV body temperatures (F and C)
-  - must be value between 92 <= n <= 108 Fahrenheit
+  - must be value between 80 <= n <= 110 Fahrenheit
 - must have status at final
 - must point at the patient
 - may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)
@@ -35,8 +35,8 @@ Note this is compliant with FHIR core vital-signs.
 * effectiveDateTime 1..1
 * value[x] only Quantity
 * valueQuantity.unit from MHVbodyTemperatures
-* valueQuantity.value ^minValueQuantity = 92 UCUM#[degF]
-* valueQuantity.value ^maxValueQuantity = 108 UCUM#[degF]
+* valueQuantity.value ^minValueQuantity = 80 UCUM#[degF]
+* valueQuantity.value ^maxValueQuantity = 110 UCUM#[degF]
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)

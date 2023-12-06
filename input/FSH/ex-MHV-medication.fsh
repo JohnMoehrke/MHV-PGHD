@@ -13,7 +13,7 @@ Usage: #example
 * dateAsserted = 2020-11-24
 * note.text = "a minimal medication"
 * dosage.text = "1 tablet"
-* dosage.doseAndRate.doseQuantity = 1 '{Capsule}' // strength
+* dosage.doseAndRate.doseQuantity = 1 'U' "Capsule" // strength
 // frequency
 * dosage.doseAndRate.rateRatio.numerator.value = 3 // three times per day
 * dosage.doseAndRate.rateRatio.denominator = 1 '/d' // day

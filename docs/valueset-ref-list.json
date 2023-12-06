@@ -1,0 +1,122 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-Ethnicity",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Ethnicity",
+      "title" : "Ethnicity",
+      "description" : "In the United States, federal standards for classifying data on ethnicity determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define ethnicity, and they recognize the absence of an anthropological or scientific basis for ethnicity classification. Instead, the federal standards acknowledge that ethnicity is a social-political construct in which an individual's own identification with a particular ethnicity is preferred to observer identification. The standards specify two minimum ethnicity categories: Hispanic or Latino, and Not Hispanic or Latino. The standards define a Hispanic or Latino as a person of \"Mexican, Puerto Rican, Cuban, South or Central America, or other Spanish culture or origin, regardless of race.\" The standards stipulate that ethnicity data need not be limited to the two minimum categories, but any expansion must be collapsible to those categories. In addition, the standards stipulate that an individual can be Hispanic or Latino or can be Not Hispanic or Latino, but cannot be both.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Ethnicity"],
+      "oids" : ["2.16.840.1.113883.1.11.15836"],
+      "sources" : ["2.16.840.1.113883.1.11.15836"],
+      "uses" : {
+      },
+      "StructureDefinition-FM-Ethnicity.html" : "Ethnicity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-Race",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Race",
+      "title" : "Race",
+      "description" : "In the United States, federal standards for classifying data on race determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define race, and they recognize the absence of an anthropological or scientific basis for racial classification. Instead, the federal standards acknowledge that race is a social-political construct in which an individual's own identification with one more race categories is preferred to observer identification. The standards use a variety of features to define five minimum race categories. Among these features are descent from \"the original peoples\" of a specified region or nation. The minimum race categories are American Indian or Alaska Native, Asian, Black or African American, Native Hawaiian or Other Pacific Islander, and White. The federal standards stipulate that race data need not be limited to the five minimum categories, but any expansion must be collapsible to those categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Race"],
+      "oids" : ["2.16.840.1.113883.1.11.14914"],
+      "sources" : ["2.16.840.1.113883.1.11.14914"],
+      "uses" : {
+      },
+      "StructureDefinition-FM-Race.html" : "Race"
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AgesVS",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "AgesVS",
+      "title" : "Ages ValueSet",
+      "description" : "ValueSet of the Ages allowed",
+      "systems" : ["https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages"]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "AllAppIdCodes",
+      "title" : "PGD App Id Codes",
+      "description" : "All valid App ID codes",
+      "systems" : [
+        "https://wiki.mobilehealth.va.gov/x/Onc1C",
+        "https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping"
+      ]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbloodPressurePositions",
+      "title" : "The methods of measurement for blood pressure that MHV supports",
+      "description" : "These are the loinc body positions that MHV supports on blood pressure.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbloodSugarMethods",
+      "title" : "The methods of measurement for blood sugar that MHV supports",
+      "description" : "These are the SNOMED body sites that MHV supports.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation"
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbodyTemperatureSites",
+      "title" : "The body temperature measurement sites that MHV supports",
+      "description" : "These are the SNOMED body sites that MHV supports.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation"
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbodyTemperatures",
+      "title" : "The body temperature measurement types that MHV supports",
+      "description" : "These are the UCUM types that MHV supports.",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation"
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVbodyWeights",
+      "title" : "The body weight measurement types that MHV supports",
+      "description" : "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation"
+    },
+    {
+      "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",
+      "version" : "0.2.10-beta",
+      "status" : "active",
+      "name" : "MHVmedicationRoutes",
+      "title" : "The routes of medication that MHV supports",
+      "description" : "These are the SNOMED-CT routes for medications that MHV supports.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-VA.MHV.medication.html" : "VA MHV Medication"
+    }
+  ]
+}

@@ -20,12 +20,12 @@
     </valueCode>
   </extension>
   <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions"/>
-  <version value="0.2.9-beta"/>
+  <version value="0.2.10-beta"/>
   <name value="MHVbloodPressurePositions"/>
   <title value="The methods of measurement for blood pressure that MHV supports"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-02-16T09:21:54-06:00"/>
+  <date value="2023-12-06T12:46:33-06:00"/>
   <publisher value="John Moehrke (himself)"/>
   <contact>
     <name value="John Moehrke (himself)"/>

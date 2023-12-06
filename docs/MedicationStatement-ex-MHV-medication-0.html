@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>VA.MHV.EXAMPLE\Example of an MHV medication R4, minimal - FHIR v4.0.1</title>
+    <title>Example of an MHV medication R4, minimal - MyHealtheVet use of PGHD v0.2.10-beta</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,18 +40,18 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.54"}
-    h3,h4,h5,h6{--heading-prefix:"5.54"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.82"}
+    h3,h4,h5,h6{--heading-prefix:"5.82"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -65,7 +65,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MyHealtheVet use of PGHD</span>
             <br/>
-            <span style="display:inline-block;">0.2.9-beta - ci-build
+            <span style="display:inline-block;">0.2.10-beta - ci-build
 
 
 
@@ -146,7 +146,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.9-beta). See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MyHealtheVet use of PGHD - Local Development build (v0.2.10-beta) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://johnmoehrke.github.io/MHV-PGHD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
   
 
@@ -189,6 +189,7 @@
 
   <h2 id="root">Example MedicationStatement: Example of an MHV medication R4, minimal</h2>
 
+
   <table class="colsi">
     <tr>
 
@@ -209,7 +210,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="ex-MHV-medication-0"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;ex-MHV-medication-0&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VA.MHV.medication.html">VA MHV Medication</a></p><p style="margin-bottom: 0px">Tag: <span title="{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>identifier</b>: id: 1234</p><p><b>basedOn</b>: <a name="in-Request"> </a></p><blockquote><p/><p><a name="in-Request"> </a></p><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote><p><b>partOf</b>: <a name="in-Dispense"> </a></p><blockquote><p/><p><a name="in-Dispense"> </a></p><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="#in-Pharmacy">#in-Pharmacy</a></td></tr></table></blockquote><p><b>status</b>: active</p><p><b>category</b>: Patient Specified <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/codesystem-medication-statement-category.html">Medication usage category codes</a>#patientspecified)</span></p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-25 --&gt; 2021-12-25</p><p><b>dateAsserted</b>: 2020-11-24</p><p><b>reasonCode</b>: Body pains <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>note</b>: a minimal medication</p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 tablet</p><p><b>route</b>: Oral route <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#26643006)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #in-Pharmacy</b><a name="in-Pharmacy"> </a></p><p><b>type</b>: Pharmacy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>name</b>: CVS</p><p><b>telecom</b>: <a href="tel:+17773339998">+17773339998</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: MedicationDispense #in-Dispense</b><a name="in-Dispense"> </a></p><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="#in-Pharmacy">#in-Pharmacy</a></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: MedicationRequest #in-Request</b><a name="in-Request"> </a></p><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="ex-MHV-medication-0"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;ex-MHV-medication-0&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-VA.MHV.medication.html">VA MHV Medication</a></p><p style="margin-bottom: 0px">Tag: <span title="{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>identifier</b>: id: 1234</p><p><b>basedOn</b>: <a name="in-Request"> </a></p><blockquote><p/><p><a name="in-Request"> </a></p><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote><p><b>partOf</b>: <a name="in-Dispense"> </a></p><blockquote><p/><p><a name="in-Dispense"> </a></p><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="#in-Pharmacy">#in-Pharmacy</a></td></tr></table></blockquote><p><b>status</b>: active</p><p><b>category</b>: Patient Specified <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R4/codesystem-medication-statement-category.html">Medication usage category codes</a>#patientspecified)</span></p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-25 --&gt; 2021-12-25</p><p><b>dateAsserted</b>: 2020-11-24</p><p><b>reasonCode</b>: Body pains <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>note</b>: a minimal medication</p><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 tablet</p><p><b>route</b>: Oral route <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#26643006)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization #in-Pharmacy</b><a name="in-Pharmacy"> </a></p><p><b>type</b>: Pharmacy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>name</b>: CVS</p><p><b>telecom</b>: <a href="tel:+17773339998">+17773339998</a></p></blockquote><hr/><blockquote><p><b>Generated Narrative: MedicationDispense #in-Dispense</b><a name="in-Dispense"> </a></p><p><b>status</b>: unknown</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="#in-Pharmacy">#in-Pharmacy</a></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: MedicationRequest #in-Request</b><a name="in-Request"> </a></p><p><b>identifier</b>: id: 1234</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Tylenol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>requester</b>: <span>: Dr. Prancy Practitioner</span></p></blockquote></div>
 
   
 
@@ -262,7 +263,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.9-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 16, 2023 09:21-0600">2023-02-16</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.10-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 6, 2023 12:46-0600">2023-12-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="26c44321-ef3c-4dd9-a2e4-673502ad6729"/>
+  <id value="fd5708c6-0212-438d-af74-5ab9c17bb3ce"/>
   <meta>
-    <lastUpdated value="2023-02-16T09:21:54.724-06:00"/>
+    <lastUpdated value="2023-12-06T12:46:33.090-06:00"/>
   </meta>
   <type value="collection"/>
   <entry>
     <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AgesVS"/>
     <resource>
       <ValueSet>
-        <id value="AgesVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 15 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-Ages.html">Ages in decades v0.2.9-beta (CodeSystem)</a>
+              <a href="CodeSystem-Ages.html">codesystem Ages in decades v0.2.10-beta (CodeSystem)</a>
             </p>
+            <p>This value set contains 15 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -153,47 +152,13 @@
             </table>
           </div>
         </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="2">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueInteger>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueCode>
-        </extension>
         <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AgesVS"/>
-        <version value="0.2.9-beta"/>
+        <version value="0.2.10-beta"/>
         <name value="AgesVS"/>
         <title value="Ages ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T09:21:54-06:00"/>
-        <publisher value="John Moehrke (himself)"/>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://healthcaresecprivacy.blogspot.com"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="ValueSet of the Ages allowed"/>
+        <date value="2023-12-06T12:46:33-06:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -201,16 +166,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:975a5952-b633-421f-9931-ccf831f01bff"/>
-          <timestamp value="2023-02-16T09:23:49-06:00"/>
+          <identifier value="urn:uuid:5a09abe9-f917-4363-b2c8-66c4e09d62fd"/>
+          <timestamp value="2023-12-06T12:55:53-06:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages|0.2.9-beta"/>
+            <name value="used-codesystem"/>
+            <valueUri value="https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages|0.2.10-beta"/>
           </parameter>
           <contains>
             <system value="https://johnmoehrke.github.io/MHV-PGHD/CodeSystem/Ages"/>
@@ -295,22 +260,21 @@
     <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes"/>
     <resource>
       <ValueSet>
-        <id value="AllAppIdCodes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-OnclC.html">PGD apps v0.2.9-beta (CodeSystem)</a>
+                  <a href="CodeSystem-CPM.html">codesystem PGD other apps v0.2.10-beta (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-CPM.html">PGD other apps v0.2.9-beta (CodeSystem)</a>
+                  <a href="CodeSystem-OnclC.html">codesystem PGD apps v0.2.10-beta (CodeSystem)</a>
                 </li>
               </ul>
             </div>
+            <p>This value set contains 3 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -350,47 +314,13 @@
             </table>
           </div>
         </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="2">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueInteger>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueCode>
-        </extension>
         <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes"/>
-        <version value="0.2.9-beta"/>
+        <version value="0.2.10-beta"/>
         <name value="AllAppIdCodes"/>
         <title value="PGD App Id Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T09:21:54-06:00"/>
-        <publisher value="John Moehrke (himself)"/>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://healthcaresecprivacy.blogspot.com"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="All valid App ID codes"/>
+        <date value="2023-12-06T12:46:33-06:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -398,20 +328,20 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5a0d3105-94f2-444e-b305-bbfe45ba9707"/>
-          <timestamp value="2023-02-16T09:23:49-06:00"/>
+          <identifier value="urn:uuid:aa9fceeb-cb1d-485c-891f-6d0118141eaf"/>
+          <timestamp value="2023-12-06T12:55:53-06:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="https://wiki.mobilehealth.va.gov/x/Onc1C|0.2.9-beta"/>
+            <name value="used-codesystem"/>
+            <valueUri value="https://wiki.mobilehealth.va.gov/x/Onc1C|0.2.10-beta"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping|0.2.9-beta"/>
+            <name value="used-codesystem"/>
+            <valueUri value="https://wiki.mobilehealth.va.gov/display/PGDMS/Client+Provenance+Mapping|0.2.10-beta"/>
           </parameter>
           <contains>
             <system value="https://wiki.mobilehealth.va.gov/x/Onc1C"/>
@@ -436,12 +366,17 @@
     <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions"/>
     <resource>
       <ValueSet>
-        <id value="mhv-blood-pressure-positions"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.74</li>
+                <li>Loinc v2.74</li>
+              </ul>
+            </div>
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -489,47 +424,13 @@
             </table>
           </div>
         </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="2">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueInteger>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueCode>
-        </extension>
         <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions"/>
-        <version value="0.2.9-beta"/>
+        <version value="0.2.10-beta"/>
         <name value="MHVbloodPressurePositions"/>
         <title value="The methods of measurement for blood pressure that MHV supports"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T09:21:54-06:00"/>
-        <publisher value="John Moehrke (himself)"/>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://healthcaresecprivacy.blogspot.com"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="These are the loinc body positions that MHV supports on blood pressure."/>
+        <date value="2023-12-06T12:46:33-06:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -537,20 +438,28 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e407597f-ccb9-4658-a89d-6640cecfa75d"/>
-          <timestamp value="2023-02-16T09:23:50-06:00"/>
+          <identifier value="urn:uuid:5d2a03a6-3b40-4245-979a-f30cb96ec5f5"/>
+          <timestamp value="2023-12-06T12:55:54-06:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.73"/>
+            <valueUri value="http://loinc.org|2.74"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -580,12 +489,17 @@
     <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites"/>
     <resource>
       <ValueSet>
-        <id value="mhv-blood-sugar-methods-sites"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -633,47 +547,13 @@
             </table>
           </div>
         </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="2">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueInteger>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueCode>
-        </extension>
         <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites"/>
-        <version value="0.2.9-beta"/>
+        <version value="0.2.10-beta"/>
         <name value="MHVbloodSugarMethods"/>
         <title value="The methods of measurement for blood sugar that MHV supports"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T09:21:54-06:00"/>
-        <publisher value="John Moehrke (himself)"/>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://healthcaresecprivacy.blogspot.com"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="These are the SNOMED body sites that MHV supports."/>
+        <date value="2023-12-06T12:46:33-06:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -681,20 +561,28 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4a95253f-0877-45e1-9424-04a45951f250"/>
-          <timestamp value="2023-02-16T09:23:50-06:00"/>
+          <identifier value="urn:uuid:a594fae3-64bd-452f-84a9-a6cd5323111a"/>
+          <timestamp value="2023-12-06T12:55:54-06:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -724,12 +612,17 @@
     <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites"/>
     <resource>
       <ValueSet>
-        <id value="mhv-body-temperature-sites"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
             <p>This value set contains 8 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -809,47 +702,13 @@
             </table>
           </div>
         </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="2">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueInteger>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueCode>
-        </extension>
         <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites"/>
-        <version value="0.2.9-beta"/>
+        <version value="0.2.10-beta"/>
         <name value="MHVbodyTemperatureSites"/>
         <title value="The body temperature measurement sites that MHV supports"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T09:21:54-06:00"/>
-        <publisher value="John Moehrke (himself)"/>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://healthcaresecprivacy.blogspot.com"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="These are the SNOMED body sites that MHV supports."/>
+        <date value="2023-12-06T12:46:33-06:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -857,20 +716,28 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fbcc102d-9dda-444f-bc43-042f6764a9da"/>
-          <timestamp value="2023-02-16T09:23:50-06:00"/>
+          <identifier value="urn:uuid:048fa770-9a03-4798-91ac-2e8f583faad2"/>
+          <timestamp value="2023-12-06T12:55:54-06:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -920,12 +787,17 @@
     <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures"/>
     <resource>
       <ValueSet>
-        <id value="mhv-body-temperatures"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem UCUM version 2.0.1</li>
+                <li>system UCUM version 2.0.1</li>
+              </ul>
+            </div>
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on UCUM version 2.0.1</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -955,47 +827,13 @@
             </table>
           </div>
         </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="2">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueInteger>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueCode>
-        </extension>
         <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures"/>
-        <version value="0.2.9-beta"/>
+        <version value="0.2.10-beta"/>
         <name value="MHVbodyTemperatures"/>
         <title value="The body temperature measurement types that MHV supports"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T09:21:54-06:00"/>
-        <publisher value="John Moehrke (himself)"/>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://healthcaresecprivacy.blogspot.com"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="These are the UCUM types that MHV supports."/>
+        <date value="2023-12-06T12:46:33-06:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1003,16 +841,24 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:542cf992-c32d-449d-9631-12bb699196df"/>
-          <timestamp value="2023-02-16T09:23:50-06:00"/>
+          <identifier value="urn:uuid:e8648d5b-59ae-4acd-940a-20db297138f1"/>
+          <timestamp value="2023-12-06T12:55:55-06:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -1036,12 +882,17 @@
     <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights"/>
     <resource>
       <ValueSet>
-        <id value="mhv-body-weights"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem UCUM version 2.0.1</li>
+                <li>system UCUM version 2.0.1</li>
+              </ul>
+            </div>
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on UCUM version 2.0.1</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -1071,47 +922,13 @@
             </table>
           </div>
         </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="2">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueInteger>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueCode>
-        </extension>
         <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights"/>
-        <version value="0.2.9-beta"/>
+        <version value="0.2.10-beta"/>
         <name value="MHVbodyWeights"/>
         <title value="The body weight measurement types that MHV supports"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T09:21:54-06:00"/>
-        <publisher value="John Moehrke (himself)"/>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://healthcaresecprivacy.blogspot.com"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone)."/>
+        <date value="2023-12-06T12:46:33-06:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1119,16 +936,24 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:84d700a0-0db3-43eb-9066-24b7c94f9f99"/>
-          <timestamp value="2023-02-16T09:23:51-06:00"/>
+          <identifier value="urn:uuid:1cc57acc-a656-4244-b6d8-d38290314f6d"/>
+          <timestamp value="2023-12-06T12:55:55-06:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -1152,12 +977,17 @@
     <fullUrl value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes"/>
     <resource>
       <ValueSet>
-        <id value="mhv-medication-routes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
             <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -1221,47 +1051,13 @@
             </table>
           </div>
         </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-          <valueInteger value="2">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueInteger>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="trial-use">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-              <valueCanonical value="https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example"/>
-            </extension>
-          </valueCode>
-        </extension>
         <url value="https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes"/>
-        <version value="0.2.9-beta"/>
+        <version value="0.2.10-beta"/>
         <name value="MHVmedicationRoutes"/>
         <title value="The routes of medication that MHV supports"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T09:21:54-06:00"/>
-        <publisher value="John Moehrke (himself)"/>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://healthcaresecprivacy.blogspot.com"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="John Moehrke (himself)"/>
-          <telecom>
-            <system value="email"/>
-            <value value="JohnMoehrke@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="These are the SNOMED-CT routes for medications that MHV supports."/>
+        <date value="2023-12-06T12:46:33-06:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1269,20 +1065,28 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:caba458c-d193-4637-ae5a-98b21cc6b6b3"/>
-          <timestamp value="2023-02-16T09:23:51-06:00"/>
+          <identifier value="urn:uuid:40f284ed-4270-40ec-9d2f-6a9f5e01d363"/>
+          <timestamp value="2023-12-06T12:55:55-06:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>

@@ -19,8 +19,8 @@ This was not agreed by Mobile.
 - must not have a value[x]
 - must have two components
 - must have systolic and diastolic component values in mm[Hg]
-  - systolic must be between 50 <= s <= 250
-  - diastolic must be between 30 <= d <= 140
+  - systolic must be between 20 <= s <= 300
+  - diastolic must be between 20 <= d <= 250
 - may have a related has-member heart-rate observation
 - must have status at final
 - must point at the patient
@@ -63,13 +63,13 @@ Later may have a position component (sitting, standing, supline, and resting)
 * component[systolicBP].code = LOINC#8480-6 // Systolic blood pressure
 * component[systolicBP].value[x] only Quantity
 * component[systolicBP].valueQuantity = UCUM#mm[Hg] // "mmHg"
-* component[systolicBP].valueQuantity.value ^minValueQuantity = 50 UCUM#mm[Hg] // "mmHg"
-* component[systolicBP].valueQuantity.value ^maxValueQuantity = 250 UCUM#mm[Hg] // "mmHg"
+* component[systolicBP].valueQuantity.value ^minValueQuantity = 20 UCUM#mm[Hg] // "mmHg"
+* component[systolicBP].valueQuantity.value ^maxValueQuantity = 300 UCUM#mm[Hg] // "mmHg"
 * component[diastolicBP].code = LOINC#8462-4 // Diastolic blood pressure
 * component[diastolicBP].value[x] only Quantity
 * component[diastolicBP].valueQuantity = UCUM#mm[Hg] // "mmHg"
-* component[diastolicBP].valueQuantity.value ^minValueQuantity = 30 UCUM#mm[Hg] // "mmHg"
-* component[diastolicBP].valueQuantity.value ^maxValueQuantity = 140 UCUM#mm[Hg] // "mmHg"
+* component[diastolicBP].valueQuantity.value ^minValueQuantity = 20 UCUM#mm[Hg] // "mmHg"
+* component[diastolicBP].valueQuantity.value ^maxValueQuantity = 250 UCUM#mm[Hg] // "mmHg"
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)

@@ -1,0 +1,9 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AgesVS,0.2.10-beta,active,,AgesVS,Ages ValueSet,"ValueSet of the Ages allowed",,"Internal"
+https://johnmoehrke.github.io/MHV-PGHD/ValueSet/AllAppIdCodes,0.2.10-beta,active,,AllAppIdCodes,PGD App Id Codes,"All valid App ID codes",,"Internal"
+https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-pressure-positions,0.2.10-beta,active,,MHVbloodPressurePositions,The methods of measurement for blood pressure that MHV supports,"These are the loinc body positions that MHV supports on blood pressure.",,"LOINC"
+https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-blood-sugar-methods-sites,0.2.10-beta,active,,MHVbloodSugarMethods,The methods of measurement for blood sugar that MHV supports,"These are the SNOMED body sites that MHV supports.",,"SCT"
+https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperature-sites,0.2.10-beta,active,,MHVbodyTemperatureSites,The body temperature measurement sites that MHV supports,"These are the SNOMED body sites that MHV supports.",,"SCT"
+https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-temperatures,0.2.10-beta,active,,MHVbodyTemperatures,The body temperature measurement types that MHV supports,"These are the UCUM types that MHV supports.",,"UCUM"
+https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights,0.2.10-beta,active,,MHVbodyWeights,The body weight measurement types that MHV supports,"These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",,"UCUM"
+https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes,0.2.10-beta,active,,MHVmedicationRoutes,The routes of medication that MHV supports,"These are the SNOMED-CT routes for medications that MHV supports.",,"SCT"

@@ -14,11 +14,11 @@
     "valueInteger" : 2
   }],
   "url" : "https://johnmoehrke.github.io/MHV-PGHD/ImplementationGuide/va.mhv.example",
-  "version" : "0.2.9-beta",
+  "version" : "0.2.10-beta",
   "name" : "MHVIG",
   "title" : "MyHealtheVet use of PGHD",
   "status" : "active",
-  "date" : "2023-02-16T09:21:54-06:00",
+  "date" : "2023-12-06T12:46:33-06:00",
   "publisher" : "John Moehrke (himself)",
   "contact" : [{
     "name" : "John Moehrke (himself)",
@@ -56,7 +56,17 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.0.0"
+    "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "1.0.0"
   },
   {
     "id" : "hl7_fhir_us_core",
@@ -376,6 +386,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "fmm-definition"
       },
       {
@@ -418,9 +439,13 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#current"
+    },
+    {
       "extension" : [{
         "url" : "code",
-        "valueString" : "copyrightyear"
+        "valueCode" : "copyrightyear"
       },
       {
         "url" : "value",
@@ -431,7 +456,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "releaselabel"
+        "valueCode" : "releaselabel"
       },
       {
         "url" : "value",
@@ -442,7 +467,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "show-inherited-invariants"
+        "valueCode" : "show-inherited-invariants"
       },
       {
         "url" : "value",
@@ -453,7 +478,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "usage-stats-opt-out"
+        "valueCode" : "usage-stats-opt-out"
       },
       {
         "url" : "value",
@@ -464,7 +489,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "logging"
+        "valueCode" : "logging"
       },
       {
         "url" : "value",
@@ -475,7 +500,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "shownav"
+        "valueCode" : "shownav"
       },
       {
         "url" : "value",
@@ -486,7 +511,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "active-tables"
+        "valueCode" : "active-tables"
       },
       {
         "url" : "value",
@@ -497,7 +522,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-contact"
+        "valueCode" : "apply-contact"
       },
       {
         "url" : "value",
@@ -508,7 +533,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-jurisdiction"
+        "valueCode" : "apply-jurisdiction"
       },
       {
         "url" : "value",
@@ -519,7 +544,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-publisher"
+        "valueCode" : "apply-publisher"
       },
       {
         "url" : "value",
@@ -530,7 +555,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-version"
+        "valueCode" : "apply-version"
       },
       {
         "url" : "value",
@@ -541,7 +566,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "autoload-resources"
+        "valueCode" : "autoload-resources"
       },
       {
         "url" : "value",
@@ -552,7 +577,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-output"
+        "valueCode" : "path-output"
       },
       {
         "url" : "value",
@@ -563,7 +588,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "excludettl"
+        "valueCode" : "excludettl"
       },
       {
         "url" : "value",
@@ -574,7 +599,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "special-url"
+        "valueCode" : "special-url"
       },
       {
         "url" : "value",
@@ -585,7 +610,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "special-url"
+        "valueCode" : "special-url"
       },
       {
         "url" : "value",
@@ -596,7 +621,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "special-url"
+        "valueCode" : "special-url"
       },
       {
         "url" : "value",
@@ -607,7 +632,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -618,7 +643,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -629,7 +654,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-qa"
+        "valueCode" : "path-qa"
       },
       {
         "url" : "value",
@@ -640,7 +665,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-temp"
+        "valueCode" : "path-temp"
       },
       {
         "url" : "value",
@@ -651,7 +676,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-suppressed-warnings"
+        "valueCode" : "path-suppressed-warnings"
       },
       {
         "url" : "value",
@@ -662,7 +687,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
+        "valueCode" : "path-history"
       },
       {
         "url" : "value",
@@ -673,7 +698,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-html"
+        "valueCode" : "template-html"
       },
       {
         "url" : "value",
@@ -684,7 +709,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-md"
+        "valueCode" : "template-md"
       },
       {
         "url" : "value",
@@ -695,7 +720,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-context"
+        "valueCode" : "apply-context"
       },
       {
         "url" : "value",
@@ -706,7 +731,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-copyright"
+        "valueCode" : "apply-copyright"
       },
       {
         "url" : "value",
@@ -717,7 +742,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-license"
+        "valueCode" : "apply-license"
       },
       {
         "url" : "value",
@@ -728,7 +753,18 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "fmm-definition"
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
       },
       {
         "url" : "value",
@@ -739,7 +775,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "propagate-status"
+        "valueCode" : "propagate-status"
       },
       {
         "url" : "value",
@@ -750,7 +786,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "excludelogbinaryformat"
+        "valueCode" : "excludelogbinaryformat"
       },
       {
         "url" : "value",
@@ -761,7 +797,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "tabbed-snapshots"
+        "valueCode" : "tabbed-snapshots"
       },
       {
         "url" : "value",
@@ -772,174 +808,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.allergy"
-      },
-      "name" : "VA MHV Allergy or Intolerance",
-      "description" : "A profile on the AllergyIntolerance that declares how MHV will Create in PGHD for allergy or intolerance.\n\nGiven that MyHealtheVet has access to the medical record (Vista and Cerner), there should be logic keeping a patient from entering a duplicate allergy or intolerance. \n\n* Derived off of US-Core Allergy\n* must be marked with MHV app tag\n* must point at the patient\n* must indicate patient is the asserter\n* may have recorder be the user (e.g. delegate)\n* must have clinicalStatus of active\n* may have type set to allergy or intolerance (default blank)\n* must have a recordedDate of the date entered\n* must have a onsetDateTime from the UI\n* must have a code.text or code.coding from a valueset from the UI\n* may have a category from the UI\n* may have a severity from the UI\n* must have a reaction.note or reaction.manifestation from the UI\n* may have a comments note from the UI\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\n* DSTU2 uses slightly different element names (e.g., substance and onset)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.bloodOxygenSat"
-      },
-      "name" : "VA MHV Blood Oxygen Saturation Observation",
-      "description" : "A profile on the Observation that declares how MHV will Read/Create in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).\n\nThis profile is consistent with FHIR core Vital-Signs for Oxygen Saturation\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#59408-5 code AND LOINC#2708-6\n  - Argonaut and VCM use 59408-5\n  - FHIR Core R4 also adds 2708-6\n- must have effectiveDateTime \n  - others might use effectivePeriod\n- must have a valueQuantity with UCUM '%' units\n  * must be between 50% <= n <= 100%\n- must have status at final or preliminary\n- must point at the patient\n- may have a hasMember of a heart-rate and/or respiration-rate\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.bloodPressure"
-      },
-      "name" : "VA MHV Blood Pressure Observation",
-      "description" : "A profile on the Observation that declares how MHV will Create/Read in PGHD for blood pressure measurements.\n\nNote: This profile is not aligned with FHIR core Vital-Signs. FHIR Core Vital-Signs would prefer we use [LOINC 85354-9](https://loinc.org/85354-9/) - Blood pressure panel with all children optional.\nThis was not agreed by Mobile.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#55284-4 code AND LOINC#8716-3\n  - 8716-3 was added as some mobile apps searched on this\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must not have a value[x]\n- must have two components\n- must have systolic and diastolic component values in mm[Hg]\n  - systolic must be between 50 <= s <= 250\n  - diastolic must be between 30 <= d <= 140\n- may have a related has-member heart-rate observation\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n\nLater may have a position component (sitting, standing, supline, and resting)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.bloodSugar"
-      },
-      "name" : "VA MHV Blood Sugar Observation",
-      "description" : "A profile on the Observation that declares how MHV could Create in PGHD for blood sugar measurements. Indicate fasting status as a code.\n\n**Switched to this with the move to R4**\n\nNote that Blood Sugar is not part of FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have laboratory category\n- must have LOINC#2339-0 code\n  - no longer using LOINC#2345-7 with move to FHIR R4\n- may have indication of fasting (LOINC#88365-2), or 2-hours after meal (LOINC#87422-2)\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units only of mg/dL\n  - must be between 10 <= n <= 1000\n- must have status at final\n- must point at the patient\n- may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.bodyTemperature"
-      },
-      "name" : "VA MHV Body Temperature Observation",
-      "description" : "A profile on the Observation that declares how MHV will Create/Read in PGHD for body temperature measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8310-5 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units from the MHV body temperatures (F and C)\n  - must be value between 92 <= n <= 108 Fahrenheit\n- must have status at final\n- must point at the patient\n- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.bodyWeight"
-      },
-      "name" : "VA MHV BodyWeight Observation",
-      "description" : "A profile on the Observation that declares how MHV will Create in PGHD for body weight measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#29463-7 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units from the MHV body weights (lbs and kg)\n  - must be value 60 <= n <= 1000 lbs\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.BlueBundle"
-      },
-      "name" : "VA MHV BlueButton Bundle",
-      "description" : "A profile on the Bundle that declares how MHV will Create in PGHD for BlueButton report.\n\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\n\n* must be a document type Bundle\n* must have a timestamp of when this was created\n* must have a MHV Bluebutton type of a Composition \n* must include Patient Resource\n* must include all Resources referenced by Composition \n* DSTU2 use comment rather than note",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.BlueComposition"
-      },
-      "name" : "VA MHV BlueButton Composition",
-      "description" : "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.\n\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\n\n* must be marked with MHV app tag\n* must be status final\n* must have a title explaining the content - for example: all vital-signs from past 60 days\n* must have date stamp of when created (now)\n* must be LOINC 55188-7 Patient data Document\n* must point at the patient for both subject and author\n* DSTU2 use comment rather than note",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.familymemberhistory"
-      },
-      "name" : "VA MHV FamilyMemberHistory",
-      "description" : "A profile on the FamilyMemberHistory that declares how MHV will Create in PGHD for an family member history record.\n\n**Proposed mapping not yet approved for implementation**\n\nGiven that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.\n* For each relative of the Patient there will be a FamilyMemberHistory instance \n  * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.\n  * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned\n  * Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\n* must be marked with MHV app tag\n* must point at the patient\n* must indicate the date this record is being recorded into PGHD \n* should have a name of the family member\n* must have the relationship this family member has with the Patient\n* should have the sex/gender (birth sex) of this family member\n* should have the age or date-of-birth\n  * should use a valueSet for date ranges on decades \n  * indicate estimatedAge if the age is estimated\n* should have indication when patient has died with the age of death or date\n  * should use a valueSet for date ranges on decades \n* may have extension indication of twin (multiple-birth) using \n* may have extension indicate Race \n* may have extension indicate Ethnicity \n* may have extension indicate Adopted\n* should have 0..* conditions\n  * condition.code should be from a given valueSet\n  * condition.outcome should indicate the outcome of this condition\n  * condition.onset[x] should indicate when this condition first manifested\n  * condition.note may include a freetext note\n* should have a note",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.heartRate"
-      },
-      "name" : "VA MHV HeartRate Observation",
-      "description" : "A profile on the Observation that declares how MHV will Create in PGHD for heart rate measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8867-4 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units only of beats per minute\n  - must be value 40 <= n <= 240\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.immunization"
-      },
-      "name" : "VA MHV Immunization",
-      "description" : "A profile on the Immunization that declares how MHV will Create in PGHD for an immunization.\n\n**Proposed mapping not yet approved for implementation**\n\nGiven that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.\n\n* Derived off of US-Core Immunization\n* must be marked with MHV app tag\n* must point at the patient\n* must have status of completed (can not enter not-done or entered-in-error)\n* must have a code.text or code.coding from a valueset from the UI\n  * codes from given valueSet\n* must have a date (occuranceDateTime) the vaccine was administered from the UI\n* must indicate the date this record is being recorded into PGHD \n* must be indicated this data are not official record (primarySource=false)\n* must indicate this is being recorded from patient recollection\n* any reaction is recorded as a contained observation\n* may have a comment note\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\n* DSTU2 uses slightly different element names (e.g., substance and onset)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.medication"
-      },
-      "name" : "VA MHV Medication",
-      "description" : "A profile on the MedicationStatement that declares how MHV will Create in PGHD.\n\n**Proposed mapping not yet approved for implementation**\n\n* NOT Derived off of US-Core as there is no MedicationStatement in US-Core\n* must be marked with MHV app tag\n* must have a medication name\n* must have a strength per dose\n* must have a reason for use\n* must have effectiveDateTime\n* must have status at final, stopped, or complete\n* must point at the patient\n* may have a note \n* may have quantity\n* may have frequency\n* may have method of taking\n* may have a rx number\n* may indicate where it was filled\n* may indicate who prescribed\n* may indicate if side affects or none\n* once created will or might have an id, versionId, lastUpdated, text, and identifier",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.pain"
-      },
-      "name" : "VA MHV Pain Observation",
-      "description" : "A profile on the Observation that declares how MHV will Create in PGHD for pain measurements.\n\nNote that Pain is not part of FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have both LOINC#72514-3 and SCT#225908003 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with no units\n  - must have integer between 0-10\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VA.MHV.respirationRate"
-      },
-      "name" : "VA MHV Respiration Rate Observation",
-      "description" : "A profile on the Observation that declares how MHV will Read/Create in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).\n\nThis profile is consistent with FHIR core Vital-Signs for Respiration Rate\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#9279-1 code \n  - FHIR Core, Argonaut and VCM use 9279-1\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units only of breaths per minute\n  - typical is 12-16 breaths per minute\n  - must be a value 6 <= n <= 40\n- must have status at final or preliminary\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -947,138 +815,6 @@
       },
       "name" : "Adopted indication",
       "description" : "When this family member is Adopted.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/FM-Ethnicity"
-      },
-      "name" : "Ethnicity",
-      "description" : "What is the Ethnicity of this family member\n\nNote would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory [jira issue](https://jira.hl7.org/browse/FHIR-35997)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/FM-MultiBirth"
-      },
-      "name" : "MultiBirth indication",
-      "description" : "When this family member is known to be part of a MultiBirth, indicate how many siblings.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/FM-Race"
-      },
-      "name" : "Race",
-      "description" : "What is the Race of this family member\n\nNote would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/AgesVS"
-      },
-      "name" : "Ages ValueSet",
-      "description" : "ValueSet of the Ages allowed",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/AllAppIdCodes"
-      },
-      "name" : "PGD App Id Codes",
-      "description" : "All valid App ID codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mhv-blood-pressure-positions"
-      },
-      "name" : "The methods of measurement for blood pressure that MHV supports",
-      "description" : "These are the loinc body positions that MHV supports on blood pressure.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mhv-blood-sugar-methods-sites"
-      },
-      "name" : "The methods of measurement for blood sugar that MHV supports",
-      "description" : "These are the SNOMED body sites that MHV supports.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mhv-body-temperature-sites"
-      },
-      "name" : "The body temperature measurement sites that MHV supports",
-      "description" : "These are the SNOMED body sites that MHV supports.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mhv-body-temperatures"
-      },
-      "name" : "The body temperature measurement types that MHV supports",
-      "description" : "These are the UCUM types that MHV supports.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mhv-body-weights"
-      },
-      "name" : "The body weight measurement types that MHV supports",
-      "description" : "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mhv-medication-routes"
-      },
-      "name" : "The routes of medication that MHV supports",
-      "description" : "These are the SNOMED-CT routes for medications that MHV supports.",
       "exampleBoolean" : false
     },
     {
@@ -1096,50 +832,266 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "CodeSystem/OnclC"
+        "reference" : "ValueSet/AgesVS"
       },
-      "name" : "PGD apps",
-      "description" : "App identifiers for use with PGD",
+      "name" : "Ages ValueSet",
+      "description" : "ValueSet of the Ages allowed",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CPM"
+        "reference" : "Patient/ex-patient"
       },
-      "name" : "PGD other apps",
-      "description" : "Seems to be used by Mobile Kidney",
+      "name" : "Dummy Patient example",
+      "description" : "Dummy patient example for completeness sake. No actual use of this resource other than an example target",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FM-Ethnicity"
+      },
+      "name" : "Ethnicity",
+      "description" : "What is the Ethnicity of this family member\n\nNote would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory [jira issue](https://jira.hl7.org/browse/FHIR-35997)",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
+        "valueString" : "Encounter"
       }],
       "reference" : {
-        "reference" : "CapabilityStatement/MHVcapabilities"
+        "reference" : "Encounter/ex-encounter"
       },
-      "name" : "MHVcapabilities",
-      "description" : "CapabilityStatement prototype for MHV as a FHIR Client",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Composition"
-      }],
-      "reference" : {
-        "reference" : "Composition/ex-MHV-Composition-0"
-      },
-      "name" : "Example of an MHV BlueButton Document Composition",
+      "name" : "Example Encounter",
       "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition"
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "FamilyMemberHistory"
+      }],
+      "reference" : {
+        "reference" : "FamilyMemberHistory/ex-father"
+      },
+      "name" : "Example Father Family Member History",
+      "description" : "Minimal details\n- Johannes Yakub Schmidt\n- Father\n- Male\n- born July 25, 1903 - estimated\n- deceased\n- note\n- conditions: Anxiety and Choroidal",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "FamilyMemberHistory"
+      }],
+      "reference" : {
+        "reference" : "FamilyMemberHistory/ex-mother"
+      },
+      "name" : "Example Mother Family Member History",
+      "description" : "Minimal details\n- Katherine Irene Schmidt\n- Mother\n- Female\n- note\n- conditions: Homiothermia and decreased hair growth",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-pain-8"
+      },
+      "name" : "Example of a MHV pain R4 observation 8, please help",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-pain-9"
+      },
+      "name" : "Example of a MHV pain R4 observation 9, I can't take it",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-pain-10"
+      },
+      "name" : "Example of a MHV pain R4 observation of 10, Oh, scream in pain",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-pain-14"
+      },
+      "name" : "Example of a MHV pain R4 observation of 10. This is also not fully compliant but MHV should see it",
+      "description" : "holding typical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-temperature-9"
+      },
+      "name" : "Example of a non MHV bodyTemperature R4 observation by forehead",
+      "description" : "holding typical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-temperature-8"
+      },
+      "name" : "Example of a non MHV bodyTemperature R4 observation by tongue",
+      "description" : "holding typical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-temperature-12"
+      },
+      "name" : "Example of a non MHV bodyTemperature R4 observation by tongue over a period",
+      "description" : "holding typical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-temperature-10"
+      },
+      "name" : "Example of a non MHV bodyTemperature R4 observation by urinary bladder",
+      "description" : "holding typical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-temperature-11"
+      },
+      "name" : "Example of a non MHV bodyTemperature R4 observation with no site",
+      "description" : "holding typical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-pain-15"
+      },
+      "name" : "Example of a non MHV pain R4 observation of 10 (it has three codes)",
+      "description" : "holding typical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-pain-11"
+      },
+      "name" : "Example of a non MHV pain R4 observation of 11",
+      "description" : "holding invalid values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-pain-14"
+      },
+      "name" : "Example of a non MHV pain R4 observation of 3.14159 (it is between 0-10, but is not an integer)",
+      "description" : "holding invalid values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-pain-12"
+      },
+      "name" : "Example of a non MHV pain R4 observation of 37 degrees cel",
+      "description" : "holding invalid values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-bloodSugarB-106109"
+      },
+      "name" : "Example of a non-MHV blood sugar R4 observation, vital-sign",
+      "description" : "holding a value that is too high (1001) value",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-pain-13"
+      },
+      "name" : "Example of a pain R4 observation of 10. This is not fully compliant but MHV should see it",
+      "description" : "holding typical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-weight-apple"
+      },
+      "name" : "Example of an Apple bodyWeight",
+      "description" : "This observation does not use a dateTime, but rather a period. \n\nThis is similar to how Apple data looks.\n- note no category\n- note effectivePeriod with start and end that are equal",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1152,6 +1104,18 @@
       "name" : "Example of an MHV allergy R4 to aspirin, no note",
       "description" : "holding typical values",
       "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.allergy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-bloodPressure-apple"
+      },
+      "name" : "Example of an MHV blood pressure R4 observation, like Apple produes",
+      "description" : "holding Apple like values of 140/90 with a heart-rate\n\nNote\n- apple does not populate the category\n- apple only uses one code of LOINC#55284-4\n- apple uses effectivePeriod (seemingly to have start and end the same)\n- has meta.source populated with unknown identifier (presume some link back to apple, although this could be PGHD and not SMHD)",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1183,10 +1147,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-bloodPressure-apple"
+        "reference" : "Observation/ex-MHV-bloodPressure-start"
       },
-      "name" : "Example of an MHV blood pressure R4 observation, like Apple produes",
-      "description" : "holding Apple like values of 140/90 with a heart-rate\n\nNote\n- apple does not populate the category\n- apple only uses one code of LOINC#55284-4\n- apple uses effectivePeriod (seemingly to have start and end the same)\n- has meta.source populated with unknown identifier (presume some link back to apple, although this could be PGHD and not SMHD)",
+      "name" : "Example of an MHV blood pressure R4 observation, minimal",
+      "description" : "holding typical values of 140/90 with a heart-rate, using only a start Period time/date",
       "exampleBoolean" : true
     },
     {
@@ -1207,21 +1171,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-bloodPressure-start"
+        "reference" : "Observation/ex-MHV-bloodSugarB-2"
       },
-      "name" : "Example of an MHV blood pressure R4 observation, minimal",
-      "description" : "holding typical values of 140/90 with a heart-rate, using only a start Period time/date",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-bloodSugarB-0"
-      },
-      "name" : "Example of an MHV blood sugar R4 observation, minimal",
+      "name" : "Example of an MHV blood sugar R4 observation, after meal",
       "description" : "holding typical values",
       "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
     },
@@ -1243,10 +1195,22 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-bloodSugarB-106107"
+        "reference" : "Observation/ex-MHV-bloodSugarB-8"
       },
-      "name" : "Example of an MHV blood sugar R4 observation, too low",
-      "description" : "holding a value that is too low (1) value",
+      "name" : "Example of an MHV blood sugar R4 observation, impossibly high, unknown eating, by implant",
+      "description" : "holding atypical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-bloodSugarB-0"
+      },
+      "name" : "Example of an MHV blood sugar R4 observation, minimal",
+      "description" : "holding typical values",
       "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
     },
     {
@@ -1267,22 +1231,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-bloodSugarB-106109"
+        "reference" : "Observation/ex-MHV-bloodSugarB-106107"
       },
-      "name" : "Example of a non-MHV blood sugar R4 observation, vital-sign",
-      "description" : "holding a value that is too high (1001) value",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-bloodSugarB-2"
-      },
-      "name" : "Example of an MHV blood sugar R4 observation, after meal",
-      "description" : "holding typical values",
+      "name" : "Example of an MHV blood sugar R4 observation, too low",
+      "description" : "holding a value that is too low (1) value",
       "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
     },
     {
@@ -1294,6 +1246,18 @@
         "reference" : "Observation/ex-MHV-bloodSugarB-3"
       },
       "name" : "Example of an MHV blood sugar R4 observation, unknown eating",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-bloodSugarB-6"
+      },
+      "name" : "Example of an MHV blood sugar R4 observation, unknown eating, by implant",
       "description" : "holding typical values",
       "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
     },
@@ -1327,18 +1291,6 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-bloodSugarB-6"
-      },
-      "name" : "Example of an MHV blood sugar R4 observation, unknown eating, by implant",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
         "reference" : "Observation/ex-MHV-bloodSugarB-7"
       },
       "name" : "Example of an MHV blood sugar R4 observation, ZERO, unknown eating, by implant",
@@ -1348,14 +1300,122 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/ex-MHV-Composition-0"
+      },
+      "name" : "Example of an MHV BlueButton Document Composition",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueComposition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-bloodSugarB-8"
+        "reference" : "Observation/ex-MHV-temperature-4"
       },
-      "name" : "Example of an MHV blood sugar R4 observation, impossibly high, unknown eating, by implant",
-      "description" : "holding atypical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodSugar"
+      "name" : "Example of an MHV bodyTemperature R4 observation by ear",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-temperature-1"
+      },
+      "name" : "Example of an MHV bodyTemperature R4 observation by mouth",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-temperature-0"
+      },
+      "name" : "Example of an MHV bodyTemperature R4 observation by mouth, no bodySite, no note",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-temperature-5"
+      },
+      "name" : "Example of an MHV bodyTemperature R4 observation by rectum",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-temperature-3"
+      },
+      "name" : "Example of an MHV bodyTemperature R4 observation by tongue",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-temperature-6"
+      },
+      "name" : "Example of an MHV bodyTemperature R4 observation by tongue",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-temperature-2"
+      },
+      "name" : "Example of an MHV bodyTemperature R4 observation by underarm",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-weight-1"
+      },
+      "name" : "Example of an MHV bodyWeight R4 observation - kg\r\n\r\n- 81.5 kg",
+      "description" : "holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-weight"
+      },
+      "name" : "Example of an MHV bodyWeight R4 observation - pounds",
+      "description" : "holding typical values\r\n\r\n- 185 pounds",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"
     },
     {
       "extension" : [{
@@ -1423,18 +1483,6 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-oxygenSat-1"
-      },
-      "name" : "Example of an MHV oxygenSat R4 observation value of 95%",
-      "description" : "Oxygen Saturation holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
         "reference" : "Observation/ex-MHV-oxygenSat-2"
       },
       "name" : "Example of an MHV oxygenSat R4 observation",
@@ -1447,33 +1495,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-oxygenSat-3"
-      },
-      "name" : "Example of an MHV oxygenSat R4 observation really low at 65%",
-      "description" : "Oxygen Saturation holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
         "reference" : "Observation/ex-MHV-oxygenSat-5"
       },
       "name" : "Example of an MHV oxygenSat R4 observation of 65% with a heart-rate",
-      "description" : "Heart Rate holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-oxygenSat-6"
-      },
-      "name" : "Example of an MHV oxygenSat R4 observation of 95% with a respiration-rate",
       "description" : "Heart Rate holding typical values",
       "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
     },
@@ -1495,11 +1519,35 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-pain-0"
+        "reference" : "Observation/ex-MHV-oxygenSat-6"
       },
-      "name" : "Example of an MHV pain R4 observation of zero, no note",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
+      "name" : "Example of an MHV oxygenSat R4 observation of 95% with a respiration-rate",
+      "description" : "Heart Rate holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-oxygenSat-3"
+      },
+      "name" : "Example of an MHV oxygenSat R4 observation really low at 65%",
+      "description" : "Oxygen Saturation holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-MHV-oxygenSat-1"
+      },
+      "name" : "Example of an MHV oxygenSat R4 observation value of 95%",
+      "description" : "Oxygen Saturation holding typical values",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat"
     },
     {
       "extension" : [{
@@ -1512,30 +1560,6 @@
       "name" : "Example of an MHV pain R4 observation of 1 with good vibes",
       "description" : "holding typical values",
       "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-pain-10"
-      },
-      "name" : "Example of a MHV pain R4 observation of 10, Oh, scream in pain",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-pain-14"
-      },
-      "name" : "Example of a MHV pain R4 observation of 10. This is also not fully compliant but MHV should see it",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1615,21 +1639,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-pain-8"
+        "reference" : "Observation/ex-MHV-pain-0"
       },
-      "name" : "Example of a MHV pain R4 observation 8, please help",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-pain-9"
-      },
-      "name" : "Example of a MHV pain R4 observation 9, I can't take it",
+      "name" : "Example of an MHV pain R4 observation of zero, no note",
       "description" : "holding typical values",
       "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.pain"
     },
@@ -1675,142 +1687,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-MHV-temperature-0"
-      },
-      "name" : "Example of an MHV bodyTemperature R4 observation by mouth, no bodySite, no note",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-temperature-1"
-      },
-      "name" : "Example of an MHV bodyTemperature R4 observation by mouth",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-temperature-2"
-      },
-      "name" : "Example of an MHV bodyTemperature R4 observation by underarm",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-temperature-3"
-      },
-      "name" : "Example of an MHV bodyTemperature R4 observation by tongue",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-temperature-4"
-      },
-      "name" : "Example of an MHV bodyTemperature R4 observation by ear",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-temperature-5"
-      },
-      "name" : "Example of an MHV bodyTemperature R4 observation by rectum",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-temperature-6"
-      },
-      "name" : "Example of an MHV bodyTemperature R4 observation by tongue",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyTemperature"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
         "reference" : "Observation/ex-MHV-temperature-7"
       },
       "name" : "Example of an non MHV bodyTemperature R4 observation by truck",
       "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-weight"
-      },
-      "name" : "Example of an MHV bodyWeight R4 observation - pounds",
-      "description" : "holding typical values\r\n\r\n- 185 pounds",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-MHV-weight-1"
-      },
-      "name" : "Example of an MHV bodyWeight R4 observation - kg\r\n\r\n- 81.5 kg",
-      "description" : "holding typical values",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bodyWeight"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-bloodSugarB-106100"
-      },
-      "name" : "Example of an non-MHV blood sugar R4 observation, random blood glucose measurement",
-      "description" : "holding atypical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-bloodSugarB-106101"
-      },
-      "name" : "Example of an non-MHV blood sugar R4 observation, by urine",
-      "description" : "holding atypical values",
       "exampleBoolean" : true
     },
     {
@@ -1843,9 +1723,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-bloodSugarB-106104"
+        "reference" : "Observation/ex-bloodSugarB-106101"
       },
-      "name" : "Example of an non-MHV blood sugar R4 observation, with a coded eating",
+      "name" : "Example of an non-MHV blood sugar R4 observation, by urine",
       "description" : "holding atypical values",
       "exampleBoolean" : true
     },
@@ -1867,6 +1747,18 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/ex-bloodSugarB-106100"
+      },
+      "name" : "Example of an non-MHV blood sugar R4 observation, random blood glucose measurement",
+      "description" : "holding atypical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/ex-bloodSugarB-106106"
       },
       "name" : "Example of an non-MHV blood sugar R4 observation, the second .code value (2345-7)",
@@ -1876,49 +1768,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/ex-encounter"
-      },
-      "name" : "Example Encounter",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "FamilyMemberHistory"
-      }],
-      "reference" : {
-        "reference" : "FamilyMemberHistory/ex-father"
-      },
-      "name" : "Example Father Family Member History",
-      "description" : "Minimal details\n- Johannes Yakub Schmidt\n- Father\n- Male\n- born July 25, 1903 - estimated\n- deceased\n- note\n- conditions: Anxiety and Choroidal",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "FamilyMemberHistory"
-      }],
-      "reference" : {
-        "reference" : "FamilyMemberHistory/ex-mother"
-      },
-      "name" : "Example Mother Family Member History",
-      "description" : "Minimal details\n- Katherine Irene Schmidt\n- Mother\n- Female\n- note\n- conditions: Homiothermia and decreased hair growth",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-other-oxygenSat-4"
+        "reference" : "Observation/ex-bloodSugarB-106104"
       },
-      "name" : "Example of an OxygenSat that is rumored to exist",
-      "description" : "This is not coded as oxygen sat, but has a text. Rumored to be what SMHD might create.",
+      "name" : "Example of an non-MHV blood sugar R4 observation, with a coded eating",
+      "description" : "holding atypical values",
       "exampleBoolean" : true
     },
     {
@@ -1939,238 +1795,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/ex-pain-11"
+        "reference" : "Observation/ex-other-oxygenSat-4"
       },
-      "name" : "Example of a non MHV pain R4 observation of 11",
-      "description" : "holding invalid values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-pain-12"
-      },
-      "name" : "Example of a non MHV pain R4 observation of 37 degrees cel",
-      "description" : "holding invalid values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-pain-13"
-      },
-      "name" : "Example of a pain R4 observation of 10. This is not fully compliant but MHV should see it",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-pain-14"
-      },
-      "name" : "Example of a non MHV pain R4 observation of 3.14159 (it is between 0-10, but is not an integer)",
-      "description" : "holding invalid values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-pain-15"
-      },
-      "name" : "Example of a non MHV pain R4 observation of 10 (it has three codes)",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/ex-patient"
-      },
-      "name" : "Dummy Patient example",
-      "description" : "Dummy patient example for completeness sake. No actual use of this resource other than an example target",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/ex-practitioner"
-      },
-      "name" : "Example Practitioner",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "FamilyMemberHistory"
-      }],
-      "reference" : {
-        "reference" : "FamilyMemberHistory/ex-son"
-      },
-      "name" : "Example Son Family Member History",
-      "description" : "Minimal details\n- John Jacob Schmidt\n- Son\n- twin\n- age 78\n- Male\n- note\n- conditions: scrotum wound and bladder continence",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "FamilyMemberHistory"
-      }],
-      "reference" : {
-        "reference" : "FamilyMemberHistory/ex-son2"
-      },
-      "name" : "Example Second Son Family Member History",
-      "description" : "Maximal details\n- John Jacob Schmidt\n- Son\n- twin\n- born 7/25/1943\n- Male\n- not adopted\n- not hispanic or latino\n- Irish\n- note\n- conditions: Meningitis leading to Meningoccermia at age 50s\n- conditions: bipolar",
-      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-temperature-10"
-      },
-      "name" : "Example of a non MHV bodyTemperature R4 observation by urinary bladder",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-temperature-11"
-      },
-      "name" : "Example of a non MHV bodyTemperature R4 observation with no site",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-temperature-12"
-      },
-      "name" : "Example of a non MHV bodyTemperature R4 observation by tongue over a period",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-temperature-8"
-      },
-      "name" : "Example of a non MHV bodyTemperature R4 observation by tongue",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-temperature-9"
-      },
-      "name" : "Example of a non MHV bodyTemperature R4 observation by forehead",
-      "description" : "holding typical values",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-weight-apple"
-      },
-      "name" : "Example of an Apple bodyWeight",
-      "description" : "This observation does not use a dateTime, but rather a period. \n\nThis is similar to how Apple data looks.\n- note no category\n- note effectivePeriod with start and end that are equal",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-weight-core"
-      },
-      "name" : "Example of an valid FHIR International bodyWeight R4 observation",
-      "description" : "holding typical values. Should be close to the example body weight in the FHIR core specification",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-weight-not-ucum"
-      },
-      "name" : "Example of an valid FHIR bodyWeight R4 observation",
-      "description" : "holding typical value but NOT using ucum units of measure.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-weight-period"
-      },
-      "name" : "Example of an valid FHIR International bodyWeight R4 observation over a period",
-      "description" : "This observation does not use a dateTime, but rather a period. \n\nThis is similar to how Apple data looks.\n- note no category\n- note effectivePeriod with start and end that are equal",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-weight-period-end"
-      },
-      "name" : "Example of an valid FHIR International bodyWeight R4 observation over a period with just an end",
-      "description" : "holding typical values. Should be close to the example body weight in the FHIR core specification. This observation does not use a dateTime, but rather a period with just an end.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ex-weight-period-start"
-      },
-      "name" : "Example of an valid FHIR International bodyWeight R4 observation over a period with just a start",
-      "description" : "holding typical values. Should be close to the example body weight in the FHIR core specification. This observation does not use a dateTime, but rather a period with just a start.",
+      "name" : "Example of an OxygenSat that is rumored to exist",
+      "description" : "This is not coded as oxygen sat, but has a text. Rumored to be what SMHD might create.",
       "exampleBoolean" : true
     },
     {
@@ -2200,6 +1828,102 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-weight-not-ucum"
+      },
+      "name" : "Example of an valid FHIR bodyWeight R4 observation",
+      "description" : "holding typical value but NOT using ucum units of measure.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-weight-core"
+      },
+      "name" : "Example of an valid FHIR International bodyWeight R4 observation",
+      "description" : "holding typical values. Should be close to the example body weight in the FHIR core specification",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-weight-period"
+      },
+      "name" : "Example of an valid FHIR International bodyWeight R4 observation over a period",
+      "description" : "This observation does not use a dateTime, but rather a period. \n\nThis is similar to how Apple data looks.\n- note no category\n- note effectivePeriod with start and end that are equal",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-weight-period-start"
+      },
+      "name" : "Example of an valid FHIR International bodyWeight R4 observation over a period with just a start",
+      "description" : "holding typical values. Should be close to the example body weight in the FHIR core specification. This observation does not use a dateTime, but rather a period with just a start.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ex-weight-period-end"
+      },
+      "name" : "Example of an valid FHIR International bodyWeight R4 observation over a period with just an end",
+      "description" : "holding typical values. Should be close to the example body weight in the FHIR core specification. This observation does not use a dateTime, but rather a period with just an end.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/ex-practitioner"
+      },
+      "name" : "Example Practitioner",
+      "description" : "holding typical values",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "FamilyMemberHistory"
+      }],
+      "reference" : {
+        "reference" : "FamilyMemberHistory/ex-son2"
+      },
+      "name" : "Example Second Son Family Member History",
+      "description" : "Maximal details\n- John Jacob Schmidt\n- Son\n- twin\n- born 7/25/1943\n- Male\n- not adopted\n- not hispanic or latino\n- Irish\n- note\n- conditions: Meningitis leading to Meningoccermia at age 50s\n- conditions: bipolar",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "FamilyMemberHistory"
+      }],
+      "reference" : {
+        "reference" : "FamilyMemberHistory/ex-son"
+      },
+      "name" : "Example Son Family Member History",
+      "description" : "Minimal details\n- John Jacob Schmidt\n- Son\n- twin\n- age 78\n- Male\n- note\n- conditions: scrotum wound and bladder continence",
+      "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "FamilyMemberHistory"
       }],
       "reference" : {
@@ -2208,6 +1932,318 @@
       "name" : "Example Wife Family Member History",
       "description" : "Minimal details\n- Jania Luise Schmidt\n- Wife\n- Female\n- note\n- conditions: Pharyngitis and normal peripheral vision",
       "exampleCanonical" : "https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.familymemberhistory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FM-MultiBirth"
+      },
+      "name" : "MultiBirth indication",
+      "description" : "When this family member is known to be part of a MultiBirth, indicate how many siblings.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/AllAppIdCodes"
+      },
+      "name" : "PGD App Id Codes",
+      "description" : "All valid App ID codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/OnclC"
+      },
+      "name" : "PGD apps",
+      "description" : "App identifiers for use with PGD",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CPM"
+      },
+      "name" : "PGD other apps",
+      "description" : "Seems to be used by Mobile Kidney",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FM-Race"
+      },
+      "name" : "Race",
+      "description" : "What is the Race of this family member\n\nNote would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mhv-body-temperature-sites"
+      },
+      "name" : "The body temperature measurement sites that MHV supports",
+      "description" : "These are the SNOMED body sites that MHV supports.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mhv-body-temperatures"
+      },
+      "name" : "The body temperature measurement types that MHV supports",
+      "description" : "These are the UCUM types that MHV supports.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mhv-body-weights"
+      },
+      "name" : "The body weight measurement types that MHV supports",
+      "description" : "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mhv-blood-pressure-positions"
+      },
+      "name" : "The methods of measurement for blood pressure that MHV supports",
+      "description" : "These are the loinc body positions that MHV supports on blood pressure.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mhv-blood-sugar-methods-sites"
+      },
+      "name" : "The methods of measurement for blood sugar that MHV supports",
+      "description" : "These are the SNOMED body sites that MHV supports.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mhv-medication-routes"
+      },
+      "name" : "The routes of medication that MHV supports",
+      "description" : "These are the SNOMED-CT routes for medications that MHV supports.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/MHVcapabilities"
+      },
+      "name" : "This indicates how MHV uses PGHD",
+      "description" : "CapabilityStatement prototype for MHV as a FHIR Client",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.allergy"
+      },
+      "name" : "VA MHV Allergy or Intolerance",
+      "description" : "A profile on the AllergyIntolerance that declares how MHV will Create in PGHD for allergy or intolerance.\n\nGiven that MyHealtheVet has access to the medical record (Vista and Cerner), there should be logic keeping a patient from entering a duplicate allergy or intolerance. \n\n* Derived off of US-Core Allergy\n* must be marked with MHV app tag\n* must point at the patient\n* must indicate patient is the asserter\n* may have recorder be the user (e.g. delegate)\n* must have clinicalStatus of active\n* may have type set to allergy or intolerance (default blank)\n* must have a recordedDate of the date entered\n* must have a onsetDateTime from the UI\n* must have a code.text or code.coding from a valueset from the UI\n* may have a category from the UI\n* may have a severity from the UI\n* must have a reaction.note or reaction.manifestation from the UI\n* may have a comments note from the UI\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\n* DSTU2 uses slightly different element names (e.g., substance and onset)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.bloodOxygenSat"
+      },
+      "name" : "VA MHV Blood Oxygen Saturation Observation",
+      "description" : "A profile on the Observation that declares how MHV will Read/Create in PGHD for blood Oxygen Saturation measurements (aka Pulse Ox).\n\nThis profile is consistent with FHIR core Vital-Signs for Oxygen Saturation\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#59408-5 code AND LOINC#2708-6\n  - Argonaut and VCM use 59408-5\n  - FHIR Core R4 also adds 2708-6\n- must have effectiveDateTime \n  - others might use effectivePeriod\n- must have a valueQuantity with UCUM '%' units\n  * must be between 50% <= n <= 100%\n- must have status at final or preliminary\n- must point at the patient\n- may have a hasMember of a heart-rate and/or respiration-rate\n- may have a note (comment)\n- MHV captures Oxygen Setting, but this is not captured or stored in PGHD\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.bloodPressure"
+      },
+      "name" : "VA MHV Blood Pressure Observation",
+      "description" : "A profile on the Observation that declares how MHV will Create/Read in PGHD for blood pressure measurements.\n\nNote: This profile is not aligned with FHIR core Vital-Signs. FHIR Core Vital-Signs would prefer we use [LOINC 85354-9](https://loinc.org/85354-9/) - Blood pressure panel with all children optional.\nThis was not agreed by Mobile.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#55284-4 code AND LOINC#8716-3\n  - 8716-3 was added as some mobile apps searched on this\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must not have a value[x]\n- must have two components\n- must have systolic and diastolic component values in mm[Hg]\n  - systolic must be between 20 <= s <= 300\n  - diastolic must be between 20 <= d <= 250\n- may have a related has-member heart-rate observation\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n\nLater may have a position component (sitting, standing, supline, and resting)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.bloodSugar"
+      },
+      "name" : "VA MHV Blood Sugar Observation",
+      "description" : "A profile on the Observation that declares how MHV could Create in PGHD for blood sugar measurements. Indicate fasting status as a code.\n\n**Switched to this with the move to R4**\n\nNote that Blood Sugar is not part of FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have laboratory category\n- must have LOINC#2339-0 code\n  - no longer using LOINC#2345-7 with move to FHIR R4\n- may have indication of fasting (LOINC#88365-2), or 2-hours after meal (LOINC#87422-2)\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units only of mg/dL\n  - must be between 10 <= n <= 1000\n- must have status at final\n- must point at the patient\n- may have a method of clinical lab test, sterile lancet, transcutaneous, implant, or other\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.BlueBundle"
+      },
+      "name" : "VA MHV BlueButton Bundle",
+      "description" : "A profile on the Bundle that declares how MHV will Create in PGHD for BlueButton report.\n\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\n\n* must be a document type Bundle\n* must have a timestamp of when this was created\n* must have a MHV Bluebutton type of a Composition \n* must include Patient Resource\n* must include all Resources referenced by Composition \n* DSTU2 use comment rather than note",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.BlueComposition"
+      },
+      "name" : "VA MHV BlueButton Composition",
+      "description" : "A profile on the Composition that declares how MHV will Create/Update in PGHD for BlueButton report.\n\n**This is a work in progress. It is not agreed to, and it is not ready for review.**\n\n* must be marked with MHV app tag\n* must be status final\n* must have a title explaining the content - for example: all vital-signs from past 60 days\n* must have date stamp of when created (now)\n* must be LOINC 55188-7 Patient data Document\n* must point at the patient for both subject and author\n* DSTU2 use comment rather than note",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.bodyTemperature"
+      },
+      "name" : "VA MHV Body Temperature Observation",
+      "description" : "A profile on the Observation that declares how MHV will Create/Read in PGHD for body temperature measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8310-5 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units from the MHV body temperatures (F and C)\n  - must be value between 80 <= n <= 110 Fahrenheit\n- must have status at final\n- must point at the patient\n- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.bodyWeight"
+      },
+      "name" : "VA MHV BodyWeight Observation",
+      "description" : "A profile on the Observation that declares how MHV will Create in PGHD for body weight measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#29463-7 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units from the MHV body weights (lbs and kg)\n  - must be value 0.25 <= n <= 999 lbs\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.familymemberhistory"
+      },
+      "name" : "VA MHV FamilyMemberHistory",
+      "description" : "A profile on the FamilyMemberHistory that declares how MHV will Create in PGHD for an family member history record.\n\n**Proposed mapping not yet approved for implementation**\n\nGiven that MyHealtheVet has access to medical record (Vista and Cerner) of FamilyMemberHistory, there should be logic keeping a patient from entering a duplicate details.\n* For each relative of the Patient there will be a FamilyMemberHistory instance \n  * Thus a query of the FamilyMemberHistory instances for a given Patient will give you all the relatives for which medical history is known.\n  * Each FamilyMemberHistory record would be updated when new medical conditions/problems are learned\n  * Thus FamilyMemberHistory needs to have support for Create/Read/Update/Delete\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\n* must be marked with MHV app tag\n* must point at the patient\n* must indicate the date this record is being recorded into PGHD \n* should have a name of the family member\n* must have the relationship this family member has with the Patient\n* should have the sex/gender (birth sex) of this family member\n* should have the age or date-of-birth\n  * should use a valueSet for date ranges on decades \n  * indicate estimatedAge if the age is estimated\n* should have indication when patient has died with the age of death or date\n  * should use a valueSet for date ranges on decades \n* may have extension indication of twin (multiple-birth) using \n* may have extension indicate Race \n* may have extension indicate Ethnicity \n* may have extension indicate Adopted\n* should have 0..* conditions\n  * condition.code should be from a given valueSet\n  * condition.outcome should indicate the outcome of this condition\n  * condition.onset[x] should indicate when this condition first manifested\n  * condition.note may include a freetext note\n* should have a note",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.heartRate"
+      },
+      "name" : "VA MHV HeartRate Observation",
+      "description" : "A profile on the Observation that declares how MHV will Create in PGHD for heart rate measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8867-4 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units only of beats per minute\n  - must be value 10 <= n <= 250\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.immunization"
+      },
+      "name" : "VA MHV Immunization",
+      "description" : "A profile on the Immunization that declares how MHV will Create in PGHD for an immunization.\n\n**Proposed mapping not yet approved for implementation**\n\nGiven that MyHealtheVet has access to medical record (Vista and Cerner) of immunizations, there should be logic keeping a patient from entering a duplicate immunization.\n\n* Derived off of US-Core Immunization\n* must be marked with MHV app tag\n* must point at the patient\n* must have status of completed (can not enter not-done or entered-in-error)\n* must have a code.text or code.coding from a valueset from the UI\n  * codes from given valueSet\n* must have a date (occuranceDateTime) the vaccine was administered from the UI\n* must indicate the date this record is being recorded into PGHD \n* must be indicated this data are not official record (primarySource=false)\n* must indicate this is being recorded from patient recollection\n* any reaction is recorded as a contained observation\n* may have a comment note\n* once created will or might have an id, versionId, lastUpdated, text, and identifier\n* DSTU2 uses slightly different element names (e.g., substance and onset)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.medication"
+      },
+      "name" : "VA MHV Medication",
+      "description" : "A profile on the MedicationStatement that declares how MHV will Create in PGHD.\n\n**Proposed mapping not yet approved for implementation**\n\n* NOT Derived off of US-Core as there is no MedicationStatement in US-Core\n* must be marked with MHV app tag\n* must have a medication name\n* must have a strength per dose\n* must have a reason for use\n* must have effectiveDateTime\n* must have status at final, stopped, or complete\n* must point at the patient\n* may have a note \n* may have quantity\n* may have frequency\n* may have method of taking\n* may have a rx number\n* may indicate where it was filled\n* may indicate who prescribed\n* may indicate if side affects or none\n* once created will or might have an id, versionId, lastUpdated, text, and identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.pain"
+      },
+      "name" : "VA MHV Pain Observation",
+      "description" : "A profile on the Observation that declares how MHV will Create in PGHD for pain measurements.\n\nNote that Pain is not part of FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have both LOINC#72514-3 and SCT#225908003 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with no units\n  - must have integer between 0-10\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VA.MHV.respirationRate"
+      },
+      "name" : "VA MHV Respiration Rate Observation",
+      "description" : "A profile on the Observation that declares how MHV will Read/Create in PGHD for respiration rate measurements. This is mostly used in conjunction with Blood Oxygen Saturation (aka PulseOx).\n\nThis profile is consistent with FHIR core Vital-Signs for Respiration Rate\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#9279-1 code \n  - FHIR Core, Argonaut and VCM use 9279-1\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units only of breaths per minute\n  - typical is 12-16 breaths per minute\n  - must be a value 5 <= n <=120\n- must have status at final or preliminary\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n- DSTU2 use comment rather than note",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

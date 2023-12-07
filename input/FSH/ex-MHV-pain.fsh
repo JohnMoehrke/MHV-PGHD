@@ -233,22 +233,6 @@ Description:      "holding invalid values"
 * valueQuantity.value = 3.14159
 * note.text = "pie pain"
 
-Instance:   ex-pain-15
-InstanceOf: Observation
-Title: "Example of a non MHV pain R4 observation of 10 (it has three codes)"
-Description:      "holding typical values"
-//* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-//* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
-* status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding[+] = LOINC#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-* code.coding[+] = SCT#225908003 "Pain Score"
-* code.coding[+] = LOINC#8310-5
-* subject = Reference(Patient/ex-patient)
-* effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity.value = 10 
-* note.text = "Oh, scream in pain"
-
 
 
 

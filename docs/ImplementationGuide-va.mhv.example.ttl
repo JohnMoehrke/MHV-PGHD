@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "MHVIG"] ; # 
   fhir:title [ fhir:v "MyHealtheVet use of PGHD"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-12-06T12:46:33-06:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-07T16:35:29-06:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "John Moehrke (himself)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "John Moehrke (himself)" ] ;
@@ -901,18 +901,6 @@
          fhir:reference [ fhir:v "Observation/ex-temperature-11" ]
        ] ;
        fhir:name [ fhir:v "Example of a non MHV bodyTemperature R4 observation with no site" ] ;
-       fhir:description [ fhir:v "holding typical values" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-pain-15> ;
-         fhir:reference [ fhir:v "Observation/ex-pain-15" ]
-       ] ;
-       fhir:name [ fhir:v "Example of a non MHV pain R4 observation of 10 (it has three codes)" ] ;
        fhir:description [ fhir:v "holding typical values" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -1839,42 +1827,6 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-weight-stone> ;
-         fhir:reference [ fhir:v "Observation/ex-weight-stone" ]
-       ] ;
-       fhir:name [ fhir:v "Example of an valid FHIR bodyWeight R4 observation" ] ;
-       fhir:description [ fhir:v "holding typical stone values." ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-weight-string> ;
-         fhir:reference [ fhir:v "Observation/ex-weight-string" ]
-       ] ;
-       fhir:name [ fhir:v "Example of an valid FHIR bodyWeight R4 observation" ] ;
-       fhir:description [ fhir:v "holding typical value in a string." ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-weight-not-ucum> ;
-         fhir:reference [ fhir:v "Observation/ex-weight-not-ucum" ]
-       ] ;
-       fhir:name [ fhir:v "Example of an valid FHIR bodyWeight R4 observation" ] ;
-       fhir:description [ fhir:v "holding typical value but NOT using ucum units of measure." ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://johnmoehrke.github.io/MHV-PGHD/Observation/ex-weight-core> ;
          fhir:reference [ fhir:v "Observation/ex-weight-core" ]
        ] ;
@@ -2152,7 +2104,7 @@
          fhir:reference [ fhir:v "StructureDefinition/VA.MHV.bloodPressure" ]
        ] ;
        fhir:name [ fhir:v "VA MHV Blood Pressure Observation" ] ;
-       fhir:description [ fhir:v "A profile on the Observation that declares how MHV will Create/Read in PGHD for blood pressure measurements.\n\nNote: This profile is not aligned with FHIR core Vital-Signs. FHIR Core Vital-Signs would prefer we use [LOINC 85354-9](https://loinc.org/85354-9/) - Blood pressure panel with all children optional.\nThis was not agreed by Mobile.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#55284-4 code AND LOINC#8716-3\n  - 8716-3 was added as some mobile apps searched on this\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must not have a value[x]\n- must have two components\n- must have systolic and diastolic component values in mm[Hg]\n  - systolic must be between 20 <= s <= 300\n  - diastolic must be between 20 <= d <= 250\n- may have a related has-member heart-rate observation\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n\nLater may have a position component (sitting, standing, supline, and resting)" ] ;
+       fhir:description [ fhir:v "A profile on the Observation that declares how MHV will Create/Read in PGHD for blood pressure measurements.\n\nNote: This profile is now aligned with FHIR core Vital-Signs. \n\n- must be marked with MHV app tag\n- must have vital-signs category\n- FHIR core profile requires LOINC#85354-9\n- must also have LOINC#55284-4 code AND LOINC#8716-3\n  - 8716-3 was added as some mobile apps searched on this\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must not have a value[x]\n- must have two components\n- must have systolic and diastolic component values in mm[Hg]\n  - systolic must be between 20 <= s <= 300\n  - diastolic must be between 20 <= d <= 250\n- may have a related has-member heart-rate observation\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier\n\nLater may have a position component (sitting, standing, supline, and resting)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2200,7 +2152,7 @@
          fhir:reference [ fhir:v "StructureDefinition/VA.MHV.bodyTemperature" ]
        ] ;
        fhir:name [ fhir:v "VA MHV Body Temperature Observation" ] ;
-       fhir:description [ fhir:v "A profile on the Observation that declares how MHV will Create/Read in PGHD for body temperature measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8310-5 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units from the MHV body temperatures (F and C)\n  - must be value between 80 <= n <= 110 Fahrenheit\n- must have status at final\n- must point at the patient\n- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier" ] ;
+       fhir:description [ fhir:v "A profile on the Observation that declares how MHV will Create/Read in PGHD for body temperature measurements.\n\nNote this is compliant with FHIR core vital-signs and bodytemp.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#8310-5 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units from the MHV body temperatures (F and C)\n  - must be value between 80 <= n <= 110 Fahrenheit\n- must have status at final\n- must point at the patient\n- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2212,7 +2164,7 @@
          fhir:reference [ fhir:v "StructureDefinition/VA.MHV.bodyWeight" ]
        ] ;
        fhir:name [ fhir:v "VA MHV BodyWeight Observation" ] ;
-       fhir:description [ fhir:v "A profile on the Observation that declares how MHV will Create in PGHD for body weight measurements.\n\nNote this is compliant with FHIR core vital-signs.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#29463-7 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units from the MHV body weights (lbs and kg)\n  - must be value 0.25 <= n <= 999 lbs\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier" ] ;
+       fhir:description [ fhir:v "A profile on the Observation that declares how MHV will Create in PGHD for body weight measurements.\n\nNote this is compliant with FHIR core vital-signs and bodyweight.\n\n- must be marked with MHV app tag\n- must have vital-signs category\n- must have LOINC#29463-7 code\n- must have effectiveDateTime\n  - others might use effectivePeriod\n- must have valueQuantity with units from the MHV body weights (lbs and kg)\n  - must be value 0.25 <= n <= 999 lbs\n- must have status at final\n- must point at the patient\n- may have a note (comment)\n- once created will or might have an id, versionId, lastUpdated, text, and identifier" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -243,7 +243,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="downloads.html">Downloads</a></li>
 </ul>
 
-<p>Most of the MHV profiles are based on <a href="http://hl7.org/fhir/us/core/STU5.0.1/index.html">HL7 FHIR US-Core</a> implementation guide, which provides guidance to the USA marketplace that VHA participates within.  Deeper explaination is provided in the US-Core specification.</p>
+<p>Most of the MHV profiles are based on <a href="http://hl7.org/fhir/us/core/STU5.0.1/index.html">HL7 FHIR US-Core</a> implementation guide, which provides guidance to the USA marketplace that VHA participates within.  Deeper explanation is provided in the US-Core specification.</p>
+
+<p>Changes to align with FHIR core profiles would require the following changes to our backend code</p>
+<ol>
+  <li>BloodPressure must ALSO have the .code of LOINC 85354-9</li>
+  <li>All ValueQuantity must populate the .units element, with a human friendly string (Note this turned out to be the original problem I had with FHIR core vitalsigns profiles)</li>
+</ol>
+
+<p>No effective change but the profile looks different due to deriving off of FHIR Core vitalsigns profiles</p>
+<ul>
+  <li>BodyWeight</li>
+  <li>BodyTemperature</li>
+  <li>BloodOxygenSat</li>
+</ul>
+
+<p>No effective changes besides the .units issue indicated above</p>
+<ul>
+  <li>Pain</li>
+  <li>HeartRate</li>
+  <li>RespirationRate</li>
+  <li>BloodSugar</li>
+</ul>
 
 
 
@@ -292,7 +313,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.10-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 6, 2023 12:46-0600">2023-12-06</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.10-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 7, 2023 16:35-0600">2023-12-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

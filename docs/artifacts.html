@@ -288,13 +288,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>
 <p>A profile on the Observation that declares how MHV will Create/Read in PGHD for blood pressure measurements.</p>
 
-<p>Note: This profile is not aligned with FHIR core Vital-Signs. FHIR Core Vital-Signs would prefer we use <a href="https://loinc.org/85354-9/">LOINC 85354-9</a> - Blood pressure panel with all children optional.
-This was not agreed by Mobile.</p>
+<p>Note: This profile is now aligned with FHIR core Vital-Signs.</p>
 
 <ul>
   <li>must be marked with MHV app tag</li>
   <li>must have vital-signs category</li>
-  <li>must have LOINC#55284-4 code AND LOINC#8716-3
+  <li>FHIR core profile requires LOINC#85354-9</li>
+  <li>must also have LOINC#55284-4 code AND LOINC#8716-3
     <ul>
       <li>8716-3 was added as some mobile apps searched on this</li>
     </ul>
@@ -410,7 +410,7 @@ This was not agreed by Mobile.</p>
             <td>
 <p>A profile on the Observation that declares how MHV will Create/Read in PGHD for body temperature measurements.</p>
 
-<p>Note this is compliant with FHIR core vital-signs.</p>
+<p>Note this is compliant with FHIR core vital-signs and bodytemp.</p>
 
 <ul>
   <li>must be marked with MHV app tag</li>
@@ -442,7 +442,7 @@ This was not agreed by Mobile.</p>
             <td>
 <p>A profile on the Observation that declares how MHV will Create in PGHD for body weight measurements.</p>
 
-<p>Note this is compliant with FHIR core vital-signs.</p>
+<p>Note this is compliant with FHIR core vital-signs and bodyweight.</p>
 
 <ul>
   <li>must be marked with MHV app tag</li>
@@ -1035,14 +1035,6 @@ This was not agreed by Mobile.</p>
             <td style="column-width:30%">
                <a href="Observation-ex-temperature-11.html"
                   title="Observation/ex-temperature-11">Example of a non MHV bodyTemperature R4 observation with no site</a>
-            </td>
-            <td>
-<p>holding typical values</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-ex-pain-15.html" title="Observation/ex-pain-15">Example of a non MHV pain R4 observation of 10 (it has three codes)</a>
             </td>
             <td>
 <p>holding typical values</p>
@@ -1682,33 +1674,6 @@ This was not agreed by Mobile.</p>
 <p>holding typical values. Should be close to the example body weight in the FHIR core specification. This observation does not use a dateTime, but rather a period with just an end.</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-ex-weight-not-ucum.html"
-                  title="Observation/ex-weight-not-ucum">Example of an valid FHIR bodyWeight R4 observation</a>
-            </td>
-            <td>
-<p>holding typical value but NOT using ucum units of measure.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-ex-weight-stone.html"
-                  title="Observation/ex-weight-stone">Example of an valid FHIR bodyWeight R4 observation</a>
-            </td>
-            <td>
-<p>holding typical stone values.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-ex-weight-string.html"
-                  title="Observation/ex-weight-string">Example of an valid FHIR bodyWeight R4 observation</a>
-            </td>
-            <td>
-<p>holding typical value in a string.</p>
-</td>
-         </tr>
       </tbody>
    </table>
 </div>
@@ -1757,7 +1722,7 @@ This was not agreed by Mobile.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.10-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 6, 2023 12:46-0600">2023-12-06</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://healthcaresecprivacy.blogspot.com">John Moehrke (himself)</a>.  Package va.mhv.example#0.2.10-beta based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 7, 2023 16:35-0600">2023-12-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

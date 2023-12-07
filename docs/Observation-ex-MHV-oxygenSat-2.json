@@ -10,7 +10,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-MHV-oxygenSat-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-MHV-oxygenSat-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VA.MHV.bloodOxygenSat.html\">VA MHV Blood Oxygen Saturation Observation</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Oxygen saturation in Arterial blood by Pulse oximetry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#59408-5; <a href=\"https://loinc.org/\">LOINC</a>#2708-6 &quot;Oxygen saturation in Arterial blood&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-02 23:50:50-0500</p><p><b>value</b>: 99.4 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p><p><b>note</b>: amazingly high</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-MHV-oxygenSat-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-MHV-oxygenSat-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VA.MHV.bloodOxygenSat.html\">VA MHV Blood Oxygen Saturation Observation</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Oxygen saturation in Arterial blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#2708-6; <a href=\"https://loinc.org/\">LOINC</a>#59408-5 &quot;Oxygen saturation in Arterial blood by Pulse oximetry&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-02 23:50:50-0500</p><p><b>value</b>: 99.4 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p><p><b>note</b>: amazingly high</p></div>"
   },
   "status" : "final",
   "category" : [{
@@ -22,13 +22,13 @@
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "code" : "59408-5",
-      "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+      "code" : "2708-6",
+      "display" : "Oxygen saturation in Arterial blood"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "2708-6",
-      "display" : "Oxygen saturation in Arterial blood"
+      "code" : "59408-5",
+      "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
     }]
   },
   "subject" : {
@@ -37,6 +37,7 @@
   "effectiveDateTime" : "2004-12-02T23:50:50-05:00",
   "valueQuantity" : {
     "value" : 99.4,
+    "unit" : "percent",
     "system" : "http://unitsofmeasure.org",
     "code" : "%"
   },

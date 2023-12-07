@@ -8,6 +8,8 @@ Title: "MultiBirth indication"
 Description: """
 When this family member is known to be part of a MultiBirth, indicate how many siblings.
 """
+* ^context[+].type = #element
+* ^context[=].expression = "FamilyMemberHistory"
 * value[x] only integer
 * valueInteger 1..1
 
@@ -17,6 +19,8 @@ Title: "Adopted indication"
 Description: """
 When this family member is Adopted.
 """
+* ^context[+].type = #element
+* ^context[=].expression = "FamilyMemberHistory"
 * value[x] only boolean
 * valueBoolean 1..1
 
@@ -28,6 +32,8 @@ What is the Ethnicity of this family member
 
 Note would like to use the us-core defined extension, but it is not allowed in FamilyMemberHistory [jira issue](https://jira.hl7.org/browse/FHIR-35997)
 """
+* ^context[+].type = #element
+* ^context[=].expression = "FamilyMemberHistory"
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://terminology.hl7.org/ValueSet/v3-Ethnicity (preferred)
 * valueCodeableConcept 1..1
@@ -40,6 +46,8 @@ What is the Race of this family member
 
 Note would like to use us-core defined extension, but is not allowed in FamilyMemberHistory [Jira issue](https://jira.hl7.org/browse/FHIR-35998)
 """
+* ^context[+].type = #element
+* ^context[=].expression = "FamilyMemberHistory"
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://terminology.hl7.org/ValueSet/v3-Race (preferred)
 * valueCodeableConcept 1..1

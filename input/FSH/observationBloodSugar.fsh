@@ -38,7 +38,7 @@ Note that Blood Sugar is not part of FHIR core vital-signs.
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
-* code.coding 1..2
+* code.coding 1..
 * code.coding contains 
     loincCode1 1..1 and 
     fasting 0..1 and

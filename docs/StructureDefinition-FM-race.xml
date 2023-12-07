@@ -30,7 +30,7 @@ Note would like to use us-core defined extension, but is not allowed in FamilyMe
   <name value="Race"/>
   <title value="Race"/>
   <status value="active"/>
-  <date value="2023-12-06T12:46:33-06:00"/>
+  <date value="2023-12-07T16:35:29-06:00"/>
   <publisher value="John Moehrke (himself)"/>
   <contact>
     <name value="John Moehrke (himself)"/>
@@ -67,7 +67,7 @@ Note would like to use us-core defined extension, but is not allowed in FamilyMe
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="FamilyMemberHistory"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

@@ -1,13 +1,13 @@
-// MHV Observation for Body Weight
-// using FHIR core vitalsigns, tried to use the core bodyweight but some logic (builder) problem creates errors in the examples valueQuantity
+
+
 Profile:        MHVbodyWeight
-Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
+Parent:         http://hl7.org/fhir/StructureDefinition/bodyweight
 Id:             VA.MHV.bodyWeight
 Title:          "VA MHV BodyWeight Observation"
 Description:    """
 A profile on the Observation that declares how MHV will Create in PGHD for body weight measurements.
 
-Note this is compliant with FHIR core vital-signs.
+Note this is compliant with FHIR core vital-signs and bodyweight.
 
 - must be marked with MHV app tag
 - must have vital-signs category
@@ -21,20 +21,15 @@ Note this is compliant with FHIR core vital-signs.
 - may have a note (comment)
 - once created will or might have an id, versionId, lastUpdated, text, and identifier
 """
-* ^version = "0.2.1"
-* ^date = "2022-10-17"
+* ^version = "0.2.2"
+* ^date = "2023-12-07"
 * ^experimental = false
 //Note this could be derived off of the international profile for http://hl7.org/fhir/StructureDefinition/bodyweight. But doing that causes alot of indirection, and doesn't seem to be as blunt as writing it all inline here.
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
-* category 1..1
-// this category requirement is already in core vital-signs, build fails examples with this explicitly here
-//* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code = LOINC#29463-7 "Body weight"
+* code.coding 1.. // hack to make FHIR core profiles not throw an error
 * effectiveDateTime 1..1
-* value[x] only Quantity
-* valueQuantity.unit from MHVbodyWeights
 * valueQuantity.value ^minValueQuantity = 0.25 UCUM#[lb_av]
 * valueQuantity.value ^maxValueQuantity = 999 UCUM#[lb_av]
 * status = #final

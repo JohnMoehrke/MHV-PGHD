@@ -1,9 +1,9 @@
 ﻿MHVIG : Validation Results
 =========================================
 
-err = 59, warn = 8, info = 34
+err = 0, warn = 0, info = 0
 IG Publisher Version: 1.5.5
-Generated Wed Dec 06 12:58:30 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.2.10-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+Generated Thu Dec 07 16:43:27 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.2.10-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
  Build Errors : 0 / 0 / 0
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\AllergyIntolerance-ex-MHV-allergy-0 : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\CapabilityStatement-MHVcapabilities : 0 / 0 / 1
@@ -20,11 +20,11 @@ Generated Wed Dec 06 12:58:30 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Immunization-ex-MHV-immunization-0 : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\ImplementationGuide-va.mhv.example : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\MedicationStatement-ex-MHV-medication-0 : 0 / 0 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0 : 3 / 1 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-1 : 3 / 1 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-apple : 5 / 1 / 3
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-end : 3 / 1 / 3
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-start : 3 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0 : 0 / 1 / 6
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-1 : 0 / 1 / 6
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-apple : 0 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-end : 0 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-start : 0 / 1 / 3
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugarB-0 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugarB-1 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodSugarB-106107 : 0 / 1 / 1
@@ -40,12 +40,12 @@ Generated Wed Dec 06 12:58:30 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1 : 0 / 1 / 2
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-2 : 0 / 1 / 2
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-3 : 0 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-1 : 1 / 1 / 3
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-2 : 1 / 1 / 3
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-3 : 1 / 1 / 3
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-5 : 1 / 1 / 3
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-6 : 1 / 1 / 3
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-7 : 1 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-1 : 0 / 1 / 4
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-2 : 0 / 1 / 4
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-3 : 0 / 1 / 4
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-5 : 0 / 1 / 4
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-6 : 0 / 1 / 4
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-7 : 0 / 1 / 4
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-0 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-1 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-10 : 0 / 1 / 1
@@ -61,16 +61,16 @@ Generated Wed Dec 06 12:58:30 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-1 : 0 / 1 / 2
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-2 : 0 / 1 / 2
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-respirationRate-3 : 0 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-0 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-1 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-2 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-3 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-4 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-5 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-6 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-7 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-1 : 1 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-0 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-1 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-2 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-3 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-4 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-5 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-6 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-temperature-7 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-weight-1 : 0 / 1 / 2
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugarB-106100 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugarB-106101 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugarB-106102 : 0 / 1 / 1
@@ -78,38 +78,34 @@ Generated Wed Dec 06 12:58:30 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugarB-106104 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugarB-106105 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-bloodSugarB-106106 : 0 / 1 / 1
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-other-oxygenSat-4 : 2 / 1 / 3
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-other-oxygenSat-8 : 1 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-other-oxygenSat-4 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-other-oxygenSat-8 : 0 / 1 / 3
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-11 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-12 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-13 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-14 : 0 / 1 / 1
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-pain-15 : 3 / 1 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-10 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-11 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-12 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-8 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-9 : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-apple : 3 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-core : 1 / 1 / 6
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-not-ucum : 2 / 1 / 6
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-period : 3 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-period-end : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-period-start : 1 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-stone : 2 / 1 / 6
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-string : 2 / 1 / 6
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-10 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-11 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-12 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-8 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-temperature-9 : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-apple : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-core : 0 / 1 / 4
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-period : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-period-end : 0 / 1 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-weight-period-start : 0 / 1 / 2
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Patient-ex-patient : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Practitioner-ex-practitioner : 0 / 0 / 1
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-FM-Adopted : 0 / 1 / 1
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-FM-Ethnicity : 0 / 1 / 1
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-FM-MultiBirth : 0 / 1 / 1
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-FM-Race : 0 / 1 / 1
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-FM-Adopted : 0 / 0 / 1
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-FM-Ethnicity : 0 / 0 / 1
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-FM-MultiBirth : 0 / 0 / 1
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-FM-Race : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.BlueBundle : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.BlueComposition : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.allergy : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodOxygenSat : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodPressure : 0 / 0 / 1
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodSugar : 0 / 0 / 2
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bloodSugar : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\StructureDefinition-VA.MHV.familymemberhistory : 0 / 0 / 1
@@ -144,34 +140,10 @@ Generated Wed Dec 06 12:58:30 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.
 == fsh-generated\resources\ImplementationGuide-va.mhv.example.json ==
 == fsh-generated\resources\MedicationStatement-ex-MHV-medication-0.json ==
 == fsh-generated\resources\Observation-ex-MHV-bloodPressure-0.json ==
-INFORMATION: Observation/ex-MHV-bloodPressure-0: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-MHV-bloodPressure-0: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.code: Observation.code.coding:BPCode: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[0].value.ofType(Quantity): Observation.component:DiastolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-0: Observation.component[1].value.ofType(Quantity): Observation.component:SystolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-bloodPressure-1.json ==
-INFORMATION: Observation/ex-MHV-bloodPressure-1: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-MHV-bloodPressure-1: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.code: Observation.code.coding:BPCode: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[0].value.ofType(Quantity): Observation.component:DiastolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-1: Observation.component[1].value.ofType(Quantity): Observation.component:SystolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-bloodPressure-apple.json ==
-ERROR: Observation/ex-MHV-bloodPressure-apple: Observation: Observation.category: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-apple: Observation: Observation.category:VSCat: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-INFORMATION: Observation/ex-MHV-bloodPressure-apple: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-bloodPressure-apple: Observation.code: Observation.code.coding:BPCode: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-apple: Observation.component[0].value.ofType(Quantity): Observation.component:SystolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-apple: Observation.component[1].value.ofType(Quantity): Observation.component:DiastolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-bloodPressure-end.json ==
-INFORMATION: Observation/ex-MHV-bloodPressure-end: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-bloodPressure-end: Observation.code: Observation.code.coding:BPCode: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-end: Observation.component[0].value.ofType(Quantity): Observation.component:SystolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-end: Observation.component[1].value.ofType(Quantity): Observation.component:DiastolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-bloodPressure-start.json ==
-INFORMATION: Observation/ex-MHV-bloodPressure-start: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-bloodPressure-start: Observation.code: Observation.code.coding:BPCode: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-start: Observation.component[0].value.ofType(Quantity): Observation.component:SystolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
-ERROR: Observation/ex-MHV-bloodPressure-start: Observation.component[1].value.ofType(Quantity): Observation.component:DiastolicBP.value[x].unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-bloodSugarB-0.json ==
 == fsh-generated\resources\Observation-ex-MHV-bloodSugarB-1.json ==
 == fsh-generated\resources\Observation-ex-MHV-bloodSugarB-106107.json ==
@@ -188,23 +160,11 @@ ERROR: Observation/ex-MHV-bloodPressure-start: Observation.component[1].value.of
 == fsh-generated\resources\Observation-ex-MHV-heartRate-2.json ==
 == fsh-generated\resources\Observation-ex-MHV-heartRate-3.json ==
 == fsh-generated\resources\Observation-ex-MHV-oxygenSat-1.json ==
-INFORMATION: Observation/ex-MHV-oxygenSat-1: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-oxygenSat-1: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-oxygenSat-2.json ==
-INFORMATION: Observation/ex-MHV-oxygenSat-2: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-oxygenSat-2: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-oxygenSat-3.json ==
-INFORMATION: Observation/ex-MHV-oxygenSat-3: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-oxygenSat-3: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-oxygenSat-5.json ==
-INFORMATION: Observation/ex-MHV-oxygenSat-5: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-oxygenSat-5: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-oxygenSat-6.json ==
-INFORMATION: Observation/ex-MHV-oxygenSat-6: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-oxygenSat-6: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-oxygenSat-7.json ==
-INFORMATION: Observation/ex-MHV-oxygenSat-7: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-MHV-oxygenSat-7: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-pain-0.json ==
 == fsh-generated\resources\Observation-ex-MHV-pain-1.json ==
 == fsh-generated\resources\Observation-ex-MHV-pain-10.json ==
@@ -221,25 +181,15 @@ ERROR: Observation/ex-MHV-oxygenSat-7: Observation.value.ofType(Quantity): Obser
 == fsh-generated\resources\Observation-ex-MHV-respirationRate-2.json ==
 == fsh-generated\resources\Observation-ex-MHV-respirationRate-3.json ==
 == fsh-generated\resources\Observation-ex-MHV-temperature-0.json ==
-ERROR: Observation/ex-MHV-temperature-0: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-temperature-1.json ==
-ERROR: Observation/ex-MHV-temperature-1: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-temperature-2.json ==
-ERROR: Observation/ex-MHV-temperature-2: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-temperature-3.json ==
-ERROR: Observation/ex-MHV-temperature-3: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-temperature-4.json ==
-ERROR: Observation/ex-MHV-temperature-4: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-temperature-5.json ==
-ERROR: Observation/ex-MHV-temperature-5: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-temperature-6.json ==
-ERROR: Observation/ex-MHV-temperature-6: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-temperature-7.json ==
-ERROR: Observation/ex-MHV-temperature-7: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-weight.json ==
-ERROR: Observation/ex-MHV-weight: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
 == fsh-generated\resources\Observation-ex-MHV-weight-1.json ==
-ERROR: Observation/ex-MHV-weight-1: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
 == fsh-generated\resources\Observation-ex-bloodSugarB-106100.json ==
 == fsh-generated\resources\Observation-ex-bloodSugarB-106101.json ==
 == fsh-generated\resources\Observation-ex-bloodSugarB-106102.json ==
@@ -248,88 +198,33 @@ ERROR: Observation/ex-MHV-weight-1: Observation.value.ofType(Quantity): Observat
 == fsh-generated\resources\Observation-ex-bloodSugarB-106105.json ==
 == fsh-generated\resources\Observation-ex-bloodSugarB-106106.json ==
 == fsh-generated\resources\Observation-ex-other-oxygenSat-4.json ==
-INFORMATION: Observation/ex-other-oxygenSat-4: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-other-oxygenSat-4: Observation: Observation.category:VSCat: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
-ERROR: Observation/ex-other-oxygenSat-4: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated\resources\Observation-ex-other-oxygenSat-8.json ==
-INFORMATION: Observation/ex-other-oxygenSat-8: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-other-oxygenSat-8: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1)
 == fsh-generated\resources\Observation-ex-pain-11.json ==
 == fsh-generated\resources\Observation-ex-pain-12.json ==
 == fsh-generated\resources\Observation-ex-pain-13.json ==
 == fsh-generated\resources\Observation-ex-pain-14.json ==
-== fsh-generated\resources\Observation-ex-pain-15.json ==
-INFORMATION: Observation/ex-pain-15: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-pain-15: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-pain-15: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
-ERROR: Observation/ex-pain-15: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
-ERROR: Observation/ex-pain-15: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-temperature-10.json ==
-ERROR: Observation/ex-temperature-10: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-temperature-11.json ==
-ERROR: Observation/ex-temperature-11: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-temperature-12.json ==
-ERROR: Observation/ex-temperature-12: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-temperature-8.json ==
-ERROR: Observation/ex-temperature-8: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-temperature-9.json ==
-ERROR: Observation/ex-temperature-9: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
 == fsh-generated\resources\Observation-ex-weight-apple.json ==
-ERROR: Observation/ex-weight-apple: Observation: Observation.category: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
-ERROR: Observation/ex-weight-apple: Observation: Observation.category:VSCat: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
-ERROR: Observation/ex-weight-apple: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
 == fsh-generated\resources\Observation-ex-weight-core.json ==
-INFORMATION: Observation/ex-weight-core: Observation.code.coding[3]: Code System URI 'http://acme.org/devices/clinical-codes' could not be found so the code cannot be validated
-INFORMATION: Observation/ex-weight-core: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-weight-core: Observation.code.coding[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-weight-core: Observation.code.coding[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-weight-core: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
-== fsh-generated\resources\Observation-ex-weight-not-ucum.json ==
-INFORMATION: Observation/ex-weight-not-ucum: Observation.code.coding[3]: Code System URI 'http://acme.org/devices/clinical-codes' could not be found so the code cannot be validated
-INFORMATION: Observation/ex-weight-not-ucum: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-weight-not-ucum: Observation.code.coding[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-weight-not-ucum: Observation.code.coding[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-weight-not-ucum: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.system: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
-ERROR: Observation/ex-weight-not-ucum: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.code: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
 == fsh-generated\resources\Observation-ex-weight-period.json ==
-ERROR: Observation/ex-weight-period: Observation: Observation.category: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
-ERROR: Observation/ex-weight-period: Observation: Observation.category:VSCat: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
-ERROR: Observation/ex-weight-period: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
 == fsh-generated\resources\Observation-ex-weight-period-end.json ==
-ERROR: Observation/ex-weight-period-end: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
 == fsh-generated\resources\Observation-ex-weight-period-start.json ==
-ERROR: Observation/ex-weight-period-start: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
-== fsh-generated\resources\Observation-ex-weight-stone.json ==
-INFORMATION: Observation/ex-weight-stone: Observation.code.coding[3]: Code System URI 'http://acme.org/devices/clinical-codes' could not be found so the code cannot be validated
-INFORMATION: Observation/ex-weight-stone: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-weight-stone: Observation.code.coding[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-weight-stone: Observation.code.coding[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-weight-stone: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1)
-ERROR: Observation/ex-weight-stone: Observation.value.ofType(Quantity).code: The value provided ('[stone_av]') was not found in the value set 'Body Weight Units' (http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1), and a code is required from this value set  (error message = The provided code 'http://unitsofmeasure.org#[stone_av]' is not in the value set 'http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.1' (from Tx-Server))
-== fsh-generated\resources\Observation-ex-weight-string.json ==
-INFORMATION: Observation/ex-weight-string: Observation.code.coding[3]: Code System URI 'http://acme.org/devices/clinical-codes' could not be found so the code cannot be validated
-ERROR: Observation/ex-weight-string: Observation.value.ofType(string): This element does not match any known slice  defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 and slicing is CLOSED: Observation.value.ofType(string): Does not match slice 'valueQuantity' (discriminator: ($this is Quantity))
-INFORMATION: Observation/ex-weight-string: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-weight-string: Observation.code.coding[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Observation/ex-weight-string: Observation.code.coding[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Observation/ex-weight-string: Observation.value.ofType(string): The Profile 'http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1' definition allows for the type Quantity but found type string
 == fsh-generated\resources\Patient-ex-patient.json ==
 == fsh-generated\resources\Practitioner-ex-practitioner.json ==
 == fsh-generated\resources\StructureDefinition-FM-Adopted.json ==
-WARNING: StructureDefinition/FM-Adopted: StructureDefinition.context[0]: Review the extension type for FM-Adopted: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated\resources\StructureDefinition-FM-Ethnicity.json ==
-WARNING: StructureDefinition/FM-Ethnicity: StructureDefinition.context[0]: Review the extension type for FM-Ethnicity: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated\resources\StructureDefinition-FM-MultiBirth.json ==
-WARNING: StructureDefinition/FM-MultiBirth: StructureDefinition.context[0]: Review the extension type for FM-MultiBirth: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated\resources\StructureDefinition-FM-Race.json ==
-WARNING: StructureDefinition/FM-Race: StructureDefinition.context[0]: Review the extension type for FM-Race: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated\resources\StructureDefinition-VA.MHV.BlueBundle.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.BlueComposition.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.allergy.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.bloodOxygenSat.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.bloodPressure.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.bloodSugar.json ==
-INFORMATION: StructureDefinition.snapshot.element[25]: The slice definition for Observation.code.coding has a maximum of 2 but the slices add up to a maximum of 3. Check that this is what is intended
 == fsh-generated\resources\StructureDefinition-VA.MHV.bodyTemperature.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.bodyWeight.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.familymemberhistory.json ==
@@ -337,10 +232,6 @@ INFORMATION: StructureDefinition.snapshot.element[25]: The slice definition for 
 == fsh-generated\resources\StructureDefinition-VA.MHV.immunization.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.medication.json ==
 == fsh-generated\resources\StructureDefinition-VA.MHV.pain.json ==
-WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.snapshot.element[39].minValue.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
-WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.snapshot.element[39].maxValue.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
-WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.differential.element[23].minValue.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
-WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.differential.element[23].maxValue.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
 == fsh-generated\resources\StructureDefinition-VA.MHV.respirationRate.json ==
 == fsh-generated\resources\ValueSet-AgesVS.json ==
 == fsh-generated\resources\ValueSet-AllAppIdCodes.json ==

@@ -6,11 +6,10 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
-* code = LOINC#8310-5 "Body temperature"
+* code.coding[BodyTempCode] = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 98.6 '[degF]' 
+* valueQuantity = 98.6 '[degF]' "F" 
 
 Instance:   ex-MHV-temperature-1
 InstanceOf: VA.MHV.bodyTemperature
@@ -20,11 +19,10 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
-* code = LOINC#8310-5 "Body temperature"
+* code.coding[BodyTempCode] = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 98.6 '[degF]' 
+* valueQuantity = 98.6 '[degF]' "F" 
 * bodySite = SCT#21082005 "Entire mouth region"
 * note.text = "nice American temperature by mouth"
 
@@ -36,11 +34,10 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
-* code = LOINC#8310-5 "Body temperature"
+* code.coding[BodyTempCode] = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 98.6 '[degF]' 
+* valueQuantity = 98.6 '[degF]' "F" 
 * bodySite = SCT#362732006 "Entire axillary region"
 * note.text = "nice American temperature by underarm"
 
@@ -52,11 +49,10 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
-* code = LOINC#8310-5 "Body temperature"
+* code.coding[BodyTempCode] = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 98.6 '[degF]' 
+* valueQuantity = 98.6 '[degF]' "F" 
 * bodySite = SCT#422005 "Inferior surface of tongue"
 * note.text = "nice American temperature by tongue"
 
@@ -68,11 +64,10 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
-* code = LOINC#8310-5 "Body temperature"
+* code.coding[BodyTempCode] = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 98.6 '[degF]' 
+* valueQuantity = 98.6 '[degF]' "F" 
 * bodySite = SCT#1910005 "Entire ear"
 * note.text = "nice American temperature by ear"
 
@@ -84,11 +79,10 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
-* code = LOINC#8310-5 "Body temperature"
+* code.coding[BodyTempCode] = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 98.6 '[degF]' 
+* valueQuantity = 98.6 '[degF]' "F" 
 * bodySite = SCT#181261002 "Entire rectum"
 * note.text = "nice American temperature by rectum"
 
@@ -100,11 +94,10 @@ Description:      "holding typical values"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[loincCode1] = LOINC#8310-5 "Body temperature"
-* code = LOINC#8310-5 "Body temperature"
+* code.coding[BodyTempCode] = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 37 'Cel' 
+* valueQuantity = 37 'Cel' "C" 
 * bodySite = SCT#422005 "Inferior surface of tongue"
 * note.text = "nice International temperature by tongue"
 
@@ -116,11 +109,10 @@ Description:      "holding typical values"
 //* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[+] = LOINC#8310-5 "Body temperature"
 * code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 37 'Cel' 
+* valueQuantity = 37 'Cel' "C" 
 * bodySite.text = "truck"
 * note.text = "nice International temperature by truck"
 
@@ -132,11 +124,10 @@ Description:      "holding typical values"
 //* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[+] = LOINC#8310-5 "Body temperature"
 * code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 37 'Cel' 
+* valueQuantity = 37 'Cel' "C" 
 * bodySite = SCT#39937001 "skin"
 * note.text = "nice International temperature by skin"
 
@@ -148,11 +139,10 @@ Description:      "holding typical values"
 //* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[+] = LOINC#8310-5 "Body temperature"
 * code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 37 'Cel'
+* valueQuantity = 37 'Cel' "C"
 * bodySite = SCT#362620003 "entire temporal region"
 * note.text = "nice International temperature by forehead"
 
@@ -164,11 +154,10 @@ Description:      "holding typical values"
 //* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[+] = LOINC#8310-5 "Body temperature"
 * code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 37 'Cel' 
+* valueQuantity = 37 'Cel' "C" 
 * bodySite = SCT#89837001 "urinary bladder"
 * note.text = "nice International temperature by urinary bladder"
 
@@ -180,11 +169,10 @@ Description:      "holding typical values"
 //* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[+] = LOINC#8310-5 "Body temperature"
 * code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 37 'Cel' 
+* valueQuantity = 37 'Cel' "C" 
 * note.text = "nice International temperature by urinary bladder"
 
 Instance:   ex-temperature-12
@@ -195,12 +183,11 @@ Description:      "holding typical values"
 //* meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-//* code.coding[+] = LOINC#8310-5 "Body temperature"
 * code = LOINC#8310-5 "Body temperature"
 * subject = Reference(Patient/ex-patient)
 * effectivePeriod.start = 2004-12-25T23:50:50-05:00
 * effectivePeriod.end = 2004-12-25T23:50:50-05:00
-* valueQuantity = 37 'Cel' 
+* valueQuantity = 37 'Cel' "C" 
 * bodySite = SCT#39937001 "skin"
 * note.text = "nice International temperature by skin"
 

@@ -2,7 +2,7 @@
 // using FHIR core vitalsigns as that profile requires different codes that MHV/PGHD have not agreed to allow
 // http://hl7.org/fhir/us/core/StructureDefinition-us-core-pulse-oximetry.html
 Profile:        MHVbloodOxygenSat
-Parent:         http://hl7.org/fhir/StructureDefinition/vitalsigns
+Parent:         http://hl7.org/fhir/StructureDefinition/oxygensat
 Id:             VA.MHV.bloodOxygenSat
 Title:          "VA MHV Blood Oxygen Saturation Observation"
 Description:    """
@@ -27,28 +27,22 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 - once created will or might have an id, versionId, lastUpdated, text, and identifier
 - DSTU2 use comment rather than note
 """
-* ^version = "0.3.0"
-* ^date = "2021-09-08"
+* ^version = "0.3.1"
+* ^date = "2023-12-07"
 * ^experimental = false
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
-//* category 1..1
-// don't add this category constraint as it is already in fhir core
-//* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-// MHV records using two codes as there are two different codes based on the version of the oxygen saturation profiles from FHIR and Argonaut
-// Argonaut and VCM use 59408-5
-// FHIR Core R4 also adds 2708-6
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #closed
+* code.coding 1.. // hack to make FHIR core profiles not throw an error
+// FHIR Core R4 requires 2708-6
+
+/* TODO: would like to add the following but it fails. However one can still add them to instances.
 * code.coding 2..2
-* code.coding contains ox1 1..1 and ox2 1..1
+* code.coding contains ox1 1..1
 * code.coding[ox1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
-* code.coding[ox2] = LOINC#2708-6 "Oxygen saturation in Arterial blood"
+*/
+
 * effectiveDateTime 1..1
-* value[x] only Quantity
-* valueQuantity.unit = UCUM#%
 * valueQuantity.value ^minValueQuantity = 50 UCUM#%
 * valueQuantity.value ^maxValueQuantity = 100 UCUM#%
 // status of preliminary and final found in the PGHD database

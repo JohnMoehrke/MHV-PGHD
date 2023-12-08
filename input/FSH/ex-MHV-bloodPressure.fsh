@@ -6,8 +6,8 @@ Description:      "holding typical values of 140/90"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding[1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
-* code.coding[2] = LOINC#8716-3 "Vital signs"
+* code.coding[loincCode1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
+* code.coding[loincCode2] = LOINC#8716-3 "Vital signs"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * component[SystolicBP].code.coding[SBPCode] = LOINC#8480-6 "Systolic blood pressure"
@@ -26,8 +26,8 @@ Description:      "holding typical values of 140/90 with a heart-rate"
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* code.coding[1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
-* code.coding[2] = LOINC#8716-3 "Vital signs"
+* code.coding[loincCode1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
+* code.coding[loincCode2] = LOINC#8716-3 "Vital signs"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * component[SystolicBP].code.coding[SBPCode] = LOINC#8480-6 "Systolic blood pressure"

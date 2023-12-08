@@ -38,11 +38,21 @@ Later may have a position component (sitting, standing, supline, and resting)
 * code.coding 1.. // hack to make FHIR core profiles not throw an error
 // FHIR Core R4 requires 85354-9
 
-/* TODO: would like to add the following but it fails. However one can still add them to instances.
-* code.coding contains loincCode1 1..1 and loincCode2 1..1
-* code.coding[loincCode1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
-* code.coding[loincCode2] = LOINC#8716-3 "Vital signs"
-*/
+* code.coding contains loincCode1 1..1
+* code.coding[loincCode1].system 1..1
+* code.coding[loincCode1].system only uri
+* code.coding[loincCode1].system = "http://loinc.org" (exactly)
+* code.coding[loincCode1].code 1..1
+* code.coding[loincCode1].code only code
+* code.coding[loincCode1].code = #55284-4 (exactly)
+* code.coding contains loincCode2 1..1
+* code.coding[loincCode2].system 1..1
+* code.coding[loincCode2].system only uri
+* code.coding[loincCode2].system = "http://loinc.org" (exactly)
+* code.coding[loincCode2].code 1..1
+* code.coding[loincCode2].code only code
+* code.coding[loincCode2].code = #8716-3 (exactly)
+
 
 * effectiveDateTime 1..1
 * component[SystolicBP].code.coding 1.. // hack to make FHIR core profiles not throw an error

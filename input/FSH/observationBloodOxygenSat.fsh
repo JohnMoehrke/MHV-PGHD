@@ -36,11 +36,13 @@ This profile is consistent with FHIR core Vital-Signs for Oxygen Saturation
 * code.coding 1.. // hack to make FHIR core profiles not throw an error
 // FHIR Core R4 requires 2708-6
 
-/* TODO: would like to add the following but it fails. However one can still add them to instances.
-* code.coding 2..2
 * code.coding contains ox1 1..1
-* code.coding[ox1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
-*/
+* code.coding[ox1].system 1..1
+* code.coding[ox1].system only uri
+* code.coding[ox1].system = "http://loinc.org" (exactly)
+* code.coding[ox1].code 1..1
+* code.coding[ox1].code only code
+* code.coding[ox1].code = #59408-5 (exactly)
 
 * effectiveDateTime 1..1
 * valueQuantity.value ^minValueQuantity = 50 UCUM#%

@@ -3,7 +3,7 @@
 
 err = 0, warn = 0, info = 0
 IG Publisher Version: 1.5.5
-Generated Thu Dec 07 16:43:27 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.2.10-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
+Generated Thu Dec 07 18:57:18 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.2.10-beta (canonical = https://johnmoehrke.github.io/MHV-PGHD)
  Build Errors : 0 / 0 / 0
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\AllergyIntolerance-ex-MHV-allergy-0 : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\CapabilityStatement-MHVcapabilities : 0 / 0 / 1
@@ -20,8 +20,8 @@ Generated Thu Dec 07 16:43:27 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Immunization-ex-MHV-immunization-0 : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\ImplementationGuide-va.mhv.example : 0 / 0 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\MedicationStatement-ex-MHV-medication-0 : 0 / 0 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0 : 0 / 1 / 6
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-1 : 0 / 1 / 6
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-0 : 0 / 1 / 4
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-1 : 0 / 1 / 4
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-apple : 0 / 1 / 3
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-end : 0 / 1 / 3
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-bloodPressure-start : 0 / 1 / 3
@@ -40,12 +40,12 @@ Generated Thu Dec 07 16:43:27 CST 2023. FHIR version 4.0.1 for va.mhv.example#0.
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-1 : 0 / 1 / 2
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-2 : 0 / 1 / 2
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-heartRate-3 : 0 / 1 / 2
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-1 : 0 / 1 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-2 : 0 / 1 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-3 : 0 / 1 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-5 : 0 / 1 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-6 : 0 / 1 / 4
- C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-7 : 0 / 1 / 4
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-1 : 0 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-2 : 0 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-3 : 0 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-5 : 0 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-6 : 0 / 1 / 3
+ C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-oxygenSat-7 : 0 / 1 / 3
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-0 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-1 : 0 / 1 / 1
  C:\Users\johnm\git\MHV-PGHD\fsh-generated\resources\Observation-ex-MHV-pain-10 : 0 / 1 / 1

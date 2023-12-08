@@ -7,7 +7,7 @@ Description:      "Oxygen Saturation holding typical values"
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[OxygenSatCode] = LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* code.coding[1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* code.coding[ox1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-01T23:50:50-05:00
 * valueQuantity = 95 '%' "percent"
@@ -23,7 +23,7 @@ Description:      "Oxygen Saturation holding high value of 99.4%"
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[OxygenSatCode] = LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* code.coding[1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* code.coding[ox1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-02T23:50:50-05:00
 * valueQuantity = 99.4 '%' "percent"
@@ -39,7 +39,7 @@ Description:      "Oxygen Saturation holding typical values"
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[OxygenSatCode] = LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* code.coding[1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* code.coding[ox1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-03T23:50:50-05:00
 * valueQuantity = 65 '%' "percent"
@@ -69,7 +69,7 @@ Description:      "Heart Rate holding typical values"
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[OxygenSatCode] = LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* code.coding[1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* code.coding[ox1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-03T23:50:50-05:00
 * valueQuantity = 65 '%' "percent"
@@ -86,7 +86,7 @@ Description:      "Heart Rate holding typical values"
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[OxygenSatCode] = LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* code.coding[1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* code.coding[ox1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-03T23:50:50-05:00
 * valueQuantity = 95 '%' "percent"
@@ -103,7 +103,7 @@ Description:      "Heart Rate holding typical values"
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.coding[OxygenSatCode] = LOINC#2708-6 "Oxygen saturation in Arterial blood"
-* code.coding[1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* code.coding[ox1] = LOINC#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = 2004-12-03T23:50:50-05:00
 * valueQuantity = 94 '%' "percent"

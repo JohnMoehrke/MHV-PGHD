@@ -1,18 +1,18 @@
 
 // not using FHIR core vitalsigns as that profile requires different codes that MHV/PGHD have not agreed to allow
 Profile:        MHVbloodPressure
-Parent:         Observation
+Parent:         http://hl7.org/fhir/StructureDefinition/bp
 Id:             VA.MHV.bloodPressure
 Title:          "VA MHV Blood Pressure Observation"
 Description:    """
 A profile on the Observation that declares how MHV will Create/Read in PGHD for blood pressure measurements.
 
-Note: This profile is not aligned with FHIR core Vital-Signs. FHIR Core Vital-Signs would prefer we use [LOINC 85354-9](https://loinc.org/85354-9/) - Blood pressure panel with all children optional.
-This was not agreed by Mobile.
+Note: This profile is now aligned with FHIR core Vital-Signs. 
 
 - must be marked with MHV app tag
 - must have vital-signs category
-- must have LOINC#55284-4 code AND LOINC#8716-3
+- FHIR core profile requires LOINC#85354-9
+- must also have LOINC#55284-4 code AND LOINC#8716-3
   - 8716-3 was added as some mobile apps searched on this
 - must have effectiveDateTime
   - others might use effectivePeriod
@@ -35,41 +35,32 @@ Later may have a position component (sitting, standing, supline, and resting)
 // this is what the MHV / PGD mapping table says
 * meta.tag 1..1
 * meta.tag = https://wiki.mobilehealth.va.gov/x/Onc1C#2ce6d9aa-c068-4809-8dda-662bcb16d09a
-* category 1..1
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-// MHV records using two codes as there are mobile apps that only look for the second loinc code
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #closed
-* code.coding 2..2
-* code.coding contains loincCode1 1..1 and loincCode2 1..1
-* code.coding[loincCode1] = LOINC#55284-4 "Blood pressure systolic and diastolic"
-* code.coding[loincCode2] = LOINC#8716-3 "Vital signs"
+* code.coding 1.. // hack to make FHIR core profiles not throw an error
+// FHIR Core R4 requires 85354-9
+
+* code.coding contains loincCode1 1..1
+* code.coding[loincCode1].system 1..1
+* code.coding[loincCode1].system only uri
+* code.coding[loincCode1].system = "http://loinc.org" (exactly)
+* code.coding[loincCode1].code 1..1
+* code.coding[loincCode1].code only code
+* code.coding[loincCode1].code = #55284-4 (exactly)
+* code.coding contains loincCode2 1..1
+* code.coding[loincCode2].system 1..1
+* code.coding[loincCode2].system only uri
+* code.coding[loincCode2].system = "http://loinc.org" (exactly)
+* code.coding[loincCode2].code 1..1
+* code.coding[loincCode2].code only code
+* code.coding[loincCode2].code = #8716-3 (exactly)
+
+
 * effectiveDateTime 1..1
-* value[x] 0..0
-* component 2..2
-* component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #closed
-* component ^slicing.description = "blood pressure values"
-* component contains 
-	diastolicBP 1..1 and 
-	systolicBP 1..1
-//	and 
-//	bodyContextSitting 0..1 and 
-//	bodyContextStanding 0..1 and 
-//	bodyContextSupine 0..1 and 
-//	bodyContextResting 0..1
-* component[systolicBP].code = LOINC#8480-6 // Systolic blood pressure
-* component[systolicBP].value[x] only Quantity
-* component[systolicBP].valueQuantity = UCUM#mm[Hg] // "mmHg"
-* component[systolicBP].valueQuantity.value ^minValueQuantity = 20 UCUM#mm[Hg] // "mmHg"
-* component[systolicBP].valueQuantity.value ^maxValueQuantity = 300 UCUM#mm[Hg] // "mmHg"
-* component[diastolicBP].code = LOINC#8462-4 // Diastolic blood pressure
-* component[diastolicBP].value[x] only Quantity
-* component[diastolicBP].valueQuantity = UCUM#mm[Hg] // "mmHg"
-* component[diastolicBP].valueQuantity.value ^minValueQuantity = 20 UCUM#mm[Hg] // "mmHg"
-* component[diastolicBP].valueQuantity.value ^maxValueQuantity = 250 UCUM#mm[Hg] // "mmHg"
+* component[SystolicBP].code.coding 1.. // hack to make FHIR core profiles not throw an error
+* component[SystolicBP].valueQuantity.value ^minValueQuantity = 20 UCUM#mm[Hg] // "mmHg"
+* component[SystolicBP].valueQuantity.value ^maxValueQuantity = 300 UCUM#mm[Hg] // "mmHg"
+* component[DiastolicBP].code.coding 1.. // hack to make FHIR core profiles not throw an error
+* component[DiastolicBP].valueQuantity.value ^minValueQuantity = 20 UCUM#mm[Hg] // "mmHg"
+* component[DiastolicBP].valueQuantity.value ^maxValueQuantity = 250 UCUM#mm[Hg] // "mmHg"
 * status = #final
 * subject 1..1
 * subject only Reference(Patient)

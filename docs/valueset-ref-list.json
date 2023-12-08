@@ -89,10 +89,7 @@
       "name" : "MHVbodyTemperatures",
       "title" : "The body temperature measurement types that MHV supports",
       "description" : "These are the UCUM types that MHV supports.",
-      "systems" : ["http://unitsofmeasure.org"],
-      "uses" : {
-      },
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation"
+      "systems" : ["http://unitsofmeasure.org"]
     },
     {
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights",
@@ -101,10 +98,7 @@
       "name" : "MHVbodyWeights",
       "title" : "The body weight measurement types that MHV supports",
       "description" : "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",
-      "systems" : ["http://unitsofmeasure.org"],
-      "uses" : {
-      },
-      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation"
+      "systems" : ["http://unitsofmeasure.org"]
     },
     {
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",

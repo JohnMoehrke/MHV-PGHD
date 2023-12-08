@@ -46,6 +46,7 @@
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "81.5"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "kg" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "kg" ]
   ] ; # 

@@ -170,12 +170,12 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -218,20 +218,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-VA.MHV.BlueBundle.html" : "VA MHV BlueButton Bundle",
-      "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
+      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.medication.html" : "VA MHV Medication",
       "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.immunization.html" : "VA MHV Immunization",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.familymemberhistory.html" : "VA MHV FamilyMemberHistory",
-      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.BlueBundle.html" : "VA MHV BlueButton Bundle",
       "StructureDefinition-VA.MHV.allergy.html" : "VA MHV Allergy or Intolerance",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.familymemberhistory.html" : "VA MHV FamilyMemberHistory",
+      "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
       "StructureDefinition-VA.MHV.BlueComposition.html" : "VA MHV BlueButton Composition",
-      "StructureDefinition-VA.MHV.medication.html" : "VA MHV Medication"
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -273,8 +273,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-VA.MHV.familymemberhistory.html" : "VA MHV FamilyMemberHistory",
-      "StructureDefinition-VA.MHV.medication.html" : "VA MHV Medication"
+      "StructureDefinition-VA.MHV.medication.html" : "VA MHV Medication",
+      "StructureDefinition-VA.MHV.familymemberhistory.html" : "VA MHV FamilyMemberHistory"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-outcome",
@@ -303,13 +303,13 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
@@ -602,20 +602,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-VA.MHV.BlueBundle.html" : "VA MHV BlueButton Bundle",
-      "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
+      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.medication.html" : "VA MHV Medication",
       "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.immunization.html" : "VA MHV Immunization",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.familymemberhistory.html" : "VA MHV FamilyMemberHistory",
-      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.BlueBundle.html" : "VA MHV BlueButton Bundle",
       "StructureDefinition-VA.MHV.allergy.html" : "VA MHV Allergy or Intolerance",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.familymemberhistory.html" : "VA MHV FamilyMemberHistory",
+      "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
       "StructureDefinition-VA.MHV.BlueComposition.html" : "VA MHV BlueButton Composition",
-      "StructureDefinition-VA.MHV.medication.html" : "VA MHV Medication"
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
@@ -730,13 +730,13 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -750,9 +750,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -769,13 +768,13 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -790,12 +789,12 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -810,13 +809,13 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
@@ -831,8 +830,9 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
       "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
@@ -849,13 +849,13 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
@@ -901,13 +901,13 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -924,13 +924,13 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation"
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -978,20 +978,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-VA.MHV.BlueBundle.html" : "VA MHV BlueButton Bundle",
-      "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
+      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.medication.html" : "VA MHV Medication",
       "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.immunization.html" : "VA MHV Immunization",
-      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
-      "StructureDefinition-VA.MHV.familymemberhistory.html" : "VA MHV FamilyMemberHistory",
-      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
-      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation",
-      "StructureDefinition-VA.MHV.pain.html" : "VA MHV Pain Observation",
+      "StructureDefinition-VA.MHV.BlueBundle.html" : "VA MHV BlueButton Bundle",
       "StructureDefinition-VA.MHV.allergy.html" : "VA MHV Allergy or Intolerance",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.familymemberhistory.html" : "VA MHV FamilyMemberHistory",
+      "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
       "StructureDefinition-VA.MHV.BlueComposition.html" : "VA MHV BlueButton Composition",
-      "StructureDefinition-VA.MHV.medication.html" : "VA MHV Medication"
+      "StructureDefinition-VA.MHV.bloodSugar.html" : "VA MHV Blood Sugar Observation",
+      "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/substance-code",
@@ -1008,6 +1008,34 @@
       "StructureDefinition-VA.MHV.allergy.html" : "VA MHV Allergy or Intolerance"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodytemp",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyTemperatureUnits",
+      "title" : "Body Temperature Units",
+      "description" : "UCUM units for recording Body Temperature",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.957"],
+      "sources" : ["2.16.840.1.113883.4.642.3.957"],
+      "uses" : {
+      },
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodyweight",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyWeightUnits",
+      "title" : "Body Weight Units",
+      "description" : "UCUM units for recording Body Weight",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.956"],
+      "sources" : ["2.16.840.1.113883.4.642.3.956"],
+      "uses" : {
+      },
+      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
       "version" : "4.0.1",
       "status" : "draft",
@@ -1020,8 +1048,9 @@
       "uses" : {
       },
       "StructureDefinition-VA.MHV.bloodOxygenSat.html" : "VA MHV Blood Oxygen Saturation Observation",
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
       "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation",
+      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation",
+      "StructureDefinition-VA.MHV.bloodPressure.html" : "VA MHV Blood Pressure Observation",
       "StructureDefinition-VA.MHV.respirationRate.html" : "VA MHV Respiration Rate Observation",
       "StructureDefinition-VA.MHV.heartRate.html" : "VA MHV HeartRate Observation"
     },
@@ -1154,10 +1183,7 @@
       "name" : "MHVbodyTemperatures",
       "title" : "The body temperature measurement types that MHV supports",
       "description" : "These are the UCUM types that MHV supports.",
-      "systems" : ["http://unitsofmeasure.org"],
-      "uses" : {
-      },
-      "StructureDefinition-VA.MHV.bodyTemperature.html" : "VA MHV Body Temperature Observation"
+      "systems" : ["http://unitsofmeasure.org"]
     },
     {
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-body-weights",
@@ -1166,10 +1192,7 @@
       "name" : "MHVbodyWeights",
       "title" : "The body weight measurement types that MHV supports",
       "description" : "These are the UCUM types that MHV supports. This is a subset of the full bodyWeight types (which also brings in grams. Others might also include stone).",
-      "systems" : ["http://unitsofmeasure.org"],
-      "uses" : {
-      },
-      "StructureDefinition-VA.MHV.bodyWeight.html" : "VA MHV BodyWeight Observation"
+      "systems" : ["http://unitsofmeasure.org"]
     },
     {
       "url" : "https://johnmoehrke.github.io/MHV-PGHD/ValueSet/mhv-medication-routes",

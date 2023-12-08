@@ -21,18 +21,21 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-MHV-bloodPressure-0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-MHV-bloodPressure-0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VA.MHV.bloodPressure.html\">VA MHV Blood Pressure Observation</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Blood pressure systolic and diastolic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#55284-4; <a href=\"https://loinc.org/\">LOINC</a>#8716-3 &quot;Vital signs&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-25 23:50:50-0500</p><p><b>note</b>: a minimal blood pressure</p><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 90 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 140 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ex-MHV-bloodPressure-0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ex-MHV-bloodPressure-0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-VA.MHV.bloodPressure.html\">VA MHV Blood Pressure Observation</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{https://wiki.mobilehealth.va.gov/x/Onc1C https://wiki.mobilehealth.va.gov/x/Onc1C}\">https://wiki.mobilehealth.va.gov/x/Onc1C</span></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Blood pressure systolic and diastolic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85354-9; <a href=\"https://loinc.org/\">LOINC</a>#55284-4; <a href=\"https://loinc.org/\">LOINC</a>#8716-3 &quot;Vital signs&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Patient/ex-patient</a> &quot; SCHMIDT&quot;</p><p><b>effective</b>: 2004-12-25 23:50:50-0500</p><p><b>note</b>: a minimal blood pressure</p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 140 mm Hg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 90 mm Hg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "vital-signs" ] ;
-       fhir:display [ fhir:v "Vital Signs" ]
+       fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ]
+     ] [
        a loinc:55284-4 ;
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "55284-4" ] ;
@@ -55,21 +58,6 @@
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
-         a loinc:8462-4 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "8462-4" ] ;
-         fhir:display [ fhir:v "Diastolic blood pressure" ]
-       ] )
-     ] ;
-     fhir:value [
-       a fhir:Quantity ;
-       fhir:value [ fhir:v "90"^^xsd:decimal ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "mm[Hg]" ]
-     ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
          a loinc:8480-6 ;
          fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "8480-6" ] ;
@@ -79,6 +67,23 @@
      fhir:value [
        a fhir:Quantity ;
        fhir:value [ fhir:v "140"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mm Hg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8462-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8462-4" ] ;
+         fhir:display [ fhir:v "Diastolic blood pressure" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "90"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mm Hg" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "mm[Hg]" ]
      ]

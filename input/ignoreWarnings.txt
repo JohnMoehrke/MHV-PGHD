@@ -1,10 +1,6 @@
 == Suppressed Messages ==
 
-# This is an example external code system used for testing success without an understood code
-Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated
-
-
-# No example of a prototyple
+# No example of a prototype
 WARNING: StructureDefinition.where(url = 'https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.BlueBundle'): The Implementation Guide contains no examples for this profile
 
 
@@ -13,3 +9,41 @@ INFORMATION: FamilyMemberHistory/ex-son: FamilyMemberHistory.condition[0].code.c
 
 # performer is not needed in PGHD as it is ambiguous
 Best Practice Recommendation: In general, all observations should have a performer
+
+# some deviating data that is understood as deviating
+INFORMATION: Observation/ex-MHV-bloodPressure-0: Observation.code.coding[1]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-bloodPressure-0: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-bloodPressure-1: Observation.code.coding[1]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-bloodPressure-1: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-bloodPressure-apple: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-bloodPressure-end: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-bloodPressure-start: Observation.code.coding[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-1: Observation.code.coding[1]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-1: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-2: Observation.code.coding[1]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-2: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-3: Observation.code.coding[1]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-3: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-5: Observation.code.coding[1]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-5: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-6: Observation.code.coding[1]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-6: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-7: Observation.code.coding[1]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodOxygenSat|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-oxygenSat-7: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-other-oxygenSat-8: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-weight-core: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-weight-core: Observation.code.coding[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# pain is in score
+WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.snapshot.element[39].minValue.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.snapshot.element[39].maxValue.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.differential.element[23].minValue.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+WARNING: StructureDefinition/VA.MHV.pain: StructureDefinition.differential.element[23].maxValue.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit SHOULD contain the annotation
+
+
+
+# would like to have slices for these, but can't figure out how FHIR core vitalsigns profile did code slice so that I an extend it properly.
+INFORMATION: Observation/ex-MHV-bloodPressure-0: Observation.code.coding[2]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-bloodPressure-0: Observation.code.coding[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-bloodPressure-1: Observation.code.coding[2]: This element does not match any known slice defined in the profile https://johnmoehrke.github.io/MHV-PGHD/StructureDefinition/VA.MHV.bloodPressure|0.2.10-beta (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/ex-MHV-bloodPressure-1: Observation.code.coding[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)

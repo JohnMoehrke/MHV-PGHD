@@ -28,7 +28,7 @@
   <name value="Adopted"/>
   <title value="Adopted indication"/>
   <status value="active"/>
-  <date value="2023-12-06T12:46:33-06:00"/>
+  <date value="2023-12-07T18:51:33-06:00"/>
   <publisher value="John Moehrke (himself)"/>
   <contact>
     <name value="John Moehrke (himself)"/>
@@ -65,7 +65,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="FamilyMemberHistory"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

@@ -17,7 +17,7 @@
   <name value="MHVIG"/>
   <title value="MyHealtheVet use of PGHD"/>
   <status value="active"/>
-  <date value="2023-12-06T12:46:33-06:00"/>
+  <date value="2023-12-07T18:51:33-06:00"/>
   <publisher value="John Moehrke (himself)"/>
   <contact>
     <name value="John Moehrke (himself)"/>
@@ -792,17 +792,6 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-pain-15"/>
-      </reference>
-      <name value="Example of a non MHV pain R4 observation of 10 (it has three codes)"/>
-      <description value="holding typical values"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
         <reference value="Observation/ex-pain-11"/>
       </reference>
       <name value="Example of a non MHV pain R4 observation of 11"/>
@@ -1518,39 +1507,6 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/ex-weight-stone"/>
-      </reference>
-      <name value="Example of an valid FHIR bodyWeight R4 observation"/>
-      <description value="holding typical stone values."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ex-weight-string"/>
-      </reference>
-      <name value="Example of an valid FHIR bodyWeight R4 observation"/>
-      <description value="holding typical value in a string."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ex-weight-not-ucum"/>
-      </reference>
-      <name value="Example of an valid FHIR bodyWeight R4 observation"/>
-      <description value="holding typical value but NOT using ucum units of measure."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
         <reference value="Observation/ex-weight-core"/>
       </reference>
       <name value="Example of an valid FHIR International bodyWeight R4 observation"/>
@@ -1796,7 +1752,7 @@
         <reference value="StructureDefinition/VA.MHV.bloodPressure"/>
       </reference>
       <name value="VA MHV Blood Pressure Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Read in PGHD for blood pressure measurements.&#xA;&#xA;Note: This profile is not aligned with FHIR core Vital-Signs. FHIR Core Vital-Signs would prefer we use [LOINC 85354-9](https://loinc.org/85354-9/) - Blood pressure panel with all children optional.&#xA;This was not agreed by Mobile.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#55284-4 code AND LOINC#8716-3&#xA;  - 8716-3 was added as some mobile apps searched on this&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must not have a value[x]&#xA;- must have two components&#xA;- must have systolic and diastolic component values in mm[Hg]&#xA;  - systolic must be between 20 &lt;= s &lt;= 300&#xA;  - diastolic must be between 20 &lt;= d &lt;= 250&#xA;- may have a related has-member heart-rate observation&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;&#xA;Later may have a position component (sitting, standing, supline, and resting)"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Read in PGHD for blood pressure measurements.&#xA;&#xA;Note: This profile is now aligned with FHIR core Vital-Signs. &#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- FHIR core profile requires LOINC#85354-9&#xA;- must also have LOINC#55284-4 code AND LOINC#8716-3&#xA;  - 8716-3 was added as some mobile apps searched on this&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must not have a value[x]&#xA;- must have two components&#xA;- must have systolic and diastolic component values in mm[Hg]&#xA;  - systolic must be between 20 &lt;= s &lt;= 300&#xA;  - diastolic must be between 20 &lt;= d &lt;= 250&#xA;- may have a related has-member heart-rate observation&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier&#xA;&#xA;Later may have a position component (sitting, standing, supline, and resting)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1840,7 +1796,7 @@
         <reference value="StructureDefinition/VA.MHV.bodyTemperature"/>
       </reference>
       <name value="VA MHV Body Temperature Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create/Read in PGHD for body temperature measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8310-5 code&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must have valueQuantity with units from the MHV body temperatures (F and C)&#xA;  - must be value between 80 &lt;= n &lt;= 110 Fahrenheit&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the Observation that declares how MHV will Create/Read in PGHD for body temperature measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs and bodytemp.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#8310-5 code&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must have valueQuantity with units from the MHV body temperatures (F and C)&#xA;  - must be value between 80 &lt;= n &lt;= 110 Fahrenheit&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a bodySite from MHV body temperature sites (tongue, underarm, ear, mouth, or rectum)&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1851,7 +1807,7 @@
         <reference value="StructureDefinition/VA.MHV.bodyWeight"/>
       </reference>
       <name value="VA MHV BodyWeight Observation"/>
-      <description value="A profile on the Observation that declares how MHV will Create in PGHD for body weight measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#29463-7 code&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must have valueQuantity with units from the MHV body weights (lbs and kg)&#xA;  - must be value 0.25 &lt;= n &lt;= 999 lbs&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
+      <description value="A profile on the Observation that declares how MHV will Create in PGHD for body weight measurements.&#xA;&#xA;Note this is compliant with FHIR core vital-signs and bodyweight.&#xA;&#xA;- must be marked with MHV app tag&#xA;- must have vital-signs category&#xA;- must have LOINC#29463-7 code&#xA;- must have effectiveDateTime&#xA;  - others might use effectivePeriod&#xA;- must have valueQuantity with units from the MHV body weights (lbs and kg)&#xA;  - must be value 0.25 &lt;= n &lt;= 999 lbs&#xA;- must have status at final&#xA;- must point at the patient&#xA;- may have a note (comment)&#xA;- once created will or might have an id, versionId, lastUpdated, text, and identifier"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
